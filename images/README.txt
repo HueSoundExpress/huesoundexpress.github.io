@@ -1,0 +1,1 @@
+Dat file anh bia .jpg vao thu muc nay theo dung ten trong cot Ten_File_Anh cua file Excel.

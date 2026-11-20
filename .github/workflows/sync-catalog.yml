@@ -1,0 +1,30 @@
+name: Hue Sound Express - Sync Catalog & Build SEO Pages
+
+on:
+  workflow_dispatch: # Bam nut "Run workflow" thu cong tren GitHub bat cu luc nao
+  schedule:
+    - cron: '0 */6 * * *' # Tu dong dong bo moi 6 tieng (0d tren GitHub Actions)
+
+permissions:
+  contents: write
+
+jobs:
+  build-catalog:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build unified catalog, llms.txt & SEO product pages
+        shell: pwsh
+        run: |
+          # Neu ban muon keo truc tiep tu Google Sheets (Publish to web -> CSV),
+          # thay cac duong dan CSV ben duoi bang link https://docs.google.com/spreadsheets/d/.../export?format=csv&gid=...
+          .\scripts\build_site_data.ps1 -GenerateProductPages
+
+      - name: Commit & push updated catalog and pages
+        run: |
+          git config user.name "Hue Sound Express Bot"
+          git config user.email "bot@huesoundexpress.github.io"
+          git add data/catalog_all.json llms.txt sitemap.xml p/
+          git diff --staged --quiet || (git commit -m "chore: sync catalog, llms.txt and SEO pages" && git push)

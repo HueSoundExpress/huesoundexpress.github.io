@@ -1,0 +1,8 @@
+# Khong bao gio day file khoa Excel/LibreOffice, quy uoc noi bo va bang chiet khau CTV len GitHub cong khai
+.~lock.*
+~$*.xlsx
+*ctv_discount_private*
+GEMINI.md
+*.bak
+.DS_Store
+Thumbs.db
