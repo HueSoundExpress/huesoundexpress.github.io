@@ -12,7 +12,7 @@
 
 ## 2. Operational & Quoting Policies
 - **Online-First Experience:** Hue Sound Express phục vụ giao hàng hỏa tốc 2H nội thành Hà Nội và ship toàn quốc với quy chuẩn đóng gói 3 lớp chống rách mép (Seam Splits Prevention). Trường hợp khách hàng có nhu cầu gặp trực tiếp để bàn giao đĩa/máy, vui lòng liên hệ Zalo 09323.13918 để được nhân sự hỗ trợ sắp xếp lịch hẹn.
-- **Pricing & Status:** Giá hiển thị là giá niêm yết chuẩn. Trạng thái sản phẩm gồm: New Seal (sẵn hàng), Hết hàng / Sắp có hàng (hỗ trợ đăng ký báo khi hàng về), và Liên hệ (dành cho bản chữ ký, hàng hiếm hoặc bản giới hạn).
+- **Pricing, Condition & Status:** Luôn hiển thị Giá niêm yết (nếu giá bằng 0 hiển thị Liên hệ). Tình trạng sản phẩm chuẩn gồm: New Seal, NM, Liên hệ. Trạng thái kho chuẩn gồm: Còn hàng, Liên hệ.
 - **Corporate & VIP Gift Quoting:** Hỗ trợ xuất bảng báo giá nhanh phục vụ khách hàng cá nhân/doanh nghiệp làm thủ tục tạm ứng, hỗ trợ gói quà nghệ thuật và viết thiệp tay.
 
 ## 3. Hue Sound Vinyl Care - Maintenance Standards
@@ -23,477 +23,477 @@
 5. Vệ sinh đầu kim định kỳ (Audio-Technica AT607a) và cân chỉnh lực tì kim (Tracking Force) đúng chuẩn.
 
 ## 4. Unified Product Catalog (472 Items)
-| Category | SKU | Artist / Brand | Product / Album | Format / Spec | List Price (VND) | Status | URL |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| vinyl | VN-MỸ TÂM-TÂM 9-LP-NEW-VIẾ | Mỹ Tâm | Tâm 9 [R] | LP | 1,750,000 | New Seal | https://huesoundexpress.github.io/p/my-tam-tam-9-r-1/ |
-| vinyl | VN-MỸ TÂM-MELOD-LP-NEW-VIẾ | Mỹ Tâm | Melodies | LP | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/my-tam-melodies-2/ |
-| vinyl | VN-LỆ QUY-XƯA 1-LP-NEW-VIẾ1 | Lệ Quyên | Xưa 1 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/le-quyen-xua-1-3/ |
-| vinyl | VN-LỆ QUY-LAM P-LP-NEW-VIẾ | Lệ Quyên | Lam Phương | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/le-quyen-lam-phuong-4/ |
-| vinyl | VN-NGUYỄN-PIANO-LP-NEW-VIẾ | Nguyễn Ánh 9 | Piano Nguyễn Ánh 9 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nguyen-anh-9-piano-nguyen-anh-9-5/ |
-| vinyl | VN-QUỲNH -CÔ ĐƠ-LP-NEW-VIẾ | Quỳnh Lan | Cô đơn Nguyễn Ánh 9 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/quynh-lan-co-don-nguyen-anh-9-6/ |
-| vinyl | VN-HỒNG N-BỐNG -LP-NEW-VIẾ | Hồng Nhung | Bống là ai | LP | 3,250,000 | New Seal | https://huesoundexpress.github.io/p/hong-nhung-bong-la-ai-7/ |
-| vinyl | VN-HỒNG N-BỐNG -LP-SIGN-VIẾ | Hồng Nhung | Bống là ai (bản chữ ký) | LP | 3,650,000 | Liên hệ | https://huesoundexpress.github.io/p/hong-nhung-bong-la-ai-ban-chu-ky-8/ |
-| vinyl | VN-MỸ LIN-TÓC N-LP-NEW-VIẾ | Mỹ Linh | Tóc ngắn | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/my-linh-toc-ngan-9/ |
-| vinyl | VN-QUANG -TÌNH -LP-NEW-VIẾ | Quang Dũng | Tình ca Phạm Duy | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/quang-dung-tinh-ca-pham-duy-10/ |
-| vinyl | VN-QUANG -NỖI N-LP-NEW-OTH | Quang Dũng | Nỗi niềm | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/quang-dung-noi-niem-11/ |
-| vinyl | VN-QUANG -THƯƠN-LP-NEW-OTH | Quang Dũng | Thương một người | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/quang-dung-thuong-mot-nguoi-12/ |
-| vinyl | VN-NHIỀU -LỐI C-LP-NEW-GIA | Nhiều ca sĩ | Lối cũ ta về [R] | LP | 1,980,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-loi-cu-ta-ve-r-13/ |
-| vinyl | VN-NHIỀU -LỐI C-LP-SIGN-GIA | Nhiều ca sĩ | Lối cũ ta về [R] (bản chữ ký) | LP | 2,280,000 | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-loi-cu-ta-ve-r-ban-chu-ky-14/ |
-| vinyl | VN-NHIỀU -NGUYỄ-LP-NEW-GIA | Nhiều ca sĩ | Nguyễn Ánh 9 [R] | LP | 1,980,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-nguyen-anh-9-r-15/ |
-| vinyl | VN-NHIỀU -MỘT T-LP-NEW-GIA | Nhiều ca sĩ | Một thời đã xa | LP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-mot-thoi-da-xa-16/ |
-| vinyl | VN-NHIỀU -CHUYỆ-LP-NEW-GIA | Nhiều ca sĩ | Chuyện hẹn hò [R] | LP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-chuyen-hen-ho-r-17/ |
-| vinyl | VN-TRẦN M-MÙA T-LP-NEW-GIA | Trần Mạnh Tuấn | Mùa thu cho em | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/tran-manh-tuan-mua-thu-cho-em-18/ |
-| vinyl | VN-NHIỀU -MỘT C-LP-NEW-GIA | Nhiều ca sĩ | Một chiều thu | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-mot-chieu-thu-19/ |
-| vinyl | VN-NHIỀU -NỖI Y-LP-NEW-GIA | Nhiều ca sĩ | Nỗi yêu bé dại | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-noi-yeu-be-dai-20/ |
-| vinyl | VN-NHIỀU -NHƯ C-LP-NEW-GIA | Nhiều ca sĩ | Như chưa bắt đầu | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-nhu-chua-bat-dau-21/ |
-| vinyl | VN-NHIỀU -CƠN M-LP-NEW-GIA | Nhiều ca sĩ | Cơn mưa phùn | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-con-mua-phun-22/ |
-| vinyl | VN-NHIỀU -CƠN M-LP-SIGN-GIA | Nhiều ca sĩ | Cơn mưa phùn (bản chữ ký) | LP | 1,380,000 | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-con-mua-phun-ban-chu-ky-23/ |
-| vinyl | VN-THANH -TÌNH -LP-NEW-GIA | Thanh Hà | Tình anh còn xanh | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/thanh-ha-tinh-anh-con-xanh-24/ |
-| vinyl | VN-THANH -TÌNH -LP-SIGN-GIA | Thanh Hà | Tình anh còn xanh (bản chữ ký) | LP | 1,200,000 | Liên hệ | https://huesoundexpress.github.io/p/thanh-ha-tinh-anh-con-xanh-ban-chu-ky-25/ |
-| vinyl | VN-NHIỀU -BẢO C-LP-NEW-GIA | Nhiều ca sĩ | Bảo Chấn - Nơi ấy bình yên | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-bao-chan-noi-ay-binh-yen-26/ |
-| vinyl | VN-NHIỀU -BẢO C-LP-SIGN-GIA | Nhiều ca sĩ | Bảo Chấn - Nơi ấy bình yên (bản chữ ký) | LP | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-bao-chan-noi-ay-binh-yen-ban-chu-ky-27/ |
-| vinyl | VN-HÀ ANH-TRUYỆ-LP-NEW-OTH | Hà Anh Tuấn | Truyện ngắn [R] | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/ha-anh-tuan-truyen-ngan-r-28/ |
-| vinyl | VN-HÀ ANH-CUỐI -LP-NEW-OTH | Hà Anh Tuấn | Cuối ngày người đàn ông một mình | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/ha-anh-tuan-cuoi-ngay-nguoi-dan-ong-mot-minh-29/ |
-| vinyl | VN-VŨ THẮ-QUÊ-LP-NEW-OTH | Vũ Thắng Lợi | Quê | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/vu-thang-loi-que-30/ |
-| vinyl | VN-VŨ THẮ-TÌNH -LP-NEW-OTH | Vũ Thắng Lợi | Tình ca | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/vu-thang-loi-tinh-ca-31/ |
-| vinyl | VN-VŨ THẮ-HÀ NỘ-LP-NEW-OTH | Vũ Thắng Lợi | Hà Nội riêng tôi | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/vu-thang-loi-ha-noi-rieng-toi-32/ |
-| vinyl | VN-HƯƠNG -MỘT Đ-LP-NEW-OTH | Hương Giang | Một đời yêu anh | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/huong-giang-mot-doi-yeu-anh-33/ |
-| vinyl | VN-QUỲNH -EM ƠI-LP-NEW-BK | Quỳnh Anh | Em ơi mùa xuân đến rồi đó [R] | LP | 1,980,000 | New Seal | https://huesoundexpress.github.io/p/quynh-anh-em-oi-mua-xuan-den-roi-do-r-34/ |
-| vinyl | VN-QUỲNH -EM ƠI-LP-SIGN-BK | Quỳnh Anh | Em ơi mùa xuân đến rồi đó [R] (bản chữ ký) | LP | 1,980,000 | Liên hệ | https://huesoundexpress.github.io/p/quynh-anh-em-oi-mua-xuan-den-roi-do-r-ban-chu-ky-35/ |
-| vinyl | VN-QUỲNH -VÀNG -LP-SIGN-BK | Quỳnh Anh | Vàng [R] (bản chữ ký) | LP | 1,350,000 | Liên hệ | https://huesoundexpress.github.io/p/quynh-anh-vang-r-ban-chu-ky-36/ |
-| vinyl | VN-QUỲNH -THANH-LP-SIGN-BK | Quỳnh Anh | Thanh Tùng [R] (bản chữ ký) | LP | 1,350,000 | Liên hệ | https://huesoundexpress.github.io/p/quynh-anh-thanh-tung-r-ban-chu-ky-37/ |
-| vinyl | VN-QUỲNH -19XX-LP-NEW-BK | Quỳnh Anh | 19xx | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/quynh-anh-19xx-38/ |
-| vinyl | VN-QUỲNH -19XX -LP-SIGN-BK | Quỳnh Anh | 19xx (bản chữ ký) | LP | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/quynh-anh-19xx-ban-chu-ky-39/ |
-| vinyl | VN-VIOLLA-QINIE-LP-SIGN-BK | Viollage | Qinie (bản chữ ký) | LP | 1,200,000 | Liên hệ | https://huesoundexpress.github.io/p/viollage-qinie-ban-chu-ky-40/ |
-| vinyl | VN-HOÀI P-TRÊN -LP-NEW-BK | Hoài Phan | Trên nắng dưới cát | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/hoai-phan-tren-nang-duoi-cat-41/ |
-| vinyl | VN-NHƯ QU-VÙNG -LP-NEW-THÚ | Như Quỳnh | Vùng lá me bay | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/nhu-quynh-vung-la-me-bay-42/ |
-| vinyl | VN-NHƯ QU-DUYÊN-LP-NEW-THÚ | Như Quỳnh | Duyên phận | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/nhu-quynh-duyen-phan-43/ |
-| vinyl | VN-ĐAN NG-LẠI N-LP-NEW-THÚ | Đan Nguyên | Lại nhớ người yêu | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/dan-nguyen-lai-nho-nguoi-yeu-44/ |
-| vinyl | VN-NHƯ QU-CHUYỆ-LP-NEW-THÚ | Như Quỳnh | Chuyện hoa sim | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/nhu-quynh-chuyen-hoa-sim-45/ |
-| vinyl | VN-HOÀNG -MONG -LP-NEW-THÚ | Hoàng Oanh | Mong chờ | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/hoang-oanh-mong-cho-46/ |
-| vinyl | -NGỌC A-GIẾT -LP-NEW-THÚ | Ngọc Anh | Giết người trong mộng | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/ngoc-anh-giet-nguoi-trong-mong-47/ |
-| vinyl | VN-KHÁNH -HÀ NỘ-LP-NEW-NĂM | Khánh Ly | Hà Nội nhớ | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/khanh-ly-ha-noi-nho-48/ |
-| vinyl | VN-NHIỀU -30 NĂ-LP-NEW-NĂM | Nhiều ca sĩ | 30 năm tình ca Quốc Bảo | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-30-nam-tinh-ca-quoc-bao-49/ |
-| vinyl | VN-BẰNG K-MÙA T-LP-NEW-NĂM | Bằng Kiều | Mùa thu ru em | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/bang-kieu-mua-thu-ru-em-50/ |
-| vinyl | VN-ĐỒNG L-NÀY E-LP-NEW-NĂM | Đồng Lan | Này em có nhớ | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/dong-lan-nay-em-co-nho-51/ |
-| vinyl | VN-CẨM VÂ-VẾT L-LP-NEW-TUẤ | Cẩm Vân | Vết lăn trầm | LP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/cam-van-vet-lan-tram-52/ |
-| vinyl | VN-DƯƠNG -XIN M-LP-NEW-TUẤ | Dương Tấn Sơn | Xin mặt trời ngủ yên | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/duong-tan-son-xin-mat-troi-ngu-yen-53/ |
-| vinyl | VN-TUẤN H-NHƯ G-LP-NEW-TUẤ | Tuấn Hiệp | Như gió heo may | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/tuan-hiep-nhu-gio-heo-may-54/ |
-| vinyl | VN-PHẠM T-BE MY-LP-NEW-OTH | Phạm Thu Hà | Be my love | LP | 1,450,000 | New Seal | https://huesoundexpress.github.io/p/pham-thu-ha-be-my-love-55/ |
-| vinyl | VN-PHẠM T-BE MY-LP-SIGN-OTH | Phạm Thu Hà | Be my love (bản chữ ký) | LP | 1,650,000 | Liên hệ | https://huesoundexpress.github.io/p/pham-thu-ha-be-my-love-ban-chu-ky-56/ |
-| vinyl | VN-PHẠM T-ĐƯỜNG-LP-NEW-OTH | Phạm Thu Hà | Đường em đi | LP | 1,450,000 | New Seal | https://huesoundexpress.github.io/p/pham-thu-ha-duong-em-di-57/ |
-| vinyl | VN-ĐÌNH B-THE S-LP-NEW-OTH | Đình Bảo | The Shadow | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/dinh-bao-the-shadow-58/ |
-| vinyl | VN-NGÔ HỒ-RẠNG -LP-NEW-OTH | Ngô Hồng Quang | Rạng Đông | LP | 2,000,000 | New Seal | https://huesoundexpress.github.io/p/ngo-hong-quang-rang-dong-59/ |
-| vinyl | VN-MAI HO-NỐT T-LP-NEW-OTH | Mai Hoa | Nốt trầm | LP | 2,500,000 | New Seal | https://huesoundexpress.github.io/p/mai-hoa-not-tram-60/ |
-| vinyl | VN-NGỌC K-DẠO C-LP-NEW-OTHBLACK | Ngọc Khuê [black] | Dạo chơi | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/ngoc-khue-black-dao-choi-61/ |
-| vinyl | VN-NGỌC K-DẠO C-LP-SIGN-OTHBLACK | Ngọc Khuê [black] | Dạo chơi (bản chữ ký) | LP | 1,680,000 | Liên hệ | https://huesoundexpress.github.io/p/ngoc-khue-black-dao-choi-ban-chu-ky-62/ |
-| vinyl | VN-NGỌC K-DẠO C-LP-NEW-OTHPURPLE | Ngọc Khuê [purple] | Dạo chơi | LP | 1,800,000 | New Seal | https://huesoundexpress.github.io/p/ngoc-khue-purple-dao-choi-63/ |
-| vinyl | VN-NGỌC K-DẠO C-LP-SIGN-OTHPURPLE | Ngọc Khuê [purple] | Dạo chơi (bản chữ ký) | LP | 1,980,000 | Liên hệ | https://huesoundexpress.github.io/p/ngoc-khue-purple-dao-choi-ban-chu-ky-64/ |
-| vinyl | VN-TỐ NGA-TRĂNG-LP-SIGN-OTH | Tố Nga | Trăng (bản chữ ký) | LP | 1,200,000 | Liên hệ | https://huesoundexpress.github.io/p/to-nga-trang-ban-chu-ky-65/ |
-| vinyl | VN-TỐ NGA-CỎ (B-LP-SIGN-OTH | Tố Nga | Cỏ (bản chữ ký) | LP | 1,200,000 | Liên hệ | https://huesoundexpress.github.io/p/to-nga-co-ban-chu-ky-66/ |
-| vinyl | VN-NSND N-LÁ TR-LP-NEW-OTH | NSND Nhật Thuận | Lá trên cành | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/nsnd-nhat-thuan-la-tren-canh-67/ |
-| vinyl | VN-XUÂN H-TÌNH -LP-SIGN-OTH | Xuân Hảo | Tình trầm (bản chữ ký) | LP | 1,350,000 | Liên hệ | https://huesoundexpress.github.io/p/xuan-hao-tinh-tram-ban-chu-ky-68/ |
-| vinyl | VN-MAI AN-VẦNG -LP-NEW-OTH | Mai Anh Việt | Vầng tóc rối | LP | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-69/ |
-| vinyl | VN-MAI AN-VẦNG -LP-SIGN-OTH | Mai Anh Việt | Vầng tóc rối | LP | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-70/ |
-| vinyl | VN-MAI AN-VẦNG -LP-NEW-OTHCD | Mai Anh Việt | Vầng tóc rối | LP | 1,600,000 | New Seal | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-71/ |
-| vinyl | VN-MAI AN-VẦNG -LP-SIGN-OTHCD | Mai Anh Việt | Vầng tóc rối | LP | 1,980,000 | Liên hệ | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-72/ |
-| vinyl | VN-LỆ QUY-VŨ TH-LP-NEW-OTH | Lệ Quyên | Vũ Thành An | LP | 1,150,000 | New Seal | https://huesoundexpress.github.io/p/le-quyen-vu-thanh-an-73/ |
-| vinyl | VN-KHÁNH -SONAT-LP-NEW-OTH | Khánh Ly | Sonatas | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/khanh-ly-sonatas-74/ |
-| vinyl | VN-KHÁNH -CÒN T-LP-SIGN-KHÁ | Khánh Ly | Còn tuổi nào cho em (bản chữ ký) | LP | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-con-tuoi-nao-cho-em-ban-chu-ky-75/ |
-| vinyl | VN-KHÁNH -DA VÀ-LP-SIGN-KHÁ1 | Khánh Ly | Da Vàng 1 (bản chữ ký) | LP | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-da-vang-1-ban-chu-ky-76/ |
-| vinyl | VN-KHÁNH -DA VÀ-LP-SIGN-KHÁ2 | Khánh Ly | Da Vàng 2 (bản chữ ký) | LP | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-da-vang-2-ban-chu-ky-77/ |
-| vinyl | VN-KHÁNH -BIỂN -LP-SIGN-KHÁ | Khánh Ly | Biển Nhớ (bản chữ ký) | LP | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-bien-nho-ban-chu-ky-78/ |
-| vinyl | VN-NHIỀU -HANOI-LP-NEW-GER | Nhiều ca sĩ | HANOI MASTERS | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-hanoi-masters-79/ |
-| vinyl | VN-KHÁNH -KHÁNH-LP-MINT-JAP | Khánh Ly | Khánh Ly hát Trịnh Công Sơn tiếng Nhật | LP | 5,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-khanh-ly-hat-trinh-cong-son-tieng-nhat-80/ |
-| vinyl | VN-ĐẶNG T-PIANO-LP-MINT-JAP | Đặng Thái Sơn | Piano | LP | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/dang-thai-son-piano-81/ |
-| vinyl | VN-TIẾNG -DÂN C-LP-MINT-JAP | Tiếng Hát Việt Nam | dân ca | LP | 2,200,000 | Liên hệ | https://huesoundexpress.github.io/p/tieng-hat-viet-nam-dan-ca-82/ |
-| vinyl | VN-NHẠC C-GS TR-LP-MINT-JAP | Nhạc cụ dân tộc | GS Trần Văn Khê | LP | 2,300,000 | Liên hệ | https://huesoundexpress.github.io/p/nhac-cu-dan-toc-gs-tran-van-khe-83/ |
-| vinyl | VN-NHIỀU -CĂN N-LP-NEW-BOL | Nhiều ca sĩ | Căn nhà ngoại ô | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-can-nha-ngoai-o-84/ |
-| vinyl | VN-NHIỀU -MÙA T-LP-NEW-BOL | Nhiều ca sĩ | Mùa thu trong mưa | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-thu-trong-mua-85/ |
-| vinyl | VN-NHIỀU -EM ĐÃ-LP-NEW-BOL | Nhiều ca sĩ | Em đã quyên một dòng sông | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-em-da-quyen-mot-dong-song-86/ |
-| vinyl | VN-THANH -THANH-LP-NEW-BOL1 | Thanh Tuyền | Thanh tuyền 1 | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/thanh-tuyen-thanh-tuyen-1-87/ |
-| vinyl | VN-THANH -THANH-LP-NEW-BOL2 | Thanh Tuyền | Thanh tuyền 2 | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/thanh-tuyen-thanh-tuyen-2-88/ |
-| vinyl | VN-CHẾ LI-NGÀY -LP-NEW-BOLCÒN EM | Chế Linh | Ngày còn em bên tôi | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/che-linh-ngay-con-em-ben-toi-89/ |
-| vinyl | VN-CHẾ LI-NGÀY -LP-NEW-BOLĐÓ | Chế Linh | Ngày đó xa rồi | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/che-linh-ngay-do-xa-roi-90/ |
-| vinyl | VN-CHẾ LI-NÓ-LP-NEW-BOL | Chế Linh | Nó | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/che-linh-no-91/ |
-| vinyl | VN-CHẾ LI-GIỌT -LP-NEW-BOL | Chế Linh | Giọt lệ sầu | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/che-linh-giot-le-sau-92/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT1 | Nhiều ca sĩ | Bolero 1 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-1-93/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT2 | Nhiều ca sĩ | Bolero 2 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-2-94/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT3 | Nhiều ca sĩ | Bolero 3 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-3-95/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT4 | Nhiều ca sĩ | Bolero 4 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-4-96/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT5 | Nhiều ca sĩ | Bolero 5 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-5-97/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT6 | Nhiều ca sĩ | Bolero 6 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-6-98/ |
-| vinyl | VN-NHIỀU -NHẠC -LP-NEW-TMT1 | Nhiều ca sĩ | Nhạc Xưa | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-nhac-xua-99/ |
-| vinyl | VN-NHIỀU -NHẠC -LP-NEW-TMT2 | Nhiều ca sĩ | Nhạc Xưa 2 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-nhac-xua-2-100/ |
-| vinyl | VN-NHIỀU -LY RƯ-LP-NEW-TMT | Nhiều ca sĩ | Ly rượu mừng | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-ly-ruou-mung-101/ |
-| vinyl | VN-NHIỀU -TÌNH -LP-NEW-TMTCA | Nhiều ca sĩ | Tình ca | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-tinh-ca-102/ |
-| vinyl | VN-NHIỀU -NHỮNG-LP-NEW-TMT | Nhiều ca sĩ | Những giọng ca vàng | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-nhung-giong-ca-vang-103/ |
-| vinyl | VN-NHIỀU -MÙA S-LP-NEW-TMT | Nhiều ca sĩ | Mùa sao sáng | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-sao-sang-104/ |
-| vinyl | VN-THANH -CHIỀU-LP-NEW-TMT | Thanh Tuyền | Chiều mưa biên giới | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/thanh-tuyen-chieu-mua-bien-gioi-105/ |
-| vinyl | VN-KHÁNH -DIỄM -LP-NEW-TMT | Khánh Ly | Diễm xưa | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/khanh-ly-diem-xua-106/ |
-| vinyl | VN-NHIỀU -THUYỀ-LP-NEW-TMT | Nhiều ca sĩ | Thuyền và biển | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-thuyen-va-bien-107/ |
-| vinyl | VN-NHIỀU -TÌNH -LP-NEW-TMTKHÚC | Nhiều ca sĩ | Tình khúc Trúc Phương | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-tinh-khuc-truc-phuong-108/ |
-| vinyl | VN-NHIỀU -SONG -LP-NEW-TMT | Nhiều ca sĩ | Song ca tuyệt phẩm | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-song-ca-tuyet-pham-109/ |
-| vinyl | VN-NHIỀU -MÙA T-LP-NEW-TMT | Nhiều ca sĩ | Mùa thu trong mưa | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-thu-trong-mua-110/ |
-| vinyl | VN-DUY KH-ĐẬP V-LP-NEW-TMT | Duy Khánh | Đập vỡ cây đàn | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/duy-khanh-dap-vo-cay-dan-111/ |
-| vinyl | VN-LỆ THU-MẮT B-LP-NEW-TMT | Lệ Thu | Mắt Biếc | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/le-thu-mat-biec-112/ |
-| vinyl | VN-BẰNG K-MẮT B-LP-NEW-TMT | Bằng Kiều | Mắt Biếc | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/bang-kieu-mat-biec-113/ |
-| vinyl | VN-TUẤN N-TCS-LP-NEW-TMT | Tuấn Ngọc | TCS | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/tuan-ngoc-tcs-114/ |
-| vinyl | VN-TUẤN V-BƯỚM -LP-NEW-TMT | Tuấn Vũ | Bướm trắng | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/tuan-vu-buom-trang-115/ |
-| vinyl | VN-TUẤN V-THE B-LP-NEW-TMT | Tuấn Vũ | The Best of | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/tuan-vu-the-best-of-116/ |
-| vinyl | VN-HOÀNG -THE B-LP-NEW-TMT | Hoàng Oanh | The Best of | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/hoang-oanh-the-best-of-117/ |
-| vinyl | VN-BẢO YẾ-THE B-LP-NEW-TMT | Bảo Yến | The Best of | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/bao-yen-the-best-of-118/ |
-| vinyl | VN-THANH -THE B-LP-NEW-TMT | Thanh Thuý | The Best of | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/thanh-thuy-the-best-of-119/ |
-| vinyl | VN-VŨ KHA-THE B-LP-NEW-TMT | Vũ Khanh | The Best of | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/vu-khanh-the-best-of-120/ |
-| vinyl | VN-NGỌC L-THE B-LP-NEW-TMT | Ngọc Lan | The Best of | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/ngoc-lan-the-best-of-121/ |
-| vinyl | VN-HƯƠNG -NHƯ Đ-LP-NEW-TMT | Hương Lan | Như đã dấu yêu | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/huong-lan-nhu-da-dau-yeu-122/ |
-| vinyl | VN-QUỐC B-BÌNH -LP-NEW-THỜ | Quốc Bảo | Bình Yên | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/quoc-bao-binh-yen-123/ |
-| vinyl | VN-QUỐC B-MY GU-LP-NEW-THỜ | Quốc Bảo | my guitar my friends 2 | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/quoc-bao-my-guitar-my-friends-2-124/ |
-| vinyl | VN-THANH -NƠI G-LP-NEW-THỜ | Thanh Lam | Nơi Gặp Gỡ Tình Yêu (Pink) | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/thanh-lam-noi-gap-go-tinh-yeu-pink-125/ |
-| vinyl | VN-BỨC TƯ-CON Đ-LP-NEW-THỜ | Bức Tường | Con Đường Không Tên | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/buc-tuong-con-duong-khong-ten-126/ |
-| vinyl | VN-LÂN NH-NHÃ-LP-NEW-THỜ | Lân Nhã | NHÃ | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/lan-nha-nha-127/ |
-| vinyl | VN-LÊ CÁT-TUỔI -LP-NEW-THỜ | Lê Cát Trọng Lý | Tuổi 25 (Light Blue Colored) | LP | 1,150,000 | New Seal | https://huesoundexpress.github.io/p/le-cat-trong-ly-tuoi-25-light-blue-colored-128/ |
-| vinyl | VN-HOÀNG -LINK -LP-NEW-THỜ | Hoàng Thùy Linh | LINK (A Side B Side) | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/hoang-thuy-linh-link-a-side-b-side-129/ |
-| vinyl | VN-LÂN NH-NHIÊN-LP-NEW-THỜ | Lân Nhã | NHIÊN | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/lan-nha-nhien-130/ |
-| vinyl | VN-HỨA KI-COLOU-LP-NEW-THỜ | Hứa Kim Tuyền | COLOURS | LP | 1,150,000 | New Seal | https://huesoundexpress.github.io/p/hua-kim-tuyen-colours-131/ |
-| vinyl | VN-HÀ TRẦ-NHỮNG-LP-NEW-THỜ | Hà Trần | Những Con Sông Ngón Tay | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/ha-tran-nhung-con-song-ngon-tay-132/ |
-| vinyl | VN-TÙNG D-HUMAN-LP-NEW-THỜ | Tùng Dương | HUMAN | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/tung-duong-human-133/ |
-| vinyl | VN-TRỊNH -B369-LP-NEW-THỜ | Trịnh Thăng Bình | B369 | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/trinh-thang-binh-b369-134/ |
-| vinyl | VN-HỒ TIẾ-TỈNH -LP-NEW-THỜ | Hồ Tiến Đạt, Trọng Bắc | Tỉnh Cơn Mê Mãi | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/ho-tien-dat-trong-bac-tinh-con-me-mai-135/ |
-| vinyl | VN-HÀ TRẦ-ĐỂ EM-LP-NEW-THỜ | Hà Trần | Để Em Mơ | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/ha-tran-de-em-mo-136/ |
-| vinyl | VN-ĐINH H-BLACK-LP-NEW-THỜ | Đinh Hương | Black Magic Woman | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/dinh-huong-black-magic-woman-137/ |
-| vinyl | VN-SOOBIN-BẬT N-LP-NEW-THỜ | SOOBIN | BẬT NÓ LÊN | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/soobin-bat-no-len-138/ |
-| vinyl | VN-TÙNG D-THE V-LP-NEW-THỜ | Tùng Dương | The Voice "Timeless" | LP | 1,550,000 | New Seal | https://huesoundexpress.github.io/p/tung-duong-the-voice-timeless-139/ |
-| vinyl | VN-VĂN MA-MINH -LP-NEW-THỜ | Văn Mai Hương | Minh Tinh (Gold Colored) | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/van-mai-huong-minh-tinh-gold-colored-140/ |
-| vinyl | VN-AMEE-DREAM-LP-NEW-THỜ | AMEE | dreAMEE (Baby Pink) | LP | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/amee-dreamee-baby-pink-141/ |
-| vinyl | VN-ĐỨC TU-REQUI-LP-NEW-THỜ | Đức Tuấn - Phạm Duy | Requiem | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/duc-tuan-pham-duy-requiem-142/ |
-| vinyl | NN-2 CELL-SCORE-2XLP-BLACK-MUS | 2 Cellos | Score | 2xLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/2-cellos-score-143/ |
-| vinyl | NN-ABBA-GOLD-2XLP-BLACK-UNI | Abba | Gold | 2xLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/abba-gold-144/ |
-| vinyl | NN-ABBA-SUPER-LP-BLACK-UNI | Abba | Super Trouper | LP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/abba-super-trouper-145/ |
-| vinyl | NN-ADELE-30-2XLP-BLACK-COL | Adele | 30 | 2xLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/adele-30-146/ |
-| vinyl | NN-ANDREA-SI-2XLP-BLACK-UNI | Andrea Bocelli | Si | 2xLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/andrea-bocelli-si-147/ |
-| vinyl | NN-ANDREA-AMORE-2XLP-BLACK-UNI | Andrea Bocelli | Amore | 2xLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/andrea-bocelli-amore-148/ |
-| vinyl | NN-ANDREA-BELIE-2XLP-BLACK-UNI | Andrea Bocelli | Believe | 2xLP | 1,450,000 | New Seal | https://huesoundexpress.github.io/p/andrea-bocelli-believe-149/ |
-| vinyl | NN-ANDREA-DUETS-LP-BLACK-UNI | Andrea Bocelli | Duets | LP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/andrea-bocelli-duets-150/ |
-| vinyl | NN-BACKST-MILLE-2XLP-BLACK-JIV | Backstreet Boys | Millennium 2.0 | 2xLP | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/backstreet-boys-millennium-2-0-151/ |
-| vinyl | NN-B.B. K-THE K-LP-BLACK-WAX | B.B. King | The king of Blue | LP | 2,600,000 | New Seal | https://huesoundexpress.github.io/p/b-b-king-the-king-of-blue-152/ |
-| vinyl | NN-BLACK -HEAVE-2XLP-BLACK-UNI | Black Sabbath | Heaven And Hell | 2xLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/black-sabbath-heaven-and-hell-153/ |
-| vinyl | NN-BONEY -NIGHT-LP-BLACK-MCI | Boney M. | Nightflight To Venus | LP | 1,050,000 | New Seal | https://huesoundexpress.github.io/p/boney-m-nightflight-to-venus-154/ |
-| vinyl | NN-BONEY -CHRIS-LP-BLACK-SON | Boney M. | Christmas Album (1981) | LP | 1,050,000 | New Seal | https://huesoundexpress.github.io/p/boney-m-christmas-album-1981-155/ |
-| vinyl | NN-BONEY -DADDY-12IN-COLOURED VINYL-SON | Boney M. | Daddy Cool | 12in | 1,300,000 | New Seal | https://huesoundexpress.github.io/p/boney-m-daddy-cool-156/ |
-| vinyl | NN-BONEY -MAGIC-LP-COLOURED VINYL-SON | Boney M. | Magic Of Boney M. | LP | 1,500,000 | New Seal | https://huesoundexpress.github.io/p/boney-m-magic-of-boney-m-157/ |
-| vinyl | NN-BONEY -RIVER-12IN-COLOURED VINYL-SON | Boney M. | Rivers Of Babylon | 12in | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/boney-m-rivers-of-babylon-158/ |
-| vinyl | NN-BONEY -BONEY-12IN-COLOURED VINYL-SON | Boney M. | BONEY M. & FRIENDS... | 12in | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/boney-m-boney-m-friends-159/ |
-| vinyl | NN-BONEY -TAKE -12IN-COLOURED VINYL-SON | Boney M. | TAKE THE HEAT OFF ME (... | 12in | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/boney-m-take-the-heat-off-me-160/ |
-| vinyl | NN-COHEN,-TEN N-LP-BLACK-COL | Cohen, Leonard | Ten New Songs | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/cohen-leonard-ten-new-songs-161/ |
-| vinyl | NN-COHEN,-GREAT-LP-BLACK-COL | Cohen, Leonard | Greatest Hits | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/cohen-leonard-greatest-hits-162/ |
-| vinyl | NN-DAVE B-TIME -LP-COLOURED VINYL-WAX | Dave Brubeck Quartet | Time Out | LP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-163/ |
-| vinyl | NN-DAVE B-TIME -LP-BLACK-COL | Dave Brubeck Quartet | Time Out | LP | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-164/ |
-| vinyl | NN-DAVE B-DAVE -LP-BLACK-VIN | Dave Brubeck Quartet | Dave Brubeck Quartet | LP | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/dave-brubeck-quartet-dave-brubeck-quartet-165/ |
-| vinyl | NN-DAVE B-TIME -LP-BLACK-NUM | Dave Brubeck Quartet | Time Out | LP | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-166/ |
-| vinyl | NN-DEEP P-GREAT-4XLP-BLACK-MUS | Deep Purple | Greatest Hits | 4xLP | 3,200,000 | New Seal | https://huesoundexpress.github.io/p/deep-purple-greatest-hits-167/ |
-| vinyl | NN-DION, -FALLI-LP-BLACK-COL | Dion, Celine | Falling Into You | LP | 1,150,000 | New Seal | https://huesoundexpress.github.io/p/dion-celine-falling-into-you-168/ |
-| vinyl | NN-DION, -MY LO-2XLP-BLACK-COL | Dion, Celine | My Love Essential Coll... | 2xLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/dion-celine-my-love-essential-coll-169/ |
-| vinyl | NN-DION, -I AM:-LP-BLACK-SON | Dion, Celine | I Am: Celine Dion Sony Music Canada | LP | 1,900,000 | New Seal | https://huesoundexpress.github.io/p/dion-celine-i-am-celine-dion-sony-music-canada-170/ |
-| vinyl | NN-DION, -LET'S-2XLP-BLACK-550 | Dion, Celine | Let's Talk About Love | 2xLP | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/dion-celine-let-s-talk-about-love-171/ |
-| vinyl | NN-EAGLES-HOTEL-LP-BLACK-WAR | Eagles | Hotel California | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/eagles-hotel-california-172/ |
-| vinyl | NN-EAGLES-HELL -2XLP-BLACK-GEF | Eagles | Hell Freezes Over | 2xLP | 1,380,000 | New Seal | https://huesoundexpress.github.io/p/eagles-hell-freezes-over-173/ |
-| vinyl | NN-FITZGE-ELLA -LP-BLACK-WAX | Fitzgerald, Ella | Ella & Louis Again | LP | 1,050,000 | New Seal | https://huesoundexpress.github.io/p/fitzgerald-ella-ella-louis-again-174/ |
-| vinyl | NN-FITZGE-ELLA -LP-BLACK-20T | Fitzgerald, Ella & Lou... | Ella & Louis Again | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/fitzgerald-ella-lou-ella-louis-again-175/ |
-| vinyl | NN-FITZGE-ELLA -LP-BLACK-NUM | Fitzgerald, Ella & Lou... | Ella & Louis Again | LP | 1,050,000 | New Seal | https://huesoundexpress.github.io/p/fitzgerald-ella-lou-ella-louis-again-176/ |
-| vinyl | NN-FORD, -VERY -LP-BLACK-NOT | Ford, Tennessee Ernie | Very Best Of | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/ford-tennessee-ernie-very-best-of-177/ |
-| vinyl | NN-JACKSO-BAD-LP -BLACK-EPI | Jackson, Michael | Bad | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/jackson-michael-bad-178/ |
-| vinyl | NN-JACKSO-THRIL-LP-BLACK-EPI | Jackson, Michael | Thriller | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/jackson-michael-thriller-179/ |
-| vinyl | NN-JACKSO-BAD-LP-PICTURE-EPI | Jackson, Michael | Bad | LP | 1,550,000 | Liên hệ | https://huesoundexpress.github.io/p/jackson-michael-bad-180/ |
-| vinyl | NN-JONES,-COME -LP-BLACK-UNI | Jones, Norah | Come Away With Me | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/jones-norah-come-away-with-me-181/ |
-| vinyl | NN-JONES,-FEELS-LP-BLACK-UNI | Jones, Norah | Feels like home | LP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/jones-norah-feels-like-home-182/ |
-| vinyl | NN-JONES,-VISIO-LP-BLACK-UNI | Jones, Norah | Visions | LP | 1,100,000 | New Seal | https://huesoundexpress.github.io/p/jones-norah-visions-183/ |
-| vinyl | NN-LADY G-A STA-2XLP-BLACK-SOU | Lady Gaga, Bradley Cooper | A Star Is Born | 2XLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/lady-gaga-bradley-cooper-a-star-is-born-184/ |
-| vinyl | NN-LOFGRE-MOUNT-LP-BLACK-MVD | Lofgren, Nils | Mountains Mvd | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/lofgren-nils-mountains-mvd-185/ |
-| vinyl | NN-MODERN-BACK -LP-BLACK-SON | Modern Talking | Back For Gold | LP | 1,100,000 | New Seal | https://huesoundexpress.github.io/p/modern-talking-back-for-gold-186/ |
-| vinyl | NN-MODERN-FIRST-LP-BLACK-SON | Modern Talking | First Album | LP | 1,600,000 | New Seal | https://huesoundexpress.github.io/p/modern-talking-first-album-187/ |
-| vinyl | NN-MODERN-BACK -2XLP-BLACK-SON | Modern Talking | Back For Good | 2xLP | 1,750,000 | New Seal | https://huesoundexpress.github.io/p/modern-talking-back-for-good-188/ |
-| vinyl | NN-MUDDY -FOLK -LP-BLACK- | Muddy Water | Folk Singer | LP | 1,100,000 | New Seal | https://huesoundexpress.github.io/p/muddy-water-folk-singer-189/ |
-| vinyl | NN-MUTTER-SOPHI-LP-BLACK-WAN | Mutter, Anne | Sophie & ... | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/mutter-anne-sophie-190/ |
-| vinyl | NN-PINK F-WISH -LP-BLACK-PIN | Pink Floyd | Wish You Were Here | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/pink-floyd-wish-you-were-here-191/ |
-| vinyl | NN-PINK F-THE W-LP-BLACK-PIN | Pink Floyd | The wall | LP | 1,550,000 | New Seal | https://huesoundexpress.github.io/p/pink-floyd-the-wall-192/ |
-| vinyl | NN-PINK F-DARK -LP -BLACK-LEG | Pink Floyd | Dark Side Of The Moon | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/pink-floyd-dark-side-of-the-moon-193/ |
-| vinyl | NN-SCORPI-ACOUS-2XLP-BLACK-SON | Scorpions | Acoustica | 2xLP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/scorpions-acoustica-194/ |
-| vinyl | NN-SHEPP,-FOUR -LP -BLACK-UNI | Shepp, Archie | Four For Trane | LP | 1,350,000 | New Seal | https://huesoundexpress.github.io/p/shepp-archie-four-for-trane-195/ |
-| vinyl | NN-THE BE-ABBEY-LP-BLACK-UNI | The beatles | Abbey road | LP | 1,250,000 | New Seal | https://huesoundexpress.github.io/p/the-beatles-abbey-road-196/ |
-| vinyl | NN-UB40-RED, -LP-BLACK-UNI | Ub40 | Red, Red Wine: The Col… | LP | 1,200,000 | New Seal | https://huesoundexpress.github.io/p/ub40-red-red-wine-the-col-197/ |
-| vinyl | NN-WIENER-NEUJA-3XLP-BLACK-SON | Wiener Philharmoniker ... | Neujahrskonzert 2026 /… | 3xLP | 2,600,000 | New Seal | https://huesoundexpress.github.io/p/wiener-philharmoniker-neujahrskonzert-2026-198/ |
-| vinyl | NN-MUDDY -FOLK -LP-BLACK-CHE | Muddy Waters | Folk Singer | LP | 2,600,002 | New Seal | https://huesoundexpress.github.io/p/muddy-waters-folk-singer-199/ |
-| vinyl | NN-ALLAN -THE R-LP-BLACK-STO | Allan Taylor | The Road Well Travelled | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/allan-taylor-the-road-well-travelled-200/ |
-| vinyl | NN-ALLAN -IN TH-LP-BLACK-STO | Allan Taylor | In The Groove Vol.2 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/allan-taylor-in-the-groove-vol-2-201/ |
-| vinyl | NN-ALLAN -ALL I-LP-BLACK-STO | Allan Taylor | All Is One LP | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/allan-taylor-all-is-one-lp-202/ |
-| vinyl | NN-ANNE S-EAST -2XLP-BLACK-ALP | Anne Sophie Mutter | East Meets West | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-east-meets-west-203/ |
-| vinyl | NN-ANNE-S-MOZAR-LP-BLACK-DEU | Anne-Sophie Mutter, Berliner Philharmoniker, Herbe | Mozart: Violin Concertos Nos. 3 & 5 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-berliner-philharmoniker-herbe-mozart-violin-concertos-nos-3-5-204/ |
-| vinyl | NN-SHEPP,-THE F-LP -BLACK-VEN | Shepp, Archie | The Four Seasons | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-the-four-seasons-205/ |
-| vinyl | NN-B.B. K-TRUE ---BLU | B.B. King | True Blue | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/b-b-king-true-blue-206/ |
-| vinyl | NN-B.B. K-NOTHI--- | B.B. King | Nothin' But... Bad Luck | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/b-b-king-nothin-but-bad-luck-207/ |
-| vinyl | NN-BABA B-KING ---INA | Baba Blues | King of Blue | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/baba-blues-king-of-blue-208/ |
-| vinyl | NN-BACKST-GLIMM---RCA | Backstreet Boys | Glimmer Of Gold | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/backstreet-boys-glimmer-of-gold-209/ |
-| vinyl | NN-BEN WE-GENTL--- | Ben Webster | gentle ben | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ben-webster-gentle-ben-210/ |
-| vinyl | NN-BEN WE-MY RO--- | Ben Webster | My Romance | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ben-webster-my-romance-211/ |
-| vinyl | NN-BEN WE-OLD B--- | Ben Webster | old betsy | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ben-webster-old-betsy-212/ |
-| vinyl | NN-BEN WE-BEN W--- | Ben Webster | Ben Webster meets Oscar Peterson | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ben-webster-ben-webster-meets-oscar-peterson-213/ |
-| vinyl | NN-BLACK -FROM ---VER | Black Sabbath | From Birdland To Broadway | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/black-sabbath-from-birdland-to-broadway-214/ |
-| vinyl | NN-BROOKE-NIGHT---STO | Brooke Miller | Nightflight to Venus | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/brooke-miller-nightflight-to-venus-215/ |
-| vinyl | NN-BURMES-BURME--- | Burmester Selection vol.1 | Burmester Selection vol.1 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/burmester-selection-vol-1-burmester-selection-vol-1-216/ |
-| vinyl | NN-BUURME-BUURM--- | Buurmester reference Check | Buurmester reference Check | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/buurmester-reference-check-buurmester-reference-check-217/ |
-| vinyl | NN-CLARE -NO LO---CHA | Clare Teal | No Looking Back | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/clare-teal-no-looking-back-218/ |
-| vinyl | NN-CLAUDE-A TRI---VEN | Claude Williamson Trio | A Tribute to Ella Fitzgerald | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/claude-williamson-trio-a-tribute-to-ella-fitzgerald-219/ |
-| vinyl | NN-CREAM-AUTUM---REA | Cream | Autumn In New York | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/cream-autumn-in-new-york-220/ |
-| vinyl | NN-DAFT P-A LOV-2XLP, GATEFOLD-- | Daft Punk | A Love Supreme | 2xLP, Gatefold | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/daft-punk-a-love-supreme-221/ |
-| vinyl | NN-DAVID -MORE ---STO | David Roth | more pearls | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/david-roth-more-pearls-222/ |
-| vinyl | NN-DAVID -PEARL---STO | David Roth | Pearl Diver | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/david-roth-pearl-diver-223/ |
-| vinyl | NN-DEAR O-DEAR --- | Dear Old Stockholm | Dear Old Stockholm | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/dear-old-stockholm-dear-old-stockholm-224/ |
-| vinyl | NN-DIABOL-DIABO--- | Diabolus in Musica | Diabolus in Musica | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diabolus-in-musica-diabolus-in-musica-225/ |
-| vinyl | NN-DIANA - THE -2XLP--VER | Diana Krall | the look of love | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-the-look-of-love-226/ |
-| vinyl | NN-DIANA - LIVE--- | Diana Krall | live in Paris | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-live-in-paris-227/ |
-| vinyl | NN-DIANA -THE V-2XLP-OPAQUE DISC-VER | Diana Krall | The Very Best Of Diana Krall | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-the-very-best-of-diana-krall-228/ |
-| vinyl | NN-DIANA -QUIET-LP--VER | Diana Krall | Quiet Nights | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-quiet-nights-229/ |
-| vinyl | NN-DIANA -CHRIS-LP--UNI | Diana Krall | Christmas Songs | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-christmas-songs-230/ |
-| vinyl | NN-DIANA -WALLF-2XLP--VER | Diana Krall | Wallflower | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-wallflower-231/ |
-| vinyl | NN-DIANA -THE G-2XLP--VER | Diana Krall | The Girl In The Other Room | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-the-girl-in-the-other-room-232/ |
-| vinyl | NN-DIANA - THIS--- | DIANA KRALL | this dream of you | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-this-dream-of-you-233/ |
-| vinyl | NN-DIANA - TURN--- | Diana Krall | turn up the quiet | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-turn-up-the-quiet-234/ |
-| vinyl | NN-DIANA - WALL--- | Diana Krall | wallflower | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-wallflower-235/ |
-| vinyl | NN-DIANA -DIANA--- | Diana Krall when I look in your eyes | Diana Krall when I look in your eyes | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-when-i-look-in-your-eyes-diana-krall-when-i-look-in-your-eyes-236/ |
-| vinyl | NN-DOMINI-DISRA---ENS | Dominique Fils-Aimé | Disraeli Gears | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/dominique-fils-aime-disraeli-gears-237/ |
-| vinyl | NN-EDDIE - TEND--- | Eddie Higgins | Tenderly The Best Of | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-tenderly-the-best-of-238/ |
-| vinyl | NN-EDDIE -STAY ---VEN | Eddie Higgins Quartet feat. Scott Hamilton | Stay Tuned! | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-quartet-feat-scott-hamilton-stay-tuned-239/ |
-| vinyl | NN-EDDIE -MY FU---VEN | Eddie Higgins Quintet | My Funny Valentine | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-quintet-my-funny-valentine-240/ |
-| vinyl | NN-EDDIE -IT'S ---VEN | Eddie Higgins Trio | It's Magic | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-it-s-magic-241/ |
-| vinyl | NN-EDDIE -AGAIN---VEN | Eddie Higgins Trio | Again | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-again-242/ |
-| vinyl | NN-EDDIE - STAN--- | Eddie Higgins Trio | Standard Higgins | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-standard-higgins-243/ |
-| vinyl | NN-EDDIE -CHRIS---VEN | Eddie Higgins With Strings | Christmas Songs II | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-with-strings-christmas-songs-ii-244/ |
-| vinyl | NN-EDGAR - DANC--- | Edgar Knecht | dance on deep waters | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/edgar-knecht-dance-on-deep-waters-245/ |
-| vinyl | NN-EIN ST-EIN S--- | Ein Straussfest | Ein Straussfest | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ein-straussfest-ein-straussfest-246/ |
-| vinyl | NN-ELLA F-MOONL---VER | Ella Fitzgerald & Louis Armstrong | Moonlight Becomes You | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ella-fitzgerald-louis-armstrong-moonlight-becomes-you-247/ |
-| vinyl | NN-ERIC A-ELLA ---VEN | Eric Alexander Quartet | Ella and Louis Again | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eric-alexander-quartet-ella-and-louis-again-248/ |
-| vinyl | NN-ERIC A-GENTL---VEN | Eric Alexander Quartet | Gentle Ballads VI | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eric-alexander-quartet-gentle-ballads-vi-249/ |
-| vinyl | NN-ESPANA-ESPAN--- | Espana Ataulfo argenta | Espana Ataulfo argenta | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/espana-ataulfo-argenta-espana-ataulfo-argenta-250/ |
-| vinyl | NN-ETTA J-GENTL---NOT | Etta James | Gentle Ballads III | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/etta-james-gentle-ballads-iii-251/ |
-| vinyl | NN-EVA CA-THE V---BLI | Eva Cassidy (với London Symphony Orchestra) | The Very Best of Etta James | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eva-cassidy-voi-london-symphony-orchestra-the-very-best-of-etta-james-252/ |
-| vinyl | NN-EXOTIC-EXOTI--- | Exotic Dances from the Opera | Exotic Dances from the Opera | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/exotic-dances-from-the-opera-exotic-dances-from-the-opera-253/ |
-| vinyl | NN-FALLA -FALLA--- | FALLA The Three Cornered Hat | FALLA The Three Cornered Hat | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/falla-the-three-cornered-hat-falla-the-three-cornered-hat-254/ |
-| vinyl | NN-FASCIN-FASCI--- | FASCINATION WITH SOUND | FASCINATION WITH SOUND | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/fascination-with-sound-fascination-with-sound-255/ |
-| vinyl | NN-HAROLD- CARM--- | Harold Farberman | Carmen Suite | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/harold-farberman-carmen-suite-256/ |
-| vinyl | NN-HARRY -I CAN---RCA | Harry Belafonte | I Can Only Be Me | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/harry-belafonte-i-can-only-be-me-257/ |
-| vinyl | NN-HELEN -BELAF---EMA | Helen Merrill | Belafonte at Carnegie Hall (The Complete Concert) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/helen-merrill-belafonte-at-carnegie-hall-the-complete-concert-258/ |
-| vinyl | NN-ISAO S- BLOW--- | Isao Suzuki | blow up | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/isao-suzuki-blow-up-259/ |
-| vinyl | NN-JANIS -HELEN---MOR | Janis Ian | Helen Merrill | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/janis-ian-helen-merrill-260/ |
-| vinyl | NN-JANOS - DVOR--- | Janos Starker | Dvorak | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/janos-starker-dvorak-261/ |
-| vinyl | NN-JAZZ A-JAZZ --- | Jazz at the Pawnshop | Jazz at the Pawnshop | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/jazz-at-the-pawnshop-jazz-at-the-pawnshop-262/ |
-| vinyl | NN-JOHN C-THE D-LP 12"-- | John Coltrane | The Dark Side of the Moon | LP 12" | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/john-coltrane-the-dark-side-of-the-moon-263/ |
-| vinyl | NN-KAREN -BREAK---MUS | Karen Souza | Breaking Silence | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-breaking-silence-264/ |
-| vinyl | NN-KAREN -ESSEN---MUS | Karen Souza | Essentials | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-essentials-265/ |
-| vinyl | NN-KAREN -VELVE---MUS | Karen Souza | Velvet Vault | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-velvet-vault-266/ |
-| vinyl | NN-LADY G-ESSEN--- | Lady Gaga | Essentials II | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lady-gaga-essentials-ii-267/ |
-| vinyl | NN-LATIN - THE --- | Latin Cello | The London Cello Sound | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/latin-cello-the-london-cello-sound-268/ |
-| vinyl | NN-COHEN,-A STA-LP-BLACK-COL | Cohen, Leonard | A star is born | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/cohen-leonard-a-star-is-born-269/ |
-| vinyl | NN-LEX VA- THE --- | Lex Vandyke | the latin sound | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lex-vandyke-the-latin-sound-270/ |
-| vinyl | NN-MASSIM- HOW --- | Massimo Farao' | how my heart sings | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/massimo-farao-how-my-heart-sings-271/ |
-| vinyl | NN-MILES -MOSAI-LP 12"-- | Miles Davis | Mosaics, Volume 2 | LP 12" | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-mosaics-volume-2-272/ |
-| vinyl | NN-MILES -A TRI---COL | Miles Davis | A Tribute to Jack Johnson | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-a-tribute-to-jack-johnson-273/ |
-| vinyl | NN-MILES -ASCEN---FON | Miles Davis | Ascenseur pour l'échafaud | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-ascenseur-pour-l-echafaud-274/ |
-| vinyl | NN-NICKI -GREAT---VEN | Nicki Parrott | Great 70's | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nicki-parrott-great-70-s-275/ |
-| vinyl | NN-NILS L-NILS ---CAT | Nils Lofgren | Nils Lofgren Acoustic Live | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nils-lofgren-nils-lofgren-acoustic-live-276/ |
-| vinyl | NN-NILS L-MOUNT--- | Nils Lofgren Acoustic Live | Mountains | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nils-lofgren-acoustic-live-mountains-277/ |
-| vinyl | NN-PAGANI-PAGAN--- | Paganini : Sonatas for violin and guitar | Paganini : Sonatas for violin and guitar | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/paganini-sonatas-for-violin-and-guitar-paganini-sonatas-for-violin-and-guitar-278/ |
-| vinyl | NN-PAGANI-PAGAN--- | Paganini For Two | Paganini For Two | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/paganini-for-two-paganini-for-two-279/ |
-| vinyl | NN-PAGANI-PAGAN--- | paganini Violin | paganini Violin | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/paganini-violin-paganini-violin-280/ |
-| vinyl | NN-PATRIC-COME ---PRE | Patricia Barber | Come away with me | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-come-away-with-me-281/ |
-| vinyl | NN-PATRIC-COMPA---IMP | Patricia Barber | Companion | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-companion-282/ |
-| vinyl | NN-PATRIC-CLIQU---ART | Patricia Barber | Clique | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-clique-283/ |
-| vinyl | NN-PATRIC- CAFÉ--- | Patricia Barber | Café Blue | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-cafe-blue-284/ |
-| vinyl | NN-PATRIC- CAFE--- | Patricia Barber | Cafe Blue 1STEP | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-cafe-blue-1step-285/ |
-| vinyl | NN-PATRIC- COMP--- | Patricia Barber | Companion | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-companion-286/ |
-| vinyl | NN-PATRIC- MODE--- | Patricia Barber | Modern Cool | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-modern-cool-287/ |
-| vinyl | NN-PATRIC- NIGH--- | Patricia Barber | NightClub | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-nightclub-288/ |
-| vinyl | NN-PHIL W-HIGHE---VEN | Phil Woods With Strings | Higher | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/phil-woods-with-strings-higher-289/ |
-| vinyl | NN-PINK F-KIND -LP 12", GATEFOLD-- | Pink Floyd | Kind of Blue | LP 12", Gatefold | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-kind-of-blue-290/ |
-| vinyl | NN-PINK F-THE T---HAR | Pink Floyd | The Thrill Is Gone | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-thrill-is-gone-291/ |
-| vinyl | NN-PINK F-THE W---HAR | Pink Floyd | The Wall | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-wall-292/ |
-| vinyl | NN-PINK F-THE D---HAR | Pink Floyd | The Dark Side of the Moon | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-dark-side-of-the-moon-293/ |
-| vinyl | NN-RAY BR- SOUL--- | Ray Brown | soular energy | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ray-brown-soular-energy-294/ |
-| vinyl | NN-RAY BR-RAY B--- | Ray Brown & Laurindo Almeida | Ray Brown & Laurindo Almeida | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ray-brown-laurindo-almeida-ray-brown-laurindo-almeida-295/ |
-| vinyl | NN-RHYTHM-RHYTH--- | Rhythmize Heartstrings | Rhythmize Heartstrings | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/rhythmize-heartstrings-rhythmize-heartstrings-296/ |
-| vinyl | NN-RICHIE-WISH ---VEN | Richie Beirach Trio | Wish You Were Here | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/richie-beirach-trio-wish-you-were-here-297/ |
-| vinyl | NN-RITA P-WHAT ---VEN | Rita Payés | What Is This Thing Called Love? | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/rita-payes-what-is-this-thing-called-love-298/ |
-| vinyl | NN-ROSSIN- 6 SO--- | Rossini | 6 Sonate A Quattro | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/rossini-6-sonate-a-quattro-299/ |
-| vinyl | NN-RY COO-IN NE---WAT | Ry Cooder & V.M. Bhatt | In New York | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ry-cooder-v-m-bhatt-in-new-york-300/ |
-| vinyl | NN-SCORPI-ACOUS---EAS | Scorpions | Acoustica | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/scorpions-acoustica-301/ |
-| vinyl | NN-SERENA-PARSL--- | Serenata | Parsley, Sage, Rosemary and Thyme | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/serenata-parsley-sage-rosemary-and-thyme-302/ |
-| vinyl | NN-SIMON -PROTO---COL | Simon & Garfunkel | Protocol | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simon-garfunkel-protocol-303/ |
-| vinyl | NN-SIMON -TEMPT---INA | Simon Phillips (feat. Andy Timmons, v.v.) | Temptation | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simon-phillips-feat-andy-timmons-v-v-temptation-304/ |
-| vinyl | NN-STEVE -THE B---VEN | Steve Kuhn Trio | The Bridge (Vinyl 180 Gram) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/steve-kuhn-trio-the-bridge-vinyl-180-gram-305/ |
-| vinyl | NN-STING- VIVE---A&M | Sting | Viveza | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/sting-viveza-306/ |
-| vinyl | NN-SUSAN -TANNO---EVO | Susan Wong | Tannoy Sampler Vol 1,2 mỗi vol 5c | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/susan-wong-tannoy-sampler-vol-1-2-moi-vol-5c-307/ |
-| vinyl | NN-TANGO -KAMER--- | Tango Tango | Kamereon | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tango-tango-kamereon-308/ |
-| vinyl | NN-TANNOY-TANNO--- | Tannoy Sampler Vol 1,2 mỗi vol 5c | Tannoy Sampler Vol 1,2 mỗi vol 5c | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tannoy-sampler-vol-1-2-moi-vol-5c-tannoy-sampler-vol-1-2-moi-vol-5c-309/ |
-| vinyl | NN-TENNES-KAMER---CAP | Tennessee Ernie Ford | Kamereon | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tennessee-ernie-ford-kamereon-310/ |
-| vinyl | NN-THE AL-THE A--- | The All Star percussion Emsemble | The All Star percussion Emsemble | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-all-star-percussion-emsemble-the-all-star-percussion-emsemble-311/ |
-| vinyl | NN-THE BE-ABBEY---UNI | The Beatles | Abbey Road | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-beatles-abbey-road-312/ |
-| vinyl | NN-THE PE-THE P--- | THE PERCUSSION RECORD | THE PERCUSSION RECORD | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-percussion-record-the-percussion-record-313/ |
-| vinyl | NN-THE RO-LIVE ---ROL | The Rolling Stones | Live at Stockfisch Studio | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-rolling-stones-live-at-stockfisch-studio-314/ |
-| vinyl | NN-THE RO-TATTO---ROL | The Rolling Stones | Tattoo You | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-rolling-stones-tattoo-you-315/ |
-| vinyl | NN-THE RO-THE R--- | THE ROYAL BALLET Gala Performances | THE ROYAL BALLET Gala Performances | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-royal-ballet-gala-performances-the-royal-ballet-gala-performances-316/ |
-| vinyl | NN-THE TH-THE T--- | the three blind mice 45 box | The three blind mice 45 box | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-three-blind-mice-45-box-the-three-blind-mice-45-box-317/ |
-| vinyl | NN-TINA T-YELLO---PAR | Tina Turner | Yellow | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tina-turner-yellow-318/ |
-| vinyl | NN-TSUYOS-THE L--- | Tsuyoshi Yamamoto | The look of love | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-the-look-of-love-319/ |
-| vinyl | NN-TSUYOS-MIDNI--- | Tsuyoshi Yamamoto | Midnight Sugar | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-midnight-sugar-320/ |
-| vinyl | NN-TSUYOS-MIDNI---THR | Tsuyoshi Yamamoto | Midnight Sun (1976) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-midnight-sun-1976-321/ |
-| vinyl | NN-TSUYOS-GENTL--- | Tsuyoshi Yamamoto | Gentle blues | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-gentle-blues-322/ |
-| vinyl | NN-TSUYOS-MOON ---THR | Tsuyoshi Yamamoto | Moon Ray (1977) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-moon-ray-1977-323/ |
-| vinyl | NN-TSUYOS-WHAT --- | Tsuyoshi Yamamoto | What a wonderful world | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-what-a-wonderful-world-324/ |
-| vinyl | NN-TUTTI-TUTTI--- | Tutti | Tutti | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tutti-tutti-325/ |
-| vinyl | NN-VENUS -VENUS--- | VENUS best of best | VENUS best of best | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/venus-best-of-best-venus-best-of-best-326/ |
-| vinyl | NN-VLADIM-PRIVA---VEN | Vladimir Shafranov & Harry Allen | Private Dancer (30th Anniversary Picture Disc) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/vladimir-shafranov-harry-allen-private-dancer-30th-anniversary-picture-disc-327/ |
-| vinyl | NN-NHIỀU -VINYL---STO | Nhiều nghệ sĩ | Vinyl-Collection Vol.4 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-vinyl-collection-vol-4-328/ |
-| vinyl | NN-NHIỀU -THE B---STO | Nhiều nghệ sĩ | the bassface swing trio, feat. Bruno Müller - "bossa, ballads & blues" LP | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-the-bassface-swing-trio-feat-bruno-muller-bossa-ballads-blues-lp-329/ |
-| vinyl | NN-NHIỀU -VINYL---STO | Nhiều nghệ sĩ | Vinyl-Collection Vol.3 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-vinyl-collection-vol-3-330/ |
-| vinyl | NN-NHIỀU -VINYL---STO | Nhiều nghệ sĩ | Vinyl-Collection Vol.2 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-vinyl-collection-vol-2-331/ |
-| vinyl | NN-NHIỀU -THE B---STO | Nhiều nghệ sĩ | the bassface swing trio - Tribute to Cole Porter - LP | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-the-bassface-swing-trio-tribute-to-cole-porter-lp-332/ |
-| vinyl | NN-NHIỀU -VINYL---STO | Nhiều nghệ sĩ | Vinyl-Collection Vol.1 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-vinyl-collection-vol-1-333/ |
-| vinyl | NN-NHIỀU -REFER---INA | Nhiều nghệ sĩ | Reference Check - Vol.2 (50 Years Canton) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-reference-check-vol-2-50-years-canton-334/ |
-| vinyl | NN-NHIỀU -FAVOR---INA | Nhiều nghệ sĩ | Favorites by Transrotor | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-favorites-by-transrotor-335/ |
-| vinyl | NN-NHIỀU -45 YE---INA | Nhiều nghệ sĩ | 45 Years Excellence Edition | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-45-years-excellence-edition-336/ |
-| vinyl | NN-NHIỀU -GREAT---INA | Nhiều nghệ sĩ | Great Voices Vol. 2 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-great-voices-vol-2-337/ |
-| vinyl | NN-NHIỀU -TRIBU---THO | Nhiều nghệ sĩ | Tribute To A Legend (TD 124 DD) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-tribute-to-a-legend-td-124-dd-338/ |
-| vinyl | NN-NHIỀU -LE SO---INA | Nhiều nghệ sĩ | Le Son Vrai! | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-le-son-vrai-339/ |
-| vinyl | NN-NHIỀU -NEW R---INA | Nhiều nghệ sĩ | New Reference Collection | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-new-reference-collection-340/ |
-| vinyl | NN-NHIỀU -THE S---INA | Nhiều nghệ sĩ | The Sound of Primare | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-the-sound-of-primare-341/ |
-| vinyl | NN-NHIỀU -REFER---INA | Nhiều nghệ sĩ | Reference Check - Vol.2 (50 Years) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-reference-check-vol-2-50-years-342/ |
-| vinyl | NN-NHIỀU -TRIBU---INA | Nhiều nghệ sĩ | Tribute To A Legend (TD 124 DD) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-tribute-to-a-legend-td-124-dd-343/ |
-| vinyl | NN-NHIỀU -AUDIO---STS | Nhiều nghệ sĩ | Audiophile Choice Vol. 1 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-audiophile-choice-vol-1-344/ |
-| vinyl | NN-NHIỀU -STEP---INA | Nhiều nghệ sĩ | Step | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-step-345/ |
-| vinyl | NN-NHIỀU -WORLD---CHE | Nhiều nghệ sĩ | World's Greatest Audiophile Vocal | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-world-s-greatest-audiophile-vocal-346/ |
-| vinyl | NN-NHIỀU -ITALI---MON | Nhiều nghệ sĩ | Italian Songs and Dances | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-italian-songs-and-dances-347/ |
-| vinyl | NN-ADELE-19-LP-BLACK-XL | Adele | 19 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/adele-19-348/ |
-| vinyl | NN-AMERIC-GREAT-LP-BLACK-INA | America | Greatest Hits In Concert | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/america-greatest-hits-in-concert-349/ |
-| vinyl | NN-ANNE B-BE MY-LP-BLACK-CAM | Anne Bisson | Be My Lover | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-bisson-be-my-lover-350/ |
-| vinyl | NN-ANNE S-BRAHM-LP-BLACK-SON | Anne Sophie Mutter | Brahms: Double Concerto | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-brahms-double-concerto-351/ |
-| vinyl | NN-SHEPP,-TRUE -LP-BLACK-VEN | Shepp, Archie | True Blue | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-true-blue-352/ |
-| vinyl | NN-B.B. K-NOTHI-LP-BLACK-BLU | B.B. King | Nothin' But... Bad Luck | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/b-b-king-nothin-but-bad-luck-353/ |
-| vinyl | NN-B.B. K-KING -LP-BLACK-WAX | B.B. King | King of Blue | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/b-b-king-king-of-blue-354/ |
-| vinyl | NN-BABA B-GLIMM-LP-BLACK-INA | Baba Blues | Glimmer Of Gold | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/baba-blues-glimmer-of-gold-355/ |
-| vinyl | NN-BACKST-MILLE-LP-BLACK-RCA | Backstreet Boys | Millennium 2.0 (25th Anniversary Edition) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/backstreet-boys-millennium-2-0-25th-anniversary-edition-356/ |
-| vinyl | NN-BILL C-FROM -LP-BLACK-VEN | Bill Crow Quartet | From Birdland To Broadway | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/bill-crow-quartet-from-birdland-to-broadway-357/ |
-| vinyl | NN-BLACK -HEAVE-LP-BLACK-VER | Black Sabbath | Heaven and Hell | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/black-sabbath-heaven-and-hell-358/ |
-| vinyl | NN-BONEY -CHRIS-LP-BLACK-HAN | Boney M. | Christmas Album | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/boney-m-christmas-album-359/ |
-| vinyl | NN-BONEY -DADDY-LP-BLACK- | Boney M. | Daddy Cool | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/boney-m-daddy-cool-360/ |
-| vinyl | NN-BONEY -NIGHT-LP-BLACK- | Boney M. | Nightflight to Venus | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/boney-m-nightflight-to-venus-361/ |
-| vinyl | NN-BROOKE-FAMIL-LP-BLACK-STO | Brooke Miller | Familiar | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/brooke-miller-familiar-362/ |
-| vinyl | NN-CELINE-LET'S-LP-BLACK-SON | Celine Dion | Let's Talk About Love | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/celine-dion-let-s-talk-about-love-363/ |
-| vinyl | NN-CELINE-FALLI-LP-BLACK- | Celine Dion | Falling into you | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/celine-dion-falling-into-you-364/ |
-| vinyl | NN-CELINE-I AM-LP-BLACK- | Celine Dion | I am | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/celine-dion-i-am-365/ |
-| vinyl | NN-CELINE-MY LO-LP-BLACK-SON | Celine Dion | My Love: Essential Collection | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/celine-dion-my-love-essential-collection-366/ |
-| vinyl | NN-CHRIS -NO LO-LP-BLACK-STO | Chris Jones | No Looking Back | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/chris-jones-no-looking-back-367/ |
-| vinyl | NN-CLARE -A TRI-LP-BLACK-CHA | Clare Teal | A Tribute to Ella Fitzgerald | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/clare-teal-a-tribute-to-ella-fitzgerald-368/ |
-| vinyl | NN-CLAUDE-AUTUM-LP-BLACK-VEN | Claude Williamson Trio | Autumn In New York | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/claude-williamson-trio-autumn-in-new-york-369/ |
-| vinyl | NN-CREAM-DISRA-LP-BLACK-REA | Cream | Disraeli Gears | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/cream-disraeli-gears-370/ |
-| vinyl | NN-DOMINI-STAY -LP-BLACK-ENS | Dominique Fils-Aimé | Stay Tuned! | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/dominique-fils-aime-stay-tuned-371/ |
-| vinyl | NN-EDDIE -MY FU-LP-BLACK-VEN | Eddie Higgins Quartet feat. Scott Hamilton | My Funny Valentine | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-quartet-feat-scott-hamilton-my-funny-valentine-372/ |
-| vinyl | NN-EDDIE -IT'S -LP-BLACK-VEN | Eddie Higgins Quintet | It's Magic | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-quintet-it-s-magic-373/ |
-| vinyl | NN-EDDIE -AGAIN-LP-BLACK-VEN | Eddie Higgins Trio | Again | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-again-374/ |
-| vinyl | NN-EDDIE -CHRIS-LP-BLACK-VEN | Eddie Higgins Trio | Christmas Songs II | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-christmas-songs-ii-375/ |
-| vinyl | NN-EDDIE -MOONL-LP-BLACK-VEN | Eddie Higgins With Strings | Moonlight Becomes You | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-with-strings-moonlight-becomes-you-376/ |
-| vinyl | NN-ELLA F-ELLA -LP-BLACK-VER | Ella Fitzgerald & Louis Armstrong | Ella and Louis Again | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ella-fitzgerald-louis-armstrong-ella-and-louis-again-377/ |
-| vinyl | NN-ERIC A-GENTL-LP-BLACK-VEN | Eric Alexander Quartet | Gentle Ballads VI | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eric-alexander-quartet-gentle-ballads-vi-378/ |
-| vinyl | NN-ERIC A-GENTL-LP-BLACK-VEN | Eric Alexander Quartet | Gentle Ballads III | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eric-alexander-quartet-gentle-ballads-iii-379/ |
-| vinyl | NN-ETTA J-THE V-LP-BLACK-NOT | Etta James | The Very Best of Etta James | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/etta-james-the-very-best-of-etta-james-380/ |
-| vinyl | NN-EVA CA-I CAN-LP-BLACK-BLI | Eva Cassidy (với London Symphony Orchestra) | I Can Only Be Me | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eva-cassidy-voi-london-symphony-orchestra-i-can-only-be-me-381/ |
-| vinyl | NN-HARRY -BELAF-LP-BLACK-RCA | Harry Belafonte | Belafonte at Carnegie Hall (The Complete Concert) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/harry-belafonte-belafonte-at-carnegie-hall-the-complete-concert-382/ |
-| vinyl | NN-HELEN -HELEN-LP-BLACK-EMA | Helen Merrill | Helen Merrill | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/helen-merrill-helen-merrill-383/ |
-| vinyl | NN-JANIS -BREAK-LP-BLACK-MOR | Janis Ian | Breaking Silence | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/janis-ian-breaking-silence-384/ |
-| vinyl | NN-KAREN -ESSEN-LP-BLACK-MUS | Karen Souza | Essentials | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-essentials-385/ |
-| vinyl | NN-KAREN -VELVE-LP-BLACK-MUS | Karen Souza | Velvet Vault | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-velvet-vault-386/ |
-| vinyl | NN-KAREN -ESSEN-LP-BLACK-MUS | Karen Souza | Essentials II | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-essentials-ii-387/ |
-| vinyl | NN-LADY G-A STA-LP-BLACK- | Lady Gaga | A star is born | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lady-gaga-a-star-is-born-388/ |
-| vinyl | NN-MICHAE-THRIL-LP-BLACK-EPI | Michael Jackson | Thriller | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/michael-jackson-thriller-389/ |
-| vinyl | NN-MICHAE-BAD-LP-BLACK-EPI | Michael Jackson | Bad | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/michael-jackson-bad-390/ |
-| vinyl | NN-MICHAE-MOSAI-LP-BLACK-TES | Michael Rabin | Mosaics, Volume 2 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/michael-rabin-mosaics-volume-2-391/ |
-| vinyl | NN-MILES -A TRI-LP-BLACK-COL | Miles Davis | A Tribute to Jack Johnson | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-a-tribute-to-jack-johnson-392/ |
-| vinyl | NN-MILES -ASCEN-LP-BLACK-FON | Miles Davis | Ascenseur pour l'échafaud | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-ascenseur-pour-l-echafaud-393/ |
-| vinyl | NN-MODERN-THE 1-LP-BLACK-HAN | Modern Talking | The 1st Album | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/modern-talking-the-1st-album-394/ |
-| vinyl | NN-NHIỀU -REFER-LP-BLACK-INA | Nhiều nghệ sĩ | Reference Check - Vol.2 (50 Years Canton) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-reference-check-vol-2-50-years-canton-395/ |
-| vinyl | NN-NHIỀU -FAVOR-LP-BLACK-INA | Nhiều nghệ sĩ | Favorites by Transrotor | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-favorites-by-transrotor-396/ |
-| vinyl | NN-NHIỀU -45 YE-LP-BLACK-INA | Nhiều nghệ sĩ | 45 Years Excellence Edition | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-45-years-excellence-edition-397/ |
-| vinyl | NN-NHIỀU -GREAT-LP-BLACK-INA | Nhiều nghệ sĩ | Great Voices Vol. 2 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-great-voices-vol-2-398/ |
-| vinyl | NN-NHIỀU -TRIBU-LP-BLACK-THO | Nhiều nghệ sĩ | Tribute To A Legend (TD 124 DD) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-tribute-to-a-legend-td-124-dd-399/ |
-| vinyl | NN-NHIỀU -LE SO-LP-BLACK-INA | Nhiều nghệ sĩ | Le Son Vrai! | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-le-son-vrai-400/ |
-| vinyl | NN-NHIỀU -NEW R-LP-BLACK-INA | Nhiều nghệ sĩ | New Reference Collection | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-new-reference-collection-401/ |
-| vinyl | NN-NHIỀU -THE S-LP-BLACK-INA | Nhiều nghệ sĩ | The Sound of Primare | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-the-sound-of-primare-402/ |
-| vinyl | NN-NHIỀU -REFER-LP-BLACK-INA | Nhiều nghệ sĩ | Reference Check - Vol.2 (50 Years) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-reference-check-vol-2-50-years-403/ |
-| vinyl | NN-NHIỀU -TRIBU-LP-BLACK-INA | Nhiều nghệ sĩ | Tribute To A Legend (TD 124 DD) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-tribute-to-a-legend-td-124-dd-404/ |
-| vinyl | NN-NHIỀU -AUDIO-LP-BLACK-STS | Nhiều nghệ sĩ | Audiophile Choice Vol. 1 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-audiophile-choice-vol-1-405/ |
-| vinyl | NN-NHIỀU -STEP-LP-BLACK-INA | Nhiều nghệ sĩ | Step | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-step-406/ |
-| vinyl | NN-NHIỀU -WORLD-LP-BLACK-CHE | Nhiều nghệ sĩ | World's Greatest Audiophile Vocal | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-world-s-greatest-audiophile-vocal-407/ |
-| vinyl | NN-NHIỀU -ITALI-LP-BLACK-MON | Nhiều nghệ sĩ | Italian Songs and Dances | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-italian-songs-and-dances-408/ |
-| vinyl | NN-NICKI -GREAT-LP-BLACK-VEN | Nicki Parrott | Great 70's | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nicki-parrott-great-70-s-409/ |
-| vinyl | NN-NILS L-MOUNT-LP-BLACK-CAT | Nils Lofgren | Mountains | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nils-lofgren-mountains-410/ |
-| vinyl | NN-NORAH -VISIO-LP-BLACK-BLU | Norah Jones | Visions | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/norah-jones-visions-411/ |
-| vinyl | NN-NORAH -FEEL -LP-BLACK- | Norah Jones | Feel like home | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/norah-jones-feel-like-home-412/ |
-| vinyl | NN-NORAH -COME -LP-BLACK- | Norah Jones | Come away with me | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/norah-jones-come-away-with-me-413/ |
-| vinyl | NN-PATRIC-COMPA-LP-BLACK-PRE | Patricia Barber | Companion | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-companion-414/ |
-| vinyl | NN-PATRIC-CLIQU-LP-BLACK-IMP | Patricia Barber | Clique | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-clique-415/ |
-| vinyl | NN-PATRIC-HIGHE-LP-BLACK-ART | Patricia Barber | Higher | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-higher-416/ |
-| vinyl | NN-PHIL W-THE T-LP-BLACK-VEN | Phil Woods With Strings | The Thrill Is Gone | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/phil-woods-with-strings-the-thrill-is-gone-417/ |
-| vinyl | NN-PINK F-THE W-LP-BLACK-HAR | Pink Floyd | The Wall | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-wall-418/ |
-| vinyl | NN-PINK F-THE D-LP-BLACK-HAR | Pink Floyd | The Dark Side of the Moon | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-dark-side-of-the-moon-419/ |
-| vinyl | NN-PINK F-WISH -LP-BLACK-HAR | Pink Floyd | Wish You Were Here | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-wish-you-were-here-420/ |
-| vinyl | NN-RICHIE-WHAT -LP-BLACK-VEN | Richie Beirach Trio | What Is This Thing Called Love? | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/richie-beirach-trio-what-is-this-thing-called-love-421/ |
-| vinyl | NN-RITA P-IN NE-LP-BLACK-VEN | Rita Payés | In New York | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/rita-payes-in-new-york-422/ |
-| vinyl | NN-RY COO-A MEE-LP-BLACK-WAT | Ry Cooder & V.M. Bhatt | A Meeting by the River | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ry-cooder-v-m-bhatt-a-meeting-by-the-river-423/ |
-| vinyl | NN-SCORPI-ACOUS-LP-BLACK-EAS | Scorpions | Acoustica | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/scorpions-acoustica-424/ |
-| vinyl | NN-SIMON -PARSL-LP-BLACK-COL | Simon & Garfunkel | Parsley, Sage, Rosemary and Thyme | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simon-garfunkel-parsley-sage-rosemary-and-thyme-425/ |
-| vinyl | NN-SIMON -PROTO-LP-BLACK-INA | Simon Phillips (feat. Andy Timmons, v.v.) | Protocol | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simon-phillips-feat-andy-timmons-v-v-protocol-426/ |
-| vinyl | NN-STEVE -TEMPT-LP-BLACK-VEN | Steve Kuhn Trio | Temptation | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/steve-kuhn-trio-temptation-427/ |
-| vinyl | NN-STING-THE B-LP-BLACK-A&M | Sting | The Bridge (Vinyl 180 Gram) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/sting-the-bridge-vinyl-180-gram-428/ |
-| vinyl | NN-SUSAN -KAMER-LP-BLACK-EVO | Susan Wong | Kamereon | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/susan-wong-kamereon-429/ |
-| vinyl | NN-TENNES-THE V-LP-BLACK-CAP | Tennessee Ernie Ford | The Very Best of Tennessee Ernie Ford | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tennessee-ernie-ford-the-very-best-of-tennessee-ernie-ford-430/ |
-| vinyl | NN-THE BE-ABBEY-LP-BLACK-APP | The Beatles | Abbey Road | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-beatles-abbey-road-431/ |
-| vinyl | NN-THE DA-GREAT-LP-BLACK-COL | The Dave Brubeck Quartet | Greatest Hits | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-dave-brubeck-quartet-greatest-hits-432/ |
-| vinyl | NN-THE DA-TIME -LP-BLACK-COL | The Dave Brubeck Quartet | Time Out | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-dave-brubeck-quartet-time-out-433/ |
-| vinyl | NN-THE GR-THE G-LP-BLACK-STO | The Greater Good (Eugene Ruffolo, Dennis Kolen, Shane Alexander) | The Greater Good | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-greater-good-eugene-ruffolo-dennis-kolen-shane-alexander-the-greater-good-434/ |
-| vinyl | NN-THE PA-LIVE -LP-BLACK-STO | The Paperboys | Live at Stockfisch Studio | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-paperboys-live-at-stockfisch-studio-435/ |
-| vinyl | NN-THE RO-TATTO-LP-BLACK-ROL | The Rolling Stones | Tattoo You | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-rolling-stones-tattoo-you-436/ |
-| vinyl | NN-THE RO-YELLO-LP-BLACK-ROL | The Rolling Stones | Yellow | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-rolling-stones-yellow-437/ |
-| vinyl | NN-TINA T-PRIVA-LP-BLACK-PAR | Tina Turner | Private Dancer (30th Anniversary Picture Disc) | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tina-turner-private-dancer-30th-anniversary-picture-disc-438/ |
-| vinyl | NN-VLADIM-DEAR -LP-BLACK-VEN | Vladimir Shafranov & Harry Allen | Dear Old Stockholm | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/vladimir-shafranov-harry-allen-dear-old-stockholm-439/ |
-| vinyl | NN-ANDREA-IL MA-2XLP-REISSUE-UNI | Andrea Bocelli | Il Mare Calmo Della Sera | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-il-mare-calmo-della-sera-440/ |
-| vinyl | NN-ANDREA-MY CH-2XLP-BLACK-SUG | Andrea Bocelli | My Christmas | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-my-christmas-441/ |
-| vinyl | NN-ANDREA-MY CH-2XLP-COLOURED VINYL-UNI | Andrea Bocelli | My Christmas | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-my-christmas-442/ |
-| vinyl | NN-ANDREA-A FAM-LP-LIMITED EDITION-CAP | Andrea Bocelli | A Family Christmas | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-a-family-christmas-443/ |
-| vinyl | NN-ANDREA-A FAM-2XLP-BLACK-DEC | Andrea Bocelli, Matteo Bocelli, Virginia Bocelli | A Family Christmas | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-matteo-bocelli-virginia-bocelli-a-family-christmas-444/ |
-| vinyl | NN-ANDREA-SOGNO-2XLP-BLACK-UNI | Andrea Bocelli | Sogno | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-sogno-445/ |
-| vinyl | NN-ANDREA-ROMAN-2XLP-BLACK-UNI | Andrea Bocelli | Romanza | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-romanza-446/ |
-| vinyl | NN-ANNE S-LALO:-LP-BLACK-PLG | Anne Sophie Mutter | Lalo: Symphonie Espagnole | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-lalo-symphonie-espagnole-447/ |
-| vinyl | NN-ANNE S-MOZAR-LP-BLACK-WAR | Anne Sophie Mutter | Mozart: Sinfonia Concertante - Bach: Concerto For 2 Violins | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-mozart-sinfonia-concertante-bach-concerto-for-2-violins-448/ |
-| vinyl | NN-SHEPP,-MAMA -LP-BLACK-END | Shepp, Archie | Mama Too Tight | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-mama-too-tight-449/ |
-| vinyl | NN-SHEPP,-THE M-LP-BLACK-VER | Shepp, Archie | The Magic Of Ju-Ju | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-the-magic-of-ju-ju-450/ |
-| vinyl | NN-SHEPP,-THE H-LP-BLACK-STE | Shepp, Archie | The House I Live In | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-the-house-i-live-in-451/ |
-| vinyl | NN-SHEPP,-TRUE -LP-BLACK-CAN | Shepp, Archie | True Blue | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-true-blue-452/ |
-| vinyl | NN-SHEPP,- I DI-LP-COLOURED VINYL-MUS | Shepp, Archie | I Didn't Know About You | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-i-didn-t-know-about-you-453/ |
-| vinyl | NN-MILES -VOLUM---BLU | Miles Davis | Volume 1 | LP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-volume-1-454/ |
-| vinyl | NN-MUDDY -THE M-2XLP-BLACK-BMG | Muddy Waters | The Montreux Yea | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/muddy-waters-the-montreux-yea-455/ |
-| vinyl | NN-LANA D-LUST -2XLP-BLACK-POL | Lana Del Rey | Lust For Life | 2xLP | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lana-del-rey-lust-for-life-456/ |
-| cd | CD-MYTAM-TAM9-NEW | Mỹ Tâm | Tâm 9 | CD | 350,000 | New Seal | https://huesoundexpress.github.io/p/cd-my-tam-tam-9/ |
-| cd | CD-LEQUYEN-KHUC-TINH-XUA-1 | Lệ Quyên | Khúc Tình Xưa 1 | CD | 280,000 | New Seal | https://huesoundexpress.github.io/p/cd-le-quyen-khuc-tinh-xua-1/ |
-| cd | CD-NORAH-COME-AWAY-SACD | Norah Jones | Come Away With Me | SACD | 850,000 | New Seal | https://huesoundexpress.github.io/p/cd-norah-jones-come-away-with-me-sacd/ |
-| cd | CD-DIANA-THE-LOOK-XRCD | Diana Krall | The Look Of Love | XRCD24 | 1,150,000 | Liên hệ | https://huesoundexpress.github.io/p/cd-diana-krall-the-look-of-love-xrcd/ |
-| cd | CD-TRANMANHTUAN-HA-TRANG | Trần Mạnh Tuấn | Hạ Trắng (Saxophone) | CD | 320,000 | Sắp có hàng | https://huesoundexpress.github.io/p/cd-tran-manh-tuan-ha-trang/ |
-| turntable | TT-AT-LP60XBT-BK | Audio-Technica | Audio-Technica AT-LP60XBT (Đen) | MM | 6,900,000 | New Seal | https://huesoundexpress.github.io/p/audio-technica-at-lp60xbt-black/ |
-| turntable | TT-AT-LP120XUSB-SL | Audio-Technica | Audio-Technica AT-LP120XUSB | MM | 11,500,000 | New Seal | https://huesoundexpress.github.io/p/audio-technica-at-lp120xusb-silver/ |
-| turntable | TT-PROJECT-DEBUT-CARBON-EVO | Pro-Ject | Pro-Ject Debut Carbon EVO | MM | 17,900,000 | Liên hệ | https://huesoundexpress.github.io/p/pro-ject-debut-carbon-evo/ |
-| turntable | TT-TEAC-TN3B-SE | TEAC | TEAC TN-3B-SE (Vân gỗ Walnut) | MM | 13,500,000 | Sắp có hàng | https://huesoundexpress.github.io/p/teac-tn-3b-se-walnut/ |
-| accessory | ACC-AQ-CARBON | AudioQuest | Chổi sợi Carbon chống tĩnh điện AudioQuest | Mọi đĩa than 12-inch | 550,000 | New Seal | https://huesoundexpress.github.io/p/choi-soi-carbon-audioquest/ |
-| accessory | ACC-SLEEVE-50 | Hue Sound Vinyl Care | Bộ 50 túi lót chống tĩnh điện (Anti-Static Inner Sleeve) | Đĩa than 12-inch (LP) | 350,000 | New Seal | https://huesoundexpress.github.io/p/tui-lot-chong-tinh-dien-50-chiec/ |
-| accessory | ACC-AT607A | Audio-Technica | Dung dịch vệ sinh đầu kim Audio-Technica AT607a | Mọi đầu kim MM / MC | 380,000 | New Seal | https://huesoundexpress.github.io/p/dung-dich-ve-sinh-kim-at607a/ |
-| accessory | ACC-SCALE-01 | Hue Sound Vinyl Care | Cân điện tử đo lực tì kim chính xác 0.01g | Mọi mâm than có đối trọng | 420,000 | New Seal | https://huesoundexpress.github.io/p/can-luc-ti-kim-dien-tu/ |
-| accessory | ACC-ORT-2MRED | Ortofon | Đầu kim đĩa than Ortofon 2M Red (MM) | Mâm than gắn chuẩn 1/2-inch | 3,200,000 | Liên hệ | https://huesoundexpress.github.io/p/kim-dia-than-ortofon-2m-red/ |
-| care | CARE-ULTRASONIC-01 | Hue Sound Vinyl Care | Dịch vụ Rửa đĩa siêu âm chuẩn Audiophile (Kèm túi lót mới) | Đĩa than 7-inch / 12-inch | 50,000 | New Seal | https://huesoundexpress.github.io/p/dich-vu-rua-dia-sieu-am/ |
-| care | CARE-SETUP-01 | Hue Sound Vinyl Care | Dịch vụ Cân chỉnh mâm than & Lắp kim chuyên sâu | Mọi mâm than | 500,000 | Liên hệ | https://huesoundexpress.github.io/p/dich-vu-can-chinh-mam-than/ |
+| Category | SKU | Artist / Brand | Product / Album | Format / Spec | Condition | List Price (VND) | Status | URL |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| vinyl | VN-MỸ TÂM-TÂM 9-LP-NEW-VIẾ | Mỹ Tâm | Tâm 9 [R] | LP | New Seal | 1,750,000 | Còn hàng | https://huesoundexpress.github.io/p/my-tam-tam-9-r-1/ |
+| vinyl | VN-MỸ TÂM-MELOD-LP-NEW-VIẾ | Mỹ Tâm | Melodies | LP | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/my-tam-melodies-2/ |
+| vinyl | VN-LỆ QUY-XƯA 1-LP-NEW-VIẾ1 | Lệ Quyên | Xưa 1 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-xua-1-3/ |
+| vinyl | VN-LỆ QUY-LAM P-LP-NEW-VIẾ | Lệ Quyên | Lam Phương | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-lam-phuong-4/ |
+| vinyl | VN-NGUYỄN-PIANO-LP-NEW-VIẾ | Nguyễn Ánh 9 | Piano Nguyễn Ánh 9 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nguyen-anh-9-piano-nguyen-anh-9-5/ |
+| vinyl | VN-QUỲNH -CÔ ĐƠ-LP-NEW-VIẾ | Quỳnh Lan | Cô đơn Nguyễn Ánh 9 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-lan-co-don-nguyen-anh-9-6/ |
+| vinyl | VN-HỒNG N-BỐNG -LP-NEW-VIẾ | Hồng Nhung | Bống là ai | LP | New Seal | 3,250,000 | Còn hàng | https://huesoundexpress.github.io/p/hong-nhung-bong-la-ai-7/ |
+| vinyl | VN-HỒNG N-BỐNG -LP-SIGN-VIẾ | Hồng Nhung | Bống là ai (bản chữ ký) | LP | Liên hệ | 3,650,000 | Liên hệ | https://huesoundexpress.github.io/p/hong-nhung-bong-la-ai-ban-chu-ky-8/ |
+| vinyl | VN-MỸ LIN-TÓC N-LP-NEW-VIẾ | Mỹ Linh | Tóc ngắn | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/my-linh-toc-ngan-9/ |
+| vinyl | VN-QUANG -TÌNH -LP-NEW-VIẾ | Quang Dũng | Tình ca Phạm Duy | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-tinh-ca-pham-duy-10/ |
+| vinyl | VN-QUANG -NỖI N-LP-NEW-OTH | Quang Dũng | Nỗi niềm | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-noi-niem-11/ |
+| vinyl | VN-QUANG -THƯƠN-LP-NEW-OTH | Quang Dũng | Thương một người | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-thuong-mot-nguoi-12/ |
+| vinyl | VN-NHIỀU -LỐI C-LP-NEW-GIA | Nhiều ca sĩ | Lối cũ ta về [R] | LP | New Seal | 1,980,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-loi-cu-ta-ve-r-13/ |
+| vinyl | VN-NHIỀU -LỐI C-LP-SIGN-GIA | Nhiều ca sĩ | Lối cũ ta về [R] (bản chữ ký) | LP | Liên hệ | 2,280,000 | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-loi-cu-ta-ve-r-ban-chu-ky-14/ |
+| vinyl | VN-NHIỀU -NGUYỄ-LP-NEW-GIA | Nhiều ca sĩ | Nguyễn Ánh 9 [R] | LP | New Seal | 1,980,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nguyen-anh-9-r-15/ |
+| vinyl | VN-NHIỀU -MỘT T-LP-NEW-GIA | Nhiều ca sĩ | Một thời đã xa | LP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mot-thoi-da-xa-16/ |
+| vinyl | VN-NHIỀU -CHUYỆ-LP-NEW-GIA | Nhiều ca sĩ | Chuyện hẹn hò [R] | LP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-chuyen-hen-ho-r-17/ |
+| vinyl | VN-TRẦN M-MÙA T-LP-NEW-GIA | Trần Mạnh Tuấn | Mùa thu cho em | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/tran-manh-tuan-mua-thu-cho-em-18/ |
+| vinyl | VN-NHIỀU -MỘT C-LP-NEW-GIA | Nhiều ca sĩ | Một chiều thu | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mot-chieu-thu-19/ |
+| vinyl | VN-NHIỀU -NỖI Y-LP-NEW-GIA | Nhiều ca sĩ | Nỗi yêu bé dại | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-noi-yeu-be-dai-20/ |
+| vinyl | VN-NHIỀU -NHƯ C-LP-NEW-GIA | Nhiều ca sĩ | Như chưa bắt đầu | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhu-chua-bat-dau-21/ |
+| vinyl | VN-NHIỀU -CƠN M-LP-NEW-GIA | Nhiều ca sĩ | Cơn mưa phùn | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-con-mua-phun-22/ |
+| vinyl | VN-NHIỀU -CƠN M-LP-SIGN-GIA | Nhiều ca sĩ | Cơn mưa phùn (bản chữ ký) | LP | Liên hệ | 1,380,000 | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-con-mua-phun-ban-chu-ky-23/ |
+| vinyl | VN-THANH -TÌNH -LP-NEW-GIA | Thanh Hà | Tình anh còn xanh | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-ha-tinh-anh-con-xanh-24/ |
+| vinyl | VN-THANH -TÌNH -LP-SIGN-GIA | Thanh Hà | Tình anh còn xanh (bản chữ ký) | LP | Liên hệ | 1,200,000 | Liên hệ | https://huesoundexpress.github.io/p/thanh-ha-tinh-anh-con-xanh-ban-chu-ky-25/ |
+| vinyl | VN-NHIỀU -BẢO C-LP-NEW-GIA | Nhiều ca sĩ | Bảo Chấn - Nơi ấy bình yên | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bao-chan-noi-ay-binh-yen-26/ |
+| vinyl | VN-NHIỀU -BẢO C-LP-SIGN-GIA | Nhiều ca sĩ | Bảo Chấn - Nơi ấy bình yên (bản chữ ký) | LP | Liên hệ | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-bao-chan-noi-ay-binh-yen-ban-chu-ky-27/ |
+| vinyl | VN-HÀ ANH-TRUYỆ-LP-NEW-OTH | Hà Anh Tuấn | Truyện ngắn [R] | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-anh-tuan-truyen-ngan-r-28/ |
+| vinyl | VN-HÀ ANH-CUỐI -LP-NEW-OTH | Hà Anh Tuấn | Cuối ngày người đàn ông một mình | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-anh-tuan-cuoi-ngay-nguoi-dan-ong-mot-minh-29/ |
+| vinyl | VN-VŨ THẮ-QUÊ-LP-NEW-OTH | Vũ Thắng Lợi | Quê | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-que-30/ |
+| vinyl | VN-VŨ THẮ-TÌNH -LP-NEW-OTH | Vũ Thắng Lợi | Tình ca | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-tinh-ca-31/ |
+| vinyl | VN-VŨ THẮ-HÀ NỘ-LP-NEW-OTH | Vũ Thắng Lợi | Hà Nội riêng tôi | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-ha-noi-rieng-toi-32/ |
+| vinyl | VN-HƯƠNG -MỘT Đ-LP-NEW-OTH | Hương Giang | Một đời yêu anh | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/huong-giang-mot-doi-yeu-anh-33/ |
+| vinyl | VN-QUỲNH -EM ƠI-LP-NEW-BK | Quỳnh Anh | Em ơi mùa xuân đến rồi đó [R] | LP | New Seal | 1,980,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-anh-em-oi-mua-xuan-den-roi-do-r-34/ |
+| vinyl | VN-QUỲNH -EM ƠI-LP-SIGN-BK | Quỳnh Anh | Em ơi mùa xuân đến rồi đó [R] (bản chữ ký) | LP | Liên hệ | 1,980,000 | Liên hệ | https://huesoundexpress.github.io/p/quynh-anh-em-oi-mua-xuan-den-roi-do-r-ban-chu-ky-35/ |
+| vinyl | VN-QUỲNH -VÀNG -LP-SIGN-BK | Quỳnh Anh | Vàng [R] (bản chữ ký) | LP | Liên hệ | 1,350,000 | Liên hệ | https://huesoundexpress.github.io/p/quynh-anh-vang-r-ban-chu-ky-36/ |
+| vinyl | VN-QUỲNH -THANH-LP-SIGN-BK | Quỳnh Anh | Thanh Tùng [R] (bản chữ ký) | LP | Liên hệ | 1,350,000 | Liên hệ | https://huesoundexpress.github.io/p/quynh-anh-thanh-tung-r-ban-chu-ky-37/ |
+| vinyl | VN-QUỲNH -19XX-LP-NEW-BK | Quỳnh Anh | 19xx | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-anh-19xx-38/ |
+| vinyl | VN-QUỲNH -19XX -LP-SIGN-BK | Quỳnh Anh | 19xx (bản chữ ký) | LP | Liên hệ | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/quynh-anh-19xx-ban-chu-ky-39/ |
+| vinyl | VN-VIOLLA-QINIE-LP-SIGN-BK | Viollage | Qinie (bản chữ ký) | LP | Liên hệ | 1,200,000 | Liên hệ | https://huesoundexpress.github.io/p/viollage-qinie-ban-chu-ky-40/ |
+| vinyl | VN-HOÀI P-TRÊN -LP-NEW-BK | Hoài Phan | Trên nắng dưới cát | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/hoai-phan-tren-nang-duoi-cat-41/ |
+| vinyl | VN-NHƯ QU-VÙNG -LP-NEW-THÚ | Như Quỳnh | Vùng lá me bay | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-vung-la-me-bay-42/ |
+| vinyl | VN-NHƯ QU-DUYÊN-LP-NEW-THÚ | Như Quỳnh | Duyên phận | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-duyen-phan-43/ |
+| vinyl | VN-ĐAN NG-LẠI N-LP-NEW-THÚ | Đan Nguyên | Lại nhớ người yêu | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/dan-nguyen-lai-nho-nguoi-yeu-44/ |
+| vinyl | VN-NHƯ QU-CHUYỆ-LP-NEW-THÚ | Như Quỳnh | Chuyện hoa sim | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-chuyen-hoa-sim-45/ |
+| vinyl | VN-HOÀNG -MONG -LP-NEW-THÚ | Hoàng Oanh | Mong chờ | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-oanh-mong-cho-46/ |
+| vinyl | -NGỌC A-GIẾT -LP-NEW-THÚ | Ngọc Anh | Giết người trong mộng | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-anh-giet-nguoi-trong-mong-47/ |
+| vinyl | VN-KHÁNH -HÀ NỘ-LP-NEW-NĂM | Khánh Ly | Hà Nội nhớ | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-ha-noi-nho-48/ |
+| vinyl | VN-NHIỀU -30 NĂ-LP-NEW-NĂM | Nhiều ca sĩ | 30 năm tình ca Quốc Bảo | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-30-nam-tinh-ca-quoc-bao-49/ |
+| vinyl | VN-BẰNG K-MÙA T-LP-NEW-NĂM | Bằng Kiều | Mùa thu ru em | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/bang-kieu-mua-thu-ru-em-50/ |
+| vinyl | VN-ĐỒNG L-NÀY E-LP-NEW-NĂM | Đồng Lan | Này em có nhớ | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/dong-lan-nay-em-co-nho-51/ |
+| vinyl | VN-CẨM VÂ-VẾT L-LP-NEW-TUẤ | Cẩm Vân | Vết lăn trầm | LP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/cam-van-vet-lan-tram-52/ |
+| vinyl | VN-DƯƠNG -XIN M-LP-NEW-TUẤ | Dương Tấn Sơn | Xin mặt trời ngủ yên | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/duong-tan-son-xin-mat-troi-ngu-yen-53/ |
+| vinyl | VN-TUẤN H-NHƯ G-LP-NEW-TUẤ | Tuấn Hiệp | Như gió heo may | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-hiep-nhu-gio-heo-may-54/ |
+| vinyl | VN-PHẠM T-BE MY-LP-NEW-OTH | Phạm Thu Hà | Be my love | LP | New Seal | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/pham-thu-ha-be-my-love-55/ |
+| vinyl | VN-PHẠM T-BE MY-LP-SIGN-OTH | Phạm Thu Hà | Be my love (bản chữ ký) | LP | Liên hệ | 1,650,000 | Liên hệ | https://huesoundexpress.github.io/p/pham-thu-ha-be-my-love-ban-chu-ky-56/ |
+| vinyl | VN-PHẠM T-ĐƯỜNG-LP-NEW-OTH | Phạm Thu Hà | Đường em đi | LP | New Seal | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/pham-thu-ha-duong-em-di-57/ |
+| vinyl | VN-ĐÌNH B-THE S-LP-NEW-OTH | Đình Bảo | The Shadow | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/dinh-bao-the-shadow-58/ |
+| vinyl | VN-NGÔ HỒ-RẠNG -LP-NEW-OTH | Ngô Hồng Quang | Rạng Đông | LP | New Seal | 2,000,000 | Còn hàng | https://huesoundexpress.github.io/p/ngo-hong-quang-rang-dong-59/ |
+| vinyl | VN-MAI HO-NỐT T-LP-NEW-OTH | Mai Hoa | Nốt trầm | LP | New Seal | 2,500,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-hoa-not-tram-60/ |
+| vinyl | VN-NGỌC K-DẠO C-LP-NEW-OTHBLACK | Ngọc Khuê [black] | Dạo chơi | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-khue-black-dao-choi-61/ |
+| vinyl | VN-NGỌC K-DẠO C-LP-SIGN-OTHBLACK | Ngọc Khuê [black] | Dạo chơi (bản chữ ký) | LP | Liên hệ | 1,680,000 | Liên hệ | https://huesoundexpress.github.io/p/ngoc-khue-black-dao-choi-ban-chu-ky-62/ |
+| vinyl | VN-NGỌC K-DẠO C-LP-NEW-OTHPURPLE | Ngọc Khuê [purple] | Dạo chơi | LP | New Seal | 1,800,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-khue-purple-dao-choi-63/ |
+| vinyl | VN-NGỌC K-DẠO C-LP-SIGN-OTHPURPLE | Ngọc Khuê [purple] | Dạo chơi (bản chữ ký) | LP | Liên hệ | 1,980,000 | Liên hệ | https://huesoundexpress.github.io/p/ngoc-khue-purple-dao-choi-ban-chu-ky-64/ |
+| vinyl | VN-TỐ NGA-TRĂNG-LP-SIGN-OTH | Tố Nga | Trăng (bản chữ ký) | LP | Liên hệ | 1,200,000 | Liên hệ | https://huesoundexpress.github.io/p/to-nga-trang-ban-chu-ky-65/ |
+| vinyl | VN-TỐ NGA-CỎ (B-LP-SIGN-OTH | Tố Nga | Cỏ (bản chữ ký) | LP | Liên hệ | 1,200,000 | Liên hệ | https://huesoundexpress.github.io/p/to-nga-co-ban-chu-ky-66/ |
+| vinyl | VN-NSND N-LÁ TR-LP-NEW-OTH | NSND Nhật Thuận | Lá trên cành | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/nsnd-nhat-thuan-la-tren-canh-67/ |
+| vinyl | VN-XUÂN H-TÌNH -LP-SIGN-OTH | Xuân Hảo | Tình trầm (bản chữ ký) | LP | Liên hệ | 1,350,000 | Liên hệ | https://huesoundexpress.github.io/p/xuan-hao-tinh-tram-ban-chu-ky-68/ |
+| vinyl | VN-MAI AN-VẦNG -LP-NEW-OTH | Mai Anh Việt | Vầng tóc rối | LP | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-69/ |
+| vinyl | VN-MAI AN-VẦNG -LP-SIGN-OTH | Mai Anh Việt | Vầng tóc rối | LP | Liên hệ | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-70/ |
+| vinyl | VN-MAI AN-VẦNG -LP-NEW-OTHCD | Mai Anh Việt | Vầng tóc rối | LP | New Seal | 1,600,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-71/ |
+| vinyl | VN-MAI AN-VẦNG -LP-SIGN-OTHCD | Mai Anh Việt | Vầng tóc rối | LP | Liên hệ | 1,980,000 | Liên hệ | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-72/ |
+| vinyl | VN-LỆ QUY-VŨ TH-LP-NEW-OTH | Lệ Quyên | Vũ Thành An | LP | New Seal | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-vu-thanh-an-73/ |
+| vinyl | VN-KHÁNH -SONAT-LP-NEW-OTH | Khánh Ly | Sonatas | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-sonatas-74/ |
+| vinyl | VN-KHÁNH -CÒN T-LP-SIGN-KHÁ | Khánh Ly | Còn tuổi nào cho em (bản chữ ký) | LP | Liên hệ | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-con-tuoi-nao-cho-em-ban-chu-ky-75/ |
+| vinyl | VN-KHÁNH -DA VÀ-LP-SIGN-KHÁ1 | Khánh Ly | Da Vàng 1 (bản chữ ký) | LP | Liên hệ | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-da-vang-1-ban-chu-ky-76/ |
+| vinyl | VN-KHÁNH -DA VÀ-LP-SIGN-KHÁ2 | Khánh Ly | Da Vàng 2 (bản chữ ký) | LP | Liên hệ | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-da-vang-2-ban-chu-ky-77/ |
+| vinyl | VN-KHÁNH -BIỂN -LP-SIGN-KHÁ | Khánh Ly | Biển Nhớ (bản chữ ký) | LP | Liên hệ | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-bien-nho-ban-chu-ky-78/ |
+| vinyl | VN-NHIỀU -HANOI-LP-NEW-GER | Nhiều ca sĩ | HANOI MASTERS | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-hanoi-masters-79/ |
+| vinyl | VN-KHÁNH -KHÁNH-LP-MINT-JAP | Khánh Ly | Khánh Ly hát Trịnh Công Sơn tiếng Nhật | LP | NM | 5,500,000 | Liên hệ | https://huesoundexpress.github.io/p/khanh-ly-khanh-ly-hat-trinh-cong-son-tieng-nhat-80/ |
+| vinyl | VN-ĐẶNG T-PIANO-LP-MINT-JAP | Đặng Thái Sơn | Piano | LP | NM | 1,500,000 | Liên hệ | https://huesoundexpress.github.io/p/dang-thai-son-piano-81/ |
+| vinyl | VN-TIẾNG -DÂN C-LP-MINT-JAP | Tiếng Hát Việt Nam | dân ca | LP | NM | 2,200,000 | Liên hệ | https://huesoundexpress.github.io/p/tieng-hat-viet-nam-dan-ca-82/ |
+| vinyl | VN-NHẠC C-GS TR-LP-MINT-JAP | Nhạc cụ dân tộc | GS Trần Văn Khê | LP | NM | 2,300,000 | Liên hệ | https://huesoundexpress.github.io/p/nhac-cu-dan-toc-gs-tran-van-khe-83/ |
+| vinyl | VN-NHIỀU -CĂN N-LP-NEW-BOL | Nhiều ca sĩ | Căn nhà ngoại ô | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-can-nha-ngoai-o-84/ |
+| vinyl | VN-NHIỀU -MÙA T-LP-NEW-BOL | Nhiều ca sĩ | Mùa thu trong mưa | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-thu-trong-mua-85/ |
+| vinyl | VN-NHIỀU -EM ĐÃ-LP-NEW-BOL | Nhiều ca sĩ | Em đã quyên một dòng sông | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-em-da-quyen-mot-dong-song-86/ |
+| vinyl | VN-THANH -THANH-LP-NEW-BOL1 | Thanh Tuyền | Thanh tuyền 1 | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-thanh-tuyen-1-87/ |
+| vinyl | VN-THANH -THANH-LP-NEW-BOL2 | Thanh Tuyền | Thanh tuyền 2 | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-thanh-tuyen-2-88/ |
+| vinyl | VN-CHẾ LI-NGÀY -LP-NEW-BOLCÒN EM | Chế Linh | Ngày còn em bên tôi | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-ngay-con-em-ben-toi-89/ |
+| vinyl | VN-CHẾ LI-NGÀY -LP-NEW-BOLĐÓ | Chế Linh | Ngày đó xa rồi | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-ngay-do-xa-roi-90/ |
+| vinyl | VN-CHẾ LI-NÓ-LP-NEW-BOL | Chế Linh | Nó | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-no-91/ |
+| vinyl | VN-CHẾ LI-GIỌT -LP-NEW-BOL | Chế Linh | Giọt lệ sầu | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-giot-le-sau-92/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT1 | Nhiều ca sĩ | Bolero 1 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-1-93/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT2 | Nhiều ca sĩ | Bolero 2 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-2-94/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT3 | Nhiều ca sĩ | Bolero 3 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-3-95/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT4 | Nhiều ca sĩ | Bolero 4 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-4-96/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT5 | Nhiều ca sĩ | Bolero 5 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-5-97/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT6 | Nhiều ca sĩ | Bolero 6 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-6-98/ |
+| vinyl | VN-NHIỀU -NHẠC -LP-NEW-TMT1 | Nhiều ca sĩ | Nhạc Xưa | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhac-xua-99/ |
+| vinyl | VN-NHIỀU -NHẠC -LP-NEW-TMT2 | Nhiều ca sĩ | Nhạc Xưa 2 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhac-xua-2-100/ |
+| vinyl | VN-NHIỀU -LY RƯ-LP-NEW-TMT | Nhiều ca sĩ | Ly rượu mừng | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-ly-ruou-mung-101/ |
+| vinyl | VN-NHIỀU -TÌNH -LP-NEW-TMTCA | Nhiều ca sĩ | Tình ca | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-tinh-ca-102/ |
+| vinyl | VN-NHIỀU -NHỮNG-LP-NEW-TMT | Nhiều ca sĩ | Những giọng ca vàng | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhung-giong-ca-vang-103/ |
+| vinyl | VN-NHIỀU -MÙA S-LP-NEW-TMT | Nhiều ca sĩ | Mùa sao sáng | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-sao-sang-104/ |
+| vinyl | VN-THANH -CHIỀU-LP-NEW-TMT | Thanh Tuyền | Chiều mưa biên giới | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-chieu-mua-bien-gioi-105/ |
+| vinyl | VN-KHÁNH -DIỄM -LP-NEW-TMT | Khánh Ly | Diễm xưa | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-diem-xua-106/ |
+| vinyl | VN-NHIỀU -THUYỀ-LP-NEW-TMT | Nhiều ca sĩ | Thuyền và biển | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-thuyen-va-bien-107/ |
+| vinyl | VN-NHIỀU -TÌNH -LP-NEW-TMTKHÚC | Nhiều ca sĩ | Tình khúc Trúc Phương | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-tinh-khuc-truc-phuong-108/ |
+| vinyl | VN-NHIỀU -SONG -LP-NEW-TMT | Nhiều ca sĩ | Song ca tuyệt phẩm | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-song-ca-tuyet-pham-109/ |
+| vinyl | VN-NHIỀU -MÙA T-LP-NEW-TMT | Nhiều ca sĩ | Mùa thu trong mưa | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-thu-trong-mua-110/ |
+| vinyl | VN-DUY KH-ĐẬP V-LP-NEW-TMT | Duy Khánh | Đập vỡ cây đàn | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/duy-khanh-dap-vo-cay-dan-111/ |
+| vinyl | VN-LỆ THU-MẮT B-LP-NEW-TMT | Lệ Thu | Mắt Biếc | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/le-thu-mat-biec-112/ |
+| vinyl | VN-BẰNG K-MẮT B-LP-NEW-TMT | Bằng Kiều | Mắt Biếc | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/bang-kieu-mat-biec-113/ |
+| vinyl | VN-TUẤN N-TCS-LP-NEW-TMT | Tuấn Ngọc | TCS | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-ngoc-tcs-114/ |
+| vinyl | VN-TUẤN V-BƯỚM -LP-NEW-TMT | Tuấn Vũ | Bướm trắng | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-vu-buom-trang-115/ |
+| vinyl | VN-TUẤN V-THE B-LP-NEW-TMT | Tuấn Vũ | The Best of | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-vu-the-best-of-116/ |
+| vinyl | VN-HOÀNG -THE B-LP-NEW-TMT | Hoàng Oanh | The Best of | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-oanh-the-best-of-117/ |
+| vinyl | VN-BẢO YẾ-THE B-LP-NEW-TMT | Bảo Yến | The Best of | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/bao-yen-the-best-of-118/ |
+| vinyl | VN-THANH -THE B-LP-NEW-TMT | Thanh Thuý | The Best of | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-thuy-the-best-of-119/ |
+| vinyl | VN-VŨ KHA-THE B-LP-NEW-TMT | Vũ Khanh | The Best of | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-khanh-the-best-of-120/ |
+| vinyl | VN-NGỌC L-THE B-LP-NEW-TMT | Ngọc Lan | The Best of | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-lan-the-best-of-121/ |
+| vinyl | VN-HƯƠNG -NHƯ Đ-LP-NEW-TMT | Hương Lan | Như đã dấu yêu | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/huong-lan-nhu-da-dau-yeu-122/ |
+| vinyl | VN-QUỐC B-BÌNH -LP-NEW-THỜ | Quốc Bảo | Bình Yên | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quoc-bao-binh-yen-123/ |
+| vinyl | VN-QUỐC B-MY GU-LP-NEW-THỜ | Quốc Bảo | my guitar my friends 2 | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quoc-bao-my-guitar-my-friends-2-124/ |
+| vinyl | VN-THANH -NƠI G-LP-NEW-THỜ | Thanh Lam | Nơi Gặp Gỡ Tình Yêu (Pink) | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-lam-noi-gap-go-tinh-yeu-pink-125/ |
+| vinyl | VN-BỨC TƯ-CON Đ-LP-NEW-THỜ | Bức Tường | Con Đường Không Tên | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/buc-tuong-con-duong-khong-ten-126/ |
+| vinyl | VN-LÂN NH-NHÃ-LP-NEW-THỜ | Lân Nhã | NHÃ | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/lan-nha-nha-127/ |
+| vinyl | VN-LÊ CÁT-TUỔI -LP-NEW-THỜ | Lê Cát Trọng Lý | Tuổi 25 (Light Blue Colored) | LP | New Seal | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/le-cat-trong-ly-tuoi-25-light-blue-colored-128/ |
+| vinyl | VN-HOÀNG -LINK -LP-NEW-THỜ | Hoàng Thùy Linh | LINK (A Side B Side) | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-thuy-linh-link-a-side-b-side-129/ |
+| vinyl | VN-LÂN NH-NHIÊN-LP-NEW-THỜ | Lân Nhã | NHIÊN | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/lan-nha-nhien-130/ |
+| vinyl | VN-HỨA KI-COLOU-LP-NEW-THỜ | Hứa Kim Tuyền | COLOURS | LP | New Seal | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/hua-kim-tuyen-colours-131/ |
+| vinyl | VN-HÀ TRẦ-NHỮNG-LP-NEW-THỜ | Hà Trần | Những Con Sông Ngón Tay | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-tran-nhung-con-song-ngon-tay-132/ |
+| vinyl | VN-TÙNG D-HUMAN-LP-NEW-THỜ | Tùng Dương | HUMAN | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/tung-duong-human-133/ |
+| vinyl | VN-TRỊNH -B369-LP-NEW-THỜ | Trịnh Thăng Bình | B369 | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/trinh-thang-binh-b369-134/ |
+| vinyl | VN-HỒ TIẾ-TỈNH -LP-NEW-THỜ | Hồ Tiến Đạt, Trọng Bắc | Tỉnh Cơn Mê Mãi | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/ho-tien-dat-trong-bac-tinh-con-me-mai-135/ |
+| vinyl | VN-HÀ TRẦ-ĐỂ EM-LP-NEW-THỜ | Hà Trần | Để Em Mơ | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-tran-de-em-mo-136/ |
+| vinyl | VN-ĐINH H-BLACK-LP-NEW-THỜ | Đinh Hương | Black Magic Woman | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/dinh-huong-black-magic-woman-137/ |
+| vinyl | VN-SOOBIN-BẬT N-LP-NEW-THỜ | SOOBIN | BẬT NÓ LÊN | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/soobin-bat-no-len-138/ |
+| vinyl | VN-TÙNG D-THE V-LP-NEW-THỜ | Tùng Dương | The Voice "Timeless" | LP | New Seal | 1,550,000 | Còn hàng | https://huesoundexpress.github.io/p/tung-duong-the-voice-timeless-139/ |
+| vinyl | VN-VĂN MA-MINH -LP-NEW-THỜ | Văn Mai Hương | Minh Tinh (Gold Colored) | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/van-mai-huong-minh-tinh-gold-colored-140/ |
+| vinyl | VN-AMEE-DREAM-LP-NEW-THỜ | AMEE | dreAMEE (Baby Pink) | LP | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/amee-dreamee-baby-pink-141/ |
+| vinyl | VN-ĐỨC TU-REQUI-LP-NEW-THỜ | Đức Tuấn - Phạm Duy | Requiem | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/duc-tuan-pham-duy-requiem-142/ |
+| vinyl | NN-2 CELL-SCORE-2XLP-BLACK-MUS | 2 Cellos | Score | 2xLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/2-cellos-score-143/ |
+| vinyl | NN-ABBA-GOLD-2XLP-BLACK-UNI | Abba | Gold | 2xLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/abba-gold-144/ |
+| vinyl | NN-ABBA-SUPER-LP-BLACK-UNI | Abba | Super Trouper | LP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/abba-super-trouper-145/ |
+| vinyl | NN-ADELE-30-2XLP-BLACK-COL | Adele | 30 | 2xLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/adele-30-146/ |
+| vinyl | NN-ANDREA-SI-2XLP-BLACK-UNI | Andrea Bocelli | Si | 2xLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-si-147/ |
+| vinyl | NN-ANDREA-AMORE-2XLP-BLACK-UNI | Andrea Bocelli | Amore | 2xLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-amore-148/ |
+| vinyl | NN-ANDREA-BELIE-2XLP-BLACK-UNI | Andrea Bocelli | Believe | 2xLP | New Seal | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-believe-149/ |
+| vinyl | NN-ANDREA-DUETS-LP-BLACK-UNI | Andrea Bocelli | Duets | LP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-duets-150/ |
+| vinyl | NN-BACKST-MILLE-2XLP-BLACK-JIV | Backstreet Boys | Millennium 2.0 | 2xLP | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/backstreet-boys-millennium-2-0-151/ |
+| vinyl | NN-B.B. K-THE K-LP-BLACK-WAX | B.B. King | The king of Blue | LP | New Seal | 2,600,000 | Còn hàng | https://huesoundexpress.github.io/p/b-b-king-the-king-of-blue-152/ |
+| vinyl | NN-BLACK -HEAVE-2XLP-BLACK-UNI | Black Sabbath | Heaven And Hell | 2xLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/black-sabbath-heaven-and-hell-153/ |
+| vinyl | NN-BONEY -NIGHT-LP-BLACK-MCI | Boney M. | Nightflight To Venus | LP | New Seal | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-nightflight-to-venus-154/ |
+| vinyl | NN-BONEY -CHRIS-LP-BLACK-SON | Boney M. | Christmas Album (1981) | LP | New Seal | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-christmas-album-1981-155/ |
+| vinyl | NN-BONEY -DADDY-12IN-COLOURED VINYL-SON | Boney M. | Daddy Cool | 12in | New Seal | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-daddy-cool-156/ |
+| vinyl | NN-BONEY -MAGIC-LP-COLOURED VINYL-SON | Boney M. | Magic Of Boney M. | LP | New Seal | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-magic-of-boney-m-157/ |
+| vinyl | NN-BONEY -RIVER-12IN-COLOURED VINYL-SON | Boney M. | Rivers Of Babylon | 12in | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-rivers-of-babylon-158/ |
+| vinyl | NN-BONEY -BONEY-12IN-COLOURED VINYL-SON | Boney M. | BONEY M. & FRIENDS... | 12in | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-boney-m-friends-159/ |
+| vinyl | NN-BONEY -TAKE -12IN-COLOURED VINYL-SON | Boney M. | TAKE THE HEAT OFF ME (... | 12in | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-take-the-heat-off-me-160/ |
+| vinyl | NN-COHEN,-TEN N-LP-BLACK-COL | Cohen, Leonard | Ten New Songs | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/cohen-leonard-ten-new-songs-161/ |
+| vinyl | NN-COHEN,-GREAT-LP-BLACK-COL | Cohen, Leonard | Greatest Hits | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/cohen-leonard-greatest-hits-162/ |
+| vinyl | NN-DAVE B-TIME -LP-COLOURED VINYL-WAX | Dave Brubeck Quartet | Time Out | LP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-163/ |
+| vinyl | NN-DAVE B-TIME -LP-BLACK-COL | Dave Brubeck Quartet | Time Out | LP | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-164/ |
+| vinyl | NN-DAVE B-DAVE -LP-BLACK-VIN | Dave Brubeck Quartet | Dave Brubeck Quartet | LP | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-dave-brubeck-quartet-165/ |
+| vinyl | NN-DAVE B-TIME -LP-BLACK-NUM | Dave Brubeck Quartet | Time Out | LP | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-166/ |
+| vinyl | NN-DEEP P-GREAT-4XLP-BLACK-MUS | Deep Purple | Greatest Hits | 4xLP | New Seal | 3,200,000 | Còn hàng | https://huesoundexpress.github.io/p/deep-purple-greatest-hits-167/ |
+| vinyl | NN-DION, -FALLI-LP-BLACK-COL | Dion, Celine | Falling Into You | LP | New Seal | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-falling-into-you-168/ |
+| vinyl | NN-DION, -MY LO-2XLP-BLACK-COL | Dion, Celine | My Love Essential Coll... | 2xLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-my-love-essential-coll-169/ |
+| vinyl | NN-DION, -I AM:-LP-BLACK-SON | Dion, Celine | I Am: Celine Dion Sony Music Canada | LP | New Seal | 1,900,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-i-am-celine-dion-sony-music-canada-170/ |
+| vinyl | NN-DION, -LET'S-2XLP-BLACK-550 | Dion, Celine | Let's Talk About Love | 2xLP | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-let-s-talk-about-love-171/ |
+| vinyl | NN-EAGLES-HOTEL-LP-BLACK-WAR | Eagles | Hotel California | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/eagles-hotel-california-172/ |
+| vinyl | NN-EAGLES-HELL -2XLP-BLACK-GEF | Eagles | Hell Freezes Over | 2xLP | New Seal | 1,380,000 | Còn hàng | https://huesoundexpress.github.io/p/eagles-hell-freezes-over-173/ |
+| vinyl | NN-FITZGE-ELLA -LP-BLACK-WAX | Fitzgerald, Ella | Ella & Louis Again | LP | New Seal | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-ella-louis-again-174/ |
+| vinyl | NN-FITZGE-ELLA -LP-BLACK-20T | Fitzgerald, Ella & Lou... | Ella & Louis Again | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-lou-ella-louis-again-175/ |
+| vinyl | NN-FITZGE-ELLA -LP-BLACK-NUM | Fitzgerald, Ella & Lou... | Ella & Louis Again | LP | New Seal | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-lou-ella-louis-again-176/ |
+| vinyl | NN-FORD, -VERY -LP-BLACK-NOT | Ford, Tennessee Ernie | Very Best Of | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/ford-tennessee-ernie-very-best-of-177/ |
+| vinyl | NN-JACKSO-BAD-LP -BLACK-EPI | Jackson, Michael | Bad | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/jackson-michael-bad-178/ |
+| vinyl | NN-JACKSO-THRIL-LP-BLACK-EPI | Jackson, Michael | Thriller | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/jackson-michael-thriller-179/ |
+| vinyl | NN-JACKSO-BAD-LP-PICTURE-EPI | Jackson, Michael | Bad | LP | Liên hệ | 1,550,000 | Liên hệ | https://huesoundexpress.github.io/p/jackson-michael-bad-180/ |
+| vinyl | NN-JONES,-COME -LP-BLACK-UNI | Jones, Norah | Come Away With Me | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-come-away-with-me-181/ |
+| vinyl | NN-JONES,-FEELS-LP-BLACK-UNI | Jones, Norah | Feels like home | LP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-feels-like-home-182/ |
+| vinyl | NN-JONES,-VISIO-LP-BLACK-UNI | Jones, Norah | Visions | LP | New Seal | 1,100,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-visions-183/ |
+| vinyl | NN-LADY G-A STA-2XLP-BLACK-SOU | Lady Gaga, Bradley Cooper | A Star Is Born | 2XLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/lady-gaga-bradley-cooper-a-star-is-born-184/ |
+| vinyl | NN-LOFGRE-MOUNT-LP-BLACK-MVD | Lofgren, Nils | Mountains Mvd | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/lofgren-nils-mountains-mvd-185/ |
+| vinyl | NN-MODERN-BACK -LP-BLACK-SON | Modern Talking | Back For Gold | LP | New Seal | 1,100,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-back-for-gold-186/ |
+| vinyl | NN-MODERN-FIRST-LP-BLACK-SON | Modern Talking | First Album | LP | New Seal | 1,600,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-first-album-187/ |
+| vinyl | NN-MODERN-BACK -2XLP-BLACK-SON | Modern Talking | Back For Good | 2xLP | New Seal | 1,750,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-back-for-good-188/ |
+| vinyl | NN-MUDDY -FOLK -LP-BLACK- | Muddy Water | Folk Singer | LP | New Seal | 1,100,000 | Còn hàng | https://huesoundexpress.github.io/p/muddy-water-folk-singer-189/ |
+| vinyl | NN-MUTTER-SOPHI-LP-BLACK-WAN | Mutter, Anne | Sophie & ... | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/mutter-anne-sophie-190/ |
+| vinyl | NN-PINK F-WISH -LP-BLACK-PIN | Pink Floyd | Wish You Were Here | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-wish-you-were-here-191/ |
+| vinyl | NN-PINK F-THE W-LP-BLACK-PIN | Pink Floyd | The wall | LP | New Seal | 1,550,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-the-wall-192/ |
+| vinyl | NN-PINK F-DARK -LP -BLACK-LEG | Pink Floyd | Dark Side Of The Moon | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-dark-side-of-the-moon-193/ |
+| vinyl | NN-SCORPI-ACOUS-2XLP-BLACK-SON | Scorpions | Acoustica | 2xLP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/scorpions-acoustica-194/ |
+| vinyl | NN-SHEPP,-FOUR -LP -BLACK-UNI | Shepp, Archie | Four For Trane | LP | New Seal | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/shepp-archie-four-for-trane-195/ |
+| vinyl | NN-THE BE-ABBEY-LP-BLACK-UNI | The beatles | Abbey road | LP | New Seal | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/the-beatles-abbey-road-196/ |
+| vinyl | NN-UB40-RED, -LP-BLACK-UNI | Ub40 | Red, Red Wine: The Col… | LP | New Seal | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/ub40-red-red-wine-the-col-197/ |
+| vinyl | NN-WIENER-NEUJA-3XLP-BLACK-SON | Wiener Philharmoniker ... | Neujahrskonzert 2026 /… | 3xLP | New Seal | 2,600,000 | Còn hàng | https://huesoundexpress.github.io/p/wiener-philharmoniker-neujahrskonzert-2026-198/ |
+| vinyl | NN-MUDDY -FOLK -LP-BLACK-CHE | Muddy Waters | Folk Singer | LP | New Seal | 2,600,002 | Còn hàng | https://huesoundexpress.github.io/p/muddy-waters-folk-singer-199/ |
+| vinyl | NN-ALLAN -THE R-LP-BLACK-STO | Allan Taylor | The Road Well Travelled | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/allan-taylor-the-road-well-travelled-200/ |
+| vinyl | NN-ALLAN -IN TH-LP-BLACK-STO | Allan Taylor | In The Groove Vol.2 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/allan-taylor-in-the-groove-vol-2-201/ |
+| vinyl | NN-ALLAN -ALL I-LP-BLACK-STO | Allan Taylor | All Is One LP | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/allan-taylor-all-is-one-lp-202/ |
+| vinyl | NN-ANNE S-EAST -2XLP-BLACK-ALP | Anne Sophie Mutter | East Meets West | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-east-meets-west-203/ |
+| vinyl | NN-ANNE-S-MOZAR-LP-BLACK-DEU | Anne-Sophie Mutter, Berliner Philharmoniker, Herbe | Mozart: Violin Concertos Nos. 3 & 5 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-berliner-philharmoniker-herbe-mozart-violin-concertos-nos-3-5-204/ |
+| vinyl | NN-SHEPP,-THE F-LP -BLACK-VEN | Shepp, Archie | The Four Seasons | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-the-four-seasons-205/ |
+| vinyl | NN-B.B. K-TRUE ---BLU | B.B. King | True Blue | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/b-b-king-true-blue-206/ |
+| vinyl | NN-B.B. K-NOTHI--- | B.B. King | Nothin' But... Bad Luck | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/b-b-king-nothin-but-bad-luck-207/ |
+| vinyl | NN-BABA B-KING ---INA | Baba Blues | King of Blue | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/baba-blues-king-of-blue-208/ |
+| vinyl | NN-BACKST-GLIMM---RCA | Backstreet Boys | Glimmer Of Gold | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/backstreet-boys-glimmer-of-gold-209/ |
+| vinyl | NN-BEN WE-GENTL--- | Ben Webster | gentle ben | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ben-webster-gentle-ben-210/ |
+| vinyl | NN-BEN WE-MY RO--- | Ben Webster | My Romance | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ben-webster-my-romance-211/ |
+| vinyl | NN-BEN WE-OLD B--- | Ben Webster | old betsy | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ben-webster-old-betsy-212/ |
+| vinyl | NN-BEN WE-BEN W--- | Ben Webster | Ben Webster meets Oscar Peterson | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ben-webster-ben-webster-meets-oscar-peterson-213/ |
+| vinyl | NN-BLACK -FROM ---VER | Black Sabbath | From Birdland To Broadway | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/black-sabbath-from-birdland-to-broadway-214/ |
+| vinyl | NN-BROOKE-NIGHT---STO | Brooke Miller | Nightflight to Venus | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/brooke-miller-nightflight-to-venus-215/ |
+| vinyl | NN-BURMES-BURME--- | Burmester Selection vol.1 | Burmester Selection vol.1 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/burmester-selection-vol-1-burmester-selection-vol-1-216/ |
+| vinyl | NN-BUURME-BUURM--- | Buurmester reference Check | Buurmester reference Check | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/buurmester-reference-check-buurmester-reference-check-217/ |
+| vinyl | NN-CLARE -NO LO---CHA | Clare Teal | No Looking Back | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/clare-teal-no-looking-back-218/ |
+| vinyl | NN-CLAUDE-A TRI---VEN | Claude Williamson Trio | A Tribute to Ella Fitzgerald | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/claude-williamson-trio-a-tribute-to-ella-fitzgerald-219/ |
+| vinyl | NN-CREAM-AUTUM---REA | Cream | Autumn In New York | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/cream-autumn-in-new-york-220/ |
+| vinyl | NN-DAFT P-A LOV-2XLP, GATEFOLD-- | Daft Punk | A Love Supreme | 2xLP, Gatefold | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/daft-punk-a-love-supreme-221/ |
+| vinyl | NN-DAVID -MORE ---STO | David Roth | more pearls | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/david-roth-more-pearls-222/ |
+| vinyl | NN-DAVID -PEARL---STO | David Roth | Pearl Diver | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/david-roth-pearl-diver-223/ |
+| vinyl | NN-DEAR O-DEAR --- | Dear Old Stockholm | Dear Old Stockholm | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/dear-old-stockholm-dear-old-stockholm-224/ |
+| vinyl | NN-DIABOL-DIABO--- | Diabolus in Musica | Diabolus in Musica | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diabolus-in-musica-diabolus-in-musica-225/ |
+| vinyl | NN-DIANA - THE -2XLP--VER | Diana Krall | the look of love | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-the-look-of-love-226/ |
+| vinyl | NN-DIANA - LIVE--- | Diana Krall | live in Paris | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-live-in-paris-227/ |
+| vinyl | NN-DIANA -THE V-2XLP-OPAQUE DISC-VER | Diana Krall | The Very Best Of Diana Krall | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-the-very-best-of-diana-krall-228/ |
+| vinyl | NN-DIANA -QUIET-LP--VER | Diana Krall | Quiet Nights | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-quiet-nights-229/ |
+| vinyl | NN-DIANA -CHRIS-LP--UNI | Diana Krall | Christmas Songs | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-christmas-songs-230/ |
+| vinyl | NN-DIANA -WALLF-2XLP--VER | Diana Krall | Wallflower | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-wallflower-231/ |
+| vinyl | NN-DIANA -THE G-2XLP--VER | Diana Krall | The Girl In The Other Room | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-the-girl-in-the-other-room-232/ |
+| vinyl | NN-DIANA - THIS--- | DIANA KRALL | this dream of you | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-this-dream-of-you-233/ |
+| vinyl | NN-DIANA - TURN--- | Diana Krall | turn up the quiet | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-turn-up-the-quiet-234/ |
+| vinyl | NN-DIANA - WALL--- | Diana Krall | wallflower | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-wallflower-235/ |
+| vinyl | NN-DIANA -DIANA--- | Diana Krall when I look in your eyes | Diana Krall when I look in your eyes | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/diana-krall-when-i-look-in-your-eyes-diana-krall-when-i-look-in-your-eyes-236/ |
+| vinyl | NN-DOMINI-DISRA---ENS | Dominique Fils-Aimé | Disraeli Gears | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/dominique-fils-aime-disraeli-gears-237/ |
+| vinyl | NN-EDDIE - TEND--- | Eddie Higgins | Tenderly The Best Of | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-tenderly-the-best-of-238/ |
+| vinyl | NN-EDDIE -STAY ---VEN | Eddie Higgins Quartet feat. Scott Hamilton | Stay Tuned! | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-quartet-feat-scott-hamilton-stay-tuned-239/ |
+| vinyl | NN-EDDIE -MY FU---VEN | Eddie Higgins Quintet | My Funny Valentine | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-quintet-my-funny-valentine-240/ |
+| vinyl | NN-EDDIE -IT'S ---VEN | Eddie Higgins Trio | It's Magic | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-it-s-magic-241/ |
+| vinyl | NN-EDDIE -AGAIN---VEN | Eddie Higgins Trio | Again | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-again-242/ |
+| vinyl | NN-EDDIE - STAN--- | Eddie Higgins Trio | Standard Higgins | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-standard-higgins-243/ |
+| vinyl | NN-EDDIE -CHRIS---VEN | Eddie Higgins With Strings | Christmas Songs II | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-with-strings-christmas-songs-ii-244/ |
+| vinyl | NN-EDGAR - DANC--- | Edgar Knecht | dance on deep waters | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/edgar-knecht-dance-on-deep-waters-245/ |
+| vinyl | NN-EIN ST-EIN S--- | Ein Straussfest | Ein Straussfest | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ein-straussfest-ein-straussfest-246/ |
+| vinyl | NN-ELLA F-MOONL---VER | Ella Fitzgerald & Louis Armstrong | Moonlight Becomes You | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ella-fitzgerald-louis-armstrong-moonlight-becomes-you-247/ |
+| vinyl | NN-ERIC A-ELLA ---VEN | Eric Alexander Quartet | Ella and Louis Again | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eric-alexander-quartet-ella-and-louis-again-248/ |
+| vinyl | NN-ERIC A-GENTL---VEN | Eric Alexander Quartet | Gentle Ballads VI | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eric-alexander-quartet-gentle-ballads-vi-249/ |
+| vinyl | NN-ESPANA-ESPAN--- | Espana Ataulfo argenta | Espana Ataulfo argenta | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/espana-ataulfo-argenta-espana-ataulfo-argenta-250/ |
+| vinyl | NN-ETTA J-GENTL---NOT | Etta James | Gentle Ballads III | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/etta-james-gentle-ballads-iii-251/ |
+| vinyl | NN-EVA CA-THE V---BLI | Eva Cassidy (với London Symphony Orchestra) | The Very Best of Etta James | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eva-cassidy-voi-london-symphony-orchestra-the-very-best-of-etta-james-252/ |
+| vinyl | NN-EXOTIC-EXOTI--- | Exotic Dances from the Opera | Exotic Dances from the Opera | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/exotic-dances-from-the-opera-exotic-dances-from-the-opera-253/ |
+| vinyl | NN-FALLA -FALLA--- | FALLA The Three Cornered Hat | FALLA The Three Cornered Hat | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/falla-the-three-cornered-hat-falla-the-three-cornered-hat-254/ |
+| vinyl | NN-FASCIN-FASCI--- | FASCINATION WITH SOUND | FASCINATION WITH SOUND | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/fascination-with-sound-fascination-with-sound-255/ |
+| vinyl | NN-HAROLD- CARM--- | Harold Farberman | Carmen Suite | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/harold-farberman-carmen-suite-256/ |
+| vinyl | NN-HARRY -I CAN---RCA | Harry Belafonte | I Can Only Be Me | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/harry-belafonte-i-can-only-be-me-257/ |
+| vinyl | NN-HELEN -BELAF---EMA | Helen Merrill | Belafonte at Carnegie Hall (The Complete Concert) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/helen-merrill-belafonte-at-carnegie-hall-the-complete-concert-258/ |
+| vinyl | NN-ISAO S- BLOW--- | Isao Suzuki | blow up | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/isao-suzuki-blow-up-259/ |
+| vinyl | NN-JANIS -HELEN---MOR | Janis Ian | Helen Merrill | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/janis-ian-helen-merrill-260/ |
+| vinyl | NN-JANOS - DVOR--- | Janos Starker | Dvorak | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/janos-starker-dvorak-261/ |
+| vinyl | NN-JAZZ A-JAZZ --- | Jazz at the Pawnshop | Jazz at the Pawnshop | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/jazz-at-the-pawnshop-jazz-at-the-pawnshop-262/ |
+| vinyl | NN-JOHN C-THE D-LP 12"-- | John Coltrane | The Dark Side of the Moon | LP 12" | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/john-coltrane-the-dark-side-of-the-moon-263/ |
+| vinyl | NN-KAREN -BREAK---MUS | Karen Souza | Breaking Silence | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-breaking-silence-264/ |
+| vinyl | NN-KAREN -ESSEN---MUS | Karen Souza | Essentials | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-essentials-265/ |
+| vinyl | NN-KAREN -VELVE---MUS | Karen Souza | Velvet Vault | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-velvet-vault-266/ |
+| vinyl | NN-LADY G-ESSEN--- | Lady Gaga | Essentials II | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lady-gaga-essentials-ii-267/ |
+| vinyl | NN-LATIN - THE --- | Latin Cello | The London Cello Sound | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/latin-cello-the-london-cello-sound-268/ |
+| vinyl | NN-COHEN,-A STA-LP-BLACK-COL | Cohen, Leonard | A star is born | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/cohen-leonard-a-star-is-born-269/ |
+| vinyl | NN-LEX VA- THE --- | Lex Vandyke | the latin sound | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lex-vandyke-the-latin-sound-270/ |
+| vinyl | NN-MASSIM- HOW --- | Massimo Farao' | how my heart sings | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/massimo-farao-how-my-heart-sings-271/ |
+| vinyl | NN-MILES -MOSAI-LP 12"-- | Miles Davis | Mosaics, Volume 2 | LP 12" | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-mosaics-volume-2-272/ |
+| vinyl | NN-MILES -A TRI---COL | Miles Davis | A Tribute to Jack Johnson | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-a-tribute-to-jack-johnson-273/ |
+| vinyl | NN-MILES -ASCEN---FON | Miles Davis | Ascenseur pour l'échafaud | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-ascenseur-pour-l-echafaud-274/ |
+| vinyl | NN-NICKI -GREAT---VEN | Nicki Parrott | Great 70's | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nicki-parrott-great-70-s-275/ |
+| vinyl | NN-NILS L-NILS ---CAT | Nils Lofgren | Nils Lofgren Acoustic Live | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nils-lofgren-nils-lofgren-acoustic-live-276/ |
+| vinyl | NN-NILS L-MOUNT--- | Nils Lofgren Acoustic Live | Mountains | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nils-lofgren-acoustic-live-mountains-277/ |
+| vinyl | NN-PAGANI-PAGAN--- | Paganini : Sonatas for violin and guitar | Paganini : Sonatas for violin and guitar | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/paganini-sonatas-for-violin-and-guitar-paganini-sonatas-for-violin-and-guitar-278/ |
+| vinyl | NN-PAGANI-PAGAN--- | Paganini For Two | Paganini For Two | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/paganini-for-two-paganini-for-two-279/ |
+| vinyl | NN-PAGANI-PAGAN--- | paganini Violin | paganini Violin | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/paganini-violin-paganini-violin-280/ |
+| vinyl | NN-PATRIC-COME ---PRE | Patricia Barber | Come away with me | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-come-away-with-me-281/ |
+| vinyl | NN-PATRIC-COMPA---IMP | Patricia Barber | Companion | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-companion-282/ |
+| vinyl | NN-PATRIC-CLIQU---ART | Patricia Barber | Clique | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-clique-283/ |
+| vinyl | NN-PATRIC- CAFÉ--- | Patricia Barber | Café Blue | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-cafe-blue-284/ |
+| vinyl | NN-PATRIC- CAFE--- | Patricia Barber | Cafe Blue 1STEP | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-cafe-blue-1step-285/ |
+| vinyl | NN-PATRIC- COMP--- | Patricia Barber | Companion | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-companion-286/ |
+| vinyl | NN-PATRIC- MODE--- | Patricia Barber | Modern Cool | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-modern-cool-287/ |
+| vinyl | NN-PATRIC- NIGH--- | Patricia Barber | NightClub | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-nightclub-288/ |
+| vinyl | NN-PHIL W-HIGHE---VEN | Phil Woods With Strings | Higher | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/phil-woods-with-strings-higher-289/ |
+| vinyl | NN-PINK F-KIND -LP 12", GATEFOLD-- | Pink Floyd | Kind of Blue | LP 12", Gatefold | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-kind-of-blue-290/ |
+| vinyl | NN-PINK F-THE T---HAR | Pink Floyd | The Thrill Is Gone | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-thrill-is-gone-291/ |
+| vinyl | NN-PINK F-THE W---HAR | Pink Floyd | The Wall | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-wall-292/ |
+| vinyl | NN-PINK F-THE D---HAR | Pink Floyd | The Dark Side of the Moon | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-dark-side-of-the-moon-293/ |
+| vinyl | NN-RAY BR- SOUL--- | Ray Brown | soular energy | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ray-brown-soular-energy-294/ |
+| vinyl | NN-RAY BR-RAY B--- | Ray Brown & Laurindo Almeida | Ray Brown & Laurindo Almeida | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ray-brown-laurindo-almeida-ray-brown-laurindo-almeida-295/ |
+| vinyl | NN-RHYTHM-RHYTH--- | Rhythmize Heartstrings | Rhythmize Heartstrings | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/rhythmize-heartstrings-rhythmize-heartstrings-296/ |
+| vinyl | NN-RICHIE-WISH ---VEN | Richie Beirach Trio | Wish You Were Here | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/richie-beirach-trio-wish-you-were-here-297/ |
+| vinyl | NN-RITA P-WHAT ---VEN | Rita Payés | What Is This Thing Called Love? | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/rita-payes-what-is-this-thing-called-love-298/ |
+| vinyl | NN-ROSSIN- 6 SO--- | Rossini | 6 Sonate A Quattro | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/rossini-6-sonate-a-quattro-299/ |
+| vinyl | NN-RY COO-IN NE---WAT | Ry Cooder & V.M. Bhatt | In New York | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ry-cooder-v-m-bhatt-in-new-york-300/ |
+| vinyl | NN-SCORPI-ACOUS---EAS | Scorpions | Acoustica | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/scorpions-acoustica-301/ |
+| vinyl | NN-SERENA-PARSL--- | Serenata | Parsley, Sage, Rosemary and Thyme | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/serenata-parsley-sage-rosemary-and-thyme-302/ |
+| vinyl | NN-SIMON -PROTO---COL | Simon & Garfunkel | Protocol | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simon-garfunkel-protocol-303/ |
+| vinyl | NN-SIMON -TEMPT---INA | Simon Phillips (feat. Andy Timmons, v.v.) | Temptation | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simon-phillips-feat-andy-timmons-v-v-temptation-304/ |
+| vinyl | NN-STEVE -THE B---VEN | Steve Kuhn Trio | The Bridge (Vinyl 180 Gram) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/steve-kuhn-trio-the-bridge-vinyl-180-gram-305/ |
+| vinyl | NN-STING- VIVE---A&M | Sting | Viveza | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/sting-viveza-306/ |
+| vinyl | NN-SUSAN -TANNO---EVO | Susan Wong | Tannoy Sampler Vol 1,2 mỗi vol 5c | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/susan-wong-tannoy-sampler-vol-1-2-moi-vol-5c-307/ |
+| vinyl | NN-TANGO -KAMER--- | Tango Tango | Kamereon | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tango-tango-kamereon-308/ |
+| vinyl | NN-TANNOY-TANNO--- | Tannoy Sampler Vol 1,2 mỗi vol 5c | Tannoy Sampler Vol 1,2 mỗi vol 5c | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tannoy-sampler-vol-1-2-moi-vol-5c-tannoy-sampler-vol-1-2-moi-vol-5c-309/ |
+| vinyl | NN-TENNES-KAMER---CAP | Tennessee Ernie Ford | Kamereon | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tennessee-ernie-ford-kamereon-310/ |
+| vinyl | NN-THE AL-THE A--- | The All Star percussion Emsemble | The All Star percussion Emsemble | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-all-star-percussion-emsemble-the-all-star-percussion-emsemble-311/ |
+| vinyl | NN-THE BE-ABBEY---UNI | The Beatles | Abbey Road | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-beatles-abbey-road-312/ |
+| vinyl | NN-THE PE-THE P--- | THE PERCUSSION RECORD | THE PERCUSSION RECORD | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-percussion-record-the-percussion-record-313/ |
+| vinyl | NN-THE RO-LIVE ---ROL | The Rolling Stones | Live at Stockfisch Studio | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-rolling-stones-live-at-stockfisch-studio-314/ |
+| vinyl | NN-THE RO-TATTO---ROL | The Rolling Stones | Tattoo You | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-rolling-stones-tattoo-you-315/ |
+| vinyl | NN-THE RO-THE R--- | THE ROYAL BALLET Gala Performances | THE ROYAL BALLET Gala Performances | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-royal-ballet-gala-performances-the-royal-ballet-gala-performances-316/ |
+| vinyl | NN-THE TH-THE T--- | the three blind mice 45 box | The three blind mice 45 box | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-three-blind-mice-45-box-the-three-blind-mice-45-box-317/ |
+| vinyl | NN-TINA T-YELLO---PAR | Tina Turner | Yellow | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tina-turner-yellow-318/ |
+| vinyl | NN-TSUYOS-THE L--- | Tsuyoshi Yamamoto | The look of love | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-the-look-of-love-319/ |
+| vinyl | NN-TSUYOS-MIDNI--- | Tsuyoshi Yamamoto | Midnight Sugar | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-midnight-sugar-320/ |
+| vinyl | NN-TSUYOS-MIDNI---THR | Tsuyoshi Yamamoto | Midnight Sun (1976) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-midnight-sun-1976-321/ |
+| vinyl | NN-TSUYOS-GENTL--- | Tsuyoshi Yamamoto | Gentle blues | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-gentle-blues-322/ |
+| vinyl | NN-TSUYOS-MOON ---THR | Tsuyoshi Yamamoto | Moon Ray (1977) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-moon-ray-1977-323/ |
+| vinyl | NN-TSUYOS-WHAT --- | Tsuyoshi Yamamoto | What a wonderful world | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tsuyoshi-yamamoto-what-a-wonderful-world-324/ |
+| vinyl | NN-TUTTI-TUTTI--- | Tutti | Tutti | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tutti-tutti-325/ |
+| vinyl | NN-VENUS -VENUS--- | VENUS best of best | VENUS best of best | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/venus-best-of-best-venus-best-of-best-326/ |
+| vinyl | NN-VLADIM-PRIVA---VEN | Vladimir Shafranov & Harry Allen | Private Dancer (30th Anniversary Picture Disc) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/vladimir-shafranov-harry-allen-private-dancer-30th-anniversary-picture-disc-327/ |
+| vinyl | NN-NHIỀU -VINYL---STO | Nhiều nghệ sĩ | Vinyl-Collection Vol.4 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-vinyl-collection-vol-4-328/ |
+| vinyl | NN-NHIỀU -THE B---STO | Nhiều nghệ sĩ | the bassface swing trio, feat. Bruno Müller - "bossa, ballads & blues" LP | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-the-bassface-swing-trio-feat-bruno-muller-bossa-ballads-blues-lp-329/ |
+| vinyl | NN-NHIỀU -VINYL---STO | Nhiều nghệ sĩ | Vinyl-Collection Vol.3 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-vinyl-collection-vol-3-330/ |
+| vinyl | NN-NHIỀU -VINYL---STO | Nhiều nghệ sĩ | Vinyl-Collection Vol.2 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-vinyl-collection-vol-2-331/ |
+| vinyl | NN-NHIỀU -THE B---STO | Nhiều nghệ sĩ | the bassface swing trio - Tribute to Cole Porter - LP | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-the-bassface-swing-trio-tribute-to-cole-porter-lp-332/ |
+| vinyl | NN-NHIỀU -VINYL---STO | Nhiều nghệ sĩ | Vinyl-Collection Vol.1 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-vinyl-collection-vol-1-333/ |
+| vinyl | NN-NHIỀU -REFER---INA | Nhiều nghệ sĩ | Reference Check - Vol.2 (50 Years Canton) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-reference-check-vol-2-50-years-canton-334/ |
+| vinyl | NN-NHIỀU -FAVOR---INA | Nhiều nghệ sĩ | Favorites by Transrotor | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-favorites-by-transrotor-335/ |
+| vinyl | NN-NHIỀU -45 YE---INA | Nhiều nghệ sĩ | 45 Years Excellence Edition | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-45-years-excellence-edition-336/ |
+| vinyl | NN-NHIỀU -GREAT---INA | Nhiều nghệ sĩ | Great Voices Vol. 2 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-great-voices-vol-2-337/ |
+| vinyl | NN-NHIỀU -TRIBU---THO | Nhiều nghệ sĩ | Tribute To A Legend (TD 124 DD) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-tribute-to-a-legend-td-124-dd-338/ |
+| vinyl | NN-NHIỀU -LE SO---INA | Nhiều nghệ sĩ | Le Son Vrai! | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-le-son-vrai-339/ |
+| vinyl | NN-NHIỀU -NEW R---INA | Nhiều nghệ sĩ | New Reference Collection | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-new-reference-collection-340/ |
+| vinyl | NN-NHIỀU -THE S---INA | Nhiều nghệ sĩ | The Sound of Primare | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-the-sound-of-primare-341/ |
+| vinyl | NN-NHIỀU -REFER---INA | Nhiều nghệ sĩ | Reference Check - Vol.2 (50 Years) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-reference-check-vol-2-50-years-342/ |
+| vinyl | NN-NHIỀU -TRIBU---INA | Nhiều nghệ sĩ | Tribute To A Legend (TD 124 DD) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-tribute-to-a-legend-td-124-dd-343/ |
+| vinyl | NN-NHIỀU -AUDIO---STS | Nhiều nghệ sĩ | Audiophile Choice Vol. 1 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-audiophile-choice-vol-1-344/ |
+| vinyl | NN-NHIỀU -STEP---INA | Nhiều nghệ sĩ | Step | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-step-345/ |
+| vinyl | NN-NHIỀU -WORLD---CHE | Nhiều nghệ sĩ | World's Greatest Audiophile Vocal | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-world-s-greatest-audiophile-vocal-346/ |
+| vinyl | NN-NHIỀU -ITALI---MON | Nhiều nghệ sĩ | Italian Songs and Dances | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-italian-songs-and-dances-347/ |
+| vinyl | NN-ADELE-19-LP-BLACK-XL | Adele | 19 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/adele-19-348/ |
+| vinyl | NN-AMERIC-GREAT-LP-BLACK-INA | America | Greatest Hits In Concert | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/america-greatest-hits-in-concert-349/ |
+| vinyl | NN-ANNE B-BE MY-LP-BLACK-CAM | Anne Bisson | Be My Lover | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-bisson-be-my-lover-350/ |
+| vinyl | NN-ANNE S-BRAHM-LP-BLACK-SON | Anne Sophie Mutter | Brahms: Double Concerto | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-brahms-double-concerto-351/ |
+| vinyl | NN-SHEPP,-TRUE -LP-BLACK-VEN | Shepp, Archie | True Blue | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-true-blue-352/ |
+| vinyl | NN-B.B. K-NOTHI-LP-BLACK-BLU | B.B. King | Nothin' But... Bad Luck | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/b-b-king-nothin-but-bad-luck-353/ |
+| vinyl | NN-B.B. K-KING -LP-BLACK-WAX | B.B. King | King of Blue | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/b-b-king-king-of-blue-354/ |
+| vinyl | NN-BABA B-GLIMM-LP-BLACK-INA | Baba Blues | Glimmer Of Gold | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/baba-blues-glimmer-of-gold-355/ |
+| vinyl | NN-BACKST-MILLE-LP-BLACK-RCA | Backstreet Boys | Millennium 2.0 (25th Anniversary Edition) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/backstreet-boys-millennium-2-0-25th-anniversary-edition-356/ |
+| vinyl | NN-BILL C-FROM -LP-BLACK-VEN | Bill Crow Quartet | From Birdland To Broadway | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/bill-crow-quartet-from-birdland-to-broadway-357/ |
+| vinyl | NN-BLACK -HEAVE-LP-BLACK-VER | Black Sabbath | Heaven and Hell | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/black-sabbath-heaven-and-hell-358/ |
+| vinyl | NN-BONEY -CHRIS-LP-BLACK-HAN | Boney M. | Christmas Album | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/boney-m-christmas-album-359/ |
+| vinyl | NN-BONEY -DADDY-LP-BLACK- | Boney M. | Daddy Cool | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/boney-m-daddy-cool-360/ |
+| vinyl | NN-BONEY -NIGHT-LP-BLACK- | Boney M. | Nightflight to Venus | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/boney-m-nightflight-to-venus-361/ |
+| vinyl | NN-BROOKE-FAMIL-LP-BLACK-STO | Brooke Miller | Familiar | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/brooke-miller-familiar-362/ |
+| vinyl | NN-CELINE-LET'S-LP-BLACK-SON | Celine Dion | Let's Talk About Love | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/celine-dion-let-s-talk-about-love-363/ |
+| vinyl | NN-CELINE-FALLI-LP-BLACK- | Celine Dion | Falling into you | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/celine-dion-falling-into-you-364/ |
+| vinyl | NN-CELINE-I AM-LP-BLACK- | Celine Dion | I am | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/celine-dion-i-am-365/ |
+| vinyl | NN-CELINE-MY LO-LP-BLACK-SON | Celine Dion | My Love: Essential Collection | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/celine-dion-my-love-essential-collection-366/ |
+| vinyl | NN-CHRIS -NO LO-LP-BLACK-STO | Chris Jones | No Looking Back | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/chris-jones-no-looking-back-367/ |
+| vinyl | NN-CLARE -A TRI-LP-BLACK-CHA | Clare Teal | A Tribute to Ella Fitzgerald | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/clare-teal-a-tribute-to-ella-fitzgerald-368/ |
+| vinyl | NN-CLAUDE-AUTUM-LP-BLACK-VEN | Claude Williamson Trio | Autumn In New York | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/claude-williamson-trio-autumn-in-new-york-369/ |
+| vinyl | NN-CREAM-DISRA-LP-BLACK-REA | Cream | Disraeli Gears | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/cream-disraeli-gears-370/ |
+| vinyl | NN-DOMINI-STAY -LP-BLACK-ENS | Dominique Fils-Aimé | Stay Tuned! | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/dominique-fils-aime-stay-tuned-371/ |
+| vinyl | NN-EDDIE -MY FU-LP-BLACK-VEN | Eddie Higgins Quartet feat. Scott Hamilton | My Funny Valentine | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-quartet-feat-scott-hamilton-my-funny-valentine-372/ |
+| vinyl | NN-EDDIE -IT'S -LP-BLACK-VEN | Eddie Higgins Quintet | It's Magic | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-quintet-it-s-magic-373/ |
+| vinyl | NN-EDDIE -AGAIN-LP-BLACK-VEN | Eddie Higgins Trio | Again | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-again-374/ |
+| vinyl | NN-EDDIE -CHRIS-LP-BLACK-VEN | Eddie Higgins Trio | Christmas Songs II | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-trio-christmas-songs-ii-375/ |
+| vinyl | NN-EDDIE -MOONL-LP-BLACK-VEN | Eddie Higgins With Strings | Moonlight Becomes You | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eddie-higgins-with-strings-moonlight-becomes-you-376/ |
+| vinyl | NN-ELLA F-ELLA -LP-BLACK-VER | Ella Fitzgerald & Louis Armstrong | Ella and Louis Again | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ella-fitzgerald-louis-armstrong-ella-and-louis-again-377/ |
+| vinyl | NN-ERIC A-GENTL-LP-BLACK-VEN | Eric Alexander Quartet | Gentle Ballads VI | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eric-alexander-quartet-gentle-ballads-vi-378/ |
+| vinyl | NN-ERIC A-GENTL-LP-BLACK-VEN | Eric Alexander Quartet | Gentle Ballads III | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eric-alexander-quartet-gentle-ballads-iii-379/ |
+| vinyl | NN-ETTA J-THE V-LP-BLACK-NOT | Etta James | The Very Best of Etta James | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/etta-james-the-very-best-of-etta-james-380/ |
+| vinyl | NN-EVA CA-I CAN-LP-BLACK-BLI | Eva Cassidy (với London Symphony Orchestra) | I Can Only Be Me | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/eva-cassidy-voi-london-symphony-orchestra-i-can-only-be-me-381/ |
+| vinyl | NN-HARRY -BELAF-LP-BLACK-RCA | Harry Belafonte | Belafonte at Carnegie Hall (The Complete Concert) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/harry-belafonte-belafonte-at-carnegie-hall-the-complete-concert-382/ |
+| vinyl | NN-HELEN -HELEN-LP-BLACK-EMA | Helen Merrill | Helen Merrill | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/helen-merrill-helen-merrill-383/ |
+| vinyl | NN-JANIS -BREAK-LP-BLACK-MOR | Janis Ian | Breaking Silence | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/janis-ian-breaking-silence-384/ |
+| vinyl | NN-KAREN -ESSEN-LP-BLACK-MUS | Karen Souza | Essentials | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-essentials-385/ |
+| vinyl | NN-KAREN -VELVE-LP-BLACK-MUS | Karen Souza | Velvet Vault | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-velvet-vault-386/ |
+| vinyl | NN-KAREN -ESSEN-LP-BLACK-MUS | Karen Souza | Essentials II | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/karen-souza-essentials-ii-387/ |
+| vinyl | NN-LADY G-A STA-LP-BLACK- | Lady Gaga | A star is born | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lady-gaga-a-star-is-born-388/ |
+| vinyl | NN-MICHAE-THRIL-LP-BLACK-EPI | Michael Jackson | Thriller | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/michael-jackson-thriller-389/ |
+| vinyl | NN-MICHAE-BAD-LP-BLACK-EPI | Michael Jackson | Bad | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/michael-jackson-bad-390/ |
+| vinyl | NN-MICHAE-MOSAI-LP-BLACK-TES | Michael Rabin | Mosaics, Volume 2 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/michael-rabin-mosaics-volume-2-391/ |
+| vinyl | NN-MILES -A TRI-LP-BLACK-COL | Miles Davis | A Tribute to Jack Johnson | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-a-tribute-to-jack-johnson-392/ |
+| vinyl | NN-MILES -ASCEN-LP-BLACK-FON | Miles Davis | Ascenseur pour l'échafaud | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-ascenseur-pour-l-echafaud-393/ |
+| vinyl | NN-MODERN-THE 1-LP-BLACK-HAN | Modern Talking | The 1st Album | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/modern-talking-the-1st-album-394/ |
+| vinyl | NN-NHIỀU -REFER-LP-BLACK-INA | Nhiều nghệ sĩ | Reference Check - Vol.2 (50 Years Canton) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-reference-check-vol-2-50-years-canton-395/ |
+| vinyl | NN-NHIỀU -FAVOR-LP-BLACK-INA | Nhiều nghệ sĩ | Favorites by Transrotor | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-favorites-by-transrotor-396/ |
+| vinyl | NN-NHIỀU -45 YE-LP-BLACK-INA | Nhiều nghệ sĩ | 45 Years Excellence Edition | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-45-years-excellence-edition-397/ |
+| vinyl | NN-NHIỀU -GREAT-LP-BLACK-INA | Nhiều nghệ sĩ | Great Voices Vol. 2 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-great-voices-vol-2-398/ |
+| vinyl | NN-NHIỀU -TRIBU-LP-BLACK-THO | Nhiều nghệ sĩ | Tribute To A Legend (TD 124 DD) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-tribute-to-a-legend-td-124-dd-399/ |
+| vinyl | NN-NHIỀU -LE SO-LP-BLACK-INA | Nhiều nghệ sĩ | Le Son Vrai! | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-le-son-vrai-400/ |
+| vinyl | NN-NHIỀU -NEW R-LP-BLACK-INA | Nhiều nghệ sĩ | New Reference Collection | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-new-reference-collection-401/ |
+| vinyl | NN-NHIỀU -THE S-LP-BLACK-INA | Nhiều nghệ sĩ | The Sound of Primare | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-the-sound-of-primare-402/ |
+| vinyl | NN-NHIỀU -REFER-LP-BLACK-INA | Nhiều nghệ sĩ | Reference Check - Vol.2 (50 Years) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-reference-check-vol-2-50-years-403/ |
+| vinyl | NN-NHIỀU -TRIBU-LP-BLACK-INA | Nhiều nghệ sĩ | Tribute To A Legend (TD 124 DD) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-tribute-to-a-legend-td-124-dd-404/ |
+| vinyl | NN-NHIỀU -AUDIO-LP-BLACK-STS | Nhiều nghệ sĩ | Audiophile Choice Vol. 1 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-audiophile-choice-vol-1-405/ |
+| vinyl | NN-NHIỀU -STEP-LP-BLACK-INA | Nhiều nghệ sĩ | Step | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-step-406/ |
+| vinyl | NN-NHIỀU -WORLD-LP-BLACK-CHE | Nhiều nghệ sĩ | World's Greatest Audiophile Vocal | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-world-s-greatest-audiophile-vocal-407/ |
+| vinyl | NN-NHIỀU -ITALI-LP-BLACK-MON | Nhiều nghệ sĩ | Italian Songs and Dances | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-nghe-si-italian-songs-and-dances-408/ |
+| vinyl | NN-NICKI -GREAT-LP-BLACK-VEN | Nicki Parrott | Great 70's | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nicki-parrott-great-70-s-409/ |
+| vinyl | NN-NILS L-MOUNT-LP-BLACK-CAT | Nils Lofgren | Mountains | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nils-lofgren-mountains-410/ |
+| vinyl | NN-NORAH -VISIO-LP-BLACK-BLU | Norah Jones | Visions | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/norah-jones-visions-411/ |
+| vinyl | NN-NORAH -FEEL -LP-BLACK- | Norah Jones | Feel like home | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/norah-jones-feel-like-home-412/ |
+| vinyl | NN-NORAH -COME -LP-BLACK- | Norah Jones | Come away with me | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/norah-jones-come-away-with-me-413/ |
+| vinyl | NN-PATRIC-COMPA-LP-BLACK-PRE | Patricia Barber | Companion | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-companion-414/ |
+| vinyl | NN-PATRIC-CLIQU-LP-BLACK-IMP | Patricia Barber | Clique | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-clique-415/ |
+| vinyl | NN-PATRIC-HIGHE-LP-BLACK-ART | Patricia Barber | Higher | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/patricia-barber-higher-416/ |
+| vinyl | NN-PHIL W-THE T-LP-BLACK-VEN | Phil Woods With Strings | The Thrill Is Gone | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/phil-woods-with-strings-the-thrill-is-gone-417/ |
+| vinyl | NN-PINK F-THE W-LP-BLACK-HAR | Pink Floyd | The Wall | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-wall-418/ |
+| vinyl | NN-PINK F-THE D-LP-BLACK-HAR | Pink Floyd | The Dark Side of the Moon | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-the-dark-side-of-the-moon-419/ |
+| vinyl | NN-PINK F-WISH -LP-BLACK-HAR | Pink Floyd | Wish You Were Here | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/pink-floyd-wish-you-were-here-420/ |
+| vinyl | NN-RICHIE-WHAT -LP-BLACK-VEN | Richie Beirach Trio | What Is This Thing Called Love? | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/richie-beirach-trio-what-is-this-thing-called-love-421/ |
+| vinyl | NN-RITA P-IN NE-LP-BLACK-VEN | Rita Payés | In New York | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/rita-payes-in-new-york-422/ |
+| vinyl | NN-RY COO-A MEE-LP-BLACK-WAT | Ry Cooder & V.M. Bhatt | A Meeting by the River | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ry-cooder-v-m-bhatt-a-meeting-by-the-river-423/ |
+| vinyl | NN-SCORPI-ACOUS-LP-BLACK-EAS | Scorpions | Acoustica | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/scorpions-acoustica-424/ |
+| vinyl | NN-SIMON -PARSL-LP-BLACK-COL | Simon & Garfunkel | Parsley, Sage, Rosemary and Thyme | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simon-garfunkel-parsley-sage-rosemary-and-thyme-425/ |
+| vinyl | NN-SIMON -PROTO-LP-BLACK-INA | Simon Phillips (feat. Andy Timmons, v.v.) | Protocol | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simon-phillips-feat-andy-timmons-v-v-protocol-426/ |
+| vinyl | NN-STEVE -TEMPT-LP-BLACK-VEN | Steve Kuhn Trio | Temptation | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/steve-kuhn-trio-temptation-427/ |
+| vinyl | NN-STING-THE B-LP-BLACK-A&M | Sting | The Bridge (Vinyl 180 Gram) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/sting-the-bridge-vinyl-180-gram-428/ |
+| vinyl | NN-SUSAN -KAMER-LP-BLACK-EVO | Susan Wong | Kamereon | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/susan-wong-kamereon-429/ |
+| vinyl | NN-TENNES-THE V-LP-BLACK-CAP | Tennessee Ernie Ford | The Very Best of Tennessee Ernie Ford | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tennessee-ernie-ford-the-very-best-of-tennessee-ernie-ford-430/ |
+| vinyl | NN-THE BE-ABBEY-LP-BLACK-APP | The Beatles | Abbey Road | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-beatles-abbey-road-431/ |
+| vinyl | NN-THE DA-GREAT-LP-BLACK-COL | The Dave Brubeck Quartet | Greatest Hits | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-dave-brubeck-quartet-greatest-hits-432/ |
+| vinyl | NN-THE DA-TIME -LP-BLACK-COL | The Dave Brubeck Quartet | Time Out | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-dave-brubeck-quartet-time-out-433/ |
+| vinyl | NN-THE GR-THE G-LP-BLACK-STO | The Greater Good (Eugene Ruffolo, Dennis Kolen, Shane Alexander) | The Greater Good | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-greater-good-eugene-ruffolo-dennis-kolen-shane-alexander-the-greater-good-434/ |
+| vinyl | NN-THE PA-LIVE -LP-BLACK-STO | The Paperboys | Live at Stockfisch Studio | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-paperboys-live-at-stockfisch-studio-435/ |
+| vinyl | NN-THE RO-TATTO-LP-BLACK-ROL | The Rolling Stones | Tattoo You | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-rolling-stones-tattoo-you-436/ |
+| vinyl | NN-THE RO-YELLO-LP-BLACK-ROL | The Rolling Stones | Yellow | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-rolling-stones-yellow-437/ |
+| vinyl | NN-TINA T-PRIVA-LP-BLACK-PAR | Tina Turner | Private Dancer (30th Anniversary Picture Disc) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tina-turner-private-dancer-30th-anniversary-picture-disc-438/ |
+| vinyl | NN-VLADIM-DEAR -LP-BLACK-VEN | Vladimir Shafranov & Harry Allen | Dear Old Stockholm | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/vladimir-shafranov-harry-allen-dear-old-stockholm-439/ |
+| vinyl | NN-ANDREA-IL MA-2XLP-REISSUE-UNI | Andrea Bocelli | Il Mare Calmo Della Sera | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-il-mare-calmo-della-sera-440/ |
+| vinyl | NN-ANDREA-MY CH-2XLP-BLACK-SUG | Andrea Bocelli | My Christmas | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-my-christmas-441/ |
+| vinyl | NN-ANDREA-MY CH-2XLP-COLOURED VINYL-UNI | Andrea Bocelli | My Christmas | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-my-christmas-442/ |
+| vinyl | NN-ANDREA-A FAM-LP-LIMITED EDITION-CAP | Andrea Bocelli | A Family Christmas | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-a-family-christmas-443/ |
+| vinyl | NN-ANDREA-A FAM-2XLP-BLACK-DEC | Andrea Bocelli, Matteo Bocelli, Virginia Bocelli | A Family Christmas | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-matteo-bocelli-virginia-bocelli-a-family-christmas-444/ |
+| vinyl | NN-ANDREA-SOGNO-2XLP-BLACK-UNI | Andrea Bocelli | Sogno | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-sogno-445/ |
+| vinyl | NN-ANDREA-ROMAN-2XLP-BLACK-UNI | Andrea Bocelli | Romanza | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/andrea-bocelli-romanza-446/ |
+| vinyl | NN-ANNE S-LALO:-LP-BLACK-PLG | Anne Sophie Mutter | Lalo: Symphonie Espagnole | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-lalo-symphonie-espagnole-447/ |
+| vinyl | NN-ANNE S-MOZAR-LP-BLACK-WAR | Anne Sophie Mutter | Mozart: Sinfonia Concertante - Bach: Concerto For 2 Violins | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/anne-sophie-mutter-mozart-sinfonia-concertante-bach-concerto-for-2-violins-448/ |
+| vinyl | NN-SHEPP,-MAMA -LP-BLACK-END | Shepp, Archie | Mama Too Tight | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-mama-too-tight-449/ |
+| vinyl | NN-SHEPP,-THE M-LP-BLACK-VER | Shepp, Archie | The Magic Of Ju-Ju | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-the-magic-of-ju-ju-450/ |
+| vinyl | NN-SHEPP,-THE H-LP-BLACK-STE | Shepp, Archie | The House I Live In | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-the-house-i-live-in-451/ |
+| vinyl | NN-SHEPP,-TRUE -LP-BLACK-CAN | Shepp, Archie | True Blue | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-true-blue-452/ |
+| vinyl | NN-SHEPP,- I DI-LP-COLOURED VINYL-MUS | Shepp, Archie | I Didn't Know About You | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/shepp-archie-i-didn-t-know-about-you-453/ |
+| vinyl | NN-MILES -VOLUM---BLU | Miles Davis | Volume 1 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-volume-1-454/ |
+| vinyl | NN-MUDDY -THE M-2XLP-BLACK-BMG | Muddy Waters | The Montreux Yea | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/muddy-waters-the-montreux-yea-455/ |
+| vinyl | NN-LANA D-LUST -2XLP-BLACK-POL | Lana Del Rey | Lust For Life | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lana-del-rey-lust-for-life-456/ |
+| cd | CD-MYTAM-TAM9-NEW | Mỹ Tâm | Tâm 9 | CD | New Seal | 350,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-my-tam-tam-9/ |
+| cd | CD-LEQUYEN-KHUC-TINH-XUA-1 | Lệ Quyên | Khúc Tình Xưa 1 | CD | New Seal | 280,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-le-quyen-khuc-tinh-xua-1/ |
+| cd | CD-NORAH-COME-AWAY-SACD | Norah Jones | Come Away With Me | SACD | New Seal | 850,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-norah-jones-come-away-with-me-sacd/ |
+| cd | CD-DIANA-THE-LOOK-XRCD | Diana Krall | The Look Of Love | XRCD24 | Liên hệ | 1,150,000 | Liên hệ | https://huesoundexpress.github.io/p/cd-diana-krall-the-look-of-love-xrcd/ |
+| cd | CD-TRANMANHTUAN-HA-TRANG | Trần Mạnh Tuấn | Hạ Trắng (Saxophone) | CD | New Seal | 320,000 | Liên hệ | https://huesoundexpress.github.io/p/cd-tran-manh-tuan-ha-trang/ |
+| turntable | TT-AT-LP60XBT-BK | Audio-Technica | Audio-Technica AT-LP60XBT (Đen) | MM | New Seal | 6,900,000 | Còn hàng | https://huesoundexpress.github.io/p/audio-technica-at-lp60xbt-black/ |
+| turntable | TT-AT-LP120XUSB-SL | Audio-Technica | Audio-Technica AT-LP120XUSB | MM | New Seal | 11,500,000 | Còn hàng | https://huesoundexpress.github.io/p/audio-technica-at-lp120xusb-silver/ |
+| turntable | TT-PROJECT-DEBUT-CARBON-EVO | Pro-Ject | Pro-Ject Debut Carbon EVO | MM | New Seal | 17,900,000 | Liên hệ | https://huesoundexpress.github.io/p/pro-ject-debut-carbon-evo/ |
+| turntable | TT-TEAC-TN3B-SE | TEAC | TEAC TN-3B-SE (Vân gỗ Walnut) | MM | New Seal | 13,500,000 | Liên hệ | https://huesoundexpress.github.io/p/teac-tn-3b-se-walnut/ |
+| accessory | ACC-AQ-CARBON | AudioQuest | Chổi sợi Carbon chống tĩnh điện AudioQuest | Mọi đĩa than 12-inch | New Seal | 550,000 | Còn hàng | https://huesoundexpress.github.io/p/choi-soi-carbon-audioquest/ |
+| accessory | ACC-SLEEVE-50 | Hue Sound Vinyl Care | Bộ 50 túi lót chống tĩnh điện (Anti-Static Inner Sleeve) | Đĩa than 12-inch (LP) | New Seal | 350,000 | Còn hàng | https://huesoundexpress.github.io/p/tui-lot-chong-tinh-dien-50-chiec/ |
+| accessory | ACC-AT607A | Audio-Technica | Dung dịch vệ sinh đầu kim Audio-Technica AT607a | Mọi đầu kim MM / MC | New Seal | 380,000 | Còn hàng | https://huesoundexpress.github.io/p/dung-dich-ve-sinh-kim-at607a/ |
+| accessory | ACC-SCALE-01 | Hue Sound Vinyl Care | Cân điện tử đo lực tì kim chính xác 0.01g | Mọi mâm than có đối trọng | New Seal | 420,000 | Còn hàng | https://huesoundexpress.github.io/p/can-luc-ti-kim-dien-tu/ |
+| accessory | ACC-ORT-2MRED | Ortofon | Đầu kim đĩa than Ortofon 2M Red (MM) | Mâm than gắn chuẩn 1/2-inch | New Seal | 3,200,000 | Liên hệ | https://huesoundexpress.github.io/p/kim-dia-than-ortofon-2m-red/ |
+| care | CARE-ULTRASONIC-01 | Hue Sound Vinyl Care | Dịch vụ Rửa đĩa siêu âm chuẩn Audiophile (Kèm túi lót mới) | Đĩa than 7-inch / 12-inch | New Seal | 50,000 | Còn hàng | https://huesoundexpress.github.io/p/dich-vu-rua-dia-sieu-am/ |
+| care | CARE-SETUP-01 | Hue Sound Vinyl Care | Dịch vụ Cân chỉnh mâm than & Lắp kim chuyên sâu | Mọi mâm than | New Seal | 500,000 | Liên hệ | https://huesoundexpress.github.io/p/dich-vu-can-chinh-mam-than/ |

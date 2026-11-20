@@ -230,6 +230,14 @@ button, input, select, textarea { font-family: inherit; }
   font-family: var(--serif); font-weight: 500; font-style: normal;
   font-size: 1.18rem; color: var(--ink); margin-top: .1rem; letter-spacing: .015em;
 }
+.slogan-color {
+  font-weight: 600;
+  color: #C46022;
+  background: linear-gradient(135deg, #D97E36 0%, #B8541D 52%, #CFA042 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .divider {
   width: 6.5rem; height: 1px; margin: .8rem 0; position: relative;
   background: linear-gradient(to right, transparent, var(--gold), var(--copper), var(--gold), transparent);
@@ -780,7 +788,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       </svg>
     </div>
 
-    <p class="slogan">Where sound finds its color</p>
+    <p class="slogan">Where sound finds its <span class="slogan-color">color</span></p>
     <div class="divider"></div>
     <p class="tagline">
       <span class="tl-line" id="tlLine1">Phòng nghe số & Kho đĩa than, Đĩa CD, Máy hát và Phụ kiện Audiophile chính hãng</span>
@@ -849,7 +857,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       <span class="tab-count" id="cnt-turntable">0</span>
     </button>
     <button class="cat-tab" onclick="switchCategory('accessory', this)">
-      <span class="cat-tab-main"><span>🧹</span><span id="tabLbl-accessory">Phụ Kiện & Vinyl Care</span></span>
+      <span class="cat-tab-main"><span>🧹</span><span id="tabLbl-accessory">Phụ Kiện</span></span>
       <span class="tab-count" id="cnt-accessory">0</span>
     </button>
     <button class="cat-tab" onclick="switchCategory('guide', this)">
@@ -866,11 +874,15 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                placeholder="🔍 Tìm tên ca sĩ, album, thương hiệu máy hát, mã SKU..."
                oninput="resetAndRender()">
         <select id="statusFilter" class="select-ctrl" onchange="resetAndRender()">
-          <option value="ALL" id="optStAll">Tất cả tình trạng</option>
-          <option value="New Seal" id="optStNew">New Seal (Sẵn hàng)</option>
-          <option value="Liên hệ" id="optStContact">Liên hệ (Chữ ký / Hiếm)</option>
-          <option value="Sắp có hàng" id="optStSoon">Sắp có hàng</option>
-          <option value="Hết hàng" id="optStOut">Hết hàng</option>
+          <option value="ALL" id="optStAll">Tất cả trạng thái</option>
+          <option value="Còn hàng" id="optStAvail">Còn hàng</option>
+          <option value="Liên hệ" id="optStContact">Liên hệ</option>
+        </select>
+        <select id="condFilter" class="select-ctrl" onchange="resetAndRender()">
+          <option value="ALL" id="optCondAll">Tất cả tình trạng</option>
+          <option value="New Seal" id="optCondNew">New Seal</option>
+          <option value="NM" id="optCondNm">NM</option>
+          <option value="Liên hệ" id="optCondContact">Liên hệ</option>
         </select>
         <select id="priceFilter" class="select-ctrl" onchange="resetAndRender()">
           <option value="ALL" id="optPrAll">Mọi mức giá niêm yết</option>
@@ -941,10 +953,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         <span id="giftWrapLabel">🎁 Kèm gói quà nghệ thuật & viết thiệp tay</span>
       </label>
 
-      <button class="btn btn-add btn-block" id="btnSubmitOrder" type="button" onclick="submitOrder()">✓ Gửi Đơn Đặt Hàng Ngay</button>
+      <button class="btn btn-add btn-block" id="btnOrderZalo" type="button" onclick="placeOrderViaZalo()">💬 Đặt Hàng Qua Zalo</button>
       <button class="btn btn-outline-copper btn-block" id="btnPrintQuote" type="button" onclick="printQuotePDF()">📄 Xuất Báo Giá PDF (Tạm ứng / Doanh nghiệp)</button>
-      <button class="btn btn-zalo-solid btn-block" id="btnSendZalo" type="button" onclick="sendCartToZalo()">💬 Gửi Trọn Danh Sách Qua Zalo</button>
-      <p class="quote-hint" id="quoteHintText">* Trên bảng Báo giá PDF, tên hàng hóa sẽ hiển thị chung là <strong>“Đĩa nhạc”</strong> (hoặc nhóm thiết bị) và ghi rõ tên album, nghệ sĩ, mã SKU ở cột Ghi chú để thuận tiện làm thủ tục tạm ứng.</p>
+      <p class="quote-hint" id="quoteHintText">* Trên bảng Báo giá PDF, tên hàng hóa hiển thị chung là <strong>“Đĩa than”</strong> hoặc <strong>“Đĩa CD”</strong>; chi tiết tên album, nghệ sĩ, mã SKU nằm ở cột <strong>Ghi chú</strong> cuối cùng (phần làm rõ, không xuất hiện trên hóa đơn).</p>
     </div>
   </div>
 </aside>
@@ -996,12 +1007,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   <table class="q-table">
     <thead>
       <tr>
-        <th style="width:36px;" id="qThNo">STT</th>
-        <th style="width:145px;" id="qThItem">Tên hàng hóa</th>
-        <th id="qThDetail">Ghi chú / Chi tiết sản phẩm</th>
-        <th class="num" style="width:48px;" id="qThQty">SL</th>
-        <th class="num" style="width:110px;" id="qThPrice">Đơn giá niêm yết</th>
-        <th class="num" style="width:118px;" id="qThSub">Thành tiền</th>
+        <th style="width:34px;" id="qThNo">STT</th>
+        <th style="width:125px;" id="qThItem">Tên hàng hóa</th>
+        <th class="num" style="width:42px;" id="qThQty">SL</th>
+        <th class="num" style="width:104px;" id="qThPrice">Đơn giá niêm yết</th>
+        <th class="num" style="width:110px;" id="qThSub">Thành tiền</th>
+        <th id="qThDetail">Ghi chú (Không xuất hiện trên hóa đơn)</th>
       </tr>
     </thead>
     <tbody id="qTableBody"></tbody>
@@ -1031,10 +1042,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tlLine2: 'Nghe thử 30s, giá niêm yết minh bạch, xuất báo giá nhanh & đóng gói chuyên dụng, giao hàng toàn quốc',
       qlZalo: 'Zalo', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google',
       tabVinyl: 'Đĩa Than (LP)', tabCd: 'Đĩa CD / SACD', tabTurntable: 'Máy Hát / Mâm Than',
-      tabAccessory: 'Phụ Kiện & Vinyl Care', tabGuide: 'Cẩm Nang & Giao Vận',
+      tabAccessory: 'Phụ Kiện', tabGuide: 'Cẩm Nang & Giao Vận',
       searchPh: '🔍 Tìm tên ca sĩ, album, thương hiệu máy hát, mã SKU...',
-      stAll: 'Tất cả tình trạng', stNew: 'New Seal (Sẵn hàng)', stContact: 'Liên hệ (Chữ ký / Hiếm)',
-      stSoon: 'Sắp có hàng', stOut: 'Hết hàng',
+      stAll: 'Tất cả trạng thái', stAvail: 'Còn hàng', stContact: 'Liên hệ',
+      condAll: 'Tất cả tình trạng', condNew: 'New Seal', condNm: 'NM', condContact: 'Liên hệ',
       prAll: 'Mọi mức giá niêm yết', pr1: 'Dưới 1 triệu', pr2: 'Từ 1 – 2 triệu', pr3: 'Trên 2 triệu',
       regionLbl: 'Phân loại:', regAll: 'Tất cả', regVn: 'Nhạc Việt', regIntl: 'Nhạc Quốc Tế',
       audioOnly: '🎧 Có nghe thử 30s',
@@ -1051,10 +1062,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       phAddr: 'Địa chỉ nhận hàng (hoặc để trống nếu chỉ xuất báo giá)',
       phNote: 'Ghi chú thêm (vd: nội dung thiệp tặng, khung giờ nhận...)',
       giftWrap: '🎁 Kèm gói quà nghệ thuật & viết thiệp tay',
-      btnOrder: '✓ Gửi Đơn Đặt Hàng Ngay',
+      btnOrderZalo: '💬 Đặt Hàng Qua Zalo',
       btnQuote: '📄 Xuất Báo Giá PDF (Tạm ứng / Doanh nghiệp)',
-      btnZalo: '💬 Gửi Trọn Danh Sách Qua Zalo',
-      quoteHint: '* Trên bảng Báo giá PDF, tên hàng hóa sẽ hiển thị chung là <strong>“Đĩa nhạc”</strong> (hoặc nhóm thiết bị) và ghi rõ tên album, nghệ sĩ, mã SKU ở cột Ghi chú để thuận tiện làm thủ tục tạm ứng.',
+      quoteHint: '* Trên bảng Báo giá PDF, tên hàng hóa hiển thị chung là <strong>“Đĩa than”</strong> hoặc <strong>“Đĩa CD”</strong>; chi tiết tên album, nghệ sĩ, mã SKU nằm ở cột <strong>Ghi chú</strong> cuối cùng (phần làm rõ, không xuất hiện trên hóa đơn).',
       wlTitle: '🔔 Báo Tôi Khi Hàng Về',
       wlDesc: 'Để lại SĐT/Zalo, <strong>Hue Sound Express</strong> sẽ nhắn ưu tiên ngay khi tựa đĩa/sản phẩm này cập bến:',
       wlPhName: 'Tên của bạn *', wlPhPhone: 'Số điện thoại / Zalo *', wlPhNote: 'Ghi chú thêm (nếu có)',
@@ -1075,7 +1085,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       qBrandSub: 'Where sound finds its color • Đĩa than, CD, Máy hát & Phụ kiện Audio',
       qCodeLbl: 'Số báo giá:', qDateLbl: 'Ngày lập:', qValidLbl: '<strong>Hiệu lực:</strong> 07 ngày kể từ ngày lập',
       qTitle: 'BẢNG BÁO GIÁ SẢN PHẨM', qThNo: 'STT', qThItem: 'Tên hàng hóa',
-      qThDetail: 'Ghi chú / Chi tiết sản phẩm', qThQty: 'SL', qThPrice: 'Đơn giá niêm yết', qThSub: 'Thành tiền',
+      qThDetail: 'Ghi chú (Không xuất hiện trên hóa đơn)', qThQty: 'SL', qThPrice: 'Đơn giá niêm yết', qThSub: 'Thành tiền',
       qTotalLbl: 'Tổng cộng (Giá niêm yết):', qTo: 'Kính gửi:', qPhone: 'SĐT/Zalo:', qAddr: 'Địa chỉ:',
       qGift: 'Yêu cầu kèm theo: Gói quà nghệ thuật & viết thiệp tay', qDefaultCust: 'Quý khách hàng / Đơn vị',
       qNotesHtml: `<strong>Ghi chú & Điều khoản báo giá:</strong><br>
@@ -1098,7 +1108,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <div class="guide-item"><h3>Giao hàng hỏa tốc & Toàn quốc</h3><p>Giao hỏa tốc 2H tại nội thành Hà Nội và chuyển phát nhanh toàn quốc. Khi cần tư vấn chuyên sâu hoặc sắp xếp hẹn bàn giao trực tiếp, vui lòng nhắn Zalo <strong>09323.13918</strong>.</p></div>
           <div class="guide-item"><h3>Xuất Báo Giá nhanh & Gói quà nghệ thuật</h3><p>Bạn có thể chọn nhiều đĩa/phụ kiện vào Giỏ hàng và bấm <strong>Xuất Báo Giá PDF</strong> ngay lập tức để làm hồ sơ tạm ứng hoặc đối chiếu quà tặng. Hỗ trợ gói quà nghệ thuật & viết thiệp tay theo yêu cầu.</p></div>
         </div>`,
-      statusMap: { 'New Seal': 'New Seal', 'Liên hệ': 'Liên hệ', 'Sắp có hàng': 'Sắp có hàng', 'Hết hàng': 'Hết hàng' },
+      statusMap: { 'Còn hàng': 'Còn hàng', 'Liên hệ': 'Liên hệ' },
+      condMap: { 'New Seal': 'New Seal', 'NM': 'NM', 'Liên hệ': 'Liên hệ' },
       genreMap: {
         'ALL': 'Tất cả thể loại', 'Nhạc Việt': 'Nhạc Việt', 'Nhạc Việt / Bolero': 'Bolero / Nhạc Xưa',
         'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
@@ -1111,10 +1122,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tlLine2: '30s audio previews, transparent list prices, instant quotes & protective 3-layer nationwide shipping',
       qlZalo: 'Zalo', qlFb: 'Facebook', qlIg: 'Instagram', qlGg: 'Google',
       tabVinyl: 'Vinyl (LP)', tabCd: 'CD / SACD', tabTurntable: 'Turntables',
-      tabAccessory: 'Accessories & Care', tabGuide: 'Care & Shipping',
+      tabAccessory: 'Accessories', tabGuide: 'Vinyl Care and Shipping',
       searchPh: '🔍 Search artist, album, turntable brand, SKU...',
-      stAll: 'All statuses', stNew: 'New Seal (In Stock)', stContact: 'Contact (Signed / Rare)',
-      stSoon: 'Coming Soon', stOut: 'Out of Stock',
+      stAll: 'All availability', stAvail: 'In Stock', stContact: 'Contact',
+      condAll: 'All conditions', condNew: 'New Seal', condNm: 'NM', condContact: 'Contact',
       prAll: 'All list prices', pr1: 'Under 1M VND', pr2: '1M – 2M VND', pr3: 'Over 2M VND',
       regionLbl: 'Origin:', regAll: 'All Music', regVn: 'Vietnamese Music', regIntl: 'International Music',
       audioOnly: '🎧 30s Preview Ready',
@@ -1131,10 +1142,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       phAddr: 'Delivery Address (optional for PDF Quote only)',
       phNote: 'Additional notes (gift card message, preferred delivery window...)',
       giftWrap: '🎁 Add artistic gift wrapping & handwritten card',
-      btnOrder: '✓ Place Order Now',
+      btnOrderZalo: '💬 Place Order via Zalo',
       btnQuote: '📄 Export PDF Quote (Reference / Advance)',
-      btnZalo: '💬 Send Full List via Zalo',
-      quoteHint: '* On the PDF Quote, item names are grouped generically as <strong>“Music Disc”</strong> (or equipment group) with exact artist, album & SKU in the Notes column.',
+      quoteHint: '* On the PDF Quote, item names display generically as <strong>“Vinyl Record”</strong> or <strong>“CD”</strong>; exact artist, album & SKU are listed in the final <strong>Notes</strong> column (for clarity only, not shown on invoice).',
       wlTitle: '🔔 Back-in-Stock Alert',
       wlDesc: 'Leave your phone/Zalo and <strong>Hue Sound Express</strong> will notify you first when this item arrives:',
       wlPhName: 'Your Name *', wlPhPhone: 'Phone / Zalo *', wlPhNote: 'Optional note',
@@ -1155,7 +1165,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       qBrandSub: 'Where sound finds its color • Vinyl LP, CD, Turntables & Audiophile Accessories',
       qCodeLbl: 'Quote No:', qDateLbl: 'Date:', qValidLbl: '<strong>Validity:</strong> 07 days from issue date',
       qTitle: 'PRODUCT QUOTATION', qThNo: 'No.', qThItem: 'Item Category',
-      qThDetail: 'Notes / Product Details', qThQty: 'Qty', qThPrice: 'List Price', qThSub: 'Subtotal',
+      qThDetail: 'Notes (Not shown on invoice)', qThQty: 'Qty', qThPrice: 'List Price', qThSub: 'Subtotal',
       qTotalLbl: 'Total (List Price):', qTo: 'Prepared for:', qPhone: 'Phone/Zalo:', qAddr: 'Address:',
       qGift: 'Add-on: Artistic gift wrapping & handwritten card', qDefaultCust: 'Valued Customer / Organization',
       qNotesHtml: `<strong>Quotation Terms & Notes:</strong><br>
@@ -1178,7 +1188,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <div class="guide-item"><h3>Express Hanoi & Nationwide Delivery</h3><p>2H express delivery in Hanoi and insured fast shipping nationwide. For technical advice or arranging direct handoff, message Zalo <strong>09323.13918</strong>.</p></div>
           <div class="guide-item"><h3>Instant PDF Quote & Artistic Gift Wrapping</h3><p>Add items to your cart and export a clean <strong>PDF Quotation</strong> in one click for reference or gifting approval. Artistic gift wrapping and handwritten notes available upon request.</p></div>
         </div>`,
-      statusMap: { 'New Seal': 'New Seal', 'Liên hệ': 'Contact', 'Sắp có hàng': 'Coming Soon', 'Hết hàng': 'Out of Stock' },
+      statusMap: { 'Còn hàng': 'In Stock', 'Liên hệ': 'Contact' },
+      condMap: { 'New Seal': 'New Seal', 'NM': 'NM', 'Liên hệ': 'Contact' },
       genreMap: {
         'ALL': 'All Genres', 'Nhạc Việt': 'Vietnamese Pop / Vocal', 'Nhạc Việt / Bolero': 'Vietnamese Bolero',
         'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
@@ -1235,10 +1246,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('tabLbl-guide').innerText = L.tabGuide;
     document.getElementById('searchInput').placeholder = L.searchPh;
     document.getElementById('optStAll').innerText = L.stAll;
-    document.getElementById('optStNew').innerText = L.stNew;
+    document.getElementById('optStAvail').innerText = L.stAvail;
     document.getElementById('optStContact').innerText = L.stContact;
-    document.getElementById('optStSoon').innerText = L.stSoon;
-    document.getElementById('optStOut').innerText = L.stOut;
+    document.getElementById('optCondAll').innerText = L.condAll;
+    document.getElementById('optCondNew').innerText = L.condNew;
+    document.getElementById('optCondNm').innerText = L.condNm;
+    document.getElementById('optCondContact').innerText = L.condContact;
     document.getElementById('optPrAll').innerText = L.prAll;
     document.getElementById('optPr1').innerText = L.pr1;
     document.getElementById('optPr2').innerText = L.pr2;
@@ -1256,9 +1269,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('custAddress').placeholder = L.phAddr;
     document.getElementById('custNote').placeholder = L.phNote;
     document.getElementById('giftWrapLabel').innerText = L.giftWrap;
-    document.getElementById('btnSubmitOrder').innerText = L.btnOrder;
+    document.getElementById('btnOrderZalo').innerText = L.btnOrderZalo;
     document.getElementById('btnPrintQuote').innerText = L.btnQuote;
-    document.getElementById('btnSendZalo').innerText = L.btnZalo;
     document.getElementById('quoteHintText').innerHTML = L.quoteHint;
     document.getElementById('wlModalTitle').innerText = L.wlTitle;
     document.getElementById('wlModalDesc').innerHTML = L.wlDesc;
@@ -1291,10 +1303,27 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   function normalizeProduct(item) {
     const cat = item.category || 'vinyl';
     const price = Number(item.p || item.list_price || 0);
-    let st = item.s || item.status || 'New Seal';
-    const cond = String(item.c || item.edition || '');
-    if (st === 'Còn hàng') st = (/(sign|mint|limited|picture)/i.test(cond) || price <= 0) ? 'Liên hệ' : 'New Seal';
-    if (st === 'Liên hệ đặt trước') st = price <= 0 ? 'Liên hệ' : 'Hết hàng';
+    const rawStatus = String(item.s || item.status || '');
+    const rawCond = String(item.cond || item.c || item.edition || '');
+
+    // Quy tac chuan hoa:
+    // 1. Gia = 0 -> Lien he
+    // 2. Tinh trang (cond): chi gom New Seal / NM / Lien he
+    let cond = 'New Seal';
+    if (/\b(nm|mint)\b/i.test(rawCond)) cond = 'NM';
+    else if (/(sign|limited|picture|liên hệ)/i.test(rawCond) || price <= 0) cond = 'Liên hệ';
+    else cond = 'New Seal';
+
+    // 3. Trang thai (s): chi gom Con hang / Lien he
+    let st = 'Còn hàng';
+    if (price <= 0 || /(hết hàng|sắp có|liên hệ|đặt trước)/i.test(rawStatus) || cond === 'Liên hệ') {
+      st = 'Liên hệ';
+    } else if (/(còn hàng|new seal)/i.test(rawStatus) || !rawStatus) {
+      st = 'Còn hàng';
+    } else {
+      st = 'Liên hệ';
+    }
+
     return {
       id: item.id,
       sku: String(item.sku || ''),
@@ -1305,7 +1334,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       t: String(item.t || ''),
       l: String(item.l || ''),
       f: String(item.f || ''),
-      c: cond,
+      c: rawCond,
+      cond: cond,
       y: String(item.y || ''),
       p: price,
       s: st,
@@ -1446,6 +1476,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     visibleCount = 24;
     const q = document.getElementById('searchInput').value.toLowerCase().trim();
     const st = document.getElementById('statusFilter').value;
+    const cf = document.getElementById('condFilter').value;
     const pr = document.getElementById('priceFilter').value;
 
     filteredProducts = allProducts.filter(item => {
@@ -1460,6 +1491,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       }
 
       if (st !== 'ALL' && item.s !== st) return false;
+      if (cf !== 'ALL' && item.cond !== cf) return false;
       if (pr === 'UNDER_1M' && (item.p <= 0 || item.p >= 1000000)) return false;
       if (pr === '1M_2M' && (item.p < 1000000 || item.p > 2000000)) return false;
       if (pr === 'OVER_2M' && item.p <= 2000000) return false;
@@ -1478,7 +1510,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       if (onlyWithAudio && !(item.aud && item.aud.startsWith('http'))) return false;
 
       if (q) {
-        const hay = `${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.c}`.toLowerCase();
+        const hay = `${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.c} ${item.cond} ${item.s}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;
@@ -1493,9 +1525,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   };
 
   function statusClass(s) {
-    if (s === 'New Seal') return 'st-new';
-    if (s === 'Liên hệ') return 'st-contact';
-    if (s === 'Sắp có hàng') return 'st-soon';
+    if (s === 'Còn hàng') return 'st-new';
+    return 'st-contact';
+  }
+
+  function condClass(c) {
+    if (c === 'New Seal') return 'st-new';
+    if (c === 'NM') return 'st-soon';
     return 'st-out';
   }
 
@@ -1522,9 +1558,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     grid.innerHTML = slice.map(item => {
       const hasCover = item.img && item.img.startsWith('http');
       const hasAudio = item.aud && item.aud.startsWith('http');
-      const isWaitlist = (item.s === 'Hết hàng' || item.s === 'Sắp có hàng');
+      const isWaitlist = (item.s === 'Liên hệ' && item.p <= 0);
       const skuEsc = escHtml(item.sku);
       const statusText = L.statusMap[item.s] || item.s;
+      const condText = L.condMap[item.cond] || item.cond;
       const genreText = L.genreMap[item.g] || item.g || item.category;
 
       return `
@@ -1539,6 +1576,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
             <div class="card-info">
               <div class="badge-row">
                 <span class="badge">${escHtml(genreText)}</span>
+                <span class="status-badge ${condClass(item.cond)}">${escHtml(condText)}</span>
                 <span class="status-badge ${statusClass(item.s)}">${escHtml(statusText)}</span>
               </div>
               <div class="card-title" onclick="openDetail('${skuEsc}')">${escHtml(item.t)}</div>
@@ -1616,11 +1654,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const L = t();
     const item = allProducts.find(x => x.sku === sku);
     if (!item) return;
-    const isWaitlist = (item.s === 'Hết hàng' || item.s === 'Sắp có hàng');
+    const isWaitlist = (item.s === 'Liên hệ' && item.p <= 0);
     const hasCover = item.img && item.img.startsWith('http');
     const hasAudio = item.aud && item.aud.startsWith('http');
     const skuEsc = escHtml(item.sku);
     const statusText = L.statusMap[item.s] || item.s;
+    const condText = L.condMap[item.cond] || item.cond;
 
     document.getElementById('detailModalHeading').innerText = `${item.a} – ${item.t}`;
     let html = `
@@ -1631,6 +1670,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         <div>
           <div class="badge-row">
             <span class="badge">${escHtml(L.genreMap[item.g] || item.g)}</span>
+            <span class="status-badge ${condClass(item.cond)}">${escHtml(condText)}</span>
             <span class="status-badge ${statusClass(item.s)}">${escHtml(statusText)}</span>
           </div>
           <div style="font-size:.76rem; color:var(--muted); margin:6px 0;">
@@ -1746,18 +1786,20 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
   function getGenericQuoteName(category) {
     if (lang === 'en') {
-      if (category === 'vinyl' || category === 'cd') return 'Music Disc';
-      if (category === 'turntable') return 'Audio Equipment';
+      if (category === 'vinyl') return 'Vinyl Record';
+      if (category === 'cd') return 'CD';
+      if (category === 'turntable') return 'Turntable / Audio Equipment';
       if (category === 'care') return 'Audio Care Service';
       return 'Audio Accessory';
     }
-    if (category === 'vinyl' || category === 'cd') return 'Đĩa nhạc';
-    if (category === 'turntable') return 'Thiết bị âm thanh';
+    if (category === 'vinyl') return 'Đĩa than';
+    if (category === 'cd') return 'Đĩa CD';
+    if (category === 'turntable') return 'Máy hát / Thiết bị âm thanh';
     if (category === 'care') return 'Dịch vụ bảo dưỡng audio';
     return 'Phụ kiện audio';
   }
 
-  // ===== XUAT BAO GIA PDF 1 CHAM (Ghi chung "Dia nhac" / "Music Disc", chi tiet o cot Ghi chu, khong ghi xuat VAT) =====
+  // ===== XUAT BAO GIA PDF 1 CHAM (Ghi chung "Dia than" / "Dia CD", cot Ghi chu o cuoi cung khong hien tren hoa don) =====
   window.printQuotePDF = function() {
     const L = t();
     const items = getEnrichedCart();
@@ -1797,14 +1839,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('qTableBody').innerHTML = items.map((it, idx) => {
       const sub = it.p * it.qty;
       total += sub;
-      const detailNote = `${it.a} – ${it.t} (${it.f}${it.l ? ', ' + it.l : ''} • SKU: ${it.sku} • ${L.statusMap[it.s] || it.s})`;
+      const detailNote = `${it.a} – ${it.t} (${it.f}${it.l ? ', ' + it.l : ''} • SKU: ${it.sku} • ${L.condMap[it.cond] || it.cond})`;
       return `<tr>
         <td>${idx + 1}</td>
         <td><strong>${getGenericQuoteName(it.category)}</strong></td>
-        <td>${escHtml(detailNote)}</td>
         <td class="num">${it.qty}</td>
         <td class="num">${formatVnd(it.p)}</td>
         <td class="num">${sub > 0 ? sub.toLocaleString('vi-VN') + ' đ' : L.contactPrice}</td>
+        <td>${escHtml(detailNote)}</td>
       </tr>`;
     }).join('');
 
@@ -1836,17 +1878,16 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     ].filter(Boolean).join('\n');
   }
 
-  // ===== GUI DON KHONG CAN DANG NHAP (Gui Webhook bao Noti dien thoai + Zalo) =====
-  window.submitOrder = function() {
+  // ===== GOP DAT HANG + ZALO = PLACE ORDER VIA ZALO (Dong thoi gui Webhook neu da cau hinh) =====
+  window.placeOrderViaZalo = function() {
     const L = t();
     const items = getEnrichedCart();
     if (items.length === 0) { showToast(L.toastEmptyCart); return; }
-    const name = document.getElementById('custName').value.trim();
-    const phone = document.getElementById('custPhone').value.trim();
-    if (!name || !phone) { showToast(L.toastNeedInfo); return; }
 
     const orderCode = 'HSE-' + Date.now().toString().slice(-6);
     const total = items.reduce((s, x) => s + x.p * x.qty, 0);
+    const name = document.getElementById('custName').value.trim();
+    const phone = document.getElementById('custPhone').value.trim();
     const itemsText = items.map(it => `- ${it.a} - ${it.t} (${it.sku}) x${it.qty}`).join('\n');
 
     if (WEBHOOK_URL) {
@@ -1856,7 +1897,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           type: 'order',
-          mode: 'Đặt hàng online',
+          mode: 'Đặt hàng qua Zalo',
           orderCode, name, phone,
           address: document.getElementById('custAddress').value.trim(),
           note: document.getElementById('custNote').value.trim(),
@@ -1864,18 +1905,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           itemsText, total
         })
       }).catch(() => {});
-      showToast(L.toastOrderSent(orderCode));
-    } else {
-      sendCartToZalo(orderCode);
     }
-  };
 
-  window.sendCartToZalo = function(customCode) {
-    const L = t();
-    const items = getEnrichedCart();
-    if (items.length === 0) { showToast(L.toastEmptyCart); return; }
-    const code = customCode || ('HSE-' + Date.now().toString().slice(-6));
-    const txt = buildOrderText(code);
+    const txt = buildOrderText(orderCode);
     if (navigator.clipboard) navigator.clipboard.writeText(txt).catch(() => {});
     showToast(L.toastZalo);
     window.open(`https://zalo.me/${ZALO_PHONE}?text=${encodeURIComponent(txt)}`, '_blank', 'noopener');

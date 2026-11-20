@@ -215,6 +215,26 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
     })
 }
 
+# Chuan hoa Tinh trang (New Seal / NM / Lien he) & Trang thai (Con hang / Lien he) cho toan bo san pham
+foreach ($it in $allItems) {
+    $rawCond = [string]$it.c
+    $rawSt = [string]$it.s
+    $price = [int]$it.p
+
+    $normCond = "New Seal"
+    if ($rawCond -match '(?i)\b(nm|mint)\b') { $normCond = "NM" }
+    elseif ($rawCond -match '(?i)(sign|limited|picture|liên hệ)' -or $price -le 0) { $normCond = "Liên hệ" }
+
+    $normSt = "Còn hàng"
+    if ($price -le 0 -or $rawSt -match '(?i)(hết hàng|sắp có|liên hệ|đặt trước)' -or $normCond -eq "Liên hệ") {
+        $normSt = "Liên hệ"
+    }
+
+    if ($it.PSObject.Properties['cond']) { $it.cond = $normCond }
+    else { $it | Add-Member -NotePropertyName 'cond' -NotePropertyValue $normCond }
+    $it.s = $normSt
+}
+
 # Xuat data/catalog_all.json
 if (-not (Test-Path "data")) { New-Item -ItemType Directory -Path "data" -Force | Out-Null }
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
@@ -237,7 +257,7 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("## 2. Operational & Quoting Policies")
 [void]$sb.AppendLine("- **Online-First Experience:** Hue Sound Express phục vụ giao hàng hỏa tốc 2H nội thành Hà Nội và ship toàn quốc với quy chuẩn đóng gói 3 lớp chống rách mép (Seam Splits Prevention). Trường hợp khách hàng có nhu cầu gặp trực tiếp để bàn giao đĩa/máy, vui lòng liên hệ Zalo 09323.13918 để được nhân sự hỗ trợ sắp xếp lịch hẹn.")
-[void]$sb.AppendLine("- **Pricing & Status:** Giá hiển thị là giá niêm yết chuẩn. Trạng thái sản phẩm gồm: New Seal (sẵn hàng), Hết hàng / Sắp có hàng (hỗ trợ đăng ký báo khi hàng về), và Liên hệ (dành cho bản chữ ký, hàng hiếm hoặc bản giới hạn).")
+[void]$sb.AppendLine("- **Pricing, Condition & Status:** Luôn hiển thị Giá niêm yết (nếu giá bằng 0 hiển thị Liên hệ). Tình trạng sản phẩm chuẩn gồm: New Seal, NM, Liên hệ. Trạng thái kho chuẩn gồm: Còn hàng, Liên hệ.")
 [void]$sb.AppendLine("- **Corporate & VIP Gift Quoting:** Hỗ trợ xuất bảng báo giá nhanh phục vụ khách hàng cá nhân/doanh nghiệp làm thủ tục tạm ứng, hỗ trợ gói quà nghệ thuật và viết thiệp tay.")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("## 3. Hue Sound Vinyl Care - Maintenance Standards")
@@ -248,12 +268,12 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("5. Vệ sinh đầu kim định kỳ (Audio-Technica AT607a) và cân chỉnh lực tì kim (Tracking Force) đúng chuẩn.")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("## 4. Unified Product Catalog ($($allItems.Count) Items)")
-[void]$sb.AppendLine("| Category | SKU | Artist / Brand | Product / Album | Format / Spec | List Price (VND) | Status | URL |")
-[void]$sb.AppendLine("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |")
+[void]$sb.AppendLine("| Category | SKU | Artist / Brand | Product / Album | Format / Spec | Condition | List Price (VND) | Status | URL |")
+[void]$sb.AppendLine("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |")
 foreach ($it in $allItems) {
     $priceTxt = if ($it.p -gt 0) { $it.p.ToString("N0") } else { "Liên hệ" }
     $urlTxt = "$SiteBaseUrl/p/$($it.slug)/"
-    [void]$sb.AppendLine("| $($it.category) | $($it.sku) | $($it.a) | $($it.t) | $($it.f) | $priceTxt | $($it.s) | $urlTxt |")
+    [void]$sb.AppendLine("| $($it.category) | $($it.sku) | $($it.a) | $($it.t) | $($it.f) | $($it.cond) | $priceTxt | $($it.s) | $urlTxt |")
 }
 [System.IO.File]::WriteAllText((Join-Path (Get-Location) "llms.txt"), $sb.ToString(), $utf8NoBom)
 
