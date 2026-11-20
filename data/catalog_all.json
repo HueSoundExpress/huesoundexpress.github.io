@@ -10,13 +10,13 @@
                  },
         "a":  "Mỹ Tâm",
         "t":  "Tâm 9 [R]",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
         "y":  "2018",
         "p":  1750000,
         "s":  "Còn hàng",
-        "d":  "Tâm 9 [R] – Mỹ Tâm (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
+        "d":  "Tâm 9 [R] – Mỹ Tâm (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
         "tracklist":  [
                           "Đừng Hỏi Em",
                           "Cô Ấy Là Ai",
@@ -51,13 +51,13 @@
                  },
         "a":  "Mỹ Tâm",
         "t":  "Melodies",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
         "y":  "",
         "p":  1250000,
         "s":  "Còn hàng",
-        "d":  "Melodies – Mỹ Tâm (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
+        "d":  "Melodies – Mỹ Tâm (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
         "tracklist":  {
 
                       },
@@ -83,13 +83,13 @@
                  },
         "a":  "Lệ Quyên",
         "t":  "Xưa 1",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
         "y":  "2010",
         "p":  1200000,
         "s":  "Còn hàng",
-        "d":  "Xưa 1 – Lệ Quyên (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
+        "d":  "Xưa 1 – Lệ Quyên (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
         "tracklist":  [
                           "Buồn",
                           "Chiếc Lá Cuối Cùng",
@@ -123,13 +123,13 @@
                  },
         "a":  "Lệ Quyên",
         "t":  "Lam Phương",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
         "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
-        "d":  "Lam Phương – Lệ Quyên (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
+        "d":  "Lam Phương – Lệ Quyên (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
         "tracklist":  {
 
                       },
@@ -155,20 +155,25 @@
                  },
         "a":  "Nguyễn Ánh 9",
         "t":  "Piano Nguyễn Ánh 9",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
-        "y":  "2023",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
-        "d":  "Piano Nguyễn Ánh 9 – Nguyễn Ánh 9 (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "anh muốn nghe giọng em (piano ver.)",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b0/fc/66/b0fc66dc-4a08-36fb-4126-68d14063b71d/7316474505990.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/88/dd/ce88dd47-918d-695e-3b9d-4207e155cbda/mzaf_11864208887602752801.plus.aac.p.m4a",
-        "aud_track":  "anh muốn nghe giọng em (piano ver.)",
-        "missing_fields":  {
+        "d":  "Piano Nguyễn Ánh 9 – Nguyễn Ánh 9 (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -182,13 +187,13 @@
                  },
         "a":  "Quỳnh Lan",
         "t":  "Cô đơn Nguyễn Ánh 9",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
         "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
-        "d":  "Cô đơn Nguyễn Ánh 9 – Quỳnh Lan (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
+        "d":  "Cô đơn Nguyễn Ánh 9 – Quỳnh Lan (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
         "tracklist":  {
 
                       },
@@ -214,13 +219,13 @@
                  },
         "a":  "Hồng Nhung",
         "t":  "Bống là ai",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
         "y":  "2024",
         "p":  3250000,
         "s":  "Còn hàng",
-        "d":  "Bống là ai – Hồng Nhung (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
+        "d":  "Bống là ai – Hồng Nhung (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
         "tracklist":  [
                           "Tình Sầu",
                           "Ru Ta Ngậm Ngùi",
@@ -250,7 +255,7 @@
                  },
         "a":  "Hồng Nhung",
         "t":  "Bống là ai (bản chữ ký)",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "Sign",
         "y":  "2024",
@@ -286,13 +291,13 @@
                  },
         "a":  "Mỹ Linh",
         "t":  "Tóc ngắn",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
         "y":  "1998",
         "p":  0,
         "s":  "Liên hệ",
-        "d":  "Tóc ngắn – Mỹ Linh (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
+        "d":  "Tóc ngắn – Mỹ Linh (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
         "tracklist":  [
                           "Hương Ngọc Lan",
                           "Chuyện Tình",
@@ -322,13 +327,13 @@
                  },
         "a":  "Quang Dũng",
         "t":  "Tình ca Phạm Duy",
-        "l":  "Viết Tân Audio",
+        "l":  "Viết Tân Studio",
         "f":  "LP",
         "c":  "New",
         "y":  "2013",
         "p":  1200000,
         "s":  "Còn hàng",
-        "d":  "Tình ca Phạm Duy – Quang Dũng (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Audio, tái hiện trung âm dày dặn và mộc mạc.",
+        "d":  "Tình ca Phạm Duy – Quang Dũng (Nhạc Việt). Định dạng LP chuẩn mực từ Viết Tân Studio, tái hiện trung âm dày dặn và mộc mạc.",
         "tracklist":  [
                           "Hẹn Hò",
                           "Đường Em Đi",
@@ -363,17 +368,22 @@
         "l":  "Other",
         "f":  "LP",
         "c":  "New",
-        "y":  "2021",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Nỗi niềm – Quang Dũng (Nhạc Việt). Định dạng LP chuẩn mực từ Hãng phát hành chính thức, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Nỗi Niềm",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/41/25/55/4125550e-6347-4679-2295-a11031d5d3b8/cover.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/2a/4f/c82a4fc1-0d1d-913a-4e9f-db9b2eb8353f/mzaf_7048937057231700299.plus.aac.p.m4a",
-        "aud_track":  "Nỗi Niềm",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -398,7 +408,7 @@
                           "Thương Một Người",
                           "Thương Một Người (Beat)"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/00/6f/92/006f92db-ceca-f2b9-315b-e2c963c49dd1/197188912529.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/18-2-jpeg.jpg?v=1623603220597",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ab/42/7a/ab427a5a-e664-d29e-e77f-7df898d5907b/mzaf_7147240878137029958.plus.aac.p.m4a",
         "aud_track":  "Thương Một Người",
         "missing_fields":  {
@@ -435,7 +445,7 @@
                           "Bước Chân Lẻ Loi",
                           "Lối Cũ Ta Về"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1f/a0/54/1fa054f7-a4b7-7201-27e1-d24d7811bff1/24UMGIM04373.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z4465066894533-6caeae9089e682920a1d83356af2f4c3.jpg?v=1687775340973",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/80/2b/df/802bdf67-99f9-aaa6-801a-5c035009d91e/mzaf_5148950400201620.plus.aac.p.m4a",
         "aud_track":  "Dẫu Có Lỗi Lầm",
         "missing_fields":  {
@@ -472,7 +482,7 @@
                           "Bước Chân Lẻ Loi",
                           "Lối Cũ Ta Về"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1f/a0/54/1fa054f7-a4b7-7201-27e1-d24d7811bff1/24UMGIM04373.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z4465066894533-6caeae9089e682920a1d83356af2f4c3.jpg?v=1687775340973",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/80/2b/df/802bdf67-99f9-aaa6-801a-5c035009d91e/mzaf_5148950400201620.plus.aac.p.m4a",
         "aud_track":  "Dẫu Có Lỗi Lầm",
         "missing_fields":  {
@@ -547,7 +557,7 @@
                           "Biển Cạn",
                           "Trái Tim Không Ngủ Yên"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d4/c3/d2/d4c3d22b-51a0-d0aa-4a29-0e1143a283a4/24UMGIM01913.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z4465084132435-ea6503c02718fe4e915ed91df570e3b7.jpg?v=1687775715010",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/22/0a/20/220a205d-3e53-164f-dd81-9b453baebe38/mzaf_15349671447332198514.plus.aac.p.m4a",
         "aud_track":  "Giấc Mơ Tuyệt Vời",
         "missing_fields":  {
@@ -586,7 +596,7 @@
                           "Ru Nửa Vầng Trăng",
                           "Đường Về Hai Thôn"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c9/43/a7/c943a745-ec38-b8de-e89d-9890c9602af8/197187376674.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/7-jpeg-071ae869-36d9-4974-9a6b-1b3e2e1a384e.jpg?v=1623601728380",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/fd/f7/6e/fdf76e78-2420-de13-89de-1ef913685a3b/mzaf_14188348285516339272.plus.aac.p.m4a",
         "aud_track":  "Về Dưới Mái Nhà",
         "missing_fields":  {
@@ -620,7 +630,7 @@
                           "Bản Tình Cuối",
                           "Mùa Thu Cho Em"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bd/26/82/bd2682c6-7884-8c36-e096-719d47aaf45c/cover.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z5002028535410-e8af3f90629a4e2a402ddb3ead82a94d.jpg?v=1703318433843",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/a9/eb/93a9eb6b-8682-dc98-f89b-9972ef98fc96/mzaf_10544718009470635374.plus.aac.p.m4a",
         "aud_track":  "Một mình",
         "missing_fields":  {
@@ -642,17 +652,21 @@
         "l":  "Gia Định Audio",
         "f":  "LP",
         "c":  "New",
-        "y":  "2025",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Một chiều thu – Nhiều ca sĩ (Nhạc Việt). Định dạng LP chuẩn mực từ Gia Định Audio, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "tôi nhớ em vào một chiều thu",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f0/d3/ff/f0d3ffb4-2058-5878-d219-695f2ba2a347/artwork.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/db/7d/bc/db7dbc9e-faa0-3946-c8b4-31942129c1be/mzaf_11081789700977014791.plus.aac.p.m4a",
-        "aud_track":  "tôi nhớ em vào một chiều thu",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/1-jpeg-16b6d4e7-26b3-4e5c-b00a-6af87d7b1e53.jpg?v=1644829954723",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -684,7 +698,7 @@
                           "Dạt Dào Thương Lắm",
                           "Gửi Lại Hôm Qua"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/98/da/1198da00-34b0-9894-cad1-04b7d5126abc/24UMGIM27013.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z4465067668702-e09738bb23a5935a95c4c0244a29d9d8.jpg?v=1687775385907",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/2d/26/59/2d265961-d93f-9918-a4c9-bad1c8d612a5/mzaf_8014748646899498642.plus.aac.p.m4a",
         "aud_track":  "Hoa Nắng Tôi",
         "missing_fields":  {
@@ -722,7 +736,7 @@
                           "Có Quên Được Đâu",
                           "Ngỡ Như"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/54/1a/07/541a07d8-443b-5958-c2ad-ff7873e1f4d0/24UMGIM27547.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/1-optimized.png?v=1690704656010",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/b3/b2/19b3b2e9-a26c-7e0d-8dc1-5388cf79e8d6/mzaf_6592227165663901799.plus.aac.p.m4a",
         "aud_track":  "Như Chưa Bắt Đầu",
         "missing_fields":  {
@@ -759,7 +773,7 @@
                           "Biển Nhớ",
                           "Xin Một Ngày Mai Có Nhau"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b2/a7/d0/b2a7d063-1137-2b87-db75-01af0a5661a0/4070335159779.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/2-jpeg-eca3a4cc-a20f-4a02-8f60-48c0501c3cea.jpg?v=1644830376750",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c5/4c/87/c54c87db-b70b-0cf9-90a2-f69a262b8528/mzaf_14962902702077790735.plus.aac.p.m4a",
         "aud_track":  "Cơn Mưa Phùn",
         "missing_fields":  {
@@ -799,7 +813,7 @@
                           "Bơ Vơ",
                           "Ảo Ảnh"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/98/01/0e/98010e81-55e8-164a-d5d4-c6b5516227bb/766973841520.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/2-jpeg-eca3a4cc-a20f-4a02-8f60-48c0501c3cea.jpg?v=1644830376750",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/77/1a/c4/771ac4de-a411-ba7f-e915-a93ccbccc7d5/mzaf_10745263114259121938.plus.aac.p.m4a",
         "aud_track":  "Cơn Mưa Phùn",
         "missing_fields":  {
@@ -828,11 +842,10 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/19-1-jpeg.jpg?v=1643165313937",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
-                               "MISSING_COVER",
                                "MISSING_AUDIO",
                                "MISSING_TRACKLIST",
                                "MISSING_YEAR"
@@ -860,11 +873,10 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/19-1-jpeg.jpg?v=1643165313937",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
-                               "MISSING_COVER",
                                "MISSING_AUDIO",
                                "MISSING_TRACKLIST",
                                "MISSING_YEAR"
@@ -900,7 +912,7 @@
                           "Chút Tàn Phai",
                           "Về Với Anh"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8b/62/1d/8b621d4a-b547-246f-5bc3-6d535f9a05f8/24UMGIM02880.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/bao-chan-1667464094238.jpg?v=1667464097967",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/42/e4/ac/42e4ac47-ec20-cabb-71a4-0903fb42a307/mzaf_9997691853030712969.plus.aac.p.m4a",
         "aud_track":  "Nơi Ấy Bình Yên",
         "missing_fields":  {
@@ -937,7 +949,7 @@
                           "Chút Tàn Phai",
                           "Về Với Anh"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8b/62/1d/8b621d4a-b547-246f-5bc3-6d535f9a05f8/24UMGIM02880.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/bao-chan-1667464094238.jpg?v=1667464097967",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/42/e4/ac/42e4ac47-ec20-cabb-71a4-0903fb42a307/mzaf_9997691853030712969.plus.aac.p.m4a",
         "aud_track":  "Nơi Ấy Bình Yên",
         "missing_fields":  {
@@ -971,7 +983,7 @@
                           "An",
                           "Ngày Chưa Giông Bão"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/dd/ed/b6/ddedb692-6500-42ed-1fa3-01a93b23a18b/190296380518.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/20-1-jpeg.jpg?v=1623603437723",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/1a/96/b01a9645-e260-bf32-31c4-206cb1a5c5f0/mzaf_4587414687924887309.plus.aac.p.m4a",
         "aud_track":  "Có Chàng Trai Viết Lên Cây",
         "missing_fields":  {
@@ -1006,7 +1018,7 @@
                           "Tùy Hứng Lý Qua Cầu (feat. marzuz)",
                           "Thành Phố Buồn"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/42/2d/4b/422d4b2f-cd47-5e8c-a53f-1a313b89f94e/190296317996.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/cfd8a597-4345-4e4f-8a41-2c2421cc0679.jpg?v=1648692621817",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f9/47/20/f9472093-0147-9806-72e4-9e2d98c55d07/mzaf_7577437480237851568.plus.aac.p.m4a",
         "aud_track":  "Cà Phê Một Mình",
         "missing_fields":  {
@@ -1043,7 +1055,7 @@
                           "Neo đậu bến quê",
                           "Về với quê"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/87/8f/53/878f538c-2fd6-0579-c701-7f1365c58d2a/artwork.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z4465096640711-195d0318d01746f217f5c2324d22ef68.jpg?v=1687830680407",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2c/31/61/2c3161ae-ffe0-b90e-4762-3879f8e50653/mzaf_9653122312312542386.plus.aac.p.m4a",
         "aud_track":  "Một khúc tâm tình của người Hà Tĩnh",
         "missing_fields":  {
@@ -1149,7 +1161,7 @@
                           "Vì Em Đã Yêu Anh",
                           "Yêu Anh Một Đời"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4f/44/fa/4f44fa7a-b805-e86e-6599-3bfa938951c3/cover.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/bia-1-1670645567083.jpg?v=1670645775437",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/12/4d/ab124daf-5ee0-9bef-9bee-4a02108ac660/mzaf_1869735072690588006.plus.aac.p.m4a",
         "aud_track":  "Chiếc Áo Cho Em",
         "missing_fields":  {
@@ -1171,25 +1183,22 @@
         "l":  "BK production",
         "f":  "LP",
         "c":  "New",
-        "y":  "2026",
+        "y":  "",
         "p":  1980000,
         "s":  "Còn hàng",
         "d":  "Em ơi mùa xuân đến rồi đó [R] – Quỳnh Anh (Nhạc Việt). Định dạng LP chuẩn mực từ BK production, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  [
-                          "Mùa Xuân Đến Rồi Đó",
-                          "Nhớ Về Hà Nội",
-                          "Gửi Anh Một Khúc Dân Ca",
-                          "Mùa Xuân Nho Nhỏ",
-                          "Nhớ Một Chiều Xuân",
-                          "Anh Cho Em Mùa Xuân",
-                          "Đi Qua Vùng Cỏ Non"
-                      ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/7a/dd/457add26-9b02-2fbc-b98c-56aa8aef06fb/cover.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/23/66/e12366da-4958-1948-9561-87b3d7126717/mzaf_6444956951035145448.plus.aac.p.m4a",
-        "aud_track":  "Mùa Xuân Đến Rồi Đó",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -1206,25 +1215,22 @@
         "l":  "BK production",
         "f":  "LP",
         "c":  "Sign",
-        "y":  "2026",
+        "y":  "",
         "p":  1980000,
         "s":  "Liên hệ",
         "d":  "Em ơi mùa xuân đến rồi đó [R] (bản chữ ký) – Quỳnh Anh (Nhạc Việt). Ấn bản giới hạn có chữ ký nghệ sĩ, giá trị sưu tầm cao.",
-        "tracklist":  [
-                          "Mùa Xuân Đến Rồi Đó",
-                          "Nhớ Về Hà Nội",
-                          "Gửi Anh Một Khúc Dân Ca",
-                          "Mùa Xuân Nho Nhỏ",
-                          "Nhớ Một Chiều Xuân",
-                          "Anh Cho Em Mùa Xuân",
-                          "Đi Qua Vùng Cỏ Non"
-                      ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/7a/dd/457add26-9b02-2fbc-b98c-56aa8aef06fb/cover.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/23/66/e12366da-4958-1948-9561-87b3d7126717/mzaf_6444956951035145448.plus.aac.p.m4a",
-        "aud_track":  "Mùa Xuân Đến Rồi Đó",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "Liên hệ"
     },
     {
@@ -1241,17 +1247,22 @@
         "l":  "BK production",
         "f":  "LP",
         "c":  "Sign",
-        "y":  "2026",
+        "y":  "",
         "p":  1350000,
         "s":  "Liên hệ",
         "d":  "Vàng [R] (bản chữ ký) – Quỳnh Anh (Nhạc Việt). Ấn bản giới hạn có chữ ký nghệ sĩ, giá trị sưu tầm cao.",
-        "tracklist":  "Cá Vàng Bơi",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/1e/7c/741e7cbb-cd96-92e3-e544-8321303ede40/0.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/33/43/1c3343e9-dbdc-4cdd-599f-eba4a7e04ff0/mzaf_1453125703099368079.plus.aac.p.m4a",
-        "aud_track":  "Cá Vàng Bơi",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "Liên hệ"
     },
     {
@@ -1381,11 +1392,10 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://i9.ytimg.com/s_p/OLAK5uy_miu5FEalaoYT18g3QiEKvSL1tfKcaM87g/mqdefault.jpg?sqp=CKzfgdgGir7X7AMICK7zz84GEAE=\u0026rs=AOn4CLAy9hOGvrxZ1HPLv1bmefSvtq46cA\u0026v=1775499694",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
-                               "MISSING_COVER",
                                "MISSING_AUDIO",
                                "MISSING_TRACKLIST",
                                "MISSING_YEAR"
@@ -1406,25 +1416,22 @@
         "l":  "BK production",
         "f":  "LP",
         "c":  "New",
-        "y":  "2026",
+        "y":  "",
         "p":  1300000,
         "s":  "Còn hàng",
         "d":  "Trên nắng dưới cát – Hoài Phan (Nhạc Việt). Định dạng LP chuẩn mực từ BK production, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  [
-                          "Ca Dao Em Và Tôi",
-                          "Người Đi Xây Hồ Kẻ Gỗ",
-                          "Câu Hò Bên Bờ Hiền Lương",
-                          "Thương Về Miền Trung",
-                          "Một Khúc Tâm Tình Của Người Hà Tĩnh",
-                          "Quảng Bình Quê Ta Ơi",
-                          "Hà Tĩnh Mình Thương"
-                      ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c7/b0/55/c7b05536-a3cf-86b3-8030-91a79d9cf486/38217.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c2/f7/7e/c2f77e97-7124-9ceb-18de-661cafa2f6b6/mzaf_3676906732635602546.plus.aac.p.m4a",
-        "aud_track":  "Ca Dao Em Và Tôi",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -1441,17 +1448,22 @@
         "l":  "Thúy Nga",
         "f":  "LP",
         "c":  "New",
-        "y":  "2025",
+        "y":  "",
         "p":  1500000,
         "s":  "Còn hàng",
         "d":  "Vùng lá me bay – Như Quỳnh (Nhạc Việt). Định dạng LP chuẩn mực từ Thúy Nga, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Vùng Lá Me Bay",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2f/d0/e6/2fd0e63e-2a0c-7a7a-5703-e5f150d59ae6/cover.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/26/6e/39266e69-4812-1f68-42eb-23772d5ebda2/mzaf_3246275289303710134.plus.aac.p.m4a",
-        "aud_track":  "Vùng Lá Me Bay",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -1584,17 +1596,22 @@
         "l":  "Thúy Nga",
         "f":  "LP",
         "c":  "New",
-        "y":  "2025",
+        "y":  "",
         "p":  1500000,
         "s":  "Còn hàng",
         "d":  "Mong chờ – Hoàng Oanh (Nhạc Việt). Định dạng LP chuẩn mực từ Thúy Nga, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Tạc Mộng Lứa Đôi",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bd/68/b2/bd68b2b5-d1c8-c97c-519e-989058334288/016627777003_cover.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/c1/66/8ac16678-9c50-b6b4-3184-4d2673e1e3c9/mzaf_8027231184866564334.plus.aac.p.m4a",
-        "aud_track":  "Tạc Mộng Lứa Đôi",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -2269,17 +2286,22 @@
         "l":  "Other",
         "f":  "LP",
         "c":  "Sign",
-        "y":  "2024",
+        "y":  "",
         "p":  1200000,
         "s":  "Liên hệ",
         "d":  "Cỏ (bản chữ ký) – Tố Nga (Nhạc Việt). Ấn bản giới hạn có chữ ký nghệ sĩ, giá trị sưu tầm cao.",
-        "tracklist":  "Nỗi Cô Đơn Trong Em",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2c/66/0c/2c660c22-fc5e-927c-d762-457d99cfbeb0/artwork.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/1c/31/791c31d0-21f9-c0cc-a34b-865f5205b897/mzaf_4516685850852392294.plus.aac.p.m4a",
-        "aud_track":  "Nỗi Cô Đơn Trong Em",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "Liên hệ"
     },
     {
@@ -2929,17 +2951,22 @@
         "l":  "Bolero",
         "f":  "LP",
         "c":  "New",
-        "y":  "1990",
+        "y":  "",
         "p":  1500000,
         "s":  "Còn hàng",
         "d":  "Mùa thu trong mưa – Nhiều ca sĩ (Nhạc Việt / Bolero). Định dạng LP chuẩn mực từ Bolero, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Mùa Thu Trong Mưa (Remastered)",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fe/f1/db/fef1db9e-8f42-d6be-7780-dba73bfd97c3/766973870513.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/66/b5/c866b5ef-ded7-c3f2-2d80-c23384daf31a/mzaf_11432533322574901986.plus.aac.p.m4a",
-        "aud_track":  "Mùa Thu Trong Mưa (Remastered)",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -3178,17 +3205,22 @@
         "l":  "Bolero",
         "f":  "LP",
         "c":  "New",
-        "y":  "2026",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Giọt lệ sầu – Chế Linh (Nhạc Việt / Bolero). Định dạng LP chuẩn mực từ Bolero, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Giọt Sầu Bên Sông Quê  (EDM)",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/d1/36/d1d136dc-d8b0-4117-f06d-668032b54efc/artwork.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/4e/a9/d64ea90a-9d45-e379-ccd1-5723e8c1db35/mzaf_2338473728057183728.plus.aac.p.m4a",
-        "aud_track":  "Giọt Sầu Bên Sông Quê  (EDM)",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -3490,17 +3522,22 @@
         "l":  "TMT",
         "f":  "LP",
         "c":  "New",
-        "y":  "2025",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Nhạc Xưa 2 – Nhiều ca sĩ (Nhạc Việt / Bolero). Định dạng LP chuẩn mực từ TMT, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Khúc Nhạc Trong Gió Xưa (Nhạc nhẹ trữ tình, Nhạc kiểu Pháp xưa, VN Romantic Pop Ballad)",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/c1/38/7fc13868-b2a8-75a2-9261-2f9e2e3d68ef/artwork.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/89/ca/b089ca85-6262-fe9d-1a48-4729337676d4/mzaf_2863811840567911070.plus.aac.p.m4a",
-        "aud_track":  "Khúc Nhạc Trong Gió Xưa (Nhạc nhẹ trữ tình, Nhạc kiểu Pháp xưa, VN Romantic Pop Ballad)",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -3517,17 +3554,22 @@
         "l":  "TMT",
         "f":  "LP",
         "c":  "New",
-        "y":  "2019",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Ly rượu mừng – Nhiều ca sĩ (Nhạc Việt / Bolero). Định dạng LP chuẩn mực từ TMT, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Ly Rượu Mừng",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/12/bf/4d/12bf4deb-9223-5372-b43d-2d6ff2b3d184/cover.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e7/50/6d/e7506d99-afbf-ac29-d4ed-50c9fa9492a6/mzaf_8161774902465300588.plus.aac.p.m4a",
-        "aud_track":  "Ly Rượu Mừng",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -3864,17 +3906,22 @@
         "l":  "TMT",
         "f":  "LP",
         "c":  "New",
-        "y":  "1990",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Mùa thu trong mưa – Nhiều ca sĩ (Nhạc Việt / Bolero). Định dạng LP chuẩn mực từ TMT, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Mùa Thu Trong Mưa (Remastered)",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fe/f1/db/fef1db9e-8f42-d6be-7780-dba73bfd97c3/766973870513.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/66/b5/c866b5ef-ded7-c3f2-2d80-c23384daf31a/mzaf_11432533322574901986.plus.aac.p.m4a",
-        "aud_track":  "Mùa Thu Trong Mưa (Remastered)",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -3891,17 +3938,22 @@
         "l":  "TMT",
         "f":  "LP",
         "c":  "New",
-        "y":  "1990",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Đập vỡ cây đàn – Duy Khánh (Nhạc Việt / Bolero). Định dạng LP chuẩn mực từ TMT, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Đập Vỡ Cây Đàn (Remastered)",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/06/ca/0e06ca2a-d8c7-5b6d-3756-8bf929ca5eaf/766973863768.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/32/5a/81325ac5-d910-5bf7-d8ed-23a3cc2bc6a6/mzaf_15283129755968432250.plus.aac.p.m4a",
-        "aud_track":  "Đập Vỡ Cây Đàn (Remastered)",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -4023,17 +4075,22 @@
         "l":  "TMT",
         "f":  "LP",
         "c":  "New",
-        "y":  "1989",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Bướm trắng – Tuấn Vũ (Nhạc Việt / Bolero). Định dạng LP chuẩn mực từ TMT, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Buom Trang (2025 Remaster)",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/19/69/a1/1969a150-4c62-9dd7-28e2-f44b22e3e2b7/766973875631.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/35/71/d93571ab-ba61-d7a8-db5b-9dd069d5ed03/mzaf_1741579696331428816.plus.aac.p.m4a",
-        "aud_track":  "Buom Trang (2025 Remaster)",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -4262,17 +4319,22 @@
         "l":  "TMT",
         "f":  "LP",
         "c":  "New",
-        "y":  "2026",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Như đã dấu yêu – Hương Lan (Nhạc Việt / Bolero). Định dạng LP chuẩn mực từ TMT, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Yêu Đừng Sợ Đau (Jerk Drill Version)",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7e/4c/b6/7e4cb668-a5cd-4e61-df70-da082fc5471c/016627822178_cover.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/d3/a2/1dd3a20a-2c30-b40c-6c51-6e5a976953a3/mzaf_9381849038547714188.plus.aac.p.m4a",
-        "aud_track":  "Yêu Đừng Sợ Đau (Jerk Drill Version)",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -4289,17 +4351,21 @@
         "l":  "Thời đại",
         "f":  "LP",
         "c":  "New",
-        "y":  "2026",
+        "y":  "",
         "p":  1200000,
         "s":  "Còn hàng",
         "d":  "Bình Yên – Quốc Bảo (Nhạc Việt). Định dạng LP chuẩn mực từ Thời đại, tái hiện trung âm dày dặn và mộc mạc.",
-        "tracklist":  "Bình Yên Lặng Lẽ",
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f3/f2/62/f3f2628f-07e8-3f61-c29e-3a5a3659829e/698334120930.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/2c/6c/552c6c2a-11c7-19dd-4e2c-2c3da8e30aed/mzaf_10220531796234128541.plus.aac.p.m4a",
-        "aud_track":  "Bình Yên Lặng Lẽ",
-        "missing_fields":  {
+        "tracklist":  {
 
-                           },
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/ao-binh-yen-limited-vinyl-lp-dia-than_4c36f7f483574be7a185b13f89a88b2a_00a2d8638eb94c018259c685a9535e29.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "New Seal"
     },
     {
@@ -4330,7 +4396,7 @@
                           "Tình Ca Phố",
                           "Yêu Và Yêu Và Yêu Nữa"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/74/86/95/74869533-3d49-34ef-8f57-12ddcf4d4f67/190296412547.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/y-friends-2-limited-vinyl-lp-dia-than_9e10ce794f6648bebd52098566469bca_ee5c4d1f26654c979f78e7ba4c085d37.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/a2/27/58/a2275875-f4e0-582e-2b7c-64eeabd42b15/mzaf_14821853261710584658.plus.aac.p.m4a",
         "aud_track":  "Tình Hiền",
         "missing_fields":  {
@@ -4373,7 +4439,7 @@
                           "Đất Nước",
                           "Nhạc Rừng"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/48/8c/cd488c47-2baa-6806-8625-f5f96d916d30/cover.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/038c4a31-795d-47c9-b819-9ffeb52daf28_b7c9147554be49f4a6d1347efc91993e_a0ef40cf797645a68b328726fe659680.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/1d/5f/dd1d5f84-8827-3934-f470-3c05fcec7764/mzaf_9473538141110233260.plus.aac.p.m4a",
         "aud_track":  "Mùa Xuân Đầu Tiên",
         "missing_fields":  {
@@ -4411,7 +4477,7 @@
                           "Khoang Trong",
                           "Ky Uc"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/aa/b5/a2/aab5a252-6d69-3f80-9003-73fc536a472e/886448930662.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/uc_tuong-vinyl_lp-con_duong_khong_ten_3753aa40ff62455ab31b51c46631c302_57c76b6bbf1e42a9862cbfa6523cd1d6.jpeg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/90/1e/c5/901ec59e-1c36-75b6-7327-4bbd7cb3ecda/mzaf_5908132634800469239.plus.aac.p.m4a",
         "aud_track":  "Con Duong Khong Ten",
         "missing_fields":  {
@@ -4449,7 +4515,7 @@
                           "Biết Bao Giờ Trở Lại",
                           "Buồn Vương Màu Áo"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/65/fe/b0/65feb0ab-6e37-c669-86c5-61b5dda6c552/190296389849.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/dia_than_lan_nha-nhien_vinyl_lp_48480bbb9a4148dfbec95a8dd6beb41d_91b41bfe5b854a9aad23e74e3742983b.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/bf/c5/3a/bfc53a0e-2a55-8674-6404-b93e36b7b811/mzaf_7337399428702054985.plus.aac.p.m4a",
         "aud_track":  "Một Lần Nào Cho Tôi Gặp Lại Em",
         "missing_fields":  {
@@ -4478,11 +4544,10 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://cdn.hstatic.net/products/200001113747/-tuoi-25-light-blue-vinyl-lp-dia-than_1d4b7c9aa71245edad7e88e4c4ad38e6_41163b8691d44a9ca00bc55461affb8d.jpeg",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
-                               "MISSING_COVER",
                                "MISSING_AUDIO",
                                "MISSING_TRACKLIST",
                                "MISSING_YEAR"
@@ -4510,11 +4575,10 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://cdn.hstatic.net/products/200001113747/de-colored-gatefold-vinyl-lp-dia-than_ea3addf35b364b3aabde812c2a4c17e7_4c3f91d3e7a74aa7bc74c849d470fcdb.jpg",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
-                               "MISSING_COVER",
                                "MISSING_AUDIO",
                                "MISSING_TRACKLIST",
                                "MISSING_YEAR"
@@ -4549,7 +4613,7 @@
                           "Phôi Pha",
                           "Tình Sầu"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/43/28/00/43280075-24d7-df59-4fec-bcee182125e1/197338346280.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/dia_than_lan_nha-nhien_vinyl_lp_48480bbb9a4148dfbec95a8dd6beb41d_91b41bfe5b854a9aad23e74e3742983b.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/e0/79/b6e0797f-4c25-0de8-b8f0-ca5b8a9be9c9/mzaf_1667984005651640925.plus.aac.p.m4a",
         "aud_track":  "Biển Nhớ",
         "missing_fields":  {
@@ -4586,7 +4650,7 @@
                           "nếu một mai tôi bay lên trời (Colours Version) [feat. Trúc Nhân]",
                           "cánh đồng mây của Thượng Đế (outro)"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d3/35/25/d33525f9-9cbe-2e4a-9bdb-9c66d9fd1044/190296105081.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/mu_vinyl_bc4db2e3aded4e48b5beaa4a83ebb1d7_f117e4eceb3749908af980371d899c95.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/87/1e/b1/871eb124-8250-eac9-11c0-234a6087c7cb/mzaf_17662647729358414063.plus.aac.p.m4a",
         "aud_track":  "mang ghế ra sân ngồi hát (feat. Tóc Tiên)",
         "missing_fields":  {
@@ -4627,7 +4691,7 @@
                           "Nỗi Nhớ Không Đặt Tên",
                           "Mộng"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ca/47/16/ca471658-8f31-c88f-0e80-e0ca705626a9/085365653832.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/mockup_2_0f977a40b65b4ee78705042f26874c2a_ca5ed3f77a934b7c9d97405af3eb6cf1.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/b9/1b/79/b91b796a-0986-f50a-0c30-159d2fb63476/mzaf_14033724814068122067.plus.aac.p.m4a",
         "aud_track":  "Câu Chuyện Hoa Ngọc Lan",
         "missing_fields":  {
@@ -4678,7 +4742,7 @@
                           "Trí Tuệ Nhân Tạo (feat. Cao Minh Đức) [Human Concert 2020]",
                           "Chiếc Khăn Piêu (Human Concert 2020)"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/51/00/b2/5100b2e5-f659-924b-c759-167ae59023b7/0.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/vinyl_c4a6d5a6c6f14e15b31f78948b6c6fab_6843b9e82c934236a9b3a5a5304c4c65.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/71/2c/8c712cec-903a-8baa-dde2-c20921c3dac9/mzaf_18184337096147044404.plus.aac.p.m4a",
         "aud_track":  "Oa Oa (Human Concert 2020)",
         "missing_fields":  {
@@ -4715,7 +4779,7 @@
                           "Nữ Hoàng Instagram",
                           "Trả Cho Nhau Từ Đầu"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/4d/d6/2a4dd642-d10d-f0a2-305e-8b46eaba7d46/cover.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/trinh_thang_binh-b369-vinyl_lp_2_164916453ac14ba3a8580be801ff76ec_8160c5a8c63549799ad26ebc85d0106d.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/7f/f4/b67ff491-1d8a-453d-5fd2-e0cbaf9319e6/mzaf_12007810608145668901.plus.aac.p.m4a",
         "aud_track":  "Nếu Em Cần",
         "missing_fields":  {
@@ -4753,7 +4817,7 @@
                           "Những Ngày Buồn Nhất Đã Qua Rồi",
                           "Ta Còn Yêu"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0a/93/4f/0a934f44-74b2-ff22-6a9e-9735759bc35c/cover.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/n_dat-tinh_con_me_mai-trong_bac-vinyl_fcb37da6cc6f4af8824e65eb2a207b10_89e7741ed91b4585b861f7978ed0c928.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/36/54/e0365463-566d-9de0-4d58-fc123094f42f/mzaf_1935806820636413006.plus.aac.p.m4a",
         "aud_track":  "Điệu Nhảy Dưới Trăng",
         "missing_fields":  {
@@ -4782,11 +4846,10 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://cdn.hstatic.net/products/200001113747/mockup__vinyl__668510184ced4ee39422e48f79b80c11_12523f3049c44cf69f43d16bf0ea174d.jpg",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
-                               "MISSING_COVER",
                                "MISSING_AUDIO",
                                "MISSING_TRACKLIST",
                                "MISSING_YEAR"
@@ -4825,7 +4888,7 @@
                           "God Bless You",
                           "Kiệt Tác Đẹp Nhất Của Thượng Đế"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/b1/f6/0eb1f6e2-d23e-ef48-5511-cd721bb5a201/199066968284.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/dinh-huong_black-magic-woman-lp-vinyl_47b9d5f0d7fc4ea2849aff48f1613e22_42b4722e83624c94817410a29d5c0f74.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/bb/9f/f4bb9fcf-abf3-0a2d-7695-e7bc1e881117/mzaf_18438989529906249908.plus.aac.p.m4a",
         "aud_track":  "Welcome To My World",
         "missing_fields":  {
@@ -4862,7 +4925,7 @@
                           "Heyyy",
                           "Lu Mờ (feat. Kris V)"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0b/db/67/0bdb67ba-4e23-30d2-4b9c-87f1ded1b5e8/5026854189833.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/63c182d9-f783-4ee3-ae43-a9d1b907bdb9_892dec10d24340efb7c31f905eea6969_47fc66624c0449eba6465a4a098e8ae1.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/f1/93/5ff19395-4c6e-9972-0f61-ea3a9c45590a/mzaf_16433119389602288292.plus.aac.p.m4a",
         "aud_track":  "Intro",
         "missing_fields":  {
@@ -4934,7 +4997,7 @@
                           "Cơn Mưa Rào",
                           "Nam Bán Cầu"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ea/bc/51/eabc5187-35f1-2e67-4f70-3a7bb2f5bafd/197338288740.jpg/600x600bb.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/mockup_27b1dc1175bf41cab3ae89dda8b41fa7_10e1d9fcb29c486d8a5e7173dd38501b.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/a9/54/afa9545c-fdec-8f50-5131-231d1a1a1700/mzaf_5315216889803635328.plus.aac.p.m4a",
         "aud_track":  "Đại Minh Tinh",
         "missing_fields":  {
@@ -4963,11 +5026,10 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://cdn.hstatic.net/products/200001113747/amee_dreamee-vinyl_c7909f4f302342fc8e726c348d4a6925_6183aa40466b41cfad982042fb9c77c5.jpg",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
-                               "MISSING_COVER",
                                "MISSING_AUDIO",
                                "MISSING_TRACKLIST",
                                "MISSING_YEAR"
@@ -5005,7 +5067,7 @@
                           "Những Gì Đem Theo Vào Cõi Chết",
                           "Outro"
                       ],
-        "img":  "https://cdn-images.dzcdn.net/images/cover/479ed4b797ca723d6a4f04f96bf53257/500x500-000000-80-0-0.jpg",
+        "img":  "https://cdn.hstatic.net/products/200001113747/dia_than_duc_tuan_pham_duy_041602e126064c3699c87567896901b5_2eb2e54df31f400f940fe48ed692ce0f.jpeg",
         "aud":  "https://cdnt-preview.dzcdn.net/api/1/1/6/9/7/0/6977d1613171d9a37afaadf780acc4d9.mp3?hdnea=exp=1795146149~acl=/api/1/1/6/9/7/0/6977d1613171d9a37afaadf780acc4d9.mp3*~data=user_id=0,application_id=42~hmac=9db6445e8910ace4a95a3c7a92dae2120199ec1fdb3ecda439f489ddde45c350",
         "aud_track":  "Intro",
         "missing_fields":  {
@@ -7708,11 +7770,10 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://cdn.hstatic.net/products/200001113747/71zqkp2chal._uf1000_1000_ql80__62b1eee883334c89b63755d26190b2c6_7d26d9d101dc4e3eadf63ebedd6513f5.jpg",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
-                               "MISSING_COVER",
                                "MISSING_AUDIO",
                                "MISSING_TRACKLIST",
                                "MISSING_YEAR",
@@ -16723,6 +16784,2865 @@
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/44/cd/f044cd84-71c9-cf7d-cb26-425d5584876b/mzaf_916901627607946479.plus.aac.p.m4a",
         "aud_track":  "Lust For Life (The Avener Rework) [feat. The Weeknd]",
         "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  457,
+        "sku":  "NN-GDA-457",
+        "slug":  "nhieu-ca-si-dich-vu-giao-hang-cua-phu-thuy-kiki-457",
+        "category":  "vinyl",
+        "g":  "Classic \u0026 Soundtrack",
+        "mood":  {
+
+                 },
+        "a":  "Joe Hisaishi (Studio Ghibli)",
+        "t":  "Dịch vụ giao hàng của phù thủy KiKi",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Dịch vụ giao hàng của phù thủy KiKi – Nhiều ca sĩ (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/5-jpeg-a4a5bb11-9bed-4142-ad83-a862ad6dcb42.jpg?v=1643161017087",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  458,
+        "sku":  "NN-GDA-458",
+        "slug":  "nhieu-ca-si-cong-chua-soi-mononoke-458",
+        "category":  "vinyl",
+        "g":  "Classic \u0026 Soundtrack",
+        "mood":  {
+
+                 },
+        "a":  "Joe Hisaishi (Studio Ghibli)",
+        "t":  "Công chúa sói Mononoke",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Công chúa sói Mononoke – Nhiều ca sĩ (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/34b1a98d-16e0-4d0f-aab6-6ed7aebd6acc.jpg?v=1653965192607",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  459,
+        "sku":  "NN-GDA-459",
+        "slug":  "nhieu-ca-si-lau-dai-di-dong-cua-howl-459",
+        "category":  "vinyl",
+        "g":  "Classic \u0026 Soundtrack",
+        "mood":  {
+
+                 },
+        "a":  "Joe Hisaishi (Studio Ghibli)",
+        "t":  "Lâu đài di động của Howl",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Lâu đài di động của Howl – Nhiều ca sĩ (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/11.png?v=1643162721350",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  460,
+        "sku":  "NN-GDA-460",
+        "slug":  "nhieu-ca-si-hang-xom-cua-toi-la-totoro-tjja10016-460",
+        "category":  "vinyl",
+        "g":  "Classic \u0026 Soundtrack",
+        "mood":  {
+
+                 },
+        "a":  "Joe Hisaishi (Studio Ghibli)",
+        "t":  "Hàng xóm của tôi là Totoro TJJA10016",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Hàng xóm của tôi là Totoro TJJA10016 – Nhiều ca sĩ (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/8-jpeg-9cc1e420-c805-4b23-9a89-fee137510930.jpg?v=1643162280917",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  461,
+        "sku":  "VN-GDA-461",
+        "slug":  "nguyen-anh-9-lang-le-tieng-duong-cam-461",
+        "category":  "vinyl",
+        "g":  "Nhạc Việt",
+        "mood":  {
+
+                 },
+        "a":  "NGUYỄN ÁNH 9",
+        "t":  "LẶNG LẼ TIẾNG DƯƠNG CẦM",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "LẶNG LẼ TIẾNG DƯƠNG CẦM – NGUYỄN ÁNH 9 (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/15-jpeg.jpg?v=1643165539237",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  462,
+        "sku":  "VN-GDA-462",
+        "slug":  "nhieu-ca-si-ngan-thu-ao-tim-462",
+        "category":  "vinyl",
+        "g":  "Nhạc Việt",
+        "mood":  {
+
+                 },
+        "a":  "Nhiều ca sĩ",
+        "t":  "NGÀN THU ÁO TÍM",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2013",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "NGÀN THU ÁO TÍM – Nhiều ca sĩ (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Tương Tư 4",
+                          "Mộng Sầu",
+                          "Tiễn Em",
+                          "Nghe Những Tàn Phai",
+                          "Hoà Tấu 1",
+                          "Quên Đi Tình Yêu Cũ",
+                          "Ngàn Thu Áo Tím",
+                          "Hà Nội Ngày Tháng Cũ",
+                          "Mùa Thu Cánh Nâu",
+                          "Hoà Tấu 2"
+                      ],
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/14.png?v=1643165602363",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/2d/28/132d28c6-1657-38f1-636f-975f030f8876/mzaf_16060553570223452559.plus.aac.p.m4a",
+        "aud_track":  "Tương Tư 4",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  463,
+        "sku":  "NN-GDA-463",
+        "slug":  "porco-rosso-chu-heo-mau-do-463",
+        "category":  "vinyl",
+        "g":  "Classic \u0026 Soundtrack",
+        "mood":  {
+
+                 },
+        "a":  "Joe Hisaishi (Studio Ghibli)",
+        "t":  "Chú heo màu đỏ",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Chú heo màu đỏ – Porco Rosso (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/794c56b5-b93d-425a-912c-f68edc36fb81.jpg?v=1653965892530",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  464,
+        "sku":  "NN-GDA-464",
+        "slug":  "nhieu-ca-si-nang-cong-chua-o-thung-lung-gio-464",
+        "category":  "vinyl",
+        "g":  "Classic \u0026 Soundtrack",
+        "mood":  {
+
+                 },
+        "a":  "Joe Hisaishi (Studio Ghibli)",
+        "t":  "Nàng công chúa ở thung lũng gió",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Nàng công chúa ở thung lũng gió – Nhiều ca sĩ (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/17-jpeg.jpg?v=1643163605717",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  465,
+        "sku":  "NN-GDA-465",
+        "slug":  "nhieu-ca-si-lau-dai-tren-khong-465",
+        "category":  "vinyl",
+        "g":  "Classic \u0026 Soundtrack",
+        "mood":  {
+
+                 },
+        "a":  "Joe Hisaishi (Studio Ghibli)",
+        "t":  "Lâu đài trên không",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Lâu đài trên không – Nhiều ca sĩ (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/14-jpeg.jpg?v=1643163068900",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  466,
+        "sku":  "NN-GDA-466",
+        "slug":  "nhieu-ca-si-vung-dat-linh-hon-466",
+        "category":  "vinyl",
+        "g":  "Classic \u0026 Soundtrack",
+        "mood":  {
+
+                 },
+        "a":  "Joe Hisaishi (Studio Ghibli)",
+        "t":  "Vùng đất linh hồn",
+        "l":  "Gia Định Audio",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Vùng đất linh hồn – Nhiều ca sĩ (Nhạc Việt). Ấn bản đĩa than LP (Gia Định Audio). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/682a52f4-facb-4326-b7cc-fd4bdef4b84a.jpg?v=1653963376800",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  467,
+        "sku":  "NN-HTD-467",
+        "slug":  "sheryl-crow-live-at-the-capitol-theatre-2017-be-my-baby-tour-467",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Sheryl Crow",
+        "t":  "Live At The Capitol Theatre - 2017 Be My Baby Tour",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "2xLP",
+        "c":  "Liên hệ",
+        "y":  "2018",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Live At The Capitol Theatre - 2017 Be My Baby Tour – Sheryl Crow (Nhạc Việt). Ấn bản đĩa than 2xLP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Everyday Is a Winding Road (Live at the Capitol Theatre, 2017)",
+                          "A Change Would Do You Good (Live at the Capitol Theatre, 2017)",
+                          "All I Wanna Do (Live at the Capitol Theatre, 2017)",
+                          "My Favorite Mistake (Live at the Capitol Theatre, 2017)",
+                          "Be Myself (Live at the Capitol Theatre, 2017)",
+                          "Long Way Back Home (Live at the Capitol Theatre, 2017)",
+                          "Run, Baby, Run (Live at the Capitol Theatre, 2017)",
+                          "Can\u0027t Cry Anymore (Live at the Capitol Theatre, 2017)",
+                          "The First Cut Is the Deepest (Live at the Capitol Theatre, 2017)",
+                          "Atom Bomb (Live at the Capitol Theatre, 2017)",
+                          "Halfway There (Live at the Capitol Theatre, 2017)",
+                          "There Goes the Neighborhood (Live at the Capitol Theatre, 2017)",
+                          "Leaving Las Vegas (Live at the Capitol Theatre, 2017)",
+                          "Strong Enough (Live at the Capitol Theatre, 2017)",
+                          "Heartbeat Away (Live at the Capitol Theatre, 2017)",
+                          "Roller Skate (Live at the Capitol Theatre, 2017)",
+                          "Best of Times (Live at the Capitol Theatre, 2017)",
+                          "If It Makes You Happy (Live at the Capitol Theatre, 2017)",
+                          "Soak Up the Sun (Live at the Capitol Theatre, 2017)",
+                          "Midnight Rider (Live at the Capitol Theatre, 2017)",
+                          "I Shall Believe (Live at the Capitol Theatre, 2017)"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/17-be-my-baby-tour-vinyl-2lp-dia-than_f3498795be03453f9365572bbbf5fd55_e0117a1df01e489695fa4068dffab989.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/68/4d/61684d85-c916-b4b3-1da1-da296f3ff66a/mzaf_95809873040523049.plus.aac.p.m4a",
+        "aud_track":  "Everyday Is a Winding Road (Live at the Capitol Theatre, 2017)",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  468,
+        "sku":  "NN-HTD-468",
+        "slug":  "nicki-minaj-beam-me-up-scotty-468",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Nicki Minaj",
+        "t":  "Beam Me Up Scotty",
+        "l":  "Republic",
+        "f":  "2xLP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Beam Me Up Scotty – Nicki Minaj (Nhạc Việt). Ấn bản đĩa than 2xLP (Republic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/-beam-me-up-scotty-vinyl-2lp-dia-than_36bf613cc0744000aefae47cc674b8cf_2e423f2924584d6a817590ca77aa88fe.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  469,
+        "sku":  "NN-HTD-469",
+        "slug":  "sea-wolf-through-a-dark-wood-469",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Sea Wolf",
+        "t":  "Through A Dark Wood",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2021",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Through A Dark Wood – Sea Wolf (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Forward",
+                          "Blood Pact",
+                          "Break it Down",
+                          "Forever Nevermore",
+                          "Fear of Failure",
+                          "Back to the Wind",
+                          "I Went Up, I Went Down",
+                          "Under the Spell Again",
+                          "Moving Colors",
+                          "Frank O\u0027Hara",
+                          "Two of Us",
+                          "Reflections on a Grey Dawn (feat. Dustin O\u0027Halloran)",
+                          "Witchknife",
+                          "Two Figures",
+                          "Here For You",
+                          "Animal Mind"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/od-translucent-blue-vinyl-lp-dia-than_d657859feeea4b87a19efad0b8f9192e_c84c503a932447318fe901e1659b3686.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/d2/60/4fd2600b-2a6e-2f2d-bd7d-ab55ab45b9c9/mzaf_4177377313248416295.plus.aac.p.m4a",
+        "aud_track":  "Forward",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  470,
+        "sku":  "NN-HTD-470",
+        "slug":  "selena-gomez-marshmello-wolves-470",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Selena Gomez, Marshmello",
+        "t":  "Wolves",
+        "l":  "Interscope",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Wolves – Selena Gomez, Marshmello (Nhạc Việt). Ấn bản đĩa than LP (Interscope). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/mello-wolves-7-inch-vinyl-lp-dia-than_2cd3d49b7dc34e4e93723e38ab25100c_7de833cbed2d4fcda168c4b9423cd782.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  471,
+        "sku":  "NN-HTD-471",
+        "slug":  "nirvana-bleach-471",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Nirvana",
+        "t":  "Bleach",
+        "l":  "Sub Pop",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1989",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Bleach – Nirvana (Nhạc Việt). Ấn bản đĩa than LP (Sub Pop). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Blew",
+                          "Floyd the Barber",
+                          "About a Girl",
+                          "School",
+                          "Love Buzz",
+                          "Paper Cuts",
+                          "Negative Creep",
+                          "Scoff",
+                          "Swap Meet",
+                          "Mr. Moustache",
+                          "Sifting",
+                          "Big Cheese",
+                          "Downer",
+                          "Intro (Live at Pine Street Theatre)",
+                          "School (Live at Pine Street Theatre)",
+                          "Floyd the Barber (Live at Pine Street Theatre)",
+                          "Dive (Live at Pine Street Theatre)",
+                          "Love Buzz (Live at Pine Street Theatre)",
+                          "Spank Thru (Live at Pine Street Theatre)",
+                          "Molly\u0027s Lips (Live at Pine Street Theatre)",
+                          "Sappy (Live at Pine Street Theatre)",
+                          "Scoff (Live at Pine Street Theatre)",
+                          "About a Girl (Live at Pine Street Theatre)",
+                          "Been a Son (Live at Pine Street Theatre)",
+                          "Blew (Live at Pine Street Theatre)"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/-bleach-lp-store-vinyl-records-saigon_9e796b04a1e14624965cac47254d6470_afdc682867fc4271932756b25ff865fa.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/84/bc/6684bc3e-5489-790c-3d7a-34077958a521/mzaf_3328555961553098218.plus.aac.p.m4a",
+        "aud_track":  "Blew",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  472,
+        "sku":  "NN-HTD-472",
+        "slug":  "mitski-puberty-2-472",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Mitski",
+        "t":  "Puberty 2",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2016",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Puberty 2 – Mitski (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Happy",
+                          "Dan the Dancer",
+                          "Once More to See You",
+                          "Fireworks",
+                          "Your Best American Girl",
+                          "I Bet on Losing Dogs",
+                          "My Body\u0027s Made of Crushed Little Stars",
+                          "Thursday Girl",
+                          "A Loving Feeling",
+                          "Crack Baby",
+                          "A Burning Hill",
+                          "Fireproof",
+                          "I\u0027m a Fool to Want You"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/mitski-puberty-2-vinyl-lp-dia-than_993c7e74c26349168ef607cd04439f0f_0d9e1ad19d564b6fbeadc9491970a62b.jpeg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/7b/df/037bdf9f-d0d1-0c1d-5d80-bd6beb1afb34/mzaf_13230686420751655515.plus.aac.p.m4a",
+        "aud_track":  "Happy",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  473,
+        "sku":  "VN-HTD-473",
+        "slug":  "nhac-phim-moana-2-ost-473",
+        "category":  "vinyl",
+        "g":  "Nhạc Việt",
+        "mood":  {
+
+                 },
+        "a":  "Nhạc Phim",
+        "t":  "Moana 2 OST",
+        "l":  "Walt Disney",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Moana 2 OST – Nhạc Phim (Nhạc Việt). Ấn bản đĩa than LP (Walt Disney). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/ac-phim-moana-2-ost-vinyl-lp-dia-than_d4cbeb78cd5249959e212bdc8a8af97e_4e5d137dd361412183f10f538a74a32d.jpeg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  474,
+        "sku":  "NN-HTD-474",
+        "slug":  "simple-plan-no-pads-no-helmets-just-balls-474",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Simple Plan",
+        "t":  "No Pads, No Helmets...Just Balls",
+        "l":  "Atlantic",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2002",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "No Pads, No Helmets...Just Balls – Simple Plan (Nhạc Việt). Ấn bản đĩa than LP (Atlantic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "I\u0027d Do Anything",
+                          "The Worst Day Ever",
+                          "You Don\u0027t Mean Anything",
+                          "I\u0027m Just a Kid",
+                          "When I\u0027m With You",
+                          "Meet You There",
+                          "Addicted",
+                          "My Alien",
+                          "God Must Hate Me",
+                          "I Won\u0027t Be There",
+                          "One Day",
+                          "Perfect",
+                          "One By One",
+                          "Grow Up",
+                          "Happy Together",
+                          "Addicted (Live from California 2017)",
+                          "Vacation",
+                          "Perfect (Live from California 2017)",
+                          "Perfect (Acoustic Version)"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/balls-crystal-clear-vinyl-lp-dia-than_71989f10bee24b7bb0d928aa7dbd609f_cbce3efd44a2414c857b93c2681758b2.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/be/6c/99be6ce3-3dfd-1a4a-18c9-ce64cc4ce4e8/mzaf_12388900137229979864.plus.aac.p.m4a",
+        "aud_track":  "I\u0027d Do Anything",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  475,
+        "sku":  "NN-HTD-475",
+        "slug":  "paul-simon-one-trick-pony-475",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Paul Simon",
+        "t":  "One Trick Pony",
+        "l":  "Legacy",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1980",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "One Trick Pony – Paul Simon (Nhạc Việt). Ấn bản đĩa than LP (Legacy). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Late In the Evening",
+                          "That\u0027s Why God Made the Movies",
+                          "One-Trick Pony (Live at the Agora Theatre, Cleveland, OH - September 1979)",
+                          "How the Heart Approaches What It Yearns",
+                          "Oh, Marion",
+                          "Ace In the Hole (Live at the Agora Theatre, Cleveland, OH - September 1979)",
+                          "Nobody",
+                          "Jonah",
+                          "God Bless the Absentee",
+                          "Long, Long Day",
+                          "Soft Parachutes (Soundtrack Recording)",
+                          "All Because of You (Outtake)",
+                          "Spiral Highway (Soundtrack Recording)",
+                          "Stranded In a Limousine"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/imon-one-trick-pony-vinyl-lp-dia-than_ebd6898efc164c5f8919c114e696e04b_0ca3cc8db9e14ac28168516331c49171.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/84/0c/a1840ce1-eaaf-a748-bdc6-fc38603645cd/mzaf_16688056049907062615.plus.aac.p.m4a",
+        "aud_track":  "Late In the Evening",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  476,
+        "sku":  "VN-HTD-476",
+        "slug":  "nhac-phim-barbie-ost-476",
+        "category":  "vinyl",
+        "g":  "Nhạc Việt",
+        "mood":  {
+
+                 },
+        "a":  "Nhạc Phim",
+        "t":  "Barbie OST",
+        "l":  "Atlantic",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Barbie OST – Nhạc Phim (Nhạc Việt). Ấn bản đĩa than LP (Atlantic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/hac-phim-barbie-ost-vinyl-lp-dia-than_794e0df6811a4e54ab00f76de583c109_f846718a37394c09a76ef2957873e963.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  477,
+        "sku":  "NN-HTD-477",
+        "slug":  "nsync-better-place-477",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "NSYNC",
+        "t":  "Better Place",
+        "l":  "RCA",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Better Place – NSYNC (Nhạc Việt). Ấn bản đĩa than LP (RCA). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/place-7-inch-single-vinyl-lp-dia-than_3cabbd798c3a45ba84176bebfdeb775a_62fa34e183e543c097ba863a5309764c.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  478,
+        "sku":  "NN-HTD-478",
+        "slug":  "meghan-trainor-takin-it-back-478",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Meghan Trainor",
+        "t":  "Takin\u0027 It Back",
+        "l":  "Epic Records",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2022",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Takin\u0027 It Back – Meghan Trainor (Nhạc Việt). Ấn bản đĩa than LP (Epic Records). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Mother",
+                          "Don\u0027t I Make It Look Easy",
+                          "Made You Look",
+                          "Shook",
+                          "Takin\u0027 It Back",
+                          "Special Delivery (feat. MAX)",
+                          "Bad For Me (feat. Teddy Swims)",
+                          "Superwoman",
+                          "Rainbow",
+                          "Breezy (feat. Theron Theron)",
+                          "Mama Wanna Mambo (feat. Natti Natasha \u0026 Arturo Sandoval)",
+                          "Dance About It",
+                          "While You\u0027re Young",
+                          "Sensitive (feat. Scott Hoying)",
+                          "Drama Queen",
+                          "Lucky",
+                          "Grow Up",
+                          "Remind Me",
+                          "Made You Look (feat. Kim Petras)",
+                          "Final Breath"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/ainor-takin-it-back-vinyl-lp-dia-than_9d4988781f6b45d680896d9a2698099b_50169fefab6044bfb0ab0896a2260853.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/fa/b3/12fab358-bfa1-8693-7aba-970fa305be27/mzaf_8144923863695820839.plus.aac.p.m4a",
+        "aud_track":  "Mother",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  479,
+        "sku":  "NN-HTD-479",
+        "slug":  "miley-cyrus-something-beautiful-479",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Miley Cyrus",
+        "t":  "Something Beautiful",
+        "l":  "Columbia",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2025",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Something Beautiful – Miley Cyrus (Nhạc Việt). Ấn bản đĩa than LP (Columbia). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Prelude",
+                          "Something Beautiful",
+                          "End of the World",
+                          "More to Lose",
+                          "Interlude 1",
+                          "Easy Lover",
+                          "Interlude 2",
+                          "Golden Burning Sun",
+                          "Walk of Fame (feat. Brittany Howard)",
+                          "Pretend You\u0027re God",
+                          "Every Girl You\u0027ve Ever Loved (feat. Naomi Campbell)",
+                          "Reborn",
+                          "Give Me Love"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/miley_cyrus_1d3fca24693a44d6a39906765940912d_03f15e704571414b9c7659e64b2988e1.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/12/ed/8e12ed65-7da7-6438-ee84-c1d7ad0b6cfa/mzaf_9047426601763045000.plus.aac.p.m4a",
+        "aud_track":  "Prelude",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  480,
+        "sku":  "NN-HTD-480",
+        "slug":  "mariah-carey-mariah-carey-480",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Mariah Carey",
+        "t":  "Mariah Carey",
+        "l":  "Columbia",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1990",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Mariah Carey – Mariah Carey (Nhạc Việt). Ấn bản đĩa than LP (Columbia). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Vision of Love",
+                          "There\u0027s Got to Be a Way",
+                          "I Don\u0027t Wanna Cry",
+                          "Someday",
+                          "Vanishing",
+                          "All In Your Mind",
+                          "Alone In Love",
+                          "You Need Me",
+                          "Sent from Up Above",
+                          "Prisoner",
+                          "Love Takes Time"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/-carey-mariah-carey-vinyl-lp-dia-than_628f275aca7a4893aea31fe4b75cbcf0_66fb59f53f2d4ff88e6c7ca2a6b36e4a.jpeg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/80/dd/b280ddcf-a4af-8381-4a9f-87c4145578e2/mzaf_12053898083777309824.plus.aac.p.m4a",
+        "aud_track":  "Vision of Love",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  481,
+        "sku":  "NN-HTD-481",
+        "slug":  "madison-beer-silence-between-songs-481",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Madison Beer",
+        "t":  "Silence Between Songs",
+        "l":  "Epic Records",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2023",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Silence Between Songs – Madison Beer (Nhạc Việt). Ấn bản đĩa than LP (Epic Records). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Spinnin",
+                          "Sweet Relief",
+                          "Envy the Leaves",
+                          "17",
+                          "Ryder",
+                          "Nothing Matters But You",
+                          "I Wonder",
+                          "At Your Worst",
+                          "Showed Me (How I Fell In Love With You)",
+                          "Home To Another One",
+                          "Dangerous",
+                          "Reckless",
+                          "Silence Between Songs",
+                          "King Of Everything"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/lence-between-songs-vinyl-lp-dia-than_18f194f720524b8b9635a54a397e49a5_cbe9d0b7268744b595c89084572ad152.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/1b/b4/7f1bb475-64ee-ee56-44ed-a3d880165d1b/mzaf_15900668131209960233.plus.aac.p.m4a",
+        "aud_track":  "Spinnin",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  482,
+        "sku":  "NN-HTD-482",
+        "slug":  "maggie-rogers-surrender-482",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Maggie Rogers",
+        "t":  "Surrender",
+        "l":  "Capitol",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2022",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Surrender – Maggie Rogers (Nhạc Việt). Ấn bản đĩa than LP (Capitol). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Overdrive",
+                          "That\u0027s Where I Am",
+                          "Want Want",
+                          "Anywhere With You",
+                          "Horses",
+                          "Be Cool",
+                          "Shatter",
+                          "Begging For Rain",
+                          "I\u0027ve Got A Friend",
+                          "Honey",
+                          "Symphony",
+                          "Different Kind Of World"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/maggie-rogers-surrender-lp_f97f8af15fc5401fab1ae8a5db9c67e7_fc52d6e9fcc94388b81dc3be93c07f43.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/d5/c1/c9d5c1ee-e952-2bfa-04de-d06228907c84/mzaf_10843611053832594663.plus.aac.p.m4a",
+        "aud_track":  "Overdrive",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  483,
+        "sku":  "NN-HTD-483",
+        "slug":  "kacey-musgraves-star-crossed-483",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Kacey Musgraves",
+        "t":  "star-crossed",
+        "l":  "MCA Nashville",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2021",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "star-crossed – Kacey Musgraves (Nhạc Việt). Ấn bản đĩa than LP (MCA Nashville). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "star-crossed",
+                          "good wife",
+                          "cherry blossom",
+                          "simple times",
+                          "if this was a movie..",
+                          "justified",
+                          "angel",
+                          "breadwinner",
+                          "camera roll",
+                          "easier said",
+                          "hookup scene",
+                          "keep lookin’ up",
+                          "what doesn’t kill me",
+                          "there is a light",
+                          "gracias a la vida"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/71dd.65dbfb3fac76d8264e6a5006dd7afd02_6ba942a7283642b2bfdbfe4d49e24f7f_20fd02fa8ef5487ab7f290da0e64ec19.jpeg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/29/76/272976ed-a2ba-67ba-1e64-7ca7dccbd128/mzaf_9990088129841966070.plus.aac.p.m4a",
+        "aud_track":  "star-crossed",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  484,
+        "sku":  "NN-HTD-484",
+        "slug":  "natalie-imbruglia-left-of-the-middle-484",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Natalie Imbruglia",
+        "t":  "Left Of The Middle",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1997",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Left Of The Middle – Natalie Imbruglia (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Torn",
+                          "One More Addiction",
+                          "Big Mistake",
+                          "Leave Me Alone",
+                          "Wishing I Was There",
+                          "Smoke",
+                          "Pigeons and Crumbs",
+                          "Don\u0027t You Think?",
+                          "Impressed",
+                          "Intuition",
+                          "City",
+                          "Left of the Middle"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/-left-of-the-middle-vinyl-lp-dia-than_09eeb40eb955456e9dc9a19a1a9d415a_a254f7c93a7a494d859ba80d03c9ab73.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/be/3b/96be3b9e-035d-3d29-ad16-796ea4495968/mzaf_17099026484635430619.plus.aac.p.m4a",
+        "aud_track":  "Torn",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  485,
+        "sku":  "NN-HTD-485",
+        "slug":  "new-kids-on-the-block-step-by-step-485",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "New Kids On The Block",
+        "t":  "Step By Step",
+        "l":  "Sony",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1990",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Step By Step – New Kids On The Block (Nhạc Việt). Ấn bản đĩa than LP (Sony). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Step By Step",
+                          "Tonight",
+                          "Baby, I Believe In You",
+                          "Call It What You Want",
+                          "Let\u0027s Try It Again",
+                          "Happy Birthday",
+                          "Games",
+                          "Time Is On Our Side",
+                          "Where Do I Go from Here",
+                          "Stay With Me Baby",
+                          "Funny Feeling",
+                          "Never Gonna Fall In Love Again"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/-block-step-by-step-vinyl-lp-dia-than_4b683b1624a9470fb82fad7906e95418_b6c1878dfc64498eba476e36379c47ef.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/af/72/26af72c7-1a0c-0232-2225-345ffd400829/mzaf_3111487466016618863.plus.aac.p.m4a",
+        "aud_track":  "Step By Step",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  486,
+        "sku":  "NN-HTD-486",
+        "slug":  "harry-styles-kiss-all-the-time-disco-occasionally-486",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Harry Styles",
+        "t":  "Kiss All The Time. Disco, Occasionally",
+        "l":  "Columbia",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2026",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Kiss All The Time. Disco, Occasionally – Harry Styles (Nhạc Việt). Ấn bản đĩa than LP (Columbia). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Aperture",
+                          "American Girls",
+                          "Ready, Steady, Go!",
+                          "Are You Listening Yet?",
+                          "Taste Back",
+                          "The Waiting Game",
+                          "Season 2 Weight Loss",
+                          "Coming Up Roses",
+                          "Pop",
+                          "Dance No More",
+                          "Paint By Numbers",
+                          "Carla\u0027s Song"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/harry_styles_72ee2588b16a4d87b51bebf87b59610c_80400c2918a842299b232ca4a3661d4a.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/f9/0e/46f90e9b-0d1a-b986-c3f9-0e690e79c79b/mzaf_8629808582610321991.plus.aac.p.m4a",
+        "aud_track":  "Aperture",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  487,
+        "sku":  "NN-HTD-487",
+        "slug":  "bruno-mars-the-romantic-first-pressing-edition-numbered-487",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Bruno Mars",
+        "t":  "The Romantic - First Pressing Edition (Numbered)",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "The Romantic - First Pressing Edition (Numbered) – Bruno Mars (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/tion__numbered___vinyl_lp__-_d_a_than_816f165497f24ebe8f7b1f2c512fda73_470a2fa6f3af4ca4a299e7ffb57f6c41.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  488,
+        "sku":  "NN-HTD-488",
+        "slug":  "charlie-puth-whatever-s-clever-488",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Charlie Puth",
+        "t":  "Whatever\u0027s Clever!",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2026",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Whatever\u0027s Clever! – Charlie Puth (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Changes",
+                          "Beat Yourself Up",
+                          "Cry",
+                          "Washed Up",
+                          "New Jersey",
+                          "Don’t Meet Your Heroes",
+                          "Home",
+                          "Hey Brother",
+                          "Sideways",
+                          "Love In Exile",
+                          "Until It Happens To You",
+                          "I Used To Be Cringe"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/tever_s_clever___vinyl_lp__-_d_a_than_3a89a858f84f4e209d1ab36664bac1f4_0f6065ad9c2c4f398daa9ffce0fa3ad0.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/a2/3c/d5a23c5d-9080-117b-d899-95ebe814d93c/mzaf_1211035087356951044.plus.aac.p.m4a",
+        "aud_track":  "Changes",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  489,
+        "sku":  "NN-HTD-489",
+        "slug":  "aurora-all-my-demons-greeting-me-as-a-friend-489",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Aurora",
+        "t":  "ALL MY DEMONS GREETING ME AS A FRIEND",
+        "l":  "Universal",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2016",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "ALL MY DEMONS GREETING ME AS A FRIEND – Aurora (Nhạc Việt). Ấn bản đĩa than LP (Universal). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Runaway",
+                          "Conqueror",
+                          "Running With the Wolves",
+                          "Lucky",
+                          "Winter Bird",
+                          "I Went Too Far",
+                          "Through the Eyes of a Child",
+                          "Warrior",
+                          "Murder Song (5, 4, 3, 2, 1)",
+                          "Home",
+                          "Under the Water",
+                          "Black Water Lilies",
+                          "Half the World Away",
+                          "Murder Song (5, 4, 3, 2, 1) [Acoustic]",
+                          "Nature Boy (Acoustic)",
+                          "Wisdom Cries",
+                          "Running With the Wolves (Pablo Nouvelle Remix)"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/_me_as_a_friend__vinyl_lp__-_dia_than_e4066fe5b2554d9d89ba2fc8697707b4_ccad39fdbaed488d97049ff2f192721f.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/f7/92/61f7929e-b642-7286-ec39-3074a70d7132/mzaf_15577433682967549332.plus.aac.p.m4a",
+        "aud_track":  "Runaway",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  490,
+        "sku":  "NN-HTD-490",
+        "slug":  "jonas-brothers-sucker-490",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Jonas Brothers",
+        "t":  "Sucker",
+        "l":  "Republic",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Sucker – Jonas Brothers (Nhạc Việt). Ấn bản đĩa than LP (Republic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/ucker-limited-clear-vinyl-lp-dia-than_1e94547305e64e5ca6693b18f919957f_c62cc5a1155041d1a6557a7f722f001f.jpeg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  491,
+        "sku":  "NN-HTD-491",
+        "slug":  "melanie-martinez-hades-491",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Melanie Martinez",
+        "t":  "Hades",
+        "l":  "Atlantic",
+        "f":  "2xLP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Hades – Melanie Martinez (Nhạc Việt). Ấn bản đĩa than 2xLP (Atlantic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/me_83e23980d3ae4d7d9faa8c68f04d1e8d.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  492,
+        "sku":  "NN-HTD-492",
+        "slug":  "ramones-ramones-492",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Ramones",
+        "t":  "Ramones",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1976",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Ramones – Ramones (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Blitzkrieg Bop",
+                          "Beat On the Brat",
+                          "Judy Is a Punk",
+                          "I Wanna Be Your Boyfriend",
+                          "Chain Saw",
+                          "Now I Wanna Sniff Some Glue",
+                          "I Don\u0027t Wanna Go Down to the Basement",
+                          "Loudmouth",
+                          "Havana Affair",
+                          "Listen to My Heart",
+                          "53rd \u0026 3rd",
+                          "Let\u0027s Dance",
+                          "I Don\u0027t Wanna Walk Around With You",
+                          "Today Your Love, Tomorrow the World"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/ramones-ramones-vinyl-lp-dia-than_fde5de19597f48b4af4cb24f8ac62192_2cc0b0b3382444f9a1e64f6bfcc9c220.jpeg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/b9/ef/02b9eff9-6a47-b1d5-1e35-90e146393e9c/mzaf_15432395312962636927.plus.aac.p.m4a",
+        "aud_track":  "Blitzkrieg Bop",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  493,
+        "sku":  "NN-HTD-493",
+        "slug":  "wu-tang-clan-enter-the-wu-tang-36-chambers-493",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Wu-Tang Clan",
+        "t":  "Enter The Wu-Tang (36 Chambers)",
+        "l":  "RCA",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1993",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Enter The Wu-Tang (36 Chambers) – Wu-Tang Clan (Nhạc Việt). Ấn bản đĩa than LP (RCA). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Shame On a Nuh (feat. Raekwon, Ol\u0027 Dirty Bastard \u0026 Method Man)",
+                          "Clan In Da Front (feat. RZA \u0026 GZA)",
+                          "Can It Be All So Simple (Radio Edit)",
+                          "Method Man (feat. Method Man, Raekwon, GZA, RZA \u0026 Ghostface Killah)",
+                          "Da Mystery of Chessboxin\u0027 (feat. Method Man, U-God, Inspectah Deck, Raekwon, Ol\u0027 Dirty Bastard, Ghostface Killah \u0026 Masta Killa) [Radio Edit]",
+                          "Wu-Tang Clan Ain\u0027t Nuthing Ta F\u0027 Wit (feat. RZA, Inspectah Deck \u0026 Method Man)",
+                          "C.R.E.A.M. (feat. Method Man, Raekwon, Inspectah Deck \u0026 Buddha Monk)",
+                          "Protect Ya Neck (feat. RZA, Method Man, Inspectah Deck, Raekwon, U-God, Ol\u0027 Dirty Bastard, Ghostface Killah \u0026 GZA)",
+                          "Tearz (feat. RZA \u0026 Ghostface Killah)"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/wu-tang-36-chambers-vinyl-lp-dia-than_6e5d53963e8b46a6b1154ba4420bb73a_5171f699db034e1e89da33e2a301de4a.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/77/aa/7377aaca-375f-ac90-405a-c1a4e05a2020/mzaf_1196234574366802596.plus.aac.p.m4a",
+        "aud_track":  "Shame On a Nuh (feat. Raekwon, Ol\u0027 Dirty Bastard \u0026 Method Man)",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  494,
+        "sku":  "NN-HTD-494",
+        "slug":  "tate-mcrae-so-close-to-what-494",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Tate McRae",
+        "t":  "So Close To What",
+        "l":  "RCA",
+        "f":  "2xLP",
+        "c":  "Liên hệ",
+        "y":  "2025",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "So Close To What – Tate McRae (Nhạc Việt). Ấn bản đĩa than 2xLP (RCA). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "TRYING ON SHOES",
+                          "ANYTHING BUT LOVE",
+                          "NOBODY\u0027S GIRL",
+                          "HORSESHOE",
+                          "TIT FOR TAT",
+                          "Miss possessive",
+                          "Revolving door",
+                          "bloodonmyhands (feat. Flo Milli)",
+                          "Dear god",
+                          "Purple lace bra",
+                          "Sports car",
+                          "Signs",
+                          "I know love (feat. The Kid LAROI)",
+                          "Like I do",
+                          "It\u0027s ok I\u0027m ok",
+                          "No I\u0027m not in love",
+                          "Means I care",
+                          "Greenlight",
+                          "2 hands",
+                          "Siren sounds (bonus)",
+                          "Nostalgia"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/ta_fa64ef739ad24157b12cdf0263394a3e.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/e9/4a/3fe94a85-caf1-3543-fa65-47b5c3c732c1/mzaf_4629346030735897427.plus.aac.p.m4a",
+        "aud_track":  "TRYING ON SHOES",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  495,
+        "sku":  "NN-HTD-495",
+        "slug":  "maisie-peters-florescence-495",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Maisie Peters",
+        "t":  "Florescence",
+        "l":  "Atlantic",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Florescence – Maisie Peters (Nhạc Việt). Ấn bản đĩa than LP (Atlantic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/mai_design_8f3bfd13b6d34247a79e500dba48a2e2.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  496,
+        "sku":  "NN-HTD-496",
+        "slug":  "the-weeknd-hurry-up-tomorrow-496",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "The Weeknd",
+        "t":  "Hurry Up Tomorrow",
+        "l":  "Republic",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2025",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Hurry Up Tomorrow – The Weeknd (Nhạc Việt). Ấn bản đĩa than LP (Republic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Wake Me Up",
+                          "Cry For Me",
+                          "I Can\u0027t Fucking Sing",
+                          "São Paulo",
+                          "Until We\u0027re Skin \u0026 Bones",
+                          "Baptized In Fear",
+                          "Open Hearts",
+                          "Opening Night",
+                          "Reflections Laughing",
+                          "Enjoy The Show",
+                          "Given Up On Me",
+                          "I Can\u0027t Wait To Get There",
+                          "Timeless",
+                          "Niagara Falls",
+                          "Take Me Back To LA",
+                          "Big Sleep",
+                          "Give Me Mercy",
+                          "Drive",
+                          "The Abyss",
+                          "Red Terror",
+                          "Without a Warning",
+                          "Hurry Up Tomorrow"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/w_ba015706f5a94a1692f8ef99aacefb62.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/93/f1/6a93f110-6436-4913-a5f7-9f1983f3f02e/mzaf_4331646437047566655.plus.aac.p.m4a",
+        "aud_track":  "Wake Me Up",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  497,
+        "sku":  "NN-HTD-497",
+        "slug":  "yungblud-weird-497",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Yungblud",
+        "t":  "weird!",
+        "l":  "Interscope",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2020",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "weird! – Yungblud (Nhạc Việt). Ấn bản đĩa than LP (Interscope). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "teresa",
+                          "parents",
+                          "cotton candy",
+                          "strawberry lipstick",
+                          "mars",
+                          "superdeadfriends",
+                          "love song",
+                          "god save me, but don\u0027t drown me out",
+                          "ice cream man",
+                          "weird!",
+                          "charity",
+                          "acting like that (feat. Machine Gun Kelly)",
+                          "it\u0027s quiet in beverly hills",
+                          "the freak show"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/ungblud-weird-white-vinyl-lp-dia-than_798191348e4b4a0c801fdc92e219e14c_49184abd07b54829a58e1c55afee761f.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/cb/22/b0cb22d9-7e5a-4f16-9f11-dda436d013c8/mzaf_5781739015618008999.plus.aac.p.m4a",
+        "aud_track":  "teresa",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  498,
+        "sku":  "NN-HTD-498",
+        "slug":  "various-artists-blues-with-a-rhythm-vol-2-498",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Various Artists",
+        "t":  "Blues With A Rhythm Vol. 2",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Blues With A Rhythm Vol. 2 – Various Artists (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/rhym_e5bb417fd8a14923abb6b6743f349bb1_4e170dfbc4a84776acad09c497682373.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  499,
+        "sku":  "NN-HTD-499",
+        "slug":  "weezer-maladroit-499",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Weezer",
+        "t":  "Maladroit",
+        "l":  "Universal",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2002",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Maladroit – Weezer (Nhạc Việt). Ấn bản đĩa than LP (Universal). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "American Gigolo",
+                          "Dope Nose",
+                          "Keep Fishin\u0027",
+                          "Take Control",
+                          "Death and Destruction",
+                          "Slob",
+                          "Burndt Jamb",
+                          "Space Rock",
+                          "Slave",
+                          "Fall Together",
+                          "Possibilities",
+                          "Love Explosion",
+                          "December"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/weezer-maladroit-vinyl-lp-dia-than_069a087c763b4c9a8a40f8da4483ede6_47b6aac394e4475183093a361a6b655b.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/44/c8/9744c8fe-77ee-eb2e-96e8-c94a9798a701/mzaf_9882906968036395299.plus.aac.p.m4a",
+        "aud_track":  "American Gigolo",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  500,
+        "sku":  "NN-HTD-500",
+        "slug":  "black-pumas-chronicles-of-a-diamond-500",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Black Pumas",
+        "t":  "Chronicles of a Diamond",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2023",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Chronicles of a Diamond – Black Pumas (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "More Than a Love Song",
+                          "Ice Cream (Pay Phone)",
+                          "Mrs. Postman",
+                          "Chronicles of a Diamond",
+                          "Angel",
+                          "Hello",
+                          "Sauvignon",
+                          "Tomorrow",
+                          "Gemini Sun",
+                          "Rock and Roll"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/nicles-of-a-diamond-vinyl-lp-dia-than_2c60f091c7b646f5b2583fef6bd6d041_d2f2d6f2c37549dc8adc2ac73784377c.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/58/79/285879aa-650a-a84d-6838-9573798453b4/mzaf_6816908263316532599.plus.aac.p.m4a",
+        "aud_track":  "More Than a Love Song",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  501,
+        "sku":  "NN-HTD-501",
+        "slug":  "demi-lovato-revamped-501",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Demi Lovato",
+        "t":  "Revamped",
+        "l":  "Island",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2023",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Revamped – Demi Lovato (Nhạc Việt). Ấn bản đĩa than LP (Island). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Heart Attack (Rock Version)",
+                          "Confident (Rock Version)",
+                          "Sorry Not Sorry (feat. Slash) [Rock Version]",
+                          "Cool for the Summer (Rock Version)",
+                          "Tell Me You Love Me (Rock Version)",
+                          "Neon Lights (Rock Version)",
+                          "Skyscraper (Rock Version)",
+                          "La La Land (feat. Nita Strauss) [Rock Version]",
+                          "Give Your Heart A Break (Rock Version)",
+                          "Don\u0027t Forget (Rock Version)"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/ato-revamped-silver-vinyl-lp-dia-than_6713852228c543b098bce58817320b13_d0dc60862f33451f81a6979ff7e7396c.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/7c/5a/517c5ade-9ada-c319-4ddc-0242b5afd67b/mzaf_6597800940488952319.plus.aac.p.m4a",
+        "aud_track":  "Heart Attack (Rock Version)",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  502,
+        "sku":  "NN-HTD-502",
+        "slug":  "ihsahn-after-502",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "IHSAHN",
+        "t":  "After",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2010",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "After – IHSAHN (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "The Barren Lands",
+                          "A Grave Inversed",
+                          "After",
+                          "Frozen Lakes On Mars",
+                          "Undercurrent",
+                          "Austere",
+                          "Heavens Black Sea",
+                          "On The Shores"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/ihsahn-after-vinyl-lp-dia-than_916ef9afd9074498b231ab1656cadd9b_c7130832186f4438a7ed02aa13add651.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/51/79/7151791f-0459-2299-80ab-10584a859dad/mzaf_14610986336808331232.plus.aac.p.m4a",
+        "aud_track":  "The Barren Lands",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  503,
+        "sku":  "NN-HTD-503",
+        "slug":  "fall-out-boy-take-this-to-your-grave-20th-anniversary-503",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Fall Out Boy",
+        "t":  "Take This To Your Grave (20th Anniversary)",
+        "l":  "Fueled By Ramen",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Take This To Your Grave (20th Anniversary) – Fall Out Boy (Nhạc Việt). Ấn bản đĩa than LP (Fueled By Ramen). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/ve-20th-anniversary-vinyl-lp-dia-than_1031b6c5117b47bebd27722bff73077c_8f66857ea91542b3b5e26b78f6868c55.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  504,
+        "sku":  "NN-HTD-504",
+        "slug":  "maren-morris-hero-504",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Maren Morris",
+        "t":  "Hero",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Hero – Maren Morris (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/maren_morris_hero_vinyl_lp_071cba842c8b4946b0a392ad31313c38_8435ba675e5e463f9353a6591ca7f8d3.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  505,
+        "sku":  "VN-HTD-505",
+        "slug":  "finneas-what-they-ll-say-about-us-7-inch-dia-than-505",
+        "category":  "vinyl",
+        "g":  "Nhạc Việt",
+        "mood":  {
+
+                 },
+        "a":  "Finneas",
+        "t":  "What They\u0027ll Say About Us (7-inch) - Đĩa Than",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "What They\u0027ll Say About Us (7-inch) - Đĩa Than – Finneas (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/say-about-us-7-inch-dia-than-vinyl-lp_9a98a057f0a24e378d7d612c954be3e0_55011cd4b6ba4a1699629735d7b2a861.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  506,
+        "sku":  "NN-HTD-506",
+        "slug":  "ice-spice-like-506",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Ice Spice",
+        "t":  "Like.. ?",
+        "l":  "Capitol",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2023",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Like.. ? – Ice Spice (Nhạc Việt). Ấn bản đĩa than LP (Capitol). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "How High?",
+                          "Butterfly Ku",
+                          "Deli",
+                          "In Ha Mood",
+                          "Princess Diana",
+                          "Princess Diana",
+                          "Gangsta Boo",
+                          "Actin A Smoochie",
+                          "Bikini Bottom",
+                          "Munch (Feelin’ U)",
+                          "On The Radar (Bonus)"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/529138213299387_7775887811927591840_n_acad9cf460044a74b651fe77ba0299f4_fec1bf7e7d5447608e5b18deafcc5f0e.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/17/c9/2817c9af-4fc5-673b-2abf-a50eba673ff0/mzaf_2255103281034761329.plus.aac.p.m4a",
+        "aud_track":  "How High?",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  507,
+        "sku":  "NN-HTD-507",
+        "slug":  "iron-wine-the-sea-the-rhythm-507",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Iron \u0026 Wine",
+        "t":  "The Sea \u0026 The Rhythm",
+        "l":  "Sub Pop",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "The Sea \u0026 The Rhythm – Iron \u0026 Wine (Nhạc Việt). Ấn bản đĩa than LP (Sub Pop). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/-the-sea-the-rhythm-vinyl-lp-dia-than_73da06dc45d649a4b6a169eadc9c8395_c76b7c54a8be4a4491279a123efe0d69.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  508,
+        "sku":  "NN-HTD-508",
+        "slug":  "britney-spears-britney-jean-508",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Britney Spears",
+        "t":  "Britney Jean",
+        "l":  "Sony",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2001",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Britney Jean – Britney Spears (Nhạc Việt). Ấn bản đĩa than LP (Sony). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "I\u0027m a Slave 4 U",
+                          "Overprotected",
+                          "Lonely",
+                          "I\u0027m Not a Girl, Not Yet a Woman",
+                          "Boys",
+                          "Anticipating",
+                          "I Love Rock \u0026 Roll",
+                          "Cinderella",
+                          "Let Me Be",
+                          "Bombastic Love",
+                          "That\u0027s Where You Take Me",
+                          "When I Found You",
+                          "I Run Away",
+                          "What It\u0027s Like to Be Me",
+                          "Before the Goodbye"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/spears-britney-jean-vinyl-lp-dia-than_41828c94c1124a1eb688d0449652d916_bf70da2b092d47529ce6500ff4ecdc84.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/88/bf/fe88bf24-5e46-997f-4a90-19be838b87b1/mzaf_15503501772600270554.plus.aac.p.m4a",
+        "aud_track":  "I\u0027m a Slave 4 U",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  509,
+        "sku":  "VN-HTD-509",
+        "slug":  "bao-dia-than-12-pack-100-509",
+        "category":  "vinyl",
+        "g":  "Nhạc Việt",
+        "mood":  {
+
+                 },
+        "a":  "Bao Đĩa Than 12\u0027\u0027",
+        "t":  "Pack 100",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Pack 100 – Bao Đĩa Than 12\u0027\u0027 (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/-outer-sleeves-pack-1kg-100-120-piece_c85a29e1fb794e71a1e67c9f0a8b49fa_ba21ade2bd6f4f339bac7790f6c180ef.jpeg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  510,
+        "sku":  "NN-HTD-510",
+        "slug":  "beyonce-cowboy-carter-510",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Beyonce",
+        "t":  "Cowboy Carter",
+        "l":  "Sony",
+        "f":  "2xLP",
+        "c":  "Liên hệ",
+        "y":  "2024",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Cowboy Carter – Beyonce (Nhạc Việt). Ấn bản đĩa than 2xLP (Sony). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "AMERIICAN REQUIEM",
+                          "BLACKBIIRD",
+                          "16 CARRIAGES",
+                          "PROTECTOR",
+                          "MY ROSE",
+                          "SMOKE HOUR ★ WILLIE NELSON",
+                          "TEXAS HOLD \u0027EM",
+                          "BODYGUARD",
+                          "DOLLY P",
+                          "JOLENE",
+                          "DAUGHTER",
+                          "SPAGHETTII",
+                          "ALLIIGATOR TEARS",
+                          "SMOKE HOUR II",
+                          "JUST FOR FUN",
+                          "II MOST WANTED",
+                          "LEVII\u0027S JEANS",
+                          "FLAMENCO",
+                          "THE LINDA MARTELL SHOW",
+                          "YA YA",
+                          "OH LOUISIANA",
+                          "DESERT EAGLE",
+                          "RIIVERDANCE",
+                          "II HANDS II HEAVEN",
+                          "TYRANT",
+                          "SWEET ★ HONEY ★ BUCKIIN\u0027",
+                          "AMEN"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/once-cowboy-carter-vinyl-2lp-dia-than_8f5514c0c05a459bbb04f958deac3794_16ba5c0266f74061ab4fd9c1763ebe9a.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/ff/fa/0dfffa17-5e07-cdb6-91c3-a6d61a682351/mzaf_3198876309704647413.plus.aac.p.m4a",
+        "aud_track":  "AMERIICAN REQUIEM",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  511,
+        "sku":  "NN-HTD-511",
+        "slug":  "arcade-fire-we-511",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Arcade Fire",
+        "t":  "WE",
+        "l":  "Universal",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2022",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "WE – Arcade Fire (Nhạc Việt). Ấn bản đĩa than LP (Universal). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Age of Anxiety I",
+                          "Age of Anxiety II (Rabbit Hole)",
+                          "Prelude",
+                          "End of The Empire I-III",
+                          "End of The Empire IV (Sagittarius A*)",
+                          "The Lightning I",
+                          "The Lightning II",
+                          "Unconditional I (Lookout Kid)",
+                          "Unconditional II (Race and Religion) [feat. Peter Gabriel]",
+                          "WE"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/arcade-fire-we-vinyl-lp-dia-than_36dc736f7db04b78877aca7c5d374938_de8116c54dfc45578dbf59dacaac0201.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/77/27/0e77279a-d555-abd6-2e19-931c96c6cb2c/mzaf_17322215399404744592.plus.aac.p.m4a",
+        "aud_track":  "Age of Anxiety I",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  512,
+        "sku":  "NN-HTD-512",
+        "slug":  "arcade-fire-pink-elephant-512",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Arcade Fire",
+        "t":  "Pink Elephant",
+        "l":  "Universal",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Pink Elephant – Arcade Fire (Nhạc Việt). Ấn bản đĩa than LP (Universal). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/rcade_fire_-_pink_elephant__vinyl_lp__edab068f3ee44ae992c2977447af7c5c_1c523caa3278422c868429f750400d66.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  513,
+        "sku":  "NN-HTD-513",
+        "slug":  "demi-lovato-holy-fvck-indie-exclusive-513",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Demi Lovato",
+        "t":  "Holy FVCK (Indie Exclusive)",
+        "l":  "Warner Music",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2022",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Holy FVCK (Indie Exclusive) – Demi Lovato (Nhạc Việt). Ấn bản đĩa than LP (Warner Music). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "FREAK (feat. YUNGBLUD)",
+                          "SKIN OF MY TEETH",
+                          "SUBSTANCE",
+                          "EAT ME (feat. Royal \u0026 the Serpent)",
+                          "HOLY FVCK",
+                          "29",
+                          "HAPPY ENDING",
+                          "HEAVEN",
+                          "CITY OF ANGELS",
+                          "BONES",
+                          "WASTED",
+                          "COME TOGETHER",
+                          "DEAD FRIENDS",
+                          "HELP ME",
+                          "FEED",
+                          "4 EVER 4 ME"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/mi-lovato-holy-fvck-vinyl-lp-dia-than_df707d16547d4f81996917fd77d6faf1_30d06f1a1ca8443d974506708bad8a0c.jpeg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/75/c3/bc75c337-0bf3-cb71-79db-11695c438250/mzaf_11747195242216111023.plus.aac.p.m4a",
+        "aud_track":  "FREAK (feat. YUNGBLUD)",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  514,
+        "sku":  "NN-HTD-514",
+        "slug":  "lana-del-rey-paradise-514",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Lana Del Rey",
+        "t":  "Paradise",
+        "l":  "Interscope",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Paradise – Lana Del Rey (Nhạc Việt). Ấn bản đĩa than LP (Interscope). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/than_6ad00bb17f3f400dbc97c5dce5f96274_2ac4c4ee68f44b35af57784efd739f3a_baf285df2ac3449d83adb4e087c7dd74.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  515,
+        "sku":  "NN-HTD-515",
+        "slug":  "britney-spears-swimming-in-the-stars-single-515",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Britney Spears",
+        "t":  "Swimming In The Stars (Single)",
+        "l":  "RCA",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Swimming In The Stars (Single) – Britney Spears (Nhạc Việt). Ấn bản đĩa than LP (RCA). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/in-the-stars-single-vinyl-lp-dia-than_f77019f24934475aabfa09e67df7aeab_b028632cd08348d5a6d0c5c0be4e4340.jpeg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  516,
+        "sku":  "NN-HTD-516",
+        "slug":  "billy-idol-billy-idol-516",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Billy Idol",
+        "t":  "Billy Idol",
+        "l":  "Capitol",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1982",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Billy Idol – Billy Idol (Nhạc Việt). Ấn bản đĩa than LP (Capitol). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Come On, Come On",
+                          "White Wedding, Pt. 1",
+                          "Hot In the City",
+                          "Dead On Arrival",
+                          "Nobody\u0027s Business",
+                          "Love Calling",
+                          "Hole In the Wall",
+                          "Shooting Stars",
+                          "It\u0027s So Cruel",
+                          "Congo Man"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/lly-idol-billy-idol-vinyl-lp-dia-than_4deafb541d2b4092b57e06fe71ffe1f7_2c98007050c14437ab188e943a43b603.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/60/ca/b8/60cab8b3-a688-c877-9210-85884a96dc0d/mzaf_11801634200387553027.plus.aac.p.m4a",
+        "aud_track":  "Come On, Come On",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  517,
+        "sku":  "NN-HTD-517",
+        "slug":  "katy-perry-143-517",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Katy Perry",
+        "t":  "143",
+        "l":  "Capitol",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2024",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "143 – Katy Perry (Nhạc Việt). Ấn bản đĩa than LP (Capitol). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "WOMAN’S WORLD",
+                          "GIMME GIMME",
+                          "GORGEOUS",
+                          "I\u0027M HIS, HE\u0027S MINE (feat. Doechii)",
+                          "CRUSH",
+                          "LIFETIMES",
+                          "ALL THE LOVE",
+                          "NIRVANA",
+                          "ARTIFICIAL",
+                          "TRUTH",
+                          "WONDER"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/ty-perry-143-silver-vinyl-lp-dia-than_3738431f11b742c8bf0519aa87ceea5e_43ee34afa5924a819becbfce32603376.png",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/e2/f0/0fe2f093-973b-c516-5a7c-6f7c38a8edaf/mzaf_2022860129841518300.plus.aac.p.m4a",
+        "aud_track":  "WOMAN’S WORLD",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  518,
+        "sku":  "NN-HTD-518",
+        "slug":  "john-coltrane-blue-train-518",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "John Coltrane",
+        "t":  "Blue Train",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "1957",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Blue Train – John Coltrane (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Blue Train (Remastered)",
+                          "Moment\u0027s Notice (Remastered)",
+                          "Locomotion (Remastered)",
+                          "I\u0027m Old Fashioned (Remastered)",
+                          "Lazy Bird (Remastered)"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/bluetrain_ef21f80ddeb34c13beb56949302b1f06_b8dd9648d59b4e01939b427a1d1062fc.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/74/bd/4274bd86-1026-af36-de93-ba8ac03e9f8d/mzaf_9135411222931316696.plus.aac.p.m4a",
+        "aud_track":  "Blue Train (Remastered)",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  519,
+        "sku":  "NN-HTD-519",
+        "slug":  "gwen-stefani-bouquet-519",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Gwen Stefani",
+        "t":  "Bouquet",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Bouquet – Gwen Stefani (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/bouquet_901198dc203e4493b765a47a6ea08374_f20994cc10b54f36a53836f1eca7f937.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  520,
+        "sku":  "NN-HTD-520",
+        "slug":  "melanie-martinez-portals-520",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Melanie Martinez",
+        "t":  "Portals",
+        "l":  "Warner Music",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2023",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Portals – Melanie Martinez (Nhạc Việt). Ấn bản đĩa than LP (Warner Music). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "DEATH",
+                          "VOID",
+                          "TUNNEL VISION",
+                          "FAERIE SOIRÉE",
+                          "LIGHT SHOWER",
+                          "SPIDER WEB",
+                          "LEECHES",
+                          "BATTLE OF THE LARYNX",
+                          "THE CONTORTIONIST",
+                          "MOON CYCLE",
+                          "NYMPHOLOGY",
+                          "EVIL",
+                          "WOMB"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/ie-martinez-portals-vinyl-lp-dia-than_3c30951d269147c5b59acc1f1865a753_85f68979803b4891945ddb2b1a594ce6.jpeg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/3c/d8/c83cd86a-de70-a3ea-6866-35be4cacd179/mzaf_17777446412648821051.plus.aac.p.m4a",
+        "aud_track":  "DEATH",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  521,
+        "sku":  "NN-HTD-521",
+        "slug":  "led-zeppelin-led-zeppelin-2-521",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Led Zeppelin",
+        "t":  "Led Zeppelin 2",
+        "l":  "Atlantic",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Led Zeppelin 2 – Led Zeppelin (Nhạc Việt). Ấn bản đĩa than LP (Atlantic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/elin-led-zeppelin-2-vinyl-lp-dia-than_b53d7346872042b3944028fe0761bcde_d7871fb7d0be4e46becb14e2169d78cc.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  522,
+        "sku":  "NN-HTD-522",
+        "slug":  "lizzo-cuz-i-love-you-522",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Lizzo",
+        "t":  "Cuz I Love You",
+        "l":  "Atlantic",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "2019",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Cuz I Love You – Lizzo (Nhạc Việt). Ấn bản đĩa than LP (Atlantic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  [
+                          "Cuz I Love You",
+                          "Like a Girl",
+                          "Juice",
+                          "Soulmate",
+                          "Jerome",
+                          "Crybaby",
+                          "Tempo (feat. Missy Elliott)",
+                          "Exactly How I Feel (feat. Gucci Mane)",
+                          "Better in Color",
+                          "Heaven Help Me",
+                          "Lingerie",
+                          "Boys",
+                          "Truth Hurts",
+                          "Water Me"
+                      ],
+        "img":  "https://cdn.hstatic.net/products/200001113747/b7da2952-9eba-47f3-b100-4ebcb5310a44_86ca6f59c4b14cd4a0b7ba5fec8a95e4_ff91539d69874960837797e92f729d17.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/a1/9d/69a19dcb-a2a4-1448-b8a3-f525bd3a9874/mzaf_15485262198868581618.plus.aac.p.m4a",
+        "aud_track":  "Cuz I Love You",
+        "missing_fields":  "MISSING_PRICE",
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  523,
+        "sku":  "NN-HTD-523",
+        "slug":  "matchbox-twenty-where-the-light-goes-amazon-exclusive-523",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Matchbox Twenty",
+        "t":  "Where The Light Goes (Amazon Exclusive)",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Where The Light Goes (Amazon Exclusive) – Matchbox Twenty (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/es-amazon-exclusive-vinyl-lp-dia-than_3450b1bd788a46cca730ace4af5aab1d_878d3912c7e1490c9af46f9f0627f991.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  524,
+        "sku":  "NN-HTD-524",
+        "slug":  "melanie-martinez-after-school-ep-524",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Melanie Martinez",
+        "t":  "After School EP",
+        "l":  "Warner Music",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "After School EP – Melanie Martinez (Nhạc Việt). Ấn bản đĩa than LP (Warner Music). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/er-school-baby-blue-vinyl-lp-dia-than_3ffae3b381c4433ea78ab9ebcfcecf27_c6a186964dc64215bb54a924c5da916c.jpeg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  525,
+        "sku":  "NN-HTD-525",
+        "slug":  "lou-reed-transformer-525",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Lou Reed",
+        "t":  "Transformer",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Transformer – Lou Reed (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/lou-reed-transformer-dia-than_447e1bf6ddb444aca11e1d320ae78aad_b950c75ece214579b62c8dd2684cd951.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  526,
+        "sku":  "NN-HTD-526",
+        "slug":  "dua-lipa-radical-optimism-526",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Dua Lipa",
+        "t":  "Radical Optimism",
+        "l":  "Warner Music",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Radical Optimism – Dua Lipa (Nhạc Việt). Ấn bản đĩa than LP (Warner Music). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/66fabc076484c4899891711aa07d7eb_large_c24f7b377f4049de8924c8ced0f767b6_ecab8a6a6dc74081b8ef9bee1e6d7767.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  527,
+        "sku":  "NN-HTD-527",
+        "slug":  "fka-twigs-eusexua-527",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "FKA twigs",
+        "t":  "EUSEXUA",
+        "l":  "Atlantic",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "EUSEXUA – FKA twigs (Nhạc Việt). Ấn bản đĩa than LP (Atlantic). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/twigs-eusexua-clear-vinyl-lp-dia-than_90accf26cd51492b908fdece48391b6c_662b6b50130244339b79431d24a2d783.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  528,
+        "sku":  "NN-HTD-528",
+        "slug":  "haim-i-quit-528",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "HAIM",
+        "t":  "I QUIT",
+        "l":  "Columbia",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "I QUIT – HAIM (Nhạc Việt). Ấn bản đĩa than LP (Columbia). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/haim_-_i_quit_24860919f23d4282ab6e2f9d2edbc0f4_58268b8c0e644e909fb09498bd85cf14.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  529,
+        "sku":  "NN-HTD-529",
+        "slug":  "japanese-breakfast-for-melancholy-brunettes-sad-women-529",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Japanese Breakfast",
+        "t":  "For Melancholy Brunettes (\u0026 Sad Women)",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "For Melancholy Brunettes (\u0026 Sad Women) – Japanese Breakfast (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/brunettes-sad-women-vinyl-lp-dia-than_3315d64f09424d04bf7866df17f6c6e7_a0cb722434ad4ed9be122db2ebe940ce.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  530,
+        "sku":  "NN-HTD-530",
+        "slug":  "logic-vinyl-days-530",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Logic",
+        "t":  "Vinyl Days -",
+        "l":  "Hãng Đĩa Thời Đại",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Vinyl Days - – Logic (Nhạc Việt). Ấn bản đĩa than LP (Hãng Đĩa Thời Đại). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/c_-_vinyl_days-__vinyl_lp__-_d_a_than_c9d2dc062d8c4ffeb25bb23077183691_626fe76d5e394aa581bd404815239329.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  531,
+        "sku":  "NN-HTD-531",
+        "slug":  "kylie-minogue-disco-extended-mixes-531",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Kylie Minogue",
+        "t":  "Disco (Extended Mixes)",
+        "l":  "BMG",
+        "f":  "2xLP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Disco (Extended Mixes) – Kylie Minogue (Nhạc Việt). Ấn bản đĩa than 2xLP (BMG). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/ended-mixes-purple-vinyl-2lp-dia-than_201c07ce96704707b6a349fea293163d_1f46067b941f4388b23e17d691e1a9c4.jpeg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  532,
+        "sku":  "NN-HTD-532",
+        "slug":  "lil-uzi-vert-just-wanna-rock-532",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Lil Uzi Vert",
+        "t":  "Just Wanna Rock",
+        "l":  "Warner Music",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Just Wanna Rock – Lil Uzi Vert (Nhạc Việt). Ấn bản đĩa than LP (Warner Music). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/-rock-7-inch-single-vinyl-lp-dia-than_c1720c7e13694f1c932789fe57b83ef3_dca6eb67fac345d8aa07119f62032f3c.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  533,
+        "sku":  "NN-HTD-533",
+        "slug":  "jennie-ruby-533",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "JENNIE",
+        "t":  "Ruby",
+        "l":  "Interscope",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Ruby – JENNIE (Nhạc Việt). Ấn bản đĩa than LP (Interscope). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/nie-ruby-opaque-red-vinyl-lp-dia-than_33cf6119c1c34d33a8d0cbd2d290caae_dc070148bb484d3aaced07e656213d4a.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  534,
+        "sku":  "NN-HTD-534",
+        "slug":  "foo-fighters-medicine-at-midnight-534",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Foo Fighters",
+        "t":  "Medicine At Midnight",
+        "l":  "RCA",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Medicine At Midnight – Foo Fighters (Nhạc Việt). Ấn bản đĩa than LP (RCA). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/untitled_design-20_b8d59b50181d4c0bae70dae1ed1a00ee.png",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  535,
+        "sku":  "NN-HTD-535",
+        "slug":  "the-strokes-is-this-it-535",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "The Strokes",
+        "t":  "Is This It",
+        "l":  "Sony",
+        "f":  "LP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "Is This It – The Strokes (Nhạc Việt). Ấn bản đĩa than LP (Sony). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/-strokes-is-this-it-vinyl-lp-dia-than_41ebe5ef3db74d1ca8c532e94f19fc3a_c2fc8ade3af34070963827a8cdb3a49a.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "Liên hệ"
+    },
+    {
+        "id":  536,
+        "sku":  "NN-HTD-536",
+        "slug":  "elvis-presley-30-1-hits-536",
+        "category":  "vinyl",
+        "g":  "Audiophile \u0026 Khác",
+        "mood":  {
+
+                 },
+        "a":  "Elvis Presley",
+        "t":  "30 #1 Hits",
+        "l":  "RCA",
+        "f":  "2xLP",
+        "c":  "Liên hệ",
+        "y":  "",
+        "p":  0,
+        "s":  "Liên hệ",
+        "d":  "30 #1 Hits – Elvis Presley (Nhạc Việt). Ấn bản đĩa than 2xLP (RCA). Vui lòng liên hệ Hue Sound Express để kiểm tra tồn kho và đặt trước.",
+        "tracklist":  {
+
+                      },
+        "img":  "https://cdn.hstatic.net/products/200001113747/is_presley_-_30__1_hits__vinyl_2lp__1_57c09703190a4938913761d073d4e2a3_9a8d4f9b79df4763b6ff579e7a0bc018.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_PRICE",
+                               "MISSING_AUDIO",
+                               "MISSING_TRACKLIST",
+                               "MISSING_YEAR"
+                           ],
         "cond":  "Liên hệ"
     },
     {

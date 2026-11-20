@@ -22,7 +22,7 @@
 4. Nâng cấp bao lót chống tĩnh điện (Anti-Static Inner Sleeve) thay cho túi giấy thô.
 5. Vệ sinh đầu kim định kỳ (Audio-Technica AT607a) và cân chỉnh lực tì kim (Tracking Force) đúng chuẩn.
 
-## 4. Unified Product Catalog (472 Items)
+## 4. Unified Product Catalog (552 Items)
 | Category | SKU | Artist / Brand | Product / Album | Format / Spec | Condition | List Price (VND) | Status | URL |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | vinyl | VN-MỸ TÂM-TÂM 9-LP-NEW-VIẾ | Mỹ Tâm | Tâm 9 [R] | LP | New Seal | 1,750,000 | Còn hàng | https://huesoundexpress.github.io/p/my-tam-tam-9-r-1/ |
@@ -481,6 +481,86 @@
 | vinyl | NN-MILES -VOLUM---BLU | Miles Davis | Volume 1 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miles-davis-volume-1-454/ |
 | vinyl | NN-MUDDY -THE M-2XLP-BLACK-BMG | Muddy Waters | The Montreux Yea | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/muddy-waters-the-montreux-yea-455/ |
 | vinyl | NN-LANA D-LUST -2XLP-BLACK-POL | Lana Del Rey | Lust For Life | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lana-del-rey-lust-for-life-456/ |
+| vinyl | NN-GDA-457 | Joe Hisaishi (Studio Ghibli) | Dịch vụ giao hàng của phù thủy KiKi | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-dich-vu-giao-hang-cua-phu-thuy-kiki-457/ |
+| vinyl | NN-GDA-458 | Joe Hisaishi (Studio Ghibli) | Công chúa sói Mononoke | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-cong-chua-soi-mononoke-458/ |
+| vinyl | NN-GDA-459 | Joe Hisaishi (Studio Ghibli) | Lâu đài di động của Howl | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-lau-dai-di-dong-cua-howl-459/ |
+| vinyl | NN-GDA-460 | Joe Hisaishi (Studio Ghibli) | Hàng xóm của tôi là Totoro TJJA10016 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-hang-xom-cua-toi-la-totoro-tjja10016-460/ |
+| vinyl | VN-GDA-461 | NGUYỄN ÁNH 9 | LẶNG LẼ TIẾNG DƯƠNG CẦM | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nguyen-anh-9-lang-le-tieng-duong-cam-461/ |
+| vinyl | VN-GDA-462 | Nhiều ca sĩ | NGÀN THU ÁO TÍM | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-ngan-thu-ao-tim-462/ |
+| vinyl | NN-GDA-463 | Joe Hisaishi (Studio Ghibli) | Chú heo màu đỏ | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/porco-rosso-chu-heo-mau-do-463/ |
+| vinyl | NN-GDA-464 | Joe Hisaishi (Studio Ghibli) | Nàng công chúa ở thung lũng gió | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-nang-cong-chua-o-thung-lung-gio-464/ |
+| vinyl | NN-GDA-465 | Joe Hisaishi (Studio Ghibli) | Lâu đài trên không | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-lau-dai-tren-khong-465/ |
+| vinyl | NN-GDA-466 | Joe Hisaishi (Studio Ghibli) | Vùng đất linh hồn | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhieu-ca-si-vung-dat-linh-hon-466/ |
+| vinyl | NN-HTD-467 | Sheryl Crow | Live At The Capitol Theatre - 2017 Be My Baby Tour | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/sheryl-crow-live-at-the-capitol-theatre-2017-be-my-baby-tour-467/ |
+| vinyl | NN-HTD-468 | Nicki Minaj | Beam Me Up Scotty | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nicki-minaj-beam-me-up-scotty-468/ |
+| vinyl | NN-HTD-469 | Sea Wolf | Through A Dark Wood | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/sea-wolf-through-a-dark-wood-469/ |
+| vinyl | NN-HTD-470 | Selena Gomez, Marshmello | Wolves | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/selena-gomez-marshmello-wolves-470/ |
+| vinyl | NN-HTD-471 | Nirvana | Bleach | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nirvana-bleach-471/ |
+| vinyl | NN-HTD-472 | Mitski | Puberty 2 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/mitski-puberty-2-472/ |
+| vinyl | VN-HTD-473 | Nhạc Phim | Moana 2 OST | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhac-phim-moana-2-ost-473/ |
+| vinyl | NN-HTD-474 | Simple Plan | No Pads, No Helmets...Just Balls | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/simple-plan-no-pads-no-helmets-just-balls-474/ |
+| vinyl | NN-HTD-475 | Paul Simon | One Trick Pony | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/paul-simon-one-trick-pony-475/ |
+| vinyl | VN-HTD-476 | Nhạc Phim | Barbie OST | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nhac-phim-barbie-ost-476/ |
+| vinyl | NN-HTD-477 | NSYNC | Better Place | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/nsync-better-place-477/ |
+| vinyl | NN-HTD-478 | Meghan Trainor | Takin' It Back | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/meghan-trainor-takin-it-back-478/ |
+| vinyl | NN-HTD-479 | Miley Cyrus | Something Beautiful | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/miley-cyrus-something-beautiful-479/ |
+| vinyl | NN-HTD-480 | Mariah Carey | Mariah Carey | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/mariah-carey-mariah-carey-480/ |
+| vinyl | NN-HTD-481 | Madison Beer | Silence Between Songs | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/madison-beer-silence-between-songs-481/ |
+| vinyl | NN-HTD-482 | Maggie Rogers | Surrender | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/maggie-rogers-surrender-482/ |
+| vinyl | NN-HTD-483 | Kacey Musgraves | star-crossed | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/kacey-musgraves-star-crossed-483/ |
+| vinyl | NN-HTD-484 | Natalie Imbruglia | Left Of The Middle | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/natalie-imbruglia-left-of-the-middle-484/ |
+| vinyl | NN-HTD-485 | New Kids On The Block | Step By Step | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/new-kids-on-the-block-step-by-step-485/ |
+| vinyl | NN-HTD-486 | Harry Styles | Kiss All The Time. Disco, Occasionally | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/harry-styles-kiss-all-the-time-disco-occasionally-486/ |
+| vinyl | NN-HTD-487 | Bruno Mars | The Romantic - First Pressing Edition (Numbered) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/bruno-mars-the-romantic-first-pressing-edition-numbered-487/ |
+| vinyl | NN-HTD-488 | Charlie Puth | Whatever's Clever! | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/charlie-puth-whatever-s-clever-488/ |
+| vinyl | NN-HTD-489 | Aurora | ALL MY DEMONS GREETING ME AS A FRIEND | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/aurora-all-my-demons-greeting-me-as-a-friend-489/ |
+| vinyl | NN-HTD-490 | Jonas Brothers | Sucker | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/jonas-brothers-sucker-490/ |
+| vinyl | NN-HTD-491 | Melanie Martinez | Hades | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/melanie-martinez-hades-491/ |
+| vinyl | NN-HTD-492 | Ramones | Ramones | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ramones-ramones-492/ |
+| vinyl | NN-HTD-493 | Wu-Tang Clan | Enter The Wu-Tang (36 Chambers) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/wu-tang-clan-enter-the-wu-tang-36-chambers-493/ |
+| vinyl | NN-HTD-494 | Tate McRae | So Close To What | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/tate-mcrae-so-close-to-what-494/ |
+| vinyl | NN-HTD-495 | Maisie Peters | Florescence | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/maisie-peters-florescence-495/ |
+| vinyl | NN-HTD-496 | The Weeknd | Hurry Up Tomorrow | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-weeknd-hurry-up-tomorrow-496/ |
+| vinyl | NN-HTD-497 | Yungblud | weird! | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/yungblud-weird-497/ |
+| vinyl | NN-HTD-498 | Various Artists | Blues With A Rhythm Vol. 2 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/various-artists-blues-with-a-rhythm-vol-2-498/ |
+| vinyl | NN-HTD-499 | Weezer | Maladroit | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/weezer-maladroit-499/ |
+| vinyl | NN-HTD-500 | Black Pumas | Chronicles of a Diamond | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/black-pumas-chronicles-of-a-diamond-500/ |
+| vinyl | NN-HTD-501 | Demi Lovato | Revamped | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/demi-lovato-revamped-501/ |
+| vinyl | NN-HTD-502 | IHSAHN | After | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ihsahn-after-502/ |
+| vinyl | NN-HTD-503 | Fall Out Boy | Take This To Your Grave (20th Anniversary) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/fall-out-boy-take-this-to-your-grave-20th-anniversary-503/ |
+| vinyl | NN-HTD-504 | Maren Morris | Hero | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/maren-morris-hero-504/ |
+| vinyl | VN-HTD-505 | Finneas | What They'll Say About Us (7-inch) - Đĩa Than | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/finneas-what-they-ll-say-about-us-7-inch-dia-than-505/ |
+| vinyl | NN-HTD-506 | Ice Spice | Like.. ? | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/ice-spice-like-506/ |
+| vinyl | NN-HTD-507 | Iron & Wine | The Sea & The Rhythm | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/iron-wine-the-sea-the-rhythm-507/ |
+| vinyl | NN-HTD-508 | Britney Spears | Britney Jean | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/britney-spears-britney-jean-508/ |
+| vinyl | VN-HTD-509 | Bao Đĩa Than 12'' | Pack 100 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/bao-dia-than-12-pack-100-509/ |
+| vinyl | NN-HTD-510 | Beyonce | Cowboy Carter | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/beyonce-cowboy-carter-510/ |
+| vinyl | NN-HTD-511 | Arcade Fire | WE | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/arcade-fire-we-511/ |
+| vinyl | NN-HTD-512 | Arcade Fire | Pink Elephant | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/arcade-fire-pink-elephant-512/ |
+| vinyl | NN-HTD-513 | Demi Lovato | Holy FVCK (Indie Exclusive) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/demi-lovato-holy-fvck-indie-exclusive-513/ |
+| vinyl | NN-HTD-514 | Lana Del Rey | Paradise | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lana-del-rey-paradise-514/ |
+| vinyl | NN-HTD-515 | Britney Spears | Swimming In The Stars (Single) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/britney-spears-swimming-in-the-stars-single-515/ |
+| vinyl | NN-HTD-516 | Billy Idol | Billy Idol | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/billy-idol-billy-idol-516/ |
+| vinyl | NN-HTD-517 | Katy Perry | 143 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/katy-perry-143-517/ |
+| vinyl | NN-HTD-518 | John Coltrane | Blue Train | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/john-coltrane-blue-train-518/ |
+| vinyl | NN-HTD-519 | Gwen Stefani | Bouquet | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/gwen-stefani-bouquet-519/ |
+| vinyl | NN-HTD-520 | Melanie Martinez | Portals | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/melanie-martinez-portals-520/ |
+| vinyl | NN-HTD-521 | Led Zeppelin | Led Zeppelin 2 | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/led-zeppelin-led-zeppelin-2-521/ |
+| vinyl | NN-HTD-522 | Lizzo | Cuz I Love You | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lizzo-cuz-i-love-you-522/ |
+| vinyl | NN-HTD-523 | Matchbox Twenty | Where The Light Goes (Amazon Exclusive) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/matchbox-twenty-where-the-light-goes-amazon-exclusive-523/ |
+| vinyl | NN-HTD-524 | Melanie Martinez | After School EP | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/melanie-martinez-after-school-ep-524/ |
+| vinyl | NN-HTD-525 | Lou Reed | Transformer | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lou-reed-transformer-525/ |
+| vinyl | NN-HTD-526 | Dua Lipa | Radical Optimism | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/dua-lipa-radical-optimism-526/ |
+| vinyl | NN-HTD-527 | FKA twigs | EUSEXUA | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/fka-twigs-eusexua-527/ |
+| vinyl | NN-HTD-528 | HAIM | I QUIT | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/haim-i-quit-528/ |
+| vinyl | NN-HTD-529 | Japanese Breakfast | For Melancholy Brunettes (& Sad Women) | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/japanese-breakfast-for-melancholy-brunettes-sad-women-529/ |
+| vinyl | NN-HTD-530 | Logic | Vinyl Days - | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/logic-vinyl-days-530/ |
+| vinyl | NN-HTD-531 | Kylie Minogue | Disco (Extended Mixes) | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/kylie-minogue-disco-extended-mixes-531/ |
+| vinyl | NN-HTD-532 | Lil Uzi Vert | Just Wanna Rock | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/lil-uzi-vert-just-wanna-rock-532/ |
+| vinyl | NN-HTD-533 | JENNIE | Ruby | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/jennie-ruby-533/ |
+| vinyl | NN-HTD-534 | Foo Fighters | Medicine At Midnight | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/foo-fighters-medicine-at-midnight-534/ |
+| vinyl | NN-HTD-535 | The Strokes | Is This It | LP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/the-strokes-is-this-it-535/ |
+| vinyl | NN-HTD-536 | Elvis Presley | 30 #1 Hits | 2xLP | Liên hệ | Liên hệ | Liên hệ | https://huesoundexpress.github.io/p/elvis-presley-30-1-hits-536/ |
 | cd | CD-MYTAM-TAM9-NEW | Mỹ Tâm | Tâm 9 | CD | New Seal | 350,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-my-tam-tam-9/ |
 | cd | CD-LEQUYEN-KHUC-TINH-XUA-1 | Lệ Quyên | Khúc Tình Xưa 1 | CD | New Seal | 280,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-le-quyen-khuc-tinh-xua-1/ |
 | cd | CD-NORAH-COME-AWAY-SACD | Norah Jones | Come Away With Me | SACD | New Seal | 850,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-norah-jones-come-away-with-me-sacd/ |

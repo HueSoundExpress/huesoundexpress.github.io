@@ -258,15 +258,15 @@ button, input, select, textarea { font-family: inherit; }
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: .55rem;
-  width: 100%; max-width: 660px;
+  width: 100%; max-width: 720px;
   margin: 1.15rem auto 0;
 }
 .q-link {
-  display: inline-flex; align-items: center; justify-content: center; gap: .45rem;
+  display: inline-flex; align-items: center; justify-content: center; gap: .42rem;
   min-width: 0; white-space: nowrap; overflow: hidden;
-  padding: .58rem .65rem; border-radius: 999px;
+  padding: .58rem .55rem; border-radius: 999px;
   background: var(--paper-card); border: 1px solid var(--border);
-  font-size: .8rem; font-weight: 600; color: var(--ink);
+  font-size: .78rem; font-weight: 600; color: var(--ink);
   backdrop-filter: blur(6px);
   box-shadow: inset 0 1px 0 rgba(255,252,240,.72), 0 3px 10px rgba(90, 48, 18, .1);
   transition: all .22s;
@@ -281,9 +281,9 @@ button, input, select, textarea { font-family: inherit; }
 .brand-ico { width: 18px; height: 18px; flex-shrink: 0; display: block; }
 
 @media (max-width: 560px) {
-  .quick-links { gap: .35rem; }
-  .q-link { padding: .5rem .3rem; font-size: .7rem; gap: .26rem; }
-  .brand-ico { width: 15px; height: 15px; }
+  .quick-links { gap: .3rem; }
+  .q-link { padding: .48rem .22rem; font-size: .64rem; gap: .2rem; }
+  .brand-ico { width: 14px; height: 14px; }
   .floating-tools { top: .65rem; right: .65rem; gap: .45rem; }
   .fab-btn { height: 2.55rem; font-size: .74rem; }
   .fab-btn.gramophone { width: 2.55rem; min-width: 2.55rem; }
@@ -797,13 +797,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
     <!-- 4 liên kết hãng với logo chính thức, luôn xếp 1 hàng ngang -->
     <div class="quick-links">
-      <a class="q-link priority" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer" title="Zalo: 09323.13918">
+      <a class="q-link priority" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer" title="Hotline / Zalo: 09323.13918">
         <svg class="brand-ico" viewBox="0 0 48 48" aria-hidden="true">
           <rect width="48" height="48" rx="12" fill="#0068FF"/>
           <path d="M24 10c-8.2 0-14.8 5.8-14.8 13 0 3.7 1.8 7 4.7 9.4-.2 1.8-.9 3.9-2 5.4-.3.4 0 1 .5.9 2.4-.2 5.3-1.1 7.1-2.2 1.4.4 2.9.6 4.5.6 8.2 0 14.8-5.8 14.8-13S32.2 10 24 10z" fill="#fff"/>
           <text x="24" y="27.5" text-anchor="middle" fill="#0068FF" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="11.5">Zalo</text>
         </svg>
-        <span id="qlZalo">Zalo</span>
+        <span id="qlZalo">Hotline/Zalo</span>
       </a>
       <a class="q-link" href="https://www.facebook.com/HueSoundExpress" target="_blank" rel="noopener noreferrer" title="Fanpage Facebook Hue Sound Express">
         <svg class="brand-ico" viewBox="0 0 24 24" aria-hidden="true">
@@ -830,14 +830,17 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         </svg>
         <span id="qlIg">Instagram</span>
       </a>
-      <a class="q-link" href="https://www.google.com/maps/place/Hue+Sound+Express/@21.0707635,105.8100182,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab97d15694f7:0xa32cb5bd7027ac28!8m2!3d21.0707635!4d105.8100182!16s%2Fg%2F11n3pj3ygd?entry=ttu" target="_blank" rel="noopener noreferrer" title="Đánh giá trên Google">
+      <a class="q-link" href="https://www.google.com/maps/place/Hue+Sound+Express/@21.0707635,105.8100182,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab97d15694f7:0xa32cb5bd7027ac28!8m2!3d21.0707635!4d105.8100182!16s%2Fg%2F11n3pj3ygd?entry=ttu" target="_blank" rel="noopener noreferrer" title="Google Maps (Bản đồ chỉ đường)">
+        <!-- Logo chính hãng Google Maps Pin -->
         <svg class="brand-ico" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.4H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8z"/>
-          <path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-3l-3.9-3c-1.1.7-2.5 1.2-4.1 1.2-3.1 0-5.8-2.1-6.8-5H1.2v3.1C3.2 21.3 7.3 24 12 24z"/>
-          <path fill="#FBBC05" d="M5.2 14.2c-.2-.7-.4-1.5-.4-2.2s.1-1.5.4-2.2V6.7H1.2C.4 8.3 0 10.1 0 12s.4 3.7 1.2 5.3l4-3.1z"/>
-          <path fill="#EA4335" d="M12 4.8c1.8 0 3.4.6 4.6 1.8l3.5-3.5C18 1.2 15.2 0 12 0 7.3 0 3.2 2.7 1.2 6.7l4 3.1c1-2.9 3.7-5 6.8-5z"/>
+          <path fill="#1A73E8" d="M12 2a7.5 7.5 0 0 0-6.12 3.16l3.36 2.83A3.5 3.5 0 0 1 12 6.5c.98 0 1.86.4 2.5 1.05l3.08-3.08A7.46 7.46 0 0 0 12 2z"/>
+          <path fill="#EA4335" d="M5.88 5.16A7.46 7.46 0 0 0 4.5 9.5c0 1.65.54 3.17 1.45 4.4l3.3-3.9A3.46 3.46 0 0 1 8.5 9.5c0-.56.13-1.08.36-1.55l.38-.52-3.36-2.27z"/>
+          <path fill="#4285F4" d="M17.58 4.47 14.5 7.55c.62.63 1 1.49 1 2.45 0 .93-.37 1.78-.97 2.41l3.2 3.8A7.47 7.47 0 0 0 19.5 9.5c0-1.93-.73-3.7-1.92-5.03z"/>
+          <path fill="#FBBC04" d="M9.25 10l-3.3 3.9c.95 1.28 2.2 2.58 3.24 4.18l3.54-4.2A3.48 3.48 0 0 1 9.25 10z"/>
+          <path fill="#34A853" d="M14.53 12.41l-1.8 2.13-3.54 4.2c.83 1.28 1.56 2.68 2.15 4.17.24.6 1.08.6 1.32 0 .96-2.42 2.49-4.53 3.87-6.36l1.2-1.6-3.2-2.54z"/>
+          <circle cx="12" cy="9.5" r="2.35" fill="#fff"/>
         </svg>
-        <span id="qlGg">Google</span>
+        <span id="qlGg">Google Maps</span>
       </a>
     </div>
   </header>
@@ -1040,7 +1043,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       fabCart: '🛒 Giỏ & Báo giá',
       tlLine1: 'Phòng nghe số & Kho đĩa than, Đĩa CD, Máy hát và Phụ kiện Audiophile chính hãng',
       tlLine2: 'Nghe thử 30s, giá niêm yết minh bạch, xuất báo giá nhanh & đóng gói chuyên dụng, giao hàng toàn quốc',
-      qlZalo: 'Zalo', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google',
+      qlZalo: 'Hotline/Zalo', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Đĩa Than (LP)', tabCd: 'Đĩa CD / SACD', tabTurntable: 'Máy Hát / Mâm Than',
       tabAccessory: 'Phụ Kiện', tabGuide: 'Cẩm Nang & Giao Vận',
       searchPh: '🔍 Tìm tên ca sĩ, album, thương hiệu máy hát, mã SKU...',
@@ -1120,7 +1123,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       fabCart: '🛒 Cart & Quote',
       tlLine1: 'Digital Listening Lounge & Curated Vinyl, CD, Turntables & Authentic Audiophile Accessories',
       tlLine2: '30s audio previews, transparent list prices, instant quotes & protective 3-layer nationwide shipping',
-      qlZalo: 'Zalo', qlFb: 'Facebook', qlIg: 'Instagram', qlGg: 'Google',
+      qlZalo: 'Hotline/Zalo', qlFb: 'Facebook', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Vinyl (LP)', tabCd: 'CD / SACD', tabTurntable: 'Turntables',
       tabAccessory: 'Accessories', tabGuide: 'Vinyl Care and Shipping',
       searchPh: '🔍 Search artist, album, turntable brand, SKU...',

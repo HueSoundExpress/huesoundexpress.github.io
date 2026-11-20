@@ -215,8 +215,20 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
     })
 }
 
-# Chuan hoa Tinh trang (New Seal / NM / Lien he) & Trang thai (Con hang / Lien he) cho toan bo san pham
+# Chuan hoa Tinh trang (New Seal / NM / Lien he), Trang thai (Con hang / Lien he) & Phan loai Nhac Viet / Quoc te
 foreach ($it in $allItems) {
+    if ($it.category -eq "vinyl" -and $it.id -ge 457) {
+        $chkTxt = "$($it.a) $($it.t)"
+        if ($chkTxt -match '(?i)(totoro|mononoke|howl|kiki|porco rosso|thung lũng gió|lâu đài trên không|vùng đất linh hồn|ghibli)') {
+            $it.g = "Classic & Soundtrack"
+            $it.a = "Joe Hisaishi (Studio Ghibli)"
+            $it.sku = $it.sku -replace '^VN-', 'NN-'
+        } elseif ($chkTxt -notmatch '[ăâđêôơưĂÂĐÊÔƠƯáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ]') {
+            $it.g = "Audiophile & Khác"
+            $it.sku = $it.sku -replace '^VN-', 'NN-'
+        }
+    }
+
     $rawCond = [string]$it.c
     $rawSt = [string]$it.s
     $price = [int]$it.p
