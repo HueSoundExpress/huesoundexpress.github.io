@@ -215,7 +215,7 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
     })
 }
 
-# Chuan hoa Tinh trang (New Seal / NM / Lien he), Trang thai (Con hang / Lien he) & Phan loai Nhac Viet / Quoc te
+# Chuan hoa Hang dia, Tinh trang theo Goldmine Grading Standard (M (New seal), NM, VG+, VG, G+, G, F, P) & Trang thai (Con hang / Het hang)
 foreach ($it in $allItems) {
     if ($it.category -eq "vinyl" -and $it.id -ge 457) {
         $chkTxt = "$($it.a) $($it.t)"
@@ -229,17 +229,33 @@ foreach ($it in $allItems) {
         }
     }
 
-    $rawCond = [string]$it.c
-    $rawSt = [string]$it.s
+    # Chuan hoa ten hang dia tranh trung lap
+    $lbl = ([string]$it.l).Trim()
+    if ($lbl -match '^(?i)thời đại$') { $lbl = "Hãng Đĩa Thời Đại" }
+    elseif ($lbl -match '^(?i)stockfish$') { $lbl = "Stockfisch Records" }
+    elseif ($lbl -match '^(?i)bk production$') { $lbl = "BK Production" }
+    elseif ($lbl -match '^(?i)viết tân audio$') { $lbl = "Viết Tân Studio" }
+    $it.l = $lbl
+
+    $rawCond = ([string]$it.c).Trim()
+    $rawSt = ([string]$it.s).Trim()
     $price = [int]$it.p
 
-    $normCond = "New Seal"
-    if ($rawCond -match '(?i)\b(nm|mint)\b') { $normCond = "NM" }
-    elseif ($rawCond -match '(?i)(sign|limited|picture|liên hệ)' -or $price -le 0) { $normCond = "Liên hệ" }
+    # Goldmine Grading Standard: M (New seal), NM, VG+, VG, G+, G, F, P
+    $normCond = "M (New seal)"
+    if ($rawCond -match '^(?i)vg\+$') { $normCond = "VG+" }
+    elseif ($rawCond -match '^(?i)vg$') { $normCond = "VG" }
+    elseif ($rawCond -match '^(?i)g\+$') { $normCond = "G+" }
+    elseif ($rawCond -match '^(?i)g$') { $normCond = "G" }
+    elseif ($rawCond -match '^(?i)(f|fair)$') { $normCond = "F" }
+    elseif ($rawCond -match '^(?i)(p|poor)$') { $normCond = "P" }
+    elseif ($rawCond -match '(?i)\b(nm|mint)\b') { $normCond = "NM" }
+    else { $normCond = "M (New seal)" }
 
+    # Trang thai kho: Con hang / Het hang
     $normSt = "Còn hàng"
-    if ($price -le 0 -or $rawSt -match '(?i)(hết hàng|sắp có|liên hệ|đặt trước)' -or $normCond -eq "Liên hệ") {
-        $normSt = "Liên hệ"
+    if ($price -le 0 -or $rawSt -match '(?i)(hết hàng|sắp có|đặt trước)') {
+        $normSt = "Hết hàng"
     }
 
     if ($it.PSObject.Properties['cond']) { $it.cond = $normCond }
@@ -269,7 +285,7 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("## 2. Operational & Quoting Policies")
 [void]$sb.AppendLine("- **Online-First Experience:** Hue Sound Express phục vụ giao hàng hỏa tốc 2H nội thành Hà Nội và ship toàn quốc với quy chuẩn đóng gói 3 lớp chống rách mép (Seam Splits Prevention). Trường hợp khách hàng có nhu cầu gặp trực tiếp để bàn giao đĩa/máy, vui lòng liên hệ Zalo 09323.13918 để được nhân sự hỗ trợ sắp xếp lịch hẹn.")
-[void]$sb.AppendLine("- **Pricing, Condition & Status:** Luôn hiển thị Giá niêm yết (nếu giá bằng 0 hiển thị Liên hệ). Tình trạng sản phẩm chuẩn gồm: New Seal, NM, Liên hệ. Trạng thái kho chuẩn gồm: Còn hàng, Liên hệ.")
+[void]$sb.AppendLine("- **Pricing, Condition & Status:** Luôn hiển thị Giá niêm yết (nếu giá bằng 0 hiển thị Liên hệ). Tình trạng đĩa phân loại theo chuẩn quốc tế Goldmine Grading Standard: M (New seal), NM, VG+, VG, G+, G, F, P. Trạng thái kho gồm: Còn hàng, Hết hàng.")
 [void]$sb.AppendLine("- **Corporate & VIP Gift Quoting:** Hỗ trợ xuất bảng báo giá nhanh phục vụ khách hàng cá nhân/doanh nghiệp làm thủ tục tạm ứng, hỗ trợ gói quà nghệ thuật và viết thiệp tay.")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("## 3. Hue Sound Vinyl Care - Maintenance Standards")
@@ -354,12 +370,7 @@ if ($GenerateProductPages) {
         $ctaLabel = if ($it.s -eq "Hết hàng" -or $it.s -eq "Sắp có hàng") { "🔔 Đăng ký báo khi hàng về" } else { "💬 Đặt mua / Báo giá qua Zalo" }
         $ctaHref = if ($it.s -eq "Hết hàng" -or $it.s -eq "Sắp có hàng") { "../../?waitlist=$($it.sku)" } else { "https://zalo.me/0932313918?text=$zaloText" }
 
-        $schemaAvail = switch ($it.s) {
-            "New Seal" { "https://schema.org/InStock" }
-            "Sắp có hàng" { "https://schema.org/PreOrder" }
-            "Hết hàng" { "https://schema.org/OutOfStock" }
-            default { "https://schema.org/LimitedAvailability" }
-        }
+        $schemaAvail = if ($it.s -eq "Còn hàng") { "https://schema.org/InStock" } else { "https://schema.org/OutOfStock" }
 
         $html = @"
 <!DOCTYPE html>
