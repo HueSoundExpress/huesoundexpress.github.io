@@ -281,43 +281,44 @@ button, input, select, textarea { font-family: inherit; }
 .brand-ico { width: 18px; height: 18px; flex-shrink: 0; display: block; }
 
 @media (max-width: 560px) {
-  .quick-links { gap: .3rem; }
-  .q-link { padding: .48rem .22rem; font-size: .64rem; gap: .2rem; }
-  .brand-ico { width: 14px; height: 14px; }
+  .quick-links { gap: .45rem; max-width: 280px; }
+  .q-link { height: 44px; padding: 0; border-radius: 12px; gap: 0; }
+  .q-link span { display: none; }
+  .brand-ico { width: 22px; height: 22px; }
   .floating-tools { top: .65rem; right: .65rem; gap: .45rem; }
   .fab-btn { height: 2.55rem; font-size: .74rem; }
   .fab-btn.gramophone { width: 2.55rem; min-width: 2.55rem; }
   .lang-toggle { height: 2.55rem; }
 }
 
-/* ===== 5 Folders: Xếp NGANG trên web (>= 768px) & Xếp DỌC trên điện thoại (< 768px) ===== */
+/* ===== 5 Folders thu gọn: Xếp NGANG trên web (>= 768px) & Xếp DỌC trên điện thoại (< 768px) ===== */
 .cat-tabs {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: .55rem;
-  margin: 1.2rem 0 1.25rem;
+  gap: .42rem;
+  margin: .85rem 0 .7rem;
 }
 .cat-tab {
   background: var(--paper-card); color: var(--muted);
   border: 1px solid var(--border);
-  padding: .75rem .65rem; border-radius: 14px;
-  cursor: pointer; font-size: .8rem; font-weight: 600;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .32rem;
-  text-align: center; line-height: 1.3;
+  padding: .46rem .42rem; border-radius: 10px;
+  cursor: pointer; font-size: .73rem; font-weight: 600;
+  display: flex; flex-direction: row; align-items: center; justify-content: center; gap: .3rem;
+  text-align: center; line-height: 1.2;
   backdrop-filter: blur(6px);
-  box-shadow: inset 0 1px 0 rgba(255,252,240,.7), 0 2px 8px rgba(90, 48, 18, .08);
+  box-shadow: inset 0 1px 0 rgba(255,252,240,.7), 0 2px 6px rgba(90, 48, 18, .08);
   transition: all .22s;
 }
-.cat-tab-main { display: inline-flex; align-items: center; gap: .38rem; }
+.cat-tab-main { display: inline-flex; align-items: center; gap: .26rem; min-width: 0; }
 .cat-tab:hover { border-color: var(--copper); color: var(--ink); background: #FFFBF0; }
 .cat-tab.active {
   background: var(--copper-grad);
   color: #FFF7E8; border-color: var(--copper-dark);
-  box-shadow: inset 0 1px 0 rgba(244, 219, 141, .42), 0 7px 18px -6px rgba(126, 50, 16, .52);
+  box-shadow: inset 0 1px 0 rgba(244, 219, 141, .42), 0 5px 14px -5px rgba(126, 50, 16, .5);
 }
 .tab-count {
-  font-size: .7rem; font-weight: 700; padding: .12rem .5rem; border-radius: 99px;
-  background: rgba(74, 35, 18, .1); color: inherit;
+  font-size: .65rem; font-weight: 700; padding: .08rem .38rem; border-radius: 99px;
+  background: rgba(74, 35, 18, .1); color: inherit; flex-shrink: 0;
 }
 .cat-tab.active .tab-count { background: rgba(255, 246, 230, .24); }
 
@@ -325,16 +326,44 @@ button, input, select, textarea { font-family: inherit; }
   .cat-tabs {
     display: flex;
     flex-direction: column;
-    gap: .48rem;
+    gap: .34rem;
   }
   .cat-tab {
     width: 100%;
-    flex-direction: row;
     justify-content: space-between;
     text-align: left;
-    padding: .78rem 1rem;
-    font-size: .86rem;
+    padding: .54rem .82rem;
+    font-size: .79rem;
   }
+}
+
+/* Dòng trôi hướng dẫn di chuyển xem sản phẩm */
+.scroll-marquee {
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(250, 242, 222, 0.72);
+  border: 1px solid rgba(181, 84, 31, 0.24);
+  padding: .34rem 0;
+  margin-bottom: .75rem;
+  box-shadow: inset 0 1px 0 rgba(255,252,240,.65);
+}
+.scroll-marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: .74rem;
+  font-weight: 600;
+  color: var(--copper-dark);
+  letter-spacing: .015em;
+  padding-left: 100%;
+  animation: hse-marquee 22s linear infinite;
+}
+.scroll-marquee:hover .scroll-marquee-track { animation-play-state: paused; }
+@keyframes hse-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-marquee-track { animation: none; padding-left: 1rem; }
 }
 
 /* Hàng phân loại Nhạc Việt / Nhạc Quốc Tế */
@@ -360,36 +389,43 @@ button, input, select, textarea { font-family: inherit; }
   box-shadow: inset 0 1px 0 rgba(244, 219, 141, .36);
 }
 
-/* ===== Khu vực Tìm kiếm & Bộ lọc thông minh ===== */
+/* ===== Khu vực Tìm kiếm & Bộ lọc thông minh (1 dòng gọn trên Web) ===== */
 .controls-panel {
   background: var(--paper-card);
   border: 1px solid var(--border);
-  border-radius: 16px; padding: 1rem 1.1rem;
+  border-radius: 16px; padding: .85rem .95rem;
   backdrop-filter: blur(8px);
   box-shadow: 0 8px 24px -14px rgba(110, 60, 20, .25);
-  margin-bottom: 1.15rem;
+  margin-bottom: 1rem;
 }
 .search-row {
-  display: flex; flex-wrap: wrap; gap: .65rem; align-items: center;
+  display: flex; flex-wrap: nowrap; gap: .42rem; align-items: center;
 }
 .search-input {
-  flex: 1 1 260px;
-  padding: .72rem 1rem; border-radius: 10px;
+  flex: 1.4 1 180px; min-width: 150px;
+  padding: .56rem .78rem; border-radius: 9px;
   border: 1px solid rgba(181, 84, 31, .32);
   background: rgba(255, 252, 244, .92);
-  color: var(--ink); font-size: .875rem;
+  color: var(--ink); font-size: .8rem;
 }
 .search-input::placeholder { color: var(--muted); opacity: .85; }
 .search-input:focus { outline: none; border-color: var(--copper); background: #FFFDF7; }
 
 .select-ctrl {
-  padding: .68rem .85rem; border-radius: 10px;
+  flex: 0 1 142px; min-width: 0; max-width: 152px;
+  padding: .55rem .5rem; border-radius: 9px;
   border: 1px solid rgba(181, 84, 31, .3);
   background: rgba(255, 252, 244, .9);
-  color: var(--ink); font-size: .8rem; font-weight: 500;
-  cursor: pointer;
+  color: var(--ink); font-size: .75rem; font-weight: 600;
+  cursor: pointer; text-overflow: ellipsis;
 }
 .select-ctrl:focus { outline: none; border-color: var(--copper); }
+
+@media (max-width: 899px) {
+  .search-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+  .search-input { grid-column: 1 / -1; width: 100%; }
+  .select-ctrl { max-width: none; width: 100%; }
+}
 
 .filter-pills {
   display: flex; gap: .45rem; flex-wrap: wrap; margin-top: .75rem;
@@ -869,23 +905,28 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     </button>
   </nav>
 
+  <!-- Dòng trôi hướng dẫn di chuyển xem sản phẩm -->
+  <div class="scroll-marquee" aria-hidden="true">
+    <div class="scroll-marquee-track" id="marqueeTrack">↕ Di chuyển lên xuống để xem sản phẩm &nbsp;•&nbsp; 🎧 Nghe thử 30s &nbsp;•&nbsp; ✨ Giá niêm yết minh bạch &nbsp;•&nbsp; 📦 Đóng gói 3 lớp toàn quốc &nbsp;•&nbsp; Hue Sound Express</div>
+  </div>
+
   <!-- KHU VỰC KỆ SẢN PHẨM -->
   <section id="catalogSection">
     <div class="controls-panel">
       <div class="search-row">
         <input type="text" id="searchInput" class="search-input"
-               placeholder="🔍 Tìm tên ca sĩ, album, hãng đĩa, mã SKU..."
+               placeholder="🔍 Tìm ca sĩ, album, hãng đĩa, SKU..."
                oninput="resetAndRender()">
         <select id="labelFilter" class="select-ctrl" onchange="resetAndRender()">
-          <option value="ALL">Tất cả hãng đĩa</option>
+          <option value="ALL">Hãng đĩa</option>
         </select>
         <select id="statusFilter" class="select-ctrl" onchange="resetAndRender()">
-          <option value="ALL" id="optStAll">Trạng thái: Tất cả</option>
-          <option value="Còn hàng" id="optStAvail">Còn hàng</option>
+          <option value="ALL" id="optStAll">Sẵn hàng / Hết hàng</option>
+          <option value="Còn hàng" id="optStAvail">Sẵn hàng</option>
           <option value="Hết hàng" id="optStOut">Hết hàng</option>
         </select>
         <select id="condFilter" class="select-ctrl" onchange="resetAndRender()">
-          <option value="ALL" id="optCondAll">Tình trạng (Goldmine)</option>
+          <option value="ALL" id="optCondAll">Tình trạng</option>
           <option value="M (New seal)">M (New seal)</option>
           <option value="NM">NM</option>
           <option value="VG+">VG+</option>
@@ -895,10 +936,16 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <option value="F">F</option>
           <option value="P">P</option>
         </select>
-        <select id="priceSort" class="select-ctrl" onchange="resetAndRender()">
-          <option value="DEFAULT" id="optSortDef">Sắp xếp theo mức giá</option>
-          <option value="ASC" id="optSortAsc">Giá: Thấp → Cao</option>
-          <option value="DESC" id="optSortDesc">Giá: Cao → Thấp</option>
+        <select id="moodFilter" class="select-ctrl" onchange="resetAndRender()">
+          <option value="ALL">Mood</option>
+        </select>
+        <select id="priceFilter" class="select-ctrl" onchange="resetAndRender()">
+          <option value="ALL" id="optPrAll">Mức giá</option>
+          <option value="UNDER_1M" id="optPr1">Dưới 1 triệu</option>
+          <option value="1M_1M5" id="optPr2">1 – 1,5 triệu</option>
+          <option value="1M5_2M" id="optPr3">1,5 – 2 triệu</option>
+          <option value="OVER_2M" id="optPr4">Trên 2 triệu</option>
+          <option value="CONTACT" id="optPrContact">Giá liên hệ</option>
         </select>
       </div>
       <!-- Phân loại Nhạc Việt / Nhạc Quốc Tế -->
@@ -1053,11 +1100,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       qlZalo: 'Hotline/Zalo', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Đĩa Than (LP)', tabCd: 'Đĩa CD / SACD', tabTurntable: 'Máy Hát / Mâm Than',
       tabAccessory: 'Phụ Kiện', tabGuide: 'Cẩm Nang & Giao Vận',
-      searchPh: '🔍 Tìm tên ca sĩ, album, hãng đĩa, mã SKU...',
-      lblAll: 'Tất cả hãng đĩa', lblBrandAll: 'Tất cả thương hiệu',
-      stAll: 'Trạng thái (Còn / Hết hàng)', stAvail: 'Còn hàng', stOut: 'Hết hàng',
-      condAll: 'Tình trạng (Goldmine)',
-      sortDef: 'Sắp xếp theo mức giá', sortAsc: 'Giá: Thấp → Cao', sortDesc: 'Giá: Cao → Thấp',
+      searchPh: '🔍 Tìm ca sĩ, album, hãng đĩa, SKU...',
+      marquee: '↕ Di chuyển lên xuống để xem sản phẩm  •  🎧 Nghe thử 30s  •  ✨ Giá niêm yết minh bạch  •  📦 Đóng gói 3 lớp toàn quốc  •  Hue Sound Express',
+      lblAll: 'Hãng đĩa', lblBrandAll: 'Thương hiệu',
+      stAll: 'Sẵn hàng / Hết hàng', stAvail: 'Sẵn hàng', stOut: 'Hết hàng',
+      condAll: 'Tình trạng',
+      moodAll: 'Mood',
+      prAll: 'Mức giá', pr1: 'Dưới 1 triệu', pr2: '1 – 1,5 triệu', pr3: '1,5 – 2 triệu', pr4: 'Trên 2 triệu', prContact: 'Giá liên hệ',
       regionLbl: 'Phân loại:', regAll: 'Tất cả', regVn: 'Nhạc Việt', regIntl: 'Nhạc Quốc Tế',
       audioOnly: '🎧 Có nghe thử 30s',
       statsHint: '💡 Bấm vào bìa hoặc tên sản phẩm để xem Tracklist & Thông số chi tiết',
@@ -1122,6 +1171,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         </div>`,
       statusMap: { 'Còn hàng': 'Còn hàng', 'Hết hàng': 'Hết hàng' },
       condMap: { 'M (New seal)': 'M (New seal)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
+      moodMap: {
+        'Đêm muộn & Thư giãn': '🌙 Đêm muộn & Thư giãn',
+        'Hoài niệm & Nhạc xưa': '🍂 Hoài niệm & Nhạc xưa',
+        'Audiophile & Phê âm': '🎧 Audiophile & Phê âm',
+        'Năng lượng & Cuối tuần': '⚡ Năng lượng & Cuối tuần',
+        'Quà tặng tinh tế': '🎁 Quà tặng tinh tế',
+        'Cà phê sáng & Acoustic': '☕ Cà phê sáng & Acoustic'
+      },
       genreMap: {
         'ALL': 'Tất cả thể loại', 'Nhạc Việt': 'Nhạc Việt', 'Nhạc Việt / Bolero': 'Bolero / Nhạc Xưa',
         'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
@@ -1135,11 +1192,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       qlZalo: 'Hotline/Zalo', qlFb: 'Facebook', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Vinyl (LP)', tabCd: 'CD / SACD', tabTurntable: 'Turntables',
       tabAccessory: 'Accessories', tabGuide: 'Vinyl Care and Shipping',
-      searchPh: '🔍 Search artist, album, record label, SKU...',
-      lblAll: 'All Record Labels', lblBrandAll: 'All Brands',
-      stAll: 'All Availability', stAvail: 'In Stock', stOut: 'Out of Stock',
-      condAll: 'Condition (Goldmine)',
-      sortDef: 'Sort by Price', sortAsc: 'Price: Low → High', sortDesc: 'Price: High → Low',
+      searchPh: '🔍 Search artist, album, label, SKU...',
+      marquee: '↕ Scroll up and down to browse products  •  🎧 30s Audio Previews  •  ✨ Transparent List Prices  •  📦 3-Layer Nationwide Shipping  •  Hue Sound Express',
+      lblAll: 'Label', lblBrandAll: 'Brand',
+      stAll: 'In / Out of Stock', stAvail: 'In Stock', stOut: 'Out of Stock',
+      condAll: 'Condition',
+      moodAll: 'Mood',
+      prAll: 'Price', pr1: 'Under 1M VND', pr2: '1M – 1.5M VND', pr3: '1.5M – 2M VND', pr4: 'Over 2M VND', prContact: 'Contact Price',
       regionLbl: 'Origin:', regAll: 'All Music', regVn: 'Vietnamese Music', regIntl: 'International Music',
       audioOnly: '🎧 30s Preview Ready',
       statsHint: '💡 Click any album cover or title for full Tracklist & Specifications',
@@ -1204,6 +1263,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         </div>`,
       statusMap: { 'Còn hàng': 'In Stock', 'Hết hàng': 'Out of Stock' },
       condMap: { 'M (New seal)': 'M (New seal)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
+      moodMap: {
+        'Đêm muộn & Thư giãn': '🌙 Late Night & Chill',
+        'Hoài niệm & Nhạc xưa': '🍂 Nostalgic & Classic',
+        'Audiophile & Phê âm': '🎧 Audiophile Reference',
+        'Năng lượng & Cuối tuần': '⚡ Weekend & Upbeat',
+        'Quà tặng tinh tế': '🎁 Refined Gifting',
+        'Cà phê sáng & Acoustic': '☕ Morning Coffee & Acoustic'
+      },
       genreMap: {
         'ALL': 'All Genres', 'Nhạc Việt': 'Vietnamese Pop / Vocal', 'Nhạc Việt / Bolero': 'Vietnamese Bolero',
         'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
@@ -1259,13 +1326,17 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('tabLbl-accessory').innerText = L.tabAccessory;
     document.getElementById('tabLbl-guide').innerText = L.tabGuide;
     document.getElementById('searchInput').placeholder = L.searchPh;
+    document.getElementById('marqueeTrack').innerText = L.marquee;
     document.getElementById('optStAll').innerText = L.stAll;
     document.getElementById('optStAvail').innerText = L.stAvail;
     document.getElementById('optStOut').innerText = L.stOut;
     document.getElementById('optCondAll').innerText = L.condAll;
-    document.getElementById('optSortDef').innerText = L.sortDef;
-    document.getElementById('optSortAsc').innerText = L.sortAsc;
-    document.getElementById('optSortDesc').innerText = L.sortDesc;
+    document.getElementById('optPrAll').innerText = L.prAll;
+    document.getElementById('optPr1').innerText = L.pr1;
+    document.getElementById('optPr2').innerText = L.pr2;
+    document.getElementById('optPr3').innerText = L.pr3;
+    document.getElementById('optPr4').innerText = L.pr4;
+    document.getElementById('optPrContact').innerText = L.prContact;
     document.getElementById('statsHint').innerText = L.statsHint;
     document.getElementById('loadMoreBtn').innerText = L.loadMore;
     document.getElementById('footerContact').innerHTML = L.footerContact;
@@ -1290,6 +1361,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('wlSubmitBtn').innerText = L.wlBtn;
 
     populateLabelFilter();
+    populateMoodFilter();
     renderRegionBar();
     renderSubFilters();
     renderGrid();
@@ -1347,6 +1419,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       slug: String(item.slug || ''),
       category: cat,
       g: String(item.g || ''),
+      mood: Array.isArray(item.mood) ? item.mood : (item.mood ? String(item.mood).split(/\s*;\s*/).filter(Boolean) : []),
       a: String(item.a || ''),
       t: String(item.t || ''),
       l: lbl,
@@ -1425,6 +1498,29 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     sel.value = counts[prev] ? prev : 'ALL';
   }
 
+  function populateMoodFilter() {
+    const sel = document.getElementById('moodFilter');
+    if (!sel) return;
+    if (activeCategory !== 'vinyl' && activeCategory !== 'cd') {
+      sel.style.display = 'none';
+      sel.value = 'ALL';
+      return;
+    }
+    sel.style.display = '';
+    const prev = sel.value || 'ALL';
+    const L = t();
+    const counts = {};
+    allProducts.forEach(item => {
+      if (item.category !== activeCategory) return;
+      if (activeRegion !== 'ALL' && getMusicOrigin(item) !== activeRegion) return;
+      (item.mood || []).forEach(m => { if (m) counts[m] = (counts[m] || 0) + 1; });
+    });
+    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    sel.innerHTML = `<option value="ALL">${escHtml(L.moodAll)}</option>` +
+      sorted.map(([m, c]) => `<option value="${escHtml(m)}">${escHtml(L.moodMap[m] || m)} (${c})</option>`).join('');
+    sel.value = counts[prev] ? prev : 'ALL';
+  }
+
   window.switchCategory = function(cat, btn) {
     activeCategory = cat;
     activeRegion = 'ALL';
@@ -1438,7 +1534,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('guideSection').classList.toggle('active', isGuide);
     if (!isGuide) {
       document.getElementById('labelFilter').value = 'ALL';
+      document.getElementById('moodFilter').value = 'ALL';
       populateLabelFilter();
+      populateMoodFilter();
       renderRegionBar();
       renderSubFilters();
       resetAndRender();
@@ -1470,6 +1568,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     activeRegion = reg;
     activeSubFilter = 'ALL';
     populateLabelFilter();
+    populateMoodFilter();
     renderRegionBar();
     renderSubFilters();
     resetAndRender();
@@ -1531,7 +1630,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const lbl = document.getElementById('labelFilter').value;
     const st = document.getElementById('statusFilter').value;
     const cf = document.getElementById('condFilter').value;
-    const sortMode = document.getElementById('priceSort').value;
+    const mf = document.getElementById('moodFilter').value;
+    const pr = document.getElementById('priceFilter').value;
 
     filteredProducts = allProducts.filter(item => {
       if (activeCategory === 'accessory') {
@@ -1547,6 +1647,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       if (lbl !== 'ALL' && getItemLabelKey(item) !== lbl) return false;
       if (st !== 'ALL' && item.s !== st) return false;
       if (cf !== 'ALL' && item.cond !== cf) return false;
+      if (mf !== 'ALL' && !(item.mood || []).includes(mf)) return false;
+
+      if (pr === 'UNDER_1M' && (item.p <= 0 || item.p >= 1000000)) return false;
+      if (pr === '1M_1M5' && (item.p < 1000000 || item.p > 1500000)) return false;
+      if (pr === '1M5_2M' && (item.p <= 1500000 || item.p > 2000000)) return false;
+      if (pr === 'OVER_2M' && item.p <= 2000000) return false;
+      if (pr === 'CONTACT' && item.p > 0) return false;
 
       if (activeSubFilter !== 'ALL') {
         if (activeCategory === 'turntable') {
@@ -1562,28 +1669,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       if (onlyWithAudio && !(item.aud && item.aud.startsWith('http'))) return false;
 
       if (q) {
-        const hay = `${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.c} ${item.cond} ${item.s}`.toLowerCase();
+        const hay = `${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.c} ${item.cond} ${item.s} ${(item.mood || []).join(' ')}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;
     });
-
-    // Sap xep theo muc gia (dia gia = 0 / Lien he luon xep xuong cuoi)
-    if (sortMode === 'ASC') {
-      filteredProducts.sort((a, b) => {
-        if (a.p <= 0 && b.p <= 0) return 0;
-        if (a.p <= 0) return 1;
-        if (b.p <= 0) return -1;
-        return a.p - b.p;
-      });
-    } else if (sortMode === 'DESC') {
-      filteredProducts.sort((a, b) => {
-        if (a.p <= 0 && b.p <= 0) return 0;
-        if (a.p <= 0) return 1;
-        if (b.p <= 0) return -1;
-        return b.p - a.p;
-      });
-    }
 
     renderGrid();
   };
@@ -1743,6 +1833,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
             <span class="status-badge ${condClass(item.cond)}">${escHtml(condText)}</span>
             <span class="status-badge ${statusClass(item.s)}">${escHtml(statusText)}</span>
           </div>
+          ${(item.mood && item.mood.length > 0) ? `<div class="badge-row" style="margin-top:4px;">${item.mood.map(m => `<span class="badge" style="background:rgba(207,160,66,.16);color:#6B450C;">${escHtml(L.moodMap[m] || m)}</span>`).join('')}</div>` : ''}
           <div style="font-size:.76rem; color:var(--muted); margin:6px 0;">
             ${L.detailSku} <strong>${skuEsc}</strong><br>
             ${L.detailFmt} ${escHtml(item.f)} ${item.l ? '• ' + escHtml(item.l) : ''} ${item.y ? '• ' + L.detailYear + ' ' + escHtml(item.y) : ''}
