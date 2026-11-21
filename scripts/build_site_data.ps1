@@ -766,7 +766,9 @@ if ($GenerateProductPages) {
 
         $schemaAvail = if ($it.s -eq "in_stock") { "https://schema.org/InStock" } else { "https://schema.org/OutOfStock" }
         $schemaCond = if ($it.cond -eq "mint_sealed") { "https://schema.org/NewCondition" } else { "https://schema.org/UsedCondition" }
-        $primaryCtaHtml = if ($it.contact_only -or $it.s -eq "out_of_stock") {
+        $primaryCtaHtml = if ($it.s -eq "out_of_stock") {
+            "<a class='btn btn-copper' href='../../?waitlist=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=waitlist'>🔔 Báo khi về</a>"
+        } elseif ($it.contact_only) {
             "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
         } else {
             "<a class='btn btn-copper' href='../../?add=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=add_to_cart'>+ Thêm vào Giỏ / Báo giá</a>"
