@@ -261,7 +261,41 @@ foreach ($it in $allItems) {
     if ($it.PSObject.Properties['cond']) { $it.cond = $normCond }
     else { $it | Add-Member -NotePropertyName 'cond' -NotePropertyValue $normCond }
     $it.s = $normSt
+
+    # Hieu ung marketing giam gia 50.000 - 60.000d so voi Gia niem yet (p_orig)
+    $origP = [int]$it.p
+    $saleP = $origP
+    if ($origP -ge 200000) {
+        $disc = if (($origP % 100000) -eq 50000) { 60000 } else { 50000 }
+        $saleP = $origP - $disc
+    } elseif ($origP -gt 10000) {
+        $saleP = $origP - 10000
+    }
+    if ($it.PSObject.Properties['p_orig']) { $it.p_orig = $origP }
+    else { $it | Add-Member -NotePropertyName 'p_orig' -NotePropertyValue $origP }
+    $it.p = $saleP
 }
+
+# Sap xep uu tien san pham moi them len tren cung (giu nguyen thu tu danh sach cu)
+# - Vinyl cu: id <= 536 | Vinyl moi (Saigon Supersound & cac dia tu gio ve sau): id > 536 (moi nhat len dau)
+# - CD cu: id <= 1005   | CD moi: id > 1005 (moi nhat len dau)
+# - Turntable cu: id <= 2004 | Moi: id > 2004
+# - Phu kien/Care cu: id <= 3007 | Moi: id > 3007
+$orderedItems = New-Object System.Collections.ArrayList
+$catOrderRules = @(
+    @{ cats = @('vinyl');            baseMax = 536 },
+    @{ cats = @('cd');               baseMax = 1005 },
+    @{ cats = @('turntable');        baseMax = 2004 },
+    @{ cats = @('accessory','care'); baseMax = 3007 }
+)
+foreach ($rule in $catOrderRules) {
+    $group = @($allItems | Where-Object { $rule.cats -contains $_.category })
+    $newItems = @($group | Where-Object { $_.id -gt $rule.baseMax } | Sort-Object -Property id -Descending)
+    $oldItems = @($group | Where-Object { $_.id -le $rule.baseMax })
+    foreach ($x in $newItems) { [void]$orderedItems.Add($x) }
+    foreach ($x in $oldItems) { [void]$orderedItems.Add($x) }
+}
+$allItems = $orderedItems
 
 # Xuat data/catalog_all.json
 if (-not (Test-Path "data")) { New-Item -ItemType Directory -Path "data" -Force | Out-Null }
@@ -324,6 +358,14 @@ if ($GenerateProductPages) {
         $titleEsc = Escape-Html "$($it.a) – $($it.t)"
         $descEsc = Escape-Html $it.d
         $priceFmt = if ($it.p -gt 0) { "$($it.p.ToString('N0')) đ" } else { "Liên hệ báo giá" }
+        $origPriceFmt = if ($it.p_orig -gt $it.p) { "$($it.p_orig.ToString('N0')) đ" } else { "" }
+        $saveK = if ($it.p_orig -gt $it.p) { [int](($it.p_orig - $it.p) / 1000) } else { 0 }
+        $condVi = if ($it.cond -eq "M (New seal)") { "Mới 100% (M)" } else { $it.cond }
+        $priceHtml = if ($it.p -gt 0 -and $origPriceFmt) {
+            "<div class='price-stack'><span class='price-old'>$origPriceFmt</span><span class='price-save'>-$($saveK)k</span></div><div class='price'>$priceFmt</div>"
+        } else {
+            "<div class='price'>$priceFmt</div>"
+        }
         $pageUrl = "$SiteBaseUrl/p/$($it.slug)/"
         $ogImg = if ($it.img -match '^https?://') { $it.img } else { "$SiteBaseUrl/og-image.jpg" }
         $catLabel = switch ($it.category) {
@@ -366,7 +408,7 @@ if ($GenerateProductPages) {
             $upsellHtml = "<section class='box'><h2>Gợi ý đi kèm từ Hue Sound Vinyl Care</h2><div class='up-grid'>$cards</div></section>"
         }
 
-        $chatRaw = "Chào Hue Sound Express, mình quan tâm sản phẩm: $($it.a) - $($it.t) (Mã: $($it.sku) | Tình trạng: $($it.cond) | Giá niêm yết: $priceFmt). Link: $pageUrl"
+        $chatRaw = "Chào Hue Sound Express, mình quan tâm sản phẩm: $($it.a) - $($it.t) (Mã: $($it.sku) | Tình trạng đĩa: $condVi | Giá: $priceFmt). Link: $pageUrl"
         $chatEnc = [Uri]::EscapeDataString($chatRaw)
         $waHref = "https://wa.me/84932313918?text=$chatEnc"
         $zaloHref = "https://zalo.me/0932313918"
@@ -451,7 +493,10 @@ if ($GenerateProductPages) {
     .desc { font-size:14px; color:var(--ink); opacity:.9; }
     .price-row { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin:16px 0; }
     .price-label { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); display:block; }
-    .price { font-size:25px; font-weight:800; color:var(--copper); }
+    .price-stack { display:flex; align-items:center; gap:7px; margin-top:2px; }
+    .price-old { font-size:13.5px; color:var(--muted); text-decoration:line-through; opacity:.82; font-weight:500; }
+    .price-save { font-size:10.5px; font-weight:700; color:#FFF7E8; background:#B5541F; padding:1px 6px; border-radius:99px; }
+    .price { font-size:25px; font-weight:800; color:var(--copper); line-height:1.15; }
     .status { font-size:12px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(201,154,46,.18); border:1px solid rgba(201,154,46,.5); color:var(--ink); }
     .cta-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
     .btn { text-decoration:none; padding:11px 18px; border-radius:10px; font-weight:600; font-size:13.5px; display:inline-flex; align-items:center; gap:6px; transition:all .2s; }
@@ -501,8 +546,8 @@ if ($GenerateProductPages) {
         <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
         <p class="desc">$descEsc</p>
         <div class="price-row">
-          <div><span class="price-label">Giá niêm yết</span><div class="price">$priceFmt</div></div>
-          <span class="status">$(Escape-Html $it.cond)</span>
+          <div><span class="price-label">Giá</span>$priceHtml</div>
+          <span class="status">$(Escape-Html $condVi)</span>
           <span class="status">$(Escape-Html $it.s)</span>
         </div>
         <div class="cta-row">

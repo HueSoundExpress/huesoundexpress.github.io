@@ -601,7 +601,10 @@ body.player-open .fab-scroll-bubble { bottom: 4.5rem; }
 }
 .price-wrap { display: flex; flex-direction: column; }
 .price-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-.price-val { font-size: .98rem; font-weight: 800; color: var(--copper); }
+.price-old-row { display: inline-flex; align-items: center; gap: 4px; line-height: 1.15; margin-top: 1px; }
+.price-old { font-size: .71rem; color: var(--muted); text-decoration: line-through; opacity: .78; font-weight: 500; }
+.price-save { font-size: 9.5px; font-weight: 700; color: #FFF7E8; background: var(--copper); padding: 1px 5px; border-radius: 99px; }
+.price-val { font-size: .98rem; font-weight: 800; color: var(--copper); line-height: 1.2; }
 
 .card-actions { display: flex; gap: .4rem; flex-wrap: wrap; justify-content: flex-end; }
 .btn {
@@ -1023,8 +1026,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <option value="Hết hàng" id="optStOut">Hết hàng</option>
         </select>
         <select id="condFilter" class="select-ctrl" onchange="resetAndRender()">
-          <option value="ALL" id="optCondAll">Tình trạng</option>
-          <option value="M (New seal)">M (New seal)</option>
+          <option value="ALL" id="optCondAll">Tình trạng đĩa</option>
+          <option value="M (New seal)" id="optCondM">Mới 100% (M)</option>
           <option value="NM">NM</option>
           <option value="VG+">VG+</option>
           <option value="VG">VG</option>
@@ -1045,7 +1048,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <option value="CONTACT" id="optPrContact">Giá liên hệ</option>
         </select>
         <select id="yearSort" class="select-ctrl" onchange="resetAndRender()">
-          <option value="DEFAULT" id="optYrDef">Phát hành</option>
+          <option value="DEFAULT" id="optYrDef">Gần đây</option>
           <option value="NEW_OLD" id="optYrNew">Mới → Cũ</option>
           <option value="OLD_NEW" id="optYrOld">Cũ → Mới</option>
         </select>
@@ -1212,21 +1215,21 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       artAll: 'Nghệ sĩ', artBrandAll: 'Thương hiệu',
       lblAll: 'Hãng đĩa', lblBrandAll: 'Hãng / NSX',
       stAll: 'Sẵn / Hết', stAvail: 'Sẵn hàng', stOut: 'Hết hàng',
-      condAll: 'Tình trạng',
+      condAll: 'Tình trạng đĩa', condM: 'Mới 100% (M)',
       moodAll: 'Mood',
       prAll: 'Mức giá', pr1: 'Dưới 1 triệu', pr2: '1 – 1,5 triệu', pr3: '1,5 – 2 triệu', pr4: 'Trên 2 triệu', prContact: 'Giá liên hệ',
-      yearDef: 'Phát hành', yearNew: 'Mới → Cũ', yearOld: 'Cũ → Mới',
+      yearDef: 'Gần đây', yearNew: 'Mới → Cũ', yearOld: 'Cũ → Mới',
       regionLbl: 'Phân loại:', regAll: 'Tất cả', regVn: 'Nhạc Việt', regIntl: 'Nhạc Quốc Tế',
       audioOnly: '🎧 Có nghe thử 30s',
       statsHint: '💡 Các bộ lọc kết hợp theo logic VÀ • Bấm vào bìa để xem Tracklist',
       endCat: 'Kết thúc danh mục',
       relatedHead: '✨ Gợi ý sản phẩm liên quan',
       loopBack: 'Quay lại đầu danh mục',
-      priceLbl: 'Giá niêm yết', contactPrice: 'Liên hệ',
+      priceLbl: 'Giá', contactPrice: 'Liên hệ',
       btnAdd: '+ Giỏ / Báo giá', btnWait: '🔔 Báo khi về', btnPlay: '▶ 30s', btnPlaying: '⏸ Phát', btnStop: '⏹ Dừng phát',
       emptyFilter: 'Không tìm thấy sản phẩm khớp đồng thời tất cả bộ lọc đang chọn. Hãy bấm <strong>✕ Xóa lọc</strong> hoặc nhắn Zalo <strong>09323.13918</strong> để Hue Sound Express tìm giúp bạn.',
       footerContact: '📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • WhatsApp: <a href="https://wa.me/84932313918" target="_blank">+84 932 313 918</a> • Kỹ thuật: <strong>Hue Sound Vinyl Care</strong>',
-      cartTitle: '🛒 Giỏ Hàng & Tạo Báo Giá', cartTotalLbl: 'Tổng giá niêm yết (chưa VAT 10%)',
+      cartTitle: '🛒 Giỏ Hàng & Tạo Báo Giá', cartTotalLbl: 'Tổng giá (chưa VAT 10%)',
       cartEmpty: 'Chưa có sản phẩm nào trong giỏ. Hãy chọn đĩa hoặc phụ kiện bạn yêu thích trên kệ.',
       formHeading: 'Thông tin đặt hàng / nhận báo giá (Không cần đăng nhập)',
       phName: 'Họ tên người nhận / Tên đơn vị *', phPhone: 'Số điện thoại / Zalo *',
@@ -1280,10 +1283,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <div class="guide-item"><h3>Đóng gói 3 lớp chống rách mép (Seam Splits Prevention)</h3><p>Mỗi chiếc đĩa gửi đi tỉnh đều được bọc xốp nổ đa lớp, chèn tấm bìa carton cứng chống gập góc và đặt trong hộp mailer chuyên dụng cho đĩa than 12-inch.</p></div>
           <div class="guide-item"><h3>Giao hàng hỏa tốc & Toàn quốc</h3><p>Giao hỏa tốc 2H tại nội thành Hà Nội và chuyển phát nhanh toàn quốc. Khi cần tư vấn chuyên sâu hoặc sắp xếp hẹn bàn giao trực tiếp, vui lòng nhắn Zalo <strong>09323.13918</strong>.</p></div>
           <div class="guide-item"><h3>Xuất Báo Giá nhanh & Gói quà nghệ thuật</h3><p>Bạn có thể chọn nhiều đĩa/phụ kiện vào Giỏ hàng và bấm <strong>Xuất Báo Giá PDF</strong> ngay lập tức để làm hồ sơ tạm ứng hoặc đối chiếu quà tặng (giá báo chưa bao gồm VAT 10%). Hỗ trợ gói quà nghệ thuật & viết thiệp tay theo yêu cầu.</p></div>
-          <div class="guide-item"><h3>Thang phân loại tình trạng đĩa Goldmine Grading Standard</h3><p><strong>M (New seal):</strong> Nguyên seal mới 100% • <strong>NM:</strong> Gần như mới • <strong>VG+:</strong> Rất tốt, nghe sạch • <strong>VG:</strong> Tốt, có xước nhẹ • <strong>G+ / G:</strong> Khá / Trung bình • <strong>F / P:</strong> Kém / Sưu tầm trưng bày.</p></div>
+          <div class="guide-item"><h3>Thang phân loại tình trạng đĩa Goldmine Grading Standard</h3><p><strong>Mới 100% (M):</strong> Nguyên seal mới 100% • <strong>NM:</strong> Gần như mới • <strong>VG+:</strong> Rất tốt, nghe sạch • <strong>VG:</strong> Tốt, có xước nhẹ • <strong>G+ / G:</strong> Khá / Trung bình • <strong>F / P:</strong> Kém / Sưu tầm trưng bày.</p></div>
         </div>`,
       statusMap: { 'Còn hàng': 'Còn hàng', 'Hết hàng': 'Hết hàng' },
-      condMap: { 'M (New seal)': 'M (New seal)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
+      condMap: { 'M (New seal)': 'Mới 100% (M)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
       moodMap: {
         'Đêm muộn & Thư giãn': '🌙 Đêm muộn & Thư giãn',
         'Hoài niệm & Nhạc xưa': '🍂 Hoài niệm & Nhạc xưa',
@@ -1294,7 +1297,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       },
       genreMap: {
         'ALL': 'Tất cả thể loại', 'Nhạc Việt': 'Nhạc Việt', 'Nhạc Việt / Bolero': 'Bolero / Nhạc Xưa',
-        'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
+        'Instrument': 'Instrument', 'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
         'Rock & Metal': 'Rock & Metal', 'Pop & Disco': 'Pop & Disco', 'Classic & Soundtrack': 'Classic & OST'
       }
     },
@@ -1311,17 +1314,17 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       artAll: 'Artist', artBrandAll: 'Brand',
       lblAll: 'Label', lblBrandAll: 'Maker',
       stAll: 'Stock', stAvail: 'In Stock', stOut: 'Out of Stock',
-      condAll: 'Condition',
+      condAll: 'Disc Condition', condM: 'New seal (M)',
       moodAll: 'Mood',
       prAll: 'Price', pr1: 'Under 1M VND', pr2: '1M – 1.5M VND', pr3: '1.5M – 2M VND', pr4: 'Over 2M VND', prContact: 'Contact Price',
-      yearDef: 'Release', yearNew: 'Newest → Oldest', yearOld: 'Oldest → Newest',
+      yearDef: 'Recent', yearNew: 'Newest → Oldest', yearOld: 'Oldest → Newest',
       regionLbl: 'Origin:', regAll: 'All Music', regVn: 'Vietnamese Music', regIntl: 'International Music',
       audioOnly: '🎧 30s Preview Ready',
       statsHint: '💡 All filters combine with AND logic • Click any cover for Tracklist & Specs',
       endCat: 'End of Category',
       relatedHead: '✨ Related Recommendations',
       loopBack: 'Back to Start of Category',
-      priceLbl: 'List Price', contactPrice: 'Contact',
+      priceLbl: 'Price', contactPrice: 'Contact',
       btnAdd: '+ Cart / Quote', btnWait: '🔔 Notify Me', btnPlay: '▶ 30s', btnPlaying: '⏸ Playing', btnStop: '⏹ Stop',
       emptyFilter: 'No items match all active filters simultaneously. Click <strong>✕ Reset</strong> or message Zalo <strong>09323.13918</strong> / WhatsApp for personalized sourcing.',
       footerContact: '📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • WhatsApp: <a href="https://wa.me/84932313918" target="_blank">+84 932 313 918</a> • Care: <strong>Hue Sound Vinyl Care</strong>',
@@ -1379,10 +1382,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <div class="guide-item"><h3>3-Layer Seam Splits Prevention Packaging</h3><p>Every shipped LP is wrapped in multi-layer bubble protection with corner stiffeners inside a dedicated 12-inch vinyl mailer box.</p></div>
           <div class="guide-item"><h3>Express Hanoi & Nationwide Delivery</h3><p>2H express delivery in Hanoi and insured fast shipping nationwide. For technical advice or arranging direct handoff, message Zalo <strong>09323.13918</strong>.</p></div>
           <div class="guide-item"><h3>Instant PDF Quote & Artistic Gift Wrapping</h3><p>Add items to your cart and export a clean <strong>PDF Quotation</strong> in one click for reference or gifting approval (prices exclude 10% VAT). Artistic gift wrapping and handwritten notes available upon request.</p></div>
-          <div class="guide-item"><h3>Goldmine Grading Standard</h3><p><strong>M (New seal):</strong> Factory sealed mint • <strong>NM:</strong> Near Mint • <strong>VG+:</strong> Very Good Plus • <strong>VG:</strong> Very Good • <strong>G+ / G:</strong> Good Plus / Good • <strong>F / P:</strong> Fair / Poor.</p></div>
+          <div class="guide-item"><h3>Goldmine Grading Standard</h3><p><strong>New seal (M):</strong> Factory sealed mint • <strong>NM:</strong> Near Mint • <strong>VG+:</strong> Very Good Plus • <strong>VG:</strong> Very Good • <strong>G+ / G:</strong> Good Plus / Good • <strong>F / P:</strong> Fair / Poor.</p></div>
         </div>`,
       statusMap: { 'Còn hàng': 'In Stock', 'Hết hàng': 'Out of Stock' },
-      condMap: { 'M (New seal)': 'M (New seal)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
+      condMap: { 'M (New seal)': 'New seal (M)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
       moodMap: {
         'Đêm muộn & Thư giãn': '🌙 Late Night & Chill',
         'Hoài niệm & Nhạc xưa': '🍂 Nostalgic & Classic',
@@ -1393,7 +1396,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       },
       genreMap: {
         'ALL': 'All Genres', 'Nhạc Việt': 'Vietnamese Pop / Vocal', 'Nhạc Việt / Bolero': 'Vietnamese Bolero',
-        'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
+        'Instrument': 'Instrument', 'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
         'Rock & Metal': 'Rock & Metal', 'Pop & Disco': 'Pop & Disco', 'Classic & Soundtrack': 'Classic & OST'
       }
     }
@@ -1423,6 +1426,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
   function getMusicOrigin(item) {
     if (/(nhạc việt|bolero)/i.test(item.g) || /^VN-/i.test(item.sku)) return 'VN';
+    if (/[ăâđêôơưĂÂĐÊÔƠƯáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ]/.test(`${item.a} ${item.t}`) || /(viollage|saigon)/i.test(item.a)) return 'VN';
     return 'INTL';
   }
 
@@ -1461,6 +1465,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('optStAvail').innerText = L.stAvail;
     document.getElementById('optStOut').innerText = L.stOut;
     document.getElementById('optCondAll').innerText = L.condAll;
+    document.getElementById('optCondM').innerText = L.condM;
     document.getElementById('optPrAll').innerText = L.prAll;
     document.getElementById('optPr1').innerText = L.pr1;
     document.getElementById('optPr2').innerText = L.pr2;
@@ -1519,7 +1524,17 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
   function normalizeProduct(item) {
     const cat = item.category || 'vinyl';
-    const price = Number(item.p || item.list_price || 0);
+    let price = Number(item.p || item.list_price || 0);
+    let origPrice = Number(item.p_orig || 0);
+    if (origPrice <= 0 && price > 0) {
+      origPrice = price;
+      if (origPrice >= 200000) {
+        const disc = (origPrice % 100000 === 50000) ? 60000 : 50000;
+        price = origPrice - disc;
+      } else if (origPrice > 10000) {
+        price = origPrice - 10000;
+      }
+    }
     const rawStatus = String(item.s || item.status || '').trim();
     const rawCond = String(item.cond || item.c || item.edition || '').trim();
 
@@ -1562,6 +1577,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       cond: cond,
       y: String(item.y || ''),
       p: price,
+      p_orig: origPrice,
       s: st,
       d: String(item.d || ''),
       img: String(item.img || ''),
@@ -1782,9 +1798,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     let pills = [];
 
     if (activeCategory === 'vinyl' || activeCategory === 'cd') {
-      let genres = ['ALL', 'Nhạc Việt', 'Nhạc Việt / Bolero', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
-      if (activeRegion === 'VN') genres = ['ALL', 'Nhạc Việt', 'Nhạc Việt / Bolero'];
-      else if (activeRegion === 'INTL') genres = ['ALL', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
+      let genres = ['ALL', 'Nhạc Việt', 'Nhạc Việt / Bolero', 'Instrument', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
+      if (activeRegion === 'VN') genres = ['ALL', 'Nhạc Việt', 'Nhạc Việt / Bolero', 'Instrument'];
+      else if (activeRegion === 'INTL') genres = ['ALL', 'Instrument', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
 
       pills = genres.map(g => {
         const lbl = L.genreMap[g] || g;
@@ -1991,6 +2007,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         <div class="card-bottom">
           <div class="price-wrap">
             <span class="price-lbl">${L.priceLbl}</span>
+            ${(item.p > 0 && item.p_orig > item.p)
+              ? `<span class="price-old-row"><span class="price-old">${formatVnd(item.p_orig)}</span><span class="price-save">-${Math.round((item.p_orig - item.p)/1000)}k</span></span>`
+              : ''}
             <span class="price-val">${formatVnd(item.p)}</span>
           </div>
           <div class="card-actions">
@@ -2224,6 +2243,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <p style="font-size:.83rem; line-height:1.55; margin:8px 0;">${escHtml(item.d)}</p>
           <div style="font-size:1.2rem; font-weight:800; color:var(--copper); margin:8px 0;">
             <span style="font-size:.7rem; color:var(--muted); font-weight:600; display:block; text-transform:uppercase;">${L.priceLbl}</span>
+            ${(item.p > 0 && item.p_orig > item.p)
+              ? `<span class="price-old-row" style="margin-bottom:2px;"><span class="price-old" style="font-size:.82rem;">${formatVnd(item.p_orig)}</span><span class="price-save">-${Math.round((item.p_orig - item.p)/1000)}k</span></span><br>`
+              : ''}
             ${formatVnd(item.p)}
           </div>
           <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">

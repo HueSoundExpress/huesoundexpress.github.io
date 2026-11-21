@@ -22,186 +22,193 @@
 4. Nâng cấp bao lót chống tĩnh điện (Anti-Static Inner Sleeve) thay cho túi giấy thô.
 5. Vệ sinh đầu kim định kỳ (Audio-Technica AT607a) và cân chỉnh lực tì kim (Tracking Force) đúng chuẩn.
 
-## 4. Unified Product Catalog (542 Items)
+## 4. Unified Product Catalog (543 Items)
 | Category | SKU | Artist / Brand | Product / Album | Format / Spec | Condition | List Price (VND) | Status | URL |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| vinyl | VN-MỸ TÂM-TÂM 9-LP-NEW-VIẾ | Mỹ Tâm | Tâm 9 [R] | LP | M (New seal) | 1,750,000 | Còn hàng | https://huesoundexpress.github.io/p/my-tam-tam-9-r-1/ |
-| vinyl | VN-MỸ TÂM-MELOD-LP-NEW-VIẾ | Mỹ Tâm | Melodies | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/my-tam-melodies-2/ |
-| vinyl | VN-LỆ QUY-XƯA 1-LP-NEW-VIẾ1 | Lệ Quyên | Xưa 1 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-xua-1-3/ |
-| vinyl | VN-LỆ QUY-LAM P-LP-NEW-VIẾ | Lệ Quyên | Lam Phương | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-lam-phuong-4/ |
-| vinyl | VN-NGUYỄN-PIANO-LP-NEW-VIẾ | Nguyễn Ánh 9 | Piano Nguyễn Ánh 9 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nguyen-anh-9-piano-nguyen-anh-9-5/ |
-| vinyl | VN-QUỲNH -CÔ ĐƠ-LP-NEW-VIẾ | Quỳnh Lan | Cô đơn Nguyễn Ánh 9 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-lan-co-don-nguyen-anh-9-6/ |
-| vinyl | VN-HỒNG N-BỐNG -LP-NEW-VIẾ | Hồng Nhung | Bống là ai | LP | M (New seal) | 3,250,000 | Còn hàng | https://huesoundexpress.github.io/p/hong-nhung-bong-la-ai-7/ |
+| vinyl | VN-SSS-VOLUME-THREE-2LP | Saigon Super Sound | Volume Three (1965–75) | 2xLP | M (New seal) | 1,390,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-three-2lp/ |
+| vinyl | VN-SSS-VOLUME-TWO-2LP | Saigon Super Sound | Volume Two (1964–75) | 2xLP | M (New seal) | 1,390,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-two-2lp/ |
+| vinyl | VN-SSS-VOLUME-ONE-2LP | Saigon Super Sound | Volume One (1965–75) | 2xLP | M (New seal) | 1,390,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-one-2lp/ |
+| vinyl | VN-SSR-CHON-TA-VE-LP | Saigon Soul Revival | Chốn Ta Về | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-chon-ta-ve-lp/ |
+| vinyl | VN-SSR-HOA-AM-XUA-LP | Saigon Soul Revival | Họa Âm Xưa | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-hoa-am-xua-lp/ |
+| vinyl | VN-SSR-MOI-LUONG-DUYEN-LP | Saigon Soul Revival | Mối Lương Duyên | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-moi-luong-duyen-lp/ |
+| vinyl | VN-MỸ TÂM-TÂM 9-LP-NEW-VIẾ | Mỹ Tâm | Tâm 9 [R] | LP | M (New seal) | 1,690,000 | Còn hàng | https://huesoundexpress.github.io/p/my-tam-tam-9-r-1/ |
+| vinyl | VN-MỸ TÂM-MELOD-LP-NEW-VIẾ | Mỹ Tâm | Melodies | LP | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/my-tam-melodies-2/ |
+| vinyl | VN-LỆ QUY-XƯA 1-LP-NEW-VIẾ1 | Lệ Quyên | Xưa 1 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-xua-1-3/ |
+| vinyl | VN-LỆ QUY-LAM P-LP-NEW-VIẾ | Lệ Quyên | Lam Phương | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-lam-phuong-4/ |
+| vinyl | VN-NGUYỄN-PIANO-LP-NEW-VIẾ | Nguyễn Ánh 9 | Piano Nguyễn Ánh 9 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nguyen-anh-9-piano-nguyen-anh-9-5/ |
+| vinyl | VN-QUỲNH -CÔ ĐƠ-LP-NEW-VIẾ | Quỳnh Lan | Cô đơn Nguyễn Ánh 9 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-lan-co-don-nguyen-anh-9-6/ |
+| vinyl | VN-HỒNG N-BỐNG -LP-NEW-VIẾ | Hồng Nhung | Bống là ai | LP | M (New seal) | 3,190,000 | Còn hàng | https://huesoundexpress.github.io/p/hong-nhung-bong-la-ai-7/ |
 | vinyl | VN-MỸ LIN-TÓC N-LP-NEW-VIẾ | Mỹ Linh | Tóc ngắn | LP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/my-linh-toc-ngan-9/ |
-| vinyl | VN-QUANG -TÌNH -LP-NEW-VIẾ | Quang Dũng | Tình ca Phạm Duy | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-tinh-ca-pham-duy-10/ |
-| vinyl | VN-QUANG -NỖI N-LP-NEW-OTH | Quang Dũng | Nỗi niềm | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-noi-niem-11/ |
-| vinyl | VN-QUANG -THƯƠN-LP-NEW-OTH | Quang Dũng | Thương một người | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-thuong-mot-nguoi-12/ |
-| vinyl | VN-NHIỀU -LỐI C-LP-NEW-GIA | Nhiều ca sĩ | Lối cũ ta về [R] | LP | M (New seal) | 1,980,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-loi-cu-ta-ve-r-13/ |
-| vinyl | VN-NHIỀU -NGUYỄ-LP-NEW-GIA | Nhiều ca sĩ | Nguyễn Ánh 9 [R] | LP | M (New seal) | 1,980,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nguyen-anh-9-r-15/ |
-| vinyl | VN-NHIỀU -MỘT T-LP-NEW-GIA | Nhiều ca sĩ | Một thời đã xa | LP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mot-thoi-da-xa-16/ |
-| vinyl | VN-NHIỀU -CHUYỆ-LP-NEW-GIA | Nhiều ca sĩ | Chuyện hẹn hò [R] | LP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-chuyen-hen-ho-r-17/ |
-| vinyl | VN-TRẦN M-MÙA T-LP-NEW-GIA | Trần Mạnh Tuấn | Mùa thu cho em | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/tran-manh-tuan-mua-thu-cho-em-18/ |
-| vinyl | VN-NHIỀU -MỘT C-LP-NEW-GIA | Nhiều ca sĩ | Một chiều thu | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mot-chieu-thu-19/ |
-| vinyl | VN-NHIỀU -NỖI Y-LP-NEW-GIA | Nhiều ca sĩ | Nỗi yêu bé dại | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-noi-yeu-be-dai-20/ |
-| vinyl | VN-NHIỀU -NHƯ C-LP-NEW-GIA | Nhiều ca sĩ | Như chưa bắt đầu | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhu-chua-bat-dau-21/ |
-| vinyl | VN-NHIỀU -CƠN M-LP-NEW-GIA | Nhiều ca sĩ | Cơn mưa phùn | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-con-mua-phun-22/ |
-| vinyl | VN-THANH -TÌNH -LP-NEW-GIA | Thanh Hà | Tình anh còn xanh | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-ha-tinh-anh-con-xanh-24/ |
-| vinyl | VN-NHIỀU -BẢO C-LP-NEW-GIA | Nhiều ca sĩ | Bảo Chấn - Nơi ấy bình yên | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bao-chan-noi-ay-binh-yen-26/ |
-| vinyl | VN-HÀ ANH-TRUYỆ-LP-NEW-OTH | Hà Anh Tuấn | Truyện ngắn [R] | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-anh-tuan-truyen-ngan-r-28/ |
-| vinyl | VN-HÀ ANH-CUỐI -LP-NEW-OTH | Hà Anh Tuấn | Cuối ngày người đàn ông một mình | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-anh-tuan-cuoi-ngay-nguoi-dan-ong-mot-minh-29/ |
-| vinyl | VN-VŨ THẮ-QUÊ-LP-NEW-OTH | Vũ Thắng Lợi | Quê | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-que-30/ |
-| vinyl | VN-VŨ THẮ-TÌNH -LP-NEW-OTH | Vũ Thắng Lợi | Tình ca | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-tinh-ca-31/ |
-| vinyl | VN-VŨ THẮ-HÀ NỘ-LP-NEW-OTH | Vũ Thắng Lợi | Hà Nội riêng tôi | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-ha-noi-rieng-toi-32/ |
-| vinyl | VN-HƯƠNG -MỘT Đ-LP-NEW-OTH | Hương Giang | Một đời yêu anh | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/huong-giang-mot-doi-yeu-anh-33/ |
-| vinyl | VN-QUỲNH -EM ƠI-LP-NEW-BK | Quỳnh Anh | Em ơi mùa xuân đến rồi đó [R] | LP | M (New seal) | 1,980,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-anh-em-oi-mua-xuan-den-roi-do-r-34/ |
-| vinyl | VN-QUỲNH -19XX-LP-NEW-BK | Quỳnh Anh | 19xx | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-anh-19xx-38/ |
-| vinyl | VN-HOÀI P-TRÊN -LP-NEW-BK | Hoài Phan | Trên nắng dưới cát | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/hoai-phan-tren-nang-duoi-cat-41/ |
-| vinyl | VN-NHƯ QU-VÙNG -LP-NEW-THÚ | Như Quỳnh | Vùng lá me bay | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-vung-la-me-bay-42/ |
-| vinyl | VN-NHƯ QU-DUYÊN-LP-NEW-THÚ | Như Quỳnh | Duyên phận | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-duyen-phan-43/ |
-| vinyl | VN-ĐAN NG-LẠI N-LP-NEW-THÚ | Đan Nguyên | Lại nhớ người yêu | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/dan-nguyen-lai-nho-nguoi-yeu-44/ |
-| vinyl | VN-NHƯ QU-CHUYỆ-LP-NEW-THÚ | Như Quỳnh | Chuyện hoa sim | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-chuyen-hoa-sim-45/ |
-| vinyl | VN-HOÀNG -MONG -LP-NEW-THÚ | Hoàng Oanh | Mong chờ | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-oanh-mong-cho-46/ |
-| vinyl | -NGỌC A-GIẾT -LP-NEW-THÚ | Ngọc Anh | Giết người trong mộng | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-anh-giet-nguoi-trong-mong-47/ |
-| vinyl | VN-KHÁNH -HÀ NỘ-LP-NEW-NĂM | Khánh Ly | Hà Nội nhớ | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-ha-noi-nho-48/ |
-| vinyl | VN-NHIỀU -30 NĂ-LP-NEW-NĂM | Nhiều ca sĩ | 30 năm tình ca Quốc Bảo | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-30-nam-tinh-ca-quoc-bao-49/ |
-| vinyl | VN-BẰNG K-MÙA T-LP-NEW-NĂM | Bằng Kiều | Mùa thu ru em | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/bang-kieu-mua-thu-ru-em-50/ |
-| vinyl | VN-ĐỒNG L-NÀY E-LP-NEW-NĂM | Đồng Lan | Này em có nhớ | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/dong-lan-nay-em-co-nho-51/ |
-| vinyl | VN-CẨM VÂ-VẾT L-LP-NEW-TUẤ | Cẩm Vân | Vết lăn trầm | LP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/cam-van-vet-lan-tram-52/ |
-| vinyl | VN-DƯƠNG -XIN M-LP-NEW-TUẤ | Dương Tấn Sơn | Xin mặt trời ngủ yên | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/duong-tan-son-xin-mat-troi-ngu-yen-53/ |
-| vinyl | VN-TUẤN H-NHƯ G-LP-NEW-TUẤ | Tuấn Hiệp | Như gió heo may | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-hiep-nhu-gio-heo-may-54/ |
-| vinyl | VN-PHẠM T-BE MY-LP-NEW-OTH | Phạm Thu Hà | Be my love | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/pham-thu-ha-be-my-love-55/ |
-| vinyl | VN-PHẠM T-ĐƯỜNG-LP-NEW-OTH | Phạm Thu Hà | Đường em đi | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/pham-thu-ha-duong-em-di-57/ |
-| vinyl | VN-ĐÌNH B-THE S-LP-NEW-OTH | Đình Bảo | The Shadow | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/dinh-bao-the-shadow-58/ |
-| vinyl | VN-NGÔ HỒ-RẠNG -LP-NEW-OTH | Ngô Hồng Quang | Rạng Đông | LP | M (New seal) | 2,000,000 | Còn hàng | https://huesoundexpress.github.io/p/ngo-hong-quang-rang-dong-59/ |
-| vinyl | VN-MAI HO-NỐT T-LP-NEW-OTH | Mai Hoa | Nốt trầm | LP | M (New seal) | 2,500,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-hoa-not-tram-60/ |
-| vinyl | VN-NGỌC K-DẠO C-LP-NEW-OTHBLACK | Ngọc Khuê [black] | Dạo chơi | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-khue-black-dao-choi-61/ |
-| vinyl | VN-NGỌC K-DẠO C-LP-NEW-OTHPURPLE | Ngọc Khuê [purple] | Dạo chơi | LP | M (New seal) | 1,800,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-khue-purple-dao-choi-63/ |
-| vinyl | VN-NSND N-LÁ TR-LP-NEW-OTH | NSND Nhật Thuận | Lá trên cành | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/nsnd-nhat-thuan-la-tren-canh-67/ |
-| vinyl | VN-MAI AN-VẦNG -LP-NEW-OTH | Mai Anh Việt | Vầng tóc rối | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-69/ |
-| vinyl | VN-MAI AN-VẦNG -LP-NEW-OTHCD | Mai Anh Việt | Vầng tóc rối | LP | M (New seal) | 1,600,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-71/ |
-| vinyl | VN-LỆ QUY-VŨ TH-LP-NEW-OTH | Lệ Quyên | Vũ Thành An | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-vu-thanh-an-73/ |
-| vinyl | VN-KHÁNH -SONAT-LP-NEW-OTH | Khánh Ly | Sonatas | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-sonatas-74/ |
-| vinyl | VN-NHIỀU -HANOI-LP-NEW-GER | Nhiều ca sĩ | HANOI MASTERS | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-hanoi-masters-79/ |
-| vinyl | VN-KHÁNH -KHÁNH-LP-MINT-JAP | Khánh Ly | Khánh Ly hát Trịnh Công Sơn tiếng Nhật | LP | NM | 5,500,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-khanh-ly-hat-trinh-cong-son-tieng-nhat-80/ |
-| vinyl | VN-ĐẶNG T-PIANO-LP-MINT-JAP | Đặng Thái Sơn | Piano | LP | NM | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/dang-thai-son-piano-81/ |
-| vinyl | VN-TIẾNG -DÂN C-LP-MINT-JAP | Tiếng Hát Việt Nam | dân ca | LP | NM | 2,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tieng-hat-viet-nam-dan-ca-82/ |
-| vinyl | VN-NHẠC C-GS TR-LP-MINT-JAP | Nhạc cụ dân tộc | GS Trần Văn Khê | LP | NM | 2,300,000 | Còn hàng | https://huesoundexpress.github.io/p/nhac-cu-dan-toc-gs-tran-van-khe-83/ |
-| vinyl | VN-NHIỀU -CĂN N-LP-NEW-BOL | Nhiều ca sĩ | Căn nhà ngoại ô | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-can-nha-ngoai-o-84/ |
-| vinyl | VN-NHIỀU -MÙA T-LP-NEW-BOL | Nhiều ca sĩ | Mùa thu trong mưa | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-thu-trong-mua-85/ |
-| vinyl | VN-NHIỀU -EM ĐÃ-LP-NEW-BOL | Nhiều ca sĩ | Em đã quyên một dòng sông | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-em-da-quyen-mot-dong-song-86/ |
-| vinyl | VN-THANH -THANH-LP-NEW-BOL1 | Thanh Tuyền | Thanh tuyền 1 | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-thanh-tuyen-1-87/ |
-| vinyl | VN-THANH -THANH-LP-NEW-BOL2 | Thanh Tuyền | Thanh tuyền 2 | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-thanh-tuyen-2-88/ |
-| vinyl | VN-CHẾ LI-NGÀY -LP-NEW-BOLCÒN EM | Chế Linh | Ngày còn em bên tôi | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-ngay-con-em-ben-toi-89/ |
-| vinyl | VN-CHẾ LI-NGÀY -LP-NEW-BOLĐÓ | Chế Linh | Ngày đó xa rồi | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-ngay-do-xa-roi-90/ |
-| vinyl | VN-CHẾ LI-NÓ-LP-NEW-BOL | Chế Linh | Nó | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-no-91/ |
-| vinyl | VN-CHẾ LI-GIỌT -LP-NEW-BOL | Chế Linh | Giọt lệ sầu | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-giot-le-sau-92/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT1 | Nhiều ca sĩ | Bolero 1 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-1-93/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT2 | Nhiều ca sĩ | Bolero 2 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-2-94/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT3 | Nhiều ca sĩ | Bolero 3 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-3-95/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT4 | Nhiều ca sĩ | Bolero 4 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-4-96/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT5 | Nhiều ca sĩ | Bolero 5 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-5-97/ |
-| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT6 | Nhiều ca sĩ | Bolero 6 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-6-98/ |
-| vinyl | VN-NHIỀU -NHẠC -LP-NEW-TMT1 | Nhiều ca sĩ | Nhạc Xưa | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhac-xua-99/ |
-| vinyl | VN-NHIỀU -NHẠC -LP-NEW-TMT2 | Nhiều ca sĩ | Nhạc Xưa 2 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhac-xua-2-100/ |
-| vinyl | VN-NHIỀU -LY RƯ-LP-NEW-TMT | Nhiều ca sĩ | Ly rượu mừng | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-ly-ruou-mung-101/ |
-| vinyl | VN-NHIỀU -TÌNH -LP-NEW-TMTCA | Nhiều ca sĩ | Tình ca | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-tinh-ca-102/ |
-| vinyl | VN-NHIỀU -NHỮNG-LP-NEW-TMT | Nhiều ca sĩ | Những giọng ca vàng | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhung-giong-ca-vang-103/ |
-| vinyl | VN-NHIỀU -MÙA S-LP-NEW-TMT | Nhiều ca sĩ | Mùa sao sáng | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-sao-sang-104/ |
-| vinyl | VN-THANH -CHIỀU-LP-NEW-TMT | Thanh Tuyền | Chiều mưa biên giới | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-chieu-mua-bien-gioi-105/ |
-| vinyl | VN-KHÁNH -DIỄM -LP-NEW-TMT | Khánh Ly | Diễm xưa | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-diem-xua-106/ |
-| vinyl | VN-NHIỀU -THUYỀ-LP-NEW-TMT | Nhiều ca sĩ | Thuyền và biển | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-thuyen-va-bien-107/ |
-| vinyl | VN-NHIỀU -TÌNH -LP-NEW-TMTKHÚC | Nhiều ca sĩ | Tình khúc Trúc Phương | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-tinh-khuc-truc-phuong-108/ |
-| vinyl | VN-NHIỀU -SONG -LP-NEW-TMT | Nhiều ca sĩ | Song ca tuyệt phẩm | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-song-ca-tuyet-pham-109/ |
-| vinyl | VN-NHIỀU -MÙA T-LP-NEW-TMT | Nhiều ca sĩ | Mùa thu trong mưa | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-thu-trong-mua-110/ |
-| vinyl | VN-DUY KH-ĐẬP V-LP-NEW-TMT | Duy Khánh | Đập vỡ cây đàn | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/duy-khanh-dap-vo-cay-dan-111/ |
-| vinyl | VN-LỆ THU-MẮT B-LP-NEW-TMT | Lệ Thu | Mắt Biếc | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/le-thu-mat-biec-112/ |
-| vinyl | VN-BẰNG K-MẮT B-LP-NEW-TMT | Bằng Kiều | Mắt Biếc | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/bang-kieu-mat-biec-113/ |
-| vinyl | VN-TUẤN N-TCS-LP-NEW-TMT | Tuấn Ngọc | TCS | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-ngoc-tcs-114/ |
-| vinyl | VN-TUẤN V-BƯỚM -LP-NEW-TMT | Tuấn Vũ | Bướm trắng | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-vu-buom-trang-115/ |
-| vinyl | VN-TUẤN V-THE B-LP-NEW-TMT | Tuấn Vũ | The Best of | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-vu-the-best-of-116/ |
-| vinyl | VN-HOÀNG -THE B-LP-NEW-TMT | Hoàng Oanh | The Best of | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-oanh-the-best-of-117/ |
-| vinyl | VN-BẢO YẾ-THE B-LP-NEW-TMT | Bảo Yến | The Best of | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/bao-yen-the-best-of-118/ |
-| vinyl | VN-THANH -THE B-LP-NEW-TMT | Thanh Thuý | The Best of | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-thuy-the-best-of-119/ |
-| vinyl | VN-VŨ KHA-THE B-LP-NEW-TMT | Vũ Khanh | The Best of | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-khanh-the-best-of-120/ |
-| vinyl | VN-NGỌC L-THE B-LP-NEW-TMT | Ngọc Lan | The Best of | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-lan-the-best-of-121/ |
-| vinyl | VN-HƯƠNG -NHƯ Đ-LP-NEW-TMT | Hương Lan | Như đã dấu yêu | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/huong-lan-nhu-da-dau-yeu-122/ |
-| vinyl | VN-QUỐC B-BÌNH -LP-NEW-THỜ | Quốc Bảo | Bình Yên | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quoc-bao-binh-yen-123/ |
-| vinyl | VN-QUỐC B-MY GU-LP-NEW-THỜ | Quốc Bảo | my guitar my friends 2 | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/quoc-bao-my-guitar-my-friends-2-124/ |
-| vinyl | VN-THANH -NƠI G-LP-NEW-THỜ | Thanh Lam | Nơi Gặp Gỡ Tình Yêu (Pink) | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-lam-noi-gap-go-tinh-yeu-pink-125/ |
-| vinyl | VN-BỨC TƯ-CON Đ-LP-NEW-THỜ | Bức Tường | Con Đường Không Tên | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/buc-tuong-con-duong-khong-ten-126/ |
-| vinyl | VN-LÂN NH-NHÃ-LP-NEW-THỜ | Lân Nhã | NHÃ | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/lan-nha-nha-127/ |
-| vinyl | VN-LÊ CÁT-TUỔI -LP-NEW-THỜ | Lê Cát Trọng Lý | Tuổi 25 (Light Blue Colored) | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/le-cat-trong-ly-tuoi-25-light-blue-colored-128/ |
-| vinyl | VN-HOÀNG -LINK -LP-NEW-THỜ | Hoàng Thùy Linh | LINK (A Side B Side) | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-thuy-linh-link-a-side-b-side-129/ |
-| vinyl | VN-LÂN NH-NHIÊN-LP-NEW-THỜ | Lân Nhã | NHIÊN | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/lan-nha-nhien-130/ |
-| vinyl | VN-HỨA KI-COLOU-LP-NEW-THỜ | Hứa Kim Tuyền | COLOURS | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/hua-kim-tuyen-colours-131/ |
-| vinyl | VN-HÀ TRẦ-NHỮNG-LP-NEW-THỜ | Hà Trần | Những Con Sông Ngón Tay | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-tran-nhung-con-song-ngon-tay-132/ |
-| vinyl | VN-TÙNG D-HUMAN-LP-NEW-THỜ | Tùng Dương | HUMAN | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/tung-duong-human-133/ |
-| vinyl | VN-TRỊNH -B369-LP-NEW-THỜ | Trịnh Thăng Bình | B369 | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/trinh-thang-binh-b369-134/ |
-| vinyl | VN-HỒ TIẾ-TỈNH -LP-NEW-THỜ | Hồ Tiến Đạt, Trọng Bắc | Tỉnh Cơn Mê Mãi | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/ho-tien-dat-trong-bac-tinh-con-me-mai-135/ |
-| vinyl | VN-HÀ TRẦ-ĐỂ EM-LP-NEW-THỜ | Hà Trần | Để Em Mơ | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-tran-de-em-mo-136/ |
-| vinyl | VN-ĐINH H-BLACK-LP-NEW-THỜ | Đinh Hương | Black Magic Woman | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/dinh-huong-black-magic-woman-137/ |
-| vinyl | VN-SOOBIN-BẬT N-LP-NEW-THỜ | SOOBIN | BẬT NÓ LÊN | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/soobin-bat-no-len-138/ |
-| vinyl | VN-TÙNG D-THE V-LP-NEW-THỜ | Tùng Dương | The Voice "Timeless" | LP | M (New seal) | 1,550,000 | Còn hàng | https://huesoundexpress.github.io/p/tung-duong-the-voice-timeless-139/ |
-| vinyl | VN-VĂN MA-MINH -LP-NEW-THỜ | Văn Mai Hương | Minh Tinh (Gold Colored) | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/van-mai-huong-minh-tinh-gold-colored-140/ |
-| vinyl | VN-AMEE-DREAM-LP-NEW-THỜ | AMEE | dreAMEE (Baby Pink) | LP | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/amee-dreamee-baby-pink-141/ |
-| vinyl | VN-ĐỨC TU-REQUI-LP-NEW-THỜ | Đức Tuấn - Phạm Duy | Requiem | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/duc-tuan-pham-duy-requiem-142/ |
-| vinyl | NN-2 CELL-SCORE-2XLP-BLACK-MUS | 2 Cellos | Score | 2xLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/2-cellos-score-143/ |
-| vinyl | NN-ABBA-GOLD-2XLP-BLACK-UNI | Abba | Gold | 2xLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/abba-gold-144/ |
-| vinyl | NN-ABBA-SUPER-LP-BLACK-UNI | Abba | Super Trouper | LP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/abba-super-trouper-145/ |
-| vinyl | NN-ADELE-30-2XLP-BLACK-COL | Adele | 30 | 2xLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/adele-30-146/ |
-| vinyl | NN-ANDREA-SI-2XLP-BLACK-UNI | Andrea Bocelli | Si | 2xLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-si-147/ |
-| vinyl | NN-ANDREA-AMORE-2XLP-BLACK-UNI | Andrea Bocelli | Amore | 2xLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-amore-148/ |
-| vinyl | NN-ANDREA-BELIE-2XLP-BLACK-UNI | Andrea Bocelli | Believe | 2xLP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-believe-149/ |
-| vinyl | NN-ANDREA-DUETS-LP-BLACK-UNI | Andrea Bocelli | Duets | LP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-duets-150/ |
-| vinyl | NN-BACKST-MILLE-2XLP-BLACK-JIV | Backstreet Boys | Millennium 2.0 | 2xLP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/backstreet-boys-millennium-2-0-151/ |
-| vinyl | NN-B.B. K-THE K-LP-BLACK-WAX | B.B. King | The king of Blue | LP | M (New seal) | 2,600,000 | Còn hàng | https://huesoundexpress.github.io/p/b-b-king-the-king-of-blue-152/ |
-| vinyl | NN-BLACK -HEAVE-2XLP-BLACK-UNI | Black Sabbath | Heaven And Hell | 2xLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/black-sabbath-heaven-and-hell-153/ |
-| vinyl | NN-BONEY -NIGHT-LP-BLACK-MCI | Boney M. | Nightflight To Venus | LP | M (New seal) | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-nightflight-to-venus-154/ |
-| vinyl | NN-BONEY -CHRIS-LP-BLACK-SON | Boney M. | Christmas Album (1981) | LP | M (New seal) | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-christmas-album-1981-155/ |
-| vinyl | NN-BONEY -DADDY-12IN-COLOURED VINYL-SON | Boney M. | Daddy Cool | 12in | M (New seal) | 1,300,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-daddy-cool-156/ |
-| vinyl | NN-BONEY -MAGIC-LP-COLOURED VINYL-SON | Boney M. | Magic Of Boney M. | LP | M (New seal) | 1,500,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-magic-of-boney-m-157/ |
-| vinyl | NN-BONEY -RIVER-12IN-COLOURED VINYL-SON | Boney M. | Rivers Of Babylon | 12in | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-rivers-of-babylon-158/ |
-| vinyl | NN-BONEY -BONEY-12IN-COLOURED VINYL-SON | Boney M. | BONEY M. & FRIENDS... | 12in | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-boney-m-friends-159/ |
-| vinyl | NN-BONEY -TAKE -12IN-COLOURED VINYL-SON | Boney M. | TAKE THE HEAT OFF ME (... | 12in | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-take-the-heat-off-me-160/ |
-| vinyl | NN-COHEN,-TEN N-LP-BLACK-COL | Cohen, Leonard | Ten New Songs | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/cohen-leonard-ten-new-songs-161/ |
-| vinyl | NN-COHEN,-GREAT-LP-BLACK-COL | Cohen, Leonard | Greatest Hits | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/cohen-leonard-greatest-hits-162/ |
-| vinyl | NN-DAVE B-TIME -LP-COLOURED VINYL-WAX | Dave Brubeck Quartet | Time Out | LP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-163/ |
-| vinyl | NN-DAVE B-TIME -LP-BLACK-COL | Dave Brubeck Quartet | Time Out | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-164/ |
-| vinyl | NN-DAVE B-DAVE -LP-BLACK-VIN | Dave Brubeck Quartet | Dave Brubeck Quartet | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-dave-brubeck-quartet-165/ |
-| vinyl | NN-DAVE B-TIME -LP-BLACK-NUM | Dave Brubeck Quartet | Time Out | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-166/ |
-| vinyl | NN-DEEP P-GREAT-4XLP-BLACK-MUS | Deep Purple | Greatest Hits | 4xLP | M (New seal) | 3,200,000 | Còn hàng | https://huesoundexpress.github.io/p/deep-purple-greatest-hits-167/ |
-| vinyl | NN-DION, -FALLI-LP-BLACK-COL | Dion, Celine | Falling Into You | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-falling-into-you-168/ |
-| vinyl | NN-DION, -MY LO-2XLP-BLACK-COL | Dion, Celine | My Love Essential Coll... | 2xLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-my-love-essential-coll-169/ |
-| vinyl | NN-DION, -I AM:-LP-BLACK-SON | Dion, Celine | I Am: Celine Dion Sony Music Canada | LP | M (New seal) | 1,900,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-i-am-celine-dion-sony-music-canada-170/ |
-| vinyl | NN-DION, -LET'S-2XLP-BLACK-550 | Dion, Celine | Let's Talk About Love | 2xLP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-let-s-talk-about-love-171/ |
-| vinyl | NN-EAGLES-HOTEL-LP-BLACK-WAR | Eagles | Hotel California | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/eagles-hotel-california-172/ |
-| vinyl | NN-EAGLES-HELL -2XLP-BLACK-GEF | Eagles | Hell Freezes Over | 2xLP | M (New seal) | 1,380,000 | Còn hàng | https://huesoundexpress.github.io/p/eagles-hell-freezes-over-173/ |
-| vinyl | NN-FITZGE-ELLA -LP-BLACK-WAX | Fitzgerald, Ella | Ella & Louis Again | LP | M (New seal) | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-ella-louis-again-174/ |
-| vinyl | NN-FITZGE-ELLA -LP-BLACK-20T | Fitzgerald, Ella & Lou... | Ella & Louis Again | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-lou-ella-louis-again-175/ |
-| vinyl | NN-FITZGE-ELLA -LP-BLACK-NUM | Fitzgerald, Ella & Lou... | Ella & Louis Again | LP | M (New seal) | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-lou-ella-louis-again-176/ |
-| vinyl | NN-FORD, -VERY -LP-BLACK-NOT | Ford, Tennessee Ernie | Very Best Of | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/ford-tennessee-ernie-very-best-of-177/ |
-| vinyl | NN-JACKSO-BAD-LP -BLACK-EPI | Jackson, Michael | Bad | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/jackson-michael-bad-178/ |
-| vinyl | NN-JACKSO-THRIL-LP-BLACK-EPI | Jackson, Michael | Thriller | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/jackson-michael-thriller-179/ |
-| vinyl | NN-JACKSO-BAD-LP-PICTURE-EPI | Jackson, Michael | Bad | LP | M (New seal) | 1,550,000 | Còn hàng | https://huesoundexpress.github.io/p/jackson-michael-bad-180/ |
-| vinyl | NN-JONES,-COME -LP-BLACK-UNI | Jones, Norah | Come Away With Me | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-come-away-with-me-181/ |
-| vinyl | NN-JONES,-FEELS-LP-BLACK-UNI | Jones, Norah | Feels like home | LP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-feels-like-home-182/ |
-| vinyl | NN-JONES,-VISIO-LP-BLACK-UNI | Jones, Norah | Visions | LP | M (New seal) | 1,100,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-visions-183/ |
-| vinyl | NN-LADY G-A STA-2XLP-BLACK-SOU | Lady Gaga, Bradley Cooper | A Star Is Born | 2XLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/lady-gaga-bradley-cooper-a-star-is-born-184/ |
-| vinyl | NN-LOFGRE-MOUNT-LP-BLACK-MVD | Lofgren, Nils | Mountains Mvd | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/lofgren-nils-mountains-mvd-185/ |
-| vinyl | NN-MODERN-BACK -LP-BLACK-SON | Modern Talking | Back For Gold | LP | M (New seal) | 1,100,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-back-for-gold-186/ |
-| vinyl | NN-MODERN-FIRST-LP-BLACK-SON | Modern Talking | First Album | LP | M (New seal) | 1,600,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-first-album-187/ |
-| vinyl | NN-MODERN-BACK -2XLP-BLACK-SON | Modern Talking | Back For Good | 2xLP | M (New seal) | 1,750,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-back-for-good-188/ |
-| vinyl | NN-MUDDY -FOLK -LP-BLACK- | Muddy Water | Folk Singer | LP | M (New seal) | 1,100,000 | Còn hàng | https://huesoundexpress.github.io/p/muddy-water-folk-singer-189/ |
-| vinyl | NN-MUTTER-SOPHI-LP-BLACK-WAN | Mutter, Anne | Sophie & ... | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/mutter-anne-sophie-190/ |
-| vinyl | NN-PINK F-WISH -LP-BLACK-PIN | Pink Floyd | Wish You Were Here | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-wish-you-were-here-191/ |
-| vinyl | NN-PINK F-THE W-LP-BLACK-PIN | Pink Floyd | The wall | LP | M (New seal) | 1,550,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-the-wall-192/ |
-| vinyl | NN-PINK F-DARK -LP -BLACK-LEG | Pink Floyd | Dark Side Of The Moon | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-dark-side-of-the-moon-193/ |
-| vinyl | NN-SCORPI-ACOUS-2XLP-BLACK-SON | Scorpions | Acoustica | 2xLP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/scorpions-acoustica-194/ |
-| vinyl | NN-SHEPP,-FOUR -LP -BLACK-UNI | Shepp, Archie | Four For Trane | LP | M (New seal) | 1,350,000 | Còn hàng | https://huesoundexpress.github.io/p/shepp-archie-four-for-trane-195/ |
-| vinyl | NN-THE BE-ABBEY-LP-BLACK-UNI | The beatles | Abbey road | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/the-beatles-abbey-road-196/ |
-| vinyl | NN-UB40-RED, -LP-BLACK-UNI | Ub40 | Red, Red Wine: The Col… | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/ub40-red-red-wine-the-col-197/ |
-| vinyl | NN-WIENER-NEUJA-3XLP-BLACK-SON | Wiener Philharmoniker ... | Neujahrskonzert 2026 /… | 3xLP | M (New seal) | 2,600,000 | Còn hàng | https://huesoundexpress.github.io/p/wiener-philharmoniker-neujahrskonzert-2026-198/ |
-| vinyl | NN-MUDDY -FOLK -LP-BLACK-CHE | Muddy Waters | Folk Singer | LP | M (New seal) | 2,600,002 | Còn hàng | https://huesoundexpress.github.io/p/muddy-waters-folk-singer-199/ |
+| vinyl | VN-QUANG -TÌNH -LP-NEW-VIẾ | Quang Dũng | Tình ca Phạm Duy | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-tinh-ca-pham-duy-10/ |
+| vinyl | VN-QUANG -NỖI N-LP-NEW-OTH | Quang Dũng | Nỗi niềm | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-noi-niem-11/ |
+| vinyl | VN-QUANG -THƯƠN-LP-NEW-OTH | Quang Dũng | Thương một người | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/quang-dung-thuong-mot-nguoi-12/ |
+| vinyl | VN-NHIỀU -LỐI C-LP-NEW-GIA | Nhiều ca sĩ | Lối cũ ta về [R] | LP | M (New seal) | 1,930,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-loi-cu-ta-ve-r-13/ |
+| vinyl | VN-NHIỀU -NGUYỄ-LP-NEW-GIA | Nhiều ca sĩ | Nguyễn Ánh 9 [R] | LP | M (New seal) | 1,930,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nguyen-anh-9-r-15/ |
+| vinyl | VN-NHIỀU -MỘT T-LP-NEW-GIA | Nhiều ca sĩ | Một thời đã xa | LP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mot-thoi-da-xa-16/ |
+| vinyl | VN-NHIỀU -CHUYỆ-LP-NEW-GIA | Nhiều ca sĩ | Chuyện hẹn hò [R] | LP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-chuyen-hen-ho-r-17/ |
+| vinyl | VN-TRẦN M-MÙA T-LP-NEW-GIA | Trần Mạnh Tuấn | Mùa thu cho em | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/tran-manh-tuan-mua-thu-cho-em-18/ |
+| vinyl | VN-NHIỀU -MỘT C-LP-NEW-GIA | Nhiều ca sĩ | Một chiều thu | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mot-chieu-thu-19/ |
+| vinyl | VN-NHIỀU -NỖI Y-LP-NEW-GIA | Nhiều ca sĩ | Nỗi yêu bé dại | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-noi-yeu-be-dai-20/ |
+| vinyl | VN-NHIỀU -NHƯ C-LP-NEW-GIA | Nhiều ca sĩ | Như chưa bắt đầu | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhu-chua-bat-dau-21/ |
+| vinyl | VN-NHIỀU -CƠN M-LP-NEW-GIA | Nhiều ca sĩ | Cơn mưa phùn | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-con-mua-phun-22/ |
+| vinyl | VN-THANH -TÌNH -LP-NEW-GIA | Thanh Hà | Tình anh còn xanh | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-ha-tinh-anh-con-xanh-24/ |
+| vinyl | VN-NHIỀU -BẢO C-LP-NEW-GIA | Nhiều ca sĩ | Bảo Chấn - Nơi ấy bình yên | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bao-chan-noi-ay-binh-yen-26/ |
+| vinyl | VN-HÀ ANH-TRUYỆ-LP-NEW-OTH | Hà Anh Tuấn | Truyện ngắn [R] | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-anh-tuan-truyen-ngan-r-28/ |
+| vinyl | VN-HÀ ANH-CUỐI -LP-NEW-OTH | Hà Anh Tuấn | Cuối ngày người đàn ông một mình | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-anh-tuan-cuoi-ngay-nguoi-dan-ong-mot-minh-29/ |
+| vinyl | VN-VŨ THẮ-QUÊ-LP-NEW-OTH | Vũ Thắng Lợi | Quê | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-que-30/ |
+| vinyl | VN-VŨ THẮ-TÌNH -LP-NEW-OTH | Vũ Thắng Lợi | Tình ca | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-tinh-ca-31/ |
+| vinyl | VN-VŨ THẮ-HÀ NỘ-LP-NEW-OTH | Vũ Thắng Lợi | Hà Nội riêng tôi | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-thang-loi-ha-noi-rieng-toi-32/ |
+| vinyl | VN-HƯƠNG -MỘT Đ-LP-NEW-OTH | Hương Giang | Một đời yêu anh | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/huong-giang-mot-doi-yeu-anh-33/ |
+| vinyl | VN-QUỲNH -EM ƠI-LP-NEW-BK | Quỳnh Anh | Em ơi mùa xuân đến rồi đó [R] | LP | M (New seal) | 1,930,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-anh-em-oi-mua-xuan-den-roi-do-r-34/ |
+| vinyl | VN-QUỲNH -19XX-LP-NEW-BK | Quỳnh Anh | 19xx | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/quynh-anh-19xx-38/ |
+| vinyl | VN-VIOLLA-QINIE-LP-NEW-BK | Viollage | Qinie | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/viollage-qinie-40/ |
+| vinyl | VN-HOÀI P-TRÊN -LP-NEW-BK | Hoài Phan | Trên nắng dưới cát | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/hoai-phan-tren-nang-duoi-cat-41/ |
+| vinyl | VN-NHƯ QU-VÙNG -LP-NEW-THÚ | Như Quỳnh | Vùng lá me bay | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-vung-la-me-bay-42/ |
+| vinyl | VN-NHƯ QU-DUYÊN-LP-NEW-THÚ | Như Quỳnh | Duyên phận | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-duyen-phan-43/ |
+| vinyl | VN-ĐAN NG-LẠI N-LP-NEW-THÚ | Đan Nguyên | Lại nhớ người yêu | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/dan-nguyen-lai-nho-nguoi-yeu-44/ |
+| vinyl | VN-NHƯ QU-CHUYỆ-LP-NEW-THÚ | Như Quỳnh | Chuyện hoa sim | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/nhu-quynh-chuyen-hoa-sim-45/ |
+| vinyl | VN-HOÀNG -MONG -LP-NEW-THÚ | Hoàng Oanh | Mong chờ | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-oanh-mong-cho-46/ |
+| vinyl | -NGỌC A-GIẾT -LP-NEW-THÚ | Ngọc Anh | Giết người trong mộng | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-anh-giet-nguoi-trong-mong-47/ |
+| vinyl | VN-KHÁNH -HÀ NỘ-LP-NEW-NĂM | Khánh Ly | Hà Nội nhớ | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-ha-noi-nho-48/ |
+| vinyl | VN-NHIỀU -30 NĂ-LP-NEW-NĂM | Nhiều ca sĩ | 30 năm tình ca Quốc Bảo | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-30-nam-tinh-ca-quoc-bao-49/ |
+| vinyl | VN-BẰNG K-MÙA T-LP-NEW-NĂM | Bằng Kiều | Mùa thu ru em | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/bang-kieu-mua-thu-ru-em-50/ |
+| vinyl | VN-ĐỒNG L-NÀY E-LP-NEW-NĂM | Đồng Lan | Này em có nhớ | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/dong-lan-nay-em-co-nho-51/ |
+| vinyl | VN-CẨM VÂ-VẾT L-LP-NEW-TUẤ | Cẩm Vân | Vết lăn trầm | LP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/cam-van-vet-lan-tram-52/ |
+| vinyl | VN-DƯƠNG -XIN M-LP-NEW-TUẤ | Dương Tấn Sơn | Xin mặt trời ngủ yên | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/duong-tan-son-xin-mat-troi-ngu-yen-53/ |
+| vinyl | VN-TUẤN H-NHƯ G-LP-NEW-TUẤ | Tuấn Hiệp | Như gió heo may | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-hiep-nhu-gio-heo-may-54/ |
+| vinyl | VN-PHẠM T-BE MY-LP-NEW-OTH | Phạm Thu Hà | Be my love | LP | M (New seal) | 1,390,000 | Còn hàng | https://huesoundexpress.github.io/p/pham-thu-ha-be-my-love-55/ |
+| vinyl | VN-PHẠM T-ĐƯỜNG-LP-NEW-OTH | Phạm Thu Hà | Đường em đi | LP | M (New seal) | 1,390,000 | Còn hàng | https://huesoundexpress.github.io/p/pham-thu-ha-duong-em-di-57/ |
+| vinyl | VN-ĐÌNH B-THE S-LP-NEW-OTH | Đình Bảo | The Shadow | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/dinh-bao-the-shadow-58/ |
+| vinyl | VN-NGÔ HỒ-RẠNG -LP-NEW-OTH | Ngô Hồng Quang | Rạng Đông | LP | M (New seal) | 1,950,000 | Còn hàng | https://huesoundexpress.github.io/p/ngo-hong-quang-rang-dong-59/ |
+| vinyl | VN-MAI HO-NỐT T-LP-NEW-OTH | Mai Hoa | Nốt trầm | LP | M (New seal) | 2,450,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-hoa-not-tram-60/ |
+| vinyl | VN-NGỌC K-DẠO C-LP-NEW-OTHBLACK | Ngọc Khuê [black] | Dạo chơi | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-khue-black-dao-choi-61/ |
+| vinyl | VN-NGỌC K-DẠO C-LP-NEW-OTHPURPLE | Ngọc Khuê [purple] | Dạo chơi | LP | M (New seal) | 1,750,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-khue-purple-dao-choi-63/ |
+| vinyl | VN-NSND N-LÁ TR-LP-NEW-OTH | NSND Nhật Thuận | Lá trên cành | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/nsnd-nhat-thuan-la-tren-canh-67/ |
+| vinyl | VN-MAI AN-VẦNG -LP-NEW-OTH | Mai Anh Việt | Vầng tóc rối | LP | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-69/ |
+| vinyl | VN-MAI AN-VẦNG -LP-NEW-OTHCD | Mai Anh Việt | Vầng tóc rối | LP | M (New seal) | 1,550,000 | Còn hàng | https://huesoundexpress.github.io/p/mai-anh-viet-vang-toc-roi-71/ |
+| vinyl | VN-LỆ QUY-VŨ TH-LP-NEW-OTH | Lệ Quyên | Vũ Thành An | LP | M (New seal) | 1,090,000 | Còn hàng | https://huesoundexpress.github.io/p/le-quyen-vu-thanh-an-73/ |
+| vinyl | VN-KHÁNH -SONAT-LP-NEW-OTH | Khánh Ly | Sonatas | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-sonatas-74/ |
+| vinyl | VN-NHIỀU -HANOI-LP-NEW-GER | Nhiều ca sĩ | HANOI MASTERS | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-hanoi-masters-79/ |
+| vinyl | VN-KHÁNH -KHÁNH-LP-MINT-JAP | Khánh Ly | Khánh Ly hát Trịnh Công Sơn tiếng Nhật | LP | NM | 5,450,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-khanh-ly-hat-trinh-cong-son-tieng-nhat-80/ |
+| vinyl | VN-ĐẶNG T-PIANO-LP-MINT-JAP | Đặng Thái Sơn | Piano | LP | NM | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/dang-thai-son-piano-81/ |
+| vinyl | VN-TIẾNG -DÂN C-LP-MINT-JAP | Tiếng Hát Việt Nam | dân ca | LP | NM | 2,150,000 | Còn hàng | https://huesoundexpress.github.io/p/tieng-hat-viet-nam-dan-ca-82/ |
+| vinyl | VN-NHẠC C-GS TR-LP-MINT-JAP | Nhạc cụ dân tộc | GS Trần Văn Khê | LP | NM | 2,250,000 | Còn hàng | https://huesoundexpress.github.io/p/nhac-cu-dan-toc-gs-tran-van-khe-83/ |
+| vinyl | VN-NHIỀU -CĂN N-LP-NEW-BOL | Nhiều ca sĩ | Căn nhà ngoại ô | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-can-nha-ngoai-o-84/ |
+| vinyl | VN-NHIỀU -MÙA T-LP-NEW-BOL | Nhiều ca sĩ | Mùa thu trong mưa | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-thu-trong-mua-85/ |
+| vinyl | VN-NHIỀU -EM ĐÃ-LP-NEW-BOL | Nhiều ca sĩ | Em đã quyên một dòng sông | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-em-da-quyen-mot-dong-song-86/ |
+| vinyl | VN-THANH -THANH-LP-NEW-BOL1 | Thanh Tuyền | Thanh tuyền 1 | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-thanh-tuyen-1-87/ |
+| vinyl | VN-THANH -THANH-LP-NEW-BOL2 | Thanh Tuyền | Thanh tuyền 2 | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-thanh-tuyen-2-88/ |
+| vinyl | VN-CHẾ LI-NGÀY -LP-NEW-BOLCÒN EM | Chế Linh | Ngày còn em bên tôi | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-ngay-con-em-ben-toi-89/ |
+| vinyl | VN-CHẾ LI-NGÀY -LP-NEW-BOLĐÓ | Chế Linh | Ngày đó xa rồi | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-ngay-do-xa-roi-90/ |
+| vinyl | VN-CHẾ LI-NÓ-LP-NEW-BOL | Chế Linh | Nó | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-no-91/ |
+| vinyl | VN-CHẾ LI-GIỌT -LP-NEW-BOL | Chế Linh | Giọt lệ sầu | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/che-linh-giot-le-sau-92/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT1 | Nhiều ca sĩ | Bolero 1 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-1-93/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT2 | Nhiều ca sĩ | Bolero 2 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-2-94/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT3 | Nhiều ca sĩ | Bolero 3 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-3-95/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT4 | Nhiều ca sĩ | Bolero 4 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-4-96/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT5 | Nhiều ca sĩ | Bolero 5 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-5-97/ |
+| vinyl | VN-NHIỀU -BOLER-LP-NEW-TMT6 | Nhiều ca sĩ | Bolero 6 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-bolero-6-98/ |
+| vinyl | VN-NHIỀU -NHẠC -LP-NEW-TMT1 | Nhiều ca sĩ | Nhạc Xưa | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhac-xua-99/ |
+| vinyl | VN-NHIỀU -NHẠC -LP-NEW-TMT2 | Nhiều ca sĩ | Nhạc Xưa 2 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhac-xua-2-100/ |
+| vinyl | VN-NHIỀU -LY RƯ-LP-NEW-TMT | Nhiều ca sĩ | Ly rượu mừng | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-ly-ruou-mung-101/ |
+| vinyl | VN-NHIỀU -TÌNH -LP-NEW-TMTCA | Nhiều ca sĩ | Tình ca | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-tinh-ca-102/ |
+| vinyl | VN-NHIỀU -NHỮNG-LP-NEW-TMT | Nhiều ca sĩ | Những giọng ca vàng | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-nhung-giong-ca-vang-103/ |
+| vinyl | VN-NHIỀU -MÙA S-LP-NEW-TMT | Nhiều ca sĩ | Mùa sao sáng | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-sao-sang-104/ |
+| vinyl | VN-THANH -CHIỀU-LP-NEW-TMT | Thanh Tuyền | Chiều mưa biên giới | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-tuyen-chieu-mua-bien-gioi-105/ |
+| vinyl | VN-KHÁNH -DIỄM -LP-NEW-TMT | Khánh Ly | Diễm xưa | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/khanh-ly-diem-xua-106/ |
+| vinyl | VN-NHIỀU -THUYỀ-LP-NEW-TMT | Nhiều ca sĩ | Thuyền và biển | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-thuyen-va-bien-107/ |
+| vinyl | VN-NHIỀU -TÌNH -LP-NEW-TMTKHÚC | Nhiều ca sĩ | Tình khúc Trúc Phương | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-tinh-khuc-truc-phuong-108/ |
+| vinyl | VN-NHIỀU -SONG -LP-NEW-TMT | Nhiều ca sĩ | Song ca tuyệt phẩm | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-song-ca-tuyet-pham-109/ |
+| vinyl | VN-NHIỀU -MÙA T-LP-NEW-TMT | Nhiều ca sĩ | Mùa thu trong mưa | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/nhieu-ca-si-mua-thu-trong-mua-110/ |
+| vinyl | VN-DUY KH-ĐẬP V-LP-NEW-TMT | Duy Khánh | Đập vỡ cây đàn | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/duy-khanh-dap-vo-cay-dan-111/ |
+| vinyl | VN-LỆ THU-MẮT B-LP-NEW-TMT | Lệ Thu | Mắt Biếc | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/le-thu-mat-biec-112/ |
+| vinyl | VN-BẰNG K-MẮT B-LP-NEW-TMT | Bằng Kiều | Mắt Biếc | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/bang-kieu-mat-biec-113/ |
+| vinyl | VN-TUẤN N-TCS-LP-NEW-TMT | Tuấn Ngọc | TCS | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-ngoc-tcs-114/ |
+| vinyl | VN-TUẤN V-BƯỚM -LP-NEW-TMT | Tuấn Vũ | Bướm trắng | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-vu-buom-trang-115/ |
+| vinyl | VN-TUẤN V-THE B-LP-NEW-TMT | Tuấn Vũ | The Best of | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/tuan-vu-the-best-of-116/ |
+| vinyl | VN-HOÀNG -THE B-LP-NEW-TMT | Hoàng Oanh | The Best of | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-oanh-the-best-of-117/ |
+| vinyl | VN-BẢO YẾ-THE B-LP-NEW-TMT | Bảo Yến | The Best of | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/bao-yen-the-best-of-118/ |
+| vinyl | VN-THANH -THE B-LP-NEW-TMT | Thanh Thuý | The Best of | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-thuy-the-best-of-119/ |
+| vinyl | VN-VŨ KHA-THE B-LP-NEW-TMT | Vũ Khanh | The Best of | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/vu-khanh-the-best-of-120/ |
+| vinyl | VN-NGỌC L-THE B-LP-NEW-TMT | Ngọc Lan | The Best of | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/ngoc-lan-the-best-of-121/ |
+| vinyl | VN-HƯƠNG -NHƯ Đ-LP-NEW-TMT | Hương Lan | Như đã dấu yêu | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/huong-lan-nhu-da-dau-yeu-122/ |
+| vinyl | VN-QUỐC B-BÌNH -LP-NEW-THỜ | Quốc Bảo | Bình Yên | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/quoc-bao-binh-yen-123/ |
+| vinyl | VN-QUỐC B-MY GU-LP-NEW-THỜ | Quốc Bảo | my guitar my friends 2 | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/quoc-bao-my-guitar-my-friends-2-124/ |
+| vinyl | VN-THANH -NƠI G-LP-NEW-THỜ | Thanh Lam | Nơi Gặp Gỡ Tình Yêu (Pink) | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/thanh-lam-noi-gap-go-tinh-yeu-pink-125/ |
+| vinyl | VN-BỨC TƯ-CON Đ-LP-NEW-THỜ | Bức Tường | Con Đường Không Tên | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/buc-tuong-con-duong-khong-ten-126/ |
+| vinyl | VN-LÂN NH-NHÃ-LP-NEW-THỜ | Lân Nhã | NHÃ | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/lan-nha-nha-127/ |
+| vinyl | VN-LÊ CÁT-TUỔI -LP-NEW-THỜ | Lê Cát Trọng Lý | Tuổi 25 (Light Blue Colored) | LP | M (New seal) | 1,090,000 | Còn hàng | https://huesoundexpress.github.io/p/le-cat-trong-ly-tuoi-25-light-blue-colored-128/ |
+| vinyl | VN-HOÀNG -LINK -LP-NEW-THỜ | Hoàng Thùy Linh | LINK (A Side B Side) | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/hoang-thuy-linh-link-a-side-b-side-129/ |
+| vinyl | VN-LÂN NH-NHIÊN-LP-NEW-THỜ | Lân Nhã | NHIÊN | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/lan-nha-nhien-130/ |
+| vinyl | VN-HỨA KI-COLOU-LP-NEW-THỜ | Hứa Kim Tuyền | COLOURS | LP | M (New seal) | 1,090,000 | Còn hàng | https://huesoundexpress.github.io/p/hua-kim-tuyen-colours-131/ |
+| vinyl | VN-HÀ TRẦ-NHỮNG-LP-NEW-THỜ | Hà Trần | Những Con Sông Ngón Tay | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-tran-nhung-con-song-ngon-tay-132/ |
+| vinyl | VN-TÙNG D-HUMAN-LP-NEW-THỜ | Tùng Dương | HUMAN | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/tung-duong-human-133/ |
+| vinyl | VN-TRỊNH -B369-LP-NEW-THỜ | Trịnh Thăng Bình | B369 | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/trinh-thang-binh-b369-134/ |
+| vinyl | VN-HỒ TIẾ-TỈNH -LP-NEW-THỜ | Hồ Tiến Đạt, Trọng Bắc | Tỉnh Cơn Mê Mãi | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/ho-tien-dat-trong-bac-tinh-con-me-mai-135/ |
+| vinyl | VN-HÀ TRẦ-ĐỂ EM-LP-NEW-THỜ | Hà Trần | Để Em Mơ | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/ha-tran-de-em-mo-136/ |
+| vinyl | VN-ĐINH H-BLACK-LP-NEW-THỜ | Đinh Hương | Black Magic Woman | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/dinh-huong-black-magic-woman-137/ |
+| vinyl | VN-SOOBIN-BẬT N-LP-NEW-THỜ | SOOBIN | BẬT NÓ LÊN | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/soobin-bat-no-len-138/ |
+| vinyl | VN-TÙNG D-THE V-LP-NEW-THỜ | Tùng Dương | The Voice "Timeless" | LP | M (New seal) | 1,490,000 | Còn hàng | https://huesoundexpress.github.io/p/tung-duong-the-voice-timeless-139/ |
+| vinyl | VN-VĂN MA-MINH -LP-NEW-THỜ | Văn Mai Hương | Minh Tinh (Gold Colored) | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/van-mai-huong-minh-tinh-gold-colored-140/ |
+| vinyl | VN-AMEE-DREAM-LP-NEW-THỜ | AMEE | dreAMEE (Baby Pink) | LP | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/amee-dreamee-baby-pink-141/ |
+| vinyl | VN-ĐỨC TU-REQUI-LP-NEW-THỜ | Đức Tuấn - Phạm Duy | Requiem | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/duc-tuan-pham-duy-requiem-142/ |
+| vinyl | NN-2 CELL-SCORE-2XLP-BLACK-MUS | 2 Cellos | Score | 2xLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/2-cellos-score-143/ |
+| vinyl | NN-ABBA-GOLD-2XLP-BLACK-UNI | Abba | Gold | 2xLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/abba-gold-144/ |
+| vinyl | NN-ABBA-SUPER-LP-BLACK-UNI | Abba | Super Trouper | LP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/abba-super-trouper-145/ |
+| vinyl | NN-ADELE-30-2XLP-BLACK-COL | Adele | 30 | 2xLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/adele-30-146/ |
+| vinyl | NN-ANDREA-SI-2XLP-BLACK-UNI | Andrea Bocelli | Si | 2xLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-si-147/ |
+| vinyl | NN-ANDREA-AMORE-2XLP-BLACK-UNI | Andrea Bocelli | Amore | 2xLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-amore-148/ |
+| vinyl | NN-ANDREA-BELIE-2XLP-BLACK-UNI | Andrea Bocelli | Believe | 2xLP | M (New seal) | 1,390,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-believe-149/ |
+| vinyl | NN-ANDREA-DUETS-LP-BLACK-UNI | Andrea Bocelli | Duets | LP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/andrea-bocelli-duets-150/ |
+| vinyl | NN-BACKST-MILLE-2XLP-BLACK-JIV | Backstreet Boys | Millennium 2.0 | 2xLP | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/backstreet-boys-millennium-2-0-151/ |
+| vinyl | NN-B.B. K-THE K-LP-BLACK-WAX | B.B. King | The king of Blue | LP | M (New seal) | 2,550,000 | Còn hàng | https://huesoundexpress.github.io/p/b-b-king-the-king-of-blue-152/ |
+| vinyl | NN-BLACK -HEAVE-2XLP-BLACK-UNI | Black Sabbath | Heaven And Hell | 2xLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/black-sabbath-heaven-and-hell-153/ |
+| vinyl | NN-BONEY -NIGHT-LP-BLACK-MCI | Boney M. | Nightflight To Venus | LP | M (New seal) | 990,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-nightflight-to-venus-154/ |
+| vinyl | NN-BONEY -CHRIS-LP-BLACK-SON | Boney M. | Christmas Album (1981) | LP | M (New seal) | 990,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-christmas-album-1981-155/ |
+| vinyl | NN-BONEY -DADDY-12IN-COLOURED VINYL-SON | Boney M. | Daddy Cool | 12in | M (New seal) | 1,250,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-daddy-cool-156/ |
+| vinyl | NN-BONEY -MAGIC-LP-COLOURED VINYL-SON | Boney M. | Magic Of Boney M. | LP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-magic-of-boney-m-157/ |
+| vinyl | NN-BONEY -RIVER-12IN-COLOURED VINYL-SON | Boney M. | Rivers Of Babylon | 12in | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-rivers-of-babylon-158/ |
+| vinyl | NN-BONEY -BONEY-12IN-COLOURED VINYL-SON | Boney M. | BONEY M. & FRIENDS... | 12in | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-boney-m-friends-159/ |
+| vinyl | NN-BONEY -TAKE -12IN-COLOURED VINYL-SON | Boney M. | TAKE THE HEAT OFF ME (... | 12in | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/boney-m-take-the-heat-off-me-160/ |
+| vinyl | NN-COHEN,-TEN N-LP-BLACK-COL | Cohen, Leonard | Ten New Songs | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/cohen-leonard-ten-new-songs-161/ |
+| vinyl | NN-COHEN,-GREAT-LP-BLACK-COL | Cohen, Leonard | Greatest Hits | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/cohen-leonard-greatest-hits-162/ |
+| vinyl | NN-DAVE B-TIME -LP-COLOURED VINYL-WAX | Dave Brubeck Quartet | Time Out | LP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-163/ |
+| vinyl | NN-DAVE B-TIME -LP-BLACK-COL | Dave Brubeck Quartet | Time Out | LP | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-164/ |
+| vinyl | NN-DAVE B-DAVE -LP-BLACK-VIN | Dave Brubeck Quartet | Dave Brubeck Quartet | LP | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-dave-brubeck-quartet-165/ |
+| vinyl | NN-DAVE B-TIME -LP-BLACK-NUM | Dave Brubeck Quartet | Time Out | LP | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/dave-brubeck-quartet-time-out-166/ |
+| vinyl | NN-DEEP P-GREAT-4XLP-BLACK-MUS | Deep Purple | Greatest Hits | 4xLP | M (New seal) | 3,150,000 | Còn hàng | https://huesoundexpress.github.io/p/deep-purple-greatest-hits-167/ |
+| vinyl | NN-DION, -FALLI-LP-BLACK-COL | Dion, Celine | Falling Into You | LP | M (New seal) | 1,090,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-falling-into-you-168/ |
+| vinyl | NN-DION, -MY LO-2XLP-BLACK-COL | Dion, Celine | My Love Essential Coll... | 2xLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-my-love-essential-coll-169/ |
+| vinyl | NN-DION, -I AM:-LP-BLACK-SON | Dion, Celine | I Am: Celine Dion Sony Music Canada | LP | M (New seal) | 1,850,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-i-am-celine-dion-sony-music-canada-170/ |
+| vinyl | NN-DION, -LET'S-2XLP-BLACK-550 | Dion, Celine | Let's Talk About Love | 2xLP | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/dion-celine-let-s-talk-about-love-171/ |
+| vinyl | NN-EAGLES-HOTEL-LP-BLACK-WAR | Eagles | Hotel California | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/eagles-hotel-california-172/ |
+| vinyl | NN-EAGLES-HELL -2XLP-BLACK-GEF | Eagles | Hell Freezes Over | 2xLP | M (New seal) | 1,330,000 | Còn hàng | https://huesoundexpress.github.io/p/eagles-hell-freezes-over-173/ |
+| vinyl | NN-FITZGE-ELLA -LP-BLACK-WAX | Fitzgerald, Ella | Ella & Louis Again | LP | M (New seal) | 990,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-ella-louis-again-174/ |
+| vinyl | NN-FITZGE-ELLA -LP-BLACK-20T | Fitzgerald, Ella & Lou... | Ella & Louis Again | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-lou-ella-louis-again-175/ |
+| vinyl | NN-FITZGE-ELLA -LP-BLACK-NUM | Fitzgerald, Ella & Lou... | Ella & Louis Again | LP | M (New seal) | 990,000 | Còn hàng | https://huesoundexpress.github.io/p/fitzgerald-ella-lou-ella-louis-again-176/ |
+| vinyl | NN-FORD, -VERY -LP-BLACK-NOT | Ford, Tennessee Ernie | Very Best Of | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/ford-tennessee-ernie-very-best-of-177/ |
+| vinyl | NN-JACKSO-BAD-LP -BLACK-EPI | Jackson, Michael | Bad | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/jackson-michael-bad-178/ |
+| vinyl | NN-JACKSO-THRIL-LP-BLACK-EPI | Jackson, Michael | Thriller | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/jackson-michael-thriller-179/ |
+| vinyl | NN-JACKSO-BAD-LP-PICTURE-EPI | Jackson, Michael | Bad | LP | M (New seal) | 1,490,000 | Còn hàng | https://huesoundexpress.github.io/p/jackson-michael-bad-180/ |
+| vinyl | NN-JONES,-COME -LP-BLACK-UNI | Jones, Norah | Come Away With Me | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-come-away-with-me-181/ |
+| vinyl | NN-JONES,-FEELS-LP-BLACK-UNI | Jones, Norah | Feels like home | LP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-feels-like-home-182/ |
+| vinyl | NN-JONES,-VISIO-LP-BLACK-UNI | Jones, Norah | Visions | LP | M (New seal) | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/jones-norah-visions-183/ |
+| vinyl | NN-LADY G-A STA-2XLP-BLACK-SOU | Lady Gaga, Bradley Cooper | A Star Is Born | 2XLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/lady-gaga-bradley-cooper-a-star-is-born-184/ |
+| vinyl | NN-LOFGRE-MOUNT-LP-BLACK-MVD | Lofgren, Nils | Mountains Mvd | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/lofgren-nils-mountains-mvd-185/ |
+| vinyl | NN-MODERN-BACK -LP-BLACK-SON | Modern Talking | Back For Gold | LP | M (New seal) | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-back-for-gold-186/ |
+| vinyl | NN-MODERN-FIRST-LP-BLACK-SON | Modern Talking | First Album | LP | M (New seal) | 1,550,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-first-album-187/ |
+| vinyl | NN-MODERN-BACK -2XLP-BLACK-SON | Modern Talking | Back For Good | 2xLP | M (New seal) | 1,690,000 | Còn hàng | https://huesoundexpress.github.io/p/modern-talking-back-for-good-188/ |
+| vinyl | NN-MUDDY -FOLK -LP-BLACK- | Muddy Water | Folk Singer | LP | M (New seal) | 1,050,000 | Còn hàng | https://huesoundexpress.github.io/p/muddy-water-folk-singer-189/ |
+| vinyl | NN-MUTTER-SOPHI-LP-BLACK-WAN | Mutter, Anne | Sophie & ... | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/mutter-anne-sophie-190/ |
+| vinyl | NN-PINK F-WISH -LP-BLACK-PIN | Pink Floyd | Wish You Were Here | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-wish-you-were-here-191/ |
+| vinyl | NN-PINK F-THE W-LP-BLACK-PIN | Pink Floyd | The wall | LP | M (New seal) | 1,490,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-the-wall-192/ |
+| vinyl | NN-PINK F-DARK -LP -BLACK-LEG | Pink Floyd | Dark Side Of The Moon | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/pink-floyd-dark-side-of-the-moon-193/ |
+| vinyl | NN-SCORPI-ACOUS-2XLP-BLACK-SON | Scorpions | Acoustica | 2xLP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/scorpions-acoustica-194/ |
+| vinyl | NN-SHEPP,-FOUR -LP -BLACK-UNI | Shepp, Archie | Four For Trane | LP | M (New seal) | 1,290,000 | Còn hàng | https://huesoundexpress.github.io/p/shepp-archie-four-for-trane-195/ |
+| vinyl | NN-THE BE-ABBEY-LP-BLACK-UNI | The beatles | Abbey road | LP | M (New seal) | 1,190,000 | Còn hàng | https://huesoundexpress.github.io/p/the-beatles-abbey-road-196/ |
+| vinyl | NN-UB40-RED, -LP-BLACK-UNI | Ub40 | Red, Red Wine: The Col… | LP | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/ub40-red-red-wine-the-col-197/ |
+| vinyl | NN-WIENER-NEUJA-3XLP-BLACK-SON | Wiener Philharmoniker ... | Neujahrskonzert 2026 /… | 3xLP | M (New seal) | 2,550,000 | Còn hàng | https://huesoundexpress.github.io/p/wiener-philharmoniker-neujahrskonzert-2026-198/ |
+| vinyl | NN-MUDDY -FOLK -LP-BLACK-CHE | Muddy Waters | Folk Singer | LP | M (New seal) | 2,550,002 | Còn hàng | https://huesoundexpress.github.io/p/muddy-waters-folk-singer-199/ |
 | vinyl | NN-ALLAN -THE R-LP-BLACK-STO | Allan Taylor | The Road Well Travelled | LP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/allan-taylor-the-road-well-travelled-200/ |
 | vinyl | NN-ALLAN -IN TH-LP-BLACK-STO | Allan Taylor | In The Groove Vol.2 | LP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/allan-taylor-in-the-groove-vol-2-201/ |
 | vinyl | NN-ALLAN -ALL I-LP-BLACK-STO | Allan Taylor | All Is One LP | LP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/allan-taylor-all-is-one-lp-202/ |
@@ -539,31 +546,25 @@
 | vinyl | NN-HTD-534 | Foo Fighters | Medicine At Midnight | LP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/foo-fighters-medicine-at-midnight-534/ |
 | vinyl | NN-HTD-535 | The Strokes | Is This It | LP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/the-strokes-is-this-it-535/ |
 | vinyl | NN-HTD-536 | Elvis Presley | 30 #1 Hits | 2xLP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/elvis-presley-30-1-hits-536/ |
-| vinyl | VN-SSR-MOI-LUONG-DUYEN-LP | Saigon Soul Revival | Mối Lương Duyên | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-moi-luong-duyen-lp/ |
-| vinyl | VN-SSR-HOA-AM-XUA-LP | Saigon Soul Revival | Họa Âm Xưa | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-hoa-am-xua-lp/ |
-| vinyl | VN-SSR-CHON-TA-VE-LP | Saigon Soul Revival | Chốn Ta Về | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-chon-ta-ve-lp/ |
-| vinyl | VN-SSS-VOLUME-ONE-2LP | Saigon Super Sound | Volume One (1965–75) | 2xLP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-one-2lp/ |
-| vinyl | VN-SSS-VOLUME-TWO-2LP | Saigon Super Sound | Volume Two (1964–75) | 2xLP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-two-2lp/ |
-| vinyl | VN-SSS-VOLUME-THREE-2LP | Saigon Super Sound | Volume Three (1965–75) | 2xLP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-three-2lp/ |
-| cd | CD-MYTAM-TAM9-NEW | Mỹ Tâm | Tâm 9 | CD | M (New seal) | 350,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-my-tam-tam-9/ |
-| cd | CD-LEQUYEN-KHUC-TINH-XUA-1 | Lệ Quyên | Khúc Tình Xưa 1 | CD | M (New seal) | 280,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-le-quyen-khuc-tinh-xua-1/ |
-| cd | CD-NORAH-COME-AWAY-SACD | Norah Jones | Come Away With Me | SACD | M (New seal) | 850,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-norah-jones-come-away-with-me-sacd/ |
-| cd | CD-DIANA-THE-LOOK-XRCD | Diana Krall | The Look Of Love | XRCD24 | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-diana-krall-the-look-of-love-xrcd/ |
-| cd | CD-TRANMANHTUAN-HA-TRANG | Trần Mạnh Tuấn | Hạ Trắng (Saxophone) | CD | M (New seal) | 320,000 | Hết hàng | https://huesoundexpress.github.io/p/cd-tran-manh-tuan-ha-trang/ |
-| cd | CD-SSR-MOI-LUONG-DUYEN | Saigon Soul Revival | Mối Lương Duyên | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-moi-luong-duyen/ |
-| cd | CD-SSR-HOA-AM-XUA | Saigon Soul Revival | Họa Âm Xưa | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-hoa-am-xua/ |
-| cd | CD-SSR-CHON-TA-VE | Saigon Soul Revival | Chốn Ta Về | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-chon-ta-ve/ |
-| cd | CD-SSS-VOLUME-ONE | Saigon Super Sound | Volume One (1965–75) | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-super-sound-volume-one/ |
-| cd | CD-SSS-VOLUME-TWO | Saigon Super Sound | Volume Two (1964–75) | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-super-sound-volume-two/ |
 | cd | CD-SSS-VOLUME-THREE | Saigon Super Sound | Volume Three (1965–75) | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-super-sound-volume-three/ |
-| turntable | TT-AT-LP60XBT-BK | Audio-Technica | Audio-Technica AT-LP60XBT (Đen) | MM | M (New seal) | 6,900,000 | Còn hàng | https://huesoundexpress.github.io/p/audio-technica-at-lp60xbt-black/ |
-| turntable | TT-AT-LP120XUSB-SL | Audio-Technica | Audio-Technica AT-LP120XUSB | MM | M (New seal) | 11,500,000 | Còn hàng | https://huesoundexpress.github.io/p/audio-technica-at-lp120xusb-silver/ |
-| turntable | TT-PROJECT-DEBUT-CARBON-EVO | Pro-Ject | Pro-Ject Debut Carbon EVO | MM | M (New seal) | 17,900,000 | Còn hàng | https://huesoundexpress.github.io/p/pro-ject-debut-carbon-evo/ |
-| turntable | TT-TEAC-TN3B-SE | TEAC | TEAC TN-3B-SE (Vân gỗ Walnut) | MM | M (New seal) | 13,500,000 | Hết hàng | https://huesoundexpress.github.io/p/teac-tn-3b-se-walnut/ |
-| accessory | ACC-AQ-CARBON | AudioQuest | Chổi sợi Carbon chống tĩnh điện AudioQuest | Mọi đĩa than 12-inch | M (New seal) | 550,000 | Còn hàng | https://huesoundexpress.github.io/p/choi-soi-carbon-audioquest/ |
-| accessory | ACC-SLEEVE-50 | Hue Sound Vinyl Care | Bộ 50 túi lót chống tĩnh điện (Anti-Static Inner Sleeve) | Đĩa than 12-inch (LP) | M (New seal) | 350,000 | Còn hàng | https://huesoundexpress.github.io/p/tui-lot-chong-tinh-dien-50-chiec/ |
-| accessory | ACC-AT607A | Audio-Technica | Dung dịch vệ sinh đầu kim Audio-Technica AT607a | Mọi đầu kim MM / MC | M (New seal) | 380,000 | Còn hàng | https://huesoundexpress.github.io/p/dung-dich-ve-sinh-kim-at607a/ |
-| accessory | ACC-SCALE-01 | Hue Sound Vinyl Care | Cân điện tử đo lực tì kim chính xác 0.01g | Mọi mâm than có đối trọng | M (New seal) | 420,000 | Còn hàng | https://huesoundexpress.github.io/p/can-luc-ti-kim-dien-tu/ |
-| accessory | ACC-ORT-2MRED | Ortofon | Đầu kim đĩa than Ortofon 2M Red (MM) | Mâm than gắn chuẩn 1/2-inch | M (New seal) | 3,200,000 | Còn hàng | https://huesoundexpress.github.io/p/kim-dia-than-ortofon-2m-red/ |
-| care | CARE-ULTRASONIC-01 | Hue Sound Vinyl Care | Dịch vụ Rửa đĩa siêu âm chuẩn Audiophile (Kèm túi lót mới) | Đĩa than 7-inch / 12-inch | M (New seal) | 50,000 | Còn hàng | https://huesoundexpress.github.io/p/dich-vu-rua-dia-sieu-am/ |
-| care | CARE-SETUP-01 | Hue Sound Vinyl Care | Dịch vụ Cân chỉnh mâm than & Lắp kim chuyên sâu | Mọi mâm than | M (New seal) | 500,000 | Còn hàng | https://huesoundexpress.github.io/p/dich-vu-can-chinh-mam-than/ |
+| cd | CD-SSS-VOLUME-TWO | Saigon Super Sound | Volume Two (1964–75) | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-super-sound-volume-two/ |
+| cd | CD-SSS-VOLUME-ONE | Saigon Super Sound | Volume One (1965–75) | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-super-sound-volume-one/ |
+| cd | CD-SSR-CHON-TA-VE | Saigon Soul Revival | Chốn Ta Về | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-chon-ta-ve/ |
+| cd | CD-SSR-HOA-AM-XUA | Saigon Soul Revival | Họa Âm Xưa | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-hoa-am-xua/ |
+| cd | CD-SSR-MOI-LUONG-DUYEN | Saigon Soul Revival | Mối Lương Duyên | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-moi-luong-duyen/ |
+| cd | CD-MYTAM-TAM9-NEW | Mỹ Tâm | Tâm 9 | CD | M (New seal) | 290,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-my-tam-tam-9/ |
+| cd | CD-LEQUYEN-KHUC-TINH-XUA-1 | Lệ Quyên | Khúc Tình Xưa 1 | CD | M (New seal) | 230,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-le-quyen-khuc-tinh-xua-1/ |
+| cd | CD-NORAH-COME-AWAY-SACD | Norah Jones | Come Away With Me | SACD | M (New seal) | 790,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-norah-jones-come-away-with-me-sacd/ |
+| cd | CD-DIANA-THE-LOOK-XRCD | Diana Krall | The Look Of Love | XRCD24 | M (New seal) | 1,090,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-diana-krall-the-look-of-love-xrcd/ |
+| cd | CD-TRANMANHTUAN-HA-TRANG | Trần Mạnh Tuấn | Hạ Trắng (Saxophone) | CD | M (New seal) | 270,000 | Hết hàng | https://huesoundexpress.github.io/p/cd-tran-manh-tuan-ha-trang/ |
+| turntable | TT-AT-LP60XBT-BK | Audio-Technica | Audio-Technica AT-LP60XBT (Đen) | MM | M (New seal) | 6,850,000 | Còn hàng | https://huesoundexpress.github.io/p/audio-technica-at-lp60xbt-black/ |
+| turntable | TT-AT-LP120XUSB-SL | Audio-Technica | Audio-Technica AT-LP120XUSB | MM | M (New seal) | 11,450,000 | Còn hàng | https://huesoundexpress.github.io/p/audio-technica-at-lp120xusb-silver/ |
+| turntable | TT-PROJECT-DEBUT-CARBON-EVO | Pro-Ject | Pro-Ject Debut Carbon EVO | MM | M (New seal) | 17,850,000 | Còn hàng | https://huesoundexpress.github.io/p/pro-ject-debut-carbon-evo/ |
+| turntable | TT-TEAC-TN3B-SE | TEAC | TEAC TN-3B-SE (Vân gỗ Walnut) | MM | M (New seal) | 13,450,000 | Hết hàng | https://huesoundexpress.github.io/p/teac-tn-3b-se-walnut/ |
+| accessory | ACC-AQ-CARBON | AudioQuest | Chổi sợi Carbon chống tĩnh điện AudioQuest | Mọi đĩa than 12-inch | M (New seal) | 490,000 | Còn hàng | https://huesoundexpress.github.io/p/choi-soi-carbon-audioquest/ |
+| accessory | ACC-SLEEVE-50 | Hue Sound Vinyl Care | Bộ 50 túi lót chống tĩnh điện (Anti-Static Inner Sleeve) | Đĩa than 12-inch (LP) | M (New seal) | 290,000 | Còn hàng | https://huesoundexpress.github.io/p/tui-lot-chong-tinh-dien-50-chiec/ |
+| accessory | ACC-AT607A | Audio-Technica | Dung dịch vệ sinh đầu kim Audio-Technica AT607a | Mọi đầu kim MM / MC | M (New seal) | 330,000 | Còn hàng | https://huesoundexpress.github.io/p/dung-dich-ve-sinh-kim-at607a/ |
+| accessory | ACC-SCALE-01 | Hue Sound Vinyl Care | Cân điện tử đo lực tì kim chính xác 0.01g | Mọi mâm than có đối trọng | M (New seal) | 370,000 | Còn hàng | https://huesoundexpress.github.io/p/can-luc-ti-kim-dien-tu/ |
+| accessory | ACC-ORT-2MRED | Ortofon | Đầu kim đĩa than Ortofon 2M Red (MM) | Mâm than gắn chuẩn 1/2-inch | M (New seal) | 3,150,000 | Còn hàng | https://huesoundexpress.github.io/p/kim-dia-than-ortofon-2m-red/ |
+| care | CARE-ULTRASONIC-01 | Hue Sound Vinyl Care | Dịch vụ Rửa đĩa siêu âm chuẩn Audiophile (Kèm túi lót mới) | Đĩa than 7-inch / 12-inch | M (New seal) | 40,000 | Còn hàng | https://huesoundexpress.github.io/p/dich-vu-rua-dia-sieu-am/ |
+| care | CARE-SETUP-01 | Hue Sound Vinyl Care | Dịch vụ Cân chỉnh mâm than & Lắp kim chuyên sâu | Mọi mâm than | M (New seal) | 450,000 | Còn hàng | https://huesoundexpress.github.io/p/dich-vu-can-chinh-mam-than/ |
