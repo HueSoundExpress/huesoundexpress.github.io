@@ -1084,19 +1084,19 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         </select>
         <select id="statusFilter" class="select-ctrl" onchange="resetAndRender()">
           <option value="ALL" id="optStAll">Sẵn / Hết</option>
-          <option value="Còn hàng" id="optStAvail">Sẵn hàng</option>
-          <option value="Hết hàng" id="optStOut">Hết hàng</option>
+          <option value="in_stock" id="optStAvail">Sẵn hàng</option>
+          <option value="out_of_stock" id="optStOut">Hết hàng</option>
         </select>
         <select id="condFilter" class="select-ctrl" onchange="resetAndRender()">
           <option value="ALL" id="optCondAll">Tình trạng đĩa</option>
-          <option value="M (New seal)" id="optCondM">Mới 100% (M)</option>
-          <option value="NM">NM</option>
-          <option value="VG+">VG+</option>
-          <option value="VG">VG</option>
-          <option value="G+">G+</option>
-          <option value="G">G</option>
-          <option value="F">F</option>
-          <option value="P">P</option>
+          <option value="mint_sealed" id="optCondM">Mới 100% (M)</option>
+          <option value="near_mint">NM</option>
+          <option value="very_good_plus">VG+</option>
+          <option value="very_good">VG</option>
+          <option value="good_plus">G+</option>
+          <option value="good">G</option>
+          <option value="fair">F</option>
+          <option value="poor">P</option>
         </select>
         <select id="moodFilter" class="select-ctrl" onchange="resetAndRender()">
           <option value="ALL">Mood</option>
@@ -1120,7 +1120,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       <div class="filter-pills" id="subFilterPills"></div>
     </div>
 
-    <div class="acc-promo-banner" id="accPromoBanner">* Chỉ giảm giá phụ kiện khi mua cùng đĩa than / mâm than</div>
+    <div class="acc-promo-banner" id="accPromoBanner">* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn</div>
 
     <div class="stats-marquee" aria-live="polite">
       <div class="stats-marquee-track" id="statsMarqueeTrack">Đang tải danh mục Hue Sound Express...</div>
@@ -1136,6 +1136,19 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   <footer>
     <p><strong>Hue Sound Express</strong> – Where sound finds its color</p>
     <p style="margin-top:4px;" id="footerContact">📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • WhatsApp: <a href="https://wa.me/84932313918" target="_blank">+84 932 313 918</a> • Dịch vụ kỹ thuật: <strong>Hue Sound Vinyl Care</strong></p>
+    <p style="margin-top:8px; font-size:11px; line-height:1.7;">
+      <strong>Bộ sưu tập:</strong>
+      <a href="bo-suu-tap/dia-than-nhac-tet/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_nhac_tet">Nhạc Tết</a> •
+      <a href="bo-suu-tap/dia-than-ngay-le/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_ngay_le">Ngày Lễ &amp; Noel</a> •
+      <a href="bo-suu-tap/dia-than-nhac-vang-bolero/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_nhac_vang_bolero">Nhạc Vàng &amp; Bolero</a> •
+      <a href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_tinh_khuc_1954_1975">Tình khúc 1954–1975</a> •
+      <a href="bo-suu-tap/dia-than-nhac-viet-tre/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_nhac_viet_tre">Nhạc Việt trẻ</a> •
+      <a href="bo-suu-tap/dia-than-instrument-hoa-tau/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_instrument_hoa_tau">Instrument</a> •
+      <a href="bo-suu-tap/dia-than-jazz-audiophile/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_jazz_audiophile">Jazz &amp; Audiophile</a> •
+      <a href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/?utm_source=footer&utm_medium=internal&utm_campaign=may_hat_dia_than_cho_nguoi_moi">Mâm than người mới</a> •
+      <a href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_nhac_ha_noi_sai_gon">Hà Nội &amp; Sài Gòn</a> •
+      <a href="bo-suu-tap/qua-tang-dia-than-cao-cap/?utm_source=footer&utm_medium=internal&utm_campaign=qua_tang_dia_than_cao_cap">Quà tặng cao cấp</a>
+    </p>
     <p style="margin-top:6px; font-size:11px; opacity:.85;">AI Agent / B2A Endpoint: <a href="llms.txt" target="_blank">llms.txt</a> • <a href="feed/products.json" target="_blank">feed/products.json</a> • <a href="data/catalog_all.json" target="_blank">catalog_all.json</a> • <a href="sitemap.xml" target="_blank">sitemap.xml</a></p>
   </footer>
 </div>
@@ -1290,11 +1303,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tabVinyl: 'Đĩa Than (LP)', tabCd: 'Đĩa CD / SACD', tabTurntable: 'Máy Hát / Mâm Than',
       tabAccessory: 'Phụ kiện và dịch vụ', tabGuide: 'Cẩm nang FAQ và giao vận',
       promoMarquee: '🚚 KHUYẾN MÃI!!! Nhanh tay chốt đơn với giá ưu đãi cho 10 đơn hàng đầu tiên (còn 6 đơn)',
-      accPromoNote: '* Chỉ giảm giá phụ kiện khi mua cùng đĩa than / mâm than',
+      accPromoNote: '* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn',
       btnContactOrder: '💬 Liên hệ', btnShare: '📤 Chia sẻ',
       toastShared: '✓ Đã sao chép link sản phẩm để chia sẻ!',
       cartBundleApplied: '✓ Đã áp dụng giá ưu đãi phụ kiện khi mua cùng đĩa than / mâm than.',
-      cartBundleNeed: '* Chỉ giảm giá phụ kiện khi mua cùng đĩa than / mâm than (hiện đang tính theo giá gốc).',
+      cartBundleNeed: '* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn (hiện đang tính theo giá gốc).',
       contactTitle: '💬 Liên Hệ Đặt Hàng Nhanh',
       contactNote: '✓ Đã tự động sao chép sẵn thông tin sản phẩm — bấm mở Zalo (Dán & Gửi) hoặc mở WhatsApp tự điền sẵn!',
       searchPh: '🔍 Tìm ca sĩ, album, tình khúc 54-75, nhạc vàng/bolero, hãng đĩa, SKU...',
@@ -1377,36 +1390,54 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           </details>
           <details class="faq-acc">
             <summary>4. Chính sách giảm giá phụ kiện và xuất báo giá PDF như thế nào?</summary>
-            <p>Lưu ý: <strong>* Chỉ giảm giá phụ kiện khi mua cùng đĩa than / mâm than</strong>. Mọi đơn hàng đều hỗ trợ xuất Báo giá PDF nhanh (giá chưa bao gồm VAT 10%), kèm dịch vụ gói quà nghệ thuật &amp; viết thiệp tay.</p>
+            <p>Lưu ý: <strong>* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn</strong>. Mọi đơn hàng đều hỗ trợ xuất Báo giá PDF nhanh (giá chưa bao gồm VAT 10%), kèm dịch vụ gói quà nghệ thuật &amp; viết thiệp tay.</p>
           </details>
+        </div>
+        <div class="guide-box">
+          <h2>✨ 10 Bộ Sưu Tập Analog Audio Theo Chủ Đề</h2>
+          <div class="guide-links-grid">
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-tet/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_nhac_tet" target="_blank">🌸 Đĩa Than Nhạc Tết &amp; Mùa Xuân<small>Ly rượu mừng, Em ơi mùa xuân đến rồi đó…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-ngay-le/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_ngay_le" target="_blank">🎄 Đĩa Than Ngày Lễ &amp; Giáng Sinh<small>Noel, Christmas, Hòa nhạc Năm Mới…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-vang-bolero/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_nhac_vang_bolero" target="_blank">🍂 Đĩa Than Nhạc Vàng &amp; Bolero<small>Chế Linh, Thanh Tuyền, Duy Khánh, Như Quỳnh…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_tinh_khuc_1954_1975" target="_blank">🎼 Tình Khúc 1954–1975 &amp; Tiền Chiến<small>Phạm Duy, Trịnh Công Sơn, Ngô Thụy Miên…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-viet-tre/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_nhac_viet_tre" target="_blank">⚡ Đĩa Than Nhạc Việt Trẻ<small>Saigon Soul Revival, Mỹ Tâm, Hà Anh Tuấn…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-instrument-hoa-tau/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_instrument_hoa_tau" target="_blank">🎹 Instrument &amp; Hòa Tấu Nhạc Cụ<small>Qinie, Piano Nguyễn Ánh 9, Đặng Thái Sơn…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-jazz-audiophile/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_jazz_audiophile" target="_blank">🎷 Jazz, Vocal &amp; Audiophile Tham Chiếu<small>Stockfisch, Blue Note, Verve, Venus…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/?utm_source=guide_tab&utm_medium=internal&utm_campaign=may_hat_dia_than_cho_nguoi_moi" target="_blank">🎛️ Mâm Than Cho Người Mới Bắt Đầu<small>Turntable tích hợp Phono &amp; phụ kiện setup</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_nhac_ha_noi_sai_gon" target="_blank">🏙️ Ký Ức Hà Nội &amp; Sài Gòn Xưa<small>Saigon Super Sound 1965–75, Hà Nội Nhớ…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/qua-tang-dia-than-cao-cap/?utm_source=guide_tab&utm_medium=internal&utm_campaign=qua_tang_dia_than_cao_cap" target="_blank">🎁 Quà Tặng Đĩa Than Cao Cấp<small>Kèm gói quà nghệ thuật &amp; báo giá PDF</small></a>
+          </div>
         </div>
         <div class="guide-box">
           <h2>📖 Cẩm Nang Analog Audio &amp; Hue Sound Vinyl Care (Bài Viết Chuyên Sâu)</h2>
           <div class="guide-links-grid">
-            <a class="guide-link-card" href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" target="_blank">🌦️ Bảo quản đĩa than thời tiết Việt Nam<small>Chống nồm ẩm, chống mốc bìa &amp; cong phôi</small></a>
-            <a class="guide-link-card" href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" target="_blank">🫧 Đĩa than mới có cần rửa trước khi nghe?<small>Giải mã bụi vi mô &amp; rửa siêu âm Ultrasonic</small></a>
-            <a class="guide-link-card" href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" target="_blank">📦 Đóng gói 3 lớp chống rách mép đi tỉnh<small>Seam Splits Prevention &amp; giao hỏa tốc 2H</small></a>
-            <a class="guide-link-card" href="cam-nang/cach-chon-mam-than-dau-tien/" target="_blank">🎛️ Cách chọn mâm than đầu tiên<small>Belt-Drive, Phono tích hợp &amp; ngân sách hợp lý</small></a>
-            <a class="guide-link-card" href="cam-nang/phan-biet-kim-mm-va-mc/" target="_blank">💎 Phân biệt kim đĩa than MM và MC<small>Chất âm, độ bền mũi kim &amp; phối ghép Phono</small></a>
-            <a class="guide-link-card" href="cam-nang/giai-thich-thang-goldmine-grading/" target="_blank">🏅 Giải thích thang Goldmine Grading<small>Hiểu rõ Mới 100% (M), NM, VG+, VG, G+...</small></a>
+            <a class="guide-link-card" href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_bao_quan_dia_than" target="_blank">🌦️ Bảo quản đĩa than thời tiết Việt Nam<small>Chống nồm ẩm, chống mốc bìa &amp; cong phôi</small></a>
+            <a class="guide-link-card" href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_rua_dia_than_moi" target="_blank">🫧 Đĩa than mới có cần rửa trước khi nghe?<small>Giải mã bụi vi mô &amp; rửa siêu âm Ultrasonic</small></a>
+            <a class="guide-link-card" href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_dong_goi_3_lop" target="_blank">📦 Đóng gói 3 lớp chống rách mép đi tỉnh<small>Seam Splits Prevention &amp; giao hỏa tốc 2H</small></a>
+            <a class="guide-link-card" href="cam-nang/cach-chon-mam-than-dau-tien/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_chon_mam_than" target="_blank">🎛️ Cách chọn mâm than đầu tiên<small>Belt-Drive, Phono tích hợp &amp; ngân sách hợp lý</small></a>
+            <a class="guide-link-card" href="cam-nang/phan-biet-kim-mm-va-mc/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_kim_mm_mc" target="_blank">💎 Phân biệt kim đĩa than MM và MC<small>Chất âm, độ bền mũi kim &amp; phối ghép Phono</small></a>
+            <a class="guide-link-card" href="cam-nang/giai-thich-thang-goldmine-grading/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_goldmine_grading" target="_blank">🏅 Giải thích thang Goldmine Grading<small>Hiểu rõ Mới 100% (M), NM, VG+, VG, G+...</small></a>
           </div>
         </div>`,
-      statusMap: { 'Còn hàng': 'Còn hàng', 'Hết hàng': 'Hết hàng' },
-      condMap: { 'M (New seal)': 'Mới 100% (M)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
+      statusMap: { in_stock: 'Còn hàng', out_of_stock: 'Hết hàng' },
+      condMap: { mint_sealed: 'Mới 100% (M)', near_mint: 'NM', very_good_plus: 'VG+', very_good: 'VG', good_plus: 'G+', good: 'G', fair: 'F', poor: 'P' },
       moodMap: {
-        'Đêm muộn & Thư giãn': '🌙 Đêm muộn & Thư giãn',
-        'Hoài niệm & Nhạc xưa': '🍂 Hoài niệm & Nhạc xưa',
-        'Audiophile & Phê âm': '🎧 Audiophile & Phê âm',
-        'Năng lượng & Cuối tuần': '⚡ Năng lượng & Cuối tuần',
-        'Quà tặng tinh tế': '🎁 Quà tặng tinh tế',
-        'Cà phê sáng & Acoustic': '☕ Cà phê sáng & Acoustic'
+        late_night_chill: '🌙 Đêm muộn & Thư giãn',
+        nostalgic_classic: '🍂 Hoài niệm & Nhạc xưa',
+        audiophile_reference: '🎧 Audiophile & Phê âm',
+        weekend_upbeat: '⚡ Năng lượng & Cuối tuần',
+        refined_gifting: '🎁 Quà tặng tinh tế',
+        morning_coffee_acoustic: '☕ Cà phê sáng & Acoustic'
       },
       genreMap: {
-        'ALL': 'Tất cả thể loại', 'Tình khúc 1954–1975': 'Tình khúc 1954–1975',
-        'Nhạc Việt / Bolero': 'Trữ tình', 'Nhạc Việt trẻ': 'Nhạc Việt trẻ', 'Nhạc Việt': 'Nhạc Việt trẻ',
-        'Dân ca & Cách mạng': 'Dân ca & Cách mạng', 'Instrument': 'Instrument',
-        'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
-        'Rock & Metal': 'Rock & Metal', 'Pop & Disco': 'Pop & Disco', 'Classic & Soundtrack': 'Classic & OST'
+        ALL: 'Tất cả thể loại', love_songs_1954_1975: 'Tình khúc 1954–1975',
+        bolero_golden_oldies: 'Trữ tình', vietnamese_pop_modern: 'Nhạc Việt trẻ',
+        vietnamese_folk_patriotic: 'Dân ca & Cách mạng', instrumental: 'Instrument',
+        jazz_vocal: 'Jazz & Vocal', audiophile_reference: 'Audiophile',
+        rock_metal: 'Rock & Metal', pop_disco: 'Pop & Disco', classic_soundtrack: 'Classic & OST',
+        beginner: 'Người mới bắt đầu', mid_range: 'Trung cấp', audiophile: 'Audiophile',
+        record_cleaning: 'Vệ sinh đĩa', sleeves_protection: 'Bao lót & Bìa bảo vệ',
+        cartridge_stylus: 'Kim & Máng', calibration: 'Cân chỉnh', vinyl_care_service: 'Hue Sound Vinyl Care'
       },
       boleroDetail: 'Thể loại chi tiết: Bolero / Nhạc Vàng / Trữ Tình'
     },
@@ -1418,11 +1449,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tabVinyl: 'Vinyl (LP)', tabCd: 'CD / SACD', tabTurntable: 'Turntables',
       tabAccessory: 'Accessories & Vinyl Care', tabGuide: 'FAQs and Shipping',
       promoMarquee: '🚚 PROMO!!! Hurry — grab discounted prices for the first 10 orders (6 left)',
-      accPromoNote: '* Accessory discount applies only when purchased with a Vinyl LP or Turntable',
+      accPromoNote: '* Accessory discount when purchased with a Vinyl LP / Turntable — inbox us for consultation',
       btnContactOrder: '💬 Contact', btnShare: '📤 Share',
       toastShared: '✓ Product link copied to share!',
       cartBundleApplied: '✓ Accessory bundle discount applied (paired with Vinyl / Turntable).',
-      cartBundleNeed: '* Accessory discount applies only with a Vinyl LP or Turntable (regular price currently applied).',
+      cartBundleNeed: '* Accessory discount when purchased with a Vinyl LP / Turntable — inbox us for consultation (regular price currently applied).',
       contactTitle: '💬 Quick Order Inquiry',
       contactNote: '✓ Product details copied — click Open Zalo (Paste & Send) or Open WhatsApp (auto-filled)!',
       searchPh: '🔍 Search artist, album, 1954–1975, bolero/vinyl, label, SKU...',
@@ -1487,60 +1518,96 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         1. Prices listed are official reference prices and <strong>exclude 10% VAT</strong>.<br>
         2. This quotation is <strong>not a VAT tax invoice</strong>.<br>
         3. Vinyl records ship in 3-layer Seam Splits Prevention packaging with 2H express delivery in Hanoi & fast nationwide shipping.<br>
-        4. Accessory bundle discounts apply only when purchased with a Vinyl LP or Turntable. Contact Zalo <strong>09323.13918</strong> or WhatsApp <strong>+84 932 313 918</strong>.`,
+        4. Accessory bundle discounts apply when purchased with a Vinyl LP / Turntable — inbox Zalo <strong>09323.13918</strong> or WhatsApp <strong>+84 932 313 918</strong> for consultation.`,
       guideHtml: `
         <div class="guide-box">
           <h2>❓ Frequently Asked Questions (FAQs) – Analog Audio &amp; Shipping</h2>
           <details class="faq-acc" open>
             <summary>1. How to store vinyl records in Vietnam's humid tropical climate?</summary>
-            <p>Maintain 45–55% room humidity, store LPs vertically like books, and upgrade to Anti-Static Inner Sleeves to prevent mold and warping. <a href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" target="_blank">Read full guide &amp; related gear →</a></p>
+            <p>Maintain 45–55% room humidity, store LPs vertically like books, and upgrade to Anti-Static Inner Sleeves to prevent mold and warping. <a href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_bao_quan_dia_than" target="_blank">Read full guide &amp; related gear →</a></p>
           </details>
           <details class="faq-acc">
             <summary>2. Do brand-new sealed vinyl records need cleaning before playing?</summary>
-            <p>Yes — brushing with a Carbon Fiber brush or ultrasonic cleaning removes pressing release residue and paper dust for a quieter black background. <a href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" target="_blank">Read full guide →</a></p>
+            <p>Yes — brushing with a Carbon Fiber brush or ultrasonic cleaning removes pressing release residue and paper dust for a quieter black background. <a href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_rua_dia_than_moi" target="_blank">Read full guide →</a></p>
           </details>
           <details class="faq-acc">
             <summary>3. How does Hue Sound Express prevent Seam Splits during nationwide shipping?</summary>
-            <p>Every LP ships in 3-layer Seam Splits Prevention packaging (bubble wrap, rigid corner stiffeners, 12-inch vinyl mailer box) with 2H Hanoi express &amp; fast nationwide shipping. <a href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" target="_blank">See packaging standard →</a></p>
+            <p>Every LP ships in 3-layer Seam Splits Prevention packaging (bubble wrap, rigid corner stiffeners, 12-inch vinyl mailer box) with 2H Hanoi express &amp; fast nationwide shipping. <a href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_dong_goi_3_lop" target="_blank">See packaging standard →</a></p>
           </details>
           <details class="faq-acc">
             <summary>4. Accessory discount policy &amp; instant PDF quotes</summary>
-            <p><strong>* Accessory discounts apply only when purchased together with a Vinyl LP or Turntable.</strong> Export instant PDF quotations anytime (prices exclude 10% VAT).</p>
+            <p><strong>* Accessory discount when purchased with a Vinyl LP / Turntable — inbox us for consultation.</strong> Export instant PDF quotations anytime (prices exclude 10% VAT).</p>
           </details>
+        </div>
+        <div class="guide-box">
+          <h2>✨ 10 Curated Analog Audio Collections</h2>
+          <div class="guide-links-grid">
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-tet/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_nhac_tet" target="_blank">🌸 Lunar New Year &amp; Spring Vinyl<small>Festive Vietnamese spring classics</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-ngay-le/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_ngay_le" target="_blank">🎄 Holiday &amp; Christmas Vinyl<small>Noel, Christmas &amp; New Year concerts</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-vang-bolero/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_nhac_vang_bolero" target="_blank">🍂 Golden Oldies &amp; Bolero<small>Classic Vietnamese Bolero pressings</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_tinh_khuc_1954_1975" target="_blank">🎼 1954–1975 Love Songs<small>Pham Duy, Trinh Cong Son, Ngo Thuy Mien…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-viet-tre/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_nhac_viet_tre" target="_blank">⚡ Modern Vietnamese Vinyl<small>Saigon Soul Revival, My Tam, Ha Anh Tuan…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-instrument-hoa-tau/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_instrument_hoa_tau" target="_blank">🎹 Instrumental Vinyl &amp; CDs<small>Piano, Saxophone, Violin &amp; Traditional</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-jazz-audiophile/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_jazz_audiophile" target="_blank">🎷 Jazz, Vocal &amp; Audiophile<small>Stockfisch, Blue Note, Verve, Venus…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/?utm_source=guide_tab&utm_medium=internal&utm_campaign=may_hat_dia_than_cho_nguoi_moi" target="_blank">🎛️ Turntables for Beginners<small>Built-in Phono setups &amp; care gear</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/?utm_source=guide_tab&utm_medium=internal&utm_campaign=dia_than_nhac_ha_noi_sai_gon" target="_blank">🏙️ Vintage Hanoi &amp; Saigon Sounds<small>Saigon Super Sound 1965–75 &amp; Hanoi classics</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/qua-tang-dia-than-cao-cap/?utm_source=guide_tab&utm_medium=internal&utm_campaign=qua_tang_dia_than_cao_cap" target="_blank">🎁 Premium Vinyl Gifting<small>Artistic gift wrap &amp; corporate PDF quotes</small></a>
+          </div>
         </div>
         <div class="guide-box">
           <h2>📖 Analog Audio Guides &amp; Hue Sound Vinyl Care</h2>
           <div class="guide-links-grid">
-            <a class="guide-link-card" href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" target="_blank">🌦️ Tropical Climate Vinyl Care<small>Humidity control, sleeves &amp; anti-warp tips</small></a>
-            <a class="guide-link-card" href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" target="_blank">🫧 Cleaning New Sealed Vinyl<small>Removing factory residue &amp; static</small></a>
-            <a class="guide-link-card" href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" target="_blank">📦 3-Layer Seam Splits Prevention<small>Safe nationwide delivery standard</small></a>
-            <a class="guide-link-card" href="cam-nang/cach-chon-mam-than-dau-tien/" target="_blank">🎛️ Choosing Your First Turntable<small>Belt-drive, Built-in Phono &amp; budget guide</small></a>
-            <a class="guide-link-card" href="cam-nang/phan-biet-kim-mm-va-mc/" target="_blank">💎 MM vs. MC Phono Cartridges<small>Sound profile, stylus replacement &amp; matching</small></a>
-            <a class="guide-link-card" href="cam-nang/giai-thich-thang-goldmine-grading/" target="_blank">🏅 Goldmine Grading Standard<small>New seal (M), NM, VG+, VG explained</small></a>
+            <a class="guide-link-card" href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_bao_quan_dia_than" target="_blank">🌦️ Tropical Climate Vinyl Care<small>Humidity control, sleeves &amp; anti-warp tips</small></a>
+            <a class="guide-link-card" href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_rua_dia_than_moi" target="_blank">🫧 Cleaning New Sealed Vinyl<small>Removing factory residue &amp; static</small></a>
+            <a class="guide-link-card" href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_dong_goi_3_lop" target="_blank">📦 3-Layer Seam Splits Prevention<small>Safe nationwide delivery standard</small></a>
+            <a class="guide-link-card" href="cam-nang/cach-chon-mam-than-dau-tien/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_chon_mam_than" target="_blank">🎛️ Choosing Your First Turntable<small>Belt-drive, Built-in Phono &amp; budget guide</small></a>
+            <a class="guide-link-card" href="cam-nang/phan-biet-kim-mm-va-mc/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_kim_mm_mc" target="_blank">💎 MM vs. MC Phono Cartridges<small>Sound profile, stylus replacement &amp; matching</small></a>
+            <a class="guide-link-card" href="cam-nang/giai-thich-thang-goldmine-grading/?utm_source=guide_tab&utm_medium=internal&utm_campaign=guide_goldmine_grading" target="_blank">🏅 Goldmine Grading Standard<small>New seal (M), NM, VG+, VG explained</small></a>
           </div>
         </div>`,
-      statusMap: { 'Còn hàng': 'In Stock', 'Hết hàng': 'Out of Stock' },
-      condMap: { 'M (New seal)': 'New seal (M)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
+      statusMap: { in_stock: 'In Stock', out_of_stock: 'Out of Stock' },
+      condMap: { mint_sealed: 'New seal (M)', near_mint: 'NM', very_good_plus: 'VG+', very_good: 'VG', good_plus: 'G+', good: 'G', fair: 'F', poor: 'P' },
       moodMap: {
-        'Đêm muộn & Thư giãn': '🌙 Late Night & Chill',
-        'Hoài niệm & Nhạc xưa': '🍂 Nostalgic & Classic',
-        'Audiophile & Phê âm': '🎧 Audiophile Reference',
-        'Năng lượng & Cuối tuần': '⚡ Weekend & Upbeat',
-        'Quà tặng tinh tế': '🎁 Refined Gifting',
-        'Cà phê sáng & Acoustic': '☕ Morning Coffee & Acoustic'
+        late_night_chill: '🌙 Late Night & Chill',
+        nostalgic_classic: '🍂 Nostalgic & Classic',
+        audiophile_reference: '🎧 Audiophile Reference',
+        weekend_upbeat: '⚡ Weekend & Upbeat',
+        refined_gifting: '🎁 Refined Gifting',
+        morning_coffee_acoustic: '☕ Morning Coffee & Acoustic'
       },
       genreMap: {
-        'ALL': 'All Genres', 'Tình khúc 1954–1975': '1954–1975 Love Songs',
-        'Nhạc Việt / Bolero': 'Bolero', 'Nhạc Việt trẻ': 'Modern Vietnamese', 'Nhạc Việt': 'Modern Vietnamese',
-        'Dân ca & Cách mạng': 'Folk & Patriotic', 'Instrument': 'Instrument',
-        'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
-        'Rock & Metal': 'Rock & Metal', 'Pop & Disco': 'Pop & Disco', 'Classic & Soundtrack': 'Classic & OST'
+        ALL: 'All Genres', love_songs_1954_1975: '1954–1975 Love Songs',
+        bolero_golden_oldies: 'Bolero', vietnamese_pop_modern: 'Modern Vietnamese',
+        vietnamese_folk_patriotic: 'Folk & Patriotic', instrumental: 'Instrument',
+        jazz_vocal: 'Jazz & Vocal', audiophile_reference: 'Audiophile',
+        rock_metal: 'Rock & Metal', pop_disco: 'Pop & Disco', classic_soundtrack: 'Classic & OST',
+        beginner: 'Beginner', mid_range: 'Mid-Range', audiophile: 'Audiophile',
+        record_cleaning: 'Record Cleaning', sleeves_protection: 'Sleeves',
+        cartridge_stylus: 'Cartridge & Stylus', calibration: 'Calibration', vinyl_care_service: 'Hue Sound Vinyl Care'
       },
       boleroDetail: 'Detailed Genre: Bolero / Golden Oldies / Vietnamese Lyrical'
     }
   };
 
   const t = () => I18N[lang];
+
+  // Chuan hoa & luu tham so UTM ASCII (khong dau) de theo doi Google Analytics / Webhook sach se
+  function captureUtmParams() {
+    const sp = new URLSearchParams(window.location.search);
+    const clean = v => String(v || '').toLowerCase().replace(/[^a-z0-9_-]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 64);
+    const utm = {
+      utm_source: clean(sp.get('utm_source')),
+      utm_medium: clean(sp.get('utm_medium')),
+      utm_campaign: clean(sp.get('utm_campaign'))
+    };
+    if (utm.utm_source || utm.utm_medium || utm.utm_campaign) {
+      try { sessionStorage.setItem('hse_utm_v1', JSON.stringify(utm)); } catch (_) {}
+    }
+  }
+  function getStoredUtm() {
+    try { return JSON.parse(sessionStorage.getItem('hse_utm_v1') || '{}'); } catch (_) { return {}; }
+  }
+  captureUtmParams();
 
   let allProducts = [];
   let filteredProducts = [];
@@ -1562,7 +1629,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   const miniPlayer = document.getElementById('miniPlayer');
 
   function getMusicOrigin(item) {
-    if (/(nhạc việt|bolero|tình khúc|dân ca)/i.test(item.g) || /^(VN-|CD-VN-)/i.test(item.sku)) return 'VN';
+    if (['love_songs_1954_1975', 'bolero_golden_oldies', 'vietnamese_pop_modern', 'vietnamese_folk_patriotic'].includes(item.g)) return 'VN';
+    if (/^(VN-|CD-VN-)/i.test(item.sku)) return 'VN';
     if (/[ăâđêôơưĂÂĐÊÔƠƯáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ]/.test(`${item.a} ${item.t}`) || /(viollage|saigon)/i.test(item.a)) return 'VN';
     return 'INTL';
   }
@@ -1684,28 +1752,39 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const rawStatus = String(item.s || item.status || '').trim();
     const rawCond = String(item.cond || item.c || item.edition || '').trim();
 
-    // 1. Goldmine Grading Standard: M (New seal), NM, VG+, VG, G+, G, F, P
-    let cond = 'M (New seal)';
-    if (/^vg\+$/i.test(rawCond)) cond = 'VG+';
-    else if (/^vg$/i.test(rawCond)) cond = 'VG';
-    else if (/^g\+$/i.test(rawCond)) cond = 'G+';
-    else if (/^g$/i.test(rawCond)) cond = 'G';
-    else if (/^(f|fair)$/i.test(rawCond)) cond = 'F';
-    else if (/^(p|poor)$/i.test(rawCond)) cond = 'P';
-    else if (/\b(nm|mint)\b/i.test(rawCond)) cond = 'NM';
-    else cond = 'M (New seal)';
+    // 1. Goldmine Grading Standard (snake_case internal codes)
+    let cond = 'mint_sealed';
+    if (['mint_sealed','near_mint','very_good_plus','very_good','good_plus','good','fair','poor'].includes(rawCond)) cond = rawCond;
+    else if (/^vg\+$/i.test(rawCond)) cond = 'very_good_plus';
+    else if (/^vg$/i.test(rawCond)) cond = 'very_good';
+    else if (/^g\+$/i.test(rawCond)) cond = 'good_plus';
+    else if (/^g$/i.test(rawCond)) cond = 'good';
+    else if (/^(f|fair)$/i.test(rawCond)) cond = 'fair';
+    else if (/^(p|poor)$/i.test(rawCond)) cond = 'poor';
+    else if (/\b(nm|mint)\b/i.test(rawCond) && !/new\s*seal/i.test(rawCond)) cond = 'near_mint';
 
-    // 2. Trang thai kho (Availability): Con hang / Het hang
-    let st = 'Còn hàng';
-    if (price <= 0 || /(hết hàng|sắp có|đặt trước)/i.test(rawStatus)) {
-      st = 'Hết hàng';
+    // 2. Availability (snake_case: in_stock / out_of_stock)
+    let st = 'in_stock';
+    if (price <= 0 || /(out_of_stock|hết hàng|sắp có|đặt trước)/i.test(rawStatus)) {
+      st = 'out_of_stock';
     }
 
-    // Chuan hoa ten nghe si, the loai & hang dia
+    // 3. Genre & Mood snake_case normalization (ho tro ca du lieu cu neu fallback)
+    const genreAlias = {
+      'Tình khúc 1954–1975': 'love_songs_1954_1975', 'Nhạc Việt / Bolero': 'bolero_golden_oldies',
+      'Nhạc Việt trẻ': 'vietnamese_pop_modern', 'Nhạc Việt': 'vietnamese_pop_modern',
+      'Dân ca & Cách mạng': 'vietnamese_folk_patriotic', 'Instrument': 'instrumental',
+      'Jazz & Vocal': 'jazz_vocal', 'Audiophile & Khác': 'audiophile_reference',
+      'Rock & Metal': 'rock_metal', 'Pop & Disco': 'pop_disco', 'Classic & Soundtrack': 'classic_soundtrack',
+      'Người mới bắt đầu': 'beginner', 'Trung cấp': 'mid_range', 'Audiophile': 'audiophile',
+      'Vệ sinh đĩa': 'record_cleaning', 'Bao lót & Bìa bảo vệ': 'sleeves_protection',
+      'Kim & Máng': 'cartridge_stylus', 'Cân chỉnh': 'calibration', 'Hue Sound Vinyl Care': 'vinyl_care_service'
+    };
+    const rawG = String(item.g || '').trim();
+    const genreName = genreAlias[rawG] || rawG;
+
     let artistName = String(item.a || '').trim();
     if (/^nhiều ca sĩ$/i.test(artistName)) artistName = 'Nhiều nghệ sĩ';
-    let genreName = String(item.g || '').trim();
-    if (genreName === 'Nhạc Việt') genreName = 'Nhạc Việt trẻ';
     let lbl = String(item.l || '').trim();
     if (/^thời đại$/i.test(lbl)) lbl = 'Hãng Đĩa Thời Đại';
     else if (/^stockfish$/i.test(lbl)) lbl = 'Stockfisch Records';
@@ -1719,6 +1798,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       category: cat,
       g: genreName,
       mood: Array.isArray(item.mood) ? item.mood : (item.mood ? String(item.mood).split(/\s*;\s*/).filter(Boolean) : []),
+      kw: Array.isArray(item.kw) ? item.kw : [],
       a: artistName,
       t: String(item.t || ''),
       l: lbl,
@@ -1736,8 +1816,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       aud_track: String(item.aud_track || ''),
       tracklist: Array.isArray(item.tracklist) ? item.tracklist : [],
       specs: Array.isArray(item.specs) ? item.specs : [],
-      has_phono: String(item.has_phono || ''),
-      has_bluetooth: String(item.has_bluetooth || '')
+      has_phono: (/^(yes|có)$/i.test(String(item.has_phono || '')) ? 'yes' : 'no'),
+      has_bluetooth: (/^(yes|có)$/i.test(String(item.has_bluetooth || '')) ? 'yes' : 'no')
     };
   }
 
@@ -2025,9 +2105,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     let pills = [];
 
     if (activeCategory === 'vinyl' || activeCategory === 'cd') {
-      let genres = ['ALL', 'Tình khúc 1954–1975', 'Nhạc Việt / Bolero', 'Nhạc Việt trẻ', 'Dân ca & Cách mạng', 'Instrument', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
-      if (activeRegion === 'VN') genres = ['ALL', 'Tình khúc 1954–1975', 'Nhạc Việt / Bolero', 'Nhạc Việt trẻ', 'Dân ca & Cách mạng', 'Instrument'];
-      else if (activeRegion === 'INTL') genres = ['ALL', 'Instrument', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
+      let genres = ['ALL', 'love_songs_1954_1975', 'bolero_golden_oldies', 'vietnamese_pop_modern', 'vietnamese_folk_patriotic', 'instrumental', 'jazz_vocal', 'audiophile_reference', 'rock_metal', 'pop_disco', 'classic_soundtrack'];
+      if (activeRegion === 'VN') genres = ['ALL', 'love_songs_1954_1975', 'bolero_golden_oldies', 'vietnamese_pop_modern', 'vietnamese_folk_patriotic', 'instrumental'];
+      else if (activeRegion === 'INTL') genres = ['ALL', 'instrumental', 'jazz_vocal', 'audiophile_reference', 'rock_metal', 'pop_disco', 'classic_soundtrack'];
 
       pills = genres.map(g => {
         const lbl = L.genreMap[g] || g;
@@ -2036,20 +2116,20 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       pills.push(`<button class="pill pill-toggle ${onlyWithAudio ? 'active' : ''}" type="button" onclick="toggleAudioFilter(this)">${L.audioOnly}</button>`);
     } else if (activeCategory === 'turntable') {
       const opts = lang === 'en' ? [
-        ['ALL', 'All Turntables'], ['Người mới bắt đầu', 'Beginner'], ['Trung cấp', 'Mid-Range'],
-        ['Audiophile', 'Audiophile'], ['PHONO', 'Built-in Phono'], ['BT', 'Bluetooth'], ['MM', 'MM Cartridge']
+        ['ALL', 'All Turntables'], ['beginner', 'Beginner'], ['mid_range', 'Mid-Range'],
+        ['audiophile', 'Audiophile'], ['PHONO', 'Built-in Phono'], ['BT', 'Bluetooth'], ['MM', 'MM Cartridge']
       ] : [
-        ['ALL', 'Tất cả máy hát'], ['Người mới bắt đầu', 'Người mới bắt đầu'], ['Trung cấp', 'Trung cấp'],
-        ['Audiophile', 'Audiophile'], ['PHONO', 'Có Phono tích hợp'], ['BT', 'Có Bluetooth'], ['MM', 'Kim MM']
+        ['ALL', 'Tất cả máy hát'], ['beginner', 'Người mới bắt đầu'], ['mid_range', 'Trung cấp'],
+        ['audiophile', 'Audiophile'], ['PHONO', 'Có Phono tích hợp'], ['BT', 'Có Bluetooth'], ['MM', 'Kim MM']
       ];
       pills = opts.map(([v, lbl]) => `<button class="pill ${activeSubFilter === v ? 'active' : ''}" type="button" onclick="setSubFilter('${v}', this)">${lbl}</button>`);
     } else {
       const opts = lang === 'en' ? [
-        ['ALL', 'All'], ['Vệ sinh đĩa', 'Record Cleaning'], ['Bao lót & Bìa bảo vệ', 'Sleeves'],
-        ['Kim & Máng', 'Cartridge & Stylus'], ['Cân chỉnh', 'Calibration'], ['Hue Sound Vinyl Care', 'Hue Sound Vinyl Care']
+        ['ALL', 'All'], ['record_cleaning', 'Record Cleaning'], ['sleeves_protection', 'Sleeves'],
+        ['cartridge_stylus', 'Cartridge & Stylus'], ['calibration', 'Calibration'], ['vinyl_care_service', 'Hue Sound Vinyl Care']
       ] : [
-        ['ALL', 'Tất cả'], ['Vệ sinh đĩa', 'Vệ sinh đĩa'], ['Bao lót & Bìa bảo vệ', 'Bao lót & Bìa bảo vệ'],
-        ['Kim & Máng', 'Kim & Máng'], ['Cân chỉnh', 'Cân chỉnh'], ['Hue Sound Vinyl Care', 'Hue Sound Vinyl Care']
+        ['ALL', 'Tất cả'], ['record_cleaning', 'Vệ sinh đĩa'], ['sleeves_protection', 'Bao lót & Bìa bảo vệ'],
+        ['cartridge_stylus', 'Kim & Máng'], ['calibration', 'Cân chỉnh'], ['vinyl_care_service', 'Hue Sound Vinyl Care']
       ];
       pills = opts.map(([v, lbl]) => `<button class="pill ${activeSubFilter === v ? 'active' : ''}" type="button" onclick="setSubFilter('${escHtml(v)}', this)">${escHtml(lbl)}</button>`);
     }
@@ -2085,15 +2165,15 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
     const scoreCandidate = (item) => {
       let sc = 0;
-      if (item.s === 'Còn hàng') sc += 5;
+      if (item.s === 'in_stock') sc += 5;
       if (seedArtists.has(item.a)) sc += 6;
       if ((item.mood || []).some(m => seedMoods.has(m))) sc += 3;
       if (activeRegion !== 'ALL' && (item.category === 'vinyl' || item.category === 'cd') && getMusicOrigin(item) === activeRegion) sc += 2.5;
       if (item.img && item.img.startsWith('http')) sc += 2;
       if (item.aud && item.aud.startsWith('http')) sc += 1.5;
       if (item.category === 'turntable') {
-        if (avgPrice >= 1500000 && /Audiophile/i.test(item.g)) sc += 2;
-        else if (avgPrice < 1500000 && /(Người mới|Trung cấp)/i.test(item.g)) sc += 2;
+        if (avgPrice >= 1500000 && item.g === 'audiophile') sc += 2;
+        else if (avgPrice < 1500000 && (item.g === 'beginner' || item.g === 'mid_range')) sc += 2;
       }
       return sc;
     };
@@ -2118,22 +2198,18 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const pushPick = (item) => { if (item) picks.push(item); };
 
     if (activeCategory === 'vinyl') {
-      // 1 Phu kien bao quan dia than + 1 May hat mam than + 1 CD cung gu hoac Dich vu Hue Sound Vinyl Care
       pushPick(pickFrom(accs, used, cycle));
       pushPick(pickFrom(turntables, used, cycle));
       pushPick(pickFrom(cycle % 2 === 0 ? [...cds, ...cares] : [...cares, ...cds], used, cycle));
     } else if (activeCategory === 'cd') {
-      // 1 Dia than (Vinyl) cung gu + 1 Phu kien + 1 May hat mam than
       pushPick(pickFrom(vinyls, used, cycle));
       pushPick(pickFrom(accAndCare, used, cycle));
       pushPick(pickFrom(turntables, used, cycle));
     } else if (activeCategory === 'turntable') {
-      // 1 Dia than (Vinyl) Audiophile + 1 Phu kien can chinh/ve sinh + 1 Dich vu Hue Sound Vinyl Care (hoac CD)
       pushPick(pickFrom(vinyls, used, cycle));
       pushPick(pickFrom(accs, used, cycle));
       pushPick(pickFrom([...cares, ...cds], used, cycle));
     } else {
-      // Dang xem Phu kien -> Goi y 1 Dia than + 1 May hat + 1 Dia CD
       pushPick(pickFrom(vinyls, used, cycle));
       pushPick(pickFrom(turntables, used, cycle));
       pushPick(pickFrom(cds, used, cycle));
@@ -2153,7 +2229,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const pr = document.getElementById('priceFilter').value;
     const yr = document.getElementById('yearSort').value;
 
-    // Loc theo LOGIC VA (AND) nghiem ngat tren toan bo tieu chi
+    // Loc theo LOGIC VA (AND) nghiem ngat tren toan bo tieu chi + tim kiem theo keywords (ca si, nhac si, nhac cu, bai hat, chu de)
     filteredProducts = allProducts.filter(item => {
       if (activeCategory === 'accessory') {
         if (item.category !== 'accessory' && item.category !== 'care') return false;
@@ -2179,8 +2255,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
       if (activeSubFilter !== 'ALL') {
         if (activeCategory === 'turntable') {
-          if (activeSubFilter === 'PHONO' && item.has_phono !== 'Có') return false;
-          else if (activeSubFilter === 'BT' && item.has_bluetooth !== 'Có') return false;
+          if (activeSubFilter === 'PHONO' && item.has_phono !== 'yes') return false;
+          else if (activeSubFilter === 'BT' && item.has_bluetooth !== 'yes') return false;
           else if (activeSubFilter === 'MM' && !item.f.includes('MM')) return false;
           else if (!['PHONO','BT','MM'].includes(activeSubFilter) && item.g !== activeSubFilter) return false;
         } else if (item.g !== activeSubFilter) {
@@ -2191,15 +2267,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       if (onlyWithAudio && !(item.aud && item.aud.startsWith('http'))) return false;
 
       if (qWords.length > 0) {
-        const synBolero = /bolero/i.test(item.g) ? ' nhac vang nhac tru tinh nhac xua' : '';
+        const synBolero = item.g === 'bolero_golden_oldies' ? ' bolero nhac vang nhac tru tinh nhac xua' : '';
         const synCat = item.category === 'vinyl' ? ' dia than vinyl lp analog audio' : (item.category === 'turntable' ? ' may hat mam than turntable analog audio' : ' analog audio');
-        const hay = removeDiacritics(`${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.c} ${item.cond} ${item.s} ${item.y} ${(item.mood || []).join(' ')}${synBolero}${synCat}`);
+        const hay = removeDiacritics(`${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.cond} ${item.s} ${item.y} ${(item.mood || []).join(' ')} ${(item.kw || []).join(' ')} ${(item.tracklist || []).join(' ')}${synBolero}${synCat}`);
         if (!qWords.every(w => hay.includes(w))) return false;
       }
       return true;
     });
 
-    // Sap xep theo thoi gian phat hanh (Moi -> Cu / Cu -> Moi)
     if (yr === 'NEW_OLD') {
       filteredProducts.sort((a, b) => {
         const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
@@ -2222,14 +2297,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   };
 
   function statusClass(s) {
-    if (s === 'Còn hàng') return 'st-new';
+    if (s === 'in_stock') return 'st-new';
     return 'st-out';
   }
 
   function condClass(c) {
-    if (c === 'M (New seal)') return 'st-new';
-    if (c === 'NM' || c === 'VG+') return 'st-soon';
-    if (c === 'VG' || c === 'G+') return 'st-contact';
+    if (c === 'mint_sealed') return 'st-new';
+    if (c === 'near_mint' || c === 'very_good_plus') return 'st-soon';
+    if (c === 'very_good' || c === 'good_plus') return 'st-contact';
     return 'st-out';
   }
 
@@ -2244,7 +2319,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const L = t();
     const hasCover = item.img && item.img.startsWith('http');
     const hasAudio = item.aud && item.aud.startsWith('http');
-    const isWaitlist = (item.s === 'Hết hàng');
+    const isWaitlist = (item.s === 'out_of_stock');
     const isContactOnly = Boolean(item.contact_only);
     const isAccBundle = (item.category === 'accessory' || item.category === 'care');
     const showGenreOnCard = (item.category !== 'vinyl' && item.category !== 'cd');
@@ -2480,7 +2555,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const L = t();
     const item = allProducts.find(x => x.sku === sku);
     if (!item) return;
-    const isWaitlist = (item.s === 'Hết hàng');
+    const isWaitlist = (item.s === 'out_of_stock');
     const isContactOnly = Boolean(item.contact_only);
     const isAccBundle = (item.category === 'accessory' || item.category === 'care');
     const hasCover = item.img && item.img.startsWith('http');
@@ -2516,7 +2591,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <div style="font-size:.76rem; color:var(--muted); margin:6px 0;">
             ${L.detailSku} <strong>${skuEsc}</strong><br>
             ${L.detailFmt} ${escHtml(item.f)} ${item.l ? '• ' + escHtml(item.l) : ''} ${item.y ? '• ' + L.detailYear + ' ' + escHtml(item.y) : ''}
-            ${item.g === 'Nhạc Việt / Bolero' ? `<br><span>${escHtml(L.boleroDetail)}</span>` : ''}
+            ${item.g === 'bolero_golden_oldies' ? `<br><span>${escHtml(L.boleroDetail)}</span>` : ''}
           </div>
           <p style="font-size:.83rem; line-height:1.55; margin:8px 0;">${escHtml(item.d)}</p>
           <div style="font-size:1.2rem; font-weight:800; color:var(--copper); margin:8px 0;">
@@ -2532,7 +2607,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
             ${ctaBtn}
             ${hasAudio ? `<button class="btn btn-listen" type="button" onclick="toggleSample(null, '${skuEsc}')">${L.detailListen}</button>` : ''}
-            ${item.slug ? `<a class="btn btn-listen" href="p/${escHtml(item.slug)}/" target="_blank">${L.detailOpenPage}</a>` : ''}
+            ${item.slug ? `<a class="btn btn-listen" href="p/${escHtml(item.slug)}/?utm_source=modal&utm_medium=internal&utm_campaign=product_detail" target="_blank">${L.detailOpenPage}</a>` : ''}
             <button class="btn btn-listen" type="button" onclick="shareItemLink('${skuEsc}')">${L.btnShare}</button>
           </div>
         </div>
@@ -2552,12 +2627,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('detailModal').classList.add('open');
   };
 
-  // ===== CHIA SE LINK SAN PHAM & LIEN HE DAT HANG NHANH =====
+  // ===== CHIA SE LINK SAN PHAM (kem tham so UTM ASCII chuan) & LIEN HE DAT HANG NHANH =====
   window.shareItemLink = function(sku) {
     const item = allProducts.find(x => x.sku === sku);
     if (!item) return;
     const base = window.location.origin + window.location.pathname.replace(/index\.html$/i, '');
-    const shareUrl = item.slug ? `${base}p/${item.slug}/` : window.location.href;
+    const shareUrl = item.slug
+      ? `${base}p/${item.slug}/?utm_source=share&utm_medium=referral&utm_campaign=product_share`
+      : `${base}?utm_source=share&utm_medium=referral&utm_campaign=store_share`;
     const shareTitle = `${item.a} – ${item.t} | Hue Sound Express`;
     if (navigator.share) {
       navigator.share({ title: shareTitle, url: shareUrl }).catch(() => {});
@@ -2802,12 +2879,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           type: 'order',
-          mode: 'Đặt hàng qua Zalo',
+          mode: 'order_zalo',
           orderCode, name, phone,
           address: document.getElementById('custAddress').value.trim(),
           note: document.getElementById('custNote').value.trim(),
           giftWrap: document.getElementById('custGiftWrap').checked,
-          itemsText, total
+          itemsText, total,
+          ...getStoredUtm()
         })
       }).catch(() => {});
     }
@@ -2837,12 +2915,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           type: 'order',
-          mode: 'Đặt hàng qua WhatsApp',
+          mode: 'order_whatsapp',
           orderCode, name, phone,
           address: document.getElementById('custAddress').value.trim(),
           note: document.getElementById('custNote').value.trim(),
           giftWrap: document.getElementById('custGiftWrap').checked,
-          itemsText, total
+          itemsText, total,
+          ...getStoredUtm()
         })
       }).catch(() => {});
     }
