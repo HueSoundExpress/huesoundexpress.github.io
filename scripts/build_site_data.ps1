@@ -229,7 +229,8 @@ foreach ($it in $allItems) {
         }
     }
 
-    # Chuan hoa ten hang dia tranh trung lap
+    # Chuan hoa ten nghe si & hang dia tranh trung lap
+    if (([string]$it.a).Trim() -match '^(?i)nhiều ca sĩ$') { $it.a = "Nhiều nghệ sĩ" }
     $lbl = ([string]$it.l).Trim()
     if ($lbl -match '^(?i)thời đại$') { $lbl = "Hãng Đĩa Thời Đại" }
     elseif ($lbl -match '^(?i)stockfish$') { $lbl = "Stockfisch Records" }
@@ -311,15 +312,16 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("- **Brand Name:** Hue Sound Express")
 [void]$sb.AppendLine("- **Care & Technical Service:** Hue Sound Vinyl Care")
 [void]$sb.AppendLine("- **Slogan:** Where Sound Finds Its Color")
-[void]$sb.AppendLine("- **Positioning:** Chuyên phân phối trực tuyến đĩa than (Vinyl LP), đĩa CD/SACD, máy hát đĩa than (Turntable), phụ kiện audio và dịch vụ chăm sóc đĩa Hue Sound Vinyl Care tại Hà Nội & giao hàng toàn quốc.")
-[void]$sb.AppendLine("- **Ordering & Consultation (Zalo / Hotline):** 09323.13918 (https://zalo.me/0932313918)")
+[void]$sb.AppendLine("- **Positioning:** Chuyên phân phối trực tuyến **Analog Audio** chính hãng: Đĩa than (Vinyl LP), Đĩa CD/SACD, Máy hát đĩa than (Turntable), Phụ kiện Audiophile và dịch vụ chăm sóc đĩa Hue Sound Vinyl Care tại Hà Nội & giao hàng toàn quốc.")
+[void]$sb.AppendLine("- **Core Keywords & Genres:** Analog Audio, Đĩa than, Vinyl LP, Nhạc Việt trẻ, Nhạc Bolero (Nhạc Vàng / Nhạc Trữ Tình), Instrument (Hòa tấu nhạc cụ: Piano, Saxophone, Guitar, Violin), Jazz & Vocal, Audiophile, Rock & Metal, Pop & Disco, Classic & Soundtrack.")
+[void]$sb.AppendLine("- **Ordering & Consultation (Zalo / Hotline / WhatsApp):** 09323.13918 (https://zalo.me/0932313918 | https://wa.me/84932313918)")
 [void]$sb.AppendLine("- **Facebook Fanpage:** https://www.facebook.com/HueSoundExpress")
 [void]$sb.AppendLine("- **Instagram:** https://www.instagram.com/huesoundexpress/")
 [void]$sb.AppendLine("- **Website:** $SiteBaseUrl/")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("## 2. Operational & Quoting Policies")
 [void]$sb.AppendLine("- **Online-First Experience:** Hue Sound Express phục vụ giao hàng hỏa tốc 2H nội thành Hà Nội và ship toàn quốc với quy chuẩn đóng gói 3 lớp chống rách mép (Seam Splits Prevention). Trường hợp khách hàng có nhu cầu gặp trực tiếp để bàn giao đĩa/máy, vui lòng liên hệ Zalo 09323.13918 để được nhân sự hỗ trợ sắp xếp lịch hẹn.")
-[void]$sb.AppendLine("- **Pricing, Condition & Status:** Luôn hiển thị Giá niêm yết (nếu giá bằng 0 hiển thị Liên hệ). Tình trạng đĩa phân loại theo chuẩn quốc tế Goldmine Grading Standard: M (New seal), NM, VG+, VG, G+, G, F, P. Trạng thái kho gồm: Còn hàng, Hết hàng.")
+[void]$sb.AppendLine("- **Pricing, Condition & Status:** Luôn hiển thị giá niêm yết gốc & giá ưu đãi minh bạch (chưa bao gồm VAT 10%; nếu giá bằng 0 hiển thị Liên hệ). Tình trạng đĩa phân loại theo chuẩn quốc tế Goldmine Grading Standard: Mới 100% (M) / New seal (M), NM, VG+, VG, G+, G, F, P. Trạng thái kho gồm: Còn hàng, Hết hàng.")
 [void]$sb.AppendLine("- **Corporate & VIP Gift Quoting:** Hỗ trợ xuất bảng báo giá nhanh phục vụ khách hàng cá nhân/doanh nghiệp làm thủ tục tạm ứng, hỗ trợ gói quà nghệ thuật và viết thiệp tay.")
 [void]$sb.AppendLine("")
 [void]$sb.AppendLine("## 3. Hue Sound Vinyl Care - Maintenance Standards")
@@ -329,13 +331,19 @@ $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine("4. Nâng cấp bao lót chống tĩnh điện (Anti-Static Inner Sleeve) thay cho túi giấy thô.")
 [void]$sb.AppendLine("5. Vệ sinh đầu kim định kỳ (Audio-Technica AT607a) và cân chỉnh lực tì kim (Tracking Force) đúng chuẩn.")
 [void]$sb.AppendLine("")
-[void]$sb.AppendLine("## 4. Unified Product Catalog ($($allItems.Count) Items)")
-[void]$sb.AppendLine("| Category | SKU | Artist / Brand | Product / Album | Format / Spec | Condition | List Price (VND) | Status | URL |")
+[void]$sb.AppendLine("## 4. Unified Analog Audio Catalog ($($allItems.Count) Items)")
+[void]$sb.AppendLine("| Category | SKU | Artist / Brand | Product / Album | Format / Spec | Condition | Price (VND) | Status | URL |")
 [void]$sb.AppendLine("| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |")
 foreach ($it in $allItems) {
     $priceTxt = if ($it.p -gt 0) { $it.p.ToString("N0") } else { "Liên hệ" }
     $urlTxt = "$SiteBaseUrl/p/$($it.slug)/"
-    [void]$sb.AppendLine("| $($it.category) | $($it.sku) | $($it.a) | $($it.t) | $($it.f) | $($it.cond) | $priceTxt | $($it.s) | $urlTxt |")
+    $llmsPrefix = switch ($it.category) {
+        "vinyl" { "Đĩa than (Vinyl) " }
+        "cd" { "Đĩa CD " }
+        "turntable" { "Máy hát đĩa than " }
+        default { "" }
+    }
+    [void]$sb.AppendLine("| $($it.category) | $($it.sku) | $($it.a) | $llmsPrefix$($it.t) | $($it.f) | $($it.cond) | $priceTxt | $($it.s) | $urlTxt |")
 }
 [System.IO.File]::WriteAllText((Join-Path (Get-Location) "llms.txt"), $sb.ToString(), $utf8NoBom)
 
@@ -355,8 +363,22 @@ if ($GenerateProductPages) {
         $dir = Join-Path $pRoot $it.slug
         if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Path $dir -Force | Out-Null }
 
+        $seoPrefix = switch ($it.category) {
+            "vinyl" { "Đĩa than (Vinyl) " }
+            "cd" { "Đĩa CD / SACD " }
+            "turntable" { "Máy hát đĩa than (Turntable) " }
+            default { "Analog Audio – " }
+        }
+        $genreDisplay = switch ($it.g) {
+            "Nhạc Việt" { "Nhạc Việt trẻ" }
+            "Nhạc Việt / Bolero" { "Bolero / Nhạc Vàng / Trữ Tình" }
+            default { $it.g }
+        }
+        $extraSeoDesc = if ($it.g -eq "Nhạc Việt / Bolero") { " Thể loại Nhạc Bolero (Nhạc Vàng / Nhạc Trữ Tình) chuẩn Analog Audio." } elseif ($it.category -eq "vinyl") { " Đĩa than Vinyl chuẩn Analog Audio tại Hue Sound Express." } else { " Thiết bị & sản phẩm Analog Audio chính hãng tại Hue Sound Express." }
+
         $titleEsc = Escape-Html "$($it.a) – $($it.t)"
-        $descEsc = Escape-Html $it.d
+        $seoTitleEsc = Escape-Html "$seoPrefix$($it.t) – $($it.a)"
+        $descEsc = Escape-Html "$($it.d)$extraSeoDesc"
         $priceFmt = if ($it.p -gt 0) { "$($it.p.ToString('N0')) đ" } else { "Liên hệ báo giá" }
         $origPriceFmt = if ($it.p_orig -gt $it.p) { "$($it.p_orig.ToString('N0')) đ" } else { "" }
         $saveK = if ($it.p_orig -gt $it.p) { [int](($it.p_orig - $it.p) / 1000) } else { 0 }
@@ -369,11 +391,11 @@ if ($GenerateProductPages) {
         $pageUrl = "$SiteBaseUrl/p/$($it.slug)/"
         $ogImg = if ($it.img -match '^https?://') { $it.img } else { "$SiteBaseUrl/og-image.jpg" }
         $catLabel = switch ($it.category) {
-            "vinyl" { "Đĩa Than (Vinyl LP)" }
-            "cd" { "Đĩa CD / SACD" }
-            "turntable" { "Máy Hát / Mâm Than" }
-            "care" { "Hue Sound Vinyl Care" }
-            default { "Phụ Kiện Audio" }
+            "vinyl" { "Đĩa Than (Vinyl LP) • Analog Audio" }
+            "cd" { "Đĩa CD / SACD • Analog Audio" }
+            "turntable" { "Máy Hát / Mâm Than • Analog Audio" }
+            "care" { "Hue Sound Vinyl Care • Analog Audio" }
+            default { "Phụ Kiện Analog Audio" }
         }
 
         $trackHtml = ""
@@ -408,7 +430,7 @@ if ($GenerateProductPages) {
             $upsellHtml = "<section class='box'><h2>Gợi ý đi kèm từ Hue Sound Vinyl Care</h2><div class='up-grid'>$cards</div></section>"
         }
 
-        $chatRaw = "Chào Hue Sound Express, mình quan tâm sản phẩm: $($it.a) - $($it.t) (Mã: $($it.sku) | Tình trạng đĩa: $condVi | Giá: $priceFmt). Link: $pageUrl"
+        $chatRaw = "Chào Hue Sound Express, mình quan tâm sản phẩm: $seoPrefix$($it.a) - $($it.t) (Mã: $($it.sku) | Tình trạng đĩa: $condVi | Giá: $priceFmt). Link: $pageUrl"
         $chatEnc = [Uri]::EscapeDataString($chatRaw)
         $waHref = "https://wa.me/84932313918?text=$chatEnc"
         $zaloHref = "https://zalo.me/0932313918"
@@ -422,7 +444,7 @@ if ($GenerateProductPages) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$titleEsc | Hue Sound Express</title>
+  <title>$seoTitleEsc | Hue Sound Express – Analog Audio</title>
   <meta name="description" content="$descEsc">
   <meta name="theme-color" content="#E8D9B6">
   <link rel="canonical" href="$pageUrl">
@@ -430,7 +452,7 @@ if ($GenerateProductPages) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <meta property="og:title" content="$titleEsc – $priceFmt | Hue Sound Express">
+  <meta property="og:title" content="$seoTitleEsc – $priceFmt | Hue Sound Express">
   <meta property="og:description" content="$descEsc">
   <meta property="og:image" content="$ogImg">
   <meta property="og:url" content="$pageUrl">
@@ -439,10 +461,11 @@ if ($GenerateProductPages) {
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "$($it.a -replace '"','\"') - $($it.t -replace '"','\"')",
+    "name": "$($seoPrefix -replace '"','\"')$($it.a -replace '"','\"') - $($it.t -replace '"','\"')",
     "sku": "$($it.sku -replace '"','\"')",
+    "category": "$($catLabel -replace '"','\"') / $($genreDisplay -replace '"','\"')",
     "image": "$ogImg",
-    "description": "$($it.d -replace '"','\"')",
+    "description": "$($it.d -replace '"','\"')$($extraSeoDesc -replace '"','\"')",
     "brand": { "@type": "Brand", "name": "$($it.l -replace '"','\"')" },
     "offers": {
       "@type": "Offer",
@@ -537,10 +560,10 @@ if ($GenerateProductPages) {
     </div>
     <div class="hero">
       <div class="cover">
-        $(if ($it.img -match '^https?://') { "<img src='$(Escape-Html $it.img)' alt='$titleEsc'>" } else { "<div class='cover-art'><svg width='96' height='96' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='none' stroke='#B5541F' stroke-width='2' opacity='.5'/><circle cx='50' cy='50' r='34' fill='none' stroke='#C99A2E' stroke-width='1.5' opacity='.6'/><circle cx='50' cy='50' r='24' fill='none' stroke='#B5541F' stroke-width='1.5' opacity='.5'/><circle cx='50' cy='50' r='9' fill='#B5541F'/></svg><div style='font-weight:700;font-size:13px;'>$(Escape-Html $it.a)</div><div style='font-size:12px;color:#7A5C46;'>$(Escape-Html $it.t)</div></div>" })
+        $(if ($it.img -match '^https?://') { "<img src='$(Escape-Html $it.img)' alt='$seoTitleEsc'>" } else { "<div class='cover-art'><svg width='96' height='96' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='none' stroke='#B5541F' stroke-width='2' opacity='.5'/><circle cx='50' cy='50' r='34' fill='none' stroke='#C99A2E' stroke-width='1.5' opacity='.6'/><circle cx='50' cy='50' r='24' fill='none' stroke='#B5541F' stroke-width='1.5' opacity='.5'/><circle cx='50' cy='50' r='9' fill='#B5541F'/></svg><div style='font-weight:700;font-size:13px;'>$(Escape-Html $it.a)</div><div style='font-size:12px;color:#7A5C46;'>$(Escape-Html $it.t)</div></div>" })
       </div>
       <div>
-        <span class="badge">$catLabel • $(Escape-Html $it.g)</span>
+        <span class="badge">$catLabel • $(Escape-Html $genreDisplay)</span>
         <h1>$(Escape-Html $it.t)</h1>
         <div class="sub">$(Escape-Html $it.a)</div>
         <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
