@@ -366,9 +366,11 @@ if ($GenerateProductPages) {
             $upsellHtml = "<section class='box'><h2>Gợi ý đi kèm từ Hue Sound Vinyl Care</h2><div class='up-grid'>$cards</div></section>"
         }
 
-        $zaloText = [Uri]::EscapeDataString("Chào Hue Sound Express, mình quan tâm sản phẩm: $($it.a) - $($it.t) (Mã: $($it.sku) - Giá niêm yết: $priceFmt)")
-        $ctaLabel = if ($it.s -eq "Hết hàng" -or $it.s -eq "Sắp có hàng") { "🔔 Đăng ký báo khi hàng về" } else { "💬 Đặt mua / Báo giá qua Zalo" }
-        $ctaHref = if ($it.s -eq "Hết hàng" -or $it.s -eq "Sắp có hàng") { "../../?waitlist=$($it.sku)" } else { "https://zalo.me/0932313918?text=$zaloText" }
+        $chatRaw = "Chào Hue Sound Express, mình quan tâm sản phẩm: $($it.a) - $($it.t) (Mã: $($it.sku) | Tình trạng: $($it.cond) | Giá niêm yết: $priceFmt). Link: $pageUrl"
+        $chatEnc = [Uri]::EscapeDataString($chatRaw)
+        $waHref = "https://wa.me/84932313918?text=$chatEnc"
+        $zaloHref = "https://zalo.me/0932313918"
+        $chatHtmlVal = Escape-Html $chatRaw
 
         $schemaAvail = if ($it.s -eq "Còn hàng") { "https://schema.org/InStock" } else { "https://schema.org/OutOfStock" }
 
@@ -469,6 +471,17 @@ if ($GenerateProductPages) {
     .up-card:hover { border-color:var(--copper); transform:translateY(-2px); box-shadow:0 8px 18px -10px rgba(143,62,20,.35); }
     .up-card span { color:var(--copper); font-weight:700; font-size:13.5px; }
     footer { text-align:center; margin-top:34px; font-size:12px; color:var(--muted); }
+    .btn-wa { background:#25D366; color:#fff; border:none; cursor:pointer; }
+    .btn-wa:hover { background:#1EBE5D; }
+    .btn-zalo { background:#0068FF; color:#fff; border:none; cursor:pointer; }
+    .btn-zalo:hover { background:#0052CC; }
+    .chat-backdrop { position:fixed; inset:0; background:rgba(58,28,10,.5); backdrop-filter:blur(3px); z-index:90; display:none; align-items:center; justify-content:center; padding:16px; }
+    .chat-backdrop.open { display:flex; }
+    .chat-popup { background:#FAF2DE; border:1px solid rgba(142,66,24,.45); border-radius:16px; max-width:460px; width:100%; padding:18px; box-shadow:0 20px 50px rgba(58,28,10,.35); }
+    .chat-popup h3 { font-family:var(--serif); color:var(--copper-dark); font-size:17px; margin-bottom:6px; }
+    .chat-popup textarea { width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:#FFFDF7; color:var(--ink); font-family:inherit; font-size:13px; margin:8px 0 10px; }
+    .chat-pop-note { font-size:12px; color:#29523A; background:rgba(61,107,79,.12); padding:7px 10px; border-radius:8px; margin-bottom:10px; }
+    .chat-pop-actions { display:flex; flex-wrap:wrap; gap:8px; }
   </style>
 </head>
 <body>
@@ -489,11 +502,13 @@ if ($GenerateProductPages) {
         <p class="desc">$descEsc</p>
         <div class="price-row">
           <div><span class="price-label">Giá niêm yết</span><div class="price">$priceFmt</div></div>
+          <span class="status">$(Escape-Html $it.cond)</span>
           <span class="status">$(Escape-Html $it.s)</span>
         </div>
         <div class="cta-row">
           <a class="btn btn-copper" href="../../?add=$([Uri]::EscapeDataString($it.sku))">+ Thêm vào Giỏ / Báo giá</a>
-          <a class="btn btn-outline" href="$ctaHref" target="_blank">$ctaLabel</a>
+          <button class="btn btn-zalo" type="button" onclick="openZaloPopup()">💬 Chat Zalo ngay</button>
+          <a class="btn btn-wa" href="$waHref" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
         </div>
         $audioHtml
       </div>
@@ -501,8 +516,36 @@ if ($GenerateProductPages) {
     $trackHtml
     $specHtml
     $upsellHtml
-    <footer>© 2026 Hue Sound Express • Đóng gói 3 lớp chống rách mép • Hotline/Zalo: 09323.13918</footer>
+    <footer>© 2026 Hue Sound Express • Đóng gói 3 lớp chống rách mép • Hotline/Zalo & WhatsApp: 09323.13918</footer>
   </div>
+
+  <!-- Pop-up Chat Zalo kèm sẵn thông tin sản phẩm -->
+  <div class="chat-backdrop" id="zaloPopup" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="chat-popup">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h3>💬 Gửi thông tin sản phẩm qua Zalo</h3>
+        <button type="button" onclick="document.getElementById('zaloPopup').classList.remove('open')" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--ink);">✕</button>
+      </div>
+      <div class="chat-pop-note" id="copyStatus">✓ Đã tự động sao chép sẵn nội dung bên dưới — khi mở Zalo bạn chỉ cần Dán (Paste) & Gửi!</div>
+      <textarea id="zaloMsgBox" rows="4">$chatHtmlVal</textarea>
+      <div class="chat-pop-actions">
+        <a class="btn btn-zalo" href="$zaloHref" target="_blank" rel="noopener noreferrer" onclick="copyChatMsg()">Mở Zalo (09323.13918)</a>
+        <a class="btn btn-wa" id="waPopBtn" href="$waHref" target="_blank" rel="noopener noreferrer">Mở WhatsApp (Tự điền sẵn)</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function copyChatMsg() {
+      var el = document.getElementById('zaloMsgBox');
+      if (navigator.clipboard) navigator.clipboard.writeText(el.value).catch(function(){});
+      else { el.select(); try { document.execCommand('copy'); } catch(e){} }
+      document.getElementById('waPopBtn').href = 'https://wa.me/84932313918?text=' + encodeURIComponent(el.value);
+    }
+    function openZaloPopup() {
+      document.getElementById('zaloPopup').classList.add('open');
+      copyChatMsg();
+    }
+  </script>
 </body>
 </html>
 "@

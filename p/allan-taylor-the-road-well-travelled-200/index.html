@@ -94,6 +94,17 @@
     .up-card:hover { border-color:var(--copper); transform:translateY(-2px); box-shadow:0 8px 18px -10px rgba(143,62,20,.35); }
     .up-card span { color:var(--copper); font-weight:700; font-size:13.5px; }
     footer { text-align:center; margin-top:34px; font-size:12px; color:var(--muted); }
+    .btn-wa { background:#25D366; color:#fff; border:none; cursor:pointer; }
+    .btn-wa:hover { background:#1EBE5D; }
+    .btn-zalo { background:#0068FF; color:#fff; border:none; cursor:pointer; }
+    .btn-zalo:hover { background:#0052CC; }
+    .chat-backdrop { position:fixed; inset:0; background:rgba(58,28,10,.5); backdrop-filter:blur(3px); z-index:90; display:none; align-items:center; justify-content:center; padding:16px; }
+    .chat-backdrop.open { display:flex; }
+    .chat-popup { background:#FAF2DE; border:1px solid rgba(142,66,24,.45); border-radius:16px; max-width:460px; width:100%; padding:18px; box-shadow:0 20px 50px rgba(58,28,10,.35); }
+    .chat-popup h3 { font-family:var(--serif); color:var(--copper-dark); font-size:17px; margin-bottom:6px; }
+    .chat-popup textarea { width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:#FFFDF7; color:var(--ink); font-family:inherit; font-size:13px; margin:8px 0 10px; }
+    .chat-pop-note { font-size:12px; color:#29523A; background:rgba(61,107,79,.12); padding:7px 10px; border-radius:8px; margin-bottom:10px; }
+    .chat-pop-actions { display:flex; flex-wrap:wrap; gap:8px; }
   </style>
 </head>
 <body>
@@ -114,11 +125,13 @@
         <p class="desc">The Road Well Travelled – Allan Taylor (Audiophile &amp; Kh&#225;c). Định dạng LP chuẩn mực từ stockfish, t&#225;i hiện trung &#226;m d&#224;y dặn v&#224; mộc mạc.</p>
         <div class="price-row">
           <div><span class="price-label">Giá niêm yết</span><div class="price">Liên hệ báo giá</div></div>
+          <span class="status">M (New seal)</span>
           <span class="status">Hết h&#224;ng</span>
         </div>
         <div class="cta-row">
           <a class="btn btn-copper" href="../../?add=NN-ALLAN%20-THE%20R-LP-BLACK-STO">+ Thêm vào Giỏ / Báo giá</a>
-          <a class="btn btn-outline" href="../../?waitlist=NN-ALLAN -THE R-LP-BLACK-STO" target="_blank">🔔 Đăng ký báo khi hàng về</a>
+          <button class="btn btn-zalo" type="button" onclick="openZaloPopup()">💬 Chat Zalo ngay</button>
+          <a class="btn btn-wa" href="https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%20s%E1%BA%A3n%20ph%E1%BA%A9m%3A%20Allan%20Taylor%20-%20The%20Road%20Well%20Travelled%20(M%C3%A3%3A%20NN-ALLAN%20-THE%20R-LP-BLACK-STO%20%7C%20T%C3%ACnh%20tr%E1%BA%A1ng%3A%20M%20(New%20seal)%20%7C%20Gi%C3%A1%20ni%C3%AAm%20y%E1%BA%BFt%3A%20Li%C3%AAn%20h%E1%BB%87%20b%C3%A1o%20gi%C3%A1).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fallan-taylor-the-road-well-travelled-200%2F" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
         </div>
         <div class='audio-box'><div class='small'>Nghe thử 30s: <strong>The Last Train (feat. Jacob Dinesen, Hans-Joerg Maucksch, Lutz M&#246;ller &amp; Lea Morris)</strong></div><audio controls preload='none' src='https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/74/fa/cf/74facfad-7335-2aea-0d1b-31d8fcb485cb/mzaf_17218378597777501690.plus.aac.p.m4a' style='width:100%;margin-top:8px;'></audio></div>
       </div>
@@ -126,7 +139,35 @@
     <section class='box'><h2>Danh sách bài hát (Tracklist)</h2><ol class='tracks'><li>The Last Train (feat. Jacob Dinesen, Hans-Joerg Maucksch, Lutz M&#246;ller &amp; Lea Morris)</li><li>A Giant Red Balloon (feat. Jacob Dinesen, Hans-Joerg Maucksch, Lea Morris &amp; Beo Brockhausen)</li><li>The Joker&#39;s Hand (feat. Jacob Dinesen, Hans-Joerg Maucksch &amp; Lutz M&#246;ller)</li><li>A Way Backhome (feat. Jacob Dinesen, Hans-Joerg Maucksch &amp; Lea Morris)</li><li>Just The Way It Goes (feat. Jacob Dinesen, Hans-Joerg Maucksch, Lutz M&#246;ller &amp; Beo Brockhausen)</li><li>When Billy Plays the Banjo (feat. Nico Schneider, Lea Morris, Hans-Joerg Maucksch &amp; Jacob Dinesen)</li><li>I&#39;m Going Home (feat. Jacob Dinesen, Hans-Joerg Maucksch &amp; Lea Morris)</li><li>The Road Well Travelled (feat. Lutz M&#246;ller)</li></ol></section>
     
     <section class='box'><h2>Gợi ý đi kèm từ Hue Sound Vinyl Care</h2><div class='up-grid'><a class='up-card' href='../choi-soi-carbon-audioquest/'><strong>Chổi sợi Carbon chống tĩnh điện AudioQuest</strong><span>550,000 đ</span></a><a class='up-card' href='../tui-lot-chong-tinh-dien-50-chiec/'><strong>Bộ 50 t&#250;i l&#243;t chống tĩnh điện (Anti-Static Inner Sleeve)</strong><span>350,000 đ</span></a><a class='up-card' href='../dich-vu-rua-dia-sieu-am/'><strong>Dịch vụ Rửa đĩa si&#234;u &#226;m chuẩn Audiophile (K&#232;m t&#250;i l&#243;t mới)</strong><span>50,000 đ</span></a></div></section>
-    <footer>© 2026 Hue Sound Express • Đóng gói 3 lớp chống rách mép • Hotline/Zalo: 09323.13918</footer>
+    <footer>© 2026 Hue Sound Express • Đóng gói 3 lớp chống rách mép • Hotline/Zalo & WhatsApp: 09323.13918</footer>
   </div>
+
+  <!-- Pop-up Chat Zalo kèm sẵn thông tin sản phẩm -->
+  <div class="chat-backdrop" id="zaloPopup" onclick="if(event.target===this)this.classList.remove('open')">
+    <div class="chat-popup">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h3>💬 Gửi thông tin sản phẩm qua Zalo</h3>
+        <button type="button" onclick="document.getElementById('zaloPopup').classList.remove('open')" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--ink);">✕</button>
+      </div>
+      <div class="chat-pop-note" id="copyStatus">✓ Đã tự động sao chép sẵn nội dung bên dưới — khi mở Zalo bạn chỉ cần Dán (Paste) & Gửi!</div>
+      <textarea id="zaloMsgBox" rows="4">Ch&#224;o Hue Sound Express, m&#236;nh quan t&#226;m sản phẩm: Allan Taylor - The Road Well Travelled (M&#227;: NN-ALLAN -THE R-LP-BLACK-STO | T&#236;nh trạng: M (New seal) | Gi&#225; ni&#234;m yết: Li&#234;n hệ b&#225;o gi&#225;). Link: https://huesoundexpress.github.io/p/allan-taylor-the-road-well-travelled-200/</textarea>
+      <div class="chat-pop-actions">
+        <a class="btn btn-zalo" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer" onclick="copyChatMsg()">Mở Zalo (09323.13918)</a>
+        <a class="btn btn-wa" id="waPopBtn" href="https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%20s%E1%BA%A3n%20ph%E1%BA%A9m%3A%20Allan%20Taylor%20-%20The%20Road%20Well%20Travelled%20(M%C3%A3%3A%20NN-ALLAN%20-THE%20R-LP-BLACK-STO%20%7C%20T%C3%ACnh%20tr%E1%BA%A1ng%3A%20M%20(New%20seal)%20%7C%20Gi%C3%A1%20ni%C3%AAm%20y%E1%BA%BFt%3A%20Li%C3%AAn%20h%E1%BB%87%20b%C3%A1o%20gi%C3%A1).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fallan-taylor-the-road-well-travelled-200%2F" target="_blank" rel="noopener noreferrer">Mở WhatsApp (Tự điền sẵn)</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function copyChatMsg() {
+      var el = document.getElementById('zaloMsgBox');
+      if (navigator.clipboard) navigator.clipboard.writeText(el.value).catch(function(){});
+      else { el.select(); try { document.execCommand('copy'); } catch(e){} }
+      document.getElementById('waPopBtn').href = 'https://wa.me/84932313918?text=' + encodeURIComponent(el.value);
+    }
+    function openZaloPopup() {
+      document.getElementById('zaloPopup').classList.add('open');
+      copyChatMsg();
+    }
+  </script>
 </body>
 </html>

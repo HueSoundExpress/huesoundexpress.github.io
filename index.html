@@ -253,20 +253,20 @@ button, input, select, textarea { font-family: inherit; }
 .tagline .tl-line { display: block; }
 .tagline .tl-line:first-child { font-weight: 600; color: var(--ink); }
 
-/* Thanh 4 liên kết hãng: LUÔN 1 hàng ngang trên cả web và điện thoại */
+/* Thanh 5 liên kết hãng (Zalo, WhatsApp, Fanpage, Instagram, Google Maps): LUÔN 1 hàng ngang */
 .quick-links {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: .55rem;
-  width: 100%; max-width: 720px;
-  margin: 1.15rem auto 0;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .45rem;
+  width: 100%; max-width: 780px;
+  margin: 1.05rem auto 0;
 }
 .q-link {
-  display: inline-flex; align-items: center; justify-content: center; gap: .42rem;
+  display: inline-flex; align-items: center; justify-content: center; gap: .38rem;
   min-width: 0; white-space: nowrap; overflow: hidden;
-  padding: .58rem .55rem; border-radius: 999px;
+  padding: .52rem .45rem; border-radius: 999px;
   background: var(--paper-card); border: 1px solid var(--border);
-  font-size: .78rem; font-weight: 600; color: var(--ink);
+  font-size: .75rem; font-weight: 600; color: var(--ink);
   backdrop-filter: blur(6px);
   box-shadow: inset 0 1px 0 rgba(255,252,240,.72), 0 3px 10px rgba(90, 48, 18, .1);
   transition: all .22s;
@@ -278,18 +278,57 @@ button, input, select, textarea { font-family: inherit; }
   box-shadow: inset 0 1px 0 rgba(244, 219, 141, .42), 0 7px 18px -6px rgba(126, 50, 16, .55);
 }
 .q-link.priority:hover { color: #FFF7E8; background: var(--copper-grad-hover); }
-.brand-ico { width: 18px; height: 18px; flex-shrink: 0; display: block; }
+.brand-ico { width: 17px; height: 17px; flex-shrink: 0; display: block; }
 
-@media (max-width: 560px) {
-  .quick-links { gap: .45rem; max-width: 280px; }
-  .q-link { height: 44px; padding: 0; border-radius: 12px; gap: 0; }
+@media (max-width: 640px) {
+  .quick-links { gap: .38rem; max-width: 310px; }
+  .q-link { height: 42px; padding: 0; border-radius: 12px; gap: 0; }
   .q-link span { display: none; }
-  .brand-ico { width: 22px; height: 22px; }
-  .floating-tools { top: .65rem; right: .65rem; gap: .45rem; }
-  .fab-btn { height: 2.55rem; font-size: .74rem; }
-  .fab-btn.gramophone { width: 2.55rem; min-width: 2.55rem; }
-  .lang-toggle { height: 2.55rem; }
+  .brand-ico { width: 21px; height: 21px; }
+  .floating-tools { top: .55rem; right: .55rem; gap: .38rem; }
+  .fab-btn {
+    height: 2.35rem; font-size: .7rem;
+    background: rgba(250, 243, 226, 0.72);
+    box-shadow: 0 4px 12px -4px rgba(110, 60, 20, .25);
+  }
+  .fab-btn.gramophone { width: 2.35rem; min-width: 2.35rem; }
+  .lang-toggle { height: 2.35rem; }
+  /* Mobile: Giỏ hàng chỉ hiện icon mảnh & trong mờ để không che nội dung */
+  .fab-cart {
+    width: 2.55rem; min-width: 2.55rem; height: 2.55rem; padding: 0;
+    border-radius: 50%;
+    background: rgba(181, 84, 31, 0.76);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  .fab-cart #fabCartText { display: none; }
+  .fab-cart .cart-badge {
+    position: absolute; top: -4px; right: -4px;
+    min-width: 1.15rem; height: 1.15rem; font-size: .66rem; padding: 0 .25rem;
+    border: 1.5px solid #B5541F;
+  }
 }
+
+/* Bong bóng nổi hướng dẫn kéo lướt lên xuống (mảnh, trong mờ) */
+.fab-scroll-bubble {
+  position: fixed; right: .85rem; bottom: 1rem; z-index: 42;
+  display: inline-flex; align-items: center; gap: .38rem;
+  padding: .42rem .72rem; border-radius: 999px;
+  background: rgba(250, 243, 226, 0.78);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  border: 1px solid rgba(181, 84, 31, 0.35);
+  color: var(--copper-dark);
+  font-size: .68rem; font-weight: 600; line-height: 1.25;
+  cursor: pointer; max-width: 225px; text-align: left;
+  box-shadow: 0 6px 16px -6px rgba(90, 44, 16, .28);
+  transition: all .22s;
+}
+.fab-scroll-bubble:hover { background: rgba(255, 251, 240, 0.96); border-color: var(--copper); transform: translateY(-1px); }
+.fab-scroll-bubble svg { width: 16px; height: 16px; flex-shrink: 0; color: var(--copper); animation: bounce-ud 2s ease-in-out infinite; }
+@keyframes bounce-ud { 0%,100% { transform: translateY(-2px); } 50% { transform: translateY(2px); } }
+@media (max-width: 640px) {
+  .fab-scroll-bubble { right: .55rem; bottom: .75rem; padding: .34rem .58rem; font-size: .63rem; max-width: 175px; }
+}
+body.player-open .fab-scroll-bubble { bottom: 4.5rem; }
 
 /* ===== 5 Folders thu gọn: Xếp NGANG trên web (>= 768px) & Xếp DỌC trên điện thoại (< 768px) ===== */
 .cat-tabs {
@@ -389,43 +428,83 @@ button, input, select, textarea { font-family: inherit; }
   box-shadow: inset 0 1px 0 rgba(244, 219, 141, .36);
 }
 
-/* ===== Khu vực Tìm kiếm & Bộ lọc thông minh (1 dòng gọn trên Web) ===== */
+/* ===== Khu vực Tìm kiếm & Bộ lọc thông minh (Tất cả ô lọc trên CÙNG 1 HÀNG trên cả Web & Mobile) ===== */
 .controls-panel {
   background: var(--paper-card);
   border: 1px solid var(--border);
-  border-radius: 16px; padding: .85rem .95rem;
+  border-radius: 16px; padding: .8rem .9rem;
   backdrop-filter: blur(8px);
   box-shadow: 0 8px 24px -14px rgba(110, 60, 20, .25);
-  margin-bottom: 1rem;
+  margin-bottom: .95rem;
 }
-.search-row {
-  display: flex; flex-wrap: nowrap; gap: .42rem; align-items: center;
+.search-top-row {
+  display: flex; gap: .45rem; align-items: center;
 }
 .search-input {
-  flex: 1.4 1 180px; min-width: 150px;
-  padding: .56rem .78rem; border-radius: 9px;
+  flex: 1 1 auto; min-width: 0;
+  padding: .56rem .82rem; border-radius: 9px;
   border: 1px solid rgba(181, 84, 31, .32);
   background: rgba(255, 252, 244, .92);
-  color: var(--ink); font-size: .8rem;
+  color: var(--ink); font-size: .82rem;
 }
 .search-input::placeholder { color: var(--muted); opacity: .85; }
 .search-input:focus { outline: none; border-color: var(--copper); background: #FFFDF7; }
 
+.btn-reset-filters {
+  display: none; white-space: nowrap; flex-shrink: 0;
+  padding: .52rem .72rem; border-radius: 9px;
+  border: 1px solid var(--copper); background: rgba(181, 84, 31, .1);
+  color: var(--copper-dark); font-size: .74rem; font-weight: 700; cursor: pointer;
+}
+.btn-reset-filters.show { display: inline-flex; align-items: center; gap: .25rem; }
+.btn-reset-filters:hover { background: var(--copper); color: #FFF7E8; }
+
+/* Hàng chứa toàn bộ ô lọc thu nhỏ — LUÔN 1 HÀNG NGANG (không bao giờ xếp 5 hàng dọc) */
+.filter-select-strip {
+  display: flex; flex-wrap: nowrap; gap: .32rem; align-items: center;
+  margin-top: .55rem;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; padding-bottom: 2px;
+}
+.filter-select-strip::-webkit-scrollbar { display: none; }
+
 .select-ctrl {
-  flex: 0 1 142px; min-width: 0; max-width: 152px;
-  padding: .55rem .5rem; border-radius: 9px;
+  flex: 1 1 0; min-width: 96px;
+  padding: .46rem .38rem; border-radius: 8px;
   border: 1px solid rgba(181, 84, 31, .3);
-  background: rgba(255, 252, 244, .9);
-  color: var(--ink); font-size: .75rem; font-weight: 600;
+  background: rgba(255, 252, 244, .92);
+  color: var(--ink); font-size: .72rem; font-weight: 600;
   cursor: pointer; text-overflow: ellipsis;
 }
 .select-ctrl:focus { outline: none; border-color: var(--copper); }
 
-@media (max-width: 899px) {
-  .search-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
-  .search-input { grid-column: 1 / -1; width: 100%; }
-  .select-ctrl { max-width: none; width: 100%; }
+@media (max-width: 767px) {
+  .select-ctrl { flex: 0 0 auto; min-width: 82px; max-width: 118px; font-size: .69rem; padding: .42rem .34rem; }
 }
+
+/* Đường ngăn cách Kết thúc danh mục & Vòng lặp vô tận */
+.loop-divider {
+  grid-column: 1 / -1;
+  display: flex; align-items: center; gap: .75rem;
+  margin: 1.25rem 0 .5rem;
+  color: var(--copper-dark); font-size: .78rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.loop-divider::before, .loop-divider::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(to right, transparent, rgba(181, 84, 31, .45), transparent);
+}
+.loop-subhead {
+  grid-column: 1 / -1;
+  font-family: var(--serif); font-size: 1rem; font-weight: 600;
+  color: var(--ink); text-align: center; margin-bottom: .35rem;
+}
+.cart-order-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; margin-bottom: .5rem;
+}
+.cart-order-row .btn-block { margin-bottom: 0; }
+.btn-wa-solid { background: #25D366; color: #fff; }
+.btn-wa-solid:hover { background: #1EBE5D; }
 
 .filter-pills {
   display: flex; gap: .45rem; flex-wrap: wrap; margin-top: .75rem;
@@ -704,7 +783,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
 @media print {
   body { background: #fff !important; padding: 0 !important; color: #222 !important; }
-  body::before, body::after, .floating-tools, .page-shell, .mini-player, .backdrop, .drawer, .modal, .toast { display: none !important; }
+  body::before, body::after, .floating-tools, .fab-scroll-bubble, .page-shell, .mini-player, .backdrop, .drawer, .modal, .toast { display: none !important; }
   #quote-print-sheet {
     display: block !important;
     font-family: "Montserrat", Arial, sans-serif;
@@ -756,10 +835,19 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   </div>
 
   <button class="fab-btn fab-cart" type="button" onclick="openCart()" aria-label="Mở giỏ hàng và báo giá">
-    <span id="fabCartLabel">🛒 Giỏ & Báo giá</span>
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+    <span id="fabCartText">Giỏ & Báo giá</span>
     <span class="cart-badge" id="cartCount">0</span>
   </button>
 </div>
+
+<!-- Bong bóng nổi nhỏ: Kéo lướt lên xuống xem thêm sản phẩm -->
+<button class="fab-scroll-bubble" id="scrollBubble" type="button" onclick="nudgeScroll()" aria-label="Kéo lướt lên xuống để xem thêm sản phẩm">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 3v18"/><path d="M8 7l4-4 4 4"/><path d="M8 17l4 4 4-4"/>
+  </svg>
+  <span id="scrollBubbleText">Kéo lướt lên xuống để xem thêm sản phẩm</span>
+</button>
 
 <div class="page-shell">
   <header class="hero-header">
@@ -831,7 +919,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       <span class="tl-line" id="tlLine2">Nghe thử 30s, giá niêm yết minh bạch, xuất báo giá nhanh & đóng gói chuyên dụng, giao hàng toàn quốc</span>
     </p>
 
-    <!-- 4 liên kết hãng với logo chính thức, luôn xếp 1 hàng ngang -->
+    <!-- 5 liên kết hãng với logo chính thức, luôn xếp 1 hàng ngang -->
     <div class="quick-links">
       <a class="q-link priority" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer" title="Hotline / Zalo: 09323.13918">
         <svg class="brand-ico" viewBox="0 0 48 48" aria-hidden="true">
@@ -840,6 +928,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <text x="24" y="27.5" text-anchor="middle" fill="#0068FF" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="11.5">Zalo</text>
         </svg>
         <span id="qlZalo">Hotline/Zalo</span>
+      </a>
+      <a class="q-link" href="https://wa.me/84932313918" target="_blank" rel="noopener noreferrer" title="WhatsApp Hue Sound Express (+84 932 313 918)">
+        <svg class="brand-ico" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="12" fill="#25D366"/>
+          <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 5.33c-3.71 0-6.72 3.01-6.72 6.72 0 1.19.31 2.34.9 3.36l-.96 3.5 3.58-.94a6.7 6.7 0 0 0 3.2.82h.01c3.71 0 6.72-3.01 6.72-6.72a6.72 6.72 0 0 0-6.73-6.74zm0 12.28h-.01a5.54 5.54 0 0 1-2.83-.77l-.2-.12-2.12.56.57-2.07-.13-.21a5.54 5.54 0 0 1-.86-2.96c0-3.07 2.5-5.57 5.58-5.57 1.49 0 2.89.58 3.94 1.63a5.54 5.54 0 0 1 1.63 3.94c0 3.08-2.5 5.57-5.57 5.57z" fill="#fff"/>
+        </svg>
+        <span id="qlWa">WhatsApp</span>
       </a>
       <a class="q-link" href="https://www.facebook.com/HueSoundExpress" target="_blank" rel="noopener noreferrer" title="Fanpage Facebook Hue Sound Express">
         <svg class="brand-ico" viewBox="0 0 24 24" aria-hidden="true">
@@ -905,23 +1000,25 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     </button>
   </nav>
 
-  <!-- Dòng trôi hướng dẫn di chuyển xem sản phẩm -->
-  <div class="scroll-marquee" aria-hidden="true">
-    <div class="scroll-marquee-track" id="marqueeTrack">↕ Di chuyển lên xuống để xem sản phẩm &nbsp;•&nbsp; 🎧 Nghe thử 30s &nbsp;•&nbsp; ✨ Giá niêm yết minh bạch &nbsp;•&nbsp; 📦 Đóng gói 3 lớp toàn quốc &nbsp;•&nbsp; Hue Sound Express</div>
-  </div>
-
   <!-- KHU VỰC KỆ SẢN PHẨM -->
   <section id="catalogSection">
     <div class="controls-panel">
-      <div class="search-row">
+      <div class="search-top-row">
         <input type="text" id="searchInput" class="search-input"
                placeholder="🔍 Tìm ca sĩ, album, hãng đĩa, SKU..."
                oninput="resetAndRender()">
+        <button type="button" id="btnResetFilters" class="btn-reset-filters" onclick="resetAllFilters()">✕ Xóa lọc</button>
+      </div>
+      <!-- Toàn bộ ô lọc thu gọn trên CÙNG 1 HÀNG NGANG (dùng logic VÀ) -->
+      <div class="filter-select-strip">
+        <select id="artistFilter" class="select-ctrl" onchange="resetAndRender()">
+          <option value="ALL">Nghệ sĩ</option>
+        </select>
         <select id="labelFilter" class="select-ctrl" onchange="resetAndRender()">
           <option value="ALL">Hãng đĩa</option>
         </select>
         <select id="statusFilter" class="select-ctrl" onchange="resetAndRender()">
-          <option value="ALL" id="optStAll">Sẵn hàng / Hết hàng</option>
+          <option value="ALL" id="optStAll">Sẵn / Hết</option>
           <option value="Còn hàng" id="optStAvail">Sẵn hàng</option>
           <option value="Hết hàng" id="optStOut">Hết hàng</option>
         </select>
@@ -947,6 +1044,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <option value="OVER_2M" id="optPr4">Trên 2 triệu</option>
           <option value="CONTACT" id="optPrContact">Giá liên hệ</option>
         </select>
+        <select id="yearSort" class="select-ctrl" onchange="resetAndRender()">
+          <option value="DEFAULT" id="optYrDef">Phát hành</option>
+          <option value="NEW_OLD" id="optYrNew">Mới → Cũ</option>
+          <option value="OLD_NEW" id="optYrOld">Cũ → Mới</option>
+        </select>
       </div>
       <!-- Phân loại Nhạc Việt / Nhạc Quốc Tế -->
       <div class="region-bar" id="regionFilterBar"></div>
@@ -959,7 +1061,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     </div>
 
     <div class="catalog-grid" id="catalogGrid"></div>
-    <button class="load-more" id="loadMoreBtn" onclick="loadMore()" style="display:none;">Xem thêm sản phẩm ↓</button>
+    <div id="scrollSentinel" style="height:2px; width:100%;"></div>
   </section>
 
   <!-- KHU VỰC CẨM NANG & QUY CHUẨN (Render song ngữ VN/EN) -->
@@ -1010,9 +1112,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         <span id="giftWrapLabel">🎁 Kèm gói quà nghệ thuật & viết thiệp tay</span>
       </label>
 
-      <button class="btn btn-add btn-block" id="btnOrderZalo" type="button" onclick="placeOrderViaZalo()">💬 Đặt Hàng Qua Zalo</button>
+      <div class="cart-order-row">
+        <button class="btn btn-add btn-block" id="btnOrderZalo" type="button" onclick="placeOrderViaZalo()">💬 Đặt Qua Zalo</button>
+        <button class="btn btn-wa-solid btn-block" id="btnOrderWa" type="button" onclick="placeOrderViaWhatsApp()">💬 Đặt Qua WhatsApp</button>
+      </div>
       <button class="btn btn-outline-copper btn-block" id="btnPrintQuote" type="button" onclick="printQuotePDF()">📄 Xuất Báo Giá PDF (Tạm ứng / Doanh nghiệp)</button>
-      <p class="quote-hint" id="quoteHintText">* Trên bảng Báo giá PDF, tên hàng hóa hiển thị chung là <strong>“Đĩa than”</strong> hoặc <strong>“Đĩa CD”</strong>; chi tiết tên album, nghệ sĩ, mã SKU nằm ở cột <strong>Ghi chú</strong> cuối cùng (phần làm rõ, không xuất hiện trên hóa đơn).</p>
+      <p class="quote-hint" id="quoteHintText">* <strong>Lưu ý:</strong> Giá báo trên <strong>chưa bao gồm thuế VAT 10%</strong>. Trên bảng Báo giá PDF, tên hàng hóa hiển thị chung là <strong>“Đĩa than”</strong> hoặc <strong>“Đĩa CD”</strong>; chi tiết tên album, nghệ sĩ, mã SKU nằm ở cột <strong>Ghi chú</strong> cuối cùng (không xuất hiện trên hóa đơn).</p>
     </div>
   </div>
 </aside>
@@ -1088,43 +1193,50 @@ footer a { color: var(--copper-dark); font-weight: 600; }
      ========================================================= */
   const WEBHOOK_URL = "";
   const ZALO_PHONE = "0932313918";
+  const WHATSAPP_PHONE = "84932313918";
 
   // ===== TU DIEN SONG NGU VIET - ANH (VN / EN) =====
   let lang = (new URLSearchParams(window.location.search).get('lang') === 'en' || localStorage.getItem('hse_lang_v1') === 'en') ? 'en' : 'vi';
 
   const I18N = {
     vi: {
-      fabCart: '🛒 Giỏ & Báo giá',
+      fabCart: 'Giỏ & Báo giá',
       tlLine1: 'Phòng nghe số & Kho đĩa than, Đĩa CD, Máy hát và Phụ kiện Audiophile chính hãng',
       tlLine2: 'Nghe thử 30s, giá niêm yết minh bạch, xuất báo giá nhanh & đóng gói chuyên dụng, giao hàng toàn quốc',
-      qlZalo: 'Hotline/Zalo', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google Maps',
+      qlZalo: 'Hotline/Zalo', qlWa: 'WhatsApp', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Đĩa Than (LP)', tabCd: 'Đĩa CD / SACD', tabTurntable: 'Máy Hát / Mâm Than',
       tabAccessory: 'Phụ Kiện', tabGuide: 'Cẩm Nang & Giao Vận',
-      searchPh: '🔍 Tìm ca sĩ, album, hãng đĩa, SKU...',
-      marquee: '↕ Di chuyển lên xuống để xem sản phẩm  •  🎧 Nghe thử 30s  •  ✨ Giá niêm yết minh bạch  •  📦 Đóng gói 3 lớp toàn quốc  •  Hue Sound Express',
-      lblAll: 'Hãng đĩa', lblBrandAll: 'Thương hiệu',
-      stAll: 'Sẵn hàng / Hết hàng', stAvail: 'Sẵn hàng', stOut: 'Hết hàng',
+      searchPh: '🔍 Tìm ca sĩ, album, hãng đĩa, SKU (hỗ trợ gõ nhiều từ khóa)...',
+      resetFilters: '✕ Xóa lọc',
+      scrollBubble: 'Kéo lướt lên xuống để xem thêm sản phẩm',
+      artAll: 'Nghệ sĩ', artBrandAll: 'Thương hiệu',
+      lblAll: 'Hãng đĩa', lblBrandAll: 'Hãng / NSX',
+      stAll: 'Sẵn / Hết', stAvail: 'Sẵn hàng', stOut: 'Hết hàng',
       condAll: 'Tình trạng',
       moodAll: 'Mood',
       prAll: 'Mức giá', pr1: 'Dưới 1 triệu', pr2: '1 – 1,5 triệu', pr3: '1,5 – 2 triệu', pr4: 'Trên 2 triệu', prContact: 'Giá liên hệ',
+      yearDef: 'Phát hành', yearNew: 'Mới → Cũ', yearOld: 'Cũ → Mới',
       regionLbl: 'Phân loại:', regAll: 'Tất cả', regVn: 'Nhạc Việt', regIntl: 'Nhạc Quốc Tế',
       audioOnly: '🎧 Có nghe thử 30s',
-      statsHint: '💡 Bấm vào bìa hoặc tên sản phẩm để xem Tracklist & Thông số chi tiết',
-      loadMore: 'Xem thêm sản phẩm ↓',
+      statsHint: '💡 Các bộ lọc kết hợp theo logic VÀ • Bấm vào bìa để xem Tracklist',
+      endCat: 'Kết thúc danh mục',
+      relatedHead: '✨ Gợi ý sản phẩm liên quan',
+      loopBack: 'Quay lại đầu danh mục',
       priceLbl: 'Giá niêm yết', contactPrice: 'Liên hệ',
       btnAdd: '+ Giỏ / Báo giá', btnWait: '🔔 Báo khi về', btnPlay: '▶ 30s', btnPlaying: '⏸ Phát', btnStop: '⏹ Dừng phát',
-      emptyFilter: 'Không tìm thấy sản phẩm phù hợp bộ lọc. Bạn có thể xóa từ khóa hoặc nhắn Zalo <strong>09323.13918</strong> để Hue Sound Express tìm đĩa giúp bạn.',
-      footerContact: '📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • Dịch vụ kỹ thuật: <strong>Hue Sound Vinyl Care</strong>',
-      cartTitle: '🛒 Giỏ Hàng & Tạo Báo Giá', cartTotalLbl: 'Tổng giá niêm yết',
+      emptyFilter: 'Không tìm thấy sản phẩm khớp đồng thời tất cả bộ lọc đang chọn. Hãy bấm <strong>✕ Xóa lọc</strong> hoặc nhắn Zalo <strong>09323.13918</strong> để Hue Sound Express tìm giúp bạn.',
+      footerContact: '📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • WhatsApp: <a href="https://wa.me/84932313918" target="_blank">+84 932 313 918</a> • Kỹ thuật: <strong>Hue Sound Vinyl Care</strong>',
+      cartTitle: '🛒 Giỏ Hàng & Tạo Báo Giá', cartTotalLbl: 'Tổng giá niêm yết (chưa VAT 10%)',
       cartEmpty: 'Chưa có sản phẩm nào trong giỏ. Hãy chọn đĩa hoặc phụ kiện bạn yêu thích trên kệ.',
       formHeading: 'Thông tin đặt hàng / nhận báo giá (Không cần đăng nhập)',
       phName: 'Họ tên người nhận / Tên đơn vị *', phPhone: 'Số điện thoại / Zalo *',
       phAddr: 'Địa chỉ nhận hàng (hoặc để trống nếu chỉ xuất báo giá)',
       phNote: 'Ghi chú thêm (vd: nội dung thiệp tặng, khung giờ nhận...)',
       giftWrap: '🎁 Kèm gói quà nghệ thuật & viết thiệp tay',
-      btnOrderZalo: '💬 Đặt Hàng Qua Zalo',
+      btnOrderZalo: '💬 Đặt Qua Zalo',
+      btnOrderWa: '💬 Đặt Qua WhatsApp',
       btnQuote: '📄 Xuất Báo Giá PDF (Tạm ứng / Doanh nghiệp)',
-      quoteHint: '* Trên bảng Báo giá PDF, tên hàng hóa hiển thị chung là <strong>“Đĩa than”</strong> hoặc <strong>“Đĩa CD”</strong>; chi tiết tên album, nghệ sĩ, mã SKU nằm ở cột <strong>Ghi chú</strong> cuối cùng (phần làm rõ, không xuất hiện trên hóa đơn).',
+      quoteHint: '* <strong>Lưu ý:</strong> Giá báo trên <strong>chưa bao gồm thuế VAT 10%</strong>. Trên bảng Báo giá PDF, tên hàng hóa hiển thị chung là <strong>“Đĩa than”</strong> hoặc <strong>“Đĩa CD”</strong>; chi tiết tên album, nghệ sĩ, mã SKU nằm ở cột <strong>Ghi chú</strong> cuối cùng (không xuất hiện trên hóa đơn).',
       wlTitle: '🔔 Báo Tôi Khi Hàng Về',
       wlDesc: 'Để lại SĐT/Zalo, <strong>Hue Sound Express</strong> sẽ nhắn ưu tiên ngay khi tựa đĩa/sản phẩm này cập bến:',
       wlPhName: 'Tên của bạn *', wlPhPhone: 'Số điện thoại / Zalo *', wlPhNote: 'Ghi chú thêm (nếu có)',
@@ -1138,21 +1250,22 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       toastNeedInfo: 'Vui lòng nhập Họ tên và SĐT/Zalo!',
       toastOrderSent: c => `Đã gửi đơn ${c}! Hue Sound Express sẽ liên hệ ngay.`,
       toastZalo: 'Đã sao chép danh sách! Đang mở Zalo Hue Sound Express...',
+      toastWa: 'Đang mở WhatsApp Hue Sound Express kèm sẵn nội dung đơn hàng...',
       toastWlOk: 'Đã đăng ký! Hue Sound Express sẽ báo ngay khi hàng về.',
       playingTrack: tr => tr ? `Đang phát sample 30s: “${tr}”` : 'Đang phát bản nghe thử 30s • Hue Sound Express',
       playErr: 'Không thể phát trực tiếp – Nhắn Zalo 09323.13918 để nhận clip test!',
-      statsFmt: (s, t, a) => `Hiển thị <strong>${s}</strong> / <strong>${t}</strong> sản phẩm` + (a > 0 ? ` • 🎧 <strong>${a}</strong> đĩa có nghe thử 30s` : ''),
+      statsFmt: (s, t, a) => `Tìm thấy <strong>${t}</strong> sản phẩm phù hợp (đang hiển thị <strong>${s}</strong>)` + (a > 0 ? ` • 🎧 <strong>${a}</strong> đĩa có nghe thử 30s` : ''),
       qBrandSub: 'Where sound finds its color • Đĩa than, CD, Máy hát & Phụ kiện Audio',
       qCodeLbl: 'Số báo giá:', qDateLbl: 'Ngày lập:', qValidLbl: '<strong>Hiệu lực:</strong> 07 ngày kể từ ngày lập',
       qTitle: 'BẢNG BÁO GIÁ SẢN PHẨM', qThNo: 'STT', qThItem: 'Tên hàng hóa',
       qThDetail: 'Ghi chú (Không xuất hiện trên hóa đơn)', qThQty: 'SL', qThPrice: 'Đơn giá niêm yết', qThSub: 'Thành tiền',
-      qTotalLbl: 'Tổng cộng (Giá niêm yết):', qTo: 'Kính gửi:', qPhone: 'SĐT/Zalo:', qAddr: 'Địa chỉ:',
+      qTotalLbl: 'Tổng cộng (Chưa bao gồm VAT 10%):', qTo: 'Kính gửi:', qPhone: 'SĐT/Zalo:', qAddr: 'Địa chỉ:',
       qGift: 'Yêu cầu kèm theo: Gói quà nghệ thuật & viết thiệp tay', qDefaultCust: 'Quý khách hàng / Đơn vị',
       qNotesHtml: `<strong>Ghi chú & Điều khoản báo giá:</strong><br>
-        1. Đơn giá trên là giá niêm yết tham khảo phục vụ khách hàng cá nhân / đơn vị đối chiếu và làm thủ tục tạm ứng.<br>
+        1. Đơn giá trên là giá niêm yết tham khảo và <strong>chưa bao gồm thuế VAT 10%</strong>.<br>
         2. Bảng báo giá này <strong>không phải là hóa đơn giá trị gia tăng (VAT)</strong>.<br>
         3. Sản phẩm đĩa than được đóng gói tiêu chuẩn 3 lớp chống rách mép (Seam Splits Prevention), giao hỏa tốc 2H nội thành Hà Nội & chuyển phát nhanh toàn quốc.<br>
-        4. Mọi yêu cầu xác nhận tồn kho thực tế (đặc biệt với ấn bản chữ ký / số lượng giới hạn), vui lòng liên hệ Zalo <strong>09323.13918</strong>.`,
+        4. Mọi yêu cầu xác nhận tồn kho thực tế, vui lòng liên hệ Zalo <strong>09323.13918</strong> hoặc WhatsApp <strong>+84 932 313 918</strong>.`,
       guideHtml: `
         <div class="guide-box">
           <h2>🛠️ Hue Sound Vinyl Care – 5 Nguyên Tắc Bảo Quản Đĩa Than</h2>
@@ -1166,7 +1279,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <h2>📦 Quy Chuẩn Đóng Gói, Giao Vận & Báo Giá</h2>
           <div class="guide-item"><h3>Đóng gói 3 lớp chống rách mép (Seam Splits Prevention)</h3><p>Mỗi chiếc đĩa gửi đi tỉnh đều được bọc xốp nổ đa lớp, chèn tấm bìa carton cứng chống gập góc và đặt trong hộp mailer chuyên dụng cho đĩa than 12-inch.</p></div>
           <div class="guide-item"><h3>Giao hàng hỏa tốc & Toàn quốc</h3><p>Giao hỏa tốc 2H tại nội thành Hà Nội và chuyển phát nhanh toàn quốc. Khi cần tư vấn chuyên sâu hoặc sắp xếp hẹn bàn giao trực tiếp, vui lòng nhắn Zalo <strong>09323.13918</strong>.</p></div>
-          <div class="guide-item"><h3>Xuất Báo Giá nhanh & Gói quà nghệ thuật</h3><p>Bạn có thể chọn nhiều đĩa/phụ kiện vào Giỏ hàng và bấm <strong>Xuất Báo Giá PDF</strong> ngay lập tức để làm hồ sơ tạm ứng hoặc đối chiếu quà tặng. Hỗ trợ gói quà nghệ thuật & viết thiệp tay theo yêu cầu.</p></div>
+          <div class="guide-item"><h3>Xuất Báo Giá nhanh & Gói quà nghệ thuật</h3><p>Bạn có thể chọn nhiều đĩa/phụ kiện vào Giỏ hàng và bấm <strong>Xuất Báo Giá PDF</strong> ngay lập tức để làm hồ sơ tạm ứng hoặc đối chiếu quà tặng (giá báo chưa bao gồm VAT 10%). Hỗ trợ gói quà nghệ thuật & viết thiệp tay theo yêu cầu.</p></div>
           <div class="guide-item"><h3>Thang phân loại tình trạng đĩa Goldmine Grading Standard</h3><p><strong>M (New seal):</strong> Nguyên seal mới 100% • <strong>NM:</strong> Gần như mới • <strong>VG+:</strong> Rất tốt, nghe sạch • <strong>VG:</strong> Tốt, có xước nhẹ • <strong>G+ / G:</strong> Khá / Trung bình • <strong>F / P:</strong> Kém / Sưu tầm trưng bày.</p></div>
         </div>`,
       statusMap: { 'Còn hàng': 'Còn hàng', 'Hết hàng': 'Hết hàng' },
@@ -1186,37 +1299,43 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       }
     },
     en: {
-      fabCart: '🛒 Cart & Quote',
+      fabCart: 'Cart & Quote',
       tlLine1: 'Digital Listening Lounge & Curated Vinyl, CD, Turntables & Authentic Audiophile Accessories',
       tlLine2: '30s audio previews, transparent list prices, instant quotes & protective 3-layer nationwide shipping',
-      qlZalo: 'Hotline/Zalo', qlFb: 'Facebook', qlIg: 'Instagram', qlGg: 'Google Maps',
+      qlZalo: 'Hotline/Zalo', qlWa: 'WhatsApp', qlFb: 'Facebook', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Vinyl (LP)', tabCd: 'CD / SACD', tabTurntable: 'Turntables',
       tabAccessory: 'Accessories', tabGuide: 'Vinyl Care and Shipping',
-      searchPh: '🔍 Search artist, album, label, SKU...',
-      marquee: '↕ Scroll up and down to browse products  •  🎧 30s Audio Previews  •  ✨ Transparent List Prices  •  📦 3-Layer Nationwide Shipping  •  Hue Sound Express',
-      lblAll: 'Label', lblBrandAll: 'Brand',
-      stAll: 'In / Out of Stock', stAvail: 'In Stock', stOut: 'Out of Stock',
+      searchPh: '🔍 Search artist, album, label, SKU (multi-word AND search)...',
+      resetFilters: '✕ Reset',
+      scrollBubble: 'Scroll up & down to view more products',
+      artAll: 'Artist', artBrandAll: 'Brand',
+      lblAll: 'Label', lblBrandAll: 'Maker',
+      stAll: 'Stock', stAvail: 'In Stock', stOut: 'Out of Stock',
       condAll: 'Condition',
       moodAll: 'Mood',
       prAll: 'Price', pr1: 'Under 1M VND', pr2: '1M – 1.5M VND', pr3: '1.5M – 2M VND', pr4: 'Over 2M VND', prContact: 'Contact Price',
+      yearDef: 'Release', yearNew: 'Newest → Oldest', yearOld: 'Oldest → Newest',
       regionLbl: 'Origin:', regAll: 'All Music', regVn: 'Vietnamese Music', regIntl: 'International Music',
       audioOnly: '🎧 30s Preview Ready',
-      statsHint: '💡 Click any album cover or title for full Tracklist & Specifications',
-      loadMore: 'Load more items ↓',
+      statsHint: '💡 All filters combine with AND logic • Click any cover for Tracklist & Specs',
+      endCat: 'End of Category',
+      relatedHead: '✨ Related Recommendations',
+      loopBack: 'Back to Start of Category',
       priceLbl: 'List Price', contactPrice: 'Contact',
       btnAdd: '+ Cart / Quote', btnWait: '🔔 Notify Me', btnPlay: '▶ 30s', btnPlaying: '⏸ Playing', btnStop: '⏹ Stop',
-      emptyFilter: 'No items match your current filters. Try clearing your search or message Zalo <strong>09323.13918</strong> for personalized vinyl sourcing.',
-      footerContact: '📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • Technical Care: <strong>Hue Sound Vinyl Care</strong>',
-      cartTitle: '🛒 Cart & Instant Quote', cartTotalLbl: 'Total List Price',
+      emptyFilter: 'No items match all active filters simultaneously. Click <strong>✕ Reset</strong> or message Zalo <strong>09323.13918</strong> / WhatsApp for personalized sourcing.',
+      footerContact: '📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • WhatsApp: <a href="https://wa.me/84932313918" target="_blank">+84 932 313 918</a> • Care: <strong>Hue Sound Vinyl Care</strong>',
+      cartTitle: '🛒 Cart & Instant Quote', cartTotalLbl: 'Total List Price (Excl. 10% VAT)',
       cartEmpty: 'Your cart is empty. Browse our shelves to add vinyl, CDs, turntables or accessories.',
       formHeading: 'Order / Quote Details (No Login Required)',
       phName: 'Full Name / Organization *', phPhone: 'Phone Number / Zalo *',
       phAddr: 'Delivery Address (optional for PDF Quote only)',
       phNote: 'Additional notes (gift card message, preferred delivery window...)',
       giftWrap: '🎁 Add artistic gift wrapping & handwritten card',
-      btnOrderZalo: '💬 Place Order via Zalo',
+      btnOrderZalo: '💬 Order via Zalo',
+      btnOrderWa: '💬 Order via WhatsApp',
       btnQuote: '📄 Export PDF Quote (Reference / Advance)',
-      quoteHint: '* On the PDF Quote, item names display generically as <strong>“Vinyl Record”</strong> or <strong>“CD”</strong>; exact artist, album & SKU are listed in the final <strong>Notes</strong> column (for clarity only, not shown on invoice).',
+      quoteHint: '* <strong>Note:</strong> Quoted prices <strong>exclude 10% VAT</strong>. On the PDF Quote, item names display generically as <strong>“Vinyl Record”</strong> or <strong>“CD”</strong>; exact artist, album & SKU are listed in the final <strong>Notes</strong> column (not shown on invoice).',
       wlTitle: '🔔 Back-in-Stock Alert',
       wlDesc: 'Leave your phone/Zalo and <strong>Hue Sound Express</strong> will notify you first when this item arrives:',
       wlPhName: 'Your Name *', wlPhPhone: 'Phone / Zalo *', wlPhNote: 'Optional note',
@@ -1230,21 +1349,22 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       toastNeedInfo: 'Please enter your Name and Phone/Zalo!',
       toastOrderSent: c => `Order ${c} submitted! Hue Sound Express will contact you shortly.`,
       toastZalo: 'Order summary copied! Opening Hue Sound Express Zalo...',
+      toastWa: 'Opening Hue Sound Express WhatsApp with pre-filled order...',
       toastWlOk: 'Subscribed! We will notify you as soon as it arrives.',
       playingTrack: tr => tr ? `Playing 30s preview: “${tr}”` : 'Playing 30s audio preview • Hue Sound Express',
       playErr: 'Preview unavailable – Message Zalo 09323.13918 for a real turntable test clip!',
-      statsFmt: (s, t, a) => `Showing <strong>${s}</strong> of <strong>${t}</strong> items` + (a > 0 ? ` • 🎧 <strong>${a}</strong> with 30s preview` : ''),
+      statsFmt: (s, t, a) => `Found <strong>${t}</strong> matching items (showing <strong>${s}</strong>)` + (a > 0 ? ` • 🎧 <strong>${a}</strong> with 30s preview` : ''),
       qBrandSub: 'Where sound finds its color • Vinyl LP, CD, Turntables & Audiophile Accessories',
       qCodeLbl: 'Quote No:', qDateLbl: 'Date:', qValidLbl: '<strong>Validity:</strong> 07 days from issue date',
       qTitle: 'PRODUCT QUOTATION', qThNo: 'No.', qThItem: 'Item Category',
       qThDetail: 'Notes (Not shown on invoice)', qThQty: 'Qty', qThPrice: 'List Price', qThSub: 'Subtotal',
-      qTotalLbl: 'Total (List Price):', qTo: 'Prepared for:', qPhone: 'Phone/Zalo:', qAddr: 'Address:',
+      qTotalLbl: 'Total (Excl. 10% VAT):', qTo: 'Prepared for:', qPhone: 'Phone/Zalo:', qAddr: 'Address:',
       qGift: 'Add-on: Artistic gift wrapping & handwritten card', qDefaultCust: 'Valued Customer / Organization',
       qNotesHtml: `<strong>Quotation Terms & Notes:</strong><br>
-        1. Prices listed are official reference list prices for individual or corporate advance/reimbursement purposes.<br>
+        1. Prices listed are official reference list prices and <strong>exclude 10% VAT</strong>.<br>
         2. This quotation is <strong>not a VAT tax invoice</strong>.<br>
         3. Vinyl records ship in 3-layer Seam Splits Prevention packaging with 2H express delivery in Hanoi & fast nationwide shipping.<br>
-        4. For real-time stock confirmation (especially Signed / Limited editions), please message Zalo <strong>09323.13918</strong>.`,
+        4. For real-time stock confirmation, please message Zalo <strong>09323.13918</strong> or WhatsApp <strong>+84 932 313 918</strong>.`,
       guideHtml: `
         <div class="guide-box">
           <h2>🛠️ Hue Sound Vinyl Care – 5 Golden Vinyl Principles</h2>
@@ -1258,7 +1378,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <h2>📦 Packaging, Delivery & Quoting Standards</h2>
           <div class="guide-item"><h3>3-Layer Seam Splits Prevention Packaging</h3><p>Every shipped LP is wrapped in multi-layer bubble protection with corner stiffeners inside a dedicated 12-inch vinyl mailer box.</p></div>
           <div class="guide-item"><h3>Express Hanoi & Nationwide Delivery</h3><p>2H express delivery in Hanoi and insured fast shipping nationwide. For technical advice or arranging direct handoff, message Zalo <strong>09323.13918</strong>.</p></div>
-          <div class="guide-item"><h3>Instant PDF Quote & Artistic Gift Wrapping</h3><p>Add items to your cart and export a clean <strong>PDF Quotation</strong> in one click for reference or gifting approval. Artistic gift wrapping and handwritten notes available upon request.</p></div>
+          <div class="guide-item"><h3>Instant PDF Quote & Artistic Gift Wrapping</h3><p>Add items to your cart and export a clean <strong>PDF Quotation</strong> in one click for reference or gifting approval (prices exclude 10% VAT). Artistic gift wrapping and handwritten notes available upon request.</p></div>
           <div class="guide-item"><h3>Goldmine Grading Standard</h3><p><strong>M (New seal):</strong> Factory sealed mint • <strong>NM:</strong> Near Mint • <strong>VG+:</strong> Very Good Plus • <strong>VG:</strong> Very Good • <strong>G+ / G:</strong> Good Plus / Good • <strong>F / P:</strong> Fair / Poor.</p></div>
         </div>`,
       statusMap: { 'Còn hàng': 'In Stock', 'Hết hàng': 'Out of Stock' },
@@ -1283,11 +1403,15 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
   let allProducts = [];
   let filteredProducts = [];
+  let relatedProducts = [];
   let activeCategory = 'vinyl';
   let activeRegion = 'ALL'; // ALL | VN | INTL
   let activeSubFilter = 'ALL';
   let onlyWithAudio = false;
-  let visibleCount = 24;
+  let streamPhase = 'main'; // main | related
+  let streamCursor = 0;
+  let shownMainCount = 0;
+  let loopCycle = 0;
   let cart = JSON.parse(localStorage.getItem('hse_cart_v1') || '[]');
   let waitlistTarget = null;
 
@@ -1302,6 +1426,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     return 'INTL';
   }
 
+  function removeDiacritics(str) {
+    return String(str || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+  }
+
   window.toggleLang = function() {
     lang = (lang === 'vi') ? 'en' : 'vi';
     localStorage.setItem('hse_lang_v1', lang);
@@ -1313,10 +1441,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.documentElement.lang = lang;
     document.getElementById('langOptVi').classList.toggle('active', lang === 'vi');
     document.getElementById('langOptEn').classList.toggle('active', lang === 'en');
-    document.getElementById('fabCartLabel').innerText = L.fabCart;
+    document.getElementById('fabCartText').innerText = L.fabCart;
+    document.getElementById('scrollBubbleText').innerText = L.scrollBubble;
     document.getElementById('tlLine1').innerText = L.tlLine1;
     document.getElementById('tlLine2').innerText = L.tlLine2;
     document.getElementById('qlZalo').innerText = L.qlZalo;
+    document.getElementById('qlWa').innerText = L.qlWa;
     document.getElementById('qlFb').innerText = L.qlFb;
     document.getElementById('qlIg').innerText = L.qlIg;
     document.getElementById('qlGg').innerText = L.qlGg;
@@ -1326,7 +1456,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('tabLbl-accessory').innerText = L.tabAccessory;
     document.getElementById('tabLbl-guide').innerText = L.tabGuide;
     document.getElementById('searchInput').placeholder = L.searchPh;
-    document.getElementById('marqueeTrack').innerText = L.marquee;
+    document.getElementById('btnResetFilters').innerText = L.resetFilters;
     document.getElementById('optStAll').innerText = L.stAll;
     document.getElementById('optStAvail').innerText = L.stAvail;
     document.getElementById('optStOut').innerText = L.stOut;
@@ -1337,8 +1467,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('optPr3').innerText = L.pr3;
     document.getElementById('optPr4').innerText = L.pr4;
     document.getElementById('optPrContact').innerText = L.prContact;
+    document.getElementById('optYrDef').innerText = L.yearDef;
+    document.getElementById('optYrNew').innerText = L.yearNew;
+    document.getElementById('optYrOld').innerText = L.yearOld;
     document.getElementById('statsHint').innerText = L.statsHint;
-    document.getElementById('loadMoreBtn').innerText = L.loadMore;
     document.getElementById('footerContact').innerHTML = L.footerContact;
     document.getElementById('guideSection').innerHTML = L.guideHtml;
     document.getElementById('stopAudioBtn').innerText = L.btnStop;
@@ -1351,6 +1483,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('custNote').placeholder = L.phNote;
     document.getElementById('giftWrapLabel').innerText = L.giftWrap;
     document.getElementById('btnOrderZalo').innerText = L.btnOrderZalo;
+    document.getElementById('btnOrderWa').innerText = L.btnOrderWa;
     document.getElementById('btnPrintQuote').innerText = L.btnQuote;
     document.getElementById('quoteHintText').innerHTML = L.quoteHint;
     document.getElementById('wlModalTitle').innerText = L.wlTitle;
@@ -1360,11 +1493,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('wlNote').placeholder = L.wlPhNote;
     document.getElementById('wlSubmitBtn').innerText = L.wlBtn;
 
+    populateArtistFilter();
     populateLabelFilter();
     populateMoodFilter();
     renderRegionBar();
     renderSubFilters();
-    renderGrid();
+    resetAndRender();
     updateCartUI();
   }
 
@@ -1376,7 +1510,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       allProducts = raw.map(normalizeProduct);
       updateTabCounts();
       applyLang();
-      resetAndRender();
+      initInfiniteLoopObserver();
       handleUrlParams();
     })
     .catch(() => {
@@ -1464,10 +1598,38 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     el._t = setTimeout(() => el.classList.remove('show'), 2600);
   }
 
-  // ===== CHUYEN DANH MUC, HANG DIA, PHAN LOAI NHAC VIET / QUOC TE & BO LOC THONG MINH =====
+  // ===== CHUYEN DANH MUC, NGHE SI, HANG DIA, PHAN LOAI NHAC VIET / QUOC TE & BO LOC LOGIC VA =====
   function getItemLabelKey(item) {
     if (item.category === 'vinyl' || item.category === 'cd') return item.l;
     return item.a; // Thuong hieu cho May hat / Phu kien
+  }
+
+  function populateArtistFilter() {
+    const sel = document.getElementById('artistFilter');
+    if (!sel) return;
+    const prev = sel.value || 'ALL';
+    const L = t();
+    const counts = {};
+
+    allProducts.forEach(item => {
+      if (activeCategory === 'accessory') {
+        if (item.category !== 'accessory' && item.category !== 'care') return;
+      } else if (item.category !== activeCategory) {
+        return;
+      }
+      if ((activeCategory === 'vinyl' || activeCategory === 'cd') && activeRegion !== 'ALL') {
+        if (getMusicOrigin(item) !== activeRegion) return;
+      }
+      const key = String(item.a || '').trim();
+      if (!key) return;
+      counts[key] = (counts[key] || 0) + 1;
+    });
+
+    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'vi'));
+    const allLabel = (activeCategory === 'vinyl' || activeCategory === 'cd') ? L.artAll : L.artBrandAll;
+    sel.innerHTML = `<option value="ALL">${escHtml(allLabel)}</option>` +
+      sorted.map(([k, c]) => `<option value="${escHtml(k)}">${escHtml(k)} (${c})</option>`).join('');
+    sel.value = counts[prev] ? prev : 'ALL';
   }
 
   function populateLabelFilter() {
@@ -1491,7 +1653,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       counts[key] = (counts[key] || 0) + 1;
     });
 
-    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'vi'));
     const allLabel = (activeCategory === 'vinyl' || activeCategory === 'cd') ? L.lblAll : L.lblBrandAll;
     sel.innerHTML = `<option value="ALL">${escHtml(allLabel)}</option>` +
       sorted.map(([k, c]) => `<option value="${escHtml(k)}">${escHtml(k)} (${c})</option>`).join('');
@@ -1533,8 +1695,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('catalogSection').style.display = isGuide ? 'none' : 'block';
     document.getElementById('guideSection').classList.toggle('active', isGuide);
     if (!isGuide) {
+      document.getElementById('artistFilter').value = 'ALL';
       document.getElementById('labelFilter').value = 'ALL';
       document.getElementById('moodFilter').value = 'ALL';
+      populateArtistFilter();
       populateLabelFilter();
       populateMoodFilter();
       renderRegionBar();
@@ -1567,12 +1731,50 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   window.setRegion = function(reg) {
     activeRegion = reg;
     activeSubFilter = 'ALL';
+    populateArtistFilter();
     populateLabelFilter();
     populateMoodFilter();
     renderRegionBar();
     renderSubFilters();
     resetAndRender();
   };
+
+  window.resetAllFilters = function() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('artistFilter').value = 'ALL';
+    document.getElementById('labelFilter').value = 'ALL';
+    document.getElementById('statusFilter').value = 'ALL';
+    document.getElementById('condFilter').value = 'ALL';
+    document.getElementById('moodFilter').value = 'ALL';
+    document.getElementById('priceFilter').value = 'ALL';
+    document.getElementById('yearSort').value = 'DEFAULT';
+    activeRegion = 'ALL';
+    activeSubFilter = 'ALL';
+    onlyWithAudio = false;
+    populateArtistFilter();
+    populateLabelFilter();
+    populateMoodFilter();
+    renderRegionBar();
+    renderSubFilters();
+    resetAndRender();
+  };
+
+  function updateResetButtonState() {
+    const hasActive = (
+      document.getElementById('searchInput').value.trim() !== '' ||
+      document.getElementById('artistFilter').value !== 'ALL' ||
+      document.getElementById('labelFilter').value !== 'ALL' ||
+      document.getElementById('statusFilter').value !== 'ALL' ||
+      document.getElementById('condFilter').value !== 'ALL' ||
+      document.getElementById('moodFilter').value !== 'ALL' ||
+      document.getElementById('priceFilter').value !== 'ALL' ||
+      document.getElementById('yearSort').value !== 'DEFAULT' ||
+      activeRegion !== 'ALL' ||
+      activeSubFilter !== 'ALL' ||
+      onlyWithAudio
+    );
+    document.getElementById('btnResetFilters').classList.toggle('show', hasActive);
+  }
 
   function renderSubFilters() {
     const box = document.getElementById('subFilterPills');
@@ -1624,15 +1826,51 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     resetAndRender();
   };
 
+  function parseReleaseYear(item) {
+    const m = String(item.y || '').match(/(19|20)\d{2}/);
+    return m ? parseInt(m[0], 10) : 0;
+  }
+
+  function buildRelatedProducts() {
+    const mainSkus = new Set(filteredProducts.map(x => x.sku));
+    const seedArtists = new Set(filteredProducts.slice(0, 12).map(x => x.a).filter(Boolean));
+    const seedLabels = new Set(filteredProducts.slice(0, 12).map(x => x.l).filter(Boolean));
+    const seedMoods = new Set();
+    filteredProducts.slice(0, 12).forEach(x => (x.mood || []).forEach(m => seedMoods.add(m)));
+
+    let candidates = allProducts.filter(x => !mainSkus.has(x.sku));
+    if (candidates.length === 0) candidates = [...allProducts];
+
+    const scored = candidates.map(item => {
+      let score = 0;
+      if (seedArtists.has(item.a)) score += 4;
+      if (seedLabels.has(item.l)) score += 2.5;
+      if ((item.mood || []).some(m => seedMoods.has(m))) score += 2.5;
+      if (activeRegion !== 'ALL' && getMusicOrigin(item) === activeRegion) score += 1.5;
+      if (item.category !== activeCategory) score += 1.2; // Đa dạng gợi ý chéo (CD / Máy hát / Phụ kiện)
+      if (item.s === 'Còn hàng') score += 2;
+      if (item.img && item.img.startsWith('http')) score += 1;
+      if (item.aud && item.aud.startsWith('http')) score += 1;
+      return { item, score };
+    });
+
+    scored.sort((a, b) => b.score - a.score);
+    relatedProducts = scored.slice(0, 18).map(x => x.item);
+  }
+
   window.resetAndRender = function() {
-    visibleCount = 24;
-    const q = document.getElementById('searchInput').value.toLowerCase().trim();
+    updateResetButtonState();
+    const rawQ = document.getElementById('searchInput').value.trim();
+    const qWords = rawQ ? removeDiacritics(rawQ).split(/\s+/).filter(Boolean) : [];
+    const art = document.getElementById('artistFilter').value;
     const lbl = document.getElementById('labelFilter').value;
     const st = document.getElementById('statusFilter').value;
     const cf = document.getElementById('condFilter').value;
     const mf = document.getElementById('moodFilter').value;
     const pr = document.getElementById('priceFilter').value;
+    const yr = document.getElementById('yearSort').value;
 
+    // Loc theo LOGIC VA (AND) nghiem ngat tren toan bo tieu chi
     filteredProducts = allProducts.filter(item => {
       if (activeCategory === 'accessory') {
         if (item.category !== 'accessory' && item.category !== 'care') return false;
@@ -1644,6 +1882,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         if (getMusicOrigin(item) !== activeRegion) return false;
       }
 
+      if (art !== 'ALL' && item.a !== art) return false;
       if (lbl !== 'ALL' && getItemLabelKey(item) !== lbl) return false;
       if (st !== 'ALL' && item.s !== st) return false;
       if (cf !== 'ALL' && item.cond !== cf) return false;
@@ -1668,19 +1907,34 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
       if (onlyWithAudio && !(item.aud && item.aud.startsWith('http'))) return false;
 
-      if (q) {
-        const hay = `${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.c} ${item.cond} ${item.s} ${(item.mood || []).join(' ')}`.toLowerCase();
-        if (!hay.includes(q)) return false;
+      if (qWords.length > 0) {
+        const hay = removeDiacritics(`${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.c} ${item.cond} ${item.s} ${item.y} ${(item.mood || []).join(' ')}`);
+        if (!qWords.every(w => hay.includes(w))) return false;
       }
       return true;
     });
 
-    renderGrid();
-  };
+    // Sap xep theo thoi gian phat hanh (Moi -> Cu / Cu -> Moi)
+    if (yr === 'NEW_OLD') {
+      filteredProducts.sort((a, b) => {
+        const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
+        if (ya === 0 && yb === 0) return 0;
+        if (ya === 0) return 1;
+        if (yb === 0) return -1;
+        return yb - ya;
+      });
+    } else if (yr === 'OLD_NEW') {
+      filteredProducts.sort((a, b) => {
+        const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
+        if (ya === 0 && yb === 0) return 0;
+        if (ya === 0) return 1;
+        if (yb === 0) return -1;
+        return ya - yb;
+      });
+    }
 
-  window.loadMore = function() {
-    visibleCount += 24;
-    renderGrid();
+    buildRelatedProducts();
+    startEndlessStream();
   };
 
   function statusClass(s) {
@@ -1702,29 +1956,17 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     </div>`;
   }
 
-  function renderGrid() {
+  function renderCardHtml(item) {
     const L = t();
-    const grid = document.getElementById('catalogGrid');
-    const slice = filteredProducts.slice(0, visibleCount);
-    const audioReadyCount = filteredProducts.filter(x => x.aud && x.aud.startsWith('http')).length;
-    document.getElementById('resultCount').innerHTML = L.statsFmt(slice.length, filteredProducts.length, audioReadyCount);
+    const hasCover = item.img && item.img.startsWith('http');
+    const hasAudio = item.aud && item.aud.startsWith('http');
+    const isWaitlist = (item.s === 'Hết hàng');
+    const skuEsc = escHtml(item.sku);
+    const statusText = L.statusMap[item.s] || item.s;
+    const condText = L.condMap[item.cond] || item.cond;
+    const genreText = L.genreMap[item.g] || item.g || item.category;
 
-    if (slice.length === 0) {
-      grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:2.5rem 1rem; color:var(--muted);">${L.emptyFilter}</div>`;
-      document.getElementById('loadMoreBtn').style.display = 'none';
-      return;
-    }
-
-    grid.innerHTML = slice.map(item => {
-      const hasCover = item.img && item.img.startsWith('http');
-      const hasAudio = item.aud && item.aud.startsWith('http');
-      const isWaitlist = (item.s === 'Hết hàng');
-      const skuEsc = escHtml(item.sku);
-      const statusText = L.statusMap[item.s] || item.s;
-      const condText = L.condMap[item.cond] || item.cond;
-      const genreText = L.genreMap[item.g] || item.g || item.category;
-
-      return `
+    return `
       <article class="card">
         <div>
           <div class="card-top">
@@ -1759,10 +2001,149 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           </div>
         </div>
       </article>`;
-    }).join('');
-
-    document.getElementById('loadMoreBtn').style.display = visibleCount < filteredProducts.length ? 'block' : 'none';
   }
+
+  function updateResultStats() {
+    const L = t();
+    const audioReadyCount = filteredProducts.filter(x => x.aud && x.aud.startsWith('http')).length;
+    const shown = Math.min(shownMainCount, filteredProducts.length);
+    document.getElementById('resultCount').innerHTML = L.statsFmt(shown, filteredProducts.length, audioReadyCount);
+  }
+
+  // ===== VONG LAP VO TAN: Ket thuc danh muc -> Goi y lien quan -> Quay lai vong lap =====
+  let lastAppendTs = 0;
+
+  function startEndlessStream() {
+    const L = t();
+    const grid = document.getElementById('catalogGrid');
+    grid.innerHTML = '';
+    streamPhase = 'main';
+    streamCursor = 0;
+    shownMainCount = 0;
+    loopCycle = 0;
+
+    if (filteredProducts.length === 0) {
+      updateResultStats();
+      grid.insertAdjacentHTML('beforeend', `<div style="grid-column:1/-1; text-align:center; padding:1.6rem 1rem .6rem; color:var(--muted);">${L.emptyFilter}</div>`);
+      streamPhase = 'related';
+      appendNextBatch(true);
+      return;
+    }
+
+    appendNextBatch(true);
+  }
+
+  function appendNextBatch(forceInitial) {
+    if (activeCategory === 'guide') return;
+    const now = Date.now();
+    if (!forceInitial && now - lastAppendTs < 240) return;
+    lastAppendTs = now;
+
+    const L = t();
+    const grid = document.getElementById('catalogGrid');
+    if (!grid) return;
+
+    // Giu DOM nhe khi khach keo qua nhieu vong lap lien tuc
+    if (grid.children.length > 420) {
+      while (grid.children.length > 260) {
+        grid.removeChild(grid.firstElementChild);
+      }
+    }
+
+    if (streamPhase === 'main') {
+      const batch = filteredProducts.slice(streamCursor, streamCursor + 24);
+      if (batch.length > 0) {
+        grid.insertAdjacentHTML('beforeend', batch.map(renderCardHtml).join(''));
+        streamCursor += batch.length;
+        if (loopCycle === 0) {
+          shownMainCount = streamCursor;
+          updateResultStats();
+        }
+      }
+      if (streamCursor >= filteredProducts.length) {
+        streamPhase = 'related';
+        streamCursor = 0;
+        // Neu danh muc chinh rat ngan (< 6 sp), hien ngay vach Ket thuc danh muc & Goi y ben duoi
+        if (forceInitial && filteredProducts.length <= 6 && relatedProducts.length > 0) {
+          appendRelatedChunk();
+        }
+      }
+    } else if (streamPhase === 'related') {
+      appendRelatedChunk();
+    }
+  }
+
+  function appendRelatedChunk() {
+    const L = t();
+    const grid = document.getElementById('catalogGrid');
+    if (relatedProducts.length === 0) {
+      // Khong co goi y ngoai danh muc -> quay lai vong lap danh muc chinh
+      if (filteredProducts.length > 0) {
+        loopCycle++;
+        streamPhase = 'main';
+        streamCursor = 0;
+        grid.insertAdjacentHTML('beforeend', `<div class="loop-divider">↻ ${escHtml(L.loopBack)}</div>`);
+        const firstBatch = filteredProducts.slice(0, 12);
+        grid.insertAdjacentHTML('beforeend', firstBatch.map(renderCardHtml).join(''));
+        streamCursor = firstBatch.length;
+      }
+      return;
+    }
+
+    if (streamCursor === 0) {
+      grid.insertAdjacentHTML('beforeend',
+        `<div class="loop-divider">${escHtml(L.endCat)}</div>` +
+        `<div class="loop-subhead">${escHtml(L.relatedHead)}</div>`
+      );
+    }
+
+    const batch = relatedProducts.slice(streamCursor, streamCursor + 12);
+    if (batch.length > 0) {
+      grid.insertAdjacentHTML('beforeend', batch.map(renderCardHtml).join(''));
+      streamCursor += batch.length;
+    }
+
+    if (streamCursor >= relatedProducts.length) {
+      // Het goi y -> tao vong lap quay lai de khach keo luot khong bao gio co diem cuoi
+      loopCycle++;
+      if (filteredProducts.length > 0) {
+        streamPhase = 'main';
+        streamCursor = 0;
+        grid.insertAdjacentHTML('beforeend', `<div class="loop-divider">↻ ${escHtml(L.loopBack)}</div>`);
+      } else {
+        streamPhase = 'related';
+        streamCursor = 0;
+      }
+    }
+  }
+
+  let loopObserver = null;
+  function initInfiniteLoopObserver() {
+    const sentinel = document.getElementById('scrollSentinel');
+    if (!sentinel) return;
+    if (loopObserver) loopObserver.disconnect();
+    if ('IntersectionObserver' in window) {
+      loopObserver = new IntersectionObserver(entries => {
+        if (entries.some(e => e.isIntersecting)) {
+          appendNextBatch(false);
+        }
+      }, { rootMargin: '420px 0px' });
+      loopObserver.observe(sentinel);
+    }
+    window.addEventListener('scroll', () => {
+      if (activeCategory === 'guide') return;
+      const rect = sentinel.getBoundingClientRect();
+      if (rect.top < window.innerHeight + 360) {
+        appendNextBatch(false);
+      }
+    }, { passive: true });
+  }
+
+  window.nudgeScroll = function(ev) {
+    const step = Math.round(window.innerHeight * 0.72);
+    const goUp = ev && ev.shiftKey;
+    window.scrollBy({ top: goUp ? -step : step, behavior: 'smooth' });
+  };
 
   window._fbSvg = `<div class="cover-fallback"><svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="26" stroke="#B5541F" stroke-width="2" opacity=".5"/><circle cx="32" cy="32" r="6" fill="#B5541F"/></svg><span>HUE SOUND</span></div>`;
 
@@ -1783,6 +2164,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (btn) { btn.classList.add('playing'); btn.innerText = L.btnPlaying; }
     logoWrap.classList.add('playing');
     miniPlayer.classList.add('show');
+    document.body.classList.add('player-open');
     document.getElementById('playerTitle').innerText = `${item.a} – ${item.t}`;
     document.getElementById('playerStatus').innerText = L.playingTrack(item.aud_track);
 
@@ -1801,6 +2183,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     audioEl.currentTime = 0;
     if (!window._isBgMusicPlaying) logoWrap.classList.remove('playing');
     miniPlayer.classList.remove('show');
+    document.body.classList.remove('player-open');
     if (activeAudioBtn) {
       activeAudioBtn.classList.remove('playing');
       activeAudioBtn.innerText = t().btnPlay;
@@ -2030,7 +2413,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         ? `Hello Hue Sound Express, here is my order / quote request (${orderCode}):`
         : `Chào Hue Sound Express, mình gửi yêu cầu đơn hàng / báo giá (${orderCode}):`,
       ...lines,
-      `${lang === 'en' ? 'Total List Price' : 'Tổng niêm yết'}: ${total.toLocaleString('vi-VN')} đ`,
+      `${lang === 'en' ? 'Total List Price (Excl. 10% VAT)' : 'Tổng niêm yết (Chưa gồm VAT 10%)'}: ${total.toLocaleString('vi-VN')} đ`,
       gift ? (lang === 'en' ? 'Add-on: Artistic gift wrap & handwritten card' : 'Yêu cầu: Gói quà nghệ thuật & viết thiệp tay') : '',
       name ? `${lang === 'en' ? 'Name' : 'Người nhận'}: ${name}` : '',
       phone ? `Phone/Zalo: ${phone}` : '',
@@ -2072,6 +2455,41 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (navigator.clipboard) navigator.clipboard.writeText(txt).catch(() => {});
     showToast(L.toastZalo);
     window.open(`https://zalo.me/${ZALO_PHONE}?text=${encodeURIComponent(txt)}`, '_blank', 'noopener');
+  };
+
+  // ===== DAT HANG QUA WHATSAPP (Tu dong dien san noi dung don hang vao o chat) =====
+  window.placeOrderViaWhatsApp = function() {
+    const L = t();
+    const items = getEnrichedCart();
+    if (items.length === 0) { showToast(L.toastEmptyCart); return; }
+
+    const orderCode = 'HSE-' + Date.now().toString().slice(-6);
+    const total = items.reduce((s, x) => s + x.p * x.qty, 0);
+    const name = document.getElementById('custName').value.trim();
+    const phone = document.getElementById('custPhone').value.trim();
+    const itemsText = items.map(it => `- ${it.a} - ${it.t} (${it.sku}) x${it.qty}`).join('\n');
+
+    if (WEBHOOK_URL) {
+      fetch(WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'order',
+          mode: 'Đặt hàng qua WhatsApp',
+          orderCode, name, phone,
+          address: document.getElementById('custAddress').value.trim(),
+          note: document.getElementById('custNote').value.trim(),
+          giftWrap: document.getElementById('custGiftWrap').checked,
+          itemsText, total
+        })
+      }).catch(() => {});
+    }
+
+    const txt = buildOrderText(orderCode);
+    if (navigator.clipboard) navigator.clipboard.writeText(txt).catch(() => {});
+    showToast(L.toastWa);
+    window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(txt)}`, '_blank', 'noopener');
   };
 
   // ===== WAITLIST (BAO KHI HANG VE) =====

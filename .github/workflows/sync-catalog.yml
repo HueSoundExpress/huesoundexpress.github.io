@@ -1,9 +1,7 @@
 name: Hue Sound Express - Sync Catalog & Build SEO Pages
 
 on:
-  workflow_dispatch: # Bam nut "Run workflow" thu cong tren GitHub bat cu luc nao
-  schedule:
-    - cron: '0 */6 * * *' # Tu dong dong bo moi 6 tieng (0d tren GitHub Actions)
+  workflow_dispatch: # Bam nut "Run workflow" thu cong tren GitHub bat cu luc nao (da tat cron tu dong de tranh xung dot khi git push tu may ca nhan)
 
 permissions:
   contents: write
