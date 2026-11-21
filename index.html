@@ -531,11 +531,66 @@ body.player-open .fab-scroll-bubble { bottom: 4.5rem; }
 .meta-link { cursor: pointer; font-weight: 600; color: var(--ink); }
 .meta-link:hover { color: var(--copper); text-decoration: underline; }
 
-.stats-bar {
-  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem;
-  font-size: .8rem; color: var(--muted); margin-bottom: .9rem; padding: 0 .2rem;
+/* Thanh chạy ngang Khuyến mãi + Thống kê + Hướng dẫn */
+.stats-marquee {
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(250, 242, 222, 0.82);
+  border: 1px solid rgba(181, 84, 31, 0.3);
+  padding: .4rem 0;
+  margin-bottom: .85rem;
+  box-shadow: inset 0 1px 0 rgba(255,252,240,.72), 0 4px 12px -8px rgba(110, 60, 20, .25);
 }
-.stats-bar strong { color: var(--ink); }
+.stats-marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--muted);
+  padding-left: 100%;
+  animation: hse-marquee 26s linear infinite;
+}
+.stats-marquee:hover .stats-marquee-track { animation-play-state: paused; }
+.stats-marquee-track strong { color: var(--ink); }
+.promo-hl {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-weight: 800; color: var(--copper-dark);
+  background: rgba(207, 160, 66, .25);
+  border: 1px solid rgba(181, 84, 31, .35);
+  padding: .1rem .55rem; border-radius: 99px;
+}
+.acc-promo-banner {
+  display: none;
+  margin-bottom: .75rem; padding: .5rem .85rem; border-radius: 10px;
+  background: rgba(207, 160, 66, .18); border: 1px dashed rgba(181, 84, 31, .45);
+  color: var(--copper-dark); font-size: .78rem; font-weight: 700; text-align: center;
+}
+.acc-promo-banner.show { display: block; }
+.acc-card-note { font-size: 9.5px; color: var(--copper-dark); font-weight: 600; line-height: 1.25; margin-top: 2px; }
+.btn-contact-order {
+  background: rgba(0, 104, 255, .1); color: #0052CC;
+  border: 1px solid rgba(0, 104, 255, .36);
+}
+.btn-contact-order:hover { background: #0068FF; color: #fff; }
+.faq-acc { border-bottom: 1px dashed rgba(142, 66, 24, .22); padding: .55rem 0; }
+.faq-acc:last-child { border-bottom: none; }
+.faq-acc summary { font-weight: 700; font-size: .84rem; color: var(--ink); cursor: pointer; }
+.faq-acc p { font-size: .8rem; color: var(--muted); margin-top: .35rem; line-height: 1.55; }
+.faq-acc a { color: var(--copper); font-weight: 700; }
+.guide-links-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .6rem; margin-top: .65rem; }
+.guide-link-card {
+  display: block; padding: .72rem .85rem; border-radius: 12px;
+  background: rgba(255, 251, 240, .82); border: 1px solid var(--border);
+  font-size: .8rem; font-weight: 700; color: var(--ink); transition: all .2s;
+}
+.guide-link-card:hover { border-color: var(--copper); color: var(--copper-dark); transform: translateY(-2px); }
+.guide-link-card small { display: block; font-size: .71rem; font-weight: 500; color: var(--muted); margin-top: 3px; }
+.cart-bundle-note {
+  font-size: .74rem; font-weight: 600; padding: .5rem .72rem; border-radius: 9px;
+  margin-top: .6rem; line-height: 1.45;
+}
+.cart-bundle-note.warn { background: rgba(207, 160, 66, .2); color: var(--copper-dark); border: 1px dashed rgba(181, 84, 31, .45); }
+.cart-bundle-note.ok { background: rgba(61, 107, 79, .14); color: #29523A; border: 1px solid rgba(61, 107, 79, .3); }
 
 /* ===== Lưới Sản phẩm ===== */
 .catalog-grid {
@@ -1001,12 +1056,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       <span class="tab-count" id="cnt-turntable">0</span>
     </button>
     <button class="cat-tab" onclick="switchCategory('accessory', this)">
-      <span class="cat-tab-main"><span>🧹</span><span id="tabLbl-accessory">Phụ Kiện</span></span>
+      <span class="cat-tab-main"><span>🧹</span><span id="tabLbl-accessory">Phụ kiện và dịch vụ</span></span>
       <span class="tab-count" id="cnt-accessory">0</span>
     </button>
     <button class="cat-tab" onclick="switchCategory('guide', this)">
-      <span class="cat-tab-main"><span>📖</span><span id="tabLbl-guide">Cẩm Nang & Giao Vận</span></span>
-      <span class="tab-count" id="cnt-guide">5+</span>
+      <span class="cat-tab-main"><span>📖</span><span id="tabLbl-guide">Cẩm nang FAQ và giao vận</span></span>
+      <span class="tab-count" id="cnt-guide">6+</span>
     </button>
   </nav>
 
@@ -1065,9 +1120,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       <div class="filter-pills" id="subFilterPills"></div>
     </div>
 
-    <div class="stats-bar">
-      <span id="resultCount">Đang tải danh mục Hue Sound Express...</span>
-      <span id="statsHint">💡 Bấm vào bìa hoặc tên sản phẩm để xem Tracklist & Thông số chi tiết</span>
+    <div class="acc-promo-banner" id="accPromoBanner">* Chỉ giảm giá phụ kiện khi mua cùng đĩa than / mâm than</div>
+
+    <div class="stats-marquee" aria-live="polite">
+      <div class="stats-marquee-track" id="statsMarqueeTrack">Đang tải danh mục Hue Sound Express...</div>
     </div>
 
     <div class="catalog-grid" id="catalogGrid"></div>
@@ -1079,8 +1135,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
   <footer>
     <p><strong>Hue Sound Express</strong> – Where sound finds its color</p>
-    <p style="margin-top:4px;" id="footerContact">📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • Dịch vụ kỹ thuật: <strong>Hue Sound Vinyl Care</strong></p>
-    <p style="margin-top:6px; font-size:11px; opacity:.85;">AI Agent / B2A Endpoint: <a href="llms.txt" target="_blank">llms.txt</a> • <a href="data/catalog_all.json" target="_blank">catalog_all.json</a> • <a href="sitemap.xml" target="_blank">sitemap.xml</a></p>
+    <p style="margin-top:4px;" id="footerContact">📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • WhatsApp: <a href="https://wa.me/84932313918" target="_blank">+84 932 313 918</a> • Dịch vụ kỹ thuật: <strong>Hue Sound Vinyl Care</strong></p>
+    <p style="margin-top:6px; font-size:11px; opacity:.85;">AI Agent / B2A Endpoint: <a href="llms.txt" target="_blank">llms.txt</a> • <a href="feed/products.json" target="_blank">feed/products.json</a> • <a href="data/catalog_all.json" target="_blank">catalog_all.json</a> • <a href="sitemap.xml" target="_blank">sitemap.xml</a></p>
   </footer>
 </div>
 
@@ -1105,6 +1161,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   </div>
   <div class="drawer-body">
     <div id="cartItemsList"></div>
+    <div id="cartBundleNotice"></div>
 
     <div class="summary-row">
       <span id="cartTotalLabel">Tổng giá niêm yết</span>
@@ -1154,6 +1211,22 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     <input type="tel" id="wlPhone" class="field" placeholder="Số điện thoại / Zalo *">
     <input type="text" id="wlNote" class="field" placeholder="Ghi chú thêm (nếu có)">
     <button class="btn btn-add btn-block" id="wlSubmitBtn" type="button" onclick="submitWaitlist()">🔔 Đăng Ký Nhận Thông Báo</button>
+  </div>
+</div>
+
+<!-- Modal Liên hệ đặt hàng nhanh (cho danh mục CD liên hệ kiểm kho) -->
+<div class="modal" id="contactModal" role="dialog" aria-modal="true" style="max-width:460px;">
+  <div class="drawer-head">
+    <h2 id="contactModalTitle">💬 Liên Hệ Đặt Hàng Nhanh</h2>
+    <button class="close-x" type="button" onclick="closeAllOverlays()" aria-label="Đóng">✕</button>
+  </div>
+  <div class="modal-body">
+    <p id="contactModalNote" style="font-size:.8rem; color:#29523A; background:rgba(61,107,79,.12); padding:.55rem .75rem; border-radius:9px; margin-bottom:.7rem;">✓ Đã tự động sao chép sẵn thông tin đĩa bên dưới — bấm mở Zalo (Dán &amp; Gửi) hoặc mở WhatsApp tự điền sẵn!</p>
+    <textarea id="contactMsgBox" class="field" rows="4"></textarea>
+    <div class="cart-order-row" style="margin-top:.3rem;">
+      <a class="btn btn-add btn-block" id="contactZaloLink" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer" onclick="copyContactMsg()">💬 Mở Zalo</a>
+      <a class="btn btn-wa-solid btn-block" id="contactWaLink" href="https://wa.me/84932313918" target="_blank" rel="noopener noreferrer">💬 Mở WhatsApp</a>
+    </div>
   </div>
 </div>
 
@@ -1215,8 +1288,16 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tlLine2: 'Có Audio nghe thử 30s, giá minh bạch, xuất báo giá nhanh & đóng gói chuyên dụng, giao hàng toàn quốc',
       qlZalo: 'Hotline/Zalo', qlWa: 'WhatsApp', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Đĩa Than (LP)', tabCd: 'Đĩa CD / SACD', tabTurntable: 'Máy Hát / Mâm Than',
-      tabAccessory: 'Phụ Kiện', tabGuide: 'Cẩm Nang & Giao Vận',
-      searchPh: '🔍 Tìm ca sĩ, album, nhạc vàng/bolero, hãng đĩa, SKU...',
+      tabAccessory: 'Phụ kiện và dịch vụ', tabGuide: 'Cẩm nang FAQ và giao vận',
+      promoMarquee: '🚚 KHUYẾN MÃI!!! Nhanh tay chốt đơn với giá ưu đãi cho 10 đơn hàng đầu tiên (còn 6 đơn)',
+      accPromoNote: '* Chỉ giảm giá phụ kiện khi mua cùng đĩa than / mâm than',
+      btnContactOrder: '💬 Liên hệ', btnShare: '📤 Chia sẻ',
+      toastShared: '✓ Đã sao chép link sản phẩm để chia sẻ!',
+      cartBundleApplied: '✓ Đã áp dụng giá ưu đãi phụ kiện khi mua cùng đĩa than / mâm than.',
+      cartBundleNeed: '* Chỉ giảm giá phụ kiện khi mua cùng đĩa than / mâm than (hiện đang tính theo giá gốc).',
+      contactTitle: '💬 Liên Hệ Đặt Hàng Nhanh',
+      contactNote: '✓ Đã tự động sao chép sẵn thông tin sản phẩm — bấm mở Zalo (Dán & Gửi) hoặc mở WhatsApp tự điền sẵn!',
+      searchPh: '🔍 Tìm ca sĩ, album, tình khúc 54-75, nhạc vàng/bolero, hãng đĩa, SKU...',
       resetFilters: '✕ Xóa lọc',
       scrollBubble: 'Kéo lên xuống xem thêm sản phẩm / Về đầu trang',
       scrollBubbleTitle: 'Bấm để về đầu trang',
@@ -1281,19 +1362,34 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         4. Mọi yêu cầu xác nhận tồn kho thực tế, vui lòng liên hệ Zalo <strong>09323.13918</strong> hoặc WhatsApp <strong>+84 932 313 918</strong>.`,
       guideHtml: `
         <div class="guide-box">
-          <h2>🛠️ Hue Sound Vinyl Care – 5 Nguyên Tắc Bảo Quản Đĩa Than</h2>
-          <div class="guide-item"><h3>1. Cầm đĩa đúng kỹ thuật</h3><p>Chỉ chạm ngón tay vào mép ngoài và phần nhãn trung tâm. Dầu và mồ hôi bám trên rãnh đĩa sẽ hút bụi và gây tiếng nổ lách tách.</p></div>
-          <div class="guide-item"><h3>2. Luôn xếp đĩa thẳng đứng</h3><p>Lưu trữ đĩa thẳng đứng như xếp sách ở nơi thoáng mát, tránh ánh nắng trực tiếp. Tuyệt đối không xếp chồng ngang gây cong vênh phôi đĩa.</p></div>
-          <div class="guide-item"><h3>3. Quét bụi & Khử tĩnh điện trước khi hạ kim</h3><p>Sử dụng chổi sợi Carbon (AudioQuest / Inakustik) lướt nhẹ trên mặt đĩa 2–3 vòng trước và sau khi nghe để triệt tiêu bụi mịn.</p></div>
-          <div class="guide-item"><h3>4. Nâng cấp bao lót chống tĩnh điện</h3><p>Thay thế túi giấy thô nguyên bản dễ gây xước dăm bằng túi lót chống tĩnh điện (Anti-Static Inner Sleeve) để bảo vệ bề mặt đĩa PVC.</p></div>
-          <div class="guide-item"><h3>5. Chăm sóc đầu kim & Rửa đĩa định kỳ</h3><p>Vệ sinh mũi kim bằng dung dịch chuyên dụng (Audio-Technica AT607a) và cân chỉnh lực tì kim (Tracking Force) đúng chuẩn hãng.</p></div>
+          <h2>❓ Câu Hỏi Thường Gặp (FAQs) – Analog Audio &amp; Đĩa Than</h2>
+          <details class="faq-acc" open>
+            <summary>1. Cách bảo quản đĩa than với thời tiết nóng ẩm ở Việt Nam?</summary>
+            <p>Giữ độ ẩm phòng lý tưởng 45–55%, xếp đĩa thẳng đứng như xếp sách, nâng cấp túi lót chống tĩnh điện (Anti-Static Inner Sleeve) và bọc áo nilon ngoài để tránh mốc bìa giấy vào mùa nồm. <a href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" target="_blank">Đọc bài chi tiết &amp; xem phụ kiện liên quan →</a></p>
+          </details>
+          <details class="faq-acc">
+            <summary>2. Đĩa than mới mua (Mới 100% / New Seal) có cần rửa trước khi nghe không?</summary>
+            <p>Nên quét bụi tĩnh điện bằng chổi Carbon hoặc rửa siêu âm (Ultrasonic) để loại bỏ vụn giấy từ bao nguyên bản và lớp dầu khuôn ép, giúp nền âm tĩnh sạch và bền đầu kim hơn. <a href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" target="_blank">Xem hướng dẫn chi tiết →</a></p>
+          </details>
+          <details class="faq-acc">
+            <summary>3. Đóng gói đĩa than đi tỉnh có sợ cong vênh hay rách mép (Seam Splits) không?</summary>
+            <p>Hue Sound Express áp dụng chuẩn đóng gói 3 lớp chống rách mép (bọc xốp nổ đa lớp, chèn bìa carton cứng bảo vệ 4 góc và hộp mailer 12-inch chuyên dụng), giao hỏa tốc 2H nội thành Hà Nội &amp; toàn quốc 1–4 ngày. <a href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" target="_blank">Xem quy chuẩn đóng gói →</a></p>
+          </details>
+          <details class="faq-acc">
+            <summary>4. Chính sách giảm giá phụ kiện và xuất báo giá PDF như thế nào?</summary>
+            <p>Lưu ý: <strong>* Chỉ giảm giá phụ kiện khi mua cùng đĩa than / mâm than</strong>. Mọi đơn hàng đều hỗ trợ xuất Báo giá PDF nhanh (giá chưa bao gồm VAT 10%), kèm dịch vụ gói quà nghệ thuật &amp; viết thiệp tay.</p>
+          </details>
         </div>
         <div class="guide-box">
-          <h2>📦 Quy Chuẩn Đóng Gói, Giao Vận & Báo Giá</h2>
-          <div class="guide-item"><h3>Đóng gói 3 lớp chống rách mép (Seam Splits Prevention)</h3><p>Mỗi chiếc đĩa gửi đi tỉnh đều được bọc xốp nổ đa lớp, chèn tấm bìa carton cứng chống gập góc và đặt trong hộp mailer chuyên dụng cho đĩa than 12-inch.</p></div>
-          <div class="guide-item"><h3>Giao hàng hỏa tốc & Toàn quốc</h3><p>Giao hỏa tốc 2H tại nội thành Hà Nội và chuyển phát nhanh toàn quốc. Khi cần tư vấn chuyên sâu hoặc sắp xếp hẹn bàn giao trực tiếp, vui lòng nhắn Zalo <strong>09323.13918</strong>.</p></div>
-          <div class="guide-item"><h3>Xuất Báo Giá nhanh & Gói quà nghệ thuật</h3><p>Bạn có thể chọn nhiều đĩa/phụ kiện vào Giỏ hàng và bấm <strong>Xuất Báo Giá PDF</strong> ngay lập tức để làm hồ sơ tạm ứng hoặc đối chiếu quà tặng (giá báo chưa bao gồm VAT 10%). Hỗ trợ gói quà nghệ thuật & viết thiệp tay theo yêu cầu.</p></div>
-          <div class="guide-item"><h3>Thang phân loại tình trạng đĩa Goldmine Grading Standard</h3><p><strong>Mới 100% (M):</strong> Nguyên seal mới 100% • <strong>NM:</strong> Gần như mới • <strong>VG+:</strong> Rất tốt, nghe sạch • <strong>VG:</strong> Tốt, có xước nhẹ • <strong>G+ / G:</strong> Khá / Trung bình • <strong>F / P:</strong> Kém / Sưu tầm trưng bày.</p></div>
+          <h2>📖 Cẩm Nang Analog Audio &amp; Hue Sound Vinyl Care (Bài Viết Chuyên Sâu)</h2>
+          <div class="guide-links-grid">
+            <a class="guide-link-card" href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" target="_blank">🌦️ Bảo quản đĩa than thời tiết Việt Nam<small>Chống nồm ẩm, chống mốc bìa &amp; cong phôi</small></a>
+            <a class="guide-link-card" href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" target="_blank">🫧 Đĩa than mới có cần rửa trước khi nghe?<small>Giải mã bụi vi mô &amp; rửa siêu âm Ultrasonic</small></a>
+            <a class="guide-link-card" href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" target="_blank">📦 Đóng gói 3 lớp chống rách mép đi tỉnh<small>Seam Splits Prevention &amp; giao hỏa tốc 2H</small></a>
+            <a class="guide-link-card" href="cam-nang/cach-chon-mam-than-dau-tien/" target="_blank">🎛️ Cách chọn mâm than đầu tiên<small>Belt-Drive, Phono tích hợp &amp; ngân sách hợp lý</small></a>
+            <a class="guide-link-card" href="cam-nang/phan-biet-kim-mm-va-mc/" target="_blank">💎 Phân biệt kim đĩa than MM và MC<small>Chất âm, độ bền mũi kim &amp; phối ghép Phono</small></a>
+            <a class="guide-link-card" href="cam-nang/giai-thich-thang-goldmine-grading/" target="_blank">🏅 Giải thích thang Goldmine Grading<small>Hiểu rõ Mới 100% (M), NM, VG+, VG, G+...</small></a>
+          </div>
         </div>`,
       statusMap: { 'Còn hàng': 'Còn hàng', 'Hết hàng': 'Hết hàng' },
       condMap: { 'M (New seal)': 'Mới 100% (M)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
@@ -1306,8 +1402,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         'Cà phê sáng & Acoustic': '☕ Cà phê sáng & Acoustic'
       },
       genreMap: {
-        'ALL': 'Tất cả thể loại', 'Nhạc Việt': 'Nhạc Việt trẻ', 'Nhạc Việt / Bolero': 'Trữ tình',
-        'Instrument': 'Instrument', 'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
+        'ALL': 'Tất cả thể loại', 'Tình khúc 1954–1975': 'Tình khúc 1954–1975',
+        'Nhạc Việt / Bolero': 'Trữ tình', 'Nhạc Việt trẻ': 'Nhạc Việt trẻ', 'Nhạc Việt': 'Nhạc Việt trẻ',
+        'Dân ca & Cách mạng': 'Dân ca & Cách mạng', 'Instrument': 'Instrument',
+        'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
         'Rock & Metal': 'Rock & Metal', 'Pop & Disco': 'Pop & Disco', 'Classic & Soundtrack': 'Classic & OST'
       },
       boleroDetail: 'Thể loại chi tiết: Bolero / Nhạc Vàng / Trữ Tình'
@@ -1318,8 +1416,16 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tlLine2: '30s audio previews, transparent prices, instant quotes & protective 3-layer nationwide shipping',
       qlZalo: 'Hotline/Zalo', qlWa: 'WhatsApp', qlFb: 'Facebook', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Vinyl (LP)', tabCd: 'CD / SACD', tabTurntable: 'Turntables',
-      tabAccessory: 'Accessories', tabGuide: 'Vinyl Care and Shipping',
-      searchPh: '🔍 Search artist, album, bolero/vinyl, label, SKU...',
+      tabAccessory: 'Accessories & Vinyl Care', tabGuide: 'FAQs and Shipping',
+      promoMarquee: '🚚 PROMO!!! Hurry — grab discounted prices for the first 10 orders (6 left)',
+      accPromoNote: '* Accessory discount applies only when purchased with a Vinyl LP or Turntable',
+      btnContactOrder: '💬 Contact', btnShare: '📤 Share',
+      toastShared: '✓ Product link copied to share!',
+      cartBundleApplied: '✓ Accessory bundle discount applied (paired with Vinyl / Turntable).',
+      cartBundleNeed: '* Accessory discount applies only with a Vinyl LP or Turntable (regular price currently applied).',
+      contactTitle: '💬 Quick Order Inquiry',
+      contactNote: '✓ Product details copied — click Open Zalo (Paste & Send) or Open WhatsApp (auto-filled)!',
+      searchPh: '🔍 Search artist, album, 1954–1975, bolero/vinyl, label, SKU...',
       resetFilters: '✕ Reset',
       scrollBubble: 'Scroll up & down for more / Back to top',
       scrollBubbleTitle: 'Click to scroll to top',
@@ -1342,7 +1448,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       btnAdd: '+ Cart / Quote', btnWait: '🔔 Notify Me', btnPlay: '▶ 30s', btnPlaying: '⏸ Playing', btnStop: '⏹ Stop',
       emptyFilter: 'No items match all active filters simultaneously. Click <strong>✕ Reset</strong> or message Zalo <strong>09323.13918</strong> / WhatsApp for personalized sourcing.',
       footerContact: '📞 Hotline / Zalo: <a href="https://zalo.me/0932313918" target="_blank">09323.13918</a> • WhatsApp: <a href="https://wa.me/84932313918" target="_blank">+84 932 313 918</a> • Care: <strong>Hue Sound Vinyl Care</strong>',
-      cartTitle: '🛒 Cart & Instant Quote', cartTotalLbl: 'Total List Price (Excl. 10% VAT)',
+      cartTitle: '🛒 Cart & Instant Quote', cartTotalLbl: 'Total Price (Excl. 10% VAT)',
       cartEmpty: 'Your cart is empty. Browse our shelves to add vinyl, CDs, turntables or accessories.',
       formHeading: 'Order / Quote Details (No Login Required)',
       phName: 'Full Name / Organization *', phPhone: 'Phone Number / Zalo *',
@@ -1378,25 +1484,40 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       qTotalLbl: 'Total (Excl. 10% VAT):', qTo: 'Prepared for:', qPhone: 'Phone/Zalo:', qAddr: 'Address:',
       qGift: 'Add-on: Artistic gift wrapping & handwritten card', qDefaultCust: 'Valued Customer / Organization',
       qNotesHtml: `<strong>Quotation Terms & Notes:</strong><br>
-        1. Prices listed are official reference list prices and <strong>exclude 10% VAT</strong>.<br>
+        1. Prices listed are official reference prices and <strong>exclude 10% VAT</strong>.<br>
         2. This quotation is <strong>not a VAT tax invoice</strong>.<br>
         3. Vinyl records ship in 3-layer Seam Splits Prevention packaging with 2H express delivery in Hanoi & fast nationwide shipping.<br>
-        4. For real-time stock confirmation, please message Zalo <strong>09323.13918</strong> or WhatsApp <strong>+84 932 313 918</strong>.`,
+        4. Accessory bundle discounts apply only when purchased with a Vinyl LP or Turntable. Contact Zalo <strong>09323.13918</strong> or WhatsApp <strong>+84 932 313 918</strong>.`,
       guideHtml: `
         <div class="guide-box">
-          <h2>🛠️ Hue Sound Vinyl Care – 5 Golden Vinyl Principles</h2>
-          <div class="guide-item"><h3>1. Handle Records Properly</h3><p>Hold records strictly by the outer edge and center label. Skin oils attract dust into the grooves and cause surface crackle.</p></div>
-          <div class="guide-item"><h3>2. Always Store Vertically</h3><p>Store LPs upright like books in a cool, dry place away from direct sunlight. Never stack records horizontally to prevent warping.</p></div>
-          <div class="guide-item"><h3>3. Brush & De-static Before Playing</h3><p>Gently sweep an anti-static Carbon Fiber brush (AudioQuest / Inakustik) across the spinning record before and after each listen.</p></div>
-          <div class="guide-item"><h3>4. Upgrade to Anti-Static Inner Sleeves</h3><p>Replace rough paper sleeves with archival anti-static inner sleeves to keep PVC surfaces free from micro-scratches.</p></div>
-          <div class="guide-item"><h3>5. Stylus Care & Periodic Ultrasonic Cleaning</h3><p>Clean the stylus tip regularly (Audio-Technica AT607a) and verify Tracking Force to preserve both needle and vinyl grooves.</p></div>
+          <h2>❓ Frequently Asked Questions (FAQs) – Analog Audio &amp; Shipping</h2>
+          <details class="faq-acc" open>
+            <summary>1. How to store vinyl records in Vietnam's humid tropical climate?</summary>
+            <p>Maintain 45–55% room humidity, store LPs vertically like books, and upgrade to Anti-Static Inner Sleeves to prevent mold and warping. <a href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" target="_blank">Read full guide &amp; related gear →</a></p>
+          </details>
+          <details class="faq-acc">
+            <summary>2. Do brand-new sealed vinyl records need cleaning before playing?</summary>
+            <p>Yes — brushing with a Carbon Fiber brush or ultrasonic cleaning removes pressing release residue and paper dust for a quieter black background. <a href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" target="_blank">Read full guide →</a></p>
+          </details>
+          <details class="faq-acc">
+            <summary>3. How does Hue Sound Express prevent Seam Splits during nationwide shipping?</summary>
+            <p>Every LP ships in 3-layer Seam Splits Prevention packaging (bubble wrap, rigid corner stiffeners, 12-inch vinyl mailer box) with 2H Hanoi express &amp; fast nationwide shipping. <a href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" target="_blank">See packaging standard →</a></p>
+          </details>
+          <details class="faq-acc">
+            <summary>4. Accessory discount policy &amp; instant PDF quotes</summary>
+            <p><strong>* Accessory discounts apply only when purchased together with a Vinyl LP or Turntable.</strong> Export instant PDF quotations anytime (prices exclude 10% VAT).</p>
+          </details>
         </div>
         <div class="guide-box">
-          <h2>📦 Packaging, Delivery & Quoting Standards</h2>
-          <div class="guide-item"><h3>3-Layer Seam Splits Prevention Packaging</h3><p>Every shipped LP is wrapped in multi-layer bubble protection with corner stiffeners inside a dedicated 12-inch vinyl mailer box.</p></div>
-          <div class="guide-item"><h3>Express Hanoi & Nationwide Delivery</h3><p>2H express delivery in Hanoi and insured fast shipping nationwide. For technical advice or arranging direct handoff, message Zalo <strong>09323.13918</strong>.</p></div>
-          <div class="guide-item"><h3>Instant PDF Quote & Artistic Gift Wrapping</h3><p>Add items to your cart and export a clean <strong>PDF Quotation</strong> in one click for reference or gifting approval (prices exclude 10% VAT). Artistic gift wrapping and handwritten notes available upon request.</p></div>
-          <div class="guide-item"><h3>Goldmine Grading Standard</h3><p><strong>New seal (M):</strong> Factory sealed mint • <strong>NM:</strong> Near Mint • <strong>VG+:</strong> Very Good Plus • <strong>VG:</strong> Very Good • <strong>G+ / G:</strong> Good Plus / Good • <strong>F / P:</strong> Fair / Poor.</p></div>
+          <h2>📖 Analog Audio Guides &amp; Hue Sound Vinyl Care</h2>
+          <div class="guide-links-grid">
+            <a class="guide-link-card" href="cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" target="_blank">🌦️ Tropical Climate Vinyl Care<small>Humidity control, sleeves &amp; anti-warp tips</small></a>
+            <a class="guide-link-card" href="cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" target="_blank">🫧 Cleaning New Sealed Vinyl<small>Removing factory residue &amp; static</small></a>
+            <a class="guide-link-card" href="cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" target="_blank">📦 3-Layer Seam Splits Prevention<small>Safe nationwide delivery standard</small></a>
+            <a class="guide-link-card" href="cam-nang/cach-chon-mam-than-dau-tien/" target="_blank">🎛️ Choosing Your First Turntable<small>Belt-drive, Built-in Phono &amp; budget guide</small></a>
+            <a class="guide-link-card" href="cam-nang/phan-biet-kim-mm-va-mc/" target="_blank">💎 MM vs. MC Phono Cartridges<small>Sound profile, stylus replacement &amp; matching</small></a>
+            <a class="guide-link-card" href="cam-nang/giai-thich-thang-goldmine-grading/" target="_blank">🏅 Goldmine Grading Standard<small>New seal (M), NM, VG+, VG explained</small></a>
+          </div>
         </div>`,
       statusMap: { 'Còn hàng': 'In Stock', 'Hết hàng': 'Out of Stock' },
       condMap: { 'M (New seal)': 'New seal (M)', 'NM': 'NM', 'VG+': 'VG+', 'VG': 'VG', 'G+': 'G+', 'G': 'G', 'F': 'F', 'P': 'P' },
@@ -1409,8 +1530,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         'Cà phê sáng & Acoustic': '☕ Morning Coffee & Acoustic'
       },
       genreMap: {
-        'ALL': 'All Genres', 'Nhạc Việt': 'Modern Vietnamese', 'Nhạc Việt / Bolero': 'Bolero',
-        'Instrument': 'Instrument', 'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
+        'ALL': 'All Genres', 'Tình khúc 1954–1975': '1954–1975 Love Songs',
+        'Nhạc Việt / Bolero': 'Bolero', 'Nhạc Việt trẻ': 'Modern Vietnamese', 'Nhạc Việt': 'Modern Vietnamese',
+        'Dân ca & Cách mạng': 'Folk & Patriotic', 'Instrument': 'Instrument',
+        'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
         'Rock & Metal': 'Rock & Metal', 'Pop & Disco': 'Pop & Disco', 'Classic & Soundtrack': 'Classic & OST'
       },
       boleroDetail: 'Detailed Genre: Bolero / Golden Oldies / Vietnamese Lyrical'
@@ -1439,7 +1562,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   const miniPlayer = document.getElementById('miniPlayer');
 
   function getMusicOrigin(item) {
-    if (/(nhạc việt|bolero)/i.test(item.g) || /^VN-/i.test(item.sku)) return 'VN';
+    if (/(nhạc việt|bolero|tình khúc|dân ca)/i.test(item.g) || /^(VN-|CD-VN-)/i.test(item.sku)) return 'VN';
     if (/[ăâđêôơưĂÂĐÊÔƠƯáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ]/.test(`${item.a} ${item.t}`) || /(viollage|saigon)/i.test(item.a)) return 'VN';
     return 'INTL';
   }
@@ -1494,7 +1617,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('optYrDef').innerText = L.yearDef;
     document.getElementById('optYrNew').innerText = L.yearNew;
     document.getElementById('optYrOld').innerText = L.yearOld;
-    document.getElementById('statsHint').innerText = L.statsHint;
+    document.getElementById('accPromoBanner').innerText = L.accPromoNote;
+    document.getElementById('contactModalTitle').innerText = L.contactTitle;
+    document.getElementById('contactModalNote').innerText = L.contactNote;
     document.getElementById('footerContact').innerHTML = L.footerContact;
     document.getElementById('guideSection').innerHTML = L.guideHtml;
     document.getElementById('stopAudioBtn').innerText = L.btnStop;
@@ -1538,7 +1663,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       handleUrlParams();
     })
     .catch(() => {
-      document.getElementById('resultCount').innerText = 'Vui lòng mở qua GitHub Pages hoặc máy chủ web để tải dữ liệu danh mục.';
+      document.getElementById('statsMarqueeTrack').innerText = 'Vui lòng mở qua GitHub Pages hoặc máy chủ web để tải dữ liệu danh mục.';
     });
 
   function normalizeProduct(item) {
@@ -1550,6 +1675,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       if (origPrice >= 200000) {
         const disc = (origPrice % 100000 === 50000) ? 60000 : 50000;
         price = origPrice - disc;
+      } else if (origPrice >= 100000) {
+        price = origPrice - 20000;
       } else if (origPrice > 10000) {
         price = origPrice - 10000;
       }
@@ -1574,9 +1701,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       st = 'Hết hàng';
     }
 
-    // Chuan hoa ten nghe si & hang dia
+    // Chuan hoa ten nghe si, the loai & hang dia
     let artistName = String(item.a || '').trim();
     if (/^nhiều ca sĩ$/i.test(artistName)) artistName = 'Nhiều nghệ sĩ';
+    let genreName = String(item.g || '').trim();
+    if (genreName === 'Nhạc Việt') genreName = 'Nhạc Việt trẻ';
     let lbl = String(item.l || '').trim();
     if (/^thời đại$/i.test(lbl)) lbl = 'Hãng Đĩa Thời Đại';
     else if (/^stockfish$/i.test(lbl)) lbl = 'Stockfisch Records';
@@ -1588,7 +1717,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       sku: String(item.sku || ''),
       slug: String(item.slug || ''),
       category: cat,
-      g: String(item.g || ''),
+      g: genreName,
       mood: Array.isArray(item.mood) ? item.mood : (item.mood ? String(item.mood).split(/\s*;\s*/).filter(Boolean) : []),
       a: artistName,
       t: String(item.t || ''),
@@ -1600,6 +1729,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       p: price,
       p_orig: origPrice,
       s: st,
+      contact_only: Boolean(item.contact_only),
       d: String(item.d || ''),
       img: String(item.img || ''),
       aud: String(item.aud || ''),
@@ -1725,16 +1855,29 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     activeRegion = 'ALL';
     activeSubFilter = 'ALL';
     onlyWithAudio = false;
-    document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.cat-tab').forEach(b => {
+      if (btn) b.classList.remove('active');
+      else {
+        const oc = b.getAttribute('onclick') || '';
+        b.classList.toggle('active', oc.includes(`'${cat}'`));
+      }
+    });
     if (btn) btn.classList.add('active');
 
     const isGuide = (cat === 'guide');
     document.getElementById('catalogSection').style.display = isGuide ? 'none' : 'block';
     document.getElementById('guideSection').classList.toggle('active', isGuide);
+    document.getElementById('accPromoBanner').classList.toggle('show', cat === 'accessory');
     if (!isGuide) {
+      // Tu dong xoa toan bo bo loc & tu khoa khi doi danh muc
+      document.getElementById('searchInput').value = '';
       document.getElementById('artistFilter').value = 'ALL';
       document.getElementById('labelFilter').value = 'ALL';
+      document.getElementById('statusFilter').value = 'ALL';
+      document.getElementById('condFilter').value = 'ALL';
       document.getElementById('moodFilter').value = 'ALL';
+      document.getElementById('priceFilter').value = 'ALL';
+      document.getElementById('yearSort').value = 'DEFAULT';
       populateArtistFilter();
       populateLabelFilter();
       populateMoodFilter();
@@ -1812,6 +1955,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       document.getElementById('catalogSection').style.display = 'block';
       document.getElementById('guideSection').classList.remove('active');
     }
+    document.getElementById('accPromoBanner').classList.toggle('show', activeCategory === 'accessory');
 
     document.getElementById('searchInput').value = '';
     document.getElementById('artistFilter').value = 'ALL';
@@ -1881,8 +2025,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     let pills = [];
 
     if (activeCategory === 'vinyl' || activeCategory === 'cd') {
-      let genres = ['ALL', 'Nhạc Việt', 'Nhạc Việt / Bolero', 'Instrument', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
-      if (activeRegion === 'VN') genres = ['ALL', 'Nhạc Việt', 'Nhạc Việt / Bolero', 'Instrument'];
+      let genres = ['ALL', 'Tình khúc 1954–1975', 'Nhạc Việt / Bolero', 'Nhạc Việt trẻ', 'Dân ca & Cách mạng', 'Instrument', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
+      if (activeRegion === 'VN') genres = ['ALL', 'Tình khúc 1954–1975', 'Nhạc Việt / Bolero', 'Nhạc Việt trẻ', 'Dân ca & Cách mạng', 'Instrument'];
       else if (activeRegion === 'INTL') genres = ['ALL', 'Instrument', 'Jazz & Vocal', 'Audiophile & Khác', 'Rock & Metal', 'Pop & Disco', 'Classic & Soundtrack'];
 
       pills = genres.map(g => {
@@ -2101,12 +2245,24 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const hasCover = item.img && item.img.startsWith('http');
     const hasAudio = item.aud && item.aud.startsWith('http');
     const isWaitlist = (item.s === 'Hết hàng');
+    const isContactOnly = Boolean(item.contact_only);
+    const isAccBundle = (item.category === 'accessory' || item.category === 'care');
+    const showGenreOnCard = (item.category !== 'vinyl' && item.category !== 'cd');
     const skuEsc = escHtml(item.sku);
     const statusText = L.statusMap[item.s] || item.s;
     const condText = L.condMap[item.cond] || item.cond;
     const genreText = L.genreMap[item.g] || item.g || item.category;
     const seoAltPrefix = item.category === 'vinyl' ? 'Đĩa than (Vinyl) ' : (item.category === 'cd' ? 'Đĩa CD ' : '');
     const clickHint = lang === 'en' ? 'Click to filter' : 'Bấm để lọc nhanh';
+
+    let actionBtnHtml = '';
+    if (isContactOnly) {
+      actionBtnHtml = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
+    } else if (isWaitlist) {
+      actionBtnHtml = `<button class="btn btn-wait" type="button" onclick="openWaitlist('${skuEsc}')">${L.btnWait}</button>`;
+    } else {
+      actionBtnHtml = `<button class="btn btn-add" type="button" onclick="addToCart('${skuEsc}')">${L.btnAdd}</button>`;
+    }
 
     return `
       <article class="card">
@@ -2118,9 +2274,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : coverFallbackSvg(item)}
             </div>
             <div class="card-info">
-              <div class="badge-row genre-row">
-                <span class="badge clickable-tag" title="${clickHint}: ${escHtml(genreText)}" onclick="quickFilterBySku('${skuEsc}','genre')">${escHtml(genreText)}</span>
-              </div>
+              ${showGenreOnCard ? `<div class="badge-row genre-row"><span class="badge clickable-tag" title="${clickHint}: ${escHtml(genreText)}" onclick="quickFilterBySku('${skuEsc}','genre')">${escHtml(genreText)}</span></div>` : ''}
               <div class="badge-row">
                 <span class="status-badge clickable-tag ${condClass(item.cond)}" title="${clickHint}: ${escHtml(condText)}" onclick="quickFilterBySku('${skuEsc}','cond')">${escHtml(condText)}</span>
                 <span class="status-badge clickable-tag ${statusClass(item.s)}" title="${clickHint}: ${escHtml(statusText)}" onclick="quickFilterBySku('${skuEsc}','status')">${escHtml(statusText)}</span>
@@ -2141,12 +2295,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : ''}
             </div>
             <span class="price-val">${formatVnd(item.p)}</span>
+            ${isAccBundle ? `<span class="acc-card-note">${escHtml(L.accPromoNote)}</span>` : ''}
           </div>
           <div class="card-actions">
             ${hasAudio ? `<button class="btn btn-listen" type="button" onclick="toggleSample(this, '${skuEsc}')">${L.btnPlay}</button>` : ''}
-            ${isWaitlist
-              ? `<button class="btn btn-wait" type="button" onclick="openWaitlist('${skuEsc}')">${L.btnWait}</button>`
-              : `<button class="btn btn-add" type="button" onclick="addToCart('${skuEsc}')">${L.btnAdd}</button>`}
+            ${actionBtnHtml}
           </div>
         </div>
       </article>`;
@@ -2156,7 +2309,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const L = t();
     const audioReadyCount = filteredProducts.filter(x => x.aud && x.aud.startsWith('http')).length;
     const shown = Math.min(shownMainCount, filteredProducts.length);
-    document.getElementById('resultCount').innerHTML = L.statsFmt(shown, filteredProducts.length, audioReadyCount);
+    const track = document.getElementById('statsMarqueeTrack');
+    if (!track) return;
+    track.innerHTML =
+      `<span class="promo-hl">${escHtml(L.promoMarquee)}</span>` +
+      ` &nbsp;•&nbsp; ${L.statsFmt(shown, filteredProducts.length, audioReadyCount)}` +
+      ` &nbsp;•&nbsp; ${escHtml(L.statsHint)}`;
   }
 
   // ===== VONG LAP VO TAN: Ket thuc danh muc -> 3 Goi y khac loai (co phu kien) -> Quay lai vong lap cung loai =====
@@ -2323,11 +2481,22 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const item = allProducts.find(x => x.sku === sku);
     if (!item) return;
     const isWaitlist = (item.s === 'Hết hàng');
+    const isContactOnly = Boolean(item.contact_only);
+    const isAccBundle = (item.category === 'accessory' || item.category === 'care');
     const hasCover = item.img && item.img.startsWith('http');
     const hasAudio = item.aud && item.aud.startsWith('http');
     const skuEsc = escHtml(item.sku);
     const statusText = L.statusMap[item.s] || item.s;
     const condText = L.condMap[item.cond] || item.cond;
+
+    let ctaBtn = '';
+    if (isContactOnly) {
+      ctaBtn = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
+    } else if (isWaitlist) {
+      ctaBtn = `<button class="btn btn-wait" type="button" onclick="openWaitlist('${skuEsc}')">${L.detailWait}</button>`;
+    } else {
+      ctaBtn = `<button class="btn btn-add" type="button" onclick="addToCart('${skuEsc}'); openCart();">${L.detailAddCart}</button>`;
+    }
 
     document.getElementById('detailModalHeading').innerText = `${item.a} – ${item.t}`;
     let html = `
@@ -2358,13 +2527,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : ''}
             </div>
             <div>${formatVnd(item.p)}</div>
+            ${isAccBundle ? `<div class="acc-card-note" style="font-size:.73rem; margin-top:4px;">${escHtml(L.accPromoNote)}</div>` : ''}
           </div>
           <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
-            ${isWaitlist
-              ? `<button class="btn btn-wait" type="button" onclick="openWaitlist('${skuEsc}')">${L.detailWait}</button>`
-              : `<button class="btn btn-add" type="button" onclick="addToCart('${skuEsc}'); openCart();">${L.detailAddCart}</button>`}
+            ${ctaBtn}
             ${hasAudio ? `<button class="btn btn-listen" type="button" onclick="toggleSample(null, '${skuEsc}')">${L.detailListen}</button>` : ''}
             ${item.slug ? `<a class="btn btn-listen" href="p/${escHtml(item.slug)}/" target="_blank">${L.detailOpenPage}</a>` : ''}
+            <button class="btn btn-listen" type="button" onclick="shareItemLink('${skuEsc}')">${L.btnShare}</button>
           </div>
         </div>
       </div>`;
@@ -2383,7 +2552,47 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('detailModal').classList.add('open');
   };
 
-  // ===== GIO HANG & BAO GIA =====
+  // ===== CHIA SE LINK SAN PHAM & LIEN HE DAT HANG NHANH =====
+  window.shareItemLink = function(sku) {
+    const item = allProducts.find(x => x.sku === sku);
+    if (!item) return;
+    const base = window.location.origin + window.location.pathname.replace(/index\.html$/i, '');
+    const shareUrl = item.slug ? `${base}p/${item.slug}/` : window.location.href;
+    const shareTitle = `${item.a} – ${item.t} | Hue Sound Express`;
+    if (navigator.share) {
+      navigator.share({ title: shareTitle, url: shareUrl }).catch(() => {});
+    } else {
+      if (navigator.clipboard) navigator.clipboard.writeText(shareUrl).catch(() => {});
+      showToast(t().toastShared);
+    }
+  };
+
+  window.openContactOrder = function(sku) {
+    const L = t();
+    const item = allProducts.find(x => x.sku === sku);
+    if (!item) return;
+    closeAllOverlays();
+    const base = 'https://huesoundexpress.github.io/';
+    const url = item.slug ? `${base}p/${item.slug}/` : base;
+    const condTxt = L.condMap[item.cond] || item.cond;
+    const msg = lang === 'en'
+      ? `Hello Hue Sound Express, I would like to inquire about: ${item.a} - ${item.t} (SKU: ${item.sku} | ${condTxt} | Price: ${formatVnd(item.p)}). Link: ${url}`
+      : `Chào Hue Sound Express, mình muốn liên hệ đặt / kiểm kho sản phẩm: ${item.a} - ${item.t} (Mã: ${item.sku} | ${condTxt} | Giá: ${formatVnd(item.p)}). Link: ${url}`;
+    document.getElementById('contactMsgBox').value = msg;
+    document.getElementById('contactWaLink').href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`;
+    document.getElementById('backdrop').classList.add('open');
+    document.getElementById('contactModal').classList.add('open');
+    copyContactMsg();
+  };
+
+  window.copyContactMsg = function() {
+    const el = document.getElementById('contactMsgBox');
+    if (!el) return;
+    if (navigator.clipboard) navigator.clipboard.writeText(el.value).catch(() => {});
+    document.getElementById('contactWaLink').href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(el.value)}`;
+  };
+
+  // ===== GIO HANG & BAO GIA (Chi giam gia phu kien khi mua cung dia than / mam than) =====
   window.addToCart = function(sku) {
     const item = allProducts.find(x => x.sku === sku);
     if (!item) return;
@@ -2409,24 +2618,42 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   }
 
   function getEnrichedCart() {
-    return cart.map(c => {
+    const raw = cart.map(c => {
       const p = allProducts.find(x => x.sku === c.sku);
       return p ? { ...p, qty: c.qty } : null;
     }).filter(Boolean);
+    const hasMainBundle = raw.some(x => x.category === 'vinyl' || x.category === 'turntable');
+    return raw.map(it => {
+      const isAcc = (it.category === 'accessory' || it.category === 'care');
+      const effPrice = (isAcc && !hasMainBundle && it.p_orig > 0) ? it.p_orig : it.p;
+      return { ...it, effPrice, isAcc, hasMainBundle };
+    });
   }
 
   function updateCartUI() {
     const L = t();
     const items = getEnrichedCart();
     const totalQty = items.reduce((s, x) => s + x.qty, 0);
-    const totalVal = items.reduce((s, x) => s + (x.p * x.qty), 0);
+    const totalVal = items.reduce((s, x) => s + (x.effPrice * x.qty), 0);
     document.getElementById('cartCount').innerText = totalQty;
     document.getElementById('cartTotal').innerText = totalVal > 0 ? totalVal.toLocaleString('vi-VN') + ' đ' : '0 đ';
 
     const listEl = document.getElementById('cartItemsList');
+    const noticeEl = document.getElementById('cartBundleNotice');
     if (items.length === 0) {
       listEl.innerHTML = `<p style="font-size:.84rem; color:var(--muted); text-align:center; padding:1.4rem 0;">${L.cartEmpty}</p>`;
+      noticeEl.innerHTML = '';
       return;
+    }
+
+    const hasAcc = items.some(x => x.isAcc);
+    const hasMain = items.some(x => x.hasMainBundle);
+    if (hasAcc) {
+      noticeEl.innerHTML = hasMain
+        ? `<div class="cart-bundle-note ok">${escHtml(L.cartBundleApplied)}</div>`
+        : `<div class="cart-bundle-note warn">${escHtml(L.cartBundleNeed)}</div>`;
+    } else {
+      noticeEl.innerHTML = '';
     }
 
     listEl.innerHTML = items.map(it => `
@@ -2441,7 +2668,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           </div>
         </div>
         <div style="text-align:right; font-weight:700; font-size:.84rem; color:var(--copper); white-space:nowrap;">
-          ${it.p > 0 ? (it.p * it.qty).toLocaleString('vi-VN') + ' đ' : L.contactPrice}
+          ${it.effPrice > 0 ? (it.effPrice * it.qty).toLocaleString('vi-VN') + ' đ' : L.contactPrice}
         </div>
       </div>
     `).join('');
@@ -2459,6 +2686,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('cartDrawer').classList.remove('open');
     document.getElementById('detailModal').classList.remove('open');
     document.getElementById('waitlistModal').classList.remove('open');
+    document.getElementById('contactModal').classList.remove('open');
   };
 
   function getGenericQuoteName(category) {
@@ -2514,14 +2742,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
     let total = 0;
     document.getElementById('qTableBody').innerHTML = items.map((it, idx) => {
-      const sub = it.p * it.qty;
+      const sub = it.effPrice * it.qty;
       total += sub;
       const detailNote = `${it.a} – ${it.t} (${it.f}${it.l ? ', ' + it.l : ''} • SKU: ${it.sku} • ${L.condMap[it.cond] || it.cond})`;
       return `<tr>
         <td>${idx + 1}</td>
         <td><strong>${getGenericQuoteName(it.category)}</strong></td>
         <td class="num">${it.qty}</td>
-        <td class="num">${formatVnd(it.p)}</td>
+        <td class="num">${formatVnd(it.effPrice)}</td>
         <td class="num">${sub > 0 ? sub.toLocaleString('vi-VN') + ' đ' : L.contactPrice}</td>
         <td>${escHtml(detailNote)}</td>
       </tr>`;
@@ -2533,8 +2761,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
   function buildOrderText(orderCode) {
     const items = getEnrichedCart();
-    const total = items.reduce((s, x) => s + x.p * x.qty, 0);
-    const lines = items.map((it, i) => `${i+1}. ${it.a} - ${it.t} [${it.sku}] x${it.qty} (${formatVnd(it.p)})`);
+    const total = items.reduce((s, x) => s + x.effPrice * x.qty, 0);
+    const lines = items.map((it, i) => `${i+1}. ${it.a} - ${it.t} [${it.sku}] x${it.qty} (${formatVnd(it.effPrice)})`);
     const name = document.getElementById('custName').value.trim();
     const phone = document.getElementById('custPhone').value.trim();
     const addr = document.getElementById('custAddress').value.trim();
@@ -2546,7 +2774,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         ? `Hello Hue Sound Express, here is my order / quote request (${orderCode}):`
         : `Chào Hue Sound Express, mình gửi yêu cầu đơn hàng / báo giá (${orderCode}):`,
       ...lines,
-      `${lang === 'en' ? 'Total List Price (Excl. 10% VAT)' : 'Tổng niêm yết (Chưa gồm VAT 10%)'}: ${total.toLocaleString('vi-VN')} đ`,
+      `${lang === 'en' ? 'Total Price (Excl. 10% VAT)' : 'Tổng giá (Chưa gồm VAT 10%)'}: ${total.toLocaleString('vi-VN')} đ`,
       gift ? (lang === 'en' ? 'Add-on: Artistic gift wrap & handwritten card' : 'Yêu cầu: Gói quà nghệ thuật & viết thiệp tay') : '',
       name ? `${lang === 'en' ? 'Name' : 'Người nhận'}: ${name}` : '',
       phone ? `Phone/Zalo: ${phone}` : '',
@@ -2562,7 +2790,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (items.length === 0) { showToast(L.toastEmptyCart); return; }
 
     const orderCode = 'HSE-' + Date.now().toString().slice(-6);
-    const total = items.reduce((s, x) => s + x.p * x.qty, 0);
+    const total = items.reduce((s, x) => s + x.effPrice * x.qty, 0);
     const name = document.getElementById('custName').value.trim();
     const phone = document.getElementById('custPhone').value.trim();
     const itemsText = items.map(it => `- ${it.a} - ${it.t} (${it.sku}) x${it.qty}`).join('\n');
@@ -2597,7 +2825,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (items.length === 0) { showToast(L.toastEmptyCart); return; }
 
     const orderCode = 'HSE-' + Date.now().toString().slice(-6);
-    const total = items.reduce((s, x) => s + x.p * x.qty, 0);
+    const total = items.reduce((s, x) => s + x.effPrice * x.qty, 0);
     const name = document.getElementById('custName').value.trim();
     const phone = document.getElementById('custPhone').value.trim();
     const itemsText = items.map(it => `- ${it.a} - ${it.t} (${it.sku}) x${it.qty}`).join('\n');
@@ -2667,6 +2895,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
   function handleUrlParams() {
     const params = new URLSearchParams(window.location.search);
+    const catParam = params.get('cat');
+    if (catParam && ['vinyl','cd','turntable','accessory','care','guide'].includes(catParam)) {
+      switchCategory(catParam === 'care' ? 'accessory' : catParam, null);
+    }
     const addSku = params.get('add');
     const wlSku = params.get('waitlist');
     if (addSku) { addToCart(addSku); openCart(); }
