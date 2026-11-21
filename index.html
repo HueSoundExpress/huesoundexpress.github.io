@@ -576,7 +576,8 @@ body.player-open .fab-scroll-bubble { bottom: 4.5rem; }
 .cover-fallback span { font-size: 9px; font-weight: 700; color: var(--copper-dark); line-height: 1.15; }
 
 .card-info { min-width: 0; flex: 1; }
-.badge-row { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px; }
+.badge-row { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 4px; }
+.badge-row.genre-row { margin-bottom: 3px; }
 .badge {
   font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 99px;
   background: rgba(181, 84, 31, .1); color: var(--copper-dark);
@@ -595,22 +596,22 @@ body.player-open .fab-scroll-bubble { bottom: 4.5rem; }
 }
 .card-title:hover { color: var(--copper); }
 .card-artist { font-size: .82rem; font-weight: 600; color: var(--copper-dark); margin-top: 2px; }
-.card-meta { font-size: .72rem; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+.card-meta { font-size: .72rem; color: var(--muted); margin-top: 3px; line-height: 1.35; }
 .card-desc {
-  font-size: .76rem; color: var(--muted); margin-top: .65rem;
-  padding-top: .6rem; border-top: 1px dashed rgba(181, 84, 31, .2);
+  font-size: .76rem; color: var(--muted); margin-top: .55rem;
+  padding-top: .5rem; border-top: 1px dashed rgba(181, 84, 31, .2);
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 .card-bottom {
-  display: flex; justify-content: space-between; align-items: flex-end; gap: .5rem;
-  margin-top: .8rem; padding-top: .65rem; border-top: 1px solid rgba(181, 84, 31, .14);
+  display: flex; justify-content: space-between; align-items: flex-end; gap: .45rem;
+  margin-top: .65rem; padding-top: .55rem; border-top: 1px solid rgba(181, 84, 31, .14);
 }
-.price-wrap { display: flex; flex-direction: column; }
-.price-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-.price-old-row { display: inline-flex; align-items: center; gap: 4px; line-height: 1.15; margin-top: 1px; }
-.price-old { font-size: .71rem; color: var(--muted); text-decoration: line-through; opacity: .78; font-weight: 500; }
-.price-save { font-size: 9.5px; font-weight: 700; color: #FFF7E8; background: var(--copper); padding: 1px 5px; border-radius: 99px; }
-.price-val { font-size: .98rem; font-weight: 800; color: var(--copper); line-height: 1.2; }
+.price-wrap { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.price-head-row { display: inline-flex; align-items: center; gap: 4px; flex-wrap: nowrap; line-height: 1.15; }
+.price-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; font-weight: 600; }
+.price-old { font-size: .7rem; color: var(--muted); text-decoration: line-through; opacity: .8; font-weight: 500; white-space: nowrap; }
+.price-save { font-size: 9px; font-weight: 700; color: #FFF7E8; background: var(--copper); padding: 1px 5px; border-radius: 99px; white-space: nowrap; }
+.price-val { font-size: .98rem; font-weight: 800; color: var(--copper); line-height: 1.18; }
 
 .card-actions { display: flex; gap: .4rem; flex-wrap: wrap; justify-content: flex-end; }
 .btn {
@@ -1305,10 +1306,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         'Cà phê sáng & Acoustic': '☕ Cà phê sáng & Acoustic'
       },
       genreMap: {
-        'ALL': 'Tất cả thể loại', 'Nhạc Việt': 'Nhạc Việt trẻ', 'Nhạc Việt / Bolero': 'Bolero / Nhạc Vàng / Trữ Tình',
+        'ALL': 'Tất cả thể loại', 'Nhạc Việt': 'Nhạc Việt trẻ', 'Nhạc Việt / Bolero': 'Trữ tình',
         'Instrument': 'Instrument', 'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
         'Rock & Metal': 'Rock & Metal', 'Pop & Disco': 'Pop & Disco', 'Classic & Soundtrack': 'Classic & OST'
-      }
+      },
+      boleroDetail: 'Thể loại chi tiết: Bolero / Nhạc Vàng / Trữ Tình'
     },
     en: {
       fabCart: 'Cart & Quote',
@@ -1407,10 +1409,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         'Cà phê sáng & Acoustic': '☕ Morning Coffee & Acoustic'
       },
       genreMap: {
-        'ALL': 'All Genres', 'Nhạc Việt': 'Modern Vietnamese', 'Nhạc Việt / Bolero': 'Bolero / Golden Oldies',
+        'ALL': 'All Genres', 'Nhạc Việt': 'Modern Vietnamese', 'Nhạc Việt / Bolero': 'Bolero',
         'Instrument': 'Instrument', 'Jazz & Vocal': 'Jazz & Vocal', 'Audiophile & Khác': 'Audiophile',
         'Rock & Metal': 'Rock & Metal', 'Pop & Disco': 'Pop & Disco', 'Classic & Soundtrack': 'Classic & OST'
-      }
+      },
+      boleroDetail: 'Detailed Genre: Bolero / Golden Oldies / Vietnamese Lyrical'
     }
   };
 
@@ -2115,8 +2118,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : coverFallbackSvg(item)}
             </div>
             <div class="card-info">
-              <div class="badge-row">
+              <div class="badge-row genre-row">
                 <span class="badge clickable-tag" title="${clickHint}: ${escHtml(genreText)}" onclick="quickFilterBySku('${skuEsc}','genre')">${escHtml(genreText)}</span>
+              </div>
+              <div class="badge-row">
                 <span class="status-badge clickable-tag ${condClass(item.cond)}" title="${clickHint}: ${escHtml(condText)}" onclick="quickFilterBySku('${skuEsc}','cond')">${escHtml(condText)}</span>
                 <span class="status-badge clickable-tag ${statusClass(item.s)}" title="${clickHint}: ${escHtml(statusText)}" onclick="quickFilterBySku('${skuEsc}','status')">${escHtml(statusText)}</span>
               </div>
@@ -2129,10 +2134,12 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         </div>
         <div class="card-bottom">
           <div class="price-wrap">
-            <span class="price-lbl">${L.priceLbl}</span>
-            ${(item.p > 0 && item.p_orig > item.p)
-              ? `<span class="price-old-row"><span class="price-old">${formatVnd(item.p_orig)}</span><span class="price-save">-${Math.round((item.p_orig - item.p)/1000)}k</span></span>`
-              : ''}
+            <div class="price-head-row">
+              <span class="price-lbl">${L.priceLbl}</span>
+              ${(item.p > 0 && item.p_orig > item.p)
+                ? `<span class="price-old">${formatVnd(item.p_orig)}</span><span class="price-save">-${Math.round((item.p_orig - item.p)/1000)}k</span>`
+                : ''}
+            </div>
             <span class="price-val">${formatVnd(item.p)}</span>
           </div>
           <div class="card-actions">
@@ -2329,8 +2336,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           ${hasCover ? `<img src="${escHtml(item.img)}" alt="${escHtml(item.t)}">` : coverFallbackSvg(item)}
         </div>
         <div>
-          <div class="badge-row">
+          <div class="badge-row genre-row">
             <span class="badge clickable-tag" onclick="quickFilterBySku('${skuEsc}','genre')">${escHtml(L.genreMap[item.g] || item.g)}</span>
+          </div>
+          <div class="badge-row">
             <span class="status-badge clickable-tag ${condClass(item.cond)}" onclick="quickFilterBySku('${skuEsc}','cond')">${escHtml(condText)}</span>
             <span class="status-badge clickable-tag ${statusClass(item.s)}" onclick="quickFilterBySku('${skuEsc}','status')">${escHtml(statusText)}</span>
           </div>
@@ -2338,14 +2347,17 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <div style="font-size:.76rem; color:var(--muted); margin:6px 0;">
             ${L.detailSku} <strong>${skuEsc}</strong><br>
             ${L.detailFmt} ${escHtml(item.f)} ${item.l ? '• ' + escHtml(item.l) : ''} ${item.y ? '• ' + L.detailYear + ' ' + escHtml(item.y) : ''}
+            ${item.g === 'Nhạc Việt / Bolero' ? `<br><span>${escHtml(L.boleroDetail)}</span>` : ''}
           </div>
           <p style="font-size:.83rem; line-height:1.55; margin:8px 0;">${escHtml(item.d)}</p>
           <div style="font-size:1.2rem; font-weight:800; color:var(--copper); margin:8px 0;">
-            <span style="font-size:.7rem; color:var(--muted); font-weight:600; display:block; text-transform:uppercase;">${L.priceLbl}</span>
-            ${(item.p > 0 && item.p_orig > item.p)
-              ? `<span class="price-old-row" style="margin-bottom:2px;"><span class="price-old" style="font-size:.82rem;">${formatVnd(item.p_orig)}</span><span class="price-save">-${Math.round((item.p_orig - item.p)/1000)}k</span></span><br>`
-              : ''}
-            ${formatVnd(item.p)}
+            <div class="price-head-row">
+              <span style="font-size:.7rem; color:var(--muted); font-weight:600; text-transform:uppercase;">${L.priceLbl}</span>
+              ${(item.p > 0 && item.p_orig > item.p)
+                ? `<span class="price-old" style="font-size:.82rem;">${formatVnd(item.p_orig)}</span><span class="price-save">-${Math.round((item.p_orig - item.p)/1000)}k</span>`
+                : ''}
+            </div>
+            <div>${formatVnd(item.p)}</div>
           </div>
           <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
             ${isWaitlist

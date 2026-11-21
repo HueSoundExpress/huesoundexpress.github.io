@@ -371,7 +371,7 @@ if ($GenerateProductPages) {
         }
         $genreDisplay = switch ($it.g) {
             "Nhạc Việt" { "Nhạc Việt trẻ" }
-            "Nhạc Việt / Bolero" { "Bolero / Nhạc Vàng / Trữ Tình" }
+            "Nhạc Việt / Bolero" { "Trữ tình" }
             default { $it.g }
         }
         $extraSeoDesc = if ($it.g -eq "Nhạc Việt / Bolero") { " Thể loại Nhạc Bolero (Nhạc Vàng / Nhạc Trữ Tình) chuẩn Analog Audio." } elseif ($it.category -eq "vinyl") { " Đĩa than Vinyl chuẩn Analog Audio tại Hue Sound Express." } else { " Thiết bị & sản phẩm Analog Audio chính hãng tại Hue Sound Express." }
@@ -384,9 +384,9 @@ if ($GenerateProductPages) {
         $saveK = if ($it.p_orig -gt $it.p) { [int](($it.p_orig - $it.p) / 1000) } else { 0 }
         $condVi = if ($it.cond -eq "M (New seal)") { "Mới 100% (M)" } else { $it.cond }
         $priceHtml = if ($it.p -gt 0 -and $origPriceFmt) {
-            "<div class='price-stack'><span class='price-old'>$origPriceFmt</span><span class='price-save'>-$($saveK)k</span></div><div class='price'>$priceFmt</div>"
+            "<div class='price-stack'><span class='price-label'>Giá</span><span class='price-old'>$origPriceFmt</span><span class='price-save'>-$($saveK)k</span></div><div class='price'>$priceFmt</div>"
         } else {
-            "<div class='price'>$priceFmt</div>"
+            "<div class='price-stack'><span class='price-label'>Giá</span></div><div class='price'>$priceFmt</div>"
         }
         $pageUrl = "$SiteBaseUrl/p/$($it.slug)/"
         $ogImg = if ($it.img -match '^https?://') { $it.img } else { "$SiteBaseUrl/og-image.jpg" }
@@ -569,7 +569,7 @@ if ($GenerateProductPages) {
         <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
         <p class="desc">$descEsc</p>
         <div class="price-row">
-          <div><span class="price-label">Giá</span>$priceHtml</div>
+          <div>$priceHtml</div>
           <span class="status">$(Escape-Html $condVi)</span>
           <span class="status">$(Escape-Html $it.s)</span>
         </div>
