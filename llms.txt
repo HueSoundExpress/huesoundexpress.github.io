@@ -22,7 +22,7 @@
 4. Nâng cấp bao lót chống tĩnh điện (Anti-Static Inner Sleeve) thay cho túi giấy thô.
 5. Vệ sinh đầu kim định kỳ (Audio-Technica AT607a) và cân chỉnh lực tì kim (Tracking Force) đúng chuẩn.
 
-## 4. Unified Product Catalog (530 Items)
+## 4. Unified Product Catalog (542 Items)
 | Category | SKU | Artist / Brand | Product / Album | Format / Spec | Condition | List Price (VND) | Status | URL |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | vinyl | VN-MỸ TÂM-TÂM 9-LP-NEW-VIẾ | Mỹ Tâm | Tâm 9 [R] | LP | M (New seal) | 1,750,000 | Còn hàng | https://huesoundexpress.github.io/p/my-tam-tam-9-r-1/ |
@@ -539,11 +539,23 @@
 | vinyl | NN-HTD-534 | Foo Fighters | Medicine At Midnight | LP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/foo-fighters-medicine-at-midnight-534/ |
 | vinyl | NN-HTD-535 | The Strokes | Is This It | LP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/the-strokes-is-this-it-535/ |
 | vinyl | NN-HTD-536 | Elvis Presley | 30 #1 Hits | 2xLP | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/elvis-presley-30-1-hits-536/ |
+| vinyl | VN-SSR-MOI-LUONG-DUYEN-LP | Saigon Soul Revival | Mối Lương Duyên | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-moi-luong-duyen-lp/ |
+| vinyl | VN-SSR-HOA-AM-XUA-LP | Saigon Soul Revival | Họa Âm Xưa | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-hoa-am-xua-lp/ |
+| vinyl | VN-SSR-CHON-TA-VE-LP | Saigon Soul Revival | Chốn Ta Về | LP | M (New seal) | 1,200,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-soul-revival-chon-ta-ve-lp/ |
+| vinyl | VN-SSS-VOLUME-ONE-2LP | Saigon Super Sound | Volume One (1965–75) | 2xLP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-one-2lp/ |
+| vinyl | VN-SSS-VOLUME-TWO-2LP | Saigon Super Sound | Volume Two (1964–75) | 2xLP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-two-2lp/ |
+| vinyl | VN-SSS-VOLUME-THREE-2LP | Saigon Super Sound | Volume Three (1965–75) | 2xLP | M (New seal) | 1,450,000 | Còn hàng | https://huesoundexpress.github.io/p/saigon-super-sound-volume-three-2lp/ |
 | cd | CD-MYTAM-TAM9-NEW | Mỹ Tâm | Tâm 9 | CD | M (New seal) | 350,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-my-tam-tam-9/ |
 | cd | CD-LEQUYEN-KHUC-TINH-XUA-1 | Lệ Quyên | Khúc Tình Xưa 1 | CD | M (New seal) | 280,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-le-quyen-khuc-tinh-xua-1/ |
 | cd | CD-NORAH-COME-AWAY-SACD | Norah Jones | Come Away With Me | SACD | M (New seal) | 850,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-norah-jones-come-away-with-me-sacd/ |
 | cd | CD-DIANA-THE-LOOK-XRCD | Diana Krall | The Look Of Love | XRCD24 | M (New seal) | 1,150,000 | Còn hàng | https://huesoundexpress.github.io/p/cd-diana-krall-the-look-of-love-xrcd/ |
 | cd | CD-TRANMANHTUAN-HA-TRANG | Trần Mạnh Tuấn | Hạ Trắng (Saxophone) | CD | M (New seal) | 320,000 | Hết hàng | https://huesoundexpress.github.io/p/cd-tran-manh-tuan-ha-trang/ |
+| cd | CD-SSR-MOI-LUONG-DUYEN | Saigon Soul Revival | Mối Lương Duyên | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-moi-luong-duyen/ |
+| cd | CD-SSR-HOA-AM-XUA | Saigon Soul Revival | Họa Âm Xưa | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-hoa-am-xua/ |
+| cd | CD-SSR-CHON-TA-VE | Saigon Soul Revival | Chốn Ta Về | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-soul-revival-chon-ta-ve/ |
+| cd | CD-SSS-VOLUME-ONE | Saigon Super Sound | Volume One (1965–75) | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-super-sound-volume-one/ |
+| cd | CD-SSS-VOLUME-TWO | Saigon Super Sound | Volume Two (1964–75) | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-super-sound-volume-two/ |
+| cd | CD-SSS-VOLUME-THREE | Saigon Super Sound | Volume Three (1965–75) | CD | M (New seal) | Liên hệ | Hết hàng | https://huesoundexpress.github.io/p/cd-saigon-super-sound-volume-three/ |
 | turntable | TT-AT-LP60XBT-BK | Audio-Technica | Audio-Technica AT-LP60XBT (Đen) | MM | M (New seal) | 6,900,000 | Còn hàng | https://huesoundexpress.github.io/p/audio-technica-at-lp60xbt-black/ |
 | turntable | TT-AT-LP120XUSB-SL | Audio-Technica | Audio-Technica AT-LP120XUSB | MM | M (New seal) | 11,500,000 | Còn hàng | https://huesoundexpress.github.io/p/audio-technica-at-lp120xusb-silver/ |
 | turntable | TT-PROJECT-DEBUT-CARBON-EVO | Pro-Ject | Pro-Ject Debut Carbon EVO | MM | M (New seal) | 17,900,000 | Còn hàng | https://huesoundexpress.github.io/p/pro-ject-debut-carbon-evo/ |

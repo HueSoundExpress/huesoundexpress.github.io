@@ -217,7 +217,7 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
 
 # Chuan hoa Hang dia, Tinh trang theo Goldmine Grading Standard (M (New seal), NM, VG+, VG, G+, G, F, P) & Trang thai (Con hang / Het hang)
 foreach ($it in $allItems) {
-    if ($it.category -eq "vinyl" -and $it.id -ge 457) {
+    if ($it.category -eq "vinyl" -and $it.id -ge 457 -and $it.id -le 536) {
         $chkTxt = "$($it.a) $($it.t)"
         if ($chkTxt -match '(?i)(totoro|mononoke|howl|kiki|porco rosso|thung lũng gió|lâu đài trên không|vùng đất linh hồn|ghibli)') {
             $it.g = "Classic & Soundtrack"
