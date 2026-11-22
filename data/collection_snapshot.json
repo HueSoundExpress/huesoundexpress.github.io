@@ -1,6 +1,6 @@
 {
-    "updated_at":  "2026-11-22T21:58:16+07:00",
-    "total_items":  1139,
+    "updated_at":  "2026-11-22T22:22:24+07:00",
+    "total_items":  1137,
     "skus":  [
                  "VN-BOLERO-VANGQA-559",
                  "VN-QUYNHANH-THANHTUNG-558",
@@ -462,7 +462,6 @@
                  "NN-GDA-458",
                  "NN-GDA-459",
                  "NN-GDA-460",
-                 "VN-GDA-461",
                  "VN-BOLERO-NGANTHUA-462",
                  "NN-GDA-463",
                  "NN-GDA-464",
@@ -693,7 +692,6 @@
                  "CD-VN-YLANQUAN-1140",
                  "CD-VN-NHIEUNGH-1141",
                  "CD-VN-NHIEUNGH-1142",
-                 "CD-VN-NGUYENAN-1143",
                  "CD-VN-TINHKHUC-1144",
                  "CD-VN-NHIEUNGH-1145",
                  "CD-VN-XUANHAO-1146",
@@ -1151,7 +1149,7 @@
                               "dia-than-nhac-viet-tre":  36,
                               "dia-than-tinh-khuc-1954-1975":  36,
                               "qua-tang-dia-than-cao-cap":  30,
-                              "dia-than-instrument-hoa-tau":  33,
+                              "dia-than-instrument-hoa-tau":  30,
                               "dia-than-ngay-le":  31
                           }
 }
