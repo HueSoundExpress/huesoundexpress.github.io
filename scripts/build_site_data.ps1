@@ -332,6 +332,7 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
     $tracks = if ($r.tracklist) { @($r.tracklist -split '\s*\|\s*' | Where-Object { $_ }) } else { @() }
     $missing = if ($r.missing_fields) { @($r.missing_fields -split '\s*;\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
+    $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
     [void]$allItems.Add([PSCustomObject]@{
         id             = $idNum
         sku            = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "VN" -Id $idNum -Used $usedSkus
@@ -348,7 +349,7 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
         y              = [string]$r.year
         p              = if ($r.list_price) { [int]$r.list_price } else { 0 }
         s              = [string]$r.status
-        contact_only   = $false
+        contact_only   = $isContact
         d              = [string]$r.description
         tracklist      = $tracks
         img            = [string]$r.cover_url
@@ -766,10 +767,10 @@ if ($GenerateProductPages) {
 
         $schemaAvail = if ($it.s -eq "in_stock") { "https://schema.org/InStock" } else { "https://schema.org/OutOfStock" }
         $schemaCond = if ($it.cond -eq "mint_sealed") { "https://schema.org/NewCondition" } else { "https://schema.org/UsedCondition" }
-        $primaryCtaHtml = if ($it.s -eq "out_of_stock") {
+        $primaryCtaHtml = if ($it.contact_only) {
+            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ</button>"
+        } elseif ($it.s -eq "out_of_stock") {
             "<a class='btn btn-copper' href='../../?waitlist=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=waitlist'>🔔 Báo khi về</a>"
-        } elseif ($it.contact_only) {
-            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
         } else {
             "<a class='btn btn-copper' href='../../?add=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=add_to_cart'>+ Thêm vào Giỏ / Báo giá</a>"
         }
