@@ -77,7 +77,7 @@ Mở **Windows PowerShell**, chạy đúng 2 dòng sau:
 cd "E:\Hue Sound Express\Hue_Sound_Express_GitHub_Bio_B2A"
 powershell -ExecutionPolicy Bypass -File .\dong-bo.ps1
 ```
-Script [dong-bo.ps1](../dong-bo.ps1) sẽ tự động kiểm tra xem Excel đã đóng chưa → chạy `build_site_data.ps1 -GenerateProductPages` → `git add -A` → `git commit` → `git push` lên GitHub Pages (tự xử lý cả trường hợp cần `git pull --rebase`).
+Script [dong-bo.ps1](../dong-bo.ps1) sẽ tự động kiểm tra xem Excel đã đóng chưa → chạy [kiem-tra-va-sua-csv.ps1](../scripts/kiem-tra-va-sua-csv.ps1) để **tự động phát hiện & cắt sạch thẻ HTML rác / cảnh báo link ảnh dán nhầm / xóa slug lỗi** → chạy `build_site_data.ps1 -GenerateProductPages` → `git add -A` → `git commit` → `git push` lên GitHub Pages (tự xử lý cả trường hợp cần `git pull --rebase`).
 
 ### Hoặc chạy thủ công từng bước (nhớ bấm `Enter` sau mỗi dòng)
 

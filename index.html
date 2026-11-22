@@ -251,10 +251,17 @@ button, input, select, textarea { font-family: inherit; }
   background: #EFE0BE; padding: 0 6px;
 }
 .tagline {
-  font-size: .86rem; color: var(--muted); max-width: 46rem; line-height: 1.68;
+  font-size: .86rem; color: var(--muted); max-width: 100%; line-height: 1.68;
 }
 .tagline .tl-line { display: block; }
-.tagline .tl-line:first-child { font-weight: 600; color: var(--ink); }
+.tagline .tl-line:first-child {
+  font-weight: 600; color: var(--ink);
+  font-size: clamp(.72rem, 1.35vw, .88rem);
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .tagline .tl-line:first-child { white-space: normal; font-size: .78rem; }
+}
 
 /* Thanh 5 liên kết hãng (Zalo, WhatsApp, Fanpage, Instagram, Google Maps): LUÔN 1 hàng ngang */
 .quick-links {
@@ -1110,9 +1117,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           <option value="CONTACT" id="optPrContact">Giá liên hệ</option>
         </select>
         <select id="yearSort" class="select-ctrl" onchange="resetAndRender()">
-          <option value="DEFAULT" id="optYrDef">Gần đây</option>
-          <option value="NEW_OLD" id="optYrNew">Mới → Cũ</option>
+          <option value="NEW_OLD" id="optYrNew" selected>Mới → Cũ</option>
           <option value="OLD_NEW" id="optYrOld">Cũ → Mới</option>
+          <option value="DEFAULT" id="optYrDef">Gần đây</option>
         </select>
       </div>
       <!-- Phân loại Nhạc Việt / Nhạc Quốc Tế -->
@@ -1297,7 +1304,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   const I18N = {
     vi: {
       fabCart: 'Giỏ & Báo giá',
-      tlLine1: 'Phòng nghe số & Kho Analog Audio: Đĩa than (Vinyl), Đĩa CD, Máy hát và Phụ kiện Audiophile chính hãng',
+      tlLine1: 'Phòng nghe số & Kho đĩa than, Đĩa CD, Máy hát và Phụ kiện Audiophile chính hãng',
       tlLine2: 'Có Audio nghe thử 30s, giá minh bạch, xuất báo giá nhanh & đóng gói chuyên dụng, giao hàng toàn quốc',
       qlZalo: 'Hotline/Zalo', qlWa: 'WhatsApp', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Đĩa Than (LP)', tabCd: 'Đĩa CD / SACD', tabTurntable: 'Máy Hát / Mâm Than',
@@ -1443,7 +1450,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     },
     en: {
       fabCart: 'Cart & Quote',
-      tlLine1: 'Digital Listening Lounge & Analog Audio: Vinyl LP, CD, Turntables & Authentic Audiophile Accessories',
+      tlLine1: 'Digital Listening Lounge & Authentic Vinyl LP, CD, Turntables & Audiophile Accessories',
       tlLine2: '30s audio previews, transparent prices, instant quotes & protective 3-layer nationwide shipping',
       qlZalo: 'Hotline/Zalo', qlWa: 'WhatsApp', qlFb: 'Facebook', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Vinyl (LP)', tabCd: 'CD / SACD', tabTurntable: 'Turntables',
@@ -1629,9 +1636,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   const miniPlayer = document.getElementById('miniPlayer');
 
   function getMusicOrigin(item) {
+    // 1. Ma SKU la nguon chuan: NN- (Nuoc ngoai) luon la Nhac Quoc Te; VN-/CD-VN-/CD-SSR-/CD-SSS- la Nhac Viet
+    if (/^NN-/i.test(item.sku)) return 'INTL';
+    if (/^(VN-|CD-VN-|CD-SSR-|CD-SSS-)/i.test(item.sku)) return 'VN';
+    // 2. The loai dac thu Nhac Viet
     if (['love_songs_1954_1975', 'bolero_golden_oldies', 'vietnamese_pop_modern', 'vietnamese_folk_patriotic'].includes(item.g)) return 'VN';
-    if (/^(VN-|CD-VN-)/i.test(item.sku)) return 'VN';
-    if (/[ăâđêôơưĂÂĐÊÔƠƯáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ]/.test(`${item.a} ${item.t}`) || /(viollage|saigon)/i.test(item.a)) return 'VN';
+    // 3. Chi kiem tra dau tieng Viet dac trung (loai tru 'Nhiều nghệ sĩ', 'Nhạc Phim' & dau tieng Phap nhu é/à/ô)
+    const cleaned = `${item.a} ${item.t}`.replace(/nhiều nghệ sĩ|nhiều ca sĩ|nhạc phim/gi, '');
+    if (/[ăâđơưĂÂĐƠƯấầẩẫậắằẳẵặếềểễệốồổỗộớờởỡợứừửữựảãạẻẽẹỉĩịỏõọủũụỷỹỵ]/.test(cleaned) || /(viollage|saigon)/i.test(item.a)) return 'VN';
     return 'INTL';
   }
 
@@ -1957,7 +1969,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       document.getElementById('condFilter').value = 'ALL';
       document.getElementById('moodFilter').value = 'ALL';
       document.getElementById('priceFilter').value = 'ALL';
-      document.getElementById('yearSort').value = 'DEFAULT';
+      document.getElementById('yearSort').value = 'NEW_OLD';
       populateArtistFilter();
       populateLabelFilter();
       populateMoodFilter();
@@ -2006,7 +2018,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('condFilter').value = 'ALL';
     document.getElementById('moodFilter').value = 'ALL';
     document.getElementById('priceFilter').value = 'ALL';
-    document.getElementById('yearSort').value = 'DEFAULT';
+    document.getElementById('yearSort').value = 'NEW_OLD';
     activeRegion = 'ALL';
     activeSubFilter = 'ALL';
     onlyWithAudio = false;
@@ -2044,7 +2056,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('condFilter').value = 'ALL';
     document.getElementById('moodFilter').value = 'ALL';
     document.getElementById('priceFilter').value = 'ALL';
-    document.getElementById('yearSort').value = 'DEFAULT';
+    document.getElementById('yearSort').value = 'NEW_OLD';
     activeRegion = 'ALL';
     activeSubFilter = 'ALL';
     onlyWithAudio = false;
@@ -2091,7 +2103,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       document.getElementById('condFilter').value !== 'ALL' ||
       document.getElementById('moodFilter').value !== 'ALL' ||
       document.getElementById('priceFilter').value !== 'ALL' ||
-      document.getElementById('yearSort').value !== 'DEFAULT' ||
+      document.getElementById('yearSort').value !== 'NEW_OLD' ||
       activeRegion !== 'ALL' ||
       activeSubFilter !== 'ALL' ||
       onlyWithAudio
@@ -2278,18 +2290,18 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (yr === 'NEW_OLD') {
       filteredProducts.sort((a, b) => {
         const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
-        if (ya === 0 && yb === 0) return 0;
+        if (ya === 0 && yb === 0) return (Number(b.id) || 0) - (Number(a.id) || 0);
         if (ya === 0) return 1;
         if (yb === 0) return -1;
-        return yb - ya;
+        return (yb - ya) || ((Number(b.id) || 0) - (Number(a.id) || 0));
       });
     } else if (yr === 'OLD_NEW') {
       filteredProducts.sort((a, b) => {
         const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
-        if (ya === 0 && yb === 0) return 0;
+        if (ya === 0 && yb === 0) return (Number(a.id) || 0) - (Number(b.id) || 0);
         if (ya === 0) return 1;
         if (yb === 0) return -1;
-        return ya - yb;
+        return (ya - yb) || ((Number(a.id) || 0) - (Number(b.id) || 0));
       });
     }
 

@@ -282,6 +282,11 @@ function Get-ProductKeywords {
         @{ rx = 'quốc bảo|bình yên|em về tinh khôi'; lbl = 'Quốc Bảo' },
         @{ rx = 'bảo chấn|nơi ấy bình yên|giấc mơ tuyệt vời'; lbl = 'Bảo Chấn' },
         @{ rx = 'đức huy|đừng xa em đêm nay|như đã dấu yêu'; lbl = 'Đức Huy' },
+        @{ rx = 'phú quang|em ơi hà nội phố|biển nỗi nhớ và em|điều giản dị|mơ về nơi xa lắm'; lbl = 'Phú Quang' },
+        @{ rx = 'trần tiến|sắc màu|mặt trời bé con|quê nhà|về đi em'; lbl = 'Trần Tiến' },
+        @{ rx = 'dương thụ|cho em một ngày|tháng tư về|nghe mưa|lắng nghe mùa xuân về'; lbl = 'Dương Thụ' },
+        @{ rx = 'thanh tùng|giọt nắng bên thềm|lối cũ ta về|hoa cúc vàng|một mình'; lbl = 'Thanh Tùng' },
+        @{ rx = 'anh quân|huy tuấn|tóc ngắn|hương ngọc lan|trưa vắng'; lbl = 'Anh Quân & Huy Tuấn' },
         @{ rx = 'hoàng trọng|ngàn thu áo tím'; lbl = 'Hoàng Trọng' },
         @{ rx = 'văn cao|đoàn chuẩn|từ linh|gửi gió cho mây ngàn bay'; lbl = 'Nhạc Tiền Chiến' },
         @{ rx = 'joe hisaishi|ghibli|totoro|mononoke|howl'; lbl = 'Joe Hisaishi' },
@@ -314,8 +319,18 @@ function Get-ProductKeywords {
     )
     foreach ($th in $themes) { if ($corpus -match "(?i)$($th.rx)") { & $addKw $th.lbl } }
 
-    # The loai ngu nghia
+    # The loai ngu nghia & SEO / AI Agent keywords
     & $addKw (Get-GenreDisplayVi $Item.g)
+    if ($Item.category -eq "vinyl") {
+        & $addKw "Đĩa than Vinyl LP"
+        & $addKw "Đĩa than chính hãng"
+        & $addKw "Cửa hàng đĩa than Hue Sound Express"
+        & $addKw "Nơi bán đĩa nhạc uy tín"
+    } elseif ($Item.category -eq "cd") {
+        & $addKw "Đĩa CD chính hãng"
+        & $addKw "Cửa hàng đĩa than Hue Sound Express"
+        & $addKw "Nơi bán đĩa nhạc uy tín"
+    }
     if ($Item.g -eq "bolero_golden_oldies") { & $addKw "Bolero"; & $addKw "Nhạc Vàng"; & $addKw "Nhạc Trữ Tình" }
     elseif ($Item.g -eq "love_songs_1954_1975") { & $addKw "Tình khúc 1954–1975"; & $addKw "Nhạc Xưa"; & $addKw "Tình Ca" }
     elseif ($Item.g -eq "instrumental") { & $addKw "Instrument"; & $addKw "Hòa tấu nhạc cụ" }
@@ -719,7 +734,7 @@ if ($GenerateProductPages) {
         $catShort = switch ($it.category) { "vinyl" { "Đĩa Than (Vinyl LP)" }; "cd" { "Đĩa CD / SACD" }; "turntable" { "Máy Hát / Mâm Than" }; default { "Phụ kiện và dịch vụ" } }
         $catLabel = "$catShort • Analog Audio"
         $genreDisplay = Get-GenreDisplayVi $it.g
-        $extraSeoDesc = if ($it.g -eq "bolero_golden_oldies") { " Thể loại Nhạc Bolero (Nhạc Vàng / Nhạc Trữ Tình) chuẩn Analog Audio." } elseif ($it.g -eq "love_songs_1954_1975") { " Dòng nhạc Tình khúc 1954–1975 kinh điển chuẩn Analog Audio." } elseif ($it.category -eq "vinyl") { " Đĩa than Vinyl chuẩn Analog Audio tại Hue Sound Express." } else { " Sản phẩm Analog Audio chính hãng tại Hue Sound Express." }
+        $extraSeoDesc = if ($it.d -match 'Hue Sound Express') { "" } elseif ($it.g -eq "bolero_golden_oldies") { " Thể loại Nhạc Bolero (Nhạc Vàng / Nhạc Trữ Tình) chuẩn Analog Audio." } elseif ($it.g -eq "love_songs_1954_1975") { " Dòng nhạc Tình khúc 1954–1975 kinh điển chuẩn Analog Audio." } elseif ($it.category -eq "vinyl") { " Đĩa than Vinyl chuẩn Analog Audio tại Hue Sound Express." } else { " Sản phẩm Analog Audio chính hãng tại Hue Sound Express." }
 
         $seoTitleEsc = Escape-Html "$seoPrefix$($it.t) – $($it.a)"
         $descEsc = Escape-Html "$($it.d)$extraSeoDesc"
