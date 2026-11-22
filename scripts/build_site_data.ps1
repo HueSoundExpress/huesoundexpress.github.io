@@ -252,6 +252,109 @@ function Get-StatusDisplayVi {
     return "Hết hàng"
 }
 
+function Get-ItemOriginCode {
+    param($Item)
+    $sku = ([string]$Item.sku).ToUpperInvariant()
+    if ($sku.StartsWith("NN-")) { return "INTL" }
+    if ($sku.StartsWith("VN-") -or $sku.StartsWith("CD-VN-") -or $sku.StartsWith("CD-GDA-") -or $sku.StartsWith("CD-SSR-") -or $sku.StartsWith("CD-SSS-")) { return "VN" }
+    $vnGenres = @("love_songs_1954_1975","bolero_golden_oldies","vietnamese_pop_modern","vietnamese_folk_patriotic")
+    if ($vnGenres -contains $Item.g) { return "VN" }
+    return "INTL"
+}
+
+function Format-LinkedDescription {
+    param(
+        [string]$DescText,
+        $Item,
+        [string]$CatParam,
+        [string]$OriginCode,
+        [string]$GenreDisplay,
+        [string]$CatUrl,
+        [string]$OriginUrl,
+        [string]$GenreUrl,
+        [string]$ArtistUrl,
+        [string]$LabelUrl
+    )
+    if ([string]::IsNullOrWhiteSpace($DescText)) { return "" }
+    $cands = New-Object System.Collections.ArrayList
+
+    if ($Item.a -and $Item.a.Length -ge 2) {
+        [void]$cands.Add([PSCustomObject]@{ txt = $Item.a; url = $ArtistUrl; tip = "Xem tất cả sản phẩm của $($Item.a)" })
+    }
+    if ($LabelUrl -and $Item.l -and $Item.l.Length -ge 2 -and $Item.l -notmatch '^(?i)(other|việt nam)$') {
+        [void]$cands.Add([PSCustomObject]@{ txt = $Item.l; url = $LabelUrl; tip = "Xem tất cả ấn phẩm của hãng $($Item.l)" })
+    }
+    if ($OriginUrl) {
+        if ($OriginCode -eq "VN") {
+            [void]$cands.Add([PSCustomObject]@{ txt = "nhạc Việt Nam"; url = $OriginUrl; tip = "Xem toàn bộ Nhạc Việt" })
+            [void]$cands.Add([PSCustomObject]@{ txt = "Nhạc Việt"; url = $OriginUrl; tip = "Xem toàn bộ Nhạc Việt" })
+        } else {
+            [void]$cands.Add([PSCustomObject]@{ txt = "nhạc Quốc tế"; url = $OriginUrl; tip = "Xem toàn bộ Nhạc Quốc Tế" })
+            [void]$cands.Add([PSCustomObject]@{ txt = "Nhạc Quốc Tế"; url = $OriginUrl; tip = "Xem toàn bộ Nhạc Quốc Tế" })
+        }
+    }
+    if ($GenreDisplay -and $GenreDisplay.Length -ge 3) {
+        [void]$cands.Add([PSCustomObject]@{ txt = $GenreDisplay; url = $GenreUrl; tip = "Xem thể loại $GenreDisplay" })
+    }
+    $genreAliases = switch ($Item.g) {
+        "classic_soundtrack"        { @("Classic & Nhạc phim OST", "Nhạc phim OST", "Cổ điển") }
+        "bolero_golden_oldies"      { @("Nhạc Vàng & Bolero", "Nhạc Bolero", "Nhạc Trữ Tình", "Trữ tình") }
+        "love_songs_1954_1975"      { @("Tình khúc 1954–1975", "Tình khúc 1954-1975", "Tiền chiến & Trữ tình", "Tiền chiến") }
+        "vietnamese_pop_modern"     { @("Nhạc Việt trẻ") }
+        "vietnamese_folk_patriotic" { @("Dân ca & Cách mạng") }
+        "instrumental"              { @("Hòa tấu Violin Instrument", "Hòa tấu", "Instrument") }
+        "jazz_vocal"                { @("Jazz & Vocal") }
+        "audiophile_reference"      { @("Audiophile") }
+        default                     { @() }
+    }
+    foreach ($ga in $genreAliases) {
+        [void]$cands.Add([PSCustomObject]@{ txt = $ga; url = $GenreUrl; tip = "Xem thể loại $GenreDisplay" })
+    }
+    $catPhrases = switch ($Item.category) {
+        "vinyl"     { @("Đĩa than") }
+        "cd"        { @("Đĩa CD") }
+        "turntable" { @("Máy hát đĩa than", "Mâm than") }
+        default     { @("Phụ kiện đĩa than", "Hue Sound Vinyl Care") }
+    }
+    foreach ($cp in $catPhrases) {
+        [void]$cands.Add([PSCustomObject]@{ txt = $cp; url = $CatUrl; tip = "Xem danh mục" })
+    }
+    $namedArtists = @("London Symphony Orchestra","Trịnh Công Sơn","Phạm Duy","Ngô Thụy Miên","Vũ Thành An","Lam Phương","Nguyễn Ánh 9","Từ Công Phụng","Lê Uyên Phương","Trúc Phương","Trần Thiện Thanh","Hoàng Thi Thơ","Phạm Đình Chương","Quốc Bảo","Bảo Chấn","Đức Huy","Đức Trí","Phú Quang","Trần Tiến","Dương Thụ","Thanh Tùng","Văn Cao","Dzoãn Mẫn","Dương Thiệu Tước","Nguyễn Văn Tý","Đỗ Bảo","Thành Nghiệp","Thân Sao Mai")
+    foreach ($na in $namedArtists) {
+        if ($DescText -match [regex]::Escape($na)) {
+            $qUrl = "../../?cat=$CatParam&q=$([Uri]::EscapeDataString($na))"
+            [void]$cands.Add([PSCustomObject]@{ txt = $na; url = $qUrl; tip = "Tìm các ấn phẩm liên quan $na" })
+        }
+    }
+
+    $sortedCands = $cands | Sort-Object { $_.txt.Length } -Descending
+    $work = $DescText
+    $tokens = New-Object System.Collections.ArrayList
+    $usedUrls = New-Object 'System.Collections.Generic.HashSet[string]'
+    $idx = 0
+
+    foreach ($c in $sortedCands) {
+        if ($usedUrls.Contains($c.url)) { continue }
+        $rx = "(?i)(?<![\p{L}\p{N}])" + [regex]::Escape($c.txt) + "(?![\p{L}\p{N}])"
+        $m = [regex]::Match($work, $rx)
+        if ($m.Success) {
+            $tok = "___XLNK$($idx)___"
+            $matchedEsc = Escape-Html $m.Value
+            $tipEsc = Escape-Html $c.tip
+            [void]$tokens.Add("<a class='desc-link' href='$($c.url)' title='$tipEsc'>$matchedEsc</a>")
+            $work = $work.Substring(0, $m.Index) + $tok + $work.Substring($m.Index + $m.Length)
+            [void]$usedUrls.Add($c.url)
+            $idx++
+        }
+    }
+
+    $outHtml = Escape-Html $work
+    for ($i = 0; $i -lt $tokens.Count; $i++) {
+        $outHtml = $outHtml.Replace("___XLNK$($i)___", $tokens[$i])
+    }
+    return $outHtml
+}
+
 # Trich xuat tu khoa giau ngu nghia: Ca si, Nhac si, Nhac cu, Bai hat, Chu de trong album
 function Get-ProductKeywords {
     param($Item)
@@ -512,6 +615,7 @@ foreach ($it in $allItems) {
     elseif ($lbl -match '^(?i)stockfish$') { $lbl = "Stockfisch Records" }
     elseif ($lbl -match '^(?i)bk production$') { $lbl = "BK Production" }
     elseif ($lbl -match '^(?i)viết tân audio$') { $lbl = "Viết Tân Studio" }
+    elseif ($lbl -match '^(?i)music on vinyl$') { $lbl = "Music On Vinyl" }
     $it.l = $lbl
 
     $origP = [int]$it.p
@@ -522,6 +626,9 @@ foreach ($it in $allItems) {
     else { $it | Add-Member -NotePropertyName 'cond' -NotePropertyValue $normCond }
     $it.s = $normSt
 
+    if ($it.category -eq "cd" -and $origP -gt 0 -and $origP -lt 150000) {
+        $origP = 150000
+    }
     $saleP = $origP
     if ($it.category -eq "cd" -and $origP -ge 200000 -and $origP -le 300000) {
         $saleP = $origP - 20000
@@ -754,10 +861,25 @@ if ($GenerateProductPages) {
         $catShort = switch ($it.category) { "vinyl" { "Đĩa Than (Vinyl LP)" }; "cd" { "Đĩa CD / SACD" }; "turntable" { "Máy Hát / Mâm Than" }; default { "Phụ kiện và dịch vụ" } }
         $catLabel = "$catShort • Analog Audio"
         $genreDisplay = Get-GenreDisplayVi $it.g
+        $catParam = if ($it.category -eq "care") { "accessory" } else { $it.category }
+        $hasOrigin = ($it.category -eq "vinyl" -or $it.category -eq "cd")
+        $originCode = if ($hasOrigin) { Get-ItemOriginCode $it } else { "" }
+        $originLabelVi = if ($originCode -eq "VN") { "Nhạc Việt" } elseif ($originCode -eq "INTL") { "Nhạc Quốc Tế" } else { "" }
+        $catUrl    = "../../?cat=$catParam"
+        $originUrl = if ($hasOrigin) { "../../?cat=$catParam&origin=$originCode" } else { "" }
+        $genreUrl  = if ($hasOrigin) { "../../?cat=$catParam&origin=$originCode&genre=$([Uri]::EscapeDataString($it.g))" } else { "../../?cat=$catParam&genre=$([Uri]::EscapeDataString($it.g))" }
+        $artistUrl = "../../?cat=$catParam&artist=$([Uri]::EscapeDataString($it.a))"
+        $hasLabelLink = ($it.l -and $it.l -notmatch '^(?i)(other|việt nam)$')
+        $labelUrl  = if ($hasLabelLink) { "../../?cat=$catParam&label=$([Uri]::EscapeDataString($it.l))" } else { "" }
+        $condUrl   = "../../?cat=$catParam&cond=$([Uri]::EscapeDataString($it.cond))"
+        $statusUrl = "../../?cat=$catParam&status=$([Uri]::EscapeDataString($it.s))"
+
         $extraSeoDesc = if ($it.d -match 'Hue Sound Express') { "" } elseif ($it.g -eq "bolero_golden_oldies") { " Thể loại Nhạc Bolero (Nhạc Vàng / Nhạc Trữ Tình) chuẩn Analog Audio." } elseif ($it.g -eq "love_songs_1954_1975") { " Dòng nhạc Tình khúc 1954–1975 kinh điển chuẩn Analog Audio." } elseif ($it.category -eq "vinyl") { " Đĩa than Vinyl chuẩn Analog Audio tại Hue Sound Express." } else { " Sản phẩm Analog Audio chính hãng tại Hue Sound Express." }
 
         $seoTitleEsc = Escape-Html "$seoPrefix$($it.t) – $($it.a)"
-        $descEsc = Escape-Html "$($it.d)$extraSeoDesc"
+        $fullDescRaw = "$($it.d)$extraSeoDesc"
+        $descEsc = Escape-Html $fullDescRaw
+        $descLinkedHtml = Format-LinkedDescription -DescText $fullDescRaw -Item $it -CatParam $catParam -OriginCode $originCode -GenreDisplay $genreDisplay -CatUrl $catUrl -OriginUrl $originUrl -GenreUrl $genreUrl -ArtistUrl $artistUrl -LabelUrl $labelUrl
         $kwJoined = ($it.kw -join ", ")
         $kwEsc = Escape-Html $kwJoined
         $priceFmt = if ($it.p -gt 0) { "$($it.p.ToString('N0')) đ" } else { "Liên hệ báo giá" }
@@ -925,11 +1047,17 @@ if ($GenerateProductPages) {
     @media (max-width:680px){ .hero{ grid-template-columns:1fr; } }
     .cover { aspect-ratio:1/1; border-radius:14px; overflow:hidden; background:radial-gradient(circle at center, #F3E9D0 0%, #DFC99B 100%); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; text-align:center; padding:16px; }
     .cover img { width:100%; height:100%; object-fit:cover; }
-    .badge { display:inline-block; font-size:11px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(181,84,31,.11); color:var(--copper-dark); border:1px solid rgba(181,84,31,.22); margin-bottom:10px; }
+    .badge-row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+    .badge { display:inline-block; font-size:11px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(181,84,31,.11); color:var(--copper-dark); border:1px solid rgba(181,84,31,.22); text-decoration:none; transition:all .18s; }
+    a.badge:hover { background:rgba(181,84,31,.22); border-color:var(--copper); color:var(--ink); }
     h1 { font-family:var(--serif); font-size:25px; line-height:1.3; margin-bottom:4px; color:var(--ink); }
     .sub { color:var(--copper-dark); font-size:16px; font-weight:600; margin-bottom:10px; }
+    .xlink { color:var(--copper-dark); text-decoration:none; border-bottom:1px dashed rgba(181,84,31,.45); transition:all .18s; }
+    .xlink:hover { color:var(--copper); border-bottom-style:solid; }
     .meta { font-size:12.5px; color:var(--muted); margin-bottom:12px; }
     .desc { font-size:14px; color:var(--ink); opacity:.92; }
+    .desc-link { color:var(--copper-dark); font-weight:600; text-decoration:none; border-bottom:1px dotted rgba(181,84,31,.55); transition:all .18s; }
+    .desc-link:hover { color:var(--copper); border-bottom-style:solid; }
     .price-row { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin:16px 0; }
     .price-label { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); font-weight:600; }
     .price-stack { display:flex; align-items:center; gap:7px; }
@@ -937,7 +1065,8 @@ if ($GenerateProductPages) {
     .price-save { font-size:10.5px; font-weight:700; color:#FFF7E8; background:#B5541F; padding:1px 6px; border-radius:99px; }
     .price { font-size:25px; font-weight:800; color:var(--copper); line-height:1.15; }
     .acc-note { font-size:11.5px; color:#8C3A12; font-weight:600; margin-top:4px; }
-    .status { font-size:12px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(201,154,46,.18); border:1px solid rgba(201,154,46,.5); color:var(--ink); }
+    .status { font-size:12px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(201,154,46,.18); border:1px solid rgba(201,154,46,.5); color:var(--ink); text-decoration:none; transition:all .18s; }
+    a.status:hover { background:rgba(201,154,46,.32); border-color:var(--copper); }
     .cta-row { display:flex; flex-wrap:wrap; gap:9px; margin-top:14px; }
     .btn { text-decoration:none; padding:10px 15px; border-radius:10px; font-weight:600; font-size:13px; display:inline-flex; align-items:center; gap:6px; transition:all .2s; border:none; cursor:pointer; font-family:inherit; }
     .btn-copper { background:var(--copper-grad); color:#FFF7E8; }
@@ -960,7 +1089,8 @@ if ($GenerateProductPages) {
     .faq-item p { font-size:13px; color:var(--muted); margin-top:6px; }
     .faq-more { color:var(--copper); font-weight:600; text-decoration:none; }
     .kw-cloud { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
-    .kw-chip { font-size:11px; padding:3px 9px; border-radius:99px; background:rgba(181,84,31,.09); color:var(--muted); border:1px solid rgba(181,84,31,.18); }
+    .kw-chip { font-size:11px; padding:3px 9px; border-radius:99px; background:rgba(181,84,31,.09); color:var(--muted); border:1px solid rgba(181,84,31,.18); text-decoration:none; transition:all .18s; }
+    a.kw-chip:hover { background:rgba(181,84,31,.2); color:var(--copper-dark); border-color:var(--copper); }
     footer { text-align:center; margin-top:34px; font-size:12px; color:var(--muted); }
     .chat-backdrop { position:fixed; inset:0; background:rgba(58,28,10,.5); backdrop-filter:blur(3px); z-index:90; display:none; align-items:center; justify-content:center; padding:16px; }
     .chat-backdrop.open { display:flex; }
@@ -979,22 +1109,26 @@ if ($GenerateProductPages) {
       <span class="brand-mini">HUE SOUND EXPRESS • Analog Audio</span>
     </div>
     <nav class="crumb" aria-label="Breadcrumb">
-      <a href="../../">Trang chủ</a> › <a href="../../?cat=$($it.category)">$catShort</a> › <span>$(Escape-Html $it.t)</span>
+      <a href="../../">Trang chủ</a> › <a href="$catUrl">$catShort</a> $(if ($hasOrigin) { "› <a href='$originUrl'>$originLabelVi</a>" }) › <a href="$genreUrl">$(Escape-Html $genreDisplay)</a> › <span>$(Escape-Html $it.t)</span>
     </nav>
     <div class="hero">
       <div class="cover">
         $(if ($it.img -match '^https?://') { "<img src='$(Escape-Html $it.img)' alt='$seoTitleEsc' onerror=`"this.style.display='none';this.nextElementSibling.style.display='flex';`">$(Get-VinylFallbackSvg -Title $it.t -Artist $it.a -Fmt $it.f -Uid "p$($it.id)" -Hidden $true)" } else { Get-VinylFallbackSvg -Title $it.t -Artist $it.a -Fmt $it.f -Uid "p$($it.id)" -Hidden $false })
       </div>
       <div>
-        <span class="badge">$catLabel • $(Escape-Html $genreDisplay)</span>
+        <div class="badge-row">
+          <a class="badge" href="$catUrl" title="Xem danh mục $catShort">$catShort</a>
+          $(if ($hasOrigin) { "<a class='badge' href='$originUrl' title='Xem phân loại $originLabelVi'>$originLabelVi</a>" })
+          <a class="badge" href="$genreUrl" title="Xem thể loại $(Escape-Html $genreDisplay)">$(Escape-Html $genreDisplay)</a>
+        </div>
         <h1>$(Escape-Html $it.t)</h1>
-        <div class="sub">$(Escape-Html $it.a)</div>
-        <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.PSObject.Properties['w'] -and $it.w) { "• Trọng lượng: <strong>$(Escape-Html $it.w)</strong>" }) $(if ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
-        <p class="desc">$descEsc</p>
+        <div class="sub"><a class="xlink" href="$artistUrl" title="Xem tất cả sản phẩm của $(Escape-Html $it.a)">$(Escape-Html $it.a)</a></div>
+        <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.PSObject.Properties['w'] -and $it.w) { "• Trọng lượng: <strong>$(Escape-Html $it.w)</strong>" }) $(if ($hasLabelLink) { "• Hãng: <a class='xlink' href='$labelUrl' title='Xem tất cả ấn phẩm của hãng $(Escape-Html $it.l)'><strong>$(Escape-Html $it.l)</strong></a>" } elseif ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
+        <p class="desc">$descLinkedHtml</p>
         <div class="price-row">
           <div>$priceHtml</div>
-          <span class="status">$(Escape-Html $condVi)</span>
-          <span class="status">$(Escape-Html $statusVi)</span>
+          <a class="status" href="$condUrl" title="Lọc theo tình trạng $(Escape-Html $condVi)">$(Escape-Html $condVi)</a>
+          <a class="status" href="$statusUrl" title="Lọc theo trạng thái $(Escape-Html $statusVi)">$(Escape-Html $statusVi)</a>
         </div>
         <div class="cta-row">
           $primaryCtaHtml
@@ -1011,7 +1145,7 @@ if ($GenerateProductPages) {
     $upsellHtml
     <section class="box">
       <h2>Từ khóa &amp; Chủ đề liên quan</h2>
-      <div class="kw-cloud">$(($it.kw | Select-Object -First 14 | ForEach-Object { "<span class='kw-chip'>$(Escape-Html $_)</span>" }) -join "")</div>
+      <div class="kw-cloud">$(($it.kw | Select-Object -First 14 | ForEach-Object { "<a class='kw-chip' href='../../?cat=$catParam&q=$([Uri]::EscapeDataString($_))'>$(Escape-Html $_)</a>" }) -join "")</div>
     </section>
     <footer>© 2026 Hue Sound Express • Analog Audio • Đóng gói 3 lớp chống rách mép • Hotline/Zalo &amp; WhatsApp: 09323.13918</footer>
   </div>

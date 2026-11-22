@@ -3218,6 +3218,71 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (catParam && ['vinyl','cd','turntable','accessory','care','guide'].includes(catParam)) {
       switchCategory(catParam === 'care' ? 'accessory' : catParam, null);
     }
+    let hasFilterParam = false;
+    const originParam = params.get('origin');
+    if (originParam && ['VN','INTL','ALL'].includes(originParam.toUpperCase()) && (activeCategory === 'vinyl' || activeCategory === 'cd')) {
+      activeRegion = originParam.toUpperCase();
+      populateArtistFilter();
+      populateLabelFilter();
+      populateMoodFilter();
+      renderRegionBar();
+      renderSubFilters();
+      hasFilterParam = true;
+    }
+    const genreParam = params.get('genre');
+    if (genreParam) {
+      activeSubFilter = genreParam;
+      renderSubFilters();
+      hasFilterParam = true;
+    }
+    const artistParam = params.get('artist');
+    if (artistParam) {
+      const sel = document.getElementById('artistFilter');
+      if (sel && Array.from(sel.options).some(o => o.value === artistParam)) {
+        sel.value = artistParam;
+      } else {
+        document.getElementById('searchInput').value = artistParam;
+      }
+      hasFilterParam = true;
+    }
+    const labelParam = params.get('label');
+    if (labelParam) {
+      const sel = document.getElementById('labelFilter');
+      if (sel && Array.from(sel.options).some(o => o.value === labelParam)) {
+        sel.value = labelParam;
+      } else {
+        document.getElementById('searchInput').value = labelParam;
+      }
+      hasFilterParam = true;
+    }
+    const condParam = params.get('cond');
+    if (condParam) {
+      const sel = document.getElementById('condFilter');
+      if (sel && Array.from(sel.options).some(o => o.value === condParam)) {
+        sel.value = condParam;
+        hasFilterParam = true;
+      }
+    }
+    const statusParam = params.get('status');
+    if (statusParam) {
+      const sel = document.getElementById('statusFilter');
+      if (sel && Array.from(sel.options).some(o => o.value === statusParam)) {
+        sel.value = statusParam;
+        hasFilterParam = true;
+      }
+    }
+    const qParam = params.get('q');
+    if (qParam) {
+      document.getElementById('searchInput').value = qParam;
+      hasFilterParam = true;
+    }
+    if (hasFilterParam && activeCategory !== 'guide') {
+      resetAndRender();
+      setTimeout(() => {
+        const sec = document.getElementById('catalogSection');
+        if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 120);
+    }
     const addSku = params.get('add');
     const wlSku = params.get('waitlist');
     if (addSku) { addToCart(addSku); openCart(); }

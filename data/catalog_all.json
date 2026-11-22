@@ -9236,27 +9236,37 @@
                  ],
         "a":  "2 Cellos",
         "t":  "Score",
-        "l":  "Music on vinyl",
+        "l":  "Music On Vinyl",
         "f":  "2xLP",
         "w":  "180g",
         "c":  "mint_sealed",
-        "y":  "",
+        "y":  "2017",
         "p":  1290000,
         "s":  "in_stock",
         "contact_only":  false,
-        "d":  "Đĩa than 2 Cellos - Score (Vinyl 2LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Music on vinyl) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
-        "tracklist":  {
+        "d":  "Đĩa than 2 Cellos - Score (Vinyl 2xLP 180g) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Music On Vinyl mã MOVCL031 • Hòa tấu cùng dàn nhạc giao hưởng London Symphony Orchestra) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "tracklist":  [
+                          "Game of Thrones Medley",
+                          "May It Be (The Lord of the Rings)",
+                          "For the Love of a Princess (Braveheart)",
+                          "Love Story",
+                          "Cinema Paradiso",
+                          "Moon River (Breakfast at Tiffany\u0027s)",
+                          "Love Theme (The Godfather)",
+                          "My Heart Will Go On (Titanic)",
+                          "Theme (Rain Man)",
+                          "Cavatina (The Deer Hunter)",
+                          "Malèna",
+                          "Main Theme (Schindler\u0027s List)",
+                          "Titles (Chariots of Fire)",
+                          "Now We Are Free (Gladiator)"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0b/8e/ab/0b8eabcb-11ff-1e3b-b0a9-8b2ea9b852f3/886445944495.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/b5/1a/deb51a19-db3f-a582-6271-d1d621110f12/mzaf_244148652887181812.plus.aac.p.m4a",
+        "aud_track":  "Game of Thrones Medley",
+        "missing_fields":  {
 
-                      },
-        "img":  "",
-        "aud":  "",
-        "aud_track":  "",
-        "missing_fields":  [
-                               "MISSING_COVER",
-                               "MISSING_AUDIO",
-                               "MISSING_TRACKLIST",
-                               "MISSING_YEAR"
-                           ],
+                           },
         "cond":  "mint_sealed",
         "p_orig":  1350000,
         "kw":  [
@@ -9265,14 +9275,22 @@
                    "Vinyl LP",
                    "2 Cellos",
                    "Score",
-                   "Music on vinyl",
+                   "Music On Vinyl",
                    "Cello",
                    "Nhạc Phim OST",
                    "Classic \u0026 OST",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
                    "Cửa hàng đĩa than Hue Sound Express",
-                   "Nơi bán đĩa nhạc uy tín"
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Game of Thrones Medley",
+                   "May It Be (The Lord of the Rings)",
+                   "For the Love of a Princess (Braveheart)",
+                   "Love Story",
+                   "Cinema Paradiso",
+                   "Moon River (Breakfast at Tiffany\u0027s)",
+                   "Love Theme (The Godfather)",
+                   "My Heart Will Go On (Titanic)"
                ]
     },
     {
@@ -10879,7 +10897,7 @@
         "mood":  "weekend_upbeat",
         "a":  "Deep Purple",
         "t":  "Greatest Hits",
-        "l":  "Music on vinyl",
+        "l":  "Music On Vinyl",
         "f":  "4xLP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -10887,7 +10905,7 @@
         "p":  3150000,
         "s":  "in_stock",
         "contact_only":  false,
-        "d":  "Đĩa than Deep Purple - Greatest Hits (Vinyl LP) - Đĩa than nhạc Quốc tế (Rock \u0026 Metal • Hãng Music on vinyl) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Deep Purple - Greatest Hits (Vinyl LP) - Đĩa than nhạc Quốc tế (Rock \u0026 Metal • Hãng Music On Vinyl) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  [
                           "Smoke on the Water (Live)",
                           "Highway Star (Live)",
@@ -10915,7 +10933,7 @@
                    "Vinyl LP",
                    "Deep Purple",
                    "Greatest Hits",
-                   "Music on vinyl",
+                   "Music On Vinyl",
                    "Rock \u0026 Metal",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
@@ -55606,7 +55624,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  120000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Vĩnh Tâm - Đời Đá Vàng - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -55620,7 +55638,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  140000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -55650,7 +55668,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  120000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Kim Chung - Tiếng Chuông Bình Minh - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -55664,7 +55682,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  140000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -55694,7 +55712,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  120000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Kim Chung - Giấc Mộng Vườn Hoa - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -55708,7 +55726,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  140000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -55739,7 +55757,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  120000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Kim Chung - Mắt Biếc - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -55761,7 +55779,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  140000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -55801,7 +55819,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  120000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Minh Thu - Bà Chúa Thượng Ngàn - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -55815,7 +55833,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  140000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -55846,7 +55864,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trịnh Công Sơn - Trịnh Vĩnh Trinh Vol 6 - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -55860,7 +55878,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -55893,7 +55911,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trịnh Công Sơn - Trịnh Vĩnh Trinh Vol 2 - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -55907,7 +55925,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -55940,7 +55958,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trịnh Công Sơn - Trịnh Vĩnh Trinh Vol 4 - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -55954,7 +55972,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -55987,7 +56005,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trịnh Công Sơn - Trịnh Vĩnh Trinh Vol 7 - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56001,7 +56019,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56034,7 +56052,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trịnh Công Sơn - Trịnh Vĩnh Trinh Vol 1 - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56048,7 +56066,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56080,7 +56098,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Nhạc Trịnh Vol 2 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56094,7 +56112,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56124,7 +56142,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Nhạc Trịnh Vol 1 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56138,7 +56156,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56169,7 +56187,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trần Thái Hòa - Còn Tuổi Nào Cho Em -Trịnh Công Sơn - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975 • Nhạc sĩ: Trịnh Công Sơn) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56183,7 +56201,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56217,7 +56235,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quang Dũng - Biển Nghìn Thu Ở Lại - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56231,7 +56249,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56264,7 +56282,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quang Dũng - Một Người Đi Một Người Quên - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56287,7 +56305,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56328,7 +56346,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quang Dũng - Cỏ Xót Xa Đưa - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56342,7 +56360,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56374,7 +56392,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Mạnh Đình - Hoa Tím Bằng Lăng - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56388,7 +56406,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56418,7 +56436,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Đàm Vĩnh Hưng - Phôi Pha - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56432,7 +56450,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56462,7 +56480,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Ra Đồng Giữa Ngọ - Thủy Tiên - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56485,7 +56503,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56525,7 +56543,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Hướng Về Hà Nội - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56548,7 +56566,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56589,7 +56607,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  110000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trần Tiến - Tự Họa - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56612,7 +56630,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  130000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56651,7 +56669,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Anh Thơ - Suốt đời tình khắc sâu - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56665,7 +56683,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56696,7 +56714,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Anh Thơ Ngày về - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56721,7 +56739,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56761,7 +56779,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quang Dũng - Gợi Giấc Mơ Xưa - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56785,7 +56803,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56824,7 +56842,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thanh Long Bass - Tương Tư - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56838,7 +56856,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56868,7 +56886,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quốc Bảo - My Guita \u0026 My Friends - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56882,7 +56900,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56912,7 +56930,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hà Vân - Tiếng Hát Hà Vân 2 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56926,7 +56944,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -56956,7 +56974,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hà Vân - Tiếng Hát Hà Vân 1 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -56970,7 +56988,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57000,7 +57018,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Vĩnh Tâm - Nhớ Mưa Sài Gòn - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57014,7 +57032,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57045,7 +57063,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Vĩnh Tâm - Chuyện Tình Buồn - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57059,7 +57077,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57089,7 +57107,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Vĩnh Tâm - Tình Khúc Chiều Mưa Vol 3 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57103,7 +57121,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57133,7 +57151,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thành Lê - Lặng - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57147,7 +57165,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57177,7 +57195,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thành Lê - Tìm - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57191,7 +57209,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57221,7 +57239,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hà Trần - Em Về Tinh Khôi - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57243,7 +57261,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57281,7 +57299,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hà Trần - Bài Tình Cho Giai Nhân - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57304,7 +57322,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57345,7 +57363,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Ngọc Tân - Vầng Trăng \u0026 Con Đường - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57369,7 +57387,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57410,7 +57428,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hoà Tấu - Sang Ngang - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57424,7 +57442,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57454,7 +57472,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hoà Tấu - Chiếc Lá Cuối Cùng - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57468,7 +57486,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57498,7 +57516,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Anh Thơ - Khi Con Tim Yêu - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57512,7 +57530,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57543,7 +57561,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Anh Thơ Nỗi Nhớ - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57557,7 +57575,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57588,7 +57606,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Anh Thơ - Một dòng nghiêng soi - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57602,7 +57620,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57633,7 +57651,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Anh thơ - Lối Về - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57647,7 +57665,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57678,7 +57696,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lương Nguyệt Anh - Câu Hát Người Thương Vol 2 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57692,7 +57710,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57722,7 +57740,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lương Nguyệt Anh - Bờ Sông Vẫn Gió - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57736,7 +57754,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57766,7 +57784,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Tân Nhàn - Bến Sông xưa - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57780,7 +57798,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57811,7 +57829,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Đức Long - Có Một Ngày - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57825,7 +57843,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57856,7 +57874,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Đức Long - Thương Một Người - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57870,7 +57888,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57902,7 +57920,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Đức Long - Xin Còn Gọi Tên Nhau - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57916,7 +57934,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -57946,7 +57964,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Đức Long - Tôi Đi Giữa Hoàng Hôn - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -57968,7 +57986,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58006,7 +58024,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trọng Tấn - Một Đời Người Một Rừng Cây - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58020,7 +58038,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58051,7 +58069,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trọng Tấn - Đi Giữa Mùa Xuân - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58075,7 +58093,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58115,7 +58133,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phan Thu Lan - Cánh Hoa Lưu Ly - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58140,7 +58158,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58179,7 +58197,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Đăng Dương - Khi Nắng Mai về - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58193,7 +58211,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58224,7 +58242,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hà Thị Cầu - Xẩm Chợ - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58245,7 +58263,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58284,7 +58302,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lê Nhật Quang - Khúc Nhạc Chiều Vol 2 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58298,7 +58316,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58328,7 +58346,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lê Nhật Quang - Dòng Sông Xanh Vol 1 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58342,7 +58360,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58372,7 +58390,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lê Nhật Quang - Dạ Khúc Vol 3 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58386,7 +58404,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58416,7 +58434,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trần Tiến - Chị Tôi - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58439,7 +58457,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58478,7 +58496,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trần Tiến - Có Một Thời Như Thế - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58492,7 +58510,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58522,7 +58540,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trần Tiến - Du Ca Đồng Quê - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58536,7 +58554,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58566,7 +58584,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Xuân Phú - Một Ngày Không Có Em - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ • Nhạc sĩ: Ngô Thụy Miên, Nguyễn Ánh 9) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58590,7 +58608,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58633,7 +58651,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Xuân Phú - Xin Còn Gọi Tên Nhau - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ • Nhạc sĩ: Ngô Thụy Miên, Từ Công Phụng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58656,7 +58674,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58698,7 +58716,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Xuân Phú - Thuở Ấy Có Em - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ • Nhạc sĩ: Ngô Thụy Miên, Phạm Duy) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58722,7 +58740,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58766,7 +58784,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  100000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Mỹ Linh - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58789,7 +58807,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  120000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58829,7 +58847,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phú Quang - Nỗi Nhớ Mùa Đông - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58851,7 +58869,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58890,7 +58908,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Ngọc Tân - Hà Nội Ngày Chia Xa - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58914,7 +58932,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -58953,7 +58971,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Ngọc Sơn - Chuyện Hợp Tan - Đĩa CD nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -58967,7 +58985,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59000,7 +59018,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Ngọc Sơn 2 - Tình Khúc Chiều Mưa - Đĩa CD nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59014,7 +59032,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59047,7 +59065,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Ngọc Sơn 3 - Tình Đời - Đĩa CD nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59061,7 +59079,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59094,7 +59112,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Ngọc Sơn 4 - Chiều Cuối Tuần - Đĩa CD nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59117,7 +59135,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59159,7 +59177,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Xuân Hiếu - 13 Ngày Trên Đất Pháp - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59182,7 +59200,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59222,7 +59240,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Xuân Hiếu -Tình Nghệ Sĩ Vol 5 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59236,7 +59254,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59267,7 +59285,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Xuân Hiếu - Chỉ Còn Ánh Mắt - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59290,7 +59308,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59330,7 +59348,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Xuân Hiếu - My Story - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59344,7 +59362,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59375,7 +59393,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Xuân Hiếu - Tình Khúc Nhạc Pháp Hay Nhất Vol 2 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59398,7 +59416,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59438,7 +59456,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Xuân Hiếu - Tình Khúc Nhạc Pháp Hay Nhất Vol 1 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59461,7 +59479,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59501,7 +59519,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hồ Trung Dũng - Hoài Niệm - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59515,7 +59533,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59545,7 +59563,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  90000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Văn Ca Thánh Mẫu 1,2,3,4 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59565,7 +59583,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  110000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59603,7 +59621,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trịnh Công Sơn - Đóa Hoa Vô Thường - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59617,7 +59635,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59650,7 +59668,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Trịnh Công Sơn - Tình Khúc - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59672,7 +59690,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59713,7 +59731,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nguyễn Ánh 9 - Nhạc Tình Muôn Thưở - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59738,7 +59756,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59780,7 +59798,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quang Linh - Nõi Buồn Gác Trọ - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59794,7 +59812,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59824,7 +59842,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quang Linh - Nửa Đêm Ngoài Phố - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59838,7 +59856,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59869,7 +59887,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quang Linh - Huế Thương - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59883,7 +59901,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59913,7 +59931,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thái Bảo - Ru Con Mùa Đông - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59938,7 +59956,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -59977,7 +59995,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hoàng Lê Vi - Chuyện Đóa Quỳnh - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -59991,7 +60009,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60021,7 +60039,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hoàng Lê Vi - Mưa Thu Vol 4 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60035,7 +60053,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60065,7 +60083,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hoàng Lê Vi - Vì Cớ Làm Sao Vol 3 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60079,7 +60097,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60110,7 +60128,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thái Bảo - Hoài Cảm - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60135,7 +60153,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60175,7 +60193,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thái Bảo - Nghe Giọt Nắng Phai - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60198,7 +60216,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60238,7 +60256,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Tóc Nâu Môi Trầm - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60252,7 +60270,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60282,7 +60300,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Quốc Bảo - Những Chuyện Kể Tales - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60296,7 +60314,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60326,7 +60344,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hà Vân - Chuyến Xe Lam Chiều - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60348,7 +60366,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60385,7 +60403,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Hà Vân - Gợi Nhớ Quê Hương - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60409,7 +60427,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60448,7 +60466,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lan Anh - Quê Hương Tuổi Thơ - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60470,7 +60488,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60509,7 +60527,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lan Anh - Tình Ca Cho Anh - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60531,7 +60549,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60571,7 +60589,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Văn Vượng - Khát Vọng - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60585,7 +60603,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60616,7 +60634,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Văn Vượng - Tình Khúc Phạm Duy - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975 • Nhạc sĩ: Phạm Duy) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60630,7 +60648,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60663,7 +60681,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Văn Vượng - Hà Nội Trong Mắt Ai - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60677,7 +60695,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60708,7 +60726,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Văn Vượng - Có Một Thời Để Nhớ - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60722,7 +60740,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60752,7 +60770,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Văn Vượng -Tiếng Thời Gian - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60766,7 +60784,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60796,7 +60814,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Văn Vượng - Thắp Lửa Trái Tim - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60810,7 +60828,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60840,7 +60858,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Bích Hồng - Chuyện Chúng Mình - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60854,7 +60872,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60884,7 +60902,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nguyễn Phương Thanh - Nỗi Nhớ Miền Trung - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60906,7 +60924,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60945,7 +60963,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nguyễn Phương Thanh - Tìm Về Nỗi Nhớ - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -60959,7 +60977,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -60989,7 +61007,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nguyễn Phương Thanh - Lời Em Hát - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61003,7 +61021,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61033,7 +61051,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Phương Thảo - Tri Ân - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61047,7 +61065,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61077,7 +61095,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Phương Thảo - Cho Em Thôi Chòng Chành Vol 9 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61099,7 +61117,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61137,7 +61155,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Phương Thảo - Gái Nghệ - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61151,7 +61169,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61181,7 +61199,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Phương Thảo - Tình Trong Câu Hát - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61202,7 +61220,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61241,7 +61259,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Phương Thảo - Tơ Vương Vol 8 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61255,7 +61273,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61285,7 +61303,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Phương Thảo - Điệu Buồn Điệu Thương - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61299,7 +61317,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61330,7 +61348,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Duy Hòa Tấu - Thà Như Giọt Mưa - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61344,7 +61362,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61377,7 +61395,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Duy - Nụ Tầm Xuân - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61391,7 +61409,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61425,7 +61443,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Duy Hòa Tấu - Tiếng Thu - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61439,7 +61457,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61471,7 +61489,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Guitar Phùng Vũ Tuấn - Như Cánh Vạc Bay - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61485,7 +61503,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61516,7 +61534,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Guitar Phạm Lợi - Sonat Ánh Trăng - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61530,7 +61548,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61562,7 +61580,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Đàn Bầu - Đàn Tranh - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61576,7 +61594,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61608,7 +61626,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Ru Con - Thanh Tâm - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61622,7 +61640,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61653,7 +61671,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Tiếng Đàn Bầu - Lệ Giang - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61667,7 +61685,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61700,7 +61718,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Nhạc Cụ Dân Tộc 2 - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61714,7 +61732,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61747,7 +61765,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Độc Tấu Nhạc Cụ Dân Tộc - Quê Hương - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61761,7 +61779,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61795,7 +61813,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Độc Tấu Nhạc Cụ Dân Tộc Việt Nam - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61809,7 +61827,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61842,7 +61860,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Tiếng Đàn Bầu - Thanh Tâm - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61856,7 +61874,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61888,7 +61906,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Bảo Yến - Biển Tím - Đĩa CD nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61911,7 +61929,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -61953,7 +61971,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Bảo Yến - Chiều Hạ Vàng - Đĩa CD nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -61967,7 +61985,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62000,7 +62018,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Bảo Yến - Bay Vào Ngày Xanh - Đĩa CD nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62023,7 +62041,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62066,7 +62084,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Bích Hồng - Gửi Người Tri Kỷ - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62080,7 +62098,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62110,7 +62128,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lê Anh Dũng - Dương Cầm Thu Không Em Vol 1 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62124,7 +62142,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62156,7 +62174,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Vĩnh Tâm - Hòa Tấu Hà Nội Giai Điệu Vàng Vol 2 - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62170,7 +62188,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62203,7 +62221,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Vĩnh Tâm - Hòa Tấu Hà Nội Giai Điệu Vàng Vol 1 - Đĩa CD nhạc Việt Nam (Hòa tấu Instrument) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62217,7 +62235,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62249,7 +62267,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Phương Thảo - Đẹp Nhất Tên Người - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62263,7 +62281,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62293,7 +62311,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Lan Anh - Tình Ca Xanh 1 - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62315,7 +62333,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62354,7 +62372,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Cõi Dân Ca - The Realms Of Vietnamese Folk Song - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62368,7 +62386,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62399,7 +62417,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD NSƯT - Duyên Phận Phải Chiều - Đĩa CD nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62413,7 +62431,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62446,7 +62464,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Nhiều nghệ sĩ - Hà Thành 36 Phố Phường - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62460,7 +62478,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62490,7 +62508,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD NSƯT Thanh Ngoan, Khắc Tư - Hát Văn Tuyển Chọn 2 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62504,7 +62522,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62534,7 +62552,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thùy Anh - Ôi! \"Đàn Cò\"\u0027 - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62557,7 +62575,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62595,7 +62613,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Phạm Lợi - Sonat Ánh Trăng - Đĩa CD nhạc Việt Nam (Nhạc Việt trẻ) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62609,7 +62627,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62639,7 +62657,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Dạ Cổ Hoài Lang - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62662,7 +62680,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62701,7 +62719,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Thoả Nỗi Nhớ Mong - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62715,7 +62733,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62746,7 +62764,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Đất Mẹ Ân Tình - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62760,7 +62778,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62791,7 +62809,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Giữ Trọn Tình Quê - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62805,7 +62823,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62836,7 +62854,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Sầu Đâu Đắng Hoài - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62850,7 +62868,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62881,7 +62899,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Trăng Sáng Vườn Chè - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62895,7 +62913,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62926,7 +62944,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Thương Về Xứ Nghệ - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -62949,7 +62967,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -62987,7 +63005,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Ai Ra Xứ Huế - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -63001,7 +63019,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -63032,7 +63050,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Hà Tĩnh Quê Mình - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -63055,7 +63073,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",
@@ -63094,7 +63112,7 @@
         "f":  "CD",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  80000,
+        "p":  130000,
         "s":  "out_of_stock",
         "contact_only":  true,
         "d":  "Đĩa CD Thu Hiền - Chuyện Tình Lá Diêu Bông - Đĩa CD nhạc Việt Nam (Dân ca \u0026 Cách mạng) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -63108,7 +63126,7 @@
 
                            ],
         "cond":  "mint_sealed",
-        "p_orig":  100000,
+        "p_orig":  150000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa CD",

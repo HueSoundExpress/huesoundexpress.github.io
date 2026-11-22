@@ -89,11 +89,17 @@
     @media (max-width:680px){ .hero{ grid-template-columns:1fr; } }
     .cover { aspect-ratio:1/1; border-radius:14px; overflow:hidden; background:radial-gradient(circle at center, #F3E9D0 0%, #DFC99B 100%); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; text-align:center; padding:16px; }
     .cover img { width:100%; height:100%; object-fit:cover; }
-    .badge { display:inline-block; font-size:11px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(181,84,31,.11); color:var(--copper-dark); border:1px solid rgba(181,84,31,.22); margin-bottom:10px; }
+    .badge-row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+    .badge { display:inline-block; font-size:11px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(181,84,31,.11); color:var(--copper-dark); border:1px solid rgba(181,84,31,.22); text-decoration:none; transition:all .18s; }
+    a.badge:hover { background:rgba(181,84,31,.22); border-color:var(--copper); color:var(--ink); }
     h1 { font-family:var(--serif); font-size:25px; line-height:1.3; margin-bottom:4px; color:var(--ink); }
     .sub { color:var(--copper-dark); font-size:16px; font-weight:600; margin-bottom:10px; }
+    .xlink { color:var(--copper-dark); text-decoration:none; border-bottom:1px dashed rgba(181,84,31,.45); transition:all .18s; }
+    .xlink:hover { color:var(--copper); border-bottom-style:solid; }
     .meta { font-size:12.5px; color:var(--muted); margin-bottom:12px; }
     .desc { font-size:14px; color:var(--ink); opacity:.92; }
+    .desc-link { color:var(--copper-dark); font-weight:600; text-decoration:none; border-bottom:1px dotted rgba(181,84,31,.55); transition:all .18s; }
+    .desc-link:hover { color:var(--copper); border-bottom-style:solid; }
     .price-row { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin:16px 0; }
     .price-label { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); font-weight:600; }
     .price-stack { display:flex; align-items:center; gap:7px; }
@@ -101,7 +107,8 @@
     .price-save { font-size:10.5px; font-weight:700; color:#FFF7E8; background:#B5541F; padding:1px 6px; border-radius:99px; }
     .price { font-size:25px; font-weight:800; color:var(--copper); line-height:1.15; }
     .acc-note { font-size:11.5px; color:#8C3A12; font-weight:600; margin-top:4px; }
-    .status { font-size:12px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(201,154,46,.18); border:1px solid rgba(201,154,46,.5); color:var(--ink); }
+    .status { font-size:12px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(201,154,46,.18); border:1px solid rgba(201,154,46,.5); color:var(--ink); text-decoration:none; transition:all .18s; }
+    a.status:hover { background:rgba(201,154,46,.32); border-color:var(--copper); }
     .cta-row { display:flex; flex-wrap:wrap; gap:9px; margin-top:14px; }
     .btn { text-decoration:none; padding:10px 15px; border-radius:10px; font-weight:600; font-size:13px; display:inline-flex; align-items:center; gap:6px; transition:all .2s; border:none; cursor:pointer; font-family:inherit; }
     .btn-copper { background:var(--copper-grad); color:#FFF7E8; }
@@ -124,7 +131,8 @@
     .faq-item p { font-size:13px; color:var(--muted); margin-top:6px; }
     .faq-more { color:var(--copper); font-weight:600; text-decoration:none; }
     .kw-cloud { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
-    .kw-chip { font-size:11px; padding:3px 9px; border-radius:99px; background:rgba(181,84,31,.09); color:var(--muted); border:1px solid rgba(181,84,31,.18); }
+    .kw-chip { font-size:11px; padding:3px 9px; border-radius:99px; background:rgba(181,84,31,.09); color:var(--muted); border:1px solid rgba(181,84,31,.18); text-decoration:none; transition:all .18s; }
+    a.kw-chip:hover { background:rgba(181,84,31,.2); color:var(--copper-dark); border-color:var(--copper); }
     footer { text-align:center; margin-top:34px; font-size:12px; color:var(--muted); }
     .chat-backdrop { position:fixed; inset:0; background:rgba(58,28,10,.5); backdrop-filter:blur(3px); z-index:90; display:none; align-items:center; justify-content:center; padding:16px; }
     .chat-backdrop.open { display:flex; }
@@ -143,22 +151,26 @@
       <span class="brand-mini">HUE SOUND EXPRESS • Analog Audio</span>
     </div>
     <nav class="crumb" aria-label="Breadcrumb">
-      <a href="../../">Trang chủ</a> › <a href="../../?cat=cd">Đĩa CD / SACD</a> › <span>T&#236;nh Kh&#250;c Bảo Chấn – Nơi Ấy B&#236;nh Y&#234;n</span>
+      <a href="../../">Trang chủ</a> › <a href="../../?cat=cd">Đĩa CD / SACD</a> › <a href='../../?cat=cd&origin=VN'>Nhạc Việt</a> › <a href="../../?cat=cd&origin=VN&genre=vietnamese_pop_modern">Nhạc Việt trẻ</a> › <span>T&#236;nh Kh&#250;c Bảo Chấn – Nơi Ấy B&#236;nh Y&#234;n</span>
     </nav>
     <div class="hero">
       <div class="cover">
         <img src='https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z4987898816403-a5a3d53c328431840ade1f0632f17e3e.jpg?v=1702970794663' alt='Đĩa CD / SACD T&#236;nh Kh&#250;c Bảo Chấn – Nơi Ấy B&#236;nh Y&#234;n – Nhiều nghệ sĩ' onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class='fb-vinyl' style='display:none;align-items:center;justify-content:center;width:100%;height:100%;padding:6px;'><svg viewBox='0 0 120 120' fill='none' style='width:100%;height:100%;max-width:190px;max-height:190px;'><defs><path id='p1612t' d='M 16,60 A 44,44 0 1,1 104,60'/><path id='p1612b' d='M 18,63 A 42,42 0 0,0 102,63'/></defs><circle cx='60' cy='60' r='55' stroke='#B5541F' stroke-width='1.6' opacity='.42'/><circle cx='60' cy='60' r='46' stroke='#C99A2E' stroke-width='1.1' opacity='.45' stroke-dasharray='2 2'/><circle cx='60' cy='60' r='34' stroke='#B5541F' stroke-width='1.4' opacity='.5'/><circle cx='60' cy='60' r='23' stroke='#C99A2E' stroke-width='1.3' opacity='.62'/><circle cx='60' cy='60' r='13' fill='rgba(181,84,31,.14)' stroke='#B5541F' stroke-width='1.2'/><circle cx='60' cy='60' r='4' fill='#B5541F'/><text font-family='Montserrat,sans-serif' font-size='7.1' font-weight='800' fill='#6E2E10' letter-spacing='.35'><textPath href='#p1612t' startOffset='50%' text-anchor='middle'>T&#236;nh Kh&#250;c Bảo Chấn – Nơi …</textPath></text><text font-family='Lora,Georgia,serif' font-size='6.7' font-weight='600' fill='#8B4513' letter-spacing='.25'><textPath href='#p1612b' startOffset='50%' text-anchor='middle'>Nhiều nghệ sĩ</textPath></text><text x='60' y='74' text-anchor='middle' font-family='Montserrat,sans-serif' font-size='6.2' font-weight='800' fill='#B5541F'>CD</text></svg></div>
       </div>
       <div>
-        <span class="badge">Đĩa CD / SACD • Analog Audio • Nhạc Việt trẻ</span>
+        <div class="badge-row">
+          <a class="badge" href="../../?cat=cd" title="Xem danh mục Đĩa CD / SACD">Đĩa CD / SACD</a>
+          <a class='badge' href='../../?cat=cd&origin=VN' title='Xem phân loại Nhạc Việt'>Nhạc Việt</a>
+          <a class="badge" href="../../?cat=cd&origin=VN&genre=vietnamese_pop_modern" title="Xem thể loại Nhạc Việt trẻ">Nhạc Việt trẻ</a>
+        </div>
         <h1>T&#236;nh Kh&#250;c Bảo Chấn – Nơi Ấy B&#236;nh Y&#234;n</h1>
-        <div class="sub">Nhiều nghệ sĩ</div>
-        <div class="meta">Mã SKU: <strong>CD-GDA-TINHKHUC-1612</strong> • Định dạng: CD  • Gia Định Audio </div>
-        <p class="desc">Đĩa CD Nhiều nghệ sĩ - T&#236;nh Kh&#250;c Bảo Chấn – Nơi Ấy B&#236;nh Y&#234;n - Đĩa CD nhạc Việt Nam ch&#237;nh h&#227;ng (H&#227;ng Gia Định Audio) - Cần mua đĩa than, đĩa CD ch&#237;nh h&#227;ng h&#227;y đến cửa h&#224;ng đĩa than Hue Sound Express nơi b&#225;n đĩa nhạc uy t&#237;n.</p>
+        <div class="sub"><a class="xlink" href="../../?cat=cd&artist=Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9" title="Xem tất cả sản phẩm của Nhiều nghệ sĩ">Nhiều nghệ sĩ</a></div>
+        <div class="meta">Mã SKU: <strong>CD-GDA-TINHKHUC-1612</strong> • Định dạng: CD  • Hãng: <a class='xlink' href='../../?cat=cd&label=Gia%20%C4%90%E1%BB%8Bnh%20Audio' title='Xem tất cả ấn phẩm của hãng Gia Định Audio'><strong>Gia Định Audio</strong></a> </div>
+        <p class="desc"><a class='desc-link' href='../../?cat=cd' title='Xem danh mục'>Đĩa CD</a> <a class='desc-link' href='../../?cat=cd&artist=Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9' title='Xem tất cả sản phẩm của Nhiều nghệ sĩ'>Nhiều nghệ sĩ</a> - T&#236;nh Kh&#250;c <a class='desc-link' href='../../?cat=cd&q=B%E1%BA%A3o%20Ch%E1%BA%A5n' title='T&#236;m c&#225;c ấn phẩm li&#234;n quan Bảo Chấn'>Bảo Chấn</a> – Nơi Ấy B&#236;nh Y&#234;n - Đĩa CD <a class='desc-link' href='../../?cat=cd&origin=VN' title='Xem to&#224;n bộ Nhạc Việt'>nhạc Việt Nam</a> ch&#237;nh h&#227;ng (H&#227;ng <a class='desc-link' href='../../?cat=cd&label=Gia%20%C4%90%E1%BB%8Bnh%20Audio' title='Xem tất cả ấn phẩm của h&#227;ng Gia Định Audio'>Gia Định Audio</a>) - Cần mua đĩa than, đĩa CD ch&#237;nh h&#227;ng h&#227;y đến cửa h&#224;ng đĩa than Hue Sound Express nơi b&#225;n đĩa nhạc uy t&#237;n.</p>
         <div class="price-row">
           <div><div class='price-stack'><span class='price-label'>Giá</span><span class='price-old'>250,000 đ</span><span class='price-save'>-20k</span></div><div class='price'>230,000 đ</div></div>
-          <span class="status">Mới 100% (M)</span>
-          <span class="status">C&#242;n h&#224;ng</span>
+          <a class="status" href="../../?cat=cd&cond=mint_sealed" title="Lọc theo tình trạng Mới 100% (M)">Mới 100% (M)</a>
+          <a class="status" href="../../?cat=cd&status=in_stock" title="Lọc theo trạng thái C&#242;n h&#224;ng">C&#242;n h&#224;ng</a>
         </div>
         <div class="cta-row">
           <a class='btn btn-copper' href='../../?add=CD-GDA-TINHKHUC-1612'>+ Thêm vào Giỏ / Báo giá</a>
@@ -175,7 +187,7 @@
     <section class='box'><h2>Gợi ý đi kèm từ Hue Sound Vinyl Care</h2><div class='up-grid'><a class='up-card' href='../phu-kien-analog-audioquest-choi-soi-carbon-chong-tinh-dien-audioquest-3001/'><strong>Chổi sợi Carbon chống tĩnh điện AudioQuest</strong><span>490,000 đ</span></a><a class='up-card' href='../phu-kien-analog-hue-sound-vinyl-care-bo-50-tui-lot-chong-tinh-dien-anti-static-i-3002/'><strong>Bộ 50 t&#250;i l&#243;t chống tĩnh điện (Anti-Static Inner Sleeve)</strong><span>290,000 đ</span></a><a class='up-card' href='../dich-vu-vinyl-care-hue-sound-vinyl-care-dich-vu-rua-dia-sieu-am-chuan-audiophile-ke-3006/'><strong>Dịch vụ Rửa đĩa si&#234;u &#226;m chuẩn Audiophile (K&#232;m t&#250;i l&#243;t mới)</strong><span>40,000 đ</span></a></div></section>
     <section class="box">
       <h2>Từ khóa &amp; Chủ đề liên quan</h2>
-      <div class="kw-cloud"><span class='kw-chip'>Analog Audio</span><span class='kw-chip'>Đĩa CD</span><span class='kw-chip'>CD Nhạc Việt</span><span class='kw-chip'>Nhiều nghệ sĩ</span><span class='kw-chip'>T&#236;nh Kh&#250;c Bảo Chấn – Nơi Ấy B&#236;nh Y&#234;n</span><span class='kw-chip'>Gia Định Audio</span><span class='kw-chip'>Quốc Bảo</span><span class='kw-chip'>Bảo Chấn</span><span class='kw-chip'>Nhạc M&#249;a Thu</span><span class='kw-chip'>Nhạc Việt trẻ</span><span class='kw-chip'>Đĩa CD ch&#237;nh h&#227;ng</span><span class='kw-chip'>Cửa h&#224;ng đĩa than Hue Sound Express</span><span class='kw-chip'>Nơi b&#225;n đĩa nhạc uy t&#237;n</span><span class='kw-chip'>NƠI ẤY B&#204;NH Y&#202;N - L&#226;n Nh&#227;</span></div>
+      <div class="kw-cloud"><a class='kw-chip' href='../../?cat=cd&q=Analog%20Audio'>Analog Audio</a><a class='kw-chip' href='../../?cat=cd&q=%C4%90%C4%A9a%20CD'>Đĩa CD</a><a class='kw-chip' href='../../?cat=cd&q=CD%20Nh%E1%BA%A1c%20Vi%E1%BB%87t'>CD Nhạc Việt</a><a class='kw-chip' href='../../?cat=cd&q=Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9'>Nhiều nghệ sĩ</a><a class='kw-chip' href='../../?cat=cd&q=T%C3%ACnh%20Kh%C3%BAc%20B%E1%BA%A3o%20Ch%E1%BA%A5n%20%E2%80%93%20N%C6%A1i%20%E1%BA%A4y%20B%C3%ACnh%20Y%C3%AAn'>T&#236;nh Kh&#250;c Bảo Chấn – Nơi Ấy B&#236;nh Y&#234;n</a><a class='kw-chip' href='../../?cat=cd&q=Gia%20%C4%90%E1%BB%8Bnh%20Audio'>Gia Định Audio</a><a class='kw-chip' href='../../?cat=cd&q=Qu%E1%BB%91c%20B%E1%BA%A3o'>Quốc Bảo</a><a class='kw-chip' href='../../?cat=cd&q=B%E1%BA%A3o%20Ch%E1%BA%A5n'>Bảo Chấn</a><a class='kw-chip' href='../../?cat=cd&q=Nh%E1%BA%A1c%20M%C3%B9a%20Thu'>Nhạc M&#249;a Thu</a><a class='kw-chip' href='../../?cat=cd&q=Nh%E1%BA%A1c%20Vi%E1%BB%87t%20tr%E1%BA%BB'>Nhạc Việt trẻ</a><a class='kw-chip' href='../../?cat=cd&q=%C4%90%C4%A9a%20CD%20ch%C3%ADnh%20h%C3%A3ng'>Đĩa CD ch&#237;nh h&#227;ng</a><a class='kw-chip' href='../../?cat=cd&q=C%E1%BB%ADa%20h%C3%A0ng%20%C4%91%C4%A9a%20than%20Hue%20Sound%20Express'>Cửa h&#224;ng đĩa than Hue Sound Express</a><a class='kw-chip' href='../../?cat=cd&q=N%C6%A1i%20b%C3%A1n%20%C4%91%C4%A9a%20nh%E1%BA%A1c%20uy%20t%C3%ADn'>Nơi b&#225;n đĩa nhạc uy t&#237;n</a><a class='kw-chip' href='../../?cat=cd&q=N%C6%A0I%20%E1%BA%A4Y%20B%C3%8CNH%20Y%C3%8AN%20-%20L%C3%A2n%20Nh%C3%A3'>NƠI ẤY B&#204;NH Y&#202;N - L&#226;n Nh&#227;</a></div>
     </section>
     <footer>© 2026 Hue Sound Express • Analog Audio • Đóng gói 3 lớp chống rách mép • Hotline/Zalo &amp; WhatsApp: 09323.13918</footer>
   </div>

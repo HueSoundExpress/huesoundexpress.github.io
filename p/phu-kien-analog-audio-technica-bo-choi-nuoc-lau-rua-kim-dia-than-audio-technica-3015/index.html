@@ -89,11 +89,17 @@
     @media (max-width:680px){ .hero{ grid-template-columns:1fr; } }
     .cover { aspect-ratio:1/1; border-radius:14px; overflow:hidden; background:radial-gradient(circle at center, #F3E9D0 0%, #DFC99B 100%); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; text-align:center; padding:16px; }
     .cover img { width:100%; height:100%; object-fit:cover; }
-    .badge { display:inline-block; font-size:11px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(181,84,31,.11); color:var(--copper-dark); border:1px solid rgba(181,84,31,.22); margin-bottom:10px; }
+    .badge-row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+    .badge { display:inline-block; font-size:11px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(181,84,31,.11); color:var(--copper-dark); border:1px solid rgba(181,84,31,.22); text-decoration:none; transition:all .18s; }
+    a.badge:hover { background:rgba(181,84,31,.22); border-color:var(--copper); color:var(--ink); }
     h1 { font-family:var(--serif); font-size:25px; line-height:1.3; margin-bottom:4px; color:var(--ink); }
     .sub { color:var(--copper-dark); font-size:16px; font-weight:600; margin-bottom:10px; }
+    .xlink { color:var(--copper-dark); text-decoration:none; border-bottom:1px dashed rgba(181,84,31,.45); transition:all .18s; }
+    .xlink:hover { color:var(--copper); border-bottom-style:solid; }
     .meta { font-size:12.5px; color:var(--muted); margin-bottom:12px; }
     .desc { font-size:14px; color:var(--ink); opacity:.92; }
+    .desc-link { color:var(--copper-dark); font-weight:600; text-decoration:none; border-bottom:1px dotted rgba(181,84,31,.55); transition:all .18s; }
+    .desc-link:hover { color:var(--copper); border-bottom-style:solid; }
     .price-row { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin:16px 0; }
     .price-label { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); font-weight:600; }
     .price-stack { display:flex; align-items:center; gap:7px; }
@@ -101,7 +107,8 @@
     .price-save { font-size:10.5px; font-weight:700; color:#FFF7E8; background:#B5541F; padding:1px 6px; border-radius:99px; }
     .price { font-size:25px; font-weight:800; color:var(--copper); line-height:1.15; }
     .acc-note { font-size:11.5px; color:#8C3A12; font-weight:600; margin-top:4px; }
-    .status { font-size:12px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(201,154,46,.18); border:1px solid rgba(201,154,46,.5); color:var(--ink); }
+    .status { font-size:12px; font-weight:600; padding:4px 11px; border-radius:99px; background:rgba(201,154,46,.18); border:1px solid rgba(201,154,46,.5); color:var(--ink); text-decoration:none; transition:all .18s; }
+    a.status:hover { background:rgba(201,154,46,.32); border-color:var(--copper); }
     .cta-row { display:flex; flex-wrap:wrap; gap:9px; margin-top:14px; }
     .btn { text-decoration:none; padding:10px 15px; border-radius:10px; font-weight:600; font-size:13px; display:inline-flex; align-items:center; gap:6px; transition:all .2s; border:none; cursor:pointer; font-family:inherit; }
     .btn-copper { background:var(--copper-grad); color:#FFF7E8; }
@@ -124,7 +131,8 @@
     .faq-item p { font-size:13px; color:var(--muted); margin-top:6px; }
     .faq-more { color:var(--copper); font-weight:600; text-decoration:none; }
     .kw-cloud { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
-    .kw-chip { font-size:11px; padding:3px 9px; border-radius:99px; background:rgba(181,84,31,.09); color:var(--muted); border:1px solid rgba(181,84,31,.18); }
+    .kw-chip { font-size:11px; padding:3px 9px; border-radius:99px; background:rgba(181,84,31,.09); color:var(--muted); border:1px solid rgba(181,84,31,.18); text-decoration:none; transition:all .18s; }
+    a.kw-chip:hover { background:rgba(181,84,31,.2); color:var(--copper-dark); border-color:var(--copper); }
     footer { text-align:center; margin-top:34px; font-size:12px; color:var(--muted); }
     .chat-backdrop { position:fixed; inset:0; background:rgba(58,28,10,.5); backdrop-filter:blur(3px); z-index:90; display:none; align-items:center; justify-content:center; padding:16px; }
     .chat-backdrop.open { display:flex; }
@@ -143,22 +151,26 @@
       <span class="brand-mini">HUE SOUND EXPRESS • Analog Audio</span>
     </div>
     <nav class="crumb" aria-label="Breadcrumb">
-      <a href="../../">Trang chủ</a> › <a href="../../?cat=accessory">Phụ kiện và dịch vụ</a> › <span>Bộ chổi + nước lau &amp; rửa kim đĩa than Audio-Technica</span>
+      <a href="../../">Trang chủ</a> › <a href="../../?cat=accessory">Phụ kiện và dịch vụ</a>  › <a href="../../?cat=accessory&genre=record_cleaning">Vệ sinh đĩa</a> › <span>Bộ chổi + nước lau &amp; rửa kim đĩa than Audio-Technica</span>
     </nav>
     <div class="hero">
       <div class="cover">
         <img src='https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/d7c70f53be8a5ad4039b.jpg?v=1563334568537' alt='Analog Audio – Bộ chổi + nước lau &amp; rửa kim đĩa than Audio-Technica – Audio-Technica' onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class='fb-vinyl' style='display:none;align-items:center;justify-content:center;width:100%;height:100%;padding:6px;'><svg viewBox='0 0 120 120' fill='none' style='width:100%;height:100%;max-width:190px;max-height:190px;'><defs><path id='p3015t' d='M 16,60 A 44,44 0 1,1 104,60'/><path id='p3015b' d='M 18,63 A 42,42 0 0,0 102,63'/></defs><circle cx='60' cy='60' r='55' stroke='#B5541F' stroke-width='1.6' opacity='.42'/><circle cx='60' cy='60' r='46' stroke='#C99A2E' stroke-width='1.1' opacity='.45' stroke-dasharray='2 2'/><circle cx='60' cy='60' r='34' stroke='#B5541F' stroke-width='1.4' opacity='.5'/><circle cx='60' cy='60' r='23' stroke='#C99A2E' stroke-width='1.3' opacity='.62'/><circle cx='60' cy='60' r='13' fill='rgba(181,84,31,.14)' stroke='#B5541F' stroke-width='1.2'/><circle cx='60' cy='60' r='4' fill='#B5541F'/><text font-family='Montserrat,sans-serif' font-size='7.1' font-weight='800' fill='#6E2E10' letter-spacing='.35'><textPath href='#p3015t' startOffset='50%' text-anchor='middle'>Bộ chổi + nước lau &amp; rửa …</textPath></text><text font-family='Lora,Georgia,serif' font-size='6.7' font-weight='600' fill='#8B4513' letter-spacing='.25'><textPath href='#p3015b' startOffset='50%' text-anchor='middle'>Audio-Technica</textPath></text><text x='60' y='74' text-anchor='middle' font-family='Montserrat,sans-serif' font-size='6.2' font-weight='800' fill='#B5541F'>Mọi đầu kim MM / MC &amp; đĩa than</text></svg></div>
       </div>
       <div>
-        <span class="badge">Phụ kiện và dịch vụ • Analog Audio • Vệ sinh đĩa</span>
+        <div class="badge-row">
+          <a class="badge" href="../../?cat=accessory" title="Xem danh mục Phụ kiện và dịch vụ">Phụ kiện và dịch vụ</a>
+          
+          <a class="badge" href="../../?cat=accessory&genre=record_cleaning" title="Xem thể loại Vệ sinh đĩa">Vệ sinh đĩa</a>
+        </div>
         <h1>Bộ chổi + nước lau &amp; rửa kim đĩa than Audio-Technica</h1>
-        <div class="sub">Audio-Technica</div>
-        <div class="meta">Mã SKU: <strong>ACC-GNX-AUDI-3015</strong> • Định dạng: Mọi đầu kim MM / MC &amp; đĩa than  • universal </div>
-        <p class="desc">Phụ kiện đĩa than ch&#237;nh h&#227;ng Bộ chổi + nước lau &amp; rửa kim đĩa than Audio-Technica (Audio-Technica). Cần mua đĩa than v&#224; phụ kiện Analog Audio ch&#237;nh h&#227;ng h&#227;y đến cửa h&#224;ng đĩa than Hue Sound Express nơi b&#225;n đĩa nhạc uy t&#237;n.</p>
+        <div class="sub"><a class="xlink" href="../../?cat=accessory&artist=Audio-Technica" title="Xem tất cả sản phẩm của Audio-Technica">Audio-Technica</a></div>
+        <div class="meta">Mã SKU: <strong>ACC-GNX-AUDI-3015</strong> • Định dạng: Mọi đầu kim MM / MC &amp; đĩa than  • Hãng: <a class='xlink' href='../../?cat=accessory&label=universal' title='Xem tất cả ấn phẩm của hãng universal'><strong>universal</strong></a> </div>
+        <p class="desc"><a class='desc-link' href='../../?cat=accessory' title='Xem danh mục'>Phụ kiện đĩa than</a> ch&#237;nh h&#227;ng Bộ chổi + nước lau &amp; rửa kim đĩa than <a class='desc-link' href='../../?cat=accessory&artist=Audio-Technica' title='Xem tất cả sản phẩm của Audio-Technica'>Audio-Technica</a> (Audio-Technica). Cần mua đĩa than v&#224; phụ kiện Analog Audio ch&#237;nh h&#227;ng h&#227;y đến cửa h&#224;ng đĩa than Hue Sound Express nơi b&#225;n đĩa nhạc uy t&#237;n.</p>
         <div class="price-row">
           <div><div class='price-stack'><span class='price-label'>Giá</span><span class='price-old'>1,000,000 đ</span><span class='price-save'>-50k</span></div><div class='price'>950,000 đ</div><div class='acc-note'>* Giảm gi&#225; phụ kiện khi mua c&#249;ng đĩa than / m&#226;m than — inbox để được tư vấn</div></div>
-          <span class="status">Mới 100% (M)</span>
-          <span class="status">Hết h&#224;ng</span>
+          <a class="status" href="../../?cat=accessory&cond=mint_sealed" title="Lọc theo tình trạng Mới 100% (M)">Mới 100% (M)</a>
+          <a class="status" href="../../?cat=accessory&status=out_of_stock" title="Lọc theo trạng thái Hết h&#224;ng">Hết h&#224;ng</a>
         </div>
         <div class="cta-row">
           <button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>
@@ -175,7 +187,7 @@
     <section class='box'><h2>Đĩa than mới về đề xuất phối ghép</h2><div class='up-grid'><a class='up-card' href='../dia-than-vinyl-quynh-anh-vang-559/'><strong>V&#224;ng</strong><span>1,250,000 đ</span></a><a class='up-card' href='../dia-than-vinyl-quynh-anh-lp-thanh-tung-chi-ban-cung-combo-4-dia-qa-558/'><strong>LP Thanh T&#249;ng (Chỉ b&#225;n c&#249;ng combo 4 đĩa QA)</strong><span>1,450,000 đ</span></a><a class='up-card' href='../dia-than-vinyl-duong-thu-80-nam-mot-giac-mo-ban-co-chu-ky-557/'><strong>80 Năm Một Giấc Mơ (Bản c&#243; chữ k&#253;)</strong><span>2,950,000 đ</span></a></div></section>
     <section class="box">
       <h2>Từ khóa &amp; Chủ đề liên quan</h2>
-      <div class="kw-cloud"><span class='kw-chip'>Analog Audio</span><span class='kw-chip'>Phụ kiện đĩa than</span><span class='kw-chip'>Hue Sound Vinyl Care</span><span class='kw-chip'>Audio-Technica</span><span class='kw-chip'>Bộ chổi + nước lau &amp; rửa kim đĩa than Audio-Technica</span><span class='kw-chip'>universal</span><span class='kw-chip'>Vệ sinh đĩa</span></div>
+      <div class="kw-cloud"><a class='kw-chip' href='../../?cat=accessory&q=Analog%20Audio'>Analog Audio</a><a class='kw-chip' href='../../?cat=accessory&q=Ph%E1%BB%A5%20ki%E1%BB%87n%20%C4%91%C4%A9a%20than'>Phụ kiện đĩa than</a><a class='kw-chip' href='../../?cat=accessory&q=Hue%20Sound%20Vinyl%20Care'>Hue Sound Vinyl Care</a><a class='kw-chip' href='../../?cat=accessory&q=Audio-Technica'>Audio-Technica</a><a class='kw-chip' href='../../?cat=accessory&q=B%E1%BB%99%20ch%E1%BB%95i%20%2B%20n%C6%B0%E1%BB%9Bc%20lau%20%26%20r%E1%BB%ADa%20kim%20%C4%91%C4%A9a%20than%20Audio-Technica'>Bộ chổi + nước lau &amp; rửa kim đĩa than Audio-Technica</a><a class='kw-chip' href='../../?cat=accessory&q=universal'>universal</a><a class='kw-chip' href='../../?cat=accessory&q=V%E1%BB%87%20sinh%20%C4%91%C4%A9a'>Vệ sinh đĩa</a></div>
     </section>
     <footer>© 2026 Hue Sound Express • Analog Audio • Đóng gói 3 lớp chống rách mép • Hotline/Zalo &amp; WhatsApp: 09323.13918</footer>
   </div>
