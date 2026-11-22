@@ -35,9 +35,20 @@ function Remove-Diacritics {
     return $sb.ToString().Replace([char]0x0111, 'd').Replace([char]0x0110, 'D')
 }
 
+function Clean-PlainText {
+    param([string]$Text)
+    if ([string]::IsNullOrWhiteSpace($Text)) { return "" }
+    $t = [string]$Text
+    $t = [regex]::Replace($t, '(?is)</?(?:p|div|span|a|i|ul|li|table|tr|td|br)\b.*$', '')
+    $t = [regex]::Replace($t, '<[^>]+>', ' ')
+    $t = [System.Net.WebUtility]::HtmlDecode($t)
+    $t = [regex]::Replace($t, '[\r\n\t]+', ' ')
+    return ([regex]::Replace($t, '\s{2,}', ' ')).Trim()
+}
+
 function Get-Slug {
     param([string]$Text)
-    $clean = (Remove-Diacritics $Text).ToLowerInvariant()
+    $clean = (Remove-Diacritics (Clean-PlainText $Text)).ToLowerInvariant()
     $clean = [regex]::Replace($clean, '[^a-z0-9]+', '-')
     return $clean.Trim('-')
 }
@@ -454,9 +465,14 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
     })
 }
 
-# Chuan hoa toan bo ma noi bo snake_case, gia giam 50-60k & trich xuat keywords
+# Chuan hoa toan bo ma noi bo snake_case, lam sach HTML rac, gia giam 50-60k & trich xuat keywords
 foreach ($it in $allItems) {
+    $it.a = Clean-PlainText ([string]$it.a)
+    $it.t = Clean-PlainText ([string]$it.t)
+    $it.l = Clean-PlainText ([string]$it.l)
+    $it.d = Clean-PlainText ([string]$it.d)
     if (([string]$it.a).Trim() -match '^(?i)nhiều ca sĩ$') { $it.a = "Nhiều nghệ sĩ" }
+    $it.slug = Get-CanonicalSlug -Category $it.category -Artist $it.a -Title $it.t -Id $it.id
 
     $lbl = ([string]$it.l).Trim()
     if ($lbl -match '^(?i)thời đại$') { $lbl = "Hãng Đĩa Thời Đại" }

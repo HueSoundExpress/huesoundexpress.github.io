@@ -29280,7 +29280,7 @@
     {
         "id":  1032,
         "sku":  "CD-VN-THANHLAM-1032",
-        "slug":  "dia-cd-thanh-lam-noi-gap-go-tinh-yeu-p-p-class-price-het-hang-p-a-href-1032",
+        "slug":  "dia-cd-thanh-lam-noi-gap-go-tinh-yeu-1032",
         "legacy_slug":  "",
         "category":  "cd",
         "g":  "vietnamese_pop_modern",
@@ -29289,7 +29289,7 @@
                      "weekend_upbeat"
                  ],
         "a":  "Thanh Lam",
-        "t":  "Nơi Gặp Gỡ Tình Yêu\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"thanh-lam-noi-gap-go-tinh-yeu.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"thanh-lam-cuon-phim.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/thanh-lam-cuon-phim.jpg\" alt=\"Thanh Lam - Cuốn Phim\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eThanh Lam - Cuốn Phim",
+        "t":  "Nơi Gặp Gỡ Tình Yêu",
         "l":  "Việt Nam",
         "f":  "CD",
         "c":  "mint_sealed",
@@ -29297,7 +29297,7 @@
         "p":  330000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa CD Nơi Gặp Gỡ Tình Yêu\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"thanh-lam-noi-gap-go-tinh-yeu.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"thanh-lam-cuon-phim.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/thanh-lam-cuon-phim.jpg\" alt=\"Thanh Lam - Cuốn Phim\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eThanh Lam - Cuốn Phim – Thanh Lam (Nhạc Việt trẻ). Ấn phẩm CD nhạc Việt chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
+        "d":  "Đĩa CD Nơi Gặp Gỡ Tình Yêu – Thanh Lam. Ấn phẩm chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
         "tracklist":  {
 
                       },
@@ -29314,7 +29314,7 @@
                    "Đĩa CD",
                    "CD Nhạc Việt",
                    "Thanh Lam",
-                   "Nơi Gặp Gỡ Tình Yêu\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"thanh-lam-noi-gap-go-tinh-yeu.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"thanh-lam-cuon-phim.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/thanh-lam-cuon-phim.jpg\" alt=\"Thanh Lam - Cuốn Phim\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eThanh Lam - Cuốn Phim",
+                   "Nơi Gặp Gỡ Tình Yêu",
                    "Nhạc Việt trẻ"
                ]
     },
@@ -29978,17 +29978,17 @@
     {
         "id":  1049,
         "sku":  "CD-VN-BUILANHU-1049",
-        "slug":  "dia-cd-bui-lan-huong-nu-than-mat-trang-p-p-class-price-het-hang-p-a-hre-1049",
+        "slug":  "dia-cd-bui-lan-huong-nu-than-mat-trang-1049",
         "legacy_slug":  "",
         "category":  "cd",
-        "g":  "love_songs_1954_1975",
+        "g":  "vietnamese_pop_modern",
         "mood":  [
                      "nostalgic_classic",
                      "late_night_chill",
                      "refined_gifting"
                  ],
         "a":  "Bùi Lan Hương",
-        "t":  "Nữ Thần Mặt Trăng\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"bui-lan-huong-nu-than-mat-trang.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"giang-trang-ke-chuyen-trinh-cong-son-trinh-cuoi.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/giang-trang-ke-chuyen-trinh-cong-son-trinh-cuoi.jpg\" alt=\"Giang Trang kể chuyện Trịnh Công Sơn - Trịnh Cuối\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eGiang Trang kể chuyện Trịnh Công Sơn - Trịnh Cuối",
+        "t":  "Nữ Thần Mặt Trăng",
         "l":  "Việt Nam",
         "f":  "CD",
         "c":  "mint_sealed",
@@ -29996,7 +29996,7 @@
         "p":  290000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa CD Nữ Thần Mặt Trăng\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"bui-lan-huong-nu-than-mat-trang.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"giang-trang-ke-chuyen-trinh-cong-son-trinh-cuoi.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/giang-trang-ke-chuyen-trinh-cong-son-trinh-cuoi.jpg\" alt=\"Giang Trang kể chuyện Trịnh Công Sơn - Trịnh Cuối\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eGiang Trang kể chuyện Trịnh Công Sơn - Trịnh Cuối – Bùi Lan Hương (Tình khúc 1954–1975). Ấn phẩm CD nhạc Việt chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
+        "d":  "Đĩa CD Nữ Thần Mặt Trăng – Bùi Lan Hương. Ấn phẩm chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
         "tracklist":  {
 
                       },
@@ -30013,11 +30013,8 @@
                    "Đĩa CD",
                    "CD Nhạc Việt",
                    "Bùi Lan Hương",
-                   "Nữ Thần Mặt Trăng\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"bui-lan-huong-nu-than-mat-trang.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"giang-trang-ke-chuyen-trinh-cong-son-trinh-cuoi.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/giang-trang-ke-chuyen-trinh-cong-son-trinh-cuoi.jpg\" alt=\"Giang Trang kể chuyện Trịnh Công Sơn - Trịnh Cuối\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eGiang Trang kể chuyện Trịnh Công Sơn - Trịnh Cuối",
-                   "Trịnh Công Sơn",
-                   "Tình khúc 1954–1975",
-                   "Nhạc Xưa",
-                   "Tình Ca"
+                   "Nữ Thần Mặt Trăng",
+                   "Nhạc Việt trẻ"
                ]
     },
     {
@@ -30105,7 +30102,7 @@
     {
         "id":  1052,
         "sku":  "CD-VN-ORANGE-1052",
-        "slug":  "dia-cd-orange-cam-on-p-p-class-price-het-hang-p-a-href-orange-cam-on-ht-1052",
+        "slug":  "dia-cd-orange-cam-on-1052",
         "legacy_slug":  "",
         "category":  "cd",
         "g":  "vietnamese_pop_modern",
@@ -30114,7 +30111,7 @@
                      "weekend_upbeat"
                  ],
         "a":  "Orange",
-        "t":  "Cam\u0027 On\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"orange-cam-on.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"nguyen-hong-nhung-moc-2.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/5073f79dedb1eb01cadc8afd58e20bf2.jpeg\" alt=\"Nguyễn Hồng Nhung - Mộc 2\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eNguyễn Hồng Nhung - Mộc 2",
+        "t":  "Cam\u0027 On",
         "l":  "Việt Nam",
         "f":  "CD",
         "c":  "mint_sealed",
@@ -30122,7 +30119,7 @@
         "p":  290000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa CD Cam\u0027 On\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"orange-cam-on.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"nguyen-hong-nhung-moc-2.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/5073f79dedb1eb01cadc8afd58e20bf2.jpeg\" alt=\"Nguyễn Hồng Nhung - Mộc 2\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eNguyễn Hồng Nhung - Mộc 2 – Orange (Nhạc Việt trẻ). Ấn phẩm CD nhạc Việt chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
+        "d":  "Đĩa CD Cam\u0027 On – Orange. Ấn phẩm chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
         "tracklist":  {
 
                       },
@@ -30139,7 +30136,7 @@
                    "Đĩa CD",
                    "CD Nhạc Việt",
                    "Orange",
-                   "Cam\u0027 On\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"orange-cam-on.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"nguyen-hong-nhung-moc-2.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/5073f79dedb1eb01cadc8afd58e20bf2.jpeg\" alt=\"Nguyễn Hồng Nhung - Mộc 2\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eNguyễn Hồng Nhung - Mộc 2",
+                   "Cam\u0027 On",
                    "Nhạc Việt trẻ"
                ]
     },
@@ -30229,16 +30226,16 @@
     {
         "id":  1055,
         "sku":  "CD-VN-THANG-1055",
-        "slug":  "dia-cd-thang-cai-thu-hai-p-p-class-price-het-hang-p-a-href-thang-cai-th-1055",
+        "slug":  "dia-cd-thang-cai-thu-hai-1055",
         "legacy_slug":  "",
         "category":  "cd",
-        "g":  "bolero_golden_oldies",
+        "g":  "vietnamese_pop_modern",
         "mood":  [
                      "nostalgic_classic",
                      "late_night_chill"
                  ],
         "a":  "Thắng",
-        "t":  "Cái Thứ Hai\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"thang-cai-thu-hai.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"le-quyen-khuc-tinh-xua-3.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/maxresdefault-min.jpg\" alt=\"Lệ Quyên - Khúc Tình Xưa 3\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eLệ Quyên - Khúc Tình Xưa 3",
+        "t":  "Cái Thứ Hai",
         "l":  "Việt Nam",
         "f":  "CD",
         "c":  "mint_sealed",
@@ -30246,7 +30243,7 @@
         "p":  280000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa CD Cái Thứ Hai\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"thang-cai-thu-hai.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"le-quyen-khuc-tinh-xua-3.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/maxresdefault-min.jpg\" alt=\"Lệ Quyên - Khúc Tình Xưa 3\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eLệ Quyên - Khúc Tình Xưa 3 – Thắng (Nhạc Bolero / Nhạc Vàng / Trữ Tình). Ấn phẩm CD nhạc Việt chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
+        "d":  "Đĩa CD Cái Thứ Hai – Thắng. Ấn phẩm chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
         "tracklist":  {
 
                       },
@@ -30263,11 +30260,8 @@
                    "Đĩa CD",
                    "CD Nhạc Việt",
                    "Thắng",
-                   "Cái Thứ Hai\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"thang-cai-thu-hai.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"le-quyen-khuc-tinh-xua-3.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/maxresdefault-min.jpg\" alt=\"Lệ Quyên - Khúc Tình Xưa 3\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eLệ Quyên - Khúc Tình Xưa 3",
-                   "Trữ tình",
-                   "Bolero",
-                   "Nhạc Vàng",
-                   "Nhạc Trữ Tình"
+                   "Cái Thứ Hai",
+                   "Nhạc Việt trẻ"
                ]
     },
     {
@@ -32641,7 +32635,7 @@
     {
         "id":  1113,
         "sku":  "CD-VN-PHUNGKHA-1113",
-        "slug":  "dia-cd-phung-khanh-linh-citopia-p-p-class-price-het-hang-p-a-href-phung-1113",
+        "slug":  "dia-cd-phung-khanh-linh-citopia-1113",
         "legacy_slug":  "",
         "category":  "cd",
         "g":  "vietnamese_pop_modern",
@@ -32650,7 +32644,7 @@
                      "weekend_upbeat"
                  ],
         "a":  "Phùng Khánh Linh",
-        "t":  "Citopia\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"phung-khanh-linh-citopia.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"cuong-tong-tran-hong-nhung-walking-in-silence.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/cuong-tong-tran-hong-nhung-walking-in-silence.jpg\" alt=\"Cường Tống, Trần Hồng Nhung - Walking In Silence\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eCường Tống, Trần Hồng Nhung - Walking In Silence",
+        "t":  "Citopia",
         "l":  "Việt Nam",
         "f":  "CD",
         "c":  "mint_sealed",
@@ -32658,7 +32652,7 @@
         "p":  230000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa CD Citopia\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"phung-khanh-linh-citopia.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"cuong-tong-tran-hong-nhung-walking-in-silence.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/cuong-tong-tran-hong-nhung-walking-in-silence.jpg\" alt=\"Cường Tống, Trần Hồng Nhung - Walking In Silence\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eCường Tống, Trần Hồng Nhung - Walking In Silence – Phùng Khánh Linh (Nhạc Việt trẻ). Ấn phẩm CD nhạc Việt chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
+        "d":  "Đĩa CD Citopia – Phùng Khánh Linh. Ấn phẩm chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
         "tracklist":  {
 
                       },
@@ -32675,7 +32669,7 @@
                    "Đĩa CD",
                    "CD Nhạc Việt",
                    "Phùng Khánh Linh",
-                   "Citopia\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"phung-khanh-linh-citopia.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"cuong-tong-tran-hong-nhung-walking-in-silence.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/cuong-tong-tran-hong-nhung-walking-in-silence.jpg\" alt=\"Cường Tống, Trần Hồng Nhung - Walking In Silence\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eCường Tống, Trần Hồng Nhung - Walking In Silence",
+                   "Citopia",
                    "Nhạc Việt trẻ"
                ]
     },
@@ -39226,7 +39220,7 @@
     {
         "id":  1269,
         "sku":  "CD-VN-HAANHTUA-1269",
-        "slug":  "dia-cd-ha-anh-tuan-sai-gon-radio-p-p-class-price-het-hang-p-a-href-ha-a-1269",
+        "slug":  "dia-cd-ha-anh-tuan-sai-gon-radio-1269",
         "legacy_slug":  "",
         "category":  "cd",
         "g":  "vietnamese_pop_modern",
@@ -39235,7 +39229,7 @@
                      "weekend_upbeat"
                  ],
         "a":  "Hà Anh Tuấn",
-        "t":  "Sài Gòn Radio\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"ha-anh-tuan-sai-gon-radio.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"ha-anh-tuan-cafe-sang.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/album-cafe-sang-ha-anh-tuan.jpg\" alt=\"Hà Anh Tuấn - Cafe Sáng\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eHà Anh Tuấn - Cafe Sáng",
+        "t":  "Sài Gòn Radio",
         "l":  "Việt Nam",
         "f":  "CD",
         "c":  "mint_sealed",
@@ -39243,7 +39237,7 @@
         "p":  160000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa CD Sài Gòn Radio\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"ha-anh-tuan-sai-gon-radio.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"ha-anh-tuan-cafe-sang.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/album-cafe-sang-ha-anh-tuan.jpg\" alt=\"Hà Anh Tuấn - Cafe Sáng\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eHà Anh Tuấn - Cafe Sáng – Hà Anh Tuấn (Nhạc Việt trẻ). Ấn phẩm CD nhạc Việt chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
+        "d":  "Đĩa CD Sài Gòn Radio – Hà Anh Tuấn. Ấn phẩm chính hãng, hỗ trợ đặt hàng \u0026 kiểm tra tồn kho trực tiếp qua Zalo / WhatsApp Hue Sound Express.",
         "tracklist":  {
 
                       },
@@ -39260,7 +39254,7 @@
                    "Đĩa CD",
                    "CD Nhạc Việt",
                    "Hà Anh Tuấn",
-                   "Sài Gòn Radio\u003c/p\u003e \u003cp class=\"price\"\u003eHết hàng\u003c/p\u003e \u003ca href=\"ha-anh-tuan-sai-gon-radio.html\" class=\"readmore\"\u003e \u003cspan\u003eChi tiết\u003c/span\u003e\u003ci class=\"fas fa-chevron-right\"\u003e\u003c/i\u003e \u003c/a\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv class=\"col-md-2 col-sm-6 col-xs-6\"\u003e \u003cdiv class=\"item\"\u003e \u003cdiv class=\"image\"\u003e \u003ca href=\"ha-anh-tuan-cafe-sang.html\"\u003e \u003cimg style=\"width: 100%;\" src=\"/uploads/images/cd-nhac-viet-nam/album-cafe-sang-ha-anh-tuan.jpg\" alt=\"Hà Anh Tuấn - Cafe Sáng\"\u003e \u003c/a\u003e \u003c/div\u003e \u003cp class=\"desc\"\u003eHà Anh Tuấn - Cafe Sáng",
+                   "Sài Gòn Radio",
                    "Nhạc Sài Gòn",
                    "Nhạc Việt trẻ"
                ]

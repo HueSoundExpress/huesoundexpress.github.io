@@ -36,16 +36,20 @@ foreach ($f in $csvFiles) {
     }
 }
 
-# 2. Chay build toan bo du lieu va trang tinh /p/
-Write-Host "`n[1/4] Dang chay build_site_data.ps1 -GenerateProductPages..." -ForegroundColor Yellow
+# 2. Tu dong kiem tra & lam sach loi HTML rac / link anh nham trong CSV
+Write-Host "`n[1/5] Dang kiem tra & tu dong lam sach du lieu CSV..." -ForegroundColor Yellow
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\kiem-tra-va-sua-csv.ps1 -AutoFix
+
+# 3. Chay build toan bo du lieu va trang tinh /p/
+Write-Host "`n[2/5] Dang chay build_site_data.ps1 -GenerateProductPages..." -ForegroundColor Yellow
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build_site_data.ps1 -GenerateProductPages
 if ($LASTEXITCODE -ne 0) {
     Write-Host "[LOI] Qua trinh build gap su co!" -ForegroundColor Red
     exit 1
 }
 
-# 3. Dong goi tat ca file thay doi (git add -A)
-Write-Host "`n[2/4] Dang dong goi tat ca thay doi (git add -A)..." -ForegroundColor Yellow
+# 4. Dong goi tat ca file thay doi (git add -A)
+Write-Host "`n[3/5] Dang dong goi tat ca thay doi (git add -A)..." -ForegroundColor Yellow
 git add -A
 
 # Kiem tra xem co gi thay doi de commit khong
@@ -56,14 +60,14 @@ if (-not $staged) {
     exit 0
 }
 
-# 4. Tao commit
+# 5. Tao commit
 $ts = Get-Date -Format "yyyy-MM-dd HH:mm"
 $commitMsg = if ([string]::IsNullOrWhiteSpace($Message)) { "chore: dong bo du lieu CSV ($ts)" } else { $Message }
-Write-Host "`n[3/4] Dang luu phien ban moi (git commit)..." -ForegroundColor Yellow
+Write-Host "`n[4/5] Dang luu phien ban moi (git commit)..." -ForegroundColor Yellow
 git commit -m $commitMsg
 
-# 5. Day len GitHub Pages
-Write-Host "`n[4/4] Dang day len GitHub Pages (git push)..." -ForegroundColor Yellow
+# 6. Day len GitHub Pages
+Write-Host "`n[5/5] Dang day len GitHub Pages (git push)..." -ForegroundColor Yellow
 git push
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Dang keo ban moi nhat tu GitHub roi day lai (git pull --rebase)..." -ForegroundColor DarkYellow
