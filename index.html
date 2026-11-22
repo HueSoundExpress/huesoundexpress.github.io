@@ -7,6 +7,9 @@
 <meta name="description" content="Hue Sound Express – Where sound finds its color. Phòng nghe số & kho 540+ sản phẩm Analog Audio: Đĩa than (Vinyl LP) nhạc Việt trẻ, Bolero (nhạc vàng, nhạc trữ tình), Instrument, Jazz Audiophile, Đĩa CD/SACD, Máy hát đĩa than & Phụ kiện Hue Sound Vinyl Care. Nghe thử 30s, xuất báo giá nhanh, đóng gói 3 lớp toàn quốc.">
 <meta name="keywords" content="Analog Audio, đĩa than, Vinyl LP, đĩa than nhạc Việt, đĩa than nhạc vàng, đĩa than Bolero, nhạc trữ tình, máy hát đĩa than, turntable, phụ kiện audiophile, Hue Sound Express, Hue Sound Vinyl Care">
 <meta name="theme-color" content="#E8D9B6">
+<link rel="alternate" type="text/plain" href="llms.txt" title="Hue Sound Express AI Agent Guide">
+<link rel="alternate" type="application/json" href="feed/products.json" title="Hue Sound Express Shopping Feed">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
 
 <!-- Open Graph / Zalo & Facebook -->
 <meta property="og:type" content="website">
@@ -1156,7 +1159,6 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       <a href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/?utm_source=footer&utm_medium=internal&utm_campaign=dia_than_nhac_ha_noi_sai_gon">Hà Nội &amp; Sài Gòn</a> •
       <a href="bo-suu-tap/qua-tang-dia-than-cao-cap/?utm_source=footer&utm_medium=internal&utm_campaign=qua_tang_dia_than_cao_cap">Quà tặng cao cấp</a>
     </p>
-    <p style="margin-top:6px; font-size:11px; opacity:.85;">AI Agent / B2A Endpoint: <a href="llms.txt" target="_blank">llms.txt</a> • <a href="feed/products.json" target="_blank">feed/products.json</a> • <a href="data/catalog_all.json" target="_blank">catalog_all.json</a> • <a href="sitemap.xml" target="_blank">sitemap.xml</a></p>
   </footer>
 </div>
 
@@ -1334,6 +1336,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       endCat: 'Kết thúc danh mục',
       relatedHead: '✨ 3 Gợi ý phối ghép khác loại dành cho bạn',
       loopBack: 'Tiếp tục xem danh mục',
+      otherCatHead: name => `Khám phá thêm: ${name}`,
+      endShop: '✓ Đã hiển thị toàn bộ sản phẩm tại Hue Sound Express',
       filterByToast: (k, v) => `Đang lọc theo ${k}: “${v}”`,
       facetArtist: 'Nghệ sĩ', facetGenre: 'Thể loại', facetCond: 'Tình trạng đĩa', facetStatus: 'Trạng thái', facetLabel: 'Hãng đĩa',
       priceLbl: 'Giá', contactPrice: 'Liên hệ',
@@ -1479,7 +1483,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       statsHint: '💡 Click cover for Tracklist • Click artist, genre, label, or condition to filter',
       endCat: 'End of Category',
       relatedHead: '✨ 3 Cross-Category Picks for You',
-      loopBack: 'Continue Category Loop',
+      loopBack: 'Continue Browsing Category',
+      otherCatHead: name => `Explore More: ${name}`,
+      endShop: '✓ You have viewed all products at Hue Sound Express',
       filterByToast: (k, v) => `Filtered by ${k}: “${v}”`,
       facetArtist: 'Artist', facetGenre: 'Genre', facetCond: 'Disc Condition', facetStatus: 'Stock', facetLabel: 'Label',
       priceLbl: 'Price', contactPrice: 'Contact',
@@ -1622,10 +1628,14 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   let activeRegion = 'ALL'; // ALL | VN | INTL
   let activeSubFilter = 'ALL';
   let onlyWithAudio = false;
-  let streamPhase = 'main'; // main | related
+  let streamPhase = 'main'; // main | related | extra | done
   let streamCursor = 0;
   let shownMainCount = 0;
   let loopCycle = 0;
+  let shownSkus = new Set();
+  let extraQueue = [];
+  let extraCursor = 0;
+  let lastExtraGroup = '';
   let cart = JSON.parse(localStorage.getItem('hse_cart_v1') || '[]');
   let waitlistTarget = null;
 
@@ -2404,8 +2414,73 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       ` &nbsp;•&nbsp; ${escHtml(L.statsHint)}`;
   }
 
-  // ===== VONG LAP VO TAN: Ket thuc danh muc -> 3 Goi y khac loai (co phu kien) -> Quay lai vong lap cung loai =====
+  // ===== LUONG KHAM PHA LIEN TUC KHONG LAP LAI: Danh muc dang loc -> 3 Goi y khac loai -> San pham khac cung danh muc -> Danh muc khac den het shop =====
   let lastAppendTs = 0;
+
+  function sortItemsByCurrentOrder(arr) {
+    const yr = document.getElementById('yearSort') ? document.getElementById('yearSort').value : 'NEW_OLD';
+    const copy = arr.slice();
+    if (yr === 'NEW_OLD') {
+      copy.sort((a, b) => {
+        const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
+        if (ya === 0 && yb === 0) return (Number(b.id) || 0) - (Number(a.id) || 0);
+        if (ya === 0) return 1;
+        if (yb === 0) return -1;
+        return (yb - ya) || ((Number(b.id) || 0) - (Number(a.id) || 0));
+      });
+    } else if (yr === 'OLD_NEW') {
+      copy.sort((a, b) => {
+        const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
+        if (ya === 0 && yb === 0) return (Number(a.id) || 0) - (Number(b.id) || 0);
+        if (ya === 0) return 1;
+        if (yb === 0) return -1;
+        return (ya - yb) || ((Number(a.id) || 0) - (Number(b.id) || 0));
+      });
+    }
+    return copy;
+  }
+
+  function isItemInCategory(item, catKey) {
+    if (catKey === 'accessory') return item.category === 'accessory' || item.category === 'care';
+    return item.category === catKey;
+  }
+
+  function getCategoryDisplayName(catKey) {
+    const L = t();
+    if (catKey === 'vinyl') return L.tabVinyl;
+    if (catKey === 'cd') return L.tabCd;
+    if (catKey === 'turntable') return L.tabTurntable;
+    return L.tabAccessory;
+  }
+
+  function buildNonRepeatingQueue() {
+    const queue = [];
+    const queued = new Set(shownSkus);
+
+    // 1. Cac san pham khac cung danh muc (chua hien thi)
+    const sameCatItems = sortItemsByCurrentOrder(
+      allProducts.filter(x => isItemInCategory(x, activeCategory) && !queued.has(x.sku))
+    );
+    sameCatItems.forEach(item => {
+      queued.add(item.sku);
+      queue.push({ group: 'same_cat', catKey: activeCategory, item });
+    });
+
+    // 2. Cac danh muc khac trong shop (chua hien thi) cho den het toan bo kho
+    const allCats = ['vinyl', 'cd', 'turntable', 'accessory'];
+    const otherCats = allCats.filter(c => c !== activeCategory);
+    otherCats.forEach(catKey => {
+      const catItems = sortItemsByCurrentOrder(
+        allProducts.filter(x => isItemInCategory(x, catKey) && !queued.has(x.sku))
+      );
+      catItems.forEach(item => {
+        queued.add(item.sku);
+        queue.push({ group: `other_${catKey}`, catKey, item });
+      });
+    });
+
+    return queue;
+  }
 
   function startEndlessStream() {
     const L = t();
@@ -2415,13 +2490,16 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     streamCursor = 0;
     shownMainCount = 0;
     loopCycle = 0;
+    shownSkus = new Set();
+    extraQueue = [];
+    extraCursor = 0;
+    lastExtraGroup = '';
 
     if (filteredProducts.length === 0) {
       updateResultStats();
       grid.insertAdjacentHTML('beforeend', `<div style="grid-column:1/-1; text-align:center; padding:1.6rem 1rem .6rem; color:var(--muted);">${L.emptyFilter}</div>`);
       streamPhase = 'related';
       appendRelatedChunk();
-      streamPhase = 'done';
       return;
     }
 
@@ -2431,61 +2509,98 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   function appendNextBatch(forceInitial) {
     if (activeCategory === 'guide' || streamPhase === 'done') return;
     const now = Date.now();
-    if (!forceInitial && now - lastAppendTs < 260) return;
+    if (!forceInitial && now - lastAppendTs < 220) return;
     lastAppendTs = now;
 
     const grid = document.getElementById('catalogGrid');
     if (!grid) return;
 
-    // Giu DOM nhe khi khach keo qua nhieu vong lap lien tuc
-    if (grid.children.length > 420) {
-      while (grid.children.length > 260) {
-        grid.removeChild(grid.firstElementChild);
-      }
-    }
-
     if (streamPhase === 'main') {
       const batch = filteredProducts.slice(streamCursor, streamCursor + 24);
-      if (batch.length > 0) {
-        grid.insertAdjacentHTML('beforeend', batch.map(renderCardHtml).join(''));
-        streamCursor += batch.length;
-        if (loopCycle === 0) {
-          shownMainCount = streamCursor;
-          updateResultStats();
-        }
+      const uniqueBatch = batch.filter(item => !shownSkus.has(item.sku));
+      if (uniqueBatch.length > 0) {
+        uniqueBatch.forEach(item => shownSkus.add(item.sku));
+        grid.insertAdjacentHTML('beforeend', uniqueBatch.map(renderCardHtml).join(''));
       }
+      streamCursor += batch.length;
+      shownMainCount = streamCursor;
+      updateResultStats();
+
       if (streamCursor >= filteredProducts.length) {
         streamPhase = 'related';
         streamCursor = 0;
-        // Neu danh muc chinh rat ngan (<= 6 sp), hien ngay vach Ket thuc danh muc & 3 Goi y khac loai ben duoi
+        // Neu danh muc chinh ngan (<= 6 sp), hien ngay vach Ket thuc danh muc & 3 Goi y khac loai ben duoi
         if (forceInitial && filteredProducts.length <= 6) {
           appendRelatedChunk();
         }
       }
     } else if (streamPhase === 'related') {
       appendRelatedChunk();
+    } else if (streamPhase === 'extra') {
+      appendExtraBatch();
     }
   }
 
   function appendRelatedChunk() {
     const L = t();
     const grid = document.getElementById('catalogGrid');
-    const picks = buildCrossCategoryPicks(loopCycle);
+    const rawPicks = buildCrossCategoryPicks(0);
+    const picks = rawPicks.filter(item => !shownSkus.has(item.sku)).slice(0, 3);
+    picks.forEach(item => shownSkus.add(item.sku));
 
-    grid.insertAdjacentHTML('beforeend',
-      `<div class="loop-divider">${escHtml(L.endCat)}</div>` +
-      `<div class="loop-subhead">${escHtml(L.relatedHead)}</div>` +
-      picks.map(renderCardHtml).join('')
-    );
+    let html = `<div class="loop-divider">${escHtml(L.endCat)}</div>`;
+    if (picks.length > 0) {
+      html += `<div class="loop-subhead">${escHtml(L.relatedHead)}</div>` + picks.map(renderCardHtml).join('');
+    }
+    grid.insertAdjacentHTML('beforeend', html);
 
-    // Sau dung 3 goi y khac loai -> quay lai vong lap san pham cung loai
-    loopCycle++;
-    if (filteredProducts.length > 0) {
-      streamPhase = 'main';
-      streamCursor = 0;
-      grid.insertAdjacentHTML('beforeend', `<div class="loop-divider">↻ ${escHtml(L.loopBack)}</div>`);
+    // Chuan bi hang doi khong lap lai: san pham khac cung danh muc -> danh muc khac den het shop
+    extraQueue = buildNonRepeatingQueue();
+    extraCursor = 0;
+    lastExtraGroup = '';
+
+    if (extraQueue.length > 0) {
+      streamPhase = 'extra';
     } else {
       streamPhase = 'done';
+      grid.insertAdjacentHTML('beforeend', `<div class="loop-divider">${escHtml(L.endShop)}</div>`);
+    }
+  }
+
+  function appendExtraBatch() {
+    const L = t();
+    const grid = document.getElementById('catalogGrid');
+    if (!grid || extraCursor >= extraQueue.length) {
+      if (streamPhase !== 'done') {
+        streamPhase = 'done';
+        grid.insertAdjacentHTML('beforeend', `<div class="loop-divider">${escHtml(L.endShop)}</div>`);
+      }
+      return;
+    }
+
+    const slice = extraQueue.slice(extraCursor, extraCursor + 24);
+    extraCursor += slice.length;
+
+    let html = '';
+    slice.forEach(entry => {
+      if (shownSkus.has(entry.item.sku)) return;
+      if (entry.group !== lastExtraGroup) {
+        if (entry.group === 'same_cat') {
+          html += `<div class="loop-divider">↻ ${escHtml(L.loopBack)}</div>`;
+        } else {
+          html += `<div class="loop-divider">↻ ${escHtml(L.otherCatHead(getCategoryDisplayName(entry.catKey)))}</div>`;
+        }
+        lastExtraGroup = entry.group;
+      }
+      shownSkus.add(entry.item.sku);
+      html += renderCardHtml(entry.item);
+    });
+
+    if (html) grid.insertAdjacentHTML('beforeend', html);
+
+    if (extraCursor >= extraQueue.length) {
+      streamPhase = 'done';
+      grid.insertAdjacentHTML('beforeend', `<div class="loop-divider">${escHtml(L.endShop)}</div>`);
     }
   }
 
