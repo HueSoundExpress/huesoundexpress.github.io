@@ -65,6 +65,20 @@ function Escape-JsonStr {
     return ($Text -replace '\\', '\\' -replace '"', '\"' -replace "`r", ' ' -replace "`n", ' ')
 }
 
+function Get-VinylFallbackSvg {
+    param([string]$Title, [string]$Artist, [string]$Fmt, [string]$Uid = "vf1", [bool]$Hidden = $false)
+    $tRaw = ([string]$Title).Trim()
+    $aRaw = ([string]$Artist).Trim()
+    $tShort = if ($tRaw.Length -gt 26) { $tRaw.Substring(0, 25) + [char]0x2026 } else { $tRaw }
+    $aShort = if ($aRaw.Length -gt 24) { $aRaw.Substring(0, 23) + [char]0x2026 } else { $aRaw }
+    $fShort = if ($Fmt) { $Fmt } else { "LP" }
+    $tTxt = Escape-Html $tShort
+    $aTxt = Escape-Html $aShort
+    $fTxt = Escape-Html $fShort
+    $disp = if ($Hidden) { "display:none;" } else { "display:flex;" }
+    return "<div class='fb-vinyl' style='$($disp)align-items:center;justify-content:center;width:100%;height:100%;padding:6px;'><svg viewBox='0 0 120 120' fill='none' style='width:100%;height:100%;max-width:190px;max-height:190px;'><defs><path id='$($Uid)t' d='M 16,60 A 44,44 0 1,1 104,60'/><path id='$($Uid)b' d='M 18,63 A 42,42 0 0,0 102,63'/></defs><circle cx='60' cy='60' r='55' stroke='#B5541F' stroke-width='1.6' opacity='.42'/><circle cx='60' cy='60' r='46' stroke='#C99A2E' stroke-width='1.1' opacity='.45' stroke-dasharray='2 2'/><circle cx='60' cy='60' r='34' stroke='#B5541F' stroke-width='1.4' opacity='.5'/><circle cx='60' cy='60' r='23' stroke='#C99A2E' stroke-width='1.3' opacity='.62'/><circle cx='60' cy='60' r='13' fill='rgba(181,84,31,.14)' stroke='#B5541F' stroke-width='1.2'/><circle cx='60' cy='60' r='4' fill='#B5541F'/><text font-family='Montserrat,sans-serif' font-size='7.1' font-weight='800' fill='#6E2E10' letter-spacing='.35'><textPath href='#$($Uid)t' startOffset='50%' text-anchor='middle'>$tTxt</textPath></text><text font-family='Lora,Georgia,serif' font-size='6.7' font-weight='600' fill='#8B4513' letter-spacing='.25'><textPath href='#$($Uid)b' startOffset='50%' text-anchor='middle'>$aTxt</textPath></text><text x='60' y='74' text-anchor='middle' font-family='Montserrat,sans-serif' font-size='6.2' font-weight='800' fill='#B5541F'>$fTxt</text></svg></div>"
+}
+
 function Load-CsvOrUrl {
     param([string]$Source)
     if ([string]::IsNullOrWhiteSpace($Source)) { return @() }
@@ -359,6 +373,7 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
     $missing = if ($r.missing_fields) { @($r.missing_fields -split '\s*;\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
     $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
+    $vinylWeight = if ($r.PSObject.Properties['weight'] -and -not [string]::IsNullOrWhiteSpace($r.weight)) { ([string]$r.weight).Trim() } else { "180g" }
     [void]$allItems.Add([PSCustomObject]@{
         id             = $idNum
         sku            = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "VN" -Id $idNum -Used $usedSkus
@@ -371,6 +386,7 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
         t              = [string]$r.title
         l              = [string]$r.label
         f              = [string]$r.format
+        w              = $vinylWeight
         c              = [string]$r.edition
         y              = [string]$r.year
         p              = if ($r.list_price) { [int]$r.list_price } else { 0 }
@@ -688,28 +704,28 @@ function Get-CategoryFaqs {
     switch ($Category) {
         "vinyl" {
             return @(
-                @{ q = "Đĩa than mới mua (Mới 100% / M) có cần rửa trước khi nghe không?"; a = "Nên rửa nhẹ hoặc quét sạch tĩnh điện bằng chổi sợi Carbon trước khi hạ kim lần đầu để loại bỏ bụi giấy từ bao lót nguyên bản và lớp dầu khuôn ép, giúp âm thanh trong trẻo và bền đầu kim hơn."; guide = "../../cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_rua_dia_than_moi" },
-                @{ q = "Đóng gói đĩa than gửi đi tỉnh có sợ cong vênh hay rách mép (Seam Splits) không?"; a = "Hue Sound Express áp dụng chuẩn đóng gói 3 lớp chống rách mép (bọc xốp nổ đa lớp, chèn bìa carton cứng chống gập góc và hộp mailer 12-inch chuyên dụng), an toàn tuyệt đối khi vận chuyển toàn quốc."; guide = "../../cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_dong_goi_3_lop" },
-                @{ q = "Cách bảo quản đĩa than với thời tiết nóng ẩm ở Việt Nam?"; a = "Luôn xếp đĩa thẳng đứng như xếp sách ở nơi khô thoáng (độ ẩm lý tưởng 45–55%), thay bao lót chống tĩnh điện (Anti-Static Inner Sleeve) và bọc áo ngoài nilon để tránh mốc bìa giấy vào mùa nồm."; guide = "../../cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_bao_quan_dia_than" }
+                @{ q = "Đĩa than mới mua (Mới 100% / M) có cần rửa trước khi nghe không?"; a = "Nên rửa nhẹ hoặc quét sạch tĩnh điện bằng chổi sợi Carbon trước khi hạ kim lần đầu để loại bỏ bụi giấy từ bao lót nguyên bản và lớp dầu khuôn ép, giúp âm thanh trong trẻo và bền đầu kim hơn."; guide = "../../cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" },
+                @{ q = "Đóng gói đĩa than gửi đi tỉnh có sợ cong vênh hay rách mép (Seam Splits) không?"; a = "Hue Sound Express áp dụng chuẩn đóng gói 3 lớp chống rách mép (bọc xốp nổ đa lớp, chèn bìa carton cứng chống gập góc và hộp mailer 12-inch chuyên dụng), an toàn tuyệt đối khi vận chuyển toàn quốc."; guide = "../../cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" },
+                @{ q = "Cách bảo quản đĩa than với thời tiết nóng ẩm ở Việt Nam?"; a = "Luôn xếp đĩa thẳng đứng như xếp sách ở nơi khô thoáng (độ ẩm lý tưởng 45–55%), thay bao lót chống tĩnh điện (Anti-Static Inner Sleeve) và bọc áo ngoài nilon để tránh mốc bìa giấy vào mùa nồm."; guide = "../../cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" }
             )
         }
         "cd" {
             return @(
-                @{ q = "Đĩa CD nhạc Việt tại Hue Sound Express có phải bản chính hãng không?"; a = "Toàn bộ đĩa CD/SACD đều là ấn phẩm phát hành chính hãng. Với các tựa CD hiển thị nút Liên hệ, bạn chỉ cần nhắn Zalo 09323.13918 hoặc WhatsApp để shop kiểm tra tồn kho và giữ đĩa ngay."; guide = "../../cam-nang/giai-thich-thang-goldmine-grading/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_goldmine_grading" },
-                @{ q = "Giao hàng đĩa CD đi tỉnh có sợ vỡ vỏ hộp nhựa (Jewel Case) không?"; a = "Mỗi đĩa CD đều được quấn nhiều lớp xốp chống sốc và đóng hộp carton cứng 5 lớp; nếu không may nứt vỡ do vận chuyển, Hue Sound Express hỗ trợ đổi trả trong 7 ngày."; guide = "../../cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_dong_goi_3_lop" }
+                @{ q = "Đĩa CD nhạc Việt tại Hue Sound Express có phải bản chính hãng không?"; a = "Toàn bộ đĩa CD/SACD đều là ấn phẩm phát hành chính hãng. Với các tựa CD hiển thị nút Liên hệ, bạn chỉ cần nhắn Zalo 09323.13918 hoặc WhatsApp để shop kiểm tra tồn kho và giữ đĩa ngay."; guide = "../../cam-nang/giai-thich-thang-goldmine-grading/" },
+                @{ q = "Giao hàng đĩa CD đi tỉnh có sợ vỡ vỏ hộp nhựa (Jewel Case) không?"; a = "Mỗi đĩa CD đều được quấn nhiều lớp xốp chống sốc và đóng hộp carton cứng 5 lớp; nếu không may nứt vỡ do vận chuyển, Hue Sound Express hỗ trợ đổi trả trong 7 ngày."; guide = "../../cam-nang/dong-goi-dia-than-chong-rach-mep-di-tinh/" }
             )
         }
         "turntable" {
             return @(
-                @{ q = "Người mới bắt đầu nên chọn mâm đĩa than (Turntable) loại nào?"; a = "Người mới nên ưu tiên mâm than có tích hợp sẵn mạch Phono Preamp (Built-in Phono) và kim MM phổ biến để dễ dàng cắm trực tiếp vào loa active hoặc ampli sẵn có tại nhà."; guide = "../../cam-nang/cach-chon-mam-than-dau-tien/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_chon_mam_than" },
-                @{ q = "Kim đĩa than MM và MC khác nhau như thế nào?"; a = "Kim MM (Moving Magnet) dễ chơi, dễ thay mũi kim và hợp mọi phono cơ bản; kim MC (Moving Coil) cho độ chi tiết và không gian âm thanh cao cấp hơn, phù hợp hệ thống Audiophile có Phono MC chuyên dụng."; guide = "../../cam-nang/phan-biet-kim-mm-va-mc/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_kim_mm_mc" },
-                @{ q = "Hue Sound Express có hỗ trợ cân chỉnh mâm than và lắp kim không?"; a = "Đội ngũ Hue Sound Vinyl Care hỗ trợ cân lực tì kim (Tracking Force), chống trượt (Anti-Skating) và tư vấn phối ghép trực tiếp qua Zalo 09323.13918."; guide = "../../cam-nang/cach-chon-mam-than-dau-tien/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_chon_mam_than" }
+                @{ q = "Người mới bắt đầu nên chọn mâm đĩa than (Turntable) loại nào?"; a = "Người mới nên ưu tiên mâm than có tích hợp sẵn mạch Phono Preamp (Built-in Phono) và kim MM phổ biến để dễ dàng cắm trực tiếp vào loa active hoặc ampli sẵn có tại nhà."; guide = "../../cam-nang/cach-chon-mam-than-dau-tien/" },
+                @{ q = "Kim đĩa than MM và MC khác nhau như thế nào?"; a = "Kim MM (Moving Magnet) dễ chơi, dễ thay mũi kim và hợp mọi phono cơ bản; kim MC (Moving Coil) cho độ chi tiết và không gian âm thanh cao cấp hơn, phù hợp hệ thống Audiophile có Phono MC chuyên dụng."; guide = "../../cam-nang/phan-biet-kim-mm-va-mc/" },
+                @{ q = "Hue Sound Express có hỗ trợ cân chỉnh mâm than và lắp kim không?"; a = "Đội ngũ Hue Sound Vinyl Care hỗ trợ cân lực tì kim (Tracking Force), chống trượt (Anti-Skating) và tư vấn phối ghép trực tiếp qua Zalo 09323.13918."; guide = "../../cam-nang/cach-chon-mam-than-dau-tien/" }
             )
         }
         default {
             return @(
-                @{ q = "Chính sách giảm giá phụ kiện tại Hue Sound Express như thế nào?"; a = "Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox Zalo 09323.13918 để được tư vấn phối ghép và ưu đãi combo tốt nhất."; guide = "../../cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_bao_quan_dia_than" },
-                @{ q = "Tại sao nên dùng chổi sợi Carbon và túi lót chống tĩnh điện cho đĩa than?"; a = "Chổi sợi Carbon giúp khử tĩnh điện và quét sạch bụi mịn trước khi hạ kim, còn túi lót chống tĩnh điện thay cho túi giấy thô giúp đĩa không bị xước dăm và giảm tiếng nổ lách tách."; guide = "../../cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/?utm_source=product_faq&utm_medium=internal&utm_campaign=guide_rua_dia_than_moi" }
+                @{ q = "Chính sách giảm giá phụ kiện tại Hue Sound Express như thế nào?"; a = "Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox Zalo 09323.13918 để được tư vấn phối ghép và ưu đãi combo tốt nhất."; guide = "../../cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/" },
+                @{ q = "Tại sao nên dùng chổi sợi Carbon và túi lót chống tĩnh điện cho đĩa than?"; a = "Chổi sợi Carbon giúp khử tĩnh điện và quét sạch bụi mịn trước khi hạ kim, còn túi lót chống tĩnh điện thay cho túi giấy thô giúp đĩa không bị xước dăm và giảm tiếng nổ lách tách."; guide = "../../cam-nang/dia-than-moi-co-can-rua-truoc-khi-nghe/" }
             )
         }
     }
@@ -782,7 +798,7 @@ if ($GenerateProductPages) {
         $upsellHtml = ""
         if ($upsellItems.Count -gt 0) {
             $cards = ($upsellItems | ForEach-Object {
-                "<a class='up-card' href='../$($_.slug)/?utm_source=product_upsell&utm_medium=internal&utm_campaign=related_item'><strong>$(Escape-Html $_.t)</strong><span>$($_.p.ToString('N0')) đ</span></a>"
+                "<a class='up-card' href='../$($_.slug)/'><strong>$(Escape-Html $_.t)</strong><span>$($_.p.ToString('N0')) đ</span></a>"
             }) -join ""
             $upHead = if ($isAccBundle) { "Đĩa than mới về đề xuất phối ghép" } else { "Gợi ý đi kèm từ Hue Sound Vinyl Care" }
             $upsellHtml = "<section class='box'><h2>$upHead</h2><div class='up-grid'>$cards</div></section>"
@@ -804,14 +820,18 @@ if ($GenerateProductPages) {
 
         $schemaAvail = if ($it.s -eq "in_stock") { "https://schema.org/InStock" } else { "https://schema.org/OutOfStock" }
         $schemaCond = if ($it.cond -eq "mint_sealed") { "https://schema.org/NewCondition" } else { "https://schema.org/UsedCondition" }
+        $weightJsonProp = ""
+        if ($it.PSObject.Properties['w'] -and $it.w -match '(\d+)') {
+            $weightJsonProp = "`n        `"weight`": { `"@type`": `"QuantitativeValue`", `"value`": $($matches[1]), `"unitCode`": `"GRM`" },"
+        }
         $primaryCtaHtml = if ($it.PSObject.Properties['force_contact'] -and $it.force_contact) {
             "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
         } elseif ($it.s -eq "out_of_stock") {
-            "<a class='btn btn-copper' href='../../?waitlist=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=waitlist'>🔔 Báo khi về</a>"
+            "<a class='btn btn-copper' href='../../?waitlist=$([Uri]::EscapeDataString($it.sku))'>🔔 Báo khi về</a>"
         } elseif ($it.contact_only) {
             "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
         } else {
-            "<a class='btn btn-copper' href='../../?add=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=add_to_cart'>+ Thêm vào Giỏ / Báo giá</a>"
+            "<a class='btn btn-copper' href='../../?add=$([Uri]::EscapeDataString($it.sku))'>+ Thêm vào Giỏ / Báo giá</a>"
         }
 
         $html = @"
@@ -854,7 +874,7 @@ if ($GenerateProductPages) {
         "keywords": "$(Escape-JsonStr $kwJoined)",
         "image": "$ogImg",
         "description": "$(Escape-JsonStr "$($it.d)$extraSeoDesc")",
-        "brand": { "@type": "Brand", "name": "$(Escape-JsonStr $(if ($it.l) { $it.l } else { 'Hue Sound Express' }))" },
+        "brand": { "@type": "Brand", "name": "$(Escape-JsonStr $(if ($it.l) { $it.l } else { 'Hue Sound Express' }))" },$weightJsonProp
         "offers": {
           "@type": "Offer",
           "priceCurrency": "VND",
@@ -955,7 +975,7 @@ if ($GenerateProductPages) {
 <body>
   <div class="wrap">
     <div class="topbar">
-      <a class="back" href="../../?utm_source=direct_page&utm_medium=internal&utm_campaign=back_home">← Quay lại Phòng Nghe Số Hue Sound Express</a>
+      <a class="back" href="../../">← Quay lại Phòng Nghe Số Hue Sound Express</a>
       <span class="brand-mini">HUE SOUND EXPRESS • Analog Audio</span>
     </div>
     <nav class="crumb" aria-label="Breadcrumb">
@@ -963,13 +983,13 @@ if ($GenerateProductPages) {
     </nav>
     <div class="hero">
       <div class="cover">
-        $(if ($it.img -match '^https?://') { "<img src='$(Escape-Html $it.img)' alt='$seoTitleEsc'>" } else { "<div style='color:var(--ink);'><div style='font-weight:700;font-size:13px;'>$(Escape-Html $it.a)</div><div style='font-size:12px;color:#7A5C46;'>$(Escape-Html $it.t)</div></div>" })
+        $(if ($it.img -match '^https?://') { "<img src='$(Escape-Html $it.img)' alt='$seoTitleEsc' onerror=`"this.style.display='none';this.nextElementSibling.style.display='flex';`">$(Get-VinylFallbackSvg -Title $it.t -Artist $it.a -Fmt $it.f -Uid "p$($it.id)" -Hidden $true)" } else { Get-VinylFallbackSvg -Title $it.t -Artist $it.a -Fmt $it.f -Uid "p$($it.id)" -Hidden $false })
       </div>
       <div>
         <span class="badge">$catLabel • $(Escape-Html $genreDisplay)</span>
         <h1>$(Escape-Html $it.t)</h1>
         <div class="sub">$(Escape-Html $it.a)</div>
-        <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
+        <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.PSObject.Properties['w'] -and $it.w) { "• Trọng lượng: <strong>$(Escape-Html $it.w)</strong>" }) $(if ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
         <p class="desc">$descEsc</p>
         <div class="price-row">
           <div>$priceHtml</div>
@@ -1118,11 +1138,13 @@ if ($GenerateProductPages) {
         }
 
         $itemCardsHtml = ($shown | ForEach-Object {
-            $imgTag = if ($_.img -match '^https?://') { "<img src='$(Escape-Html $_.img)' alt='$(Escape-Html "$($_.a) - $($_.t)")' loading='lazy'>" } else { "<div class='fb'>HUE SOUND</div>" }
+            $fbUid = "c$($col.utm.Substring(0,[Math]::Min(6,$col.utm.Length)))$($_.id)"
+            $imgTag = if ($_.img -match '^https?://') { "<img src='$(Escape-Html $_.img)' alt='$(Escape-Html "$($_.a) - $($_.t)")' loading='lazy' onerror=`"this.style.display='none';this.nextElementSibling.style.display='flex';`">$(Get-VinylFallbackSvg -Title $_.t -Artist $_.a -Fmt $_.f -Uid $fbUid -Hidden $true)" } else { Get-VinylFallbackSvg -Title $_.t -Artist $_.a -Fmt $_.f -Uid $fbUid -Hidden $false }
             $pTxt = if ($_.p -gt 0) { "$($_.p.ToString('N0')) đ" } else { "Liên hệ" }
             $oldTxt = if ($_.p_orig -gt $_.p -and $_.p -gt 0) { "<span class='old'>$($_.p_orig.ToString('N0')) đ</span>" } else { "" }
-            $utmLink = "../../p/$($_.slug)/?utm_source=collection&utm_medium=internal&utm_campaign=$($col.utm)"
-            "<a class='prod-card' href='$utmLink'><div class='thumb'>$imgTag</div><div class='p-body'><div class='p-title'>$(Escape-Html $_.t)</div><div class='p-art'>$(Escape-Html $_.a)</div><div class='p-meta'>$(Escape-Html (Get-CondDisplayVi $_.cond)) • $(Escape-Html (Get-StatusDisplayVi $_.s))</div><div class='p-price'>$oldTxt <strong>$pTxt</strong></div></div></a>"
+            $prodLink = "../../p/$($_.slug)/"
+            $wTag = if ($_.PSObject.Properties['w'] -and $_.w) { " • $(Escape-Html $_.w)" } else { "" }
+            "<a class='prod-card' href='$prodLink'><div class='thumb'>$imgTag</div><div class='p-body'><div class='p-title'>$(Escape-Html $_.t)</div><div class='p-art'>$(Escape-Html $_.a)</div><div class='p-meta'>$(Escape-Html (Get-CondDisplayVi $_.cond)) • $(Escape-Html (Get-StatusDisplayVi $_.s))$wTag</div><div class='p-price'>$oldTxt <strong>$pTxt</strong></div></div></a>"
         }) -join ""
 
         $listJson = ($shown | Select-Object -First 15 | ForEach-Object -Begin { $pos = 1 } -Process {
@@ -1132,7 +1154,7 @@ if ($GenerateProductPages) {
         }) -join ",`n      "
 
         $otherColsHtml = ($collectionMeta | Where-Object { $_.slug -ne $col.slug } | ForEach-Object {
-            "<a class='col-chip' href='../$($_.slug)/?utm_source=collection&utm_medium=internal&utm_campaign=$($_.utm)'>$(Escape-Html $_.title)</a>"
+            "<a class='col-chip' href='../$($_.slug)/'>$(Escape-Html $_.title)</a>"
         }) -join ""
 
         $cHtml = @"
@@ -1213,7 +1235,7 @@ if ($GenerateProductPages) {
 <body>
   <div class="wrap">
     <div class="topbar">
-      <a class="back" href="../../?utm_source=collection&utm_medium=internal&utm_campaign=$($col.utm)">← Quay lại Phòng Nghe Số Hue Sound Express</a>
+      <a class="back" href="../../">← Quay lại Phòng Nghe Số Hue Sound Express</a>
       <span style="font-weight:800;font-size:13px;color:var(--copper);">BỘ SƯU TẬP ANALOG AUDIO</span>
     </div>
     <header class="hero-col">
@@ -1332,11 +1354,11 @@ if ($GenerateProductPages) {
 
         $relCards = ($gd.related | Select-Object -First 6 | ForEach-Object {
             $pStr = if ($_.p -gt 0) { "$($_.p.ToString('N0')) đ" } else { "Liên hệ" }
-            "<a class='up-card' href='../../p/$($_.slug)/?utm_source=guide&utm_medium=internal&utm_campaign=$($gd.utm)'><strong>$(Escape-Html $_.t)</strong><small style='color:#6F5139;'>$(Escape-Html $_.a)</small><span>$pStr</span></a>"
+            "<a class='up-card' href='../../p/$($_.slug)/'><strong>$(Escape-Html $_.t)</strong><small style='color:#6F5139;'>$(Escape-Html $_.a)</small><span>$pStr</span></a>"
         }) -join ""
 
         $otherLinks = ($guideMeta | Where-Object { $_.slug -ne $gd.slug } | ForEach-Object {
-            "<li><a href='../$($_.slug)/?utm_source=guide&utm_medium=internal&utm_campaign=$($_.utm)'>$(Escape-Html $_.title)</a></li>"
+            "<li><a href='../$($_.slug)/'>$(Escape-Html $_.title)</a></li>"
         }) -join ""
 
         $gHtml = @"
@@ -1403,7 +1425,7 @@ if ($GenerateProductPages) {
 <body>
   <div class="wrap">
     <div class="topbar">
-      <a class="back" href="../../?utm_source=guide&utm_medium=internal&utm_campaign=$($gd.utm)">← Quay lại Hue Sound Express</a>
+      <a class="back" href="../../">← Quay lại Hue Sound Express</a>
       <span style="font-weight:800;font-size:13px;color:var(--copper);">CẨM NANG ANALOG AUDIO • HUE SOUND VINYL CARE</span>
     </div>
     <article class="article-box">

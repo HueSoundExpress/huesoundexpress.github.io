@@ -1,7 +1,7 @@
-=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP (2026-11-22 19:42) ===
-Khong co SKU moi trong lan build nay (tong: 1136 san pham).
+=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP (2026-11-22 21:58) ===
+Khong co SKU moi trong lan build nay (tong: 1139 san pham).
 Thong ke 10 bo suu tap:
-  - dia-than-nhac-tet: 35 sp
+  - dia-than-nhac-tet: 36 sp
   - dia-than-ngay-le: 31 sp
   - dia-than-nhac-vang-bolero: 36 sp
   - dia-than-tinh-khuc-1954-1975: 36 sp
@@ -10,4 +10,4 @@ Thong ke 10 bo suu tap:
   - dia-than-jazz-audiophile: 29 sp
   - may-hat-dia-than-cho-nguoi-moi: 20 sp
   - dia-than-nhac-ha-noi-sai-gon: 36 sp
-  - qua-tang-dia-than-cao-cap: 27 sp
+  - qua-tang-dia-than-cao-cap: 30 sp

@@ -1,7 +1,10 @@
 {
-    "updated_at":  "2026-11-22T19:42:36+07:00",
-    "total_items":  1136,
+    "updated_at":  "2026-11-22T21:58:16+07:00",
+    "total_items":  1139,
     "skus":  [
+                 "VN-BOLERO-VANGQA-559",
+                 "VN-QUYNHANH-THANHTUNG-558",
+                 "VN-DUONGTHU-80NAM-557",
                  "VN-BOLERO-NHUCHUAB-556",
                  "VN-BOLERO-HOATRINH-555",
                  "VN-BOLERO-TINHSAUX-554",
@@ -1141,13 +1144,13 @@
              ],
     "collection_counts":  {
                               "dia-than-nhac-ha-noi-sai-gon":  36,
-                              "dia-than-nhac-tet":  35,
+                              "dia-than-nhac-tet":  36,
                               "dia-than-nhac-vang-bolero":  36,
                               "dia-than-jazz-audiophile":  29,
                               "may-hat-dia-than-cho-nguoi-moi":  20,
                               "dia-than-nhac-viet-tre":  36,
                               "dia-than-tinh-khuc-1954-1975":  36,
-                              "qua-tang-dia-than-cao-cap":  27,
+                              "qua-tang-dia-than-cao-cap":  30,
                               "dia-than-instrument-hoa-tau":  33,
                               "dia-than-ngay-le":  31
                           }
