@@ -1304,7 +1304,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tabAccessory: 'Phụ kiện và dịch vụ', tabGuide: 'Cẩm nang FAQ và giao vận',
       promoMarquee: '🚚 KHUYẾN MÃI!!! Nhanh tay chốt đơn với giá ưu đãi cho 10 đơn hàng đầu tiên (còn 6 đơn)',
       accPromoNote: '* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn',
-      btnContactOrder: '💬 Liên hệ', btnShare: '📤 Chia sẻ',
+      btnContactOrder: '💬 Liên hệ đặt hàng', btnShare: '📤 Chia sẻ',
       toastShared: '✓ Đã sao chép link sản phẩm để chia sẻ!',
       cartBundleApplied: '✓ Đã áp dụng giá ưu đãi phụ kiện khi mua cùng đĩa than / mâm than.',
       cartBundleNeed: '* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn (hiện đang tính theo giá gốc).',
@@ -1450,7 +1450,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tabAccessory: 'Accessories & Vinyl Care', tabGuide: 'FAQs and Shipping',
       promoMarquee: '🚚 PROMO!!! Hurry — grab discounted prices for the first 10 orders (6 left)',
       accPromoNote: '* Accessory discount when purchased with a Vinyl LP / Turntable — inbox us for consultation',
-      btnContactOrder: '💬 Contact', btnShare: '📤 Share',
+      btnContactOrder: '💬 Contact to Order', btnShare: '📤 Share',
       toastShared: '✓ Product link copied to share!',
       cartBundleApplied: '✓ Accessory bundle discount applied (paired with Vinyl / Turntable).',
       cartBundleNeed: '* Accessory discount when purchased with a Vinyl LP / Turntable — inbox us for consultation (regular price currently applied).',
@@ -2331,10 +2331,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const clickHint = lang === 'en' ? 'Click to filter' : 'Bấm để lọc nhanh';
 
     let actionBtnHtml = '';
-    if (isContactOnly) {
-      actionBtnHtml = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
-    } else if (isWaitlist) {
+    if (isWaitlist) {
       actionBtnHtml = `<button class="btn btn-wait" type="button" onclick="openWaitlist('${skuEsc}')">${L.btnWait}</button>`;
+    } else if (isContactOnly) {
+      actionBtnHtml = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
     } else {
       actionBtnHtml = `<button class="btn btn-add" type="button" onclick="addToCart('${skuEsc}')">${L.btnAdd}</button>`;
     }
@@ -2565,10 +2565,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const condText = L.condMap[item.cond] || item.cond;
 
     let ctaBtn = '';
-    if (isContactOnly) {
-      ctaBtn = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
-    } else if (isWaitlist) {
+    if (isWaitlist) {
       ctaBtn = `<button class="btn btn-wait" type="button" onclick="openWaitlist('${skuEsc}')">${L.detailWait}</button>`;
+    } else if (isContactOnly) {
+      ctaBtn = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
     } else {
       ctaBtn = `<button class="btn btn-add" type="button" onclick="addToCart('${skuEsc}'); openCart();">${L.detailAddCart}</button>`;
     }

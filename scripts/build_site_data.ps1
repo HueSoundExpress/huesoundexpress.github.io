@@ -399,6 +399,7 @@ foreach ($r in (Load-CsvOrUrl $TurntableCsv)) {
     $specs = if ($r.specs_summary) { @($r.specs_summary -split '\s*;\s*' | Where-Object { $_ }) } else { @() }
     $recSkus = if ($r.recommended_skus) { @($r.recommended_skus -split '\s*;\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
+    $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
     [void]$allItems.Add([PSCustomObject]@{
         id               = $idNum
         sku              = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "TT" -Id $idNum -Used $usedSkus
@@ -418,7 +419,7 @@ foreach ($r in (Load-CsvOrUrl $TurntableCsv)) {
         recommended_skus = $recSkus
         p                = if ($r.list_price) { [int]$r.list_price } else { 0 }
         s                = [string]$r.status
-        contact_only     = $false
+        contact_only     = $isContact
         d                = [string]$r.description
         img              = [string]$r.cover_url
         video_demo_url   = [string]$r.video_demo_url
@@ -431,6 +432,7 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
     $idNum = [int]$r.id
     $cat = if ($r.category) { ([string]$r.category).Trim().ToLowerInvariant() } else { "accessory" }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
+    $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
     [void]$allItems.Add([PSCustomObject]@{
         id            = $idNum
         sku           = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "ACC" -Id $idNum -Used $usedSkus
@@ -446,7 +448,7 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
         c             = "mint_sealed"
         p             = if ($r.list_price) { [int]$r.list_price } else { 0 }
         s             = [string]$r.status
-        contact_only  = $false
+        contact_only  = $isContact
         d             = [string]$r.description
         img           = [string]$r.cover_url
     })
@@ -571,7 +573,7 @@ foreach ($it in $allItems) {
         condition_vi          = $condVi
         condition_schema      = if ($it.cond -eq "mint_sealed") { "https://schema.org/NewCondition" } else { "https://schema.org/UsedCondition" }
         availability          = $it.s
-        order_mode            = if ($it.contact_only) { "contact" } else { "cart" }
+        order_mode            = if ($it.s -eq "out_of_stock") { "waitlist" } elseif ($it.contact_only) { "contact" } else { "cart" }
         list_price_vnd        = $it.p_orig
         sale_price_vnd        = $it.p
         discount_vnd          = [Math]::Max(0, $it.p_orig - $it.p)
@@ -767,10 +769,10 @@ if ($GenerateProductPages) {
 
         $schemaAvail = if ($it.s -eq "in_stock") { "https://schema.org/InStock" } else { "https://schema.org/OutOfStock" }
         $schemaCond = if ($it.cond -eq "mint_sealed") { "https://schema.org/NewCondition" } else { "https://schema.org/UsedCondition" }
-        $primaryCtaHtml = if ($it.contact_only) {
-            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ</button>"
-        } elseif ($it.s -eq "out_of_stock") {
+        $primaryCtaHtml = if ($it.s -eq "out_of_stock") {
             "<a class='btn btn-copper' href='../../?waitlist=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=waitlist'>🔔 Báo khi về</a>"
+        } elseif ($it.contact_only) {
+            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
         } else {
             "<a class='btn btn-copper' href='../../?add=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=add_to_cart'>+ Thêm vào Giỏ / Báo giá</a>"
         }

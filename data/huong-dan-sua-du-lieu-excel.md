@@ -46,32 +46,40 @@ explorer.exe data\templates
 | Cột trong CSV | Ý nghĩa | Giá trị hợp lệ cần điền |
 | :--- | :--- | :--- |
 | `sku` | Mã sản phẩm (ASCII, không dấu) | VD: `VN-SSR-MOI-LUONG-DUYEN-LP`, `CD-VN-HUONGTRA-1001` *(tiền tố `VN-` / `CD-VN-` tự nhận Nhạc Việt, `NN-` tự nhận Nhạc Quốc Tế)* |
-| `list_price` | Giá niêm yết (VND) | Chỉ gõ số nguyên (VD: `1200000`). Điền **`0`** để hiện **`Liên hệ`**. |
-| `status` | Trạng thái kho | `in_stock` (*Còn hàng*) hoặc `out_of_stock` (*Hết hàng* → tự hiện nút **`🔔 Báo khi về`**). |
+| `list_price` | Giá niêm yết (VND) | Chỉ gõ số nguyên (VD: `1200000`). **Website luôn hiển thị giá** (kể cả khi `Hết hàng`) để khách tham khảo. Chỉ điền **`0`** nếu muốn ẩn giá và hiển thị **`Liên hệ`**. |
+| `status` | Trạng thái kho | `in_stock` (*Còn hàng*) hoặc `out_of_stock` (*Hết hàng* → **luôn hiện nút `🔔 Báo khi về`**, kể cả khi có giá). |
 | `edition` | Tình trạng đĩa (Goldmine) | `mint_sealed` (*Mới 100% (M)*), `near_mint` (*NM*), `very_good_plus` (*VG+*), `very_good` (*VG*), `good_plus` (*G+*), `good` (*G*), `fair` (*F*), `poor` (*P*). |
 | `genre` | Thể loại chính | **Đĩa than / CD:** `love_songs_1954_1975` (*Tình khúc 1954–1975*), `bolero_golden_oldies` (*Trữ tình / Bolero*), `vietnamese_pop_modern` (*Nhạc Việt trẻ*), `vietnamese_folk_patriotic` (*Dân ca & Cách mạng*), `instrumental` (*Instrument*), `jazz_vocal` (*Jazz & Vocal*), `audiophile_reference` (*Audiophile*), `rock_metal` (*Rock & Metal*), `pop_disco` (*Pop & Disco*), `classic_soundtrack` (*Classic & OST*).<br>**Mâm than:** `beginner`, `mid_range`, `audiophile`.<br>**Phụ kiện:** `record_cleaning`, `sleeves_protection`, `cartridge_stylus`, `calibration`, `vinyl_care_service`. |
 | `mood` | Tâm trạng / Không gian (ngăn cách `;`) | `late_night_chill`, `nostalgic_classic`, `audiophile_reference`, `weekend_upbeat`, `refined_gifting`, `morning_coffee_acoustic`. |
-| `contact_only` *(chỉ file CD)* | Chế độ nút đặt hàng | `0` (bình thường: còn hàng → Giỏ hàng; hết hàng → **`🔔 Báo khi về`**); `1` (ép hiện nút *Liên hệ đặt hàng* kể cả khi còn giá). |
+| `contact_only` *(áp dụng cho cả Đĩa than, CD, Máy hát, Phụ kiện)* | Chế độ nút bấm khi **Còn hàng** (`in_stock`) | `0` (hoặc để trống): hiện nút **`+ Giỏ / Báo giá`** (thêm vào giỏ hàng).<br>`1`: hiện nút **`💬 Liên hệ đặt hàng`** (bật popup Zalo / WhatsApp).<br>*(Lưu ý: Khi `status = out_of_stock`, website luôn ưu tiên nút **`🔔 Báo khi về`**).* |
 | `year` | Năm phát hành | Số năm 4 chữ số (VD: `2024`). |
 | `cover_url` | Link ảnh bìa | URL `https://...` (tên file không dấu, nối bằng dấu gạch ngang `-`). |
 | `audio_url` | Link nghe thử 30s | URL `https://...` (MP3/M4A). |
 | `tracklist` | Danh sách bài hát | Các bài hát ngăn cách bởi dấu gạch đứng `|`. |
 
-### Mẹo chỉnh nhanh "Hết hàng – Giá Liên hệ – Báo khi về"
-* Đặt `list_price` = `0`
-* Đặt `status` = `out_of_stock`
-* *(Với file CD)* đặt `contact_only` = `0`
+### Bảng 3 chế độ hiển thị nhanh (Áp dụng chung cho mọi file CSV)
 
-### Mẹo bật lại "Còn hàng – Có giá – Thêm vào giỏ"
-* Đặt `list_price` = giá niêm yết (VD: `1200000` → web tự hiển thị giá gạch ngang & giá ưu đãi giảm 50.000–60.000đ)
-* Đặt `status` = `in_stock`
-* *(Với file CD)* đặt `contact_only` = `0` (nếu muốn cho vào giỏ) hoặc `1` (nếu muốn hiện giá nhưng nút bấm là *Liên hệ đặt hàng*)
+| Mục tiêu hiển thị trên Website | `list_price` | `status` | `contact_only` | Kết quả hiển thị trên Web & Trang `/p/` |
+| :--- | :--- | :--- | :---: | :--- |
+| **1. Hết hàng → Báo khi hàng về (Luôn hiện giá)** | Giá niêm yết (VD: `1200000`) *(chỉ nhập `0` nếu muốn hiện "Liên hệ")* | `out_of_stock` | `0` hoặc `1` | Luôn hiện **Giá** (hoặc *Liên hệ* nếu = `0`) • Nhãn **`Hết hàng`** • Nút **`🔔 Báo khi về`** |
+| **2. Còn hàng → Thêm vào giỏ / Báo giá** | Giá niêm yết (VD: `1200000` → tự gạch giá gốc & giảm 50k–60k) | `in_stock` | `0` | Hiện **Giá gạch ngang + Giá ưu đãi** • Nhãn **`Còn hàng`** • Nút **`+ Giỏ / Báo giá`** |
+| **3. Còn hàng → Liên hệ đặt hàng** | Giá niêm yết (VD: `1200000`) | `in_stock` | `1` | Hiện **Giá gạch ngang + Giá ưu đãi** • Nhãn **`Còn hàng`** • Nút **`💬 Liên hệ đặt hàng`** |
+
+> **Lưu ý:** Nếu đặt `list_price = 0` thì kể cả đang ghi `in_stock`, hệ thống vẫn tự chuyển trạng thái về **`Hết hàng` → `🔔 Báo khi về`** để tránh lỗi cộng tiền 0đ trong giỏ hàng/báo giá PDF.
 
 ---
 
-## 4. Quy trình 4 bước đồng bộ lên Website sau khi sửa CSV (PowerShell)
+## 4. Đồng bộ lên Website sau khi sửa CSV (PowerShell)
 
-Mở **Windows PowerShell**, sao chép và chạy lần lượt các lệnh sau:
+### Cách nhanh 1 lệnh duy nhất (Khuyên dùng – không lo gõ nhầm / dính lệnh)
+Mở **Windows PowerShell**, chạy đúng 2 dòng sau:
+```powershell
+cd "E:\Hue Sound Express\Hue_Sound_Express_GitHub_Bio_B2A"
+powershell -ExecutionPolicy Bypass -File .\dong-bo.ps1
+```
+Script [dong-bo.ps1](../dong-bo.ps1) sẽ tự động kiểm tra xem Excel đã đóng chưa → chạy `build_site_data.ps1 -GenerateProductPages` → `git add -A` → `git commit` → `git push` lên GitHub Pages (tự xử lý cả trường hợp cần `git pull --rebase`).
+
+### Hoặc chạy thủ công từng bước (nhớ bấm `Enter` sau mỗi dòng)
 
 ### Bước 1: Vào đúng thư mục dự án
 ```powershell
@@ -112,7 +120,7 @@ git push
 ---
 
 ## 5. Checklist tự kiểm tra sau khi đồng bộ
-- [ ] Đã đóng Excel trước khi chạy `build_site_data.ps1`.
+- [ ] Đã đóng Excel (và các trình mở file CSV/Markdown) trước khi chạy `build_site_data.ps1`.
 - [ ] Lệnh `build_site_data.ps1 -GenerateProductPages` chạy xong không báo chữ đỏ (Error).
 - [ ] Đã chạy `git add -A`, `git commit`, `git push` thành công.
-- [ ] Mở `https://huesoundexpress.github.io/` (bấm **Ctrl + F5** xóa cache trình duyệt) và kiểm tra 1–2 sản phẩm vừa sửa đã hiển thị đúng giá, tình trạng và nút bấm.
+- [ ] Mở `https://huesoundexpress.github.io/` (bấm **Ctrl + F5** xóa cache trình duyệt) và kiểm tra đúng 3 chế độ: **Hết hàng → hiện giá + `🔔 Báo khi về`**, **Còn hàng (`contact_only = 0`) → `+ Giỏ / Báo giá`**, **Còn hàng (`contact_only = 1`) → `💬 Liên hệ đặt hàng`**.
