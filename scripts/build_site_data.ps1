@@ -458,7 +458,8 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
     $idNum = [int]$r.id
     $cat = if ($r.category) { ([string]$r.category).Trim().ToLowerInvariant() } else { "accessory" }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
-    $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
+    $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true" -or $r.contact_only -eq "2"))
+    $isForceContact = ($r.PSObject.Properties['contact_only'] -and $r.contact_only -eq "2")
     [void]$allItems.Add([PSCustomObject]@{
         id            = $idNum
         sku           = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "ACC" -Id $idNum -Used $usedSkus
@@ -475,6 +476,7 @@ foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
         p             = if ($r.list_price) { [int]$r.list_price } else { 0 }
         s             = [string]$r.status
         contact_only  = $isContact
+        force_contact = $isForceContact
         d             = [string]$r.description
         img           = [string]$r.cover_url
     })
@@ -505,7 +507,9 @@ foreach ($it in $allItems) {
     $it.s = $normSt
 
     $saleP = $origP
-    if ($origP -ge 200000) {
+    if ($it.category -eq "cd" -and $origP -ge 200000 -and $origP -le 300000) {
+        $saleP = $origP - 20000
+    } elseif ($origP -ge 200000) {
         $disc = if (($origP % 100000) -eq 50000) { 60000 } else { 50000 }
         $saleP = $origP - $disc
     } elseif ($origP -ge 100000) {
@@ -604,7 +608,7 @@ foreach ($it in $allItems) {
         condition_vi          = $condVi
         condition_schema      = if ($it.cond -eq "mint_sealed") { "https://schema.org/NewCondition" } else { "https://schema.org/UsedCondition" }
         availability          = $it.s
-        order_mode            = if ($it.s -eq "out_of_stock") { "waitlist" } elseif ($it.contact_only) { "contact" } else { "cart" }
+        order_mode            = if ($it.PSObject.Properties['force_contact'] -and $it.force_contact) { "contact" } elseif ($it.s -eq "out_of_stock") { "waitlist" } elseif ($it.contact_only) { "contact" } else { "cart" }
         list_price_vnd        = $it.p_orig
         sale_price_vnd        = $it.p
         discount_vnd          = [Math]::Max(0, $it.p_orig - $it.p)
@@ -800,7 +804,9 @@ if ($GenerateProductPages) {
 
         $schemaAvail = if ($it.s -eq "in_stock") { "https://schema.org/InStock" } else { "https://schema.org/OutOfStock" }
         $schemaCond = if ($it.cond -eq "mint_sealed") { "https://schema.org/NewCondition" } else { "https://schema.org/UsedCondition" }
-        $primaryCtaHtml = if ($it.s -eq "out_of_stock") {
+        $primaryCtaHtml = if ($it.PSObject.Properties['force_contact'] -and $it.force_contact) {
+            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
+        } elseif ($it.s -eq "out_of_stock") {
             "<a class='btn btn-copper' href='../../?waitlist=$([Uri]::EscapeDataString($it.sku))&utm_source=direct_page&utm_medium=internal&utm_campaign=waitlist'>🔔 Báo khi về</a>"
         } elseif ($it.contact_only) {
             "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
@@ -1052,22 +1058,44 @@ if ($GenerateProductPages) {
         }
     }
 
-    # 5. SINH 10 TRANG BO SUU TAP TINH (/bo-suu-tap/<slug>/index.html)
+    # 5. SINH 10 TRANG BO SUU TAP TINH (/bo-suu-tap/<slug>/index.html) + TU DONG PHAN PHOI & BAO CAO
     $colRoot = Join-Path (Get-Location) "bo-suu-tap"
     if (-not (Test-Path $colRoot)) { New-Item -ItemType Directory -Path $colRoot -Force | Out-Null }
 
+    # Quy tac loai tru chung (bo Xuan Hao, To Nga khoi tat ca bo suu tap) & rieng cho Tet / Ngay Le
+    $globalColExcludeRx = '(?i)(xuân hảo|xuan hao|tố nga|to nga)'
+    $festColExcludeRx   = '(?i)(căn nhà ngoại ô|can nha ngoai o|ngày còn em bên tôi|ngay con em ben toi|tuyển tập nhạc xưa|tuyen tap nhac xua|\boplus\b)'
+    $colEligibleItems   = @($allItems | Where-Object { "$($_.a) $($_.t)" -notmatch $globalColExcludeRx })
+    $vinylColFallback   = @($vinylLookup | Where-Object { "$($_.a) $($_.t)" -notmatch $globalColExcludeRx })
+
     $colSelectors = @{
-        "dia-than-nhac-tet"              = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $($_.d) $(($_.tracklist) -join ' ')" -match '(?i)(xuân|tết|ly rượu mừng|chúc xuân|đón xuân|em ơi mùa xuân)') }) }
-        "dia-than-ngay-le"               = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $($_.d) $(($_.tracklist) -join ' ')" -match '(?i)(christmas|noel|giáng sinh|mùa sao sáng|neujahr|new year|holiday|winter|silent night)') }) }
+        "dia-than-nhac-tet"              = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(mùa xuân|tết|ly rượu mừng|chúc xuân|đón xuân|em ơi mùa xuân|xuân về|xuân muộn|ngày xuân)') }) }
+        "dia-than-ngay-le"               = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(christmas|noel|giáng sinh|mùa sao sáng|neujahr|new year|holiday|winter|silent night)') }) }
         "dia-than-nhac-vang-bolero"      = { param($list) @($list | Where-Object { $_.g -eq 'bolero_golden_oldies' }) }
         "dia-than-tinh-khuc-1954-1975"   = { param($list) @($list | Where-Object { $_.g -eq 'love_songs_1954_1975' }) }
         "dia-than-nhac-viet-tre"         = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and $_.g -eq 'vietnamese_pop_modern' }) }
         "dia-than-instrument-hoa-tau"    = { param($list) @($list | Where-Object { $_.g -eq 'instrumental' }) }
         "dia-than-jazz-audiophile"       = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'jazz_vocal' -or $_.g -eq 'audiophile_reference') -and $_.s -eq 'in_stock' } | Select-Object -First 36) }
         "may-hat-dia-than-cho-nguoi-moi" = { param($list) @($list | Where-Object { $_.category -eq 'turntable' -or $_.category -eq 'accessory' -or $_.category -eq 'care' }) }
-        "dia-than-nhac-ha-noi-sai-gon"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $($_.d)" -match '(?i)(hà nội|hanoi|sài gòn|saigon)') }) }
+        "dia-than-nhac-ha-noi-sai-gon"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(hà nội|hanoi|sài gòn|saigon)') }) }
         "qua-tang-dia-than-cao-cap"      = { param($list) @($list | Where-Object { $_.s -eq 'in_stock' -and (($_.mood -contains 'refined_gifting') -or $_.category -eq 'turntable') } | Select-Object -First 30) }
     }
+
+    # Theo doi phan phoi san pham vao bo suu tap de bao cao khi co san pham moi
+    $snapPath = Join-Path (Get-Location) "data\collection_snapshot.json"
+    $prevSkus = New-Object 'System.Collections.Generic.HashSet[string]'
+    $prevColCounts = @{}
+    if (Test-Path $snapPath) {
+        try {
+            $prevSnap = Get-Content $snapPath -Raw -Encoding UTF8 | ConvertFrom-Json
+            foreach ($s in $prevSnap.skus) { [void]$prevSkus.Add([string]$s) }
+            if ($prevSnap.collection_counts) {
+                $prevSnap.collection_counts.PSObject.Properties | ForEach-Object { $prevColCounts[$_.Name] = [int]$_.Value }
+            }
+        } catch {}
+    }
+    $skuToCols = @{}
+    $newColCounts = @{}
 
     foreach ($col in $collectionMeta) {
         $cDir = Join-Path $colRoot $col.slug
@@ -1076,13 +1104,18 @@ if ($GenerateProductPages) {
         $cTitleEsc = Escape-Html $col.title
         $cDescEsc  = Escape-Html $col.desc
 
-        $matched = @(& $colSelectors[$col.slug] $allItems)
+        $matched = @(& $colSelectors[$col.slug] $colEligibleItems)
         if ($matched.Count -lt 6) {
-            # Bo sung them cac dia than con hang tieu bieu de bo suu tap luon day dan
-            $extra = @($vinylLookup | Where-Object { $matched.sku -notcontains $_.sku } | Select-Object -First (8 - $matched.Count))
+            # Bo sung them cac dia than con hang tieu bieu (da loai tru Xuan Hao, To Nga & muc loai tru le hoi)
+            $extra = @($vinylColFallback | Where-Object { ($matched.sku -notcontains $_.sku) -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) } | Select-Object -First (8 - $matched.Count))
             $matched = @($matched) + $extra
         }
         $shown = @($matched | Select-Object -First 36)
+        $newColCounts[$col.slug] = $shown.Count
+        foreach ($mItem in $shown) {
+            if (-not $skuToCols.ContainsKey($mItem.sku)) { $skuToCols[$mItem.sku] = New-Object System.Collections.ArrayList }
+            [void]$skuToCols[$mItem.sku].Add($col.slug)
+        }
 
         $itemCardsHtml = ($shown | ForEach-Object {
             $imgTag = if ($_.img -match '^https?://') { "<img src='$(Escape-Html $_.img)' alt='$(Escape-Html "$($_.a) - $($_.t)")' loading='lazy'>" } else { "<div class='fb'>HUE SOUND</div>" }
@@ -1204,6 +1237,42 @@ if ($GenerateProductPages) {
         [System.IO.File]::WriteAllText((Join-Path $cDir "index.html"), $cHtml, $utf8NoBom)
         [void]$sm.AppendLine("  <url><loc>$cUrl</loc><priority>0.9</priority></url>")
     }
+
+    # Bao cao tu dong phan phoi san pham moi vao Nhom & Bo Suu Tap
+    $newItemsAdded = @($allItems | Where-Object { $prevSkus.Count -gt 0 -and (-not $prevSkus.Contains($_.sku)) })
+    $reportSb = New-Object System.Text.StringBuilder
+    [void]$reportSb.AppendLine("=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP ($(Get-Date -Format 'yyyy-MM-dd HH:mm')) ===")
+    if ($newItemsAdded.Count -gt 0) {
+        Write-Host "`n[PHAN PHOI TU DONG] Phat hien $($newItemsAdded.Count) san pham moi duoc phan loai & dua vao bo suu tap:" -ForegroundColor Cyan
+        [void]$reportSb.AppendLine("San pham moi phat hien: $($newItemsAdded.Count)")
+        foreach ($ni in $newItemsAdded) {
+            $colsJoined = if ($skuToCols.ContainsKey($ni.sku)) { ($skuToCols[$ni.sku] -join ', ') } else { "(chua thuoc bo suu tap chu de)" }
+            $line = "  + [$($ni.category.ToUpper()) / $($ni.g)] $($ni.sku) | $($ni.a) - $($ni.t) => Bo suu tap: $colsJoined"
+            Write-Host $line -ForegroundColor Green
+            [void]$reportSb.AppendLine($line)
+        }
+    } elseif ($prevSkus.Count -eq 0) {
+        [void]$reportSb.AppendLine("Khoi tao snapshot dau tien cho $($allItems.Count) san pham va $($collectionMeta.Count) bo suu tap.")
+    } else {
+        [void]$reportSb.AppendLine("Khong co SKU moi trong lan build nay (tong: $($allItems.Count) san pham).")
+    }
+    [void]$reportSb.AppendLine("Thong ke 10 bo suu tap:")
+    foreach ($col in $collectionMeta) {
+        $oldC = if ($prevColCounts.ContainsKey($col.slug)) { $prevColCounts[$col.slug] } else { $newColCounts[$col.slug] }
+        $newC = $newColCounts[$col.slug]
+        $diff = $newC - $oldC
+        $diffStr = if ($diff -gt 0) { " (+$diff)" } elseif ($diff -lt 0) { " ($diff)" } else { "" }
+        [void]$reportSb.AppendLine("  - $($col.slug): $newC sp$diffStr")
+    }
+    [System.IO.File]::WriteAllText((Join-Path (Get-Location) "data\last_distribution_report.txt"), $reportSb.ToString(), $utf8NoBom)
+
+    $snapObj = [PSCustomObject]@{
+        updated_at        = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss+07:00")
+        total_items       = $allItems.Count
+        skus              = @($allItems | ForEach-Object { $_.sku })
+        collection_counts = $newColCounts
+    }
+    [System.IO.File]::WriteAllText($snapPath, ($snapObj | ConvertTo-Json -Depth 3), $utf8NoBom)
 
     # 6. SINH 6 BAI VIET TINH CAM NANG ANALOG AUDIO (/cam-nang/<slug>/index.html)
     $guideRoot = Join-Path (Get-Location) "cam-nang"

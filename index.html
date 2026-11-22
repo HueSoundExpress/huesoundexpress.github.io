@@ -293,6 +293,45 @@ button, input, select, textarea { font-family: inherit; }
 .q-link.priority:hover { color: #FFF7E8; background: var(--copper-grad-hover); }
 .brand-ico { width: 17px; height: 17px; flex-shrink: 0; display: block; }
 
+/* Thanh Bộ Sưu Tập chạy ngang ngay trên 5 danh mục */
+.col-ticker-wrap {
+  width: 100%; overflow: hidden; margin-bottom: .65rem;
+  padding: .34rem 0;
+  border-radius: 12px;
+  background: rgba(250, 242, 222, .68);
+  border: 1px solid var(--border);
+  box-shadow: 0 3px 10px rgba(74, 35, 18, .05);
+  position: relative;
+}
+.col-ticker-track {
+  display: inline-flex; align-items: center; gap: .45rem;
+  white-space: nowrap; will-change: transform;
+  padding-left: .5rem;
+  animation: colTickerScroll 38s linear infinite;
+}
+.col-ticker-wrap:hover .col-ticker-track { animation-play-state: paused; }
+@keyframes colTickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.col-ticker-pill {
+  display: inline-flex; align-items: center; gap: .32rem;
+  padding: .28rem .68rem; border-radius: 999px;
+  background: rgba(255, 250, 238, .92);
+  border: 1px solid rgba(181, 84, 31, .28);
+  color: var(--ink); font-size: .74rem; font-weight: 700;
+  text-decoration: none; transition: all .18s ease;
+  flex-shrink: 0;
+}
+.col-ticker-pill:hover {
+  background: linear-gradient(135deg, var(--copper), var(--copper-dark));
+  color: #fff; border-color: var(--copper-dark);
+  transform: translateY(-1px);
+}
+.col-ticker-pill:hover .col-vn-map path,
+.col-ticker-pill:hover .col-vn-map circle { fill: #FFD84D; }
+.col-vn-map { width: 18px; height: 18px; flex-shrink: 0; display: inline-block; vertical-align: middle; }
+
 @media (max-width: 640px) {
   .quick-links { gap: .38rem; max-width: 310px; }
   .q-link { height: 42px; padding: 0; border-radius: 12px; gap: 0; }
@@ -1051,6 +1090,33 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     </div>
   </header>
 
+  <!-- Thanh Bộ Sưu Tập chạy ngang kèm icon ngay trên 5 danh mục -->
+  <div class="col-ticker-wrap" aria-label="Bộ sưu tập nổi bật Hue Sound Express">
+    <div class="col-ticker-track" id="collectionTickerTrack">
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-tet/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_nhac_tet"><span>🌸</span><span>Nhạc Tết</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-ngay-le/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_ngay_le"><span>🎆</span><span>Ngày Lễ &amp; Noel</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-vang-bolero/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_nhac_vang_bolero"><span>🎶</span><span>Nhạc Vàng &amp; Bolero</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_tinh_khuc_1954_1975"><span>📻</span><span>Tình khúc 1954–1975</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-viet-tre/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_nhac_viet_tre"><span>🎤</span><span>Nhạc Việt trẻ</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-instrument-hoa-tau/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_instrument_hoa_tau"><span>🎻</span><span>Instrument</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-jazz-audiophile/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_jazz_audiophile"><span>🎷</span><span>Jazz &amp; Audiophile</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/?utm_source=top_bar&utm_medium=internal&utm_campaign=may_hat_dia_than_cho_nguoi_moi"><span>🎛️</span><span>Mâm than người mới</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_nhac_ha_noi_sai_gon" title="Bản đồ Việt Nam với quần đảo Hoàng Sa và Trường Sa"><svg class="col-vn-map" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 1.5 C10.6 1.5, 12.6 2.7, 13.3 4.5 C12.4 5.8, 11.7 6.9, 12.1 8.5 C12.8 10.4, 14.8 12.2, 15.6 14.4 C16.2 16.3, 15.2 18.6, 13.2 20.2 C11.5 21.5, 9.7 22.3, 8.5 22.7 C8.0 21.6, 8.5 20.0, 9.9 18.7 C11.4 17.4, 12.8 16.0, 12.4 14.2 C11.9 12.1, 9.7 10.5, 8.9 8.6 C8.3 7.0, 8.7 5.4, 7.6 4.1 C6.8 3.2, 7.2 1.8, 8.4 1.5 Z" fill="#DA251D"/><polygon points="10.4,3.1 10.8,4.2 11.9,4.2 11.0,4.9 11.3,6.0 10.4,5.3 9.5,6.0 9.8,4.9 8.9,4.2 10.0,4.2" fill="#FFCD00"/><circle cx="18.2" cy="10.4" r="1.0" fill="#DA251D"/><circle cx="19.9" cy="11.2" r="0.75" fill="#DA251D"/><circle cx="18.8" cy="12.2" r="0.65" fill="#DA251D"/><circle cx="18.9" cy="17.2" r="0.95" fill="#DA251D"/><circle cx="20.6" cy="18.2" r="0.75" fill="#DA251D"/><circle cx="19.5" cy="19.5" r="0.7" fill="#DA251D"/><circle cx="17.8" cy="18.7" r="0.65" fill="#DA251D"/></svg><span>Hà Nội &amp; Sài Gòn</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/qua-tang-dia-than-cao-cap/?utm_source=top_bar&utm_medium=internal&utm_campaign=qua_tang_dia_than_cao_cap"><span>🎁</span><span>Quà tặng cao cấp</span></a>
+      <!-- Lặp mượt cho hiệu ứng chạy ngang liên tục -->
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-tet/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_nhac_tet" aria-hidden="true"><span>🌸</span><span>Nhạc Tết</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-ngay-le/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_ngay_le" aria-hidden="true"><span>🎆</span><span>Ngày Lễ &amp; Noel</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-vang-bolero/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_nhac_vang_bolero" aria-hidden="true"><span>🎶</span><span>Nhạc Vàng &amp; Bolero</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_tinh_khuc_1954_1975" aria-hidden="true"><span>📻</span><span>Tình khúc 1954–1975</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-viet-tre/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_nhac_viet_tre" aria-hidden="true"><span>🎤</span><span>Nhạc Việt trẻ</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-instrument-hoa-tau/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_instrument_hoa_tau" aria-hidden="true"><span>🎻</span><span>Instrument</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-jazz-audiophile/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_jazz_audiophile" aria-hidden="true"><span>🎷</span><span>Jazz &amp; Audiophile</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/?utm_source=top_bar&utm_medium=internal&utm_campaign=may_hat_dia_than_cho_nguoi_moi" aria-hidden="true"><span>🎛️</span><span>Mâm than người mới</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/?utm_source=top_bar&utm_medium=internal&utm_campaign=dia_than_nhac_ha_noi_sai_gon" aria-hidden="true"><svg class="col-vn-map" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 1.5 C10.6 1.5, 12.6 2.7, 13.3 4.5 C12.4 5.8, 11.7 6.9, 12.1 8.5 C12.8 10.4, 14.8 12.2, 15.6 14.4 C16.2 16.3, 15.2 18.6, 13.2 20.2 C11.5 21.5, 9.7 22.3, 8.5 22.7 C8.0 21.6, 8.5 20.0, 9.9 18.7 C11.4 17.4, 12.8 16.0, 12.4 14.2 C11.9 12.1, 9.7 10.5, 8.9 8.6 C8.3 7.0, 8.7 5.4, 7.6 4.1 C6.8 3.2, 7.2 1.8, 8.4 1.5 Z" fill="#DA251D"/><polygon points="10.4,3.1 10.8,4.2 11.9,4.2 11.0,4.9 11.3,6.0 10.4,5.3 9.5,6.0 9.8,4.9 8.9,4.2 10.0,4.2" fill="#FFCD00"/><circle cx="18.2" cy="10.4" r="1.0" fill="#DA251D"/><circle cx="19.9" cy="11.2" r="0.75" fill="#DA251D"/><circle cx="18.8" cy="12.2" r="0.65" fill="#DA251D"/><circle cx="18.9" cy="17.2" r="0.95" fill="#DA251D"/><circle cx="20.6" cy="18.2" r="0.75" fill="#DA251D"/><circle cx="19.5" cy="19.5" r="0.7" fill="#DA251D"/><circle cx="17.8" cy="18.7" r="0.65" fill="#DA251D"/></svg><span>Hà Nội &amp; Sài Gòn</span></a>
+      <a class="col-ticker-pill" href="bo-suu-tap/qua-tang-dia-than-cao-cap/?utm_source=top_bar&utm_medium=internal&utm_campaign=qua_tang_dia_than_cao_cap" aria-hidden="true"><span>🎁</span><span>Quà tặng cao cấp</span></a>
+    </div>
+  </div>
+
   <!-- 5 Folders: Xếp ngang trên web, xếp dọc trên điện thoại -->
   <nav class="cat-tabs" aria-label="Danh mục sản phẩm">
     <button class="cat-tab active" onclick="switchCategory('vinyl', this)">
@@ -1762,7 +1828,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     let origPrice = Number(item.p_orig || 0);
     if (origPrice <= 0 && price > 0) {
       origPrice = price;
-      if (origPrice >= 200000) {
+      if (cat === 'cd' && origPrice >= 200000 && origPrice <= 300000) {
+        price = origPrice - 20000;
+      } else if (origPrice >= 200000) {
         const disc = (origPrice % 100000 === 50000) ? 60000 : 50000;
         price = origPrice - disc;
       } else if (origPrice >= 100000) {
@@ -1832,6 +1900,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       p_orig: origPrice,
       s: st,
       contact_only: Boolean(item.contact_only),
+      force_contact: Boolean(item.force_contact || item.contact_only === 2 || item.contact_only === '2'),
       d: String(item.d || ''),
       img: String(item.img || ''),
       aud: String(item.aud || ''),
@@ -2353,7 +2422,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const clickHint = lang === 'en' ? 'Click to filter' : 'Bấm để lọc nhanh';
 
     let actionBtnHtml = '';
-    if (isWaitlist) {
+    if (item.force_contact) {
+      actionBtnHtml = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
+    } else if (isWaitlist) {
       actionBtnHtml = `<button class="btn btn-wait" type="button" onclick="openWaitlist('${skuEsc}')">${L.btnWait}</button>`;
     } else if (isContactOnly) {
       actionBtnHtml = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
@@ -2692,7 +2763,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     const condText = L.condMap[item.cond] || item.cond;
 
     let ctaBtn = '';
-    if (isWaitlist) {
+    if (item.force_contact) {
+      ctaBtn = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
+    } else if (isWaitlist) {
       ctaBtn = `<button class="btn btn-wait" type="button" onclick="openWaitlist('${skuEsc}')">${L.detailWait}</button>`;
     } else if (isContactOnly) {
       ctaBtn = `<button class="btn btn-contact-order" type="button" onclick="openContactOrder('${skuEsc}')">${L.btnContactOrder}</button>`;
@@ -3094,7 +3167,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       showToast(L.toastWlOk);
     } else {
       const msg = `Chào Hue Sound Express, mình đăng ký báo khi hàng về:\n- Sản phẩm: ${waitlistTarget.a} - ${waitlistTarget.t} (${waitlistTarget.sku})\n- Tên: ${name}\n- SĐT/Zalo: ${phone}${note ? '\n- Ghi chú: ' + note : ''}`;
+      if (navigator.clipboard) navigator.clipboard.writeText(msg).catch(() => {});
       closeAllOverlays();
+      showToast(L.toastZalo);
       window.open(`https://zalo.me/${ZALO_PHONE}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
     }
   };
