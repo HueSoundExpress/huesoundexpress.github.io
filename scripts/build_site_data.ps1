@@ -668,6 +668,11 @@ foreach ($it in $allItems) {
             $it | Add-Member -NotePropertyName 'promo_note' -NotePropertyValue 'Ưu đãi tháng 11: giảm 100k (từ 01/12 giảm 50k)' -Force
         }
     }
+    if ($it.sku -in @("VN-QUYNHANH-THANHTUNG-558","VN-BOLERO-VANGQA-559")) {
+        $it | Add-Member -NotePropertyName 'combo_note_prefix' -NotePropertyValue 'Chỉ bán cùng full combo' -Force
+        $it | Add-Member -NotePropertyName 'combo_label' -NotePropertyValue 'Bộ sưu tập Quỳnh Anh (-8%)' -Force
+        $it | Add-Member -NotePropertyName 'combo_slug' -NotePropertyValue 'bo-suu-tap-quynh-anh-bk-production' -Force
+    }
     if ($it.PSObject.Properties['p_orig']) { $it.p_orig = $origP }
     else { $it | Add-Member -NotePropertyName 'p_orig' -NotePropertyValue $origP }
     $it.p = $saleP
@@ -699,6 +704,7 @@ $collectionMeta = @(
     @{ slug = "dia-than-nhac-tet";             utm = "dia_than_nhac_tet";             title = "Đĩa Than Nhạc Tết & Mùa Xuân – Analog Audio"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD chủ đề Mùa Xuân, Nhạc Tết, Ly Rượu Mừng và những giai điệu rộn ràng đón năm mới tại Hue Sound Express." },
     @{ slug = "dia-than-ngay-le";              utm = "dia_than_ngay_le";              title = "Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới"; desc = "Bộ sưu tập đĩa than Giáng Sinh (Christmas / Noel), Hòa nhạc Năm Mới (Neujahrskonzert) và các ấn phẩm quà tặng dịp lễ hội tinh tế." },
     @{ slug = "dia-than-nhac-trinh-cong-son";  utm = "dia_than_nhac_trinh_cong_son";  title = "Đĩa Than & CD Nhạc Trịnh Công Sơn"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD nhạc Trịnh Công Sơn bất hủ qua các giọng ca Khánh Ly, Hồng Nhung, Lệ Thu, Cẩm Vân, Quang Dũng, Trần Mạnh Tuấn... với Diễm Xưa, Cát Bụi, Hạ Trắng, Biển Nhớ, Mưa Hồng, Tuổi Đá Buồn." },
+    @{ slug = "bo-suu-tap-quynh-anh-bk-production"; utm = "bo_suu_tap_quynh_anh_bk_production"; title = "Bộ Sưu Tập Quỳnh Anh – BK Production (Giảm 8%)"; desc = "Trọn bộ sưu tập đĩa than (Vinyl LP) ca sĩ Quỳnh Anh do BK Production phát hành (Em ơi mùa xuân đến rồi đó, 19xx, Thanh Tùng, Vàng) – Ưu đãi giảm ngay 8% khi đặt Full Combo tại Hue Sound Express." },
     @{ slug = "dia-than-nhac-vang-bolero";     utm = "dia_than_nhac_vang_bolero";     title = "Đĩa Than Nhạc Vàng, Bolero & Trữ Tình"; desc = "Kho đĩa than & CD Nhạc Vàng, Bolero, Nhạc Trữ Tình tuyển chọn (Chế Linh, Thanh Tuyền, Duy Khánh, Tuấn Vũ, Hoàng Oanh, Như Quỳnh, Lệ Quyên...)." },
     @{ slug = "dia-than-tinh-khuc-1954-1975";  utm = "dia_than_tinh_khuc_1954_1975";  title = "Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến"; desc = "Tuyển tập Tình khúc 1954–1975 & Nhạc Tiền Chiến bất hủ của Phạm Duy, Trịnh Công Sơn, Ngô Thụy Miên, Vũ Thành An, Nguyễn Ánh 9, Từ Công Phụng..." },
     @{ slug = "dia-than-nhac-viet-tre";        utm = "dia_than_nhac_viet_tre";        title = "Đĩa Than Nhạc Việt Trẻ & Đương Đại"; desc = "Các ấn phẩm đĩa than Nhạc Việt trẻ hiện đại từ Mỹ Tâm, Hà Anh Tuấn, Quỳnh Anh, SOOBIN, AMEE, Văn Mai Hương, Gia Định Audio, Thời Đại..." },
@@ -919,10 +925,11 @@ if ($GenerateProductPages) {
         $isAccBundle = ($it.category -eq "accessory" -or $it.category -eq "care")
         $accNoteHtml = if ($isAccBundle) { "<div class='acc-note'>$(Escape-Html $accNoteVi)</div>" } else { "" }
         $promoNoteHtml = if ($it.PSObject.Properties['promo_note'] -and $it.promo_note) { "<div class='acc-note' id='promoNoteEl'>🎁 $(Escape-Html $it.promo_note)</div>" } else { "" }
+        $comboNoteHtml = if ($it.PSObject.Properties['combo_slug'] -and $it.combo_slug) { "<div class='acc-note'>💿 $(Escape-Html $it.combo_note_prefix) <a class='xlink' href='../../bo-suu-tap/$($it.combo_slug)/'><strong>$(Escape-Html $it.combo_label)</strong></a></div>" } else { "" }
         $priceHtml = if ($it.p -gt 0 -and $origPriceFmt) {
-            "<div class='price-stack'><span class='price-label'>Giá</span><span class='price-old'>$origPriceFmt</span><span class='price-save' id='priceSaveEl'>-$($saveK)k</span></div><div class='price' id='priceMainEl'>$priceFmt</div>$promoNoteHtml$accNoteHtml"
+            "<div class='price-stack'><span class='price-label'>Giá</span><span class='price-old'>$origPriceFmt</span><span class='price-save' id='priceSaveEl'>-$($saveK)k</span></div><div class='price' id='priceMainEl'>$priceFmt</div>$comboNoteHtml$promoNoteHtml$accNoteHtml"
         } else {
-            "<div class='price-stack'><span class='price-label'>Giá</span></div><div class='price' id='priceMainEl'>$priceFmt</div>$promoNoteHtml$accNoteHtml"
+            "<div class='price-stack'><span class='price-label'>Giá</span></div><div class='price' id='priceMainEl'>$priceFmt</div>$comboNoteHtml$promoNoteHtml$accNoteHtml"
         }
         $promoExpireJs = ""
         if ($it.PSObject.Properties['promo_until'] -and $it.promo_until -and $it.PSObject.Properties['p_regular']) {
@@ -1271,6 +1278,7 @@ if ($GenerateProductPages) {
         "dia-than-nhac-tet"              = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(mùa xuân|tết|ly rượu mừng|chúc xuân|đón xuân|em ơi mùa xuân|xuân về|xuân muộn|ngày xuân)') }) }
         "dia-than-ngay-le"               = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(christmas|noel|giáng sinh|mùa sao sáng|neujahr|new year|holiday|winter|silent night)') }) }
         "dia-than-nhac-trinh-cong-son"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $($_.d) $(($_.tracklist) -join ' ')" -match '(?i)(trịnh công sơn|nhạc trịnh|diễm xưa|cát bụi|hạ trắng|biển nhớ|mưa hồng|tuổi đá buồn|một cõi đi về|ru em từng ngón xuân nồng|vết lăn trầm|bống là ai|xin mặt trời ngủ yên|phôi pha|nắng thủy tinh|đóa hoa vô thường|còn tuổi nào cho em|hoa vàng mấy độ|tiến thoái lưỡng nan|ru tình|chiều một mình qua phố|ngủ đi con|tình nhớ|ướt mi|gọi tên bốn mùa|quỳnh hương|sóng về đâu|lặng lẽ nơi này|ở trọ|em còn nhớ hay em đã quên|để gió cuốn đi|nhớ mùa thu hà nội|tôi ơi đừng tuyệt vọng|như cánh vạc bay|cuối cùng cho một tình yêu)') }) }
+        "bo-suu-tap-quynh-anh-bk-production" = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and $_.a -match '(?i)quỳnh anh' -and $_.l -match '(?i)bk production' }) }
         "dia-than-nhac-vang-bolero"      = { param($list) @($list | Where-Object { $_.g -eq 'bolero_golden_oldies' -or ($_.genres -contains 'bolero_golden_oldies') }) }
         "dia-than-tinh-khuc-1954-1975"   = { param($list) @($list | Where-Object { $_.g -eq 'love_songs_1954_1975' -or ($_.genres -contains 'love_songs_1954_1975') }) }
         "dia-than-nhac-viet-tre"         = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'vietnamese_pop_modern' -or ($_.genres -contains 'vietnamese_pop_modern')) }) }
@@ -1305,7 +1313,7 @@ if ($GenerateProductPages) {
         $cDescEsc  = Escape-Html $col.desc
 
         $matched = @(& $colSelectors[$col.slug] $colEligibleItems)
-        if ($matched.Count -lt 6) {
+        if ($matched.Count -lt 6 -and $col.slug -ne "bo-suu-tap-quynh-anh-bk-production") {
             # Bo sung them cac dia than con hang tieu bieu (da loai tru Xuan Hao, To Nga & muc loai tru le hoi)
             $extra = @($vinylColFallback | Where-Object { ($matched.sku -notcontains $_.sku) -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) } | Select-Object -First (8 - $matched.Count))
             $matched = @($matched) + $extra
@@ -1336,6 +1344,28 @@ if ($GenerateProductPages) {
         $otherColsHtml = ($collectionMeta | Where-Object { $_.slug -ne $col.slug } | ForEach-Object {
             "<a class='col-chip' href='../$($_.slug)/'>$(Escape-Html $_.title)</a>"
         }) -join ""
+
+        $comboBannerHtml = ""
+        $colCtaHtml = @"
+        <a class="btn" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer">💬 Tư vấn chọn đĩa qua Zalo (09323.13918)</a>
+        <a class="btn btn-wa" href="https://wa.me/84932313918" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+"@
+        if ($col.slug -eq "bo-suu-tap-quynh-anh-bk-production" -and $shown.Count -gt 0) {
+            $sumOrig = 0
+            foreach ($ci in $shown) { $sumOrig += [int]$ci.p_orig }
+            $comboFinal = [int][Math]::Round($sumOrig * 0.92)
+            $comboSave = $sumOrig - $comboFinal
+            $comboSkus = ($shown | ForEach-Object { $_.sku }) -join ","
+            $comboTitles = ($shown | ForEach-Object { $_.t }) -join ", "
+            $comboMsg = "Chào Hue Sound Express, mình muốn đặt Full Combo $($shown.Count) đĩa than Bộ sưu tập Quỳnh Anh – BK Production (giảm 8% còn $($comboFinal.ToString('N0')) đ): $comboTitles."
+            $comboWaUrl = "https://wa.me/84932313918?text=$([Uri]::EscapeDataString($comboMsg))"
+            $comboBannerHtml = "<div style='margin:0 0 14px;padding:14px 16px;border-radius:12px;background:rgba(181,84,31,.11);border:1px solid rgba(181,84,31,.35);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;'><div><div style='font-size:12px;font-weight:800;color:#8C3A12;text-transform:uppercase;letter-spacing:.04em;'>🎁 Ưu đãi Full Combo $($shown.Count) đĩa Quỳnh Anh – BK Production (Giảm 8%)</div><div style='font-size:12.5px;color:#6F5139;margin-top:2px;'>Đĩa <strong>Thanh Tùng</strong> &amp; <strong>Vàng</strong> chỉ bán kèm trọn bộ Full Combo • Tổng niêm yết <span style='text-decoration:line-through;'>$($sumOrig.ToString('N0')) đ</span> (Tiết kiệm <strong>-$($comboSave.ToString('N0')) đ</strong>)</div></div><div style='font-size:22px;font-weight:800;color:#B5541F;'>$($comboFinal.ToString('N0')) đ</div></div>"
+            $colCtaHtml = @"
+        <a class="btn" href="../../?combo=$([Uri]::EscapeDataString($comboSkus))">+ Thêm Full Combo $($shown.Count) đĩa (-8%) vào Giỏ / Báo giá</a>
+        <a class="btn" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer" style="background:#0068FF;">💬 Đặt Full Combo (-8%) qua Zalo</a>
+        <a class="btn btn-wa" href="$comboWaUrl" target="_blank" rel="noopener noreferrer">💬 Đặt qua WhatsApp</a>
+"@
+        }
 
         $cHtml = @"
 <!DOCTYPE html>
@@ -1421,9 +1451,9 @@ if ($GenerateProductPages) {
     <header class="hero-col">
       <h1>$cTitleEsc</h1>
       <p>$cDescEsc Hiển thị <strong>$($shown.Count)</strong> sản phẩm tuyển chọn (tự động cập nhật khi có đĩa mới).</p>
+      $comboBannerHtml
       <div class="cta-bar">
-        <a class="btn" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer">💬 Tư vấn chọn đĩa qua Zalo (09323.13918)</a>
-        <a class="btn btn-wa" href="https://wa.me/84932313918" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+$colCtaHtml
       </div>
     </header>
     <section class="grid">$itemCardsHtml</section>

@@ -98,7 +98,7 @@
         "p":  1250000,
         "s":  "in_stock",
         "contact_only":  false,
-        "d":  "Đĩa than Quỳnh Anh - Vàng (Vinyl LP 180g) - Đĩa than nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình • Hãng BK Production • Nhạc sĩ: Lam Phương, Trần Thiện Thanh) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Quỳnh Anh - Vàng (Vinyl LP 180g) - Đĩa than nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình • Hãng BK Production • Nhạc sĩ: Lam Phương, Trần Thiện Thanh • Chỉ bán cùng full combo Bộ sưu tập Quỳnh Anh – BK Production giảm 8%) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  [
                           "Hai Vì Sao Lạc",
                           "Tình Bơ Vơ",
@@ -114,6 +114,9 @@
         "aud_track":  "",
         "missing_fields":  "MISSING_AUDIO",
         "cond":  "mint_sealed",
+        "combo_note_prefix":  "Chỉ bán cùng full combo",
+        "combo_label":  "Bộ sưu tập Quỳnh Anh (-8%)",
+        "combo_slug":  "bo-suu-tap-quynh-anh-bk-production",
         "p_orig":  1300000,
         "kw":  [
                    "Analog Audio",
@@ -145,8 +148,8 @@
     {
         "id":  558,
         "sku":  "VN-QUYNHANH-THANHTUNG-558",
-        "slug":  "dia-than-vinyl-quynh-anh-lp-thanh-tung-chi-ban-cung-combo-4-dia-qa-558",
-        "legacy_slug":  "",
+        "slug":  "dia-than-vinyl-quynh-anh-thanh-tung-558",
+        "legacy_slug":  "dia-than-vinyl-quynh-anh-lp-thanh-tung-chi-ban-cung-combo-4-dia-qa-558",
         "category":  "vinyl",
         "g":  "vietnamese_pop_modern",
         "genres":  [
@@ -158,7 +161,7 @@
                      "refined_gifting"
                  ],
         "a":  "Quỳnh Anh",
-        "t":  "LP Thanh Tùng (Chỉ bán cùng combo 4 đĩa QA)",
+        "t":  "Thanh Tùng",
         "l":  "BK Production",
         "f":  "LP (Purple Vinyl)",
         "w":  "180g",
@@ -167,7 +170,7 @@
         "p":  1450000,
         "s":  "in_stock",
         "contact_only":  false,
-        "d":  "Đĩa than Quỳnh Anh - LP Thanh Tùng (Vinyl LP màu tím Purple Vinyl, chỉ bán cùng combo 4 đĩa Quỳnh Anh) - Đĩa than nhạc Việt Nam (Nhạc sĩ: Thanh Tùng • Ca sĩ: Vũ Thắng Lợi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Quỳnh Anh - Thanh Tùng (Vinyl LP màu tím Purple Vinyl 180g • Chỉ bán cùng full combo Bộ sưu tập Quỳnh Anh – BK Production giảm 8%) - Đĩa than nhạc Việt Nam (Nhạc Việt trẻ • Hãng BK Production • Nhạc sĩ: Thanh Tùng • Ca sĩ: Quỳnh Anh, Vũ Thắng Lợi, Thắng) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  [
                           "Trái Tim Hoang Vu",
                           "Đếm Lá Ngoài Sân",
@@ -185,15 +188,17 @@
 
                            },
         "cond":  "mint_sealed",
+        "combo_note_prefix":  "Chỉ bán cùng full combo",
+        "combo_label":  "Bộ sưu tập Quỳnh Anh (-8%)",
+        "combo_slug":  "bo-suu-tap-quynh-anh-bk-production",
         "p_orig":  1500000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa than",
                    "Vinyl LP",
                    "Quỳnh Anh",
-                   "LP Thanh Tùng (Chỉ bán cùng combo 4 đĩa QA)",
-                   "BK Production",
                    "Thanh Tùng",
+                   "BK Production",
                    "Nhạc Việt trẻ",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",

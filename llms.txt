@@ -19,6 +19,7 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 - **Đĩa Than Nhạc Tết & Mùa Xuân – Analog Audio:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-tet/
 - **Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-ngay-le/
 - **Đĩa Than & CD Nhạc Trịnh Công Sơn:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-trinh-cong-son/
+- **Bộ Sưu Tập Quỳnh Anh – BK Production (Giảm 8%):** https://huesoundexpress.github.io/bo-suu-tap/bo-suu-tap-quynh-anh-bk-production/
 - **Đĩa Than Nhạc Vàng, Bolero & Trữ Tình:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-vang-bolero/
 - **Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-tinh-khuc-1954-1975/
 - **Đĩa Than Nhạc Việt Trẻ & Đương Đại:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-viet-tre/
@@ -41,7 +42,7 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | vinyl | VN-QVTH-DUONGVE-560 | Quái Vật Tí Hon | Đĩa than (Vinyl) Đường Về (Black/Apple Red Vinyl 2LP) | vietnamese_pop_modern | mint_sealed | 1,911,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quai-vat-ti-hon-duong-ve-black-apple-red-vinyl-2lp-560/ |
 | vinyl | VN-BOLERO-VANGQA-559 | Quỳnh Anh | Đĩa than (Vinyl) Vàng | bolero_golden_oldies | mint_sealed | 1,250,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-vang-559/ |
-| vinyl | VN-QUYNHANH-THANHTUNG-558 | Quỳnh Anh | Đĩa than (Vinyl) LP Thanh Tùng (Chỉ bán cùng combo 4 đĩa QA) | vietnamese_pop_modern | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-lp-thanh-tung-chi-ban-cung-combo-4-dia-qa-558/ |
+| vinyl | VN-QUYNHANH-THANHTUNG-558 | Quỳnh Anh | Đĩa than (Vinyl) Thanh Tùng | vietnamese_pop_modern | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-thanh-tung-558/ |
 | vinyl | VN-DUONGTHU-80NAM-557 | Dương Thụ | Đĩa than (Vinyl) 80 Năm Một Giấc Mơ (Bản có chữ ký) | vietnamese_pop_modern | mint_sealed | 2,950,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-duong-thu-80-nam-mot-giac-mo-ban-co-chu-ky-557/ |
 | vinyl | VN-BOLERO-NHUCHUAB-556 | Đức Trí | Đĩa than (Vinyl) Như Chưa Bắt Đầu | vietnamese_pop_modern | mint_sealed | 1,150,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-duc-tri-nhu-chua-bat-dau-556/ |
 | vinyl | VN-BOLERO-HOATRINH-555 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Hoa Trinh Nữ – Tình Khúc Trần Thiện Thanh | bolero_golden_oldies | mint_sealed | 1,340,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-hoa-trinh-nu-tinh-khuc-tran-thien-thanh-555/ |
