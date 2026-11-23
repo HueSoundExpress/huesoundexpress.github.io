@@ -310,6 +310,16 @@ function Format-LinkedDescription {
     foreach ($ga in $genreAliases) {
         [void]$cands.Add([PSCustomObject]@{ txt = $ga; url = $GenreUrl; tip = "Xem thể loại $GenreDisplay" })
     }
+    if ($Item.PSObject.Properties['genres'] -and $Item.genres -and $Item.genres.Count -gt 1) {
+        foreach ($eg in ($Item.genres | Select-Object -Skip 1)) {
+            $egDisp = Get-GenreDisplayVi ([string]$eg)
+            $egUrl = if ($OriginUrl) { "../../?cat=$CatParam&origin=$OriginCode&genre=$([Uri]::EscapeDataString([string]$eg))" } else { "../../?cat=$CatParam&genre=$([Uri]::EscapeDataString([string]$eg))" }
+            [void]$cands.Add([PSCustomObject]@{ txt = $egDisp; url = $egUrl; tip = "Xem thể loại $egDisp" })
+            if ($eg -eq "instrumental") {
+                [void]$cands.Add([PSCustomObject]@{ txt = "Hòa tấu Cello Instrument"; url = $egUrl; tip = "Xem thể loại $egDisp" })
+            }
+        }
+    }
     $catPhrases = switch ($Item.category) {
         "vinyl"     { @("Đĩa than") }
         "cd"        { @("Đĩa CD") }
@@ -477,13 +487,16 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
     $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
     $vinylWeight = if ($r.PSObject.Properties['weight'] -and -not [string]::IsNullOrWhiteSpace($r.weight)) { ([string]$r.weight).Trim() } else { "180g" }
+    $rawGenres = @(([string]$r.genre) -split '\s*;\s*' | Where-Object { $_ } | ForEach-Object { Normalize-GenreCode -Val $_ -Category "vinyl" } | Select-Object -Unique)
+    if ($rawGenres.Count -eq 0) { $rawGenres = @("audiophile_reference") }
     [void]$allItems.Add([PSCustomObject]@{
         id             = $idNum
         sku            = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "VN" -Id $idNum -Used $usedSkus
         slug           = Get-CanonicalSlug -Category "vinyl" -Artist ([string]$r.artist) -Title ([string]$r.title) -Id $idNum
         legacy_slug    = $legacySlug
         category       = "vinyl"
-        g              = Normalize-GenreCode -Val ([string]$r.genre) -Category "vinyl"
+        g              = $rawGenres[0]
+        genres         = $rawGenres
         mood           = Normalize-MoodArray ([string]$r.mood)
         a              = [string]$r.artist
         t              = [string]$r.title
@@ -511,13 +524,16 @@ foreach ($r in (Load-CsvOrUrl $CdCsv)) {
     $tracks = if ($r.tracklist) { @($r.tracklist -split '\s*\|\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
     $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
+    $rawCdGenres = @(([string]$r.genre) -split '\s*;\s*' | Where-Object { $_ } | ForEach-Object { Normalize-GenreCode -Val $_ -Category "cd" } | Select-Object -Unique)
+    if ($rawCdGenres.Count -eq 0) { $rawCdGenres = @("vietnamese_pop_modern") }
     [void]$allItems.Add([PSCustomObject]@{
         id             = $idNum
         sku            = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "CD-VN" -Id $idNum -Used $usedSkus
         slug           = Get-CanonicalSlug -Category "cd" -Artist ([string]$r.artist) -Title ([string]$r.title) -Id $idNum
         legacy_slug    = $legacySlug
         category       = "cd"
-        g              = Normalize-GenreCode -Val ([string]$r.genre) -Category "cd"
+        g              = $rawCdGenres[0]
+        genres         = $rawCdGenres
         mood           = Normalize-MoodArray ([string]$r.mood)
         a              = [string]$r.artist
         t              = [string]$r.title
@@ -639,6 +655,18 @@ foreach ($it in $allItems) {
         $saleP = $origP - 20000
     } elseif ($origP -gt 10000) {
         $saleP = $origP - 10000
+    }
+    $regularSaleP = $saleP
+    if ($it.sku -eq "VN-QVTH-DUONGVE-560" -and $origP -gt 100000) {
+        $novDeadline = [DateTime]::Parse("2026-11-30T23:59:59+07:00")
+        $inNovPromo = ((Get-Date) -le $novDeadline)
+        $promoP = $origP - 100000
+        if ($inNovPromo) {
+            $saleP = $promoP
+            $it | Add-Member -NotePropertyName 'promo_until' -NotePropertyValue '2026-11-30' -Force
+            $it | Add-Member -NotePropertyName 'p_regular' -NotePropertyValue $regularSaleP -Force
+            $it | Add-Member -NotePropertyName 'promo_note' -NotePropertyValue 'Ưu đãi tháng 11: giảm 100k (từ 01/12 giảm 50k)' -Force
+        }
     }
     if ($it.PSObject.Properties['p_orig']) { $it.p_orig = $origP }
     else { $it | Add-Member -NotePropertyName 'p_orig' -NotePropertyValue $origP }
@@ -889,11 +917,26 @@ if ($GenerateProductPages) {
         $statusVi = Get-StatusDisplayVi $it.s
         $isAccBundle = ($it.category -eq "accessory" -or $it.category -eq "care")
         $accNoteHtml = if ($isAccBundle) { "<div class='acc-note'>$(Escape-Html $accNoteVi)</div>" } else { "" }
+        $promoNoteHtml = if ($it.PSObject.Properties['promo_note'] -and $it.promo_note) { "<div class='acc-note' id='promoNoteEl'>🎁 $(Escape-Html $it.promo_note)</div>" } else { "" }
         $priceHtml = if ($it.p -gt 0 -and $origPriceFmt) {
-            "<div class='price-stack'><span class='price-label'>Giá</span><span class='price-old'>$origPriceFmt</span><span class='price-save'>-$($saveK)k</span></div><div class='price'>$priceFmt</div>$accNoteHtml"
+            "<div class='price-stack'><span class='price-label'>Giá</span><span class='price-old'>$origPriceFmt</span><span class='price-save' id='priceSaveEl'>-$($saveK)k</span></div><div class='price' id='priceMainEl'>$priceFmt</div>$promoNoteHtml$accNoteHtml"
         } else {
-            "<div class='price-stack'><span class='price-label'>Giá</span></div><div class='price'>$priceFmt</div>$accNoteHtml"
+            "<div class='price-stack'><span class='price-label'>Giá</span></div><div class='price' id='priceMainEl'>$priceFmt</div>$promoNoteHtml$accNoteHtml"
         }
+        $promoExpireJs = ""
+        if ($it.PSObject.Properties['promo_until'] -and $it.promo_until -and $it.PSObject.Properties['p_regular']) {
+            $regSaveK = [int](($it.p_orig - $it.p_regular) / 1000)
+            $regFmt = "$($it.p_regular.ToString('N0')) đ"
+            $promoExpireJs = "<script>(function(){if(Date.now()>new Date('$($it.promo_until)T23:59:59+07:00').getTime()){var pm=document.getElementById('priceMainEl');var ps=document.getElementById('priceSaveEl');var pn=document.getElementById('promoNoteEl');if(pm)pm.textContent='$regFmt';if(ps)ps.textContent='-$($regSaveK)k';if(pn)pn.style.display='none';}})();</script>"
+        }
+        $genreBadgesHtml = ""
+        $gList = if ($it.PSObject.Properties['genres'] -and $it.genres -and $it.genres.Count -gt 0) { $it.genres } else { @($it.g) }
+        $genreBadgesHtml = ($gList | ForEach-Object {
+            $gCode = [string]$_
+            $gDisp = Get-GenreDisplayVi $gCode
+            $gHref = if ($hasOrigin) { "../../?cat=$catParam&origin=$originCode&genre=$([Uri]::EscapeDataString($gCode))" } else { "../../?cat=$catParam&genre=$([Uri]::EscapeDataString($gCode))" }
+            "<a class='badge' href='$gHref' title='Xem thể loại $(Escape-Html $gDisp)'>$(Escape-Html $gDisp)</a>"
+        }) -join "`n          "
         $pageUrl = "$SiteBaseUrl/p/$($it.slug)/"
         $shareUtmUrl = "$pageUrl?utm_source=share&utm_medium=referral&utm_campaign=product_share"
         $ogImg = if ($it.img -match '^https?://') { $it.img } else { "$SiteBaseUrl/og-image.jpg" }
@@ -1119,7 +1162,7 @@ if ($GenerateProductPages) {
         <div class="badge-row">
           <a class="badge" href="$catUrl" title="Xem danh mục $catShort">$catShort</a>
           $(if ($hasOrigin) { "<a class='badge' href='$originUrl' title='Xem phân loại $originLabelVi'>$originLabelVi</a>" })
-          <a class="badge" href="$genreUrl" title="Xem thể loại $(Escape-Html $genreDisplay)">$(Escape-Html $genreDisplay)</a>
+          $genreBadgesHtml
         </div>
         <h1>$(Escape-Html $it.t)</h1>
         <div class="sub"><a class="xlink" href="$artistUrl" title="Xem tất cả sản phẩm của $(Escape-Html $it.a)">$(Escape-Html $it.a)</a></div>
@@ -1184,6 +1227,7 @@ if ($GenerateProductPages) {
       }
     }
   </script>
+  $promoExpireJs
 </body>
 </html>
 "@
@@ -1225,10 +1269,10 @@ if ($GenerateProductPages) {
     $colSelectors = @{
         "dia-than-nhac-tet"              = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(mùa xuân|tết|ly rượu mừng|chúc xuân|đón xuân|em ơi mùa xuân|xuân về|xuân muộn|ngày xuân)') }) }
         "dia-than-ngay-le"               = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(christmas|noel|giáng sinh|mùa sao sáng|neujahr|new year|holiday|winter|silent night)') }) }
-        "dia-than-nhac-vang-bolero"      = { param($list) @($list | Where-Object { $_.g -eq 'bolero_golden_oldies' }) }
-        "dia-than-tinh-khuc-1954-1975"   = { param($list) @($list | Where-Object { $_.g -eq 'love_songs_1954_1975' }) }
-        "dia-than-nhac-viet-tre"         = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and $_.g -eq 'vietnamese_pop_modern' }) }
-        "dia-than-instrument-hoa-tau"    = { param($list) @($list | Where-Object { $_.g -eq 'instrumental' }) }
+        "dia-than-nhac-vang-bolero"      = { param($list) @($list | Where-Object { $_.g -eq 'bolero_golden_oldies' -or ($_.genres -contains 'bolero_golden_oldies') }) }
+        "dia-than-tinh-khuc-1954-1975"   = { param($list) @($list | Where-Object { $_.g -eq 'love_songs_1954_1975' -or ($_.genres -contains 'love_songs_1954_1975') }) }
+        "dia-than-nhac-viet-tre"         = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'vietnamese_pop_modern' -or ($_.genres -contains 'vietnamese_pop_modern')) }) }
+        "dia-than-instrument-hoa-tau"    = { param($list) @($list | Where-Object { $_.g -eq 'instrumental' -or ($_.genres -contains 'instrumental') }) }
         "dia-than-jazz-audiophile"       = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'jazz_vocal' -or $_.g -eq 'audiophile_reference') -and $_.s -eq 'in_stock' } | Select-Object -First 36) }
         "may-hat-dia-than-cho-nguoi-moi" = { param($list) @($list | Where-Object { $_.category -eq 'turntable' -or $_.category -eq 'accessory' -or $_.category -eq 'care' }) }
         "dia-than-nhac-ha-noi-sai-gon"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(hà nội|hanoi|sài gòn|saigon)') }) }

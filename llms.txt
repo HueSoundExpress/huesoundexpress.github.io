@@ -35,9 +35,10 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 - **Phân biệt kim đĩa than MM và MC – Nên chọn loại nào cho dàn Analog Audio?:** https://huesoundexpress.github.io/cam-nang/phan-biet-kim-mm-va-mc/
 - **Giải thích thang đánh giá tình trạng đĩa Goldmine Grading Standard (M, NM, VG+, VG...):** https://huesoundexpress.github.io/cam-nang/giai-thich-thang-goldmine-grading/
 
-## 5. Unified Analog Audio Catalog (1137 Items)
+## 5. Unified Analog Audio Catalog (1138 Items)
 | Category | SKU | Artist / Brand | Product / Album | Genre Code | Condition | Sale Price (VND) | Status | URL |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| vinyl | VN-QVTH-DUONGVE-560 | Quái Vật Tí Hon | Đĩa than (Vinyl) Đường Về (Black/Apple Red Vinyl 2LP) | vietnamese_pop_modern | mint_sealed | 1,911,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quai-vat-ti-hon-duong-ve-black-apple-red-vinyl-2lp-560/ |
 | vinyl | VN-BOLERO-VANGQA-559 | Quỳnh Anh | Đĩa than (Vinyl) Vàng | bolero_golden_oldies | mint_sealed | 1,250,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-vang-559/ |
 | vinyl | VN-QUYNHANH-THANHTUNG-558 | Quỳnh Anh | Đĩa than (Vinyl) LP Thanh Tùng (Chỉ bán cùng combo 4 đĩa QA) | vietnamese_pop_modern | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-lp-thanh-tung-chi-ban-cung-combo-4-dia-qa-558/ |
 | vinyl | VN-DUONGTHU-80NAM-557 | Dương Thụ | Đĩa than (Vinyl) 80 Năm Một Giấc Mơ (Bản có chữ ký) | vietnamese_pop_modern | mint_sealed | 2,950,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-duong-thu-80-nam-mot-giac-mo-ban-co-chu-ky-557/ |

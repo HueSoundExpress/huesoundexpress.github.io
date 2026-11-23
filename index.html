@@ -157,9 +157,15 @@ button, input, select, textarea { font-family: inherit; }
   transition: all .25s;
 }
 .fab-btn:hover { border-color: var(--copper); color: var(--copper); transform: translateY(-1px); }
-.fab-btn.gramophone { width: 3rem; padding: 0; color: var(--muted); }
-.fab-btn.gramophone svg { width: 1.45rem; height: 1.45rem; }
+.fab-btn.gramophone { width: auto; min-width: 3rem; padding: 0 .68rem; gap: .35rem; color: var(--muted); }
+.fab-btn.gramophone svg { width: 1.32rem; height: 1.32rem; flex-shrink: 0; }
+.gram-state {
+  font-size: .64rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
+  padding: .12rem .36rem; border-radius: 99px;
+  background: rgba(111, 81, 57, .14); color: var(--muted); transition: all .2s;
+}
 .fab-btn.gramophone[aria-pressed="true"] { color: var(--copper); border-color: var(--copper); }
+.fab-btn.gramophone[aria-pressed="true"] .gram-state { background: var(--copper); color: #FFF7E8; }
 .fab-btn.gramophone[aria-pressed="true"]::before {
   content: ''; position: absolute; inset: -4px;
   border-radius: 9999px; border: 1.5px solid var(--copper);
@@ -172,6 +178,20 @@ button, input, select, textarea { font-family: inherit; }
   animation: float-note 2.4s ease-out infinite;
 }
 .fab-btn.gramophone[aria-pressed="true"] .floating-note { display: block; }
+.now-playing-bar {
+  margin-top: .55rem;
+  font-size: .74rem; font-weight: 400; line-height: 1.45;
+  color: var(--muted); text-align: center;
+  display: inline-flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .25rem;
+  max-width: 100%; padding: 0 .5rem; transition: opacity .25s;
+}
+.now-playing-bar.is-off { opacity: .68; }
+.now-playing-bar .np-note { color: var(--copper); font-weight: 600; }
+.now-playing-bar a {
+  color: var(--copper-dark); text-decoration: none; font-weight: 600;
+  border-bottom: 1px dotted rgba(181, 84, 31, .5); transition: all .18s;
+}
+.now-playing-bar a:hover { color: var(--copper); border-bottom-style: solid; }
 
 .fab-cart {
   background: var(--copper-grad);
@@ -343,7 +363,8 @@ button, input, select, textarea { font-family: inherit; }
     background: rgba(250, 243, 226, 0.72);
     box-shadow: 0 4px 12px -4px rgba(110, 60, 20, .25);
   }
-  .fab-btn.gramophone { width: 2.35rem; min-width: 2.35rem; }
+  .fab-btn.gramophone { width: auto; min-width: 2.35rem; padding: 0 .48rem; gap: .24rem; }
+  .gram-state { font-size: .56rem; padding: .1rem .28rem; }
   .lang-toggle { height: 2.35rem; }
   /* Mobile: Giỏ hàng chỉ hiện icon mảnh & trong mờ để không che nội dung */
   .fab-cart {
@@ -934,7 +955,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     </button>
 
     <button id="gramophone-btn" class="fab-btn gramophone" type="button"
-            title="Bật / Tắt nhạc nền hộp nhạc" aria-label="Nhạc nền" aria-pressed="false">
+            title="Bật / Tắt nhạc nền Happy New Year" aria-label="Bật hoặc tắt nhạc nền Happy New Year" aria-pressed="false">
       <span class="floating-note" aria-hidden="true">♪</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <rect x="3" y="17" width="14" height="4" rx="1"/>
@@ -945,6 +966,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         <path d="M14 13.5C15.5 13.5 17 11.5 18 8.5L21 10.5C19.5 6.5 16.5 3.5 12.5 3L14.5 6C12 7.5 11.5 10.5 13 12.5"/>
         <line id="mute-slash" x1="3" y1="3" x2="21" y2="21" stroke="#B5541F" stroke-width="1.8" opacity="0.85"/>
       </svg>
+      <span class="gram-state" id="gramStateText">ON</span>
     </button>
   </div>
 
@@ -1087,6 +1109,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         </svg>
         <span id="qlGg">Google Maps</span>
       </a>
+    </div>
+    <div class="now-playing-bar" id="nowPlayingBar">
+      <span class="np-note" aria-hidden="true">♪</span>
+      <span id="nowPlayingText">Giai điệu đang phát - Happy New Year có trong đĩa than <a href="p/dia-than-vinyl-abba-super-trouper-145/">Super Trouper - ABBA</a> thuộc chủ đề <a href="bo-suu-tap/dia-than-ngay-le/">Nhạc Ngày lễ &amp; Giáng sinh</a></span>
     </div>
   </header>
 
@@ -1880,6 +1906,16 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     else if (/^stockfish$/i.test(lbl)) lbl = 'Stockfisch Records';
     else if (/^bk production$/i.test(lbl)) lbl = 'BK Production';
     else if (/^viết tân audio$/i.test(lbl)) lbl = 'Viết Tân Studio';
+    else if (/^music on vinyl$/i.test(lbl)) lbl = 'Music On Vinyl';
+
+    const genresArr = (Array.isArray(item.genres) && item.genres.length > 0) ? item.genres : [genreName];
+    const promoUntil = String(item.promo_until || '');
+    const pRegular = Number(item.p_regular || 0);
+    let promoNote = String(item.promo_note || '');
+    if (promoUntil && pRegular > 0 && Date.now() > new Date(promoUntil + 'T23:59:59+07:00').getTime()) {
+      price = pRegular;
+      promoNote = '';
+    }
 
     return {
       id: item.id,
@@ -1887,17 +1923,22 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       slug: String(item.slug || ''),
       category: cat,
       g: genreName,
+      genres: genresArr,
       mood: Array.isArray(item.mood) ? item.mood : (item.mood ? String(item.mood).split(/\s*;\s*/).filter(Boolean) : []),
       kw: Array.isArray(item.kw) ? item.kw : [],
       a: artistName,
       t: String(item.t || ''),
       l: lbl,
       f: String(item.f || ''),
+      w: String(item.w || ''),
       c: rawCond,
       cond: cond,
       y: String(item.y || ''),
       p: price,
       p_orig: origPrice,
+      promo_until: promoUntil,
+      p_regular: pRegular,
+      promo_note: promoNote,
       s: st,
       contact_only: Boolean(item.contact_only),
       force_contact: Boolean(item.force_contact || item.contact_only === 2 || item.contact_only === '2'),
@@ -2110,7 +2151,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   };
 
   // Loc nhanh 1 cham khi bam vao Nghe si / The loai / Tinh trang dia / Trang thai / Hang dia tren the san pham
-  window.quickFilterBySku = function(sku, field) {
+  window.quickFilterBySku = function(sku, field, valOverride) {
     const item = allProducts.find(x => x.sku === sku);
     if (!item) return;
     const L = t();
@@ -2148,9 +2189,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (field === 'artist' && item.a) {
       document.getElementById('artistFilter').value = item.a;
       toastFacet = L.facetArtist; toastVal = item.a;
-    } else if (field === 'genre' && item.g) {
-      activeSubFilter = item.g;
-      toastFacet = L.facetGenre; toastVal = L.genreMap[item.g] || item.g;
+    } else if (field === 'genre' && (valOverride || item.g)) {
+      const gVal = valOverride || item.g;
+      activeSubFilter = gVal;
+      toastFacet = L.facetGenre; toastVal = L.genreMap[gVal] || gVal;
     } else if (field === 'cond' && item.cond) {
       document.getElementById('condFilter').value = item.cond;
       toastFacet = L.facetCond; toastVal = L.condMap[item.cond] || item.cond;
@@ -2350,7 +2392,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           else if (activeSubFilter === 'BT' && item.has_bluetooth !== 'yes') return false;
           else if (activeSubFilter === 'MM' && !item.f.includes('MM')) return false;
           else if (!['PHONO','BT','MM'].includes(activeSubFilter) && item.g !== activeSubFilter) return false;
-        } else if (item.g !== activeSubFilter) {
+        } else if (item.g !== activeSubFilter && !(item.genres && item.genres.includes(activeSubFilter))) {
           return false;
         }
       }
@@ -2480,7 +2522,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : coverFallbackSvg(item)}
             </div>
             <div class="card-info">
-              ${showGenreOnCard ? `<div class="badge-row genre-row"><span class="badge clickable-tag" title="${clickHint}: ${escHtml(genreText)}" onclick="quickFilterBySku('${skuEsc}','genre')">${escHtml(genreText)}</span></div>` : ''}
+              ${showGenreOnCard ? `<div class="badge-row genre-row">${(item.genres && item.genres.length > 0 ? item.genres : [item.g]).map(gc => { const gt = L.genreMap[gc] || gc; return `<span class="badge clickable-tag" title="${clickHint}: ${escHtml(gt)}" onclick="quickFilterBySku('${skuEsc}','genre','${escHtml(gc)}')">${escHtml(gt)}</span>`; }).join('')}</div>` : ''}
               <div class="badge-row">
                 <span class="status-badge clickable-tag ${condClass(item.cond)}" title="${clickHint}: ${escHtml(condText)}" onclick="quickFilterBySku('${skuEsc}','cond')">${escHtml(condText)}</span>
                 <span class="status-badge clickable-tag ${statusClass(item.s)}" title="${clickHint}: ${escHtml(statusText)}" onclick="quickFilterBySku('${skuEsc}','status')">${escHtml(statusText)}</span>
@@ -2501,6 +2543,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : ''}
             </div>
             <span class="price-val">${formatVnd(item.p)}</span>
+            ${item.promo_note ? `<span class="acc-card-note">🎁 ${escHtml(item.promo_note)}</span>` : ''}
             ${isAccBundle ? `<span class="acc-card-note">${escHtml(L.accPromoNote)}</span>` : ''}
           </div>
           <div class="card-actions">
@@ -2819,7 +2862,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         </div>
         <div>
           <div class="badge-row genre-row">
-            <span class="badge clickable-tag" onclick="quickFilterBySku('${skuEsc}','genre')">${escHtml(L.genreMap[item.g] || item.g)}</span>
+            ${(item.genres && item.genres.length > 0 ? item.genres : [item.g]).map(gc => `<span class="badge clickable-tag" onclick="quickFilterBySku('${skuEsc}','genre','${escHtml(gc)}')">${escHtml(L.genreMap[gc] || gc)}</span>`).join('')}
           </div>
           <div class="badge-row">
             <span class="status-badge clickable-tag ${condClass(item.cond)}" onclick="quickFilterBySku('${skuEsc}','cond')">${escHtml(condText)}</span>
@@ -2840,6 +2883,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : ''}
             </div>
             <div>${formatVnd(item.p)}</div>
+            ${item.promo_note ? `<div class="acc-card-note" style="font-size:.73rem; margin-top:4px;">🎁 ${escHtml(item.promo_note)}</div>` : ''}
             ${isAccBundle ? `<div class="acc-card-note" style="font-size:.73rem; margin-top:4px;">${escHtml(L.accPromoNote)}</div>` : ''}
           </div>
           <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
@@ -3290,51 +3334,79 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   }
 
   /* =========================================================
-     NHAC HOP NHAC GRAMOPHONE (Giu nguyen chat rieng Hue Sound Express)
+     NHAC HOP NHAC GRAMOPHONE - Giai dieu Happy New Year (Tong hop Web Audio, khong ban quyen)
      ========================================================= */
   const btn = document.getElementById('gramophone-btn');
+  const gramStateEl = document.getElementById('gramStateText');
+  const nowPlayingBar = document.getElementById('nowPlayingBar');
   const N = {
-    C4: 261.63, D4: 293.66, E4: 329.63, F4: 349.23, G4: 392.00, A4: 440.00, B4: 493.88,
-    C5: 523.25, D5: 587.33, E5: 659.25, F5: 698.46
+    E3: 164.81, Fs3: 185.00, Gs3: 207.65, A3: 220.00, B3: 246.94, Cs4: 277.18, D4: 293.66, E4: 329.63,
+    Fs4: 369.99, Gs4: 415.30, A4: 440.00, B4: 493.88, Cs5: 554.37, D5: 587.33, E5: 659.25,
+    Fs5: 739.99, Gs5: 830.61, A5: 880.00
   };
+  // Tiet tau Happy New Year (A major - am sac hop nhac celesta diu em): [melodyFreq, durSec, bassFreq?]
+  const b = 0.34;
   const melody = [
-    [N.G4, .65], [N.A4, .25], [N.G4, .45], [N.E4, 1.2],
-    [N.G4, .65], [N.A4, .25], [N.G4, .45], [N.E4, 1.2],
-    [N.D5, .9],  [N.D5, .45], [N.B4, 1.2],
-    [N.C5, .9],  [N.C5, .45], [N.G4, 1.2],
-    [N.A4, .9],  [N.A4, .45], [N.C5, .65], [N.B4, .25], [N.A4, .45],
-    [N.G4, .65], [N.A4, .25], [N.G4, .45], [N.E4, 1.2],
-    [N.A4, .9],  [N.A4, .45], [N.C5, .65], [N.B4, .25], [N.A4, .45],
-    [N.G4, .65], [N.A4, .25], [N.G4, .45], [N.E4, 1.2],
-    [N.D5, .9],  [N.D5, .45], [N.F5, .65], [N.D5, .25], [N.B4, .45],
-    [N.C5, 1.2], [N.E5, 1.2],
-    [N.C5, .65], [N.G4, .25], [N.E4, .45], [N.G4, .65], [N.F4, .25], [N.D4, .45],
-    [N.C4, 1.8]
+    // Intro arpeggio nhe nhang (A -> E)
+    [N.A4, b, N.A3], [N.Cs5, b], [N.E5, b], [N.A5, b * 1.5],
+    [N.E4, b, N.E3], [N.Gs4, b], [N.B4, b], [N.E5, b * 1.8],
+    // "Happy New Year, Happy New Year"
+    [N.E5, b, N.A3], [N.A5, b], [N.Gs5, b], [N.E5, b * 2.6],
+    [N.E5, b, N.E3], [N.A5, b], [N.Gs5, b], [N.E5, b * 2.6],
+    // "May we all have a vision now and then"
+    [N.D5, b, N.D4], [N.E5, b], [N.Fs5, b], [N.E5, b], [N.D5, b], [N.Cs5, b],
+    [N.B4, b * 1.6, N.B3], [N.Cs5, b], [N.D5, b], [N.B4, b * 2.4],
+    // "Of a world where every neighbour is a friend"
+    [N.E5, b, N.E3], [N.Fs5, b], [N.Gs5, b], [N.Fs5, b], [N.E5, b], [N.D5, b],
+    [N.Cs5, b * 1.8, N.A3], [N.B4, b], [N.A4, b * 2.8],
+    // "Happy New Year, Happy New Year"
+    [N.E5, b, N.A3], [N.A5, b], [N.Gs5, b], [N.E5, b * 2.6],
+    [N.E5, b, N.E3], [N.A5, b], [N.Gs5, b], [N.E5, b * 2.6],
+    // "May we all have our hopes, our will to try"
+    [N.D5, b, N.D4], [N.E5, b], [N.Fs5, b], [N.E5, b], [N.D5, b], [N.Cs5, b],
+    [N.B4, b * 1.6, N.B3], [N.Cs5, b], [N.D5, b], [N.E5, b * 2.4],
+    // "If we don't we might as well lay down and die"
+    [N.E5, b, N.E3], [N.Fs5, b], [N.Gs5, b], [N.A5, b], [N.Gs5, b], [N.Fs5, b],
+    [N.E5, b * 1.5, N.Fs3], [N.D5, b], [N.Cs5, b * 1.6, N.D4], [N.B4, b * 1.8, N.E3],
+    // "You and I..."
+    [N.Cs5, b * 1.8, N.A3], [N.B4, b * 1.8, N.E3], [N.A4, b * 4.2, N.A3]
   ];
   let audioCtx = null, master = null, isPlaying = false, timerId = null, noteIndex = 0, nextNoteTime = 0;
+  let userManuallyMuted = (localStorage.getItem('hse_bgm_pref') === 'off');
 
-  function playNote(freq, start, duration) {
+  function playNote(freq, start, duration, bassFreq) {
     const osc1 = audioCtx.createOscillator(), osc2 = audioCtx.createOscillator();
     const g1 = audioCtx.createGain(), g2 = audioCtx.createGain();
     osc1.type = 'sine'; osc1.frequency.setValueAtTime(freq, start);
     osc2.type = 'triangle'; osc2.frequency.setValueAtTime(freq * 2, start);
-    g1.gain.setValueAtTime(0.001, start);
-    g1.gain.exponentialRampToValueAtTime(0.14, start + 0.03);
-    g1.gain.exponentialRampToValueAtTime(0.0001, start + duration + 0.8);
-    g2.gain.setValueAtTime(0.001, start);
-    g2.gain.exponentialRampToValueAtTime(0.035, start + 0.02);
-    g2.gain.exponentialRampToValueAtTime(0.0001, start + duration * 0.6);
+    g1.gain.setValueAtTime(0.0008, start);
+    g1.gain.exponentialRampToValueAtTime(0.11, start + 0.025);
+    g1.gain.exponentialRampToValueAtTime(0.0001, start + duration + 0.75);
+    g2.gain.setValueAtTime(0.0008, start);
+    g2.gain.exponentialRampToValueAtTime(0.026, start + 0.018);
+    g2.gain.exponentialRampToValueAtTime(0.0001, start + duration * 0.55);
     osc1.connect(g1); osc2.connect(g2); g1.connect(master); g2.connect(master);
     osc1.start(start); osc2.start(start);
-    osc1.stop(start + duration + 0.85); osc2.stop(start + duration + 0.85);
+    osc1.stop(start + duration + 0.8); osc2.stop(start + duration + 0.8);
+
+    if (bassFreq) {
+      const ob = audioCtx.createOscillator(), gb = audioCtx.createGain();
+      ob.type = 'sine'; ob.frequency.setValueAtTime(bassFreq, start);
+      gb.gain.setValueAtTime(0.0008, start);
+      gb.gain.exponentialRampToValueAtTime(0.042, start + 0.04);
+      gb.gain.exponentialRampToValueAtTime(0.0001, start + duration * 3.2 + 0.6);
+      ob.connect(gb); gb.connect(master);
+      ob.start(start); ob.stop(start + duration * 3.2 + 0.65);
+    }
   }
 
   function scheduler() {
-    while (nextNoteTime < audioCtx.currentTime + 90) {
-      const [freq, dur] = melody[noteIndex];
-      playNote(freq, nextNoteTime, dur);
+    if (!audioCtx || audioCtx.state !== 'running') return;
+    while (nextNoteTime < audioCtx.currentTime + 12) {
+      const [freq, dur, bass] = melody[noteIndex];
+      playNote(freq, nextNoteTime, dur, bass);
       nextNoteTime += dur;
-      if (++noteIndex >= melody.length) { noteIndex = 0; nextNoteTime += 1.2; }
+      if (++noteIndex >= melody.length) { noteIndex = 0; nextNoteTime += 1.4; }
     }
   }
 
@@ -3348,13 +3420,22 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       master.gain.value = 1;
       master.connect(audioCtx.destination);
     }
-    if (audioCtx.state === 'suspended') audioCtx.resume();
-    noteIndex = 0;
-    nextNoteTime = audioCtx.currentTime + 0.1;
-    master.gain.cancelScheduledValues(audioCtx.currentTime);
-    master.gain.setValueAtTime(1, audioCtx.currentTime);
-    scheduler();
-    timerId = setInterval(scheduler, 5000);
+    const kick = () => {
+      if (!audioCtx || audioCtx.state !== 'running') return;
+      noteIndex = 0;
+      nextNoteTime = audioCtx.currentTime + 0.08;
+      master.gain.cancelScheduledValues(audioCtx.currentTime);
+      master.gain.setValueAtTime(1, audioCtx.currentTime);
+      scheduler();
+      if (!timerId) timerId = setInterval(scheduler, 2500);
+    };
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume().then(() => {
+        if (isPlaying) kick();
+      }).catch(() => {});
+    } else {
+      kick();
+    }
     return true;
   }
 
@@ -3362,11 +3443,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     clearInterval(timerId); timerId = null;
     if (!audioCtx) return;
     const oldCtx = audioCtx, oldMaster = master;
-    oldMaster.gain.cancelScheduledValues(oldCtx.currentTime);
-    oldMaster.gain.setValueAtTime(oldMaster.gain.value, oldCtx.currentTime);
-    oldMaster.gain.linearRampToValueAtTime(0, oldCtx.currentTime + 0.15);
+    try {
+      oldMaster.gain.cancelScheduledValues(oldCtx.currentTime);
+      oldMaster.gain.setValueAtTime(oldMaster.gain.value, oldCtx.currentTime);
+      oldMaster.gain.linearRampToValueAtTime(0, oldCtx.currentTime + 0.15);
+    } catch (_) {}
     audioCtx = null; master = null;
-    setTimeout(() => oldCtx.close(), 250);
+    setTimeout(() => { try { oldCtx.close(); } catch (_) {} }, 250);
   }
 
   function setPlaying(on) {
@@ -3374,17 +3457,52 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     window._isBgMusicPlaying = on;
     btn.setAttribute('aria-pressed', String(on));
     logoWrap.classList.toggle('playing', on);
+    if (gramStateEl) gramStateEl.textContent = on ? 'ON' : 'OFF';
+    if (nowPlayingBar) nowPlayingBar.classList.toggle('is-off', !on);
   }
 
   window._stopBgMusicBox = () => { if (isPlaying) { stopMusic(); setPlaying(false); } };
 
   btn.addEventListener('click', () => {
-    if (isPlaying) { stopMusic(); setPlaying(false); }
-    else if (startMusic()) { setPlaying(true); }
+    if (isPlaying) {
+      userManuallyMuted = true;
+      try { localStorage.setItem('hse_bgm_pref', 'off'); } catch (_) {}
+      stopMusic();
+      setPlaying(false);
+    } else {
+      userManuallyMuted = false;
+      try { localStorage.setItem('hse_bgm_pref', 'on'); } catch (_) {}
+      setPlaying(true);
+      startMusic();
+    }
   });
 
+  // Tu dong phat khi mo trang; neu trinh duyet chan autoplay thi tu kich hoat ngay lan cham/click/phim dau tien
+  function unlockAutoplay(e) {
+    if (userManuallyMuted) return;
+    if (e && e.target && btn && btn.contains(e.target)) return;
+    if (!isPlaying) setPlaying(true);
+    startMusic();
+    if (audioCtx && audioCtx.state === 'running') {
+      ['pointerdown', 'keydown', 'touchstart', 'click'].forEach(ev =>
+        document.removeEventListener(ev, unlockAutoplay, true)
+      );
+    }
+  }
+  if (!userManuallyMuted) {
+    setPlaying(true);
+    startMusic();
+    ['pointerdown', 'keydown', 'touchstart', 'click'].forEach(ev =>
+      document.addEventListener(ev, unlockAutoplay, { capture: true, passive: true })
+    );
+  } else {
+    setPlaying(false);
+  }
+
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden && isPlaying && audioCtx && audioCtx.state !== 'running') audioCtx.resume();
+    if (!document.hidden && isPlaying && audioCtx && audioCtx.state !== 'running') {
+      audioCtx.resume().then(() => scheduler()).catch(() => {});
+    }
   });
 })();
 </script>

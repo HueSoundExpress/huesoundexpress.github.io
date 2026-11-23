@@ -1,7 +1,8 @@
 {
-    "updated_at":  "2026-11-22T23:12:04+07:00",
-    "total_items":  1137,
+    "updated_at":  "2026-11-23T12:23:12+07:00",
+    "total_items":  1138,
     "skus":  [
+                 "VN-QVTH-DUONGVE-560",
                  "VN-BOLERO-VANGQA-559",
                  "VN-QUYNHANH-THANHTUNG-558",
                  "VN-DUONGTHU-80NAM-557",
@@ -1149,7 +1150,7 @@
                               "dia-than-nhac-viet-tre":  36,
                               "dia-than-tinh-khuc-1954-1975":  36,
                               "qua-tang-dia-than-cao-cap":  30,
-                              "dia-than-instrument-hoa-tau":  30,
+                              "dia-than-instrument-hoa-tau":  31,
                               "dia-than-ngay-le":  31
                           }
 }
