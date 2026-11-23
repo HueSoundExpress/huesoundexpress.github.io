@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nghe thử giai điệu Happy New Year (ABBA) – Hộp nhạc Web Audio | Hue Sound Express</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --copper:#B5541F; --copper-dark:#7E3210; --copper-grad:linear-gradient(135deg,#DC8644 0%,#B85922 46%,#8C3A12 100%); --ink:#4A2312; --muted:#6F5139; --card:rgba(250,242,222,.88); --border:rgba(142,66,24,.28); }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:"Montserrat",system-ui,sans-serif; color:var(--ink); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px 16px; background:radial-gradient(ellipse at 50% 18%,#F4E9CC 0%,#E7D5AE 44%,#C5AC7E 82%,#AA9062 100%); }
+    .card { max-width:680px; width:100%; background:var(--card); border:1px solid var(--border); border-radius:20px; padding:28px 24px; box-shadow:0 16px 36px -14px rgba(110,60,20,.28); }
+    .tag { display:inline-block; font-size:11px; font-weight:700; padding:4px 12px; border-radius:99px; background:rgba(181,84,31,.12); color:var(--copper-dark); border:1px solid rgba(181,84,31,.25); margin-bottom:10px; }
+    h1 { font-family:"Lora",Georgia,serif; font-size:24px; color:var(--ink); margin-bottom:6px; }
+    .sub { font-size:13px; color:var(--muted); margin-bottom:18px; line-height:1.55; }
+    .sub a { color:var(--copper-dark); font-weight:600; text-decoration:none; border-bottom:1px dotted rgba(181,84,31,.55); }
+    .controls { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:16px; }
+    .btn { padding:10px 18px; border-radius:99px; border:1px solid var(--border); background:#FFFBF0; color:var(--ink); font-weight:700; font-size:13px; cursor:pointer; font-family:inherit; transition:all .2s; }
+    .btn-primary { background:var(--copper-grad); color:#FFF7E8; border-color:var(--copper-dark); }
+    .btn:hover { transform:translateY(-1px); border-color:var(--copper); }
+    .btn.active-tone { background:rgba(181,84,31,.16); border-color:var(--copper); color:var(--copper-dark); }
+    .row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; font-size:12.5px; color:var(--muted); margin-bottom:16px; }
+    .lyric-box { background:rgba(255,251,240,.85); border:1px solid var(--border); border-radius:14px; padding:16px; font-family:"Lora",Georgia,serif; font-size:16px; line-height:1.7; text-align:center; min-height:76px; display:flex; flex-direction:column; justify-content:center; gap:4px; }
+    .lyric-sec { font-family:"Montserrat",sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--copper); }
+    .lyric-line { color:var(--ink); font-weight:600; }
+    .prog-wrap { height:6px; background:rgba(142,66,24,.15); border-radius:99px; overflow:hidden; margin-top:14px; }
+    .prog-bar { height:100%; width:0%; background:var(--copper-grad); transition:width .18s linear; }
+    .note-foot { margin-top:16px; font-size:12px; color:var(--muted); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+    .note-foot a { color:var(--copper-dark); font-weight:600; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="tag">♪ NGHE THỬ GIAI ĐIỆU NỀN WEB AUDIO • KHÔNG BẢN QUYỀN</span>
+    <h1>Happy New Year – ABBA (Hộp nhạc Analog)</h1>
+    <p class="sub">
+      Giai điệu tổng hợp trực tiếp bằng Web Audio API theo bản chuẩn Sol trưởng (Verse + Chorus + hòa âm hợp âm G – B7 – Em – C – D).
+      Có trong đĩa than <a href="p/dia-than-vinyl-abba-super-trouper-145/">Super Trouper - ABBA</a> thuộc chủ đề <a href="bo-suu-tap/dia-than-ngay-le/">Nhạc Ngày lễ &amp; Giáng sinh</a>.
+    </p>
+
+    <div class="controls">
+      <button class="btn btn-primary" id="btnPlay" type="button">▶ Nghe thử ngay</button>
+      <button class="btn" id="btnStop" type="button">■ Dừng</button>
+      <button class="btn" id="btnChorus" type="button">⏭ Nghe từ Điệp khúc</button>
+    </div>
+
+    <div class="row">
+      <strong>Âm sắc:</strong>
+      <button class="btn active-tone" data-tone="celesta" type="button">Hộp nhạc Celesta</button>
+      <button class="btn" data-tone="piano" type="button">Piano ấm áp</button>
+      <button class="btn" data-tone="kalimba" type="button">Kalimba mộc</button>
+      <label style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;">
+        Nhịp độ:
+        <input id="tempoRange" type="range" min="0.75" max="1.25" step="0.05" value="1">
+        <span id="tempoVal">100%</span>
+      </label>
+    </div>
+
+    <div class="lyric-box">
+      <div class="lyric-sec" id="secLbl">Sẵn sàng phát</div>
+      <div class="lyric-line" id="lyricLbl">Bấm "▶ Nghe thử ngay" để nghe toàn bộ Intro, Phiên khúc &amp; Điệp khúc Happy New Year</div>
+    </div>
+    <div class="prog-wrap"><div class="prog-bar" id="progBar"></div></div>
+
+    <div class="note-foot">
+      <span>Giai điệu này cũng đã được tích hợp đồng bộ làm nhạc nền trên trang chủ.</span>
+      <a href="index.html">← Về trang chủ Hue Sound Express</a>
+    </div>
+  </main>
+
+  <script>
+    const N = {
+      B2:123.47, C3:130.81, D3:146.83, E3:164.81, Fs3:185.00, G3:196.00, A3:220.00, B3:246.94,
+      C4:261.63, D4:293.66, Ds4:311.13, E4:329.63, Fs4:369.99, G4:392.00, A4:440.00, B4:493.88,
+      C5:523.25, Cs5:554.37, D5:587.33, Ds5:622.25, E5:659.25, Fs5:739.99, G5:783.99, A5:880.00, B5:987.77
+    };
+    const CH = {
+      G:  [N.G3, N.B3, N.D4],
+      B7: [N.B2, N.Fs3, N.Ds4],
+      Em: [N.E3, N.B3, N.E4],
+      C:  [N.C3, N.G3, N.E4],
+      D:  [N.D3, N.A3, N.Fs4],
+      DFs:[N.Fs3, N.A3, N.D4],
+      Am: [N.A3, N.E4, N.C4]
+    };
+    const u = 0.36; // 1 don vi nhip (~83 BPM diu em)
+    // [freq, durUnits, chord?, section?, lyric?]
+    const score = [
+      // INTRO (Arpeggio nhe nhang)
+      [N.G4,1,CH.G,'Intro','♪ Giai điệu mở đầu (Intro Piano / Hộp nhạc)...'],
+      [N.B4,1],[N.D5,1],[N.G5,1.2],[N.D5,1],[N.B4,1],[N.G4,1.2],
+      [N.Fs4,1,CH.B7],[N.A4,1],[N.B4,1],[N.Ds5,1.2],[N.Fs5,1],[N.Ds5,1],[N.B4,1.2],
+      [N.G4,1,CH.Em],[N.B4,1],[N.E5,1],[N.G5,1.2],[N.E5,1],[N.B4,1],[N.G4,1.2],
+      [N.G4,1,CH.C],[N.C5,1],[N.E5,1],[N.G5,1.2],[N.Fs5,1,CH.D],[N.D5,1],[N.A4,2.2],
+
+      // VERSE 1
+      [N.B4,.8,CH.G,'Phiên khúc (Verse)','No more champagne...'],
+      [N.C5,.8],[N.B4,.8],[N.A4,.8],[N.G4,2.8],
+      [N.G4,.75,CH.G,'Phiên khúc (Verse)','And the fireworks are through...'],
+      [N.A4,.75],[N.B4,.75],[N.D5,.8],[N.G5,1],[N.B5,1,CH.B7],[N.Fs5,3],
+      [N.Fs5,.8,CH.Em,'Phiên khúc (Verse)','Here we are, me and you...'],
+      [N.G5,.8],[N.E5,1.5],[N.E5,.8],[N.Fs5,.8],[N.D5,2.6],
+      [N.G5,.75,CH.C,'Phiên khúc (Verse)','Feeling lost and feeling blue...'],
+      [N.Fs5,.75],[N.Fs5,.75],[N.E5,.75],[N.E5,.75,CH.D],[N.D5,.75],[N.D5,2.6],
+
+      [N.G4,.65,CH.G,'Phiên khúc (Verse)',"It's the end of the party..."],
+      [N.A4,.65],[N.B4,.9],[N.C5,.75],[N.B4,.75],[N.A4,.75],[N.G4,2.6],
+      [N.G4,.75,CH.G,'Phiên khúc (Verse)','And the morning seems so grey...'],
+      [N.A4,.75],[N.B4,.75],[N.D5,.8],[N.G5,1],[N.B5,1,CH.B7],[N.Fs5,3],
+      [N.Fs5,.8,CH.Em,'Phiên khúc (Verse)','So unlike yesterday...'],
+      [N.G5,.8],[N.E5,1.5],[N.E5,.8],[N.Fs5,.8],[N.D5,2.6],
+      [N.G5,.75,CH.C,'Phiên khúc (Verse)',"Now's the time for us to say..."],
+      [N.Fs5,.75],[N.Fs5,.75],[N.E5,.75],[N.E5,.75,CH.D],[N.D5,.75],[N.D5,2.8],
+
+      // CHORUS (index = 81)
+      [N.B4,.75,CH.G,'Điệp khúc (Chorus)','Happy New Year...'],
+      [N.C5,.75],[N.D5,.75],[N.B5,1.6],[N.B5,2.4],
+      [N.B4,.75,CH.DFs,'Điệp khúc (Chorus)','Happy New Year...'],
+      [N.C5,.75],[N.D5,.75],[N.A5,1.6],[N.A5,2.4],
+      [N.B4,.75,CH.B7,'Điệp khúc (Chorus)','May we all have a vision now and then...'],
+      [N.Cs5,.75],[N.Ds5,.75],[N.G5,1,CH.Em],[N.Fs5,.75],[N.E5,.75],[N.Fs5,.75],[N.E5,.75],[N.D5,1,CH.D],[N.D5,2.1],
+      [N.E5,.75,CH.C,'Điệp khúc (Chorus)','Of a world where every neighbour is a friend...'],
+      [N.D5,.75],[N.D5,.75],[N.E5,.75],[N.D5,.75,CH.G],[N.C5,.75],[N.C5,.75],[N.B4,.75,CH.Am],[N.C5,.75],[N.D5,.75],[N.D5,.55,CH.D],[N.C5,.55],[N.B4,.55],[N.A4,2.2],
+
+      [N.B4,.75,CH.G,'Điệp khúc (Chorus)','Happy New Year...'],
+      [N.C5,.75],[N.D5,.75],[N.B5,1.6],[N.B5,2.4],
+      [N.B4,.75,CH.DFs,'Điệp khúc (Chorus)','Happy New Year...'],
+      [N.C5,.75],[N.D5,.75],[N.A5,1.6],[N.A5,2.4],
+      [N.B4,.75,CH.B7,'Điệp khúc (Chorus)','May we all have our hopes, our will to try...'],
+      [N.Cs5,.75],[N.Ds5,.75],[N.G5,1,CH.Em],[N.Fs5,.75],[N.E5,.75],[N.Fs5,.75],[N.E5,.75],[N.D5,1,CH.D],[N.D5,2.1],
+      [N.E5,.75,CH.C,'Điệp khúc (Chorus)',"If we don't we might as well lay down and die..."],
+      [N.D5,.75],[N.D5,.75],[N.E5,.75],[N.D5,.75,CH.G],[N.C5,.75],[N.C5,.75],[N.B4,.75,CH.Am],[N.C5,.75],[N.D5,.75],[N.D5,.55,CH.D],[N.C5,.55],[N.B4,.55],[N.A4,2.0],
+      [N.C5,1.2,CH.C,'Điệp khúc (Chorus)','You and I... ♪'],
+      [N.C5,.55],[N.B4,.55,CH.D],[N.A4,.9],[N.G4,4.2,CH.G]
+    ];
+    const CHORUS_IDX = score.findIndex(x => x[3] === 'Điệp khúc (Chorus)');
+
+    let ctx = null, master = null, tone = 'celesta', speed = 1, playing = false, idx = 0, timers = [];
+
+    function playVoice(freq, start, dur, chord) {
+      const o1 = ctx.createOscillator(), o2 = ctx.createOscillator();
+      const g1 = ctx.createGain(), g2 = ctx.createGain();
+      if (tone === 'piano') {
+        o1.type = 'triangle'; o2.type = 'sine';
+        o1.frequency.setValueAtTime(freq, start);
+        o2.frequency.setValueAtTime(freq * 2, start);
+        g1.gain.setValueAtTime(0.0008, start);
+        g1.gain.exponentialRampToValueAtTime(0.14, start + 0.015);
+        g1.gain.exponentialRampToValueAtTime(0.0001, start + dur + 0.9);
+        g2.gain.setValueAtTime(0.0008, start);
+        g2.gain.exponentialRampToValueAtTime(0.032, start + 0.01);
+        g2.gain.exponentialRampToValueAtTime(0.0001, start + dur * 0.45);
+      } else if (tone === 'kalimba') {
+        o1.type = 'sine'; o2.type = 'sine';
+        o1.frequency.setValueAtTime(freq, start);
+        o2.frequency.setValueAtTime(freq * 2.98, start);
+        g1.gain.setValueAtTime(0.0008, start);
+        g1.gain.exponentialRampToValueAtTime(0.15, start + 0.008);
+        g1.gain.exponentialRampToValueAtTime(0.0001, start + dur + 0.55);
+        g2.gain.setValueAtTime(0.0008, start);
+        g2.gain.exponentialRampToValueAtTime(0.025, start + 0.005);
+        g2.gain.exponentialRampToValueAtTime(0.0001, start + 0.14);
+      } else {
+        o1.type = 'sine'; o2.type = 'triangle';
+        o1.frequency.setValueAtTime(freq, start);
+        o2.frequency.setValueAtTime(freq * 2, start);
+        g1.gain.setValueAtTime(0.0008, start);
+        g1.gain.exponentialRampToValueAtTime(0.115, start + 0.022);
+        g1.gain.exponentialRampToValueAtTime(0.0001, start + dur + 0.85);
+        g2.gain.setValueAtTime(0.0008, start);
+        g2.gain.exponentialRampToValueAtTime(0.026, start + 0.015);
+        g2.gain.exponentialRampToValueAtTime(0.0001, start + dur * 0.55);
+      }
+      o1.connect(g1); o2.connect(g2); g1.connect(master); g2.connect(master);
+      o1.start(start); o2.start(start);
+      o1.stop(start + dur + 0.95); o2.stop(start + dur + 0.95);
+
+      if (chord && chord.length) {
+        chord.forEach((cf, ci) => {
+          const oc = ctx.createOscillator(), gc = ctx.createGain();
+          oc.type = 'sine';
+          oc.frequency.setValueAtTime(cf, start + ci * 0.03);
+          gc.gain.setValueAtTime(0.0006, start + ci * 0.03);
+          gc.gain.exponentialRampToValueAtTime(ci === 0 ? 0.042 : 0.024, start + ci * 0.03 + 0.05);
+          gc.gain.exponentialRampToValueAtTime(0.0001, start + dur * 3.2 + 0.8);
+          oc.connect(gc); gc.connect(master);
+          oc.start(start + ci * 0.03); oc.stop(start + dur * 3.2 + 0.85);
+        });
+      }
+    }
+
+    function stopAll() {
+      playing = false;
+      timers.forEach(clearTimeout); timers = [];
+      if (ctx) { try { ctx.close(); } catch(_){} ctx = null; master = null; }
+      document.getElementById('btnPlay').textContent = '▶ Nghe thử ngay';
+    }
+
+    function startFrom(startIndex) {
+      stopAll();
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      ctx = new Ctx();
+      master = ctx.createGain();
+      master.gain.value = 1;
+      master.connect(ctx.destination);
+      playing = true;
+      document.getElementById('btnPlay').textContent = '⏸ Đang phát... (Bấm để dừng)';
+
+      let t = ctx.currentTime + 0.08;
+      let offsetMs = 0;
+      for (let i = startIndex; i < score.length; i++) {
+        const [freq, units, chord, sec, lyr] = score[i];
+        const dur = (units * u) / speed;
+        playVoice(freq, t, dur, chord);
+        const capturedIdx = i;
+        const capSec = sec, capLyr = lyr;
+        timers.push(setTimeout(() => {
+          if (!playing) return;
+          if (capSec) document.getElementById('secLbl').textContent = capSec;
+          if (capLyr) document.getElementById('lyricLbl').textContent = capLyr;
+          document.getElementById('progBar').style.width = Math.round(((capturedIdx + 1) / score.length) * 100) + '%';
+        }, offsetMs));
+        t += dur;
+        offsetMs += dur * 1000;
+      }
+      timers.push(setTimeout(() => { if (playing) startFrom(0); }, offsetMs + 900));
+    }
+
+    document.getElementById('btnPlay').addEventListener('click', () => { if (playing) stopAll(); else startFrom(0); });
+    document.getElementById('btnStop').addEventListener('click', stopAll);
+    document.getElementById('btnChorus').addEventListener('click', () => startFrom(CHORUS_IDX));
+    document.querySelectorAll('[data-tone]').forEach(b => b.addEventListener('click', () => {
+      tone = b.getAttribute('data-tone');
+      document.querySelectorAll('[data-tone]').forEach(x => x.classList.toggle('active-tone', x === b));
+      if (playing) startFrom(CHORUS_IDX);
+    }));
+    document.getElementById('tempoRange').addEventListener('input', e => {
+      speed = parseFloat(e.target.value);
+      document.getElementById('tempoVal').textContent = Math.round(speed * 100) + '%';
+    });
+  </script>
+</body>
+</html>

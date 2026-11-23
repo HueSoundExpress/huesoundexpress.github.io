@@ -167,16 +167,21 @@
         "contact_only":  false,
         "d":  "Đĩa than Quỳnh Anh - LP Thanh Tùng (Vinyl LP màu tím Purple Vinyl, chỉ bán cùng combo 4 đĩa Quỳnh Anh) - Đĩa than nhạc Việt Nam (Nhạc sĩ: Thanh Tùng • Hãng BK Production) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  [
-                          "Giọt Nắng Bên Thềm",
-                          "Em Và Tôi",
-                          "Hoa Cúc Vàng",
+                          "Trái Tim Hoang Vu",
+                          "Đếm Lá Ngoài Sân",
                           "Hoa Tím Ngoài Sân",
-                          "Trái Tim Không Ngủ Yên"
+                          "Em Và Tôi (feat. Vũ Thắng Lợi)",
+                          "Giọt Nắng Bên Thềm",
+                          "Trái Tim Không Ngủ Yên (feat. Thắng)",
+                          "Cơn Bão Nghiêng Đêm",
+                          "Hoa Cúc Vàng"
                       ],
         "img":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/438095005-807288611275391-996846837704958223-n.jpg?v=1715007525090",
-        "aud":  "",
-        "aud_track":  "",
-        "missing_fields":  "MISSING_AUDIO",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/15/84/f4/1584f4c6-6aed-115c-667a-d3d7bffa4e6e/mzaf_1769856047068855331.plus.aac.p.m4a",
+        "aud_track":  "Giọt Nắng Bên Thềm",
+        "missing_fields":  {
+
+                           },
         "cond":  "mint_sealed",
         "p_orig":  1500000,
         "kw":  [
@@ -192,11 +197,14 @@
                    "Đĩa than chính hãng",
                    "Cửa hàng đĩa than Hue Sound Express",
                    "Nơi bán đĩa nhạc uy tín",
-                   "Giọt Nắng Bên Thềm",
-                   "Em Và Tôi",
-                   "Hoa Cúc Vàng",
+                   "Trái Tim Hoang Vu",
+                   "Đếm Lá Ngoài Sân",
                    "Hoa Tím Ngoài Sân",
-                   "Trái Tim Không Ngủ Yên"
+                   "Em Và Tôi (feat. Vũ Thắng Lợi)",
+                   "Giọt Nắng Bên Thềm",
+                   "Trái Tim Không Ngủ Yên (feat. Thắng)",
+                   "Cơn Bão Nghiêng Đêm",
+                   "Hoa Cúc Vàng"
                ]
     },
     {

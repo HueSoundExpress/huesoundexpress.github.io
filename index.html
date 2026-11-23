@@ -140,7 +140,7 @@ button, input, select, textarea { font-family: inherit; }
 
 /* ===== Nút nổi góc phải: Máy hát hộp nhạc & Giỏ hàng ===== */
 .floating-tools {
-  position: fixed; top: 1rem; right: 1rem; z-index: 45;
+  position: fixed; top: 2.85rem; right: 1rem; z-index: 45;
   display: flex; flex-direction: column; gap: .65rem; align-items: flex-end;
 }
 .fab-btn {
@@ -179,14 +179,14 @@ button, input, select, textarea { font-family: inherit; }
 }
 .fab-btn.gramophone[aria-pressed="true"] .floating-note { display: block; }
 .now-playing-bar {
-  margin-top: .55rem;
-  font-size: .74rem; font-weight: 400; line-height: 1.45;
-  color: var(--muted); text-align: center;
-  display: inline-flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .25rem;
-  max-width: 100%; padding: 0 .5rem; transition: opacity .25s;
+  position: absolute; top: .45rem; right: 1rem; z-index: 44;
+  font-size: .71rem; font-weight: 400; line-height: 1.38;
+  color: var(--muted); text-align: right;
+  max-width: min(460px, calc(100vw - 2rem));
+  transition: opacity .25s;
 }
 .now-playing-bar.is-off { opacity: .68; }
-.now-playing-bar .np-note { color: var(--copper); font-weight: 600; }
+.now-playing-bar .np-note { color: var(--copper); font-weight: 600; margin-right: 2px; }
 .now-playing-bar a {
   color: var(--copper-dark); text-decoration: none; font-weight: 600;
   border-bottom: 1px dotted rgba(181, 84, 31, .5); transition: all .18s;
@@ -357,7 +357,8 @@ button, input, select, textarea { font-family: inherit; }
   .q-link { height: 42px; padding: 0; border-radius: 12px; gap: 0; }
   .q-link span { display: none; }
   .brand-ico { width: 21px; height: 21px; }
-  .floating-tools { top: .55rem; right: .55rem; gap: .38rem; }
+  .now-playing-bar { top: .32rem; right: .55rem; left: .55rem; max-width: none; font-size: .64rem; line-height: 1.3; }
+  .floating-tools { top: 2.75rem; right: .55rem; gap: .38rem; }
   .fab-btn {
     height: 2.35rem; font-size: .7rem;
     background: rgba(250, 243, 226, 0.72);
@@ -945,6 +946,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 </head>
 <body>
 
+<!-- Dòng chữ mảnh cố định góc trên phải ngay trên nút hộp nhạc (không chạy theo khi cuộn) -->
+<div class="now-playing-bar" id="nowPlayingBar">
+  <span class="np-note" aria-hidden="true">♪</span><span id="nowPlayingText">Giai điệu đang phát - Happy New Year có trong đĩa than <a href="p/dia-than-vinyl-abba-super-trouper-145/">Super Trouper - ABBA</a> thuộc chủ đề <a href="bo-suu-tap/dia-than-ngay-le/">Nhạc Ngày lễ &amp; Giáng sinh</a></span>
+</div>
+
 <!-- Nút nổi: Chuyển ngôn ngữ VN/EN, Hộp nhạc Gramophone & Giỏ hàng / Báo giá -->
 <div class="floating-tools">
   <div class="fab-top-row">
@@ -1110,10 +1116,6 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         <span id="qlGg">Google Maps</span>
       </a>
     </div>
-    <div class="now-playing-bar" id="nowPlayingBar">
-      <span class="np-note" aria-hidden="true">♪</span>
-      <span id="nowPlayingText">Giai điệu đang phát - Happy New Year có trong đĩa than <a href="p/dia-than-vinyl-abba-super-trouper-145/">Super Trouper - ABBA</a> thuộc chủ đề <a href="bo-suu-tap/dia-than-ngay-le/">Nhạc Ngày lễ &amp; Giáng sinh</a></span>
-    </div>
   </header>
 
   <!-- Thanh Bộ Sưu Tập chạy ngang kèm icon ngay trên 5 danh mục -->
@@ -1162,7 +1164,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       <span class="tab-count" id="cnt-accessory">0</span>
     </button>
     <button class="cat-tab" onclick="switchCategory('guide', this)">
-      <span class="cat-tab-main"><span>📖</span><span id="tabLbl-guide">Cẩm nang FAQ và giao vận</span></span>
+      <span class="cat-tab-main"><span>📖</span><span id="tabLbl-guide">Cẩm nang &amp; Giao vận</span></span>
       <span class="tab-count" id="cnt-guide">6+</span>
     </button>
   </nav>
@@ -1402,7 +1404,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tlLine2: 'Có Audio nghe thử 30s, giá minh bạch, xuất báo giá nhanh & đóng gói chuyên dụng, giao hàng toàn quốc',
       qlZalo: 'Hotline/Zalo', qlWa: 'WhatsApp', qlFb: 'Fanpage', qlIg: 'Instagram', qlGg: 'Google Maps',
       tabVinyl: 'Đĩa Than (LP)', tabCd: 'Đĩa CD / SACD', tabTurntable: 'Máy Hát / Mâm Than',
-      tabAccessory: 'Phụ kiện và dịch vụ', tabGuide: 'Cẩm nang FAQ và giao vận',
+      tabAccessory: 'Phụ kiện và dịch vụ', tabGuide: 'Cẩm nang & Giao vận',
       promoMarquee: '🚚 KHUYẾN MÃI!!! Nhanh tay chốt đơn với giá ưu đãi cho 10 đơn hàng đầu tiên (còn 6 đơn)',
       accPromoNote: '* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn',
       btnContactOrder: '💬 Liên hệ đặt hàng', btnShare: '📤 Chia sẻ',
@@ -3334,77 +3336,92 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   }
 
   /* =========================================================
-     NHAC HOP NHAC GRAMOPHONE - Giai dieu Happy New Year (Tong hop Web Audio, khong ban quyen)
+     NHAC HOP NHAC GRAMOPHONE - Giai dieu chuan Happy New Year - ABBA (Web Audio, khong ban quyen)
      ========================================================= */
   const btn = document.getElementById('gramophone-btn');
   const gramStateEl = document.getElementById('gramStateText');
   const nowPlayingBar = document.getElementById('nowPlayingBar');
   const N = {
-    E3: 164.81, Fs3: 185.00, Gs3: 207.65, A3: 220.00, B3: 246.94, Cs4: 277.18, D4: 293.66, E4: 329.63,
-    Fs4: 369.99, Gs4: 415.30, A4: 440.00, B4: 493.88, Cs5: 554.37, D5: 587.33, E5: 659.25,
-    Fs5: 739.99, Gs5: 830.61, A5: 880.00
+    B2:123.47, C3:130.81, D3:146.83, E3:164.81, Fs3:185.00, G3:196.00, A3:220.00, B3:246.94,
+    C4:261.63, D4:293.66, Ds4:311.13, E4:329.63, Fs4:369.99, G4:392.00, A4:440.00, B4:493.88,
+    C5:523.25, Cs5:554.37, D5:587.33, Ds5:622.25, E5:659.25, Fs5:739.99, G5:783.99, A5:880.00, B5:987.77
   };
-  // Tiet tau Happy New Year (A major - am sac hop nhac celesta diu em): [melodyFreq, durSec, bassFreq?]
-  const b = 0.34;
+  const CH = {
+    G:   [N.G3, N.B3, N.D4],
+    B7:  [N.B2, N.Fs3, N.Ds4],
+    Em:  [N.E3, N.B3, N.E4],
+    C:   [N.C3, N.G3, N.E4],
+    D:   [N.D3, N.A3, N.Fs4],
+    DFs: [N.Fs3, N.A3, N.D4],
+    Am:  [N.A3, N.E4, N.C4]
+  };
+  // Tiet tau chuan Happy New Year - ABBA (Sol truong, Intro + Verse + Chorus + hoa am G-B7-Em-C-D)
+  const u = 0.36;
   const melody = [
-    // Intro arpeggio nhe nhang (A -> E)
-    [N.A4, b, N.A3], [N.Cs5, b], [N.E5, b], [N.A5, b * 1.5],
-    [N.E4, b, N.E3], [N.Gs4, b], [N.B4, b], [N.E5, b * 1.8],
-    // "Happy New Year, Happy New Year"
-    [N.E5, b, N.A3], [N.A5, b], [N.Gs5, b], [N.E5, b * 2.6],
-    [N.E5, b, N.E3], [N.A5, b], [N.Gs5, b], [N.E5, b * 2.6],
-    // "May we all have a vision now and then"
-    [N.D5, b, N.D4], [N.E5, b], [N.Fs5, b], [N.E5, b], [N.D5, b], [N.Cs5, b],
-    [N.B4, b * 1.6, N.B3], [N.Cs5, b], [N.D5, b], [N.B4, b * 2.4],
-    // "Of a world where every neighbour is a friend"
-    [N.E5, b, N.E3], [N.Fs5, b], [N.Gs5, b], [N.Fs5, b], [N.E5, b], [N.D5, b],
-    [N.Cs5, b * 1.8, N.A3], [N.B4, b], [N.A4, b * 2.8],
-    // "Happy New Year, Happy New Year"
-    [N.E5, b, N.A3], [N.A5, b], [N.Gs5, b], [N.E5, b * 2.6],
-    [N.E5, b, N.E3], [N.A5, b], [N.Gs5, b], [N.E5, b * 2.6],
-    // "May we all have our hopes, our will to try"
-    [N.D5, b, N.D4], [N.E5, b], [N.Fs5, b], [N.E5, b], [N.D5, b], [N.Cs5, b],
-    [N.B4, b * 1.6, N.B3], [N.Cs5, b], [N.D5, b], [N.E5, b * 2.4],
-    // "If we don't we might as well lay down and die"
-    [N.E5, b, N.E3], [N.Fs5, b], [N.Gs5, b], [N.A5, b], [N.Gs5, b], [N.Fs5, b],
-    [N.E5, b * 1.5, N.Fs3], [N.D5, b], [N.Cs5, b * 1.6, N.D4], [N.B4, b * 1.8, N.E3],
+    // Intro arpeggio
+    [N.G4, u, CH.G], [N.B4, u], [N.D5, u], [N.G5, u * 1.2], [N.D5, u], [N.B4, u], [N.G4, u * 1.2],
+    [N.Fs4, u, CH.B7], [N.A4, u], [N.B4, u], [N.Ds5, u * 1.2], [N.Fs5, u], [N.Ds5, u], [N.B4, u * 1.2],
+    [N.G4, u, CH.Em], [N.B4, u], [N.E5, u], [N.G5, u * 1.2], [N.E5, u], [N.B4, u], [N.G4, u * 1.2],
+    [N.G4, u, CH.C], [N.C5, u], [N.E5, u], [N.G5, u * 1.2], [N.Fs5, u, CH.D], [N.D5, u], [N.A4, u * 2.2],
+    // Verse: "No more champagne, and the fireworks are through..."
+    [N.B4, u * .8, CH.G], [N.C5, u * .8], [N.B4, u * .8], [N.A4, u * .8], [N.G4, u * 2.8],
+    [N.G4, u * .75, CH.G], [N.A4, u * .75], [N.B4, u * .75], [N.D5, u * .8], [N.G5, u], [N.B5, u, CH.B7], [N.Fs5, u * 3],
+    [N.Fs5, u * .8, CH.Em], [N.G5, u * .8], [N.E5, u * 1.5], [N.E5, u * .8], [N.Fs5, u * .8], [N.D5, u * 2.6],
+    [N.G5, u * .75, CH.C], [N.Fs5, u * .75], [N.Fs5, u * .75], [N.E5, u * .75], [N.E5, u * .75, CH.D], [N.D5, u * .75], [N.D5, u * 2.6],
+    // "It's the end of the party, and the morning seems so grey..."
+    [N.G4, u * .65, CH.G], [N.A4, u * .65], [N.B4, u * .9], [N.C5, u * .75], [N.B4, u * .75], [N.A4, u * .75], [N.G4, u * 2.6],
+    [N.G4, u * .75, CH.G], [N.A4, u * .75], [N.B4, u * .75], [N.D5, u * .8], [N.G5, u], [N.B5, u, CH.B7], [N.Fs5, u * 3],
+    [N.Fs5, u * .8, CH.Em], [N.G5, u * .8], [N.E5, u * 1.5], [N.E5, u * .8], [N.Fs5, u * .8], [N.D5, u * 2.6],
+    [N.G5, u * .75, CH.C], [N.Fs5, u * .75], [N.Fs5, u * .75], [N.E5, u * .75], [N.E5, u * .75, CH.D], [N.D5, u * .75], [N.D5, u * 2.8],
+    // Chorus: "Happy New Year, Happy New Year..."
+    [N.B4, u * .75, CH.G], [N.C5, u * .75], [N.D5, u * .75], [N.B5, u * 1.6], [N.B5, u * 2.4],
+    [N.B4, u * .75, CH.DFs], [N.C5, u * .75], [N.D5, u * .75], [N.A5, u * 1.6], [N.A5, u * 2.4],
+    [N.B4, u * .75, CH.B7], [N.Cs5, u * .75], [N.Ds5, u * .75], [N.G5, u, CH.Em], [N.Fs5, u * .75], [N.E5, u * .75], [N.Fs5, u * .75], [N.E5, u * .75], [N.D5, u, CH.D], [N.D5, u * 2.1],
+    [N.E5, u * .75, CH.C], [N.D5, u * .75], [N.D5, u * .75], [N.E5, u * .75], [N.D5, u * .75, CH.G], [N.C5, u * .75], [N.C5, u * .75], [N.B4, u * .75, CH.Am], [N.C5, u * .75], [N.D5, u * .75], [N.D5, u * .55, CH.D], [N.C5, u * .55], [N.B4, u * .55], [N.A4, u * 2.2],
+    [N.B4, u * .75, CH.G], [N.C5, u * .75], [N.D5, u * .75], [N.B5, u * 1.6], [N.B5, u * 2.4],
+    [N.B4, u * .75, CH.DFs], [N.C5, u * .75], [N.D5, u * .75], [N.A5, u * 1.6], [N.A5, u * 2.4],
+    [N.B4, u * .75, CH.B7], [N.Cs5, u * .75], [N.Ds5, u * .75], [N.G5, u, CH.Em], [N.Fs5, u * .75], [N.E5, u * .75], [N.Fs5, u * .75], [N.E5, u * .75], [N.D5, u, CH.D], [N.D5, u * 2.1],
+    [N.E5, u * .75, CH.C], [N.D5, u * .75], [N.D5, u * .75], [N.E5, u * .75], [N.D5, u * .75, CH.G], [N.C5, u * .75], [N.C5, u * .75], [N.B4, u * .75, CH.Am], [N.C5, u * .75], [N.D5, u * .75], [N.D5, u * .55, CH.D], [N.C5, u * .55], [N.B4, u * .55], [N.A4, u * 2.0],
     // "You and I..."
-    [N.Cs5, b * 1.8, N.A3], [N.B4, b * 1.8, N.E3], [N.A4, b * 4.2, N.A3]
+    [N.C5, u * 1.2, CH.C], [N.C5, u * .55], [N.B4, u * .55, CH.D], [N.A4, u * .9], [N.G4, u * 4.2, CH.G]
   ];
   let audioCtx = null, master = null, isPlaying = false, timerId = null, noteIndex = 0, nextNoteTime = 0;
   let userManuallyMuted = (localStorage.getItem('hse_bgm_pref') === 'off');
 
-  function playNote(freq, start, duration, bassFreq) {
+  function playNote(freq, start, duration, chord) {
     const osc1 = audioCtx.createOscillator(), osc2 = audioCtx.createOscillator();
     const g1 = audioCtx.createGain(), g2 = audioCtx.createGain();
     osc1.type = 'sine'; osc1.frequency.setValueAtTime(freq, start);
     osc2.type = 'triangle'; osc2.frequency.setValueAtTime(freq * 2, start);
     g1.gain.setValueAtTime(0.0008, start);
-    g1.gain.exponentialRampToValueAtTime(0.11, start + 0.025);
-    g1.gain.exponentialRampToValueAtTime(0.0001, start + duration + 0.75);
+    g1.gain.exponentialRampToValueAtTime(0.11, start + 0.022);
+    g1.gain.exponentialRampToValueAtTime(0.0001, start + duration + 0.85);
     g2.gain.setValueAtTime(0.0008, start);
-    g2.gain.exponentialRampToValueAtTime(0.026, start + 0.018);
+    g2.gain.exponentialRampToValueAtTime(0.025, start + 0.015);
     g2.gain.exponentialRampToValueAtTime(0.0001, start + duration * 0.55);
     osc1.connect(g1); osc2.connect(g2); g1.connect(master); g2.connect(master);
     osc1.start(start); osc2.start(start);
-    osc1.stop(start + duration + 0.8); osc2.stop(start + duration + 0.8);
+    osc1.stop(start + duration + 0.9); osc2.stop(start + duration + 0.9);
 
-    if (bassFreq) {
-      const ob = audioCtx.createOscillator(), gb = audioCtx.createGain();
-      ob.type = 'sine'; ob.frequency.setValueAtTime(bassFreq, start);
-      gb.gain.setValueAtTime(0.0008, start);
-      gb.gain.exponentialRampToValueAtTime(0.042, start + 0.04);
-      gb.gain.exponentialRampToValueAtTime(0.0001, start + duration * 3.2 + 0.6);
-      ob.connect(gb); gb.connect(master);
-      ob.start(start); ob.stop(start + duration * 3.2 + 0.65);
+    if (chord && chord.length) {
+      chord.forEach((cf, ci) => {
+        const oc = audioCtx.createOscillator(), gc = audioCtx.createGain();
+        oc.type = 'sine';
+        oc.frequency.setValueAtTime(cf, start + ci * 0.03);
+        gc.gain.setValueAtTime(0.0006, start + ci * 0.03);
+        gc.gain.exponentialRampToValueAtTime(ci === 0 ? 0.038 : 0.022, start + ci * 0.03 + 0.05);
+        gc.gain.exponentialRampToValueAtTime(0.0001, start + duration * 3.2 + 0.8);
+        oc.connect(gc); gc.connect(master);
+        oc.start(start + ci * 0.03); oc.stop(start + duration * 3.2 + 0.85);
+      });
     }
   }
 
   function scheduler() {
     if (!audioCtx || audioCtx.state !== 'running') return;
     while (nextNoteTime < audioCtx.currentTime + 12) {
-      const [freq, dur, bass] = melody[noteIndex];
-      playNote(freq, nextNoteTime, dur, bass);
+      const [freq, dur, chord] = melody[noteIndex];
+      playNote(freq, nextNoteTime, dur, chord);
       nextNoteTime += dur;
       if (++noteIndex >= melody.length) { noteIndex = 0; nextNoteTime += 1.4; }
     }
