@@ -1,7 +1,10 @@
 {
-    "updated_at":  "2026-11-23T23:37:06+07:00",
-    "total_items":  1136,
+    "updated_at":  "2026-11-23T23:58:03+07:00",
+    "total_items":  1138,
     "skus":  [
+                 "VN-BOLERO-NHUCANHC-563",
+                 "VN-BOLERO-LOIYEUCO-562",
+                 "VN-LEQUYEN-ACOUSTIC-561",
                  "VN-QVTH-DUONGVE-560",
                  "VN-QUYNH-VANGQA-559",
                  "VN-QUYNHANH-THANHTUNG-558",
@@ -76,7 +79,6 @@
                  "VN-NGOC-K-DAO-C-LP-NEW-OTHPURPLE",
                  "VN-NSND-N-LA-TR-LP-NEW-OTH",
                  "VN-BOLERO-VANGTOCR-69",
-                 "VN-BOLERO-VANGTOCR-71",
                  "VN-BOLERO-VUTHANHA-73",
                  "VN-BOLERO-SONATASX-74",
                  "VN-NHIEU-HANOI-LP-NEW-GER",
@@ -99,7 +101,6 @@
                  "VN-BOLERO-BOLERO4X-96",
                  "VN-BOLERO-BOLERO5X-97",
                  "VN-BOLERO-BOLERO6X-98",
-                 "VN-BOLERO-NHACXUAX-99",
                  "VN-BOLERO-NHACXUA2-100",
                  "VN-BOLERO-LYRUOUMU-101",
                  "VN-BOLERO-TINHCAXX-102",
@@ -535,6 +536,7 @@
                  "NN-HTD-534",
                  "NN-HTD-535",
                  "NN-HTD-536",
+                 "CD-VN-KIEPNAOC-1615",
                  "CD-GDA-LOICUTAV-1614",
                  "CD-GDA-LANGLETI-1613",
                  "CD-GDA-TINHKHUC-1612",
@@ -1140,17 +1142,18 @@
                  "CARE-SETUP-01"
              ],
     "collection_counts":  {
+                              "qua-tang-dia-than-cao-cap":  30,
                               "dia-than-nhac-vang-bolero":  36,
-                              "dia-than-nhac-tet":  36,
-                              "bo-suu-tap-quynh-anh-bk-production":  4,
-                              "dia-than-jazz-audiophile":  29,
-                              "may-hat-dia-than-cho-nguoi-moi":  20,
+                              "dia-than-nhac-trinh-cong-son":  36,
                               "dia-than-nhac-viet-tre":  36,
                               "dia-than-ngay-le":  31,
-                              "dia-than-nhac-trinh-cong-son":  36,
-                              "dia-than-tinh-khuc-1954-1975":  36,
-                              "dia-than-nhac-ha-noi-sai-gon":  36,
+                              "dia-than-nhac-tet":  36,
+                              "dia-than-jazz-audiophile":  29,
                               "dia-than-instrument-hoa-tau":  31,
-                              "qua-tang-dia-than-cao-cap":  30
+                              "dia-than-tinh-khuc-1954-1975":  36,
+                              "bo-suu-tap-quynh-anh-bk-production":  4,
+                              "may-hat-dia-than-cho-nguoi-moi":  20,
+                              "dia-than-studio-ghibli":  8,
+                              "dia-than-nhac-ha-noi-sai-gon":  36
                           }
 }

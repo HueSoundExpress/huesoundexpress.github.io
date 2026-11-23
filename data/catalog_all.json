@@ -1,5 +1,216 @@
 [
     {
+        "id":  563,
+        "sku":  "VN-BOLERO-NHUCANHC-563",
+        "slug":  "dia-than-vinyl-nguyen-tuan-anh-nhu-canh-chim-troi-563",
+        "legacy_slug":  "nguyen-tuan-anh-nhu-canh-chim-troi-563",
+        "category":  "vinyl",
+        "g":  "love_songs_1954_1975",
+        "genres":  [
+                       "love_songs_1954_1975"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "audiophile_reference",
+                     "refined_gifting"
+                 ],
+        "a":  "Nguyễn Tuấn Anh",
+        "t":  "Như Cánh Chim Trời",
+        "l":  "Tuấn Trinh",
+        "f":  "LP",
+        "w":  "180g",
+        "c":  "mint_sealed",
+        "y":  "2025",
+        "p":  1290000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "d":  "Đĩa than Nguyễn Tuấn Anh - Như Cánh Chim Trời (Vinyl LP 180g Audiophile Recording • Thu âm trực tiếp tại TVT Music Studio) - Đĩa than nhạc Việt Nam (Tình khúc 1954–1975 • Hãng Tuấn Trinh • Nhạc sĩ: Trịnh Công Sơn, Đoàn Chuẩn – Từ Linh, Phú Quang, Nguyễn Văn Tý, Ngô Thụy Miên) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "tracklist":  [
+                          "Như Cánh Chim Trời (Vĩnh Điện)",
+                          "Gửi Người Em Gái (Đoàn Chuẩn - Từ Linh)",
+                          "Mối Tình Đầu (Thế Duy)",
+                          "Hạ Trắng (Trịnh Công Sơn)",
+                          "Hà Nội Ngày Trở Về (Phú Quang)",
+                          "Dư Âm (Nguyễn Văn Tý)",
+                          "Mắt Biếc (Ngô Thụy Miên)",
+                          "Hướng Về Hà Nội (Hoàng Dương)"
+                      ],
+        "img":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/m1.jpg?v=1792685318580",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1350000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Nguyễn Tuấn Anh",
+                   "Như Cánh Chim Trời",
+                   "Tuấn Trinh",
+                   "Trịnh Công Sơn",
+                   "Ngô Thụy Miên",
+                   "Phú Quang",
+                   "Nhạc Tiền Chiến",
+                   "Nhạc Hà Nội",
+                   "Tình khúc 1954–1975",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Nhạc Xưa",
+                   "Tình Ca",
+                   "Như Cánh Chim Trời (Vĩnh Điện)",
+                   "Gửi Người Em Gái (Đoàn Chuẩn - Từ Linh)",
+                   "Mối Tình Đầu (Thế Duy)",
+                   "Hạ Trắng (Trịnh Công Sơn)",
+                   "Hà Nội Ngày Trở Về (Phú Quang)",
+                   "Dư Âm (Nguyễn Văn Tý)",
+                   "Mắt Biếc (Ngô Thụy Miên)",
+                   "Hướng Về Hà Nội (Hoàng Dương)"
+               ]
+    },
+    {
+        "id":  562,
+        "sku":  "VN-BOLERO-LOIYEUCO-562",
+        "slug":  "dia-than-vinyl-huong-lan-loi-yeu-cuoi-562",
+        "legacy_slug":  "huong-lan-loi-yeu-cuoi-562",
+        "category":  "vinyl",
+        "g":  "bolero_golden_oldies",
+        "genres":  [
+                       "bolero_golden_oldies"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "late_night_chill",
+                     "refined_gifting"
+                 ],
+        "a":  "Hương Lan",
+        "t":  "Lời Yêu Cuối",
+        "l":  "Tuấn Trinh",
+        "f":  "LP",
+        "w":  "180g",
+        "c":  "mint_sealed",
+        "y":  "2025",
+        "p":  1290000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "d":  "Đĩa than Hương Lan - Lời Yêu Cuối (Vinyl LP 180g Audiophile) - Đĩa than nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình • Hãng Tuấn Trinh Productions • Nhạc sĩ: Trúc Phương, Anh Việt Thu, Lê Dinh) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "tracklist":  [
+                          "Nỗi Buồn Gác Trọ",
+                          "Tàu Đêm Năm Cũ",
+                          "Lời Yêu Cuối",
+                          "Ru Nửa Vầng Trăng",
+                          "Kiếp Tha Hương",
+                          "Người Ngoài Phố",
+                          "Nếu Anh Đừng Hẹn",
+                          "Cảm Ơn Người"
+                      ],
+        "img":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/huong-lan-truoc.jpg?v=1786158677140",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1350000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Hương Lan",
+                   "Lời Yêu Cuối",
+                   "Tuấn Trinh",
+                   "Trúc Phương",
+                   "Trữ tình",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Bolero",
+                   "Nhạc Vàng",
+                   "Nhạc Trữ Tình",
+                   "Nỗi Buồn Gác Trọ",
+                   "Tàu Đêm Năm Cũ",
+                   "Ru Nửa Vầng Trăng",
+                   "Kiếp Tha Hương",
+                   "Người Ngoài Phố",
+                   "Nếu Anh Đừng Hẹn",
+                   "Cảm Ơn Người"
+               ]
+    },
+    {
+        "id":  561,
+        "sku":  "VN-LEQUYEN-ACOUSTIC-561",
+        "slug":  "dia-than-vinyl-le-quyen-acoustic-561",
+        "legacy_slug":  "le-quyen-acoustic-561",
+        "category":  "vinyl",
+        "g":  "vietnamese_pop_modern",
+        "genres":  [
+                       "vietnamese_pop_modern"
+                   ],
+        "mood":  [
+                     "late_night_chill",
+                     "morning_coffee_acoustic",
+                     "refined_gifting"
+                 ],
+        "a":  "Lệ Quyên",
+        "t":  "Acoustic",
+        "l":  "Other",
+        "f":  "LP",
+        "w":  "180g",
+        "c":  "mint_sealed",
+        "y":  "2025",
+        "p":  1290000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "d":  "Đĩa than Lệ Quyên - Acoustic (Vinyl LP 180g Limited Edition • Bản thu Live Sound nguyên bản) - Đĩa than nhạc Việt Nam (Nhạc Việt trẻ • Nhạc sĩ: Phú Quang, Võ Thiện Thanh, Thanh Tùng) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "tracklist":  [
+                          "Mãi Mãi Bên Em",
+                          "Nếu Xa Nhau",
+                          "Chân Tình",
+                          "Xa Rồi Tuổi Thơ",
+                          "Giấc Mơ Mùa Thu",
+                          "Mưa Ngâu",
+                          "Nỗi Nhớ Mùa Đông",
+                          "Tinh Khôi Một Ngày"
+                      ],
+        "img":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/54-mat-truoc-bia-album-dia-than-le-quyen-acoustic-180g-limited-edition-vinyl-lp-giang-nhac-xua-nhac-viet-giang-nhac-xua.jpg?v=1782031925110",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1350000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Lệ Quyên",
+                   "Acoustic",
+                   "Other",
+                   "Phú Quang",
+                   "Thanh Tùng",
+                   "Nhạc Mùa Thu",
+                   "Nhạc Việt trẻ",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Mãi Mãi Bên Em",
+                   "Nếu Xa Nhau",
+                   "Chân Tình",
+                   "Xa Rồi Tuổi Thơ",
+                   "Giấc Mơ Mùa Thu",
+                   "Mưa Ngâu",
+                   "Nỗi Nhớ Mùa Đông",
+                   "Tinh Khôi Một Ngày"
+               ]
+    },
+    {
         "id":  560,
         "sku":  "VN-QVTH-DUONGVE-560",
         "slug":  "dia-than-vinyl-quai-vat-ti-hon-duong-ve-black-apple-red-vinyl-2lp-560",
@@ -4046,18 +4257,16 @@
         "contact_only":  false,
         "d":  "Đĩa than Khánh Ly - Hà Nội nhớ (Vinyl LP) - Đĩa than nhạc Việt Nam (Tình khúc 1954–1975 • Hãng NĂM SAO • Nhạc sĩ: Trịnh Công Sơn, Phú Quang, Song Ngọc, Trần Quang Lộc, Trương Quý Hải) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  [
-                          "Nhớ Mùa Thu Hà Nội",
-                          "Có Phải Em Mùa Thu Hà Nội",
-                          "Đoạn Khúc Mùa Thu Hà Nội",
-                          "Hà Nội Mùa Vắng Những Cơn Mưa",
-                          "Nhớ Em Hà Nội",
-                          "Hà Nội Mùa Lá Bay",
-                          "Hà Nội Đêm Trở Gió",
-                          "Hướng Về Hà Nội",
-                          "Hà Nội Ngày Tháng Cũ",
-                          "Một Thoáng Tây Hồ"
+                          "Em Ơi Hà Nội Phố (Phú Quang)",
+                          "Hà Nội Đêm Mùa Đông (Hoàng Phúc Thắng)",
+                          "Hà Nội Mùa Vắng Những Cơn Mưa (Trương Quý Hải)",
+                          "Hà Nội Ngày Chia Xa (Hữu Xuân)",
+                          "Hướng Về Hà Nội (Hoàng Dương)",
+                          "Nhớ Mùa Thu Hà Nội (Trịnh Công Sơn)",
+                          "Nỗi Lòng Người Đi (Anh Bằng)",
+                          "Nỗi Nhớ Mùa Đông (Phú Quang)"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ff/ec/5c/ffec5c0f-fba8-4ae8-fc4f-f92afbfa0d3a/10232.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/14610885-1084175915031616-5023390426957532845-n.jpg?v=1782895900450",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/d8/b3/db/d8b3dbda-5ce0-3e95-a3ff-1dfffa891ecb/mzaf_2522994518464188005.plus.aac.p.m4a",
         "aud_track":  "Nhớ Mùa Thu Hà Nội",
         "missing_fields":  {
@@ -4074,6 +4283,7 @@
                    "NĂM SAO",
                    "Trịnh Công Sơn",
                    "Phú Quang",
+                   "Nhạc Tết \u0026 Mùa Xuân",
                    "Nhạc Hà Nội",
                    "Nhạc Mùa Thu",
                    "Tình khúc 1954–1975",
@@ -4083,14 +4293,14 @@
                    "Nơi bán đĩa nhạc uy tín",
                    "Nhạc Xưa",
                    "Tình Ca",
-                   "Nhớ Mùa Thu Hà Nội",
-                   "Có Phải Em Mùa Thu Hà Nội",
-                   "Đoạn Khúc Mùa Thu Hà Nội",
-                   "Hà Nội Mùa Vắng Những Cơn Mưa",
-                   "Nhớ Em Hà Nội",
-                   "Hà Nội Mùa Lá Bay",
-                   "Hà Nội Đêm Trở Gió",
-                   "Hướng Về Hà Nội"
+                   "Em Ơi Hà Nội Phố (Phú Quang)",
+                   "Hà Nội Đêm Mùa Đông (Hoàng Phúc Thắng)",
+                   "Hà Nội Mùa Vắng Những Cơn Mưa (Trương Quý Hải)",
+                   "Hà Nội Ngày Chia Xa (Hữu Xuân)",
+                   "Hướng Về Hà Nội (Hoàng Dương)",
+                   "Nhớ Mùa Thu Hà Nội (Trịnh Công Sơn)",
+                   "Nỗi Lòng Người Đi (Anh Bằng)",
+                   "Nỗi Nhớ Mùa Đông (Phú Quang)"
                ]
     },
     {
@@ -5057,74 +5267,6 @@
                            ],
         "cond":  "mint_sealed",
         "p_orig":  1250000,
-        "kw":  [
-                   "Analog Audio",
-                   "Đĩa than",
-                   "Vinyl LP",
-                   "Mai Anh Việt",
-                   "Vầng tóc rối",
-                   "Other",
-                   "Tình khúc 1954–1975",
-                   "Đĩa than Vinyl LP",
-                   "Đĩa than chính hãng",
-                   "Cửa hàng đĩa than Hue Sound Express",
-                   "Nơi bán đĩa nhạc uy tín",
-                   "Nhạc Xưa",
-                   "Tình Ca",
-                   "Nụ cười nào đó (Thiên Phượng)",
-                   "Anh xin làm (Tuấn Ngọc)",
-                   "Gió (Thái Thảo)",
-                   "Nhớ phút ấy (Thái Hiền)",
-                   "Tình yêu cho tôi (Mai Anh Việt)",
-                   "Tình yêu có khi.(Thiên Phượng)",
-                   "Vầng tóc rối .(Tuấn Ngọc)",
-                   "Tàn dư một đời . (Thái Hiền)"
-               ]
-    },
-    {
-        "id":  71,
-        "sku":  "VN-BOLERO-VANGTOCR-71",
-        "slug":  "dia-than-vinyl-mai-anh-viet-vang-toc-roi-71",
-        "legacy_slug":  "mai-anh-viet-vang-toc-roi-71",
-        "category":  "vinyl",
-        "g":  "love_songs_1954_1975",
-        "genres":  [
-                       "love_songs_1954_1975"
-                   ],
-        "mood":  "nostalgic_classic",
-        "a":  "Mai Anh Việt",
-        "t":  "Vầng tóc rối",
-        "l":  "Other",
-        "f":  "LP",
-        "w":  "180g",
-        "c":  "mint_sealed",
-        "y":  "",
-        "p":  1550000,
-        "s":  "in_stock",
-        "contact_only":  false,
-        "d":  "Đĩa than Mai Anh Việt - Vầng tóc rối (Vinyl LP) - Đĩa than nhạc Việt Nam (Tình khúc 1954–1975 • Ca sĩ: Tuấn Ngọc, Thái Hiền) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
-        "tracklist":  [
-                          "Nụ cười nào đó (Thiên Phượng)",
-                          "Anh xin làm (Tuấn Ngọc)",
-                          "Gió (Thái Thảo)",
-                          "Nhớ phút ấy (Thái Hiền)",
-                          "Tình yêu cho tôi (Mai Anh Việt)",
-                          "Tình yêu có khi.(Thiên Phượng)",
-                          "Vầng tóc rối .(Tuấn Ngọc)",
-                          "Tàn dư một đời . (Thái Hiền)",
-                          "Còn thưở nào (Thái Thảo)",
-                          "Khi tôi yêu em (Mai Anh Việt)"
-                      ],
-        "img":  "",
-        "aud":  "",
-        "aud_track":  "",
-        "missing_fields":  [
-                               "MISSING_COVER",
-                               "MISSING_AUDIO",
-                               "MISSING_YEAR"
-                           ],
-        "cond":  "mint_sealed",
-        "p_orig":  1600000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa than",
@@ -6644,75 +6786,6 @@
                    "Valses Nobles et Sentimentales, M. 61: Asses lent",
                    "Valses Nobles et Sentimentales, M. 61: Modéré",
                    "Valses Nobles et Sentimentales, M. 61: Assez animé"
-               ]
-    },
-    {
-        "id":  99,
-        "sku":  "VN-BOLERO-NHACXUAX-99",
-        "slug":  "dia-than-vinyl-nhieu-nghe-si-nhac-xua-99",
-        "legacy_slug":  "nhieu-ca-si-nhac-xua-99",
-        "category":  "vinyl",
-        "g":  "bolero_golden_oldies",
-        "genres":  [
-                       "bolero_golden_oldies"
-                   ],
-        "mood":  "nostalgic_classic",
-        "a":  "Nhiều nghệ sĩ",
-        "t":  "Nhạc Xưa",
-        "l":  "Trữ tình",
-        "f":  "LP",
-        "w":  "180g",
-        "c":  "mint_sealed",
-        "y":  "2020",
-        "p":  1150000,
-        "s":  "in_stock",
-        "contact_only":  false,
-        "d":  "Đĩa than Nhiều nghệ sĩ - Nhạc Xưa (Vinyl LP) - Đĩa than nhạc Việt Nam (Nhạc Bolero / Nhạc Vàng / Trữ tình • Hãng Trữ tình • Nhạc sĩ: Trịnh Công Sơn, Lam Phương, Lê Uyên Phương, Trần Thiện Thanh, Dương Thụ) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
-        "tracklist":  [
-                          "Liên Khúc Tình Khúc Cho Em - Về Đây Nghe Em",
-                          "Liên Khúc Tình Bơ Vơ - Nối Lại Tình Xưa",
-                          "Liên Khúc Lời Cuối Cho Em - Thương Nhau Ngày Mưa",
-                          "Liên Khúc Lâu Đài Tình Ái - Mùa Đông Của Anh",
-                          "Liên Khúc Một Mình - Một Mình",
-                          "Liên Khúc Hạ Trắng - Một Cõi Đi Về",
-                          "Liên Khúc Lạc Mất Mùa Xuân - Lắng Nghe Mùa Xuân Về"
-                      ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/e8/de/a8/e8dea84a-963f-2bff-8ea2-5383898576e4/886448470472.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dc/04/21/dc042166-4007-037c-234a-bd4310aac7bc/mzaf_1985282665212326205.plus.aac.p.m4a",
-        "aud_track":  "Liên Khúc Tình Khúc Cho Em - Về Đây Nghe Em",
-        "missing_fields":  {
-
-                           },
-        "cond":  "mint_sealed",
-        "p_orig":  1200000,
-        "kw":  [
-                   "Analog Audio",
-                   "Đĩa than",
-                   "Vinyl LP",
-                   "Nhiều nghệ sĩ",
-                   "Nhạc Xưa",
-                   "Trữ tình",
-                   "Trịnh Công Sơn",
-                   "Lam Phương",
-                   "Lê Uyên Phương",
-                   "Trần Thiện Thanh",
-                   "Dương Thụ",
-                   "Thanh Tùng",
-                   "Nhạc Tết \u0026 Mùa Xuân",
-                   "Đĩa than Vinyl LP",
-                   "Đĩa than chính hãng",
-                   "Cửa hàng đĩa than Hue Sound Express",
-                   "Nơi bán đĩa nhạc uy tín",
-                   "Bolero",
-                   "Nhạc Vàng",
-                   "Nhạc Trữ Tình",
-                   "Liên Khúc Tình Khúc Cho Em - Về Đây Nghe Em",
-                   "Liên Khúc Tình Bơ Vơ - Nối Lại Tình Xưa",
-                   "Liên Khúc Lời Cuối Cho Em - Thương Nhau Ngày Mưa",
-                   "Liên Khúc Lâu Đài Tình Ái - Mùa Đông Của Anh",
-                   "Liên Khúc Một Mình - Một Mình",
-                   "Liên Khúc Hạ Trắng - Một Cõi Đi Về",
-                   "Liên Khúc Lạc Mất Mùa Xuân - Lắng Nghe Mùa Xuân Về"
                ]
     },
     {
@@ -29486,7 +29559,7 @@
                  ],
         "a":  "Joe Hisaishi (Studio Ghibli)",
         "t":  "Dịch vụ giao hàng của phù thủy KiKi",
-        "l":  "Gia Định Audio",
+        "l":  "Studio Ghibli",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -29494,7 +29567,7 @@
         "p":  1390000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Dịch vụ giao hàng của phù thủy KiKi (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Gia Định Audio • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Dịch vụ giao hàng của phù thủy KiKi (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Studio Ghibli (phân phối Gia Định Audio) • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  {
 
                       },
@@ -29508,6 +29581,10 @@
                                "MISSING_YEAR"
                            ],
         "cond":  "mint_sealed",
+        "labels":  [
+                       "Studio Ghibli",
+                       "Gia Định Audio"
+                   ],
         "p_orig":  1450000,
         "kw":  [
                    "Analog Audio",
@@ -29515,7 +29592,7 @@
                    "Vinyl LP",
                    "Joe Hisaishi (Studio Ghibli)",
                    "Dịch vụ giao hàng của phù thủy KiKi",
-                   "Gia Định Audio",
+                   "Studio Ghibli",
                    "Joe Hisaishi",
                    "Nhạc Phim OST",
                    "Classic \u0026 OST",
@@ -29542,7 +29619,7 @@
                  ],
         "a":  "Joe Hisaishi (Studio Ghibli)",
         "t":  "Công chúa sói Mononoke",
-        "l":  "Gia Định Audio",
+        "l":  "Studio Ghibli",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -29550,7 +29627,7 @@
         "p":  1390000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Công chúa sói Mononoke (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Gia Định Audio • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Công chúa sói Mononoke (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Studio Ghibli (phân phối Gia Định Audio) • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  {
 
                       },
@@ -29564,6 +29641,10 @@
                                "MISSING_YEAR"
                            ],
         "cond":  "mint_sealed",
+        "labels":  [
+                       "Studio Ghibli",
+                       "Gia Định Audio"
+                   ],
         "p_orig":  1450000,
         "kw":  [
                    "Analog Audio",
@@ -29571,7 +29652,7 @@
                    "Vinyl LP",
                    "Joe Hisaishi (Studio Ghibli)",
                    "Công chúa sói Mononoke",
-                   "Gia Định Audio",
+                   "Studio Ghibli",
                    "Joe Hisaishi",
                    "Nhạc Phim OST",
                    "Classic \u0026 OST",
@@ -29598,7 +29679,7 @@
                  ],
         "a":  "Joe Hisaishi (Studio Ghibli)",
         "t":  "Lâu đài di động của Howl",
-        "l":  "Gia Định Audio",
+        "l":  "Studio Ghibli",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -29606,7 +29687,7 @@
         "p":  1390000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Lâu đài di động của Howl (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Gia Định Audio • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Lâu đài di động của Howl (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Studio Ghibli (phân phối Gia Định Audio) • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  {
 
                       },
@@ -29620,6 +29701,10 @@
                                "MISSING_YEAR"
                            ],
         "cond":  "mint_sealed",
+        "labels":  [
+                       "Studio Ghibli",
+                       "Gia Định Audio"
+                   ],
         "p_orig":  1450000,
         "kw":  [
                    "Analog Audio",
@@ -29627,7 +29712,7 @@
                    "Vinyl LP",
                    "Joe Hisaishi (Studio Ghibli)",
                    "Lâu đài di động của Howl",
-                   "Gia Định Audio",
+                   "Studio Ghibli",
                    "Joe Hisaishi",
                    "Nhạc Phim OST",
                    "Classic \u0026 OST",
@@ -29654,7 +29739,7 @@
                  ],
         "a":  "Joe Hisaishi (Studio Ghibli)",
         "t":  "Hàng xóm của tôi là Totoro TJJA10016",
-        "l":  "Gia Định Audio",
+        "l":  "Studio Ghibli",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -29662,7 +29747,7 @@
         "p":  1390000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Hàng xóm của tôi là Totoro TJJA10016 (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Gia Định Audio • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Hàng xóm của tôi là Totoro TJJA10016 (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Studio Ghibli (phân phối Gia Định Audio) • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  [
                           "Phố gió – phiên bản Acoustic",
                           "Mẹ",
@@ -29684,6 +29769,10 @@
                                "MISSING_YEAR"
                            ],
         "cond":  "mint_sealed",
+        "labels":  [
+                       "Studio Ghibli",
+                       "Gia Định Audio"
+                   ],
         "p_orig":  1450000,
         "kw":  [
                    "Analog Audio",
@@ -29691,7 +29780,7 @@
                    "Vinyl LP",
                    "Joe Hisaishi (Studio Ghibli)",
                    "Hàng xóm của tôi là Totoro TJJA10016",
-                   "Gia Định Audio",
+                   "Studio Ghibli",
                    "Joe Hisaishi",
                    "Acoustic",
                    "Nhạc Phim OST",
@@ -29795,7 +29884,7 @@
                  ],
         "a":  "Joe Hisaishi (Studio Ghibli)",
         "t":  "Chú heo màu đỏ",
-        "l":  "Gia Định Audio",
+        "l":  "Studio Ghibli",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -29803,7 +29892,7 @@
         "p":  1390000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Chú heo màu đỏ (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Gia Định Audio • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Chú heo màu đỏ (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Studio Ghibli (phân phối Gia Định Audio) • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  {
 
                       },
@@ -29817,6 +29906,10 @@
                                "MISSING_YEAR"
                            ],
         "cond":  "mint_sealed",
+        "labels":  [
+                       "Studio Ghibli",
+                       "Gia Định Audio"
+                   ],
         "p_orig":  1450000,
         "kw":  [
                    "Analog Audio",
@@ -29824,7 +29917,7 @@
                    "Vinyl LP",
                    "Joe Hisaishi (Studio Ghibli)",
                    "Chú heo màu đỏ",
-                   "Gia Định Audio",
+                   "Studio Ghibli",
                    "Joe Hisaishi",
                    "Nhạc Phim OST",
                    "Classic \u0026 OST",
@@ -29851,7 +29944,7 @@
                  ],
         "a":  "Joe Hisaishi (Studio Ghibli)",
         "t":  "Nàng công chúa ở thung lũng gió",
-        "l":  "Gia Định Audio",
+        "l":  "Studio Ghibli",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -29859,7 +29952,7 @@
         "p":  1390000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Nàng công chúa ở thung lũng gió (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Gia Định Audio • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Nàng công chúa ở thung lũng gió (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Studio Ghibli (phân phối Gia Định Audio) • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  {
 
                       },
@@ -29873,6 +29966,10 @@
                                "MISSING_YEAR"
                            ],
         "cond":  "mint_sealed",
+        "labels":  [
+                       "Studio Ghibli",
+                       "Gia Định Audio"
+                   ],
         "p_orig":  1450000,
         "kw":  [
                    "Analog Audio",
@@ -29880,7 +29977,7 @@
                    "Vinyl LP",
                    "Joe Hisaishi (Studio Ghibli)",
                    "Nàng công chúa ở thung lũng gió",
-                   "Gia Định Audio",
+                   "Studio Ghibli",
                    "Joe Hisaishi",
                    "Nhạc Phim OST",
                    "Classic \u0026 OST",
@@ -29907,7 +30004,7 @@
                  ],
         "a":  "Joe Hisaishi (Studio Ghibli)",
         "t":  "Lâu đài trên không",
-        "l":  "Gia Định Audio",
+        "l":  "Studio Ghibli",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -29915,7 +30012,7 @@
         "p":  1390000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Lâu đài trên không (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Gia Định Audio • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Lâu đài trên không (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Studio Ghibli (phân phối Gia Định Audio) • Nhạc sĩ: Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  {
 
                       },
@@ -29929,6 +30026,10 @@
                                "MISSING_YEAR"
                            ],
         "cond":  "mint_sealed",
+        "labels":  [
+                       "Studio Ghibli",
+                       "Gia Định Audio"
+                   ],
         "p_orig":  1450000,
         "kw":  [
                    "Analog Audio",
@@ -29936,7 +30037,7 @@
                    "Vinyl LP",
                    "Joe Hisaishi (Studio Ghibli)",
                    "Lâu đài trên không",
-                   "Gia Định Audio",
+                   "Studio Ghibli",
                    "Joe Hisaishi",
                    "Nhạc Phim OST",
                    "Classic \u0026 OST",
@@ -29963,7 +30064,7 @@
                  ],
         "a":  "Joe Hisaishi (Studio Ghibli)",
         "t":  "Vùng đất linh hồn",
-        "l":  "Gia Định Audio",
+        "l":  "Studio Ghibli",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
@@ -29971,7 +30072,7 @@
         "p":  1390000,
         "s":  "out_of_stock",
         "contact_only":  true,
-        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Vùng đất linh hồn (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Gia Định Audio • Nhạc sĩ: Văn Cao, Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Joe Hisaishi (Studio Ghibli) - Vùng đất linh hồn (Vinyl LP) - Đĩa than nhạc Quốc tế (Classic \u0026 Nhạc phim OST • Hãng Studio Ghibli (phân phối Gia Định Audio) • Nhạc sĩ: Văn Cao, Joe Hisaishi) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  [
                           "Một ngày mùa hè",
                           "Con đường đến nơi nào đó",
@@ -30004,6 +30105,10 @@
                                "MISSING_YEAR"
                            ],
         "cond":  "mint_sealed",
+        "labels":  [
+                       "Studio Ghibli",
+                       "Gia Định Audio"
+                   ],
         "p_orig":  1450000,
         "kw":  [
                    "Analog Audio",
@@ -30011,7 +30116,7 @@
                    "Vinyl LP",
                    "Joe Hisaishi (Studio Ghibli)",
                    "Vùng đất linh hồn",
-                   "Gia Định Audio",
+                   "Studio Ghibli",
                    "Nhạc Tiền Chiến",
                    "Joe Hisaishi",
                    "Nhạc Phim OST",
@@ -34294,6 +34399,73 @@
                    "All Shook Up",
                    "(Let Me Be Your) Teddy Bear",
                    "Jailhouse Rock"
+               ]
+    },
+    {
+        "id":  1615,
+        "sku":  "CD-VN-KIEPNAOC-1615",
+        "slug":  "dia-cd-nhieu-nghe-si-kiep-nao-co-yeu-nhau-1615",
+        "legacy_slug":  "",
+        "category":  "cd",
+        "g":  "love_songs_1954_1975",
+        "genres":  [
+                       "love_songs_1954_1975"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "late_night_chill"
+                 ],
+        "a":  "Nhiều nghệ sĩ",
+        "t":  "Kiếp Nào Có Yêu Nhau",
+        "l":  "Việt Nam",
+        "f":  "CD",
+        "c":  "mint_sealed",
+        "y":  "2024",
+        "p":  130000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "d":  "Đĩa CD Nhiều nghệ sĩ - Kiếp Nào Có Yêu Nhau - Đĩa CD nhạc Việt Nam (Tình khúc 1954–1975 • Nhạc sĩ: Trịnh Công Sơn, Phạm Duy, Ngô Thụy Miên, Cung Tiến, Văn Phụng, Phạm Thế Mỹ • Ca sĩ: Thái Hiền, Uyên Nguyên, Ngọc Quy, Diệu Hiền, Thiên Phượng, Ngọc Mai) - Cần mua đĩa than, đĩa CD chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "tracklist":  [
+                          "Hãy Khóc Đi Em (Trịnh Công Sơn) - Thái Hiền",
+                          "Yêu (Văn Phụng) - Uyên Nguyên",
+                          "Ngậm Ngùi (Phạm Duy) - Ngọc Quy",
+                          "Kiếp Nào Có Yêu Nhau (Phạm Duy) - Diệu Hiền",
+                          "Hãy Yêu Nhau Đi (Trịnh Công Sơn) - Thiên Phượng",
+                          "Giọt Nắng Hồng (Ngô Thụy Miên) - Uyên Nguyên",
+                          "Tóc Mây (Phạm Thế Mỹ) - Diệu Hiền",
+                          "Hương Xưa (Cung Tiến) - Ngọc Mai"
+                      ],
+        "img":  "https://www.saigonhd.com/Upload/Content/Phu-Kien/29012024162228_56.jpg",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+
+                           ],
+        "cond":  "mint_sealed",
+        "p_orig":  150000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa CD",
+                   "CD Nhạc Việt",
+                   "Nhiều nghệ sĩ",
+                   "Kiếp Nào Có Yêu Nhau",
+                   "Trịnh Công Sơn",
+                   "Phạm Duy",
+                   "Ngô Thụy Miên",
+                   "Tình khúc 1954–1975",
+                   "Đĩa CD chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Nhạc Xưa",
+                   "Tình Ca",
+                   "Hãy Khóc Đi Em (Trịnh Công Sơn) - Thái Hiền",
+                   "Yêu (Văn Phụng) - Uyên Nguyên",
+                   "Ngậm Ngùi (Phạm Duy) - Ngọc Quy",
+                   "Kiếp Nào Có Yêu Nhau (Phạm Duy) - Diệu Hiền",
+                   "Hãy Yêu Nhau Đi (Trịnh Công Sơn) - Thiên Phượng",
+                   "Giọt Nắng Hồng (Ngô Thụy Miên) - Uyên Nguyên",
+                   "Tóc Mây (Phạm Thế Mỹ) - Diệu Hiền",
+                   "Hương Xưa (Cung Tiến) - Ngọc Mai"
                ]
     },
     {

@@ -681,6 +681,10 @@ foreach ($it in $allItems) {
         $it | Add-Member -NotePropertyName 'combo_label' -NotePropertyValue 'Bộ sưu tập Quỳnh Anh (-8%)' -Force
         $it | Add-Member -NotePropertyName 'combo_slug' -NotePropertyValue 'bo-suu-tap-quynh-anh-bk-production' -Force
     }
+    if ($it.l -match '^(?i)studio ghibli$' -or $it.sku -match '^NN-GDA-') {
+        $it.l = "Studio Ghibli"
+        $it | Add-Member -NotePropertyName 'labels' -NotePropertyValue @("Studio Ghibli", "Gia Định Audio") -Force
+    }
     if ($it.PSObject.Properties['p_orig']) { $it.p_orig = $origP }
     else { $it | Add-Member -NotePropertyName 'p_orig' -NotePropertyValue $origP }
     $it.p = $saleP
@@ -713,6 +717,7 @@ $collectionMeta = @(
     @{ slug = "dia-than-ngay-le";              utm = "dia_than_ngay_le";              title = "Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới"; desc = "Bộ sưu tập đĩa than Giáng Sinh (Christmas / Noel), Hòa nhạc Năm Mới (Neujahrskonzert) và các ấn phẩm quà tặng dịp lễ hội tinh tế." },
     @{ slug = "dia-than-nhac-trinh-cong-son";  utm = "dia_than_nhac_trinh_cong_son";  title = "Đĩa Than & CD Nhạc Trịnh Công Sơn"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD nhạc Trịnh Công Sơn bất hủ qua các giọng ca Khánh Ly, Hồng Nhung, Lệ Thu, Cẩm Vân, Quang Dũng, Trần Mạnh Tuấn... với Diễm Xưa, Cát Bụi, Hạ Trắng, Biển Nhớ, Mưa Hồng, Tuổi Đá Buồn." },
     @{ slug = "bo-suu-tap-quynh-anh-bk-production"; utm = "bo_suu_tap_quynh_anh_bk_production"; title = "Bộ Sưu Tập Quỳnh Anh – BK Production (Giảm 8%)"; desc = "Trọn bộ sưu tập đĩa than (Vinyl LP) ca sĩ Quỳnh Anh do BK Production phát hành (Em ơi mùa xuân đến rồi đó, 19xx, Thanh Tùng, Vàng) – Ưu đãi giảm ngay 8% khi đặt Full Combo tại Hue Sound Express." },
+    @{ slug = "dia-than-studio-ghibli";        utm = "dia_than_studio_ghibli";        title = "Đĩa Than Hãng Studio Ghibli – Joe Hisaishi"; desc = "Bộ sưu tập đĩa than nhạc phim hoạt hình Studio Ghibli kinh điển của nhà soạn nhạc Joe Hisaishi (Totoro, Spirited Away, Howl's Moving Castle, Princess Mononoke, Kiki, Castle in the Sky...) – phân phối Gia Định Audio." },
     @{ slug = "dia-than-nhac-vang-bolero";     utm = "dia_than_nhac_vang_bolero";     title = "Đĩa Than Nhạc Vàng, Bolero & Trữ Tình"; desc = "Kho đĩa than & CD Nhạc Vàng, Bolero, Nhạc Trữ Tình tuyển chọn (Chế Linh, Thanh Tuyền, Duy Khánh, Tuấn Vũ, Hoàng Oanh, Như Quỳnh, Lệ Quyên...)." },
     @{ slug = "dia-than-tinh-khuc-1954-1975";  utm = "dia_than_tinh_khuc_1954_1975";  title = "Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến"; desc = "Tuyển tập Tình khúc 1954–1975 & Nhạc Tiền Chiến bất hủ của Phạm Duy, Trịnh Công Sơn, Ngô Thụy Miên, Vũ Thành An, Nguyễn Ánh 9, Từ Công Phụng..." },
     @{ slug = "dia-than-nhac-viet-tre";        utm = "dia_than_nhac_viet_tre";        title = "Đĩa Than Nhạc Việt Trẻ & Đương Đại"; desc = "Các ấn phẩm đĩa than Nhạc Việt trẻ hiện đại từ Mỹ Tâm, Hà Anh Tuấn, Quỳnh Anh, SOOBIN, AMEE, Văn Mai Hương, Gia Định Audio, Thời Đại..." },
@@ -1287,6 +1292,7 @@ if ($GenerateProductPages) {
         "dia-than-ngay-le"               = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(christmas|noel|giáng sinh|mùa sao sáng|neujahr|new year|holiday|winter|silent night)') }) }
         "dia-than-nhac-trinh-cong-son"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $($_.d) $(($_.tracklist) -join ' ')" -match '(?i)(trịnh công sơn|nhạc trịnh|diễm xưa|cát bụi|hạ trắng|biển nhớ|mưa hồng|tuổi đá buồn|một cõi đi về|ru em từng ngón xuân nồng|vết lăn trầm|bống là ai|xin mặt trời ngủ yên|phôi pha|nắng thủy tinh|đóa hoa vô thường|còn tuổi nào cho em|hoa vàng mấy độ|tiến thoái lưỡng nan|ru tình|chiều một mình qua phố|ngủ đi con|tình nhớ|ướt mi|gọi tên bốn mùa|quỳnh hương|sóng về đâu|lặng lẽ nơi này|ở trọ|em còn nhớ hay em đã quên|để gió cuốn đi|nhớ mùa thu hà nội|tôi ơi đừng tuyệt vọng|như cánh vạc bay|cuối cùng cho một tình yêu)') }) }
         "bo-suu-tap-quynh-anh-bk-production" = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and $_.a -match '(?i)quỳnh anh' -and $_.l -match '(?i)bk production' }) }
+        "dia-than-studio-ghibli"         = { param($list) @($list | Where-Object { $_.l -match '(?i)studio ghibli' -or $_.a -match '(?i)studio ghibli|joe hisaishi' }) }
         "dia-than-nhac-vang-bolero"      = { param($list) @($list | Where-Object { $_.g -eq 'bolero_golden_oldies' -or ($_.genres -contains 'bolero_golden_oldies') }) }
         "dia-than-tinh-khuc-1954-1975"   = { param($list) @($list | Where-Object { $_.g -eq 'love_songs_1954_1975' -or ($_.genres -contains 'love_songs_1954_1975') }) }
         "dia-than-nhac-viet-tre"         = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'vietnamese_pop_modern' -or ($_.genres -contains 'vietnamese_pop_modern')) }) }
@@ -1321,7 +1327,7 @@ if ($GenerateProductPages) {
         $cDescEsc  = Escape-Html $col.desc
 
         $matched = @(& $colSelectors[$col.slug] $colEligibleItems)
-        if ($matched.Count -lt 6 -and $col.slug -ne "bo-suu-tap-quynh-anh-bk-production") {
+        if ($matched.Count -lt 6 -and $col.slug -notin @("bo-suu-tap-quynh-anh-bk-production","dia-than-studio-ghibli")) {
             # Bo sung them cac dia than con hang tieu bieu (da loai tru Xuan Hao, To Nga & muc loai tru le hoi)
             $extra = @($vinylColFallback | Where-Object { ($matched.sku -notcontains $_.sku) -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) } | Select-Object -First (8 - $matched.Count))
             $matched = @($matched) + $extra
