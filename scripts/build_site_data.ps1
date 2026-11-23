@@ -329,7 +329,7 @@ function Format-LinkedDescription {
     foreach ($cp in $catPhrases) {
         [void]$cands.Add([PSCustomObject]@{ txt = $cp; url = $CatUrl; tip = "Xem danh mục" })
     }
-    $namedArtists = @("London Symphony Orchestra","Trịnh Công Sơn","Phạm Duy","Ngô Thụy Miên","Vũ Thành An","Lam Phương","Nguyễn Ánh 9","Từ Công Phụng","Lê Uyên Phương","Trúc Phương","Trần Thiện Thanh","Hoàng Thi Thơ","Phạm Đình Chương","Quốc Bảo","Bảo Chấn","Đức Huy","Đức Trí","Phú Quang","Trần Tiến","Dương Thụ","Thanh Tùng","Văn Cao","Dzoãn Mẫn","Dương Thiệu Tước","Nguyễn Văn Tý","Đỗ Bảo","Thành Nghiệp","Thân Sao Mai")
+    $namedArtists = @("London Symphony Orchestra","Trịnh Công Sơn","Phạm Duy","Ngô Thụy Miên","Vũ Thành An","Lam Phương","Nguyễn Ánh 9","Từ Công Phụng","Lê Uyên Phương","Trúc Phương","Trần Thiện Thanh","Hoàng Thi Thơ","Phạm Đình Chương","Quốc Bảo","Bảo Chấn","Đức Huy","Đức Trí","Phú Quang","Trần Tiến","Dương Thụ","Thanh Tùng","Văn Cao","Dzoãn Mẫn","Dương Thiệu Tước","Nguyễn Văn Tý","Đỗ Bảo","Thành Nghiệp","Thân Sao Mai","Thanh Lam","Hồng Nhung","Mỹ Linh","Bằng Kiều","Nguyên Thảo","Khánh Linh","Nguyễn Trần Minh Đức","Trần Thu Hà","Khánh Hà","Tuấn Ngọc","Thanh Tuyền","Hoàng Oanh","Chế Linh","Phương Dung","Trường Vũ","Như Quỳnh","Lân Nhã","Uyên Linh","Lê Hiếu","Quang Dũng","Trọng Bắc","Hoàng Yến Chibi","Thùy Chi","Quốc Thiên","Vũ Thắng Lợi","Khánh Ly","Lệ Thu","Thái Hiền","Elvis Phương","Duy Khánh","Hương Lan","Tuấn Vũ","Sơn Tuyền","Nhật Trường","Trần Thái Hòa","Thu Phương","Ngọc Hạ","Cẩm Vân","Văn Mai Hương","AMEE","Hoàng Dũng","Quỳnh Anh")
     foreach ($na in $namedArtists) {
         if ($DescText -match [regex]::Escape($na)) {
             $qUrl = "../../?cat=$CatParam&q=$([Uri]::EscapeDataString($na))"
@@ -627,7 +627,7 @@ foreach ($it in $allItems) {
     $it.slug = Get-CanonicalSlug -Category $it.category -Artist $it.a -Title $it.t -Id $it.id
 
     $lbl = ([string]$it.l).Trim()
-    if ($lbl -match '^(?i)thời đại$') { $lbl = "Hãng Đĩa Thời Đại" }
+    if ($lbl -match '^(?i)(hãng đĩa\s+)?thời đại$') { $lbl = "Thời Đại" }
     elseif ($lbl -match '^(?i)stockfish$') { $lbl = "Stockfisch Records" }
     elseif ($lbl -match '^(?i)bk production$') { $lbl = "BK Production" }
     elseif ($lbl -match '^(?i)viết tân audio$') { $lbl = "Viết Tân Studio" }
@@ -694,13 +694,14 @@ foreach ($rule in $catOrderRules) {
 }
 $allItems = $orderedItems
 
-# Dinh nghia 10 trang bo suu tap tinh (/bo-suu-tap/<slug>/)
+# Dinh nghia 11 trang bo suu tap tinh (/bo-suu-tap/<slug>/)
 $collectionMeta = @(
     @{ slug = "dia-than-nhac-tet";             utm = "dia_than_nhac_tet";             title = "Đĩa Than Nhạc Tết & Mùa Xuân – Analog Audio"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD chủ đề Mùa Xuân, Nhạc Tết, Ly Rượu Mừng và những giai điệu rộn ràng đón năm mới tại Hue Sound Express." },
     @{ slug = "dia-than-ngay-le";              utm = "dia_than_ngay_le";              title = "Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới"; desc = "Bộ sưu tập đĩa than Giáng Sinh (Christmas / Noel), Hòa nhạc Năm Mới (Neujahrskonzert) và các ấn phẩm quà tặng dịp lễ hội tinh tế." },
+    @{ slug = "dia-than-nhac-trinh-cong-son";  utm = "dia_than_nhac_trinh_cong_son";  title = "Đĩa Than & CD Nhạc Trịnh Công Sơn"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD nhạc Trịnh Công Sơn bất hủ qua các giọng ca Khánh Ly, Hồng Nhung, Lệ Thu, Cẩm Vân, Quang Dũng, Trần Mạnh Tuấn... với Diễm Xưa, Cát Bụi, Hạ Trắng, Biển Nhớ, Mưa Hồng, Tuổi Đá Buồn." },
     @{ slug = "dia-than-nhac-vang-bolero";     utm = "dia_than_nhac_vang_bolero";     title = "Đĩa Than Nhạc Vàng, Bolero & Trữ Tình"; desc = "Kho đĩa than & CD Nhạc Vàng, Bolero, Nhạc Trữ Tình tuyển chọn (Chế Linh, Thanh Tuyền, Duy Khánh, Tuấn Vũ, Hoàng Oanh, Như Quỳnh, Lệ Quyên...)." },
     @{ slug = "dia-than-tinh-khuc-1954-1975";  utm = "dia_than_tinh_khuc_1954_1975";  title = "Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến"; desc = "Tuyển tập Tình khúc 1954–1975 & Nhạc Tiền Chiến bất hủ của Phạm Duy, Trịnh Công Sơn, Ngô Thụy Miên, Vũ Thành An, Nguyễn Ánh 9, Từ Công Phụng..." },
-    @{ slug = "dia-than-nhac-viet-tre";        utm = "dia_than_nhac_viet_tre";        title = "Đĩa Than Nhạc Việt Trẻ & Đương Đại"; desc = "Các ấn phẩm đĩa than Nhạc Việt trẻ hiện đại từ Mỹ Tâm, Hà Anh Tuấn, Quỳnh Anh, SOOBIN, AMEE, Văn Mai Hương, Gia Định Audio, Hãng Đĩa Thời Đại..." },
+    @{ slug = "dia-than-nhac-viet-tre";        utm = "dia_than_nhac_viet_tre";        title = "Đĩa Than Nhạc Việt Trẻ & Đương Đại"; desc = "Các ấn phẩm đĩa than Nhạc Việt trẻ hiện đại từ Mỹ Tâm, Hà Anh Tuấn, Quỳnh Anh, SOOBIN, AMEE, Văn Mai Hương, Gia Định Audio, Thời Đại..." },
     @{ slug = "dia-than-instrument-hoa-tau";   utm = "dia_than_instrument_hoa_tau";   title = "Đĩa Than Instrument & Hòa Tấu Nhạc Cụ"; desc = "Đĩa than & CD hòa tấu nhạc cụ (Piano, Saxophone, Violin, Guitar, Nhạc cụ dân tộc): Viollage – Qinie, Piano Nguyễn Ánh 9, Đặng Thái Sơn, Trần Mạnh Tuấn, GS Trần Văn Khê." },
     @{ slug = "dia-than-jazz-audiophile";      utm = "dia_than_jazz_audiophile";      title = "Đĩa Than Jazz, Vocal & Audiophile Tham Chiếu"; desc = "Kho đĩa than Jazz, Vocal và Audiophile thu âm tham chiếu từ các hãng đĩa danh tiếng: Stockfisch Records, Blue Note, Verve, Venus Records..." },
     @{ slug = "may-hat-dia-than-cho-nguoi-moi";utm = "may_hat_dia_than_cho_nguoi_moi";title = "Máy Hát Đĩa Than (Turntable) Cho Người Mới Bắt Đầu"; desc = "Gợi ý các dòng máy hát đĩa than (Turntable) tích hợp Phono Preamp, dễ chơi, an toàn cho đĩa cùng phụ kiện cân chỉnh & vệ sinh từ Hue Sound Vinyl Care." },
@@ -1269,6 +1270,7 @@ if ($GenerateProductPages) {
     $colSelectors = @{
         "dia-than-nhac-tet"              = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(mùa xuân|tết|ly rượu mừng|chúc xuân|đón xuân|em ơi mùa xuân|xuân về|xuân muộn|ngày xuân)') }) }
         "dia-than-ngay-le"               = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(christmas|noel|giáng sinh|mùa sao sáng|neujahr|new year|holiday|winter|silent night)') }) }
+        "dia-than-nhac-trinh-cong-son"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $($_.d) $(($_.tracklist) -join ' ')" -match '(?i)(trịnh công sơn|nhạc trịnh|diễm xưa|cát bụi|hạ trắng|biển nhớ|mưa hồng|tuổi đá buồn|một cõi đi về|ru em từng ngón xuân nồng|vết lăn trầm|bống là ai|xin mặt trời ngủ yên|phôi pha|nắng thủy tinh|đóa hoa vô thường|còn tuổi nào cho em|hoa vàng mấy độ|tiến thoái lưỡng nan|ru tình|chiều một mình qua phố|ngủ đi con|tình nhớ|ướt mi|gọi tên bốn mùa|quỳnh hương|sóng về đâu|lặng lẽ nơi này|ở trọ|em còn nhớ hay em đã quên|để gió cuốn đi|nhớ mùa thu hà nội|tôi ơi đừng tuyệt vọng|như cánh vạc bay|cuối cùng cho một tình yêu)') }) }
         "dia-than-nhac-vang-bolero"      = { param($list) @($list | Where-Object { $_.g -eq 'bolero_golden_oldies' -or ($_.genres -contains 'bolero_golden_oldies') }) }
         "dia-than-tinh-khuc-1954-1975"   = { param($list) @($list | Where-Object { $_.g -eq 'love_songs_1954_1975' -or ($_.genres -contains 'love_songs_1954_1975') }) }
         "dia-than-nhac-viet-tre"         = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'vietnamese_pop_modern' -or ($_.genres -contains 'vietnamese_pop_modern')) }) }

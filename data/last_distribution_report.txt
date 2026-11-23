@@ -1,8 +1,9 @@
-=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP (2026-11-23 16:46) ===
+=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP (2026-11-23 21:04) ===
 Khong co SKU moi trong lan build nay (tong: 1138 san pham).
 Thong ke 10 bo suu tap:
   - dia-than-nhac-tet: 36 sp
   - dia-than-ngay-le: 31 sp
+  - dia-than-nhac-trinh-cong-son: 36 sp
   - dia-than-nhac-vang-bolero: 36 sp
   - dia-than-tinh-khuc-1954-1975: 36 sp
   - dia-than-nhac-viet-tre: 36 sp

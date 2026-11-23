@@ -18,6 +18,7 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 ## 3. Themed Collection Landing Pages (/bo-suu-tap/)
 - **Đĩa Than Nhạc Tết & Mùa Xuân – Analog Audio:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-tet/
 - **Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-ngay-le/
+- **Đĩa Than & CD Nhạc Trịnh Công Sơn:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-trinh-cong-son/
 - **Đĩa Than Nhạc Vàng, Bolero & Trữ Tình:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-vang-bolero/
 - **Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-tinh-khuc-1954-1975/
 - **Đĩa Than Nhạc Việt Trẻ & Đương Đại:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-viet-tre/
