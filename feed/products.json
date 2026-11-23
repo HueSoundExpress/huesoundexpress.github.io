@@ -3,7 +3,7 @@
     "store":  "Hue Sound Express",
     "care_service":  "Hue Sound Vinyl Care",
     "slogan":  "Where sound finds its color",
-    "updated_at":  "2026-11-23T21:34:54+07:00",
+    "updated_at":  "2026-11-23T23:36:40+07:00",
     "currency":  "VND",
     "vat_note":  "Giá báo chưa bao gồm thuế VAT 10%. Bảng báo giá không phải hóa đơn VAT.",
     "accessory_promo":  "* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn",
@@ -13,7 +13,7 @@
                     "whatsapp_url":  "https://wa.me/84932313918",
                     "website":  "https://huesoundexpress.github.io/"
                 },
-    "total_products":  1138,
+    "total_products":  1136,
     "collections":  [
                         {
                             "slug":  "dia-than-nhac-tet",
@@ -166,7 +166,7 @@
                      },
                      {
                          "id":  559,
-                         "sku":  "VN-BOLERO-VANGQA-559",
+                         "sku":  "VN-QUYNH-VANGQA-559",
                          "title":  "Vàng",
                          "seo_title":  "Đĩa than (Vinyl) Vàng – Quỳnh Anh",
                          "artist_or_brand":  "Quỳnh Anh",
@@ -221,7 +221,7 @@
                          "image_url":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/z7612504667629-8e74d561c7c66a884ad470f21ad496c0.jpg?v=1782702395253",
                          "audio_preview_url":  "",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Qu%E1%BB%B3nh%20Anh%20-%20V%C3%A0ng%20(SKU%3A%20VN-BOLERO-VANGQA-559%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C250%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-quynh-anh-vang-559%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Qu%E1%BB%B3nh%20Anh%20-%20V%C3%A0ng%20(SKU%3A%20VN-QUYNH-VANGQA-559%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C250%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-quynh-anh-vang-559%2F"
                      },
                      {
                          "id":  558,
@@ -332,58 +332,6 @@
                          "audio_preview_url":  "",
                          "zalo_url":  "https://zalo.me/0932313918",
                          "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20D%C6%B0%C6%A1ng%20Th%E1%BB%A5%20-%2080%20N%C4%83m%20M%E1%BB%99t%20Gi%E1%BA%A5c%20M%C6%A1%20(B%E1%BA%A3n%20c%C3%B3%20ch%E1%BB%AF%20k%C3%BD)%20(SKU%3A%20VN-DUONGTHU-80NAM-557%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%202%2C950%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-duong-thu-80-nam-mot-giac-mo-ban-co-chu-ky-557%2F"
-                     },
-                     {
-                         "id":  556,
-                         "sku":  "VN-BOLERO-NHUCHUAB-556",
-                         "title":  "Như Chưa Bắt Đầu",
-                         "seo_title":  "Đĩa than (Vinyl) Như Chưa Bắt Đầu – Đức Trí",
-                         "artist_or_brand":  "Đức Trí",
-                         "category":  "vinyl",
-                         "genre_code":  "vietnamese_pop_modern",
-                         "genre_vi":  "Nhạc Việt trẻ",
-                         "mood_codes":  [
-                                            "nostalgic_classic",
-                                            "refined_gifting"
-                                        ],
-                         "keywords":  [
-                                          "Analog Audio",
-                                          "Đĩa than",
-                                          "Vinyl LP",
-                                          "Đức Trí",
-                                          "Như Chưa Bắt Đầu",
-                                          "Gia Định Audio",
-                                          "Nhạc Việt trẻ",
-                                          "Đĩa than Vinyl LP",
-                                          "Đĩa than chính hãng",
-                                          "Cửa hàng đĩa than Hue Sound Express",
-                                          "Nơi bán đĩa nhạc uy tín",
-                                          "Lê Hiếu",
-                                          "VÀ EM ĐÃ YÊU",
-                                          "Nguyên Hà",
-                                          "NẾU NHƯ",
-                                          "Lân Nhã",
-                                          "CÓ NHAU TRỌN ĐỜI",
-                                          "Uyên Linh"
-                                      ],
-                         "label":  "Gia Định Audio",
-                         "format":  "LP",
-                         "year":  "",
-                         "condition_code":  "mint_sealed",
-                         "condition_vi":  "Mới 100% (M)",
-                         "condition_schema":  "https://schema.org/NewCondition",
-                         "availability":  "out_of_stock",
-                         "order_mode":  "waitlist",
-                         "list_price_vnd":  1200000,
-                         "sale_price_vnd":  1150000,
-                         "discount_vnd":  50000,
-                         "accessory_bundle_only":  false,
-                         "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
-                         "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-duc-tri-nhu-chua-bat-dau-556/",
-                         "image_url":  "https://www.saigonhd.com/Upload/Content/Phu-Kien/13032025165050_22.jpg",
-                         "audio_preview_url":  "",
-                         "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20%C4%90%E1%BB%A9c%20Tr%C3%AD%20-%20Nh%C6%B0%20Ch%C6%B0a%20B%E1%BA%AFt%20%C4%90%E1%BA%A7u%20(SKU%3A%20VN-BOLERO-NHUCHUAB-556%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-duc-tri-nhu-chua-bat-dau-556%2F"
                      },
                      {
                          "id":  555,
@@ -948,59 +896,6 @@
                          "audio_preview_url":  "",
                          "zalo_url":  "https://zalo.me/0932313918",
                          "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20T%C3%ACnh%20Kh%C3%BAc%20Tr%E1%BB%8Bnh%20C%C3%B4ng%20S%C6%A1n%20%E2%80%93%20Tu%E1%BB%95i%20%C4%90%C3%A1%20Bu%E1%BB%93n%20(SKU%3A%20VN-BOLERO-TINHKHUC-544%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C340%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-tinh-khuc-trinh-cong-son-tuoi-da-buon-544%2F"
-                     },
-                     {
-                         "id":  543,
-                         "sku":  "VN-BOLERO-TINHVANC-543",
-                         "title":  "Tình Vẫn Còn Xanh",
-                         "seo_title":  "Đĩa than (Vinyl) Tình Vẫn Còn Xanh – Thanh Hà",
-                         "artist_or_brand":  "Thanh Hà",
-                         "category":  "vinyl",
-                         "genre_code":  "vietnamese_pop_modern",
-                         "genre_vi":  "Nhạc Việt trẻ",
-                         "mood_codes":  [
-                                            "nostalgic_classic",
-                                            "morning_coffee_acoustic"
-                                        ],
-                         "keywords":  [
-                                          "Analog Audio",
-                                          "Đĩa than",
-                                          "Vinyl LP",
-                                          "Thanh Hà",
-                                          "Tình Vẫn Còn Xanh",
-                                          "Gia Định Audio",
-                                          "Nhạc Việt trẻ",
-                                          "Đĩa than Vinyl LP",
-                                          "Đĩa than chính hãng",
-                                          "Cửa hàng đĩa than Hue Sound Express",
-                                          "Nơi bán đĩa nhạc uy tín",
-                                          "Tình Xanh ( sáng tác Trần Quảng Nam)",
-                                          "Một Đời Tan Vỡ",
-                                          "Mưa Trên Biển Vắng",
-                                          "Lạnh Trọn Đêm Mưa",
-                                          "Chỉ Có Em",
-                                          "Sa Mạc Tình Yêu",
-                                          "Tôi Với Trời Bơ Vơ",
-                                          "Hỡi Người Tình"
-                                      ],
-                         "label":  "Gia Định Audio",
-                         "format":  "LP",
-                         "year":  "",
-                         "condition_code":  "mint_sealed",
-                         "condition_vi":  "Mới 100% (M)",
-                         "condition_schema":  "https://schema.org/NewCondition",
-                         "availability":  "out_of_stock",
-                         "order_mode":  "waitlist",
-                         "list_price_vnd":  1390000,
-                         "sale_price_vnd":  1340000,
-                         "discount_vnd":  50000,
-                         "accessory_bundle_only":  false,
-                         "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
-                         "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-thanh-ha-tinh-van-con-xanh-543/",
-                         "image_url":  "https://www.saigonhd.com/Upload/Content/Phu-Kien/19032025150345_69.jpg",
-                         "audio_preview_url":  "",
-                         "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Thanh%20H%C3%A0%20-%20T%C3%ACnh%20V%E1%BA%ABn%20C%C3%B2n%20Xanh%20(SKU%3A%20VN-BOLERO-TINHVANC-543%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C340%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-thanh-ha-tinh-van-con-xanh-543%2F"
                      },
                      {
                          "id":  542,
@@ -1966,7 +1861,7 @@
                      },
                      {
                          "id":  13,
-                         "sku":  "VN-BOLERO-LOICUTAV-13",
+                         "sku":  "VN-NHIEU-LOICUTAV-13",
                          "title":  "Lối cũ ta về [R]",
                          "seo_title":  "Đĩa than (Vinyl) Lối cũ ta về [R] – Nhiều nghệ sĩ",
                          "artist_or_brand":  "Nhiều nghệ sĩ",
@@ -2016,11 +1911,11 @@
                          "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z4465066894533-6caeae9089e682920a1d83356af2f4c3.jpg?v=1687775340973",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/80/2b/df/802bdf67-99f9-aaa6-801a-5c035009d91e/mzaf_5148950400201620.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20L%E1%BB%91i%20c%C5%A9%20ta%20v%E1%BB%81%20%5BR%5D%20(SKU%3A%20VN-BOLERO-LOICUTAV-13%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C930%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-loi-cu-ta-ve-r-13%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20L%E1%BB%91i%20c%C5%A9%20ta%20v%E1%BB%81%20%5BR%5D%20(SKU%3A%20VN-NHIEU-LOICUTAV-13%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C930%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-loi-cu-ta-ve-r-13%2F"
                      },
                      {
                          "id":  15,
-                         "sku":  "VN-BOLERO-NGUYENAN-15",
+                         "sku":  "VN-NHIEU-NGUYENAN-15",
                          "title":  "Nguyễn Ánh 9 [R]",
                          "seo_title":  "Đĩa than (Vinyl) Nguyễn Ánh 9 [R] – Nhiều nghệ sĩ",
                          "artist_or_brand":  "Nhiều nghệ sĩ",
@@ -2071,7 +1966,7 @@
                          "image_url":  "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/66/87/fb/6687fb48-df9f-60c8-794d-0708c409a81a/24UMGIM01347.rgb.jpg/600x600bb.jpg",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/92/9c/06/929c06da-898d-1846-6ae2-908758fb368a/mzaf_17592757455383443182.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20Nguy%E1%BB%85n%20%C3%81nh%209%20%5BR%5D%20(SKU%3A%20VN-BOLERO-NGUYENAN-15%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C930%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-nguyen-anh-9-r-15%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20Nguy%E1%BB%85n%20%C3%81nh%209%20%5BR%5D%20(SKU%3A%20VN-NHIEU-NGUYENAN-15%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C930%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-nguyen-anh-9-r-15%2F"
                      },
                      {
                          "id":  16,
@@ -2127,7 +2022,7 @@
                      },
                      {
                          "id":  17,
-                         "sku":  "VN-BOLERO-CHUYENHE-17",
+                         "sku":  "VN-NHIEU-CHUYENHE-17",
                          "title":  "Chuyện hẹn hò [R]",
                          "seo_title":  "Đĩa than (Vinyl) Chuyện hẹn hò [R] – Nhiều nghệ sĩ",
                          "artist_or_brand":  "Nhiều nghệ sĩ",
@@ -2175,7 +2070,7 @@
                          "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/7-jpeg-071ae869-36d9-4974-9a6b-1b3e2e1a384e.jpg?v=1623601728380",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/fd/f7/6e/fdf76e78-2420-de13-89de-1ef913685a3b/mzaf_14188348285516339272.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20Chuy%E1%BB%87n%20h%E1%BA%B9n%20h%C3%B2%20%5BR%5D%20(SKU%3A%20VN-BOLERO-CHUYENHE-17%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C290%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-chuyen-hen-ho-r-17%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20Chuy%E1%BB%87n%20h%E1%BA%B9n%20h%C3%B2%20%5BR%5D%20(SKU%3A%20VN-NHIEU-CHUYENHE-17%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C290%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-chuyen-hen-ho-r-17%2F"
                      },
                      {
                          "id":  18,
@@ -2236,7 +2131,7 @@
                      },
                      {
                          "id":  19,
-                         "sku":  "VN-BOLERO-MOTCHIEU-19",
+                         "sku":  "VN-NHIEU-MOTCHIEU-19",
                          "title":  "Một chiều thu",
                          "seo_title":  "Đĩa than (Vinyl) Một chiều thu – Nhiều nghệ sĩ",
                          "artist_or_brand":  "Nhiều nghệ sĩ",
@@ -2275,7 +2170,7 @@
                                       ],
                          "label":  "Gia Định Audio",
                          "format":  "LP",
-                         "year":  "",
+                         "year":  "2022",
                          "condition_code":  "mint_sealed",
                          "condition_vi":  "Mới 100% (M)",
                          "condition_schema":  "https://schema.org/NewCondition",
@@ -2288,16 +2183,16 @@
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
                          "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-mot-chieu-thu-19/",
                          "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/1-jpeg-16b6d4e7-26b3-4e5c-b00a-6af87d7b1e53.jpg?v=1644829954723",
-                         "audio_preview_url":  "",
+                         "audio_preview_url":  "https://www.youtube.com/watch?v=D6-mzxHqac0\u0026list=PLKWJu6pWgTFXXXUXFXC_bdB6Zbdcw_Kpy",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20M%E1%BB%99t%20chi%E1%BB%81u%20thu%20(SKU%3A%20VN-BOLERO-MOTCHIEU-19%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C290%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-mot-chieu-thu-19%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20M%E1%BB%99t%20chi%E1%BB%81u%20thu%20(SKU%3A%20VN-NHIEU-MOTCHIEU-19%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C290%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-mot-chieu-thu-19%2F"
                      },
                      {
                          "id":  20,
-                         "sku":  "VN-BOLERO-NOIYEUBE-20",
+                         "sku":  "VN-THUY-NOIYEUBE-20",
                          "title":  "Nỗi yêu bé dại",
-                         "seo_title":  "Đĩa than (Vinyl) Nỗi yêu bé dại – Nhiều nghệ sĩ",
-                         "artist_or_brand":  "Nhiều nghệ sĩ",
+                         "seo_title":  "Đĩa than (Vinyl) Nỗi yêu bé dại – Thùy Chi",
+                         "artist_or_brand":  "Thùy Chi",
                          "category":  "vinyl",
                          "genre_code":  "vietnamese_pop_modern",
                          "genre_vi":  "Nhạc Việt trẻ",
@@ -2306,7 +2201,7 @@
                                           "Analog Audio",
                                           "Đĩa than",
                                           "Vinyl LP",
-                                          "Nhiều nghệ sĩ",
+                                          "Thùy Chi",
                                           "Nỗi yêu bé dại",
                                           "Gia Định Audio",
                                           "Nhạc Việt trẻ",
@@ -2335,15 +2230,15 @@
                          "discount_vnd":  50000,
                          "accessory_bundle_only":  false,
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
-                         "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-noi-yeu-be-dai-20/",
+                         "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-thuy-chi-noi-yeu-be-dai-20/",
                          "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/z4465067668702-e09738bb23a5935a95c4c0244a29d9d8.jpg?v=1687775385907",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/2d/26/59/2d265961-d93f-9918-a4c9-bad1c8d612a5/mzaf_8014748646899498642.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20N%E1%BB%97i%20y%C3%AAu%20b%C3%A9%20d%E1%BA%A1i%20(SKU%3A%20VN-BOLERO-NOIYEUBE-20%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C250%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-noi-yeu-be-dai-20%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Th%C3%B9y%20Chi%20-%20N%E1%BB%97i%20y%C3%AAu%20b%C3%A9%20d%E1%BA%A1i%20(SKU%3A%20VN-THUY-NOIYEUBE-20%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C250%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-thuy-chi-noi-yeu-be-dai-20%2F"
                      },
                      {
                          "id":  21,
-                         "sku":  "VN-BOLERO-NHUCHUAB-21",
+                         "sku":  "VN-NHIEU-NHUCHUAB-21",
                          "title":  "Như chưa bắt đầu",
                          "seo_title":  "Đĩa than (Vinyl) Như chưa bắt đầu – Nhiều nghệ sĩ",
                          "artist_or_brand":  "Nhiều nghệ sĩ",
@@ -2388,11 +2283,11 @@
                          "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/1-optimized.png?v=1690704656010",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/b3/b2/19b3b2e9-a26c-7e0d-8dc1-5388cf79e8d6/mzaf_6592227165663901799.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20Nh%C6%B0%20ch%C6%B0a%20b%E1%BA%AFt%20%C4%91%E1%BA%A7u%20(SKU%3A%20VN-BOLERO-NHUCHUAB-21%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-nhu-chua-bat-dau-21%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20Nh%C6%B0%20ch%C6%B0a%20b%E1%BA%AFt%20%C4%91%E1%BA%A7u%20(SKU%3A%20VN-NHIEU-NHUCHUAB-21%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-nhu-chua-bat-dau-21%2F"
                      },
                      {
                          "id":  22,
-                         "sku":  "VN-BOLERO-CONMUAPH-22",
+                         "sku":  "VN-NHIEU-CONMUAPH-22",
                          "title":  "Cơn mưa phùn",
                          "seo_title":  "Đĩa than (Vinyl) Cơn mưa phùn – Nhiều nghệ sĩ",
                          "artist_or_brand":  "Nhiều nghệ sĩ",
@@ -2443,7 +2338,7 @@
                          "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/2-jpeg-eca3a4cc-a20f-4a02-8f60-48c0501c3cea.jpg?v=1644830376750",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c5/4c/87/c54c87db-b70b-0cf9-90a2-f69a262b8528/mzaf_14962902702077790735.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20C%C6%A1n%20m%C6%B0a%20ph%C3%B9n%20(SKU%3A%20VN-BOLERO-CONMUAPH-22%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-con-mua-phun-22%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20C%C6%A1n%20m%C6%B0a%20ph%C3%B9n%20(SKU%3A%20VN-NHIEU-CONMUAPH-22%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-con-mua-phun-22%2F"
                      },
                      {
                          "id":  24,
@@ -2491,7 +2386,7 @@
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
                          "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-thanh-ha-tinh-anh-con-xanh-24/",
                          "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/19-1-jpeg.jpg?v=1643165313937",
-                         "audio_preview_url":  "",
+                         "audio_preview_url":  "https://www.youtube.com/watch?v=c5utACyCOZI\u0026list=RDc5utACyCOZI\u0026start_radio=1",
                          "zalo_url":  "https://zalo.me/0932313918",
                          "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Thanh%20H%C3%A0%20-%20T%C3%ACnh%20anh%20c%C3%B2n%20xanh%20(SKU%3A%20VN-THANH-TINH-LP-NEW-GIA%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-thanh-ha-tinh-anh-con-xanh-24%2F"
                      },
@@ -2597,7 +2492,7 @@
                          "accessory_bundle_only":  false,
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
                          "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-ha-anh-tuan-truyen-ngan-r-28/",
-                         "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/20-1-jpeg.jpg?v=1623603437723",
+                         "image_url":  "https://assets.vinylsaigon.vn/9r9fcepzbv6bli3jelp9855f6zf4",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/1a/96/b01a9645-e260-bf32-31c4-206cb1a5c5f0/mzaf_4587414687924887309.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
                          "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20H%C3%A0%20Anh%20Tu%E1%BA%A5n%20-%20Truy%E1%BB%87n%20ng%E1%BA%AFn%20%5BR%5D%20(SKU%3A%20VN-HA-ANH-TRUYE-LP-NEW-OTH%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C250%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-ha-anh-tuan-truyen-ngan-r-28%2F"
@@ -2765,7 +2660,7 @@
                          "accessory_bundle_only":  false,
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
                          "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-vu-thang-loi-tinh-ca-31/",
-                         "image_url":  "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/f4/80/f6/f480f634-8adf-fceb-393c-190855fb880d/artwork.jpg/600x600bb.jpg",
+                         "image_url":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/screen-shot-2024-05-31-at-09-12-39.png?v=1717121705780",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6e/37/61/6e376156-1bc4-7f42-31bf-e059663bf0c5/mzaf_1410179850979590583.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
                          "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20V%C5%A9%20Th%E1%BA%AFng%20L%E1%BB%A3i%20-%20T%C3%ACnh%20ca%20(SKU%3A%20VN-VU-THA-TINH-LP-NEW-OTH%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-vu-thang-loi-tinh-ca-31%2F"
@@ -3095,7 +2990,7 @@
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
                          "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-hoai-phan-tren-nang-duoi-cat-41/",
                          "image_url":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/z7612504395289-7d3590618aa09cf6a80e0bf212ab7d5c.jpg?v=1773309951713",
-                         "audio_preview_url":  "",
+                         "audio_preview_url":  "https://youtu.be/iUO2l_bSilw?si=P_7CD_4IYEJlVxG3",
                          "zalo_url":  "https://zalo.me/0932313918",
                          "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Ho%C3%A0i%20Phan%20-%20Tr%C3%AAn%20n%E1%BA%AFng%20d%C6%B0%E1%BB%9Bi%20c%C3%A1t%20(SKU%3A%20VN-HOAI-P-TREN-LP-NEW-BK%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C250%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-hoai-phan-tren-nang-duoi-cat-41%2F"
                      },
@@ -3877,7 +3772,7 @@
                                           "Vinyl LP",
                                           "Phạm Thu Hà",
                                           "Đường em đi",
-                                          "Audio Space",
+                                          "Other",
                                           "Phạm Duy",
                                           "Nhạc Tiền Chiến",
                                           "Nhạc Mùa Thu",
@@ -3894,7 +3789,7 @@
                                           "Tiễn Em",
                                           "Còn Gì Nữa Đâu"
                                       ],
-                         "label":  "Audio Space",
+                         "label":  "Other",
                          "format":  "LP",
                          "year":  "",
                          "condition_code":  "mint_sealed",
@@ -3902,8 +3797,8 @@
                          "condition_schema":  "https://schema.org/NewCondition",
                          "availability":  "in_stock",
                          "order_mode":  "cart",
-                         "list_price_vnd":  1450000,
-                         "sale_price_vnd":  1390000,
+                         "list_price_vnd":  1350000,
+                         "sale_price_vnd":  1290000,
                          "discount_vnd":  60000,
                          "accessory_bundle_only":  false,
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
@@ -3911,7 +3806,7 @@
                          "image_url":  "https://bizweb.dktcdn.net/thumb/grande/100/419/077/products/794-dia-than-pham-thu-ha-duong-em-di-dfoq-1661389966817.jpg?v=1661390217900",
                          "audio_preview_url":  "",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Ph%E1%BA%A1m%20Thu%20H%C3%A0%20-%20%C4%90%C6%B0%E1%BB%9Dng%20em%20%C4%91i%20(SKU%3A%20VN-PHAM-T-DUONG-LP-NEW-OTH%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C390%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-pham-thu-ha-duong-em-di-57%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Ph%E1%BA%A1m%20Thu%20H%C3%A0%20-%20%C4%90%C6%B0%E1%BB%9Dng%20em%20%C4%91i%20(SKU%3A%20VN-PHAM-T-DUONG-LP-NEW-OTH%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C290%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-pham-thu-ha-duong-em-di-57%2F"
                      },
                      {
                          "id":  58,
@@ -4153,7 +4048,7 @@
                                       ],
                          "label":  "Other",
                          "format":  "LP",
-                         "year":  "",
+                         "year":  "2025",
                          "condition_code":  "mint_sealed",
                          "condition_vi":  "Mới 100% (M)",
                          "condition_schema":  "https://schema.org/NewCondition",
@@ -4166,7 +4061,7 @@
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
                          "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-ngoc-khue-purple-dao-choi-63/",
                          "image_url":  "https://cdn-images.dzcdn.net/images/cover/e8c25b1c49cb8badd92584bea883c3dd/500x500-000000-80-0-0.jpg",
-                         "audio_preview_url":  "",
+                         "audio_preview_url":  "https://cdnt-preview.dzcdn.net/api/1/1/f/e/a/0/fea7eda83bfeb8127928f82152480d80.mp3?hdnea=exp=1795130117~acl=/api/1/1/f/e/a/0/fea7eda83bfeb8127928f82152480d80.mp3*~data=user_id=0,application_id=42~hmac=2fdcdda82ae353f951c681b5020fa668b0925b1771f9e58ed28d15bd852a5baf",
                          "zalo_url":  "https://zalo.me/0932313918",
                          "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Ng%E1%BB%8Dc%20Khu%C3%AA%20%5Bpurple%5D%20-%20D%E1%BA%A1o%20ch%C6%A1i%20(SKU%3A%20VN-NGOC-K-DAO-C-LP-NEW-OTHPURPLE%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C750%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-ngoc-khue-purple-dao-choi-63%2F"
                      },
@@ -4208,7 +4103,7 @@
                                       ],
                          "label":  "Other",
                          "format":  "LP",
-                         "year":  "",
+                         "year":  "2025",
                          "condition_code":  "mint_sealed",
                          "condition_vi":  "Mới 100% (M)",
                          "condition_schema":  "https://schema.org/NewCondition",
@@ -4649,7 +4544,7 @@
                          "accessory_bundle_only":  false,
                          "url":  "=ai_agent\u0026utm_medium=shopping_feed\u0026utm_campaign=b2a_catalog",
                          "canonical_url":  "https://huesoundexpress.github.io/p/dia-than-vinyl-tieng-hat-viet-nam-dan-ca-82/",
-                         "image_url":  "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b8/63/83/b8638327-b802-201d-7c3d-d13eb27d8dca/0720825636313.jpg/600x600bb.jpg",
+                         "image_url":  "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ly4w7ihll4f5c3",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2b/11/ba/2b11babb-5775-d606-3658-ecfde925b540/mzaf_7957780335505734454.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
                          "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Ti%E1%BA%BFng%20H%C3%A1t%20Vi%E1%BB%87t%20Nam%20-%20d%C3%A2n%20ca%20(SKU%3A%20VN-TIENG-DAN-C-LP-MINT-JAP%20%7C%20NM%20%7C%20Gi%C3%A1%3A%202%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-tieng-hat-viet-nam-dan-ca-82%2F"
@@ -23306,7 +23201,7 @@
                      },
                      {
                          "id":  462,
-                         "sku":  "VN-BOLERO-NGANTHUA-462",
+                         "sku":  "VN-NHIEU-NGANTHUA-462",
                          "title":  "NGÀN THU ÁO TÍM",
                          "seo_title":  "Đĩa than (Vinyl) NGÀN THU ÁO TÍM – Nhiều nghệ sĩ",
                          "artist_or_brand":  "Nhiều nghệ sĩ",
@@ -23358,7 +23253,7 @@
                          "image_url":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/14.png?v=1643165602363",
                          "audio_preview_url":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/2d/28/132d28c6-1657-38f1-636f-975f030f8876/mzaf_16060553570223452559.plus.aac.p.m4a",
                          "zalo_url":  "https://zalo.me/0932313918",
-                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20NG%C3%80N%20THU%20%C3%81O%20T%C3%8DM%20(SKU%3A%20VN-BOLERO-NGANTHUA-462%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-ngan-thu-ao-tim-462%2F"
+                         "whatsapp_order_url":  "https://wa.me/84932313918?text=Ch%C3%A0o%20Hue%20Sound%20Express%2C%20m%C3%ACnh%20quan%20t%C3%A2m%3A%20%C4%90%C4%A9a%20than%20(Vinyl)%20Nhi%E1%BB%81u%20ngh%E1%BB%87%20s%C4%A9%20-%20NG%C3%80N%20THU%20%C3%81O%20T%C3%8DM%20(SKU%3A%20VN-NHIEU-NGANTHUA-462%20%7C%20M%E1%BB%9Bi%20100%25%20(M)%20%7C%20Gi%C3%A1%3A%201%2C150%2C000%20%C4%91).%20Link%3A%20https%3A%2F%2Fhuesoundexpress.github.io%2Fp%2Fdia-than-vinyl-nhieu-nghe-si-ngan-thu-ao-tim-462%2F"
                      },
                      {
                          "id":  463,

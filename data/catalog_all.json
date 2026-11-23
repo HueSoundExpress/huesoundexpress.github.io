@@ -75,7 +75,7 @@
     },
     {
         "id":  559,
-        "sku":  "VN-BOLERO-VANGQA-559",
+        "sku":  "VN-QUYNH-VANGQA-559",
         "slug":  "dia-than-vinyl-quynh-anh-vang-559",
         "legacy_slug":  "",
         "category":  "vinyl",
@@ -286,83 +286,6 @@
                    "Hát cho anh – Mỹ Linh",
                    "Bay vào ngày xanh – Nguyễn Trần Minh Đức",
                    "Lắng nghe mùa xuân về – Hồng Nhung \u0026 Bằng Kiều"
-               ]
-    },
-    {
-        "id":  556,
-        "sku":  "VN-BOLERO-NHUCHUAB-556",
-        "slug":  "dia-than-vinyl-duc-tri-nhu-chua-bat-dau-556",
-        "legacy_slug":  "",
-        "category":  "vinyl",
-        "g":  "vietnamese_pop_modern",
-        "genres":  [
-                       "vietnamese_pop_modern"
-                   ],
-        "mood":  [
-                     "nostalgic_classic",
-                     "refined_gifting"
-                 ],
-        "a":  "Đức Trí",
-        "t":  "Như Chưa Bắt Đầu",
-        "l":  "Gia Định Audio",
-        "f":  "LP",
-        "w":  "180g",
-        "c":  "mint_sealed",
-        "y":  "",
-        "p":  1150000,
-        "s":  "out_of_stock",
-        "contact_only":  false,
-        "d":  "Đĩa than Đức Trí - Như Chưa Bắt Đầu (Vinyl LP) - Đĩa than nhạc Việt Nam (Nhạc Việt trẻ • Hãng Gia Định Audio • Nhạc sĩ: Đức Trí) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
-        "tracklist":  [
-                          "NHƯ CHƯA BẮT ĐẦU",
-                          "Lê Hiếu",
-                          "VÀ EM ĐÃ YÊU",
-                          "Nguyên Hà",
-                          "NẾU NHƯ",
-                          "Lân Nhã",
-                          "CÓ NHAU TRỌN ĐỜI",
-                          "Uyên Linh",
-                          "GIẬN ANH",
-                          "Hà My",
-                          "ĐÊM NGHE TIẾNG MƯA",
-                          "Nguyên Hà",
-                          "TA CHẲNG CÒN AI",
-                          "Lê Hiếu",
-                          "ƯỚC MƠ TRONG ĐỜI",
-                          "Uyên Linh",
-                          "CÓ QUÊN ĐƯỢC ĐÂU",
-                          "Nguyên Hà",
-                          "NGỠ NHƯ",
-                          "Lân Nhã"
-                      ],
-        "img":  "https://www.saigonhd.com/Upload/Content/Phu-Kien/13032025165050_22.jpg",
-        "aud":  "",
-        "aud_track":  "",
-        "missing_fields":  [
-                               "MISSING_AUDIO",
-                               "MISSING_YEAR"
-                           ],
-        "cond":  "mint_sealed",
-        "p_orig":  1200000,
-        "kw":  [
-                   "Analog Audio",
-                   "Đĩa than",
-                   "Vinyl LP",
-                   "Đức Trí",
-                   "Như Chưa Bắt Đầu",
-                   "Gia Định Audio",
-                   "Nhạc Việt trẻ",
-                   "Đĩa than Vinyl LP",
-                   "Đĩa than chính hãng",
-                   "Cửa hàng đĩa than Hue Sound Express",
-                   "Nơi bán đĩa nhạc uy tín",
-                   "Lê Hiếu",
-                   "VÀ EM ĐÃ YÊU",
-                   "Nguyên Hà",
-                   "NẾU NHƯ",
-                   "Lân Nhã",
-                   "CÓ NHAU TRỌN ĐỜI",
-                   "Uyên Linh"
                ]
     },
     {
@@ -1066,73 +989,6 @@
                    "Tuổi đá buồn",
                    "Phôi pha",
                    "Chiều một mình qua phố"
-               ]
-    },
-    {
-        "id":  543,
-        "sku":  "VN-BOLERO-TINHVANC-543",
-        "slug":  "dia-than-vinyl-thanh-ha-tinh-van-con-xanh-543",
-        "legacy_slug":  "",
-        "category":  "vinyl",
-        "g":  "vietnamese_pop_modern",
-        "genres":  [
-                       "vietnamese_pop_modern"
-                   ],
-        "mood":  [
-                     "nostalgic_classic",
-                     "morning_coffee_acoustic"
-                 ],
-        "a":  "Thanh Hà",
-        "t":  "Tình Vẫn Còn Xanh",
-        "l":  "Gia Định Audio",
-        "f":  "LP",
-        "w":  "180g",
-        "c":  "mint_sealed",
-        "y":  "",
-        "p":  1340000,
-        "s":  "out_of_stock",
-        "contact_only":  false,
-        "d":  "Đĩa than Thanh Hà - Tình Vẫn Còn Xanh (Vinyl LP) - Đĩa than nhạc Việt Nam (Nhạc Việt trẻ • Hãng Gia Định Audio) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
-        "tracklist":  [
-                          "Tình Xanh ( sáng tác Trần Quảng Nam)",
-                          "Một Đời Tan Vỡ",
-                          "Mưa Trên Biển Vắng",
-                          "Lạnh Trọn Đêm Mưa",
-                          "Chỉ Có Em",
-                          "Sa Mạc Tình Yêu",
-                          "Tôi Với Trời Bơ Vơ",
-                          "Hỡi Người Tình",
-                          "Tình Khúc Tháng Sáu"
-                      ],
-        "img":  "https://www.saigonhd.com/Upload/Content/Phu-Kien/19032025150345_69.jpg",
-        "aud":  "",
-        "aud_track":  "",
-        "missing_fields":  [
-                               "MISSING_AUDIO",
-                               "MISSING_YEAR"
-                           ],
-        "cond":  "mint_sealed",
-        "p_orig":  1390000,
-        "kw":  [
-                   "Analog Audio",
-                   "Đĩa than",
-                   "Vinyl LP",
-                   "Thanh Hà",
-                   "Tình Vẫn Còn Xanh",
-                   "Gia Định Audio",
-                   "Nhạc Việt trẻ",
-                   "Đĩa than Vinyl LP",
-                   "Đĩa than chính hãng",
-                   "Cửa hàng đĩa than Hue Sound Express",
-                   "Nơi bán đĩa nhạc uy tín",
-                   "Tình Xanh ( sáng tác Trần Quảng Nam)",
-                   "Một Đời Tan Vỡ",
-                   "Mưa Trên Biển Vắng",
-                   "Lạnh Trọn Đêm Mưa",
-                   "Chỉ Có Em",
-                   "Sa Mạc Tình Yêu",
-                   "Tôi Với Trời Bơ Vơ",
-                   "Hỡi Người Tình"
                ]
     },
     {
@@ -2359,7 +2215,7 @@
     },
     {
         "id":  13,
-        "sku":  "VN-BOLERO-LOICUTAV-13",
+        "sku":  "VN-NHIEU-LOICUTAV-13",
         "slug":  "dia-than-vinyl-nhieu-nghe-si-loi-cu-ta-ve-r-13",
         "legacy_slug":  "nhieu-ca-si-loi-cu-ta-ve-r-13",
         "category":  "vinyl",
@@ -2426,7 +2282,7 @@
     },
     {
         "id":  15,
-        "sku":  "VN-BOLERO-NGUYENAN-15",
+        "sku":  "VN-NHIEU-NGUYENAN-15",
         "slug":  "dia-than-vinyl-nhieu-nghe-si-nguyen-anh-9-r-15",
         "legacy_slug":  "nhieu-ca-si-nguyen-anh-9-r-15",
         "category":  "vinyl",
@@ -2560,7 +2416,7 @@
     },
     {
         "id":  17,
-        "sku":  "VN-BOLERO-CHUYENHE-17",
+        "sku":  "VN-NHIEU-CHUYENHE-17",
         "slug":  "dia-than-vinyl-nhieu-nghe-si-chuyen-hen-ho-r-17",
         "legacy_slug":  "nhieu-ca-si-chuyen-hen-ho-r-17",
         "category":  "vinyl",
@@ -2694,7 +2550,7 @@
     },
     {
         "id":  19,
-        "sku":  "VN-BOLERO-MOTCHIEU-19",
+        "sku":  "VN-NHIEU-MOTCHIEU-19",
         "slug":  "dia-than-vinyl-nhieu-nghe-si-mot-chieu-thu-19",
         "legacy_slug":  "nhieu-ca-si-mot-chieu-thu-19",
         "category":  "vinyl",
@@ -2712,7 +2568,7 @@
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
-        "y":  "",
+        "y":  "2022",
         "p":  1290000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -2738,7 +2594,7 @@
                           "Sản xuất và phát hành: Công ty TNHH Gia Định Audio"
                       ],
         "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/1-jpeg-16b6d4e7-26b3-4e5c-b00a-6af87d7b1e53.jpg?v=1644829954723",
-        "aud":  "",
+        "aud":  "https://www.youtube.com/watch?v=D6-mzxHqac0\u0026list=PLKWJu6pWgTFXXXUXFXC_bdB6Zbdcw_Kpy",
         "aud_track":  "",
         "missing_fields":  [
                                "MISSING_AUDIO",
@@ -2775,8 +2631,8 @@
     },
     {
         "id":  20,
-        "sku":  "VN-BOLERO-NOIYEUBE-20",
-        "slug":  "dia-than-vinyl-nhieu-nghe-si-noi-yeu-be-dai-20",
+        "sku":  "VN-THUY-NOIYEUBE-20",
+        "slug":  "dia-than-vinyl-thuy-chi-noi-yeu-be-dai-20",
         "legacy_slug":  "nhieu-ca-si-noi-yeu-be-dai-20",
         "category":  "vinyl",
         "g":  "vietnamese_pop_modern",
@@ -2784,7 +2640,7 @@
                        "vietnamese_pop_modern"
                    ],
         "mood":  "nostalgic_classic",
-        "a":  "Nhiều nghệ sĩ",
+        "a":  "Thùy Chi",
         "t":  "Nỗi yêu bé dại",
         "l":  "Gia Định Audio",
         "f":  "LP",
@@ -2794,7 +2650,7 @@
         "p":  1250000,
         "s":  "in_stock",
         "contact_only":  false,
-        "d":  "Đĩa than Nhiều nghệ sĩ - Nỗi yêu bé dại (Vinyl LP) - Đĩa than nhạc Việt Nam (Nhạc Việt trẻ • Hãng Gia Định Audio) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
+        "d":  "Đĩa than Thùy Chi - Nỗi yêu bé dại (Vinyl LP) - Đĩa than nhạc Việt Nam (Nhạc Việt trẻ • Hãng Gia Định Audio) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
         "tracklist":  [
                           "Hoa Nắng Tôi",
                           "Lặng Lẽ Yêu",
@@ -2818,7 +2674,7 @@
                    "Analog Audio",
                    "Đĩa than",
                    "Vinyl LP",
-                   "Nhiều nghệ sĩ",
+                   "Thùy Chi",
                    "Nỗi yêu bé dại",
                    "Gia Định Audio",
                    "Nhạc Việt trẻ",
@@ -2837,7 +2693,7 @@
     },
     {
         "id":  21,
-        "sku":  "VN-BOLERO-NHUCHUAB-21",
+        "sku":  "VN-NHIEU-NHUCHUAB-21",
         "slug":  "dia-than-vinyl-nhieu-nghe-si-nhu-chua-bat-dau-21",
         "legacy_slug":  "nhieu-ca-si-nhu-chua-bat-dau-21",
         "category":  "vinyl",
@@ -2900,7 +2756,7 @@
     },
     {
         "id":  22,
-        "sku":  "VN-BOLERO-CONMUAPH-22",
+        "sku":  "VN-NHIEU-CONMUAPH-22",
         "slug":  "dia-than-vinyl-nhieu-nghe-si-con-mua-phun-22",
         "legacy_slug":  "nhieu-ca-si-con-mua-phun-22",
         "category":  "vinyl",
@@ -3000,7 +2856,7 @@
                           "Tình Khúc Tháng Sáu"
                       ],
         "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/19-1-jpeg.jpg?v=1643165313937",
-        "aud":  "",
+        "aud":  "https://www.youtube.com/watch?v=c5utACyCOZI\u0026list=RDc5utACyCOZI\u0026start_radio=1",
         "aud_track":  "",
         "missing_fields":  [
                                "MISSING_AUDIO",
@@ -3130,7 +2986,7 @@
                           "An",
                           "Ngày Chưa Giông Bão"
                       ],
-        "img":  "https://bizweb.dktcdn.net/thumb/large/100/425/674/products/20-1-jpeg.jpg?v=1623603437723",
+        "img":  "https://assets.vinylsaigon.vn/9r9fcepzbv6bli3jelp9855f6zf4",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/1a/96/b01a9645-e260-bf32-31c4-206cb1a5c5f0/mzaf_4587414687924887309.plus.aac.p.m4a",
         "aud_track":  "Có Chàng Trai Viết Lên Cây",
         "missing_fields":  {
@@ -3333,7 +3189,7 @@
                           "Hà Nội Niềm Tin Và Hy Vọng",
                           "Xanh Bạc Mái Đầu"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/f4/80/f6/f480f634-8adf-fceb-393c-190855fb880d/artwork.jpg/600x600bb.jpg",
+        "img":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/screen-shot-2024-05-31-at-09-12-39.png?v=1717121705780",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6e/37/61/6e376156-1bc4-7f42-31bf-e059663bf0c5/mzaf_1410179850979590583.plus.aac.p.m4a",
         "aud_track":  "Tình Ca",
         "missing_fields":  {
@@ -3729,7 +3585,7 @@
                           "Hà Tĩnh Mình Thương (An Thuyên)"
                       ],
         "img":  "https://bizweb.dktcdn.net/thumb/grande/100/261/552/products/z7612504395289-7d3590618aa09cf6a80e0bf212ab7d5c.jpg?v=1773309951713",
-        "aud":  "",
+        "aud":  "https://youtu.be/iUO2l_bSilw?si=P_7CD_4IYEJlVxG3",
         "aud_track":  "",
         "missing_fields":  "MISSING_AUDIO",
         "cond":  "mint_sealed",
@@ -4720,12 +4576,12 @@
                  ],
         "a":  "Phạm Thu Hà",
         "t":  "Đường em đi",
-        "l":  "Audio Space",
+        "l":  "Other",
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
         "y":  "",
-        "p":  1390000,
+        "p":  1290000,
         "s":  "in_stock",
         "contact_only":  false,
         "d":  "Đĩa than Phạm Thu Hà - Đường em đi (Vinyl LP 180g) - Đĩa than nhạc Việt Nam (Tuyệt phẩm nhạc Phạm Duy • Audio Space phát hành • Nhạc sĩ: Phạm Duy, Văn Cao) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín.",
@@ -4746,14 +4602,14 @@
 
                            },
         "cond":  "mint_sealed",
-        "p_orig":  1450000,
+        "p_orig":  1350000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa than",
                    "Vinyl LP",
                    "Phạm Thu Hà",
                    "Đường em đi",
-                   "Audio Space",
+                   "Other",
                    "Phạm Duy",
                    "Nhạc Tiền Chiến",
                    "Nhạc Mùa Thu",
@@ -5042,7 +4898,7 @@
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
-        "y":  "",
+        "y":  "2025",
         "p":  1750000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -5058,7 +4914,7 @@
                           "Bà tôi"
                       ],
         "img":  "https://cdn-images.dzcdn.net/images/cover/e8c25b1c49cb8badd92584bea883c3dd/500x500-000000-80-0-0.jpg",
-        "aud":  "",
+        "aud":  "https://cdnt-preview.dzcdn.net/api/1/1/f/e/a/0/fea7eda83bfeb8127928f82152480d80.mp3?hdnea=exp=1795130117~acl=/api/1/1/f/e/a/0/fea7eda83bfeb8127928f82152480d80.mp3*~data=user_id=0,application_id=42~hmac=2fdcdda82ae353f951c681b5020fa668b0925b1771f9e58ed28d15bd852a5baf",
         "aud_track":  "",
         "missing_fields":  [
                                "MISSING_AUDIO",
@@ -5109,7 +4965,7 @@
         "f":  "LP",
         "w":  "180g",
         "c":  "mint_sealed",
-        "y":  "",
+        "y":  "2025",
         "p":  1250000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -5680,7 +5536,7 @@
                           "Ve Mien Trung",
                           "Xuan Thi"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/b8/63/83/b8638327-b802-201d-7c3d-d13eb27d8dca/0720825636313.jpg/600x600bb.jpg",
+        "img":  "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ly4w7ihll4f5c3",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2b/11/ba/2b11babb-5775-d606-3658-ecfde925b540/mzaf_7957780335505734454.plus.aac.p.m4a",
         "aud_track":  "Bai Ca Trang",
         "missing_fields":  {
@@ -29856,7 +29712,7 @@
     },
     {
         "id":  462,
-        "sku":  "VN-BOLERO-NGANTHUA-462",
+        "sku":  "VN-NHIEU-NGANTHUA-462",
         "slug":  "dia-than-vinyl-nhieu-nghe-si-ngan-thu-ao-tim-462",
         "legacy_slug":  "nhieu-ca-si-ngan-thu-ao-tim-462",
         "category":  "vinyl",

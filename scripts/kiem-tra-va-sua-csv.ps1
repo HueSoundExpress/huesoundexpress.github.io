@@ -59,6 +59,24 @@ foreach ($csvPath in $csvTargets) {
             }
         }
 
+        # 1b. Tu dong lam sach dau ngoac kep thua / khoang trang / dau phay trong cac cot so (id, list_price, contact_only, year)
+        foreach ($numCol in @('id','list_price','contact_only','year')) {
+            if ($r.PSObject.Properties[$numCol] -and $r.$numCol) {
+                $rawNum = [string]$r.$numCol
+                $cleanNum = ($rawNum -replace '[^0-9]', '')
+                if ($rawNum -ne $cleanNum) {
+                    Write-Host "  [SO LOI DINH DANG] $csvPath | SKU=$($r.sku) | cot '$numCol': '$rawNum' => '$cleanNum'" -ForegroundColor Magenta
+                    if ($AutoFix) {
+                        $r.$numCol = $cleanNum
+                        $fileDirty = $true
+                        $totalFixed++
+                    } else {
+                        $totalWarnings++
+                    }
+                }
+            }
+        }
+
         # 2. Kiem tra & tu dong lam sach HTML rac trong title/artist/brand/label/description/tracklist
         foreach ($col in @('title','artist','brand','label','description','tracklist')) {
             if ($r.PSObject.Properties[$col] -and $r.$col) {

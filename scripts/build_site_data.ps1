@@ -478,10 +478,18 @@ if (Test-Path "scripts\normalize_media_names.ps1") {
 $allItems = New-Object System.Collections.ArrayList
 $usedSkus = New-Object 'System.Collections.Generic.HashSet[string]'
 
+function Parse-SafeInt {
+    param([string]$Val)
+    if ([string]::IsNullOrWhiteSpace($Val)) { return 0 }
+    $digits = ($Val -replace '[^0-9]', '')
+    if ([string]::IsNullOrEmpty($digits)) { return 0 }
+    return [int]$digits
+}
+
 # 1. NAP DIA THAN (VINYL)
 foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
-    if (-not $r.id) { continue }
-    $idNum = [int]$r.id
+    $idNum = Parse-SafeInt ([string]$r.id)
+    if ($idNum -le 0) { continue }
     $tracks = if ($r.tracklist) { @($r.tracklist -split '\s*\|\s*' | Where-Object { $_ }) } else { @() }
     $missing = if ($r.missing_fields) { @($r.missing_fields -split '\s*;\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
@@ -505,7 +513,7 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
         w              = $vinylWeight
         c              = [string]$r.edition
         y              = [string]$r.year
-        p              = if ($r.list_price) { [int]$r.list_price } else { 0 }
+        p              = Parse-SafeInt ([string]$r.list_price)
         s              = [string]$r.status
         contact_only   = $isContact
         d              = [string]$r.description
@@ -520,7 +528,7 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
 # 2. NAP DIA CD / SACD
 foreach ($r in (Load-CsvOrUrl $CdCsv)) {
     if (-not $r.sku) { continue }
-    $idNum = [int]$r.id
+    $idNum = Parse-SafeInt ([string]$r.id)
     $tracks = if ($r.tracklist) { @($r.tracklist -split '\s*\|\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
     $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
@@ -541,7 +549,7 @@ foreach ($r in (Load-CsvOrUrl $CdCsv)) {
         f              = [string]$r.format
         c              = [string]$r.edition
         y              = [string]$r.year
-        p              = if ($r.list_price) { [int]$r.list_price } else { 0 }
+        p              = Parse-SafeInt ([string]$r.list_price)
         s              = [string]$r.status
         contact_only   = $isContact
         d              = [string]$r.description
@@ -556,7 +564,7 @@ foreach ($r in (Load-CsvOrUrl $CdCsv)) {
 # 3. NAP MAY HAT / MAM THAN
 foreach ($r in (Load-CsvOrUrl $TurntableCsv)) {
     if (-not $r.sku) { continue }
-    $idNum = [int]$r.id
+    $idNum = Parse-SafeInt ([string]$r.id)
     $specs = if ($r.specs_summary) { @($r.specs_summary -split '\s*;\s*' | Where-Object { $_ }) } else { @() }
     $recSkus = if ($r.recommended_skus) { @($r.recommended_skus -split '\s*;\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
@@ -590,7 +598,7 @@ foreach ($r in (Load-CsvOrUrl $TurntableCsv)) {
 # 4. NAP PHU KIEN & HUE SOUND VINYL CARE
 foreach ($r in (Load-CsvOrUrl $AccessoryCsv)) {
     if (-not $r.sku) { continue }
-    $idNum = [int]$r.id
+    $idNum = Parse-SafeInt ([string]$r.id)
     $cat = if ($r.category) { ([string]$r.category).Trim().ToLowerInvariant() } else { "accessory" }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
     $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true" -or $r.contact_only -eq "2"))
@@ -668,7 +676,7 @@ foreach ($it in $allItems) {
             $it | Add-Member -NotePropertyName 'promo_note' -NotePropertyValue 'Ưu đãi tháng 11: giảm 100k (từ 01/12 giảm 50k)' -Force
         }
     }
-    if ($it.sku -in @("VN-QUYNHANH-THANHTUNG-558","VN-BOLERO-VANGQA-559")) {
+    if ($it.category -eq "vinyl" -and $it.id -in @(558, 559)) {
         $it | Add-Member -NotePropertyName 'combo_note_prefix' -NotePropertyValue 'Chỉ bán cùng full combo' -Force
         $it | Add-Member -NotePropertyName 'combo_label' -NotePropertyValue 'Bộ sưu tập Quỳnh Anh (-8%)' -Force
         $it | Add-Member -NotePropertyName 'combo_slug' -NotePropertyValue 'bo-suu-tap-quynh-anh-bk-production' -Force
