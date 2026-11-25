@@ -748,8 +748,15 @@ body.player-open .fab-scroll-bubble { bottom: 4.5rem; }
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 .card-bottom {
-  display: flex; justify-content: space-between; align-items: flex-end; gap: .45rem;
+  display: flex; flex-direction: column; gap: .38rem;
   margin-top: .65rem; padding-top: .55rem; border-top: 1px solid rgba(181, 84, 31, .14);
+}
+.card-price-row {
+  display: flex; justify-content: space-between; align-items: flex-end; gap: .45rem; width: 100%;
+}
+.card-notes-row {
+  display: flex; flex-direction: column; gap: 2px; width: 100%;
+  padding-top: .3rem; border-top: 1px dashed rgba(181, 84, 31, .18);
 }
 .price-wrap { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .price-head-row { display: inline-flex; align-items: center; gap: 4px; flex-wrap: nowrap; line-height: 1.15; }
@@ -758,7 +765,7 @@ body.player-open .fab-scroll-bubble { bottom: 4.5rem; }
 .price-save { font-size: 9px; font-weight: 700; color: #FFF7E8; background: var(--copper); padding: 1px 5px; border-radius: 99px; white-space: nowrap; }
 .price-val { font-size: .98rem; font-weight: 800; color: var(--copper); line-height: 1.18; }
 
-.card-actions { display: flex; gap: .4rem; flex-wrap: wrap; justify-content: flex-end; }
+.card-actions { display: flex; gap: .36rem; flex-wrap: nowrap; flex-shrink: 0; justify-content: flex-end; align-items: center; }
 .btn {
   border: none; border-radius: 8px; padding: .48rem .72rem;
   font-size: .74rem; font-weight: 600; cursor: pointer;
@@ -1438,7 +1445,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tabAccessory: 'Phụ kiện và dịch vụ', tabGuide: 'Cẩm nang & Giao vận',
       promoMarquee: '🚚 KHUYẾN MÃI!!! Nhanh tay chốt đơn với giá ưu đãi cho 10 đơn hàng đầu tiên (còn 3 đơn)',
       accPromoNote: '* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn',
-      btnContactOrder: '💬 Liên hệ đặt hàng', btnShare: '📤 Chia sẻ',
+      btnContactOrder: '🔔 Liên hệ', btnShare: '📤 Chia sẻ',
       toastShared: '✓ Đã sao chép link sản phẩm để chia sẻ!',
       cartBundleApplied: '✓ Đã áp dụng giá ưu đãi phụ kiện khi mua cùng đĩa than / mâm than.',
       cartBundleNeed: '* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn (hiện đang tính theo giá gốc).',
@@ -1589,7 +1596,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       tabAccessory: 'Accessories & Vinyl Care', tabGuide: 'FAQs and Shipping',
       promoMarquee: '🚚 PROMO!!! Hurry — grab discounted prices for the first 10 orders (3 left)',
       accPromoNote: '* Accessory discount when purchased with a Vinyl LP / Turntable — inbox us for consultation',
-      btnContactOrder: '💬 Contact to Order', btnShare: '📤 Share',
+      btnContactOrder: '🔔 Contact', btnShare: '📤 Share',
       toastShared: '✓ Product link copied to share!',
       cartBundleApplied: '✓ Accessory bundle discount applied (paired with Vinyl / Turntable).',
       cartBundleNeed: '* Accessory discount when purchased with a Vinyl LP / Turntable — inbox us for consultation (regular price currently applied).',
@@ -1973,6 +1980,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       labels: (Array.isArray(item.labels) && item.labels.length > 0) ? item.labels : (lbl ? [lbl] : []),
       f: String(item.f || ''),
       w: String(item.w || ''),
+      vc: String(item.vc || ''),
       c: rawCond,
       cond: cond,
       y: String(item.y || ''),
@@ -1987,6 +1995,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       s: st,
       contact_only: Boolean(item.contact_only),
       force_contact: Boolean(item.force_contact || item.contact_only === 2 || item.contact_only === '2'),
+      pin_in_stock_bottom: Boolean(item.pin_in_stock_bottom),
       d: String(item.d || ''),
       img: String(item.img || ''),
       aud: String(item.aud || ''),
@@ -2596,28 +2605,32 @@ footer a { color: var(--copper-dark); font-weight: 600; }
               </div>
               <div class="card-title" onclick="openDetail('${skuEsc}')">${escHtml(item.t)}</div>
               <div class="card-artist clickable" title="${clickHint}: ${escHtml(item.a)}" onclick="quickFilterBySku('${skuEsc}','artist')">${escHtml(item.a)}</div>
-              <div class="card-meta">${escHtml(item.f)}${item.w ? ' • ' + escHtml(item.w) : ''}${item.l ? ` • <span class="meta-link" title="${clickHint}: ${escHtml(item.l)}" onclick="quickFilterBySku('${skuEsc}','label')">${escHtml(item.l)}</span>` : ''}${item.y ? ' • ' + escHtml(item.y) : ''}</div>
+              <div class="card-meta">${escHtml(item.f)}${item.w ? ' • ' + escHtml(item.w) : ''}${item.vc ? ' • Phôi: ' + escHtml(item.vc) : ''}${item.l ? ` • <span class="meta-link" title="${clickHint}: ${escHtml(item.l)}" onclick="quickFilterBySku('${skuEsc}','label')">${escHtml(item.l)}</span>` : ''}${item.y ? ' • ' + escHtml(item.y) : ''}</div>
             </div>
           </div>
           <div class="card-desc">${escHtml(item.d)}</div>
         </div>
         <div class="card-bottom">
-          <div class="price-wrap">
-            <div class="price-head-row">
-              <span class="price-lbl">${L.priceLbl}</span>
-              ${(item.p > 0 && item.p_orig > item.p)
-                ? `<span class="price-old">${formatVnd(item.p_orig)}</span><span class="price-save">-${Math.round((item.p_orig - item.p)/1000)}k</span>`
-                : ''}
+          <div class="card-price-row">
+            <div class="price-wrap">
+              <div class="price-head-row">
+                <span class="price-lbl">${L.priceLbl}</span>
+                ${(item.p > 0 && item.p_orig > item.p)
+                  ? `<span class="price-old">${formatVnd(item.p_orig)}</span><span class="price-save">-${Math.round((item.p_orig - item.p)/1000)}k</span>`
+                  : ''}
+              </div>
+              <span class="price-val">${formatVnd(item.p)}</span>
             </div>
-            <span class="price-val">${formatVnd(item.p)}</span>
+            <div class="card-actions">
+              ${hasAudio ? `<button class="btn btn-listen" type="button" onclick="toggleSample(this, '${skuEsc}')">${L.btnPlay}</button>` : ''}
+              ${actionBtnHtml}
+            </div>
+          </div>
+          ${(item.combo_slug || item.promo_note || isAccBundle) ? `<div class="card-notes-row">
             ${item.combo_slug ? `<span class="acc-card-note">🎁 ${escHtml(item.combo_note_prefix)} <a href="bo-suu-tap/${escHtml(item.combo_slug)}/" style="color:var(--copper-dark);text-decoration:underline;font-weight:700;" onclick="event.stopPropagation()">${escHtml(item.combo_label)}</a></span>` : ''}
             ${item.promo_note ? `<span class="acc-card-note">🎁 ${escHtml(item.promo_note)}</span>` : ''}
             ${isAccBundle ? `<span class="acc-card-note">${escHtml(L.accPromoNote)}</span>` : ''}
-          </div>
-          <div class="card-actions">
-            ${hasAudio ? `<button class="btn btn-listen" type="button" onclick="toggleSample(this, '${skuEsc}')">${L.btnPlay}</button>` : ''}
-            ${actionBtnHtml}
-          </div>
+          </div>` : ''}
         </div>
       </article>`;
   }
@@ -2638,9 +2651,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   let lastAppendTs = 0;
 
   function getAvailabilityPriority(item) {
-    // Uu tien san pham Con hang (in_stock) hoac Lien he bao gia (p <= 0 / force_contact) len truoc Het hang
+    // 0 = Con hang / Lien he bao gia | 1 = Ghim cuoi danh sach san hang | 2 = Het hang
+    if (item.s === 'in_stock' && item.pin_in_stock_bottom) return 1;
     if (item.s === 'in_stock' || !item.p || item.p <= 0 || item.force_contact) return 0;
-    return 1;
+    return 2;
   }
 
   function sortItemsByCurrentOrder(arr) {
@@ -2943,7 +2957,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
           ${(item.mood && item.mood.length > 0) ? `<div class="badge-row" style="margin-top:4px;">${item.mood.map(m => `<span class="badge" style="background:rgba(207,160,66,.16);color:#6B450C;">${escHtml(L.moodMap[m] || m)}</span>`).join('')}</div>` : ''}
           <div style="font-size:.76rem; color:var(--muted); margin:6px 0;">
             ${L.detailSku} <strong>${skuEsc}</strong><br>
-            ${L.detailFmt} ${escHtml(item.f)}${item.w ? ' • ' + escHtml(item.w) : ''} ${item.l ? '• ' + escHtml(item.l) : ''} ${item.y ? '• ' + L.detailYear + ' ' + escHtml(item.y) : ''}
+            ${L.detailFmt} ${escHtml(item.f)}${item.w ? ' • ' + escHtml(item.w) : ''}${item.vc ? ' • Phôi đĩa: <strong>' + escHtml(item.vc) + '</strong>' : ''} ${item.l ? '• ' + escHtml(item.l) : ''} ${item.y ? '• ' + L.detailYear + ' ' + escHtml(item.y) : ''}
             ${item.g === 'bolero_golden_oldies' ? `<br><span>${escHtml(L.boleroDetail)}</span>` : ''}
           </div>
           <p style="font-size:.83rem; line-height:1.55; margin:8px 0;">${escHtml(item.d)}</p>

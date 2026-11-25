@@ -519,6 +519,42 @@ function Parse-MultiGenre {
     return $combined.ToArray()
 }
 
+function Resolve-VinylColor {
+    param([string]$Explicit, [string]$Format, [string]$Title, [string]$Sku, [string]$Desc)
+    $ex = ([string]$Explicit).Trim()
+    if ($ex) { return $ex }
+    $txt = "$Format $Title $Sku $Desc"
+    if ($txt -match '(?i)black\s*/\s*apple\s*red') { return "Color (Black / Apple Red)" }
+    if ($txt -match '(?i)white\s*/\s*blue') { return "Color (White / Blue)" }
+    if ($txt -match '(?i)starry\s*night') { return "Color (Starry Night)" }
+    if ($txt -match '(?i)moonstone\s*blue') { return "Color (Moonstone Blue)" }
+    if ($txt -match '(?i)aura\s*blue') { return "Color (Aura Blue)" }
+    if ($txt -match '(?i)sea\s*blue') { return "Color (Translucent Sea Blue)" }
+    if ($txt -match '(?i)light\s*blue|baby\s*blue') { return "Color (Light Blue)" }
+    if ($txt -match '(?i)clear\s*blue|translucent\s*blue') { return "Color (Translucent Blue)" }
+    if ($txt -match '(?i)victorian\s*blush') { return "Color (Victorian Blush)" }
+    if ($txt -match '(?i)baby\s*pink') { return "Color (Baby Pink)" }
+    if ($txt -match '(?i)cherry\s*red|opaque\s*red|translucent\s*red') { return "Color (Red)" }
+    if ($txt -match '(?i)translucent\s*ruby|ruby\s*vinyl') { return "Color (Translucent Ruby)" }
+    if ($txt -match '(?i)butterfly\s*yellow|sunshine\s*vinyl|yellow\s*vinyl') { return "Color (Yellow)" }
+    if ($txt -match '(?i)deep\s*purple|purple\s*vinyl|màu\s*tím|đĩa\s*tím') { return "Color (Purple / Tím)" }
+    if ($txt -match '(?i)màu\s*cam|orange\s*vinyl|đĩa\s*cam') { return "Color (Orange / Cam)" }
+    if ($txt -match '(?i)translucent\s*tan') { return "Color (Translucent Tan)" }
+    if ($txt -match '(?i)transparent\s*green|green\s*vinyl|màu\s*xanh\s*lá') { return "Color (Green)" }
+    if ($txt -match '(?i)blue\s*vinyl|màu\s*xanh') { return "Color (Blue)" }
+    if ($txt -match '(?i)gold\s*colored|gold\s*vinyl|màu\s*vàng\s*gold') { return "Color (Gold)" }
+    if ($txt -match '(?i)pink\s*vinyl|màu\s*hồng') { return "Color (Pink)" }
+    if ($txt -match '(?i)white\s*vinyl|màu\s*trắng') { return "Color (White)" }
+    if ($txt -match '(?i)silver\s*vinyl|màu\s*bạc') { return "Color (Silver)" }
+    if ($txt -match '(?i)red\s*vinyl|màu\s*đỏ') { return "Color (Red)" }
+    if ($txt -match '(?i)crystal\s*clear|clear\s*vinyl|translucent\s*vinyl|trong\s*suốt') { return "Color (Clear / Translucent)" }
+    if ($txt -match '(?i)picture\s*disc') { return "Color (Picture Disc)" }
+    if ($txt -match '(?i)splatter') { return "Color (Splatter)" }
+    if ($txt -match '(?i)marble') { return "Color (Marble)" }
+    if ($txt -match '(?i)a\s*side\s*b\s*side\s*colored|coloured|colored\s*vinyl|surprise\s*color|màu\s*đặc\s*biệt|đĩa\s*màu') { return "Color" }
+    return "Black"
+}
+
 # Tu dong chuan hoa ten file trong images/ & audio/ sang kebab-case neu ton tai script
 if (Test-Path "scripts\normalize_media_names.ps1") {
     & ".\scripts\normalize_media_names.ps1" -TargetFolders @("images","audio") | Out-Null
@@ -542,35 +578,44 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
     $tracks = if ($r.tracklist) { @($r.tracklist -split '\s*\|\s*' | Where-Object { $_ }) } else { @() }
     $missing = if ($r.missing_fields) { @($r.missing_fields -split '\s*;\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
-    $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
+    $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true" -or $r.contact_only -eq "2"))
+    $isForceContact = ($r.PSObject.Properties['contact_only'] -and $r.contact_only -eq "2")
+    $pinBottom = ($r.PSObject.Properties['pin_in_stock_bottom'] -and ($r.pin_in_stock_bottom -eq "1" -or $r.pin_in_stock_bottom -eq "true"))
+    $exclCols  = ($r.PSObject.Properties['exclude_collections'] -and ($r.exclude_collections -eq "1" -or $r.exclude_collections -eq "true"))
     $vinylWeight = if ($r.PSObject.Properties['weight'] -and -not [string]::IsNullOrWhiteSpace($r.weight)) { ([string]$r.weight).Trim() } else { "180g" }
+    $explicitVc = if ($r.PSObject.Properties['vinyl_color']) { [string]$r.vinyl_color } else { "" }
+    $vinylColor = Resolve-VinylColor -Explicit $explicitVc -Format ([string]$r.format) -Title ([string]$r.title) -Sku ([string]$r.sku) -Desc ([string]$r.description)
     $extraGVal = if ($r.PSObject.Properties['extra_genres']) { [string]$r.extra_genres } else { "" }
     $rawGenres = @(Parse-MultiGenre -MainGenre ([string]$r.genre) -ExtraGenres $extraGVal -Category "vinyl" -DefaultCode "audiophile_reference")
     [void]$allItems.Add([PSCustomObject]@{
-        id             = $idNum
-        sku            = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "VN" -Id $idNum -Used $usedSkus
-        slug           = Get-CanonicalSlug -Category "vinyl" -Artist ([string]$r.artist) -Title ([string]$r.title) -Id $idNum
-        legacy_slug    = $legacySlug
-        category       = "vinyl"
-        g              = $rawGenres[0]
-        genres         = $rawGenres
-        mood           = Normalize-MoodArray ([string]$r.mood)
-        a              = [string]$r.artist
-        t              = [string]$r.title
-        l              = [string]$r.label
-        f              = [string]$r.format
-        w              = $vinylWeight
-        c              = [string]$r.edition
-        y              = [string]$r.year
-        p              = Parse-SafeInt ([string]$r.list_price)
-        s              = [string]$r.status
-        contact_only   = $isContact
-        d              = [string]$r.description
-        tracklist      = $tracks
-        img            = [string]$r.cover_url
-        aud            = [string]$r.audio_url
-        aud_track      = [string]$r.audio_track
-        missing_fields = $missing
+        id                  = $idNum
+        sku                 = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "VN" -Id $idNum -Used $usedSkus
+        slug                = Get-CanonicalSlug -Category "vinyl" -Artist ([string]$r.artist) -Title ([string]$r.title) -Id $idNum
+        legacy_slug         = $legacySlug
+        category            = "vinyl"
+        g                   = $rawGenres[0]
+        genres              = $rawGenres
+        mood                = Normalize-MoodArray ([string]$r.mood)
+        a                   = [string]$r.artist
+        t                   = [string]$r.title
+        l                   = [string]$r.label
+        f                   = [string]$r.format
+        w                   = $vinylWeight
+        vc                  = $vinylColor
+        c                   = [string]$r.edition
+        y                   = [string]$r.year
+        p                   = Parse-SafeInt ([string]$r.list_price)
+        s                   = [string]$r.status
+        contact_only        = $isContact
+        force_contact       = $isForceContact
+        pin_in_stock_bottom = $pinBottom
+        exclude_collections = $exclCols
+        d                   = [string]$r.description
+        tracklist           = $tracks
+        img                 = [string]$r.cover_url
+        aud                 = [string]$r.audio_url
+        aud_track           = [string]$r.audio_track
+        missing_fields      = $missing
     })
 }
 
@@ -792,9 +837,9 @@ $collectionMeta = @(
 # Tinh truoc thanh vien cac Bo Suu Tap truoc khi xuat catalog_all.json & trang /p/
 $globalColExcludeRx = '(?i)(xuân hảo|xuan hao|tố nga|to nga)'
 $festColExcludeRx   = '(?i)(căn nhà ngoại ô|can nha ngoai o|ngày còn em bên tôi|ngay con em ben toi|tuyển tập nhạc xưa|tuyen tap nhac xua|\boplus\b)'
-$colEligibleItems   = @($allItems | Where-Object { "$($_.a) $($_.t)" -notmatch $globalColExcludeRx })
+$colEligibleItems   = @($allItems | Where-Object { ("$($_.a) $($_.t)" -notmatch $globalColExcludeRx) -and (-not ($_.PSObject.Properties['exclude_collections'] -and $_.exclude_collections)) })
 $vinylLookupPre     = @($allItems | Where-Object { $_.category -eq "vinyl" -and $_.s -eq "in_stock" })
-$vinylColFallback   = @($vinylLookupPre | Where-Object { "$($_.a) $($_.t)" -notmatch $globalColExcludeRx })
+$vinylColFallback   = @($vinylLookupPre | Where-Object { ("$($_.a) $($_.t)" -notmatch $globalColExcludeRx) -and (-not ($_.PSObject.Properties['exclude_collections'] -and $_.exclude_collections)) })
 
 $colSelectors = @{
     "bo-suu-tap-quynh-anh-bk-production" = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and $_.a -match '(?i)quỳnh anh' -and $_.l -match '(?i)bk production' }) }
@@ -908,6 +953,7 @@ foreach ($it in $allItems) {
         keywords              = $it.kw
         label                 = $it.l
         format                = $it.f
+        vinyl_color           = if ($it.PSObject.Properties['vc']) { $it.vc } else { "" }
         year                  = $it.y
         condition_code        = $it.cond
         condition_vi          = $condVi
@@ -1177,11 +1223,11 @@ if ($GenerateProductPages) {
             $weightJsonProp = "`n        `"weight`": { `"@type`": `"QuantitativeValue`", `"value`": $($matches[1]), `"unitCode`": `"GRM`" },"
         }
         $primaryCtaHtml = if ($it.PSObject.Properties['force_contact'] -and $it.force_contact) {
-            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
+            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>🔔 Liên hệ</button>"
         } elseif ($it.s -eq "out_of_stock") {
             "<a class='btn btn-copper' href='../../?waitlist=$([Uri]::EscapeDataString($it.sku))'>🔔 Báo khi về</a>"
         } elseif ($it.contact_only) {
-            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>💬 Liên hệ đặt hàng</button>"
+            "<button class='btn btn-copper' type='button' onclick='openZaloPopup()'>🔔 Liên hệ</button>"
         } else {
             "<a class='btn btn-copper' href='../../?add=$([Uri]::EscapeDataString($it.sku))'>+ Thêm vào Giỏ / Báo giá</a>"
         }
@@ -1353,7 +1399,7 @@ if ($GenerateProductPages) {
         </div>
         <h1>$(Escape-Html $it.t)</h1>
         <div class="sub"><a class="xlink" href="$artistUrl" title="Xem tất cả sản phẩm của $(Escape-Html $it.a)">$(Escape-Html $it.a)</a></div>
-        <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.PSObject.Properties['w'] -and $it.w) { "• Trọng lượng: <strong>$(Escape-Html $it.w)</strong>" }) $(if ($hasLabelLink) { "• Hãng: <a class='xlink' href='$labelUrl' title='Xem tất cả ấn phẩm của hãng $(Escape-Html $it.l)'><strong>$(Escape-Html $it.l)</strong></a>" } elseif ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
+        <div class="meta">Mã SKU: <strong>$(Escape-Html $it.sku)</strong> • Định dạng: $(Escape-Html $it.f) $(if ($it.PSObject.Properties['w'] -and $it.w) { "• Trọng lượng: <strong>$(Escape-Html $it.w)</strong>" }) $(if ($it.PSObject.Properties['vc'] -and $it.vc) { "• Phôi đĩa: <strong>$(Escape-Html $it.vc)</strong>" }) $(if ($hasLabelLink) { "• Hãng: <a class='xlink' href='$labelUrl' title='Xem tất cả ấn phẩm của hãng $(Escape-Html $it.l)'><strong>$(Escape-Html $it.l)</strong></a>" } elseif ($it.l) { "• $(Escape-Html $it.l)" }) $(if ($it.y) { "• Năm $($it.y)" })</div>
         <p class="desc">$descLinkedHtml</p>
         <div class="price-row">
           <div>$priceHtml</div>
