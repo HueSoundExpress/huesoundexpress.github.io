@@ -451,6 +451,14 @@ function Get-ProductKeywords {
     elseif ($Item.g -eq "love_songs_1954_1975") { & $addKw "Tình khúc 1954–1975"; & $addKw "Nhạc Xưa"; & $addKw "Tình Ca" }
     elseif ($Item.g -eq "instrumental") { & $addKw "Instrument"; & $addKw "Hòa tấu nhạc cụ" }
 
+    # Tu khoa da ngon ngu SEO / AI Agent cho Dang Thai Son
+    if ($corpus -match '(?i)đặng thái sơn|dang thai son|dang-thai son|dangthai-son') {
+        & $addKw "Dang-Thai Son｜クラシック"
+        & $addKw "Deng Tai Shan"
+        & $addKw "dangthai-son"
+        & $addKw "Đặng Thái Sơn"
+    }
+
     # 5. Cac bai hat noi bat trong tracklist (toi da 8 bai)
     if ($Item.tracklist -and $Item.tracklist.Count -gt 0) {
         foreach ($tr in ($Item.tracklist | Select-Object -First 8)) { & $addKw $tr }
@@ -672,6 +680,11 @@ foreach ($it in $allItems) {
     $it.t = Clean-PlainText ([string]$it.t)
     $it.l = Clean-PlainText ([string]$it.l)
     $it.d = Clean-PlainText ([string]$it.d)
+    if ($it.d -and $it.d -notmatch '09323\.13918') {
+        $it.d = ($it.d.TrimEnd(' ', '.')) + ". Hotline: 09323.13918"
+    } elseif (-not $it.d) {
+        $it.d = "Hue Sound Express – Analog Audio chính hãng. Hotline: 09323.13918"
+    }
     if (([string]$it.a).Trim() -match '^(?i)nhiều ca sĩ$') { $it.a = "Nhiều nghệ sĩ" }
     $it.slug = Get-CanonicalSlug -Category $it.category -Artist $it.a -Title $it.t -Id $it.id
 
@@ -1046,7 +1059,8 @@ if ($GenerateProductPages) {
         $extraSeoDesc = if ($it.d -match 'Hue Sound Express') { "" } elseif ($it.g -eq "bolero_golden_oldies") { " Thể loại Nhạc Bolero (Nhạc Vàng / Nhạc Trữ Tình) chuẩn Analog Audio." } elseif ($it.g -eq "love_songs_1954_1975") { " Dòng nhạc Tình khúc 1954–1975 kinh điển chuẩn Analog Audio." } elseif ($it.category -eq "vinyl") { " Đĩa than Vinyl chuẩn Analog Audio tại Hue Sound Express." } else { " Sản phẩm Analog Audio chính hãng tại Hue Sound Express." }
 
         $seoTitleEsc = Escape-Html "$seoPrefix$($it.t) – $($it.a)"
-        $fullDescRaw = "$($it.d)$extraSeoDesc"
+        $baseDescNoHot = ([string]$it.d -replace '\s*\.?\s*Hotline:\s*09323\.13918\s*$', '').Trim()
+        $fullDescRaw = ("$baseDescNoHot$extraSeoDesc").Trim().TrimEnd('.') + ". Hotline: 09323.13918"
         $descEsc = Escape-Html $fullDescRaw
         $descLinkedHtml = Format-LinkedDescription -DescText $fullDescRaw -Item $it -CatParam $catParam -OriginCode $originCode -GenreDisplay $genreDisplay -CatUrl $catUrl -OriginUrl $originUrl -GenreUrl $genreUrl -ArtistUrl $artistUrl -LabelUrl $labelUrl
         $kwJoined = ($it.kw -join ", ")
@@ -1211,7 +1225,7 @@ if ($GenerateProductPages) {
         "category": "$(Escape-JsonStr "$catLabel / $genreDisplay")",
         "keywords": "$(Escape-JsonStr $kwJoined)",
         "image": "$ogImg",
-        "description": "$(Escape-JsonStr "$($it.d)$extraSeoDesc")",
+        "description": "$(Escape-JsonStr $fullDescRaw)",
         "brand": { "@type": "Brand", "name": "$(Escape-JsonStr $(if ($it.l) { $it.l } else { 'Hue Sound Express' }))" },$weightJsonProp
         "offers": {
           "@type": "Offer",

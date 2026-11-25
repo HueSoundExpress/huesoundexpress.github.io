@@ -38,9 +38,10 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 - **Phân biệt kim đĩa than MM và MC – Nên chọn loại nào cho dàn Analog Audio?:** https://huesoundexpress.github.io/cam-nang/phan-biet-kim-mm-va-mc/
 - **Giải thích thang đánh giá tình trạng đĩa Goldmine Grading Standard (M, NM, VG+, VG...):** https://huesoundexpress.github.io/cam-nang/giai-thich-thang-goldmine-grading/
 
-## 5. Unified Analog Audio Catalog (1141 Items)
+## 5. Unified Analog Audio Catalog (1142 Items)
 | Category | SKU | Artist / Brand | Product / Album | Genre Code | Condition | Sale Price (VND) | Status | URL |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| vinyl | VN-NGUYENTHANHVAN-DAKHUC-566 | Nguyễn Thành Vân | Đĩa than (Vinyl) Dạ Khúc | love_songs_1954_1975 | mint_sealed | 1,340,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nguyen-thanh-van-da-khuc-566/ |
 | vinyl | VN-KIEPNAO-COYEUNHAU-565 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Kiếp Nào Có Yêu Nhau | love_songs_1954_1975 | mint_sealed | 930,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-kiep-nao-co-yeu-nhau-565/ |
 | vinyl | VN-GIANGT-LENHDENH-564 | Giang Trang | Đĩa than (Vinyl) Lênh Đênh Nhớ Phố | love_songs_1954_1975 | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-giang-trang-lenh-denh-nho-pho-564/ |
 | vinyl | VN-BOLERO-NHUCANHC-563 | Nguyễn Tuấn Anh | Đĩa than (Vinyl) Như Cánh Chim Trời | bolero_golden_oldies | mint_sealed | 1,290,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nguyen-tuan-anh-nhu-canh-chim-troi-563/ |
@@ -132,7 +133,7 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 | vinyl | VN-NHAC-C-GS-TR-LP-MINT-JAP | Nhạc cụ dân tộc | Đĩa than (Vinyl) GS Trần Văn Khê | instrumental | near_mint | 2,250,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhac-cu-dan-toc-gs-tran-van-khe-83/ |
 | vinyl | VN-BOLERO-CANNHANG-84 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Căn nhà ngoại ô | bolero_golden_oldies | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-can-nha-ngoai-o-84/ |
 | vinyl | VN-BOLERO-MUATHUTR-85 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Mùa thu trong mưa | bolero_golden_oldies | mint_sealed | 1,150,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-mua-thu-trong-mua-85/ |
-| vinyl | VN-BOLERO-EMDAQUYE-86 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Em đã quyên một dòng sông | bolero_golden_oldies | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-em-da-quyen-mot-dong-song-86/ |
+| vinyl | VN-BOLERO-EMDAQUYE-86 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Em đã quên một dòng sông | bolero_golden_oldies | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-em-da-quen-mot-dong-song-86/ |
 | vinyl | VN-BOLERO-THANHTUY-87 | Thanh Tuyền | Đĩa than (Vinyl) Thanh tuyền 1 | bolero_golden_oldies | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-thanh-tuyen-thanh-tuyen-1-87/ |
 | vinyl | VN-BOLERO-THANHTUY-88 | Thanh Tuyền | Đĩa than (Vinyl) Thanh tuyền 2 | bolero_golden_oldies | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-thanh-tuyen-thanh-tuyen-2-88/ |
 | vinyl | VN-BOLERO-NGAYCONE-89 | Chế Linh | Đĩa than (Vinyl) Ngày còn em bên tôi | bolero_golden_oldies | mint_sealed | 1,150,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-che-linh-ngay-con-em-ben-toi-89/ |
@@ -148,7 +149,7 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 | vinyl | VN-BOLERO-NHACXUA2-100 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Nhạc Xưa 2 | bolero_golden_oldies | mint_sealed | 1,150,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-nhac-xua-2-100/ |
 | vinyl | VN-BOLERO-LYRUOUMU-101 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Ly rượu mừng | bolero_golden_oldies | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-ly-ruou-mung-101/ |
 | vinyl | VN-BOLERO-TINHCAXX-102 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Tình ca | bolero_golden_oldies | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-tinh-ca-102/ |
-| vinyl | VN-BOLERO-NHUNGGIO-103 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Những giọng ca vàng | bolero_golden_oldies | mint_sealed | 1,150,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-nhung-giong-ca-vang-103/ |
+| vinyl | VN-BOLERO-NHUNGGIO-103 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Tuyệt Phẩm Bolero – Những Giọng Ca Vàng | bolero_golden_oldies | mint_sealed | 1,150,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-tuyet-pham-bolero-nhung-giong-ca-vang-103/ |
 | vinyl | VN-BOLERO-MUASAOSA-104 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Mùa sao sáng | bolero_golden_oldies | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-mua-sao-sang-104/ |
 | vinyl | VN-BOLERO-CHIEUMUA-105 | Thanh Tuyền | Đĩa than (Vinyl) Chiều mưa biên giới | bolero_golden_oldies | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-thanh-tuyen-chieu-mua-bien-gioi-105/ |
 | vinyl | VN-BOLERO-DIEMXUAX-106 | Khánh Ly | Đĩa than (Vinyl) Diễm xưa | bolero_golden_oldies | mint_sealed | 1,150,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-khanh-ly-diem-xua-106/ |
