@@ -654,7 +654,9 @@ foreach ($it in $allItems) {
         $origP = 150000
     }
     $saleP = $origP
-    if ($it.category -eq "cd" -and $origP -ge 200000 -and $origP -le 300000) {
+    if ($it.l -eq "Thời Đại" -and $origP -gt 20000) {
+        $saleP = $origP - 20000
+    } elseif ($it.category -eq "cd" -and $origP -ge 200000 -and $origP -le 300000) {
         $saleP = $origP - 20000
     } elseif ($origP -ge 200000) {
         $disc = if (($origP % 100000) -eq 50000) { 60000 } else { 50000 }
@@ -673,7 +675,7 @@ foreach ($it in $allItems) {
             $saleP = $promoP
             $it | Add-Member -NotePropertyName 'promo_until' -NotePropertyValue '2026-11-30' -Force
             $it | Add-Member -NotePropertyName 'p_regular' -NotePropertyValue $regularSaleP -Force
-            $it | Add-Member -NotePropertyName 'promo_note' -NotePropertyValue 'Ưu đãi tháng 11: giảm 100k (từ 01/12 giảm 50k)' -Force
+            $it | Add-Member -NotePropertyName 'promo_note' -NotePropertyValue 'Ưu đãi tháng 11: giảm 100k (từ 01/12 giảm 20k)' -Force
         }
     }
     if ($it.category -eq "vinyl" -and $it.id -in @(558, 559)) {

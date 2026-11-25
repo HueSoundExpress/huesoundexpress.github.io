@@ -1,5 +1,10 @@
-=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP (2026-11-23 23:58) ===
-Khong co SKU moi trong lan build nay (tong: 1138 san pham).
+=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP (2026-11-25 16:23) ===
+San pham moi phat hien: 5
+  + [VINYL / love_songs_1954_1975] VN-BOLERO-CONTUOINCE-558 | Khánh Ly - Còn tuổi nào cho em => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
+  + [VINYL / love_songs_1954_1975] VN-BOLERO-DAVANGII-557 | Khánh Ly - Da vàng II => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
+  + [VINYL / love_songs_1954_1975] VN-BOLERO-DAVANGI-556 | Khánh Ly - Da vàng I => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
+  + [VINYL / love_songs_1954_1975] VN-BOLERO-BIENNHO-555 | Khánh Ly - Biển nhớ => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
+  + [VINYL / love_songs_1954_1975] VN-BOLERO-SONATAS-74 | Khánh Ly - Sonatas => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
 Thong ke 10 bo suu tap:
   - dia-than-nhac-tet: 36 sp
   - dia-than-ngay-le: 31 sp
