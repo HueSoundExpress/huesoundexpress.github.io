@@ -2657,10 +2657,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     return 2;
   }
 
+  function isImportedContactVinyl(item) {
+    return item.category === 'vinyl' && item.force_contact && Number(item.id) >= 572;
+  }
+
   function sortItemsByCurrentOrder(arr) {
     const yr = document.getElementById('yearSort') ? document.getElementById('yearSort').value : 'NEW_OLD';
-    const copy = arr.slice();
-    copy.sort((a, b) => {
+    const baseCmp = (a, b) => {
       const pa = getAvailabilityPriority(a), pb = getAvailabilityPriority(b);
       if (pa !== pb) return pa - pb;
       const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
@@ -2674,8 +2677,27 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       if (ya === 0) return 1;
       if (yb === 0) return -1;
       return (yb - ya) || ((Number(b.id) || 0) - (Number(a.id) || 0));
-    });
-    return copy;
+    };
+
+    const imported = arr.filter(isImportedContactVinyl);
+    if (imported.length === 0 || yr === 'OLD_NEW') {
+      return arr.slice().sort(baseCmp);
+    }
+
+    const others = arr.filter(x => !isImportedContactVinyl(x)).sort(baseCmp);
+    imported.sort(baseCmp);
+
+    // Day list dia vua them tu Hang Dia Thoi Dai (ID >= 572, Lien he) xuong ngay sau Duc Tuan - Pham Duy (ID 142)
+    let anchorIdx = others.findIndex(x => x.category === 'vinyl' && Number(x.id) === 142);
+    if (anchorIdx === -1) {
+      for (let i = 0; i < others.length; i++) {
+        if (getAvailabilityPriority(others[i]) > 0) break;
+        const y = parseReleaseYear(others[i]);
+        if (y >= 2014) anchorIdx = i;
+      }
+    }
+    others.splice(anchorIdx + 1, 0, ...imported);
+    return others;
   }
 
   function isItemInCategory(item, catKey) {
