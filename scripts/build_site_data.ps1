@@ -120,29 +120,18 @@ function Normalize-GenreCode {
         if ($v -match '(?i)calibration|cân chỉnh') { return "calibration" }
         return "vinyl_care_service"
     }
-    switch ($v) {
-        "love_songs_1954_1975"      { return "love_songs_1954_1975" }
-        "bolero_golden_oldies"      { return "bolero_golden_oldies" }
-        "vietnamese_pop_modern"     { return "vietnamese_pop_modern" }
-        "vietnamese_folk_patriotic" { return "vietnamese_folk_patriotic" }
-        "instrumental"              { return "instrumental" }
-        "jazz_vocal"                { return "jazz_vocal" }
-        "audiophile_reference"      { return "audiophile_reference" }
-        "rock_metal"                { return "rock_metal" }
-        "pop_disco"                 { return "pop_disco" }
-        "classic_soundtrack"        { return "classic_soundtrack" }
-        "Tình khúc 1954–1975"       { return "love_songs_1954_1975" }
-        "Nhạc Việt / Bolero"        { return "bolero_golden_oldies" }
-        "Nhạc Việt trẻ"             { return "vietnamese_pop_modern" }
-        "Nhạc Việt"                 { return "vietnamese_pop_modern" }
-        "Dân ca & Cách mạng"        { return "vietnamese_folk_patriotic" }
-        "Instrument"                { return "instrumental" }
-        "Jazz & Vocal"              { return "jazz_vocal" }
-        "Audiophile & Khác"         { return "audiophile_reference" }
-        "Rock & Metal"              { return "rock_metal" }
-        "Pop & Disco"               { return "pop_disco" }
-        "Classic & Soundtrack"      { return "classic_soundtrack" }
-        default                     { return "audiophile_reference" }
+    switch -Regex ($v.ToLowerInvariant()) {
+        '^(love_songs_1954_1975|tình khúc 1954[\-–]1975|nhạc xưa|tiền chiến|tình ca)$' { return "love_songs_1954_1975" }
+        '^(bolero_golden_oldies|nhạc việt\s*/\s*bolero|bolero|nhạc vàng|trữ tình|nhạc trữ tình)$' { return "bolero_golden_oldies" }
+        '^(vietnamese_pop_modern|nhạc việt trẻ|nhạc việt|v-?pop)$' { return "vietnamese_pop_modern" }
+        '^(vietnamese_folk_patriotic|dân ca\s*&\s*cách mạng|dân ca|cách mạng|quê hương)$' { return "vietnamese_folk_patriotic" }
+        '^(instrumental|instrument|hòa tấu|nhạc cụ|hòa tấu nhạc cụ)$' { return "instrumental" }
+        '^(jazz_vocal|jazz\s*&\s*vocal|jazz|vocal)$' { return "jazz_vocal" }
+        '^(audiophile_reference|audiophile\s*&\s*khác|audiophile)$' { return "audiophile_reference" }
+        '^(rock_metal|rock\s*&\s*metal|rock|metal)$' { return "rock_metal" }
+        '^(pop_disco|pop\s*&\s*disco|pop|disco)$' { return "pop_disco" }
+        '^(classic_soundtrack|classic\s*&\s*(soundtrack|ost)|ost|soundtrack|nhạc phim|cổ điển|classic)$' { return "classic_soundtrack" }
+        default { return "audiophile_reference" }
     }
 }
 
@@ -470,6 +459,58 @@ function Get-ProductKeywords {
     return @($set)
 }
 
+# Trich xuat danh sach Ca si & Nhac si chuan (de bo loc Nghe si tren trang chu bao gom ca ca si va nhac si)
+function Get-ItemPeople {
+    param($Item)
+    $list = New-Object 'System.Collections.Generic.List[string]'
+    $seen = New-Object 'System.Collections.Generic.HashSet[string]' ([System.StringComparer]::OrdinalIgnoreCase)
+    $addPerson = {
+        param([string]$raw)
+        $nm = ([string]$raw).Trim()
+        $nm = [regex]::Replace($nm, '^\s*(?:ca sĩ|nhạc sĩ|nghệ sĩ|ns\.|nsut|nsnd|gs\.?)\s*[:.]?\s*', '', 'IgnoreCase').Trim()
+        $nm = $nm.Trim(' ', '.', ',', ';', ':', '-', '(', ')', '•', '/')
+        if (-not $nm -or $nm.Length -lt 2 -or $nm.Length -gt 48) { return }
+        if ($nm -match '^(?i)(nhiều nghệ sĩ|nhiều ca sĩ|various artists|v\.a\.?|other|khác|hãng|đĩa than|đĩa cd|cần mua|hue sound|analog audio)$') { return }
+        if ($nm -match '^\d+$') { return }
+        if ($seen.Add($nm)) { [void]$list.Add($nm) }
+    }
+
+    # 1. Nghe si chinh (artist)
+    if ($Item.a) {
+        & $addPerson ([string]$Item.a)
+    }
+
+    # 2. Ca si & Nhac si tu mo ta (Ca si: ... / Nhac si: ...)
+    $desc = [string]$Item.d
+    if ($desc) {
+        foreach ($rx in @('(?i)Ca sĩ:\s*([^•\)\|\-\.]+)', '(?i)Nhạc sĩ:\s*([^•\)\|\-\.]+)')) {
+            foreach ($m in [regex]::Matches($desc, $rx)) {
+                $seg = $m.Groups[1].Value
+                foreach ($part in ($seg -split '\s*(?:,|;|&|/|và)\s*')) {
+                    & $addPerson $part
+                }
+            }
+        }
+    }
+
+    return $list.ToArray()
+}
+
+function Parse-MultiGenre {
+    param([string]$MainGenre, [string]$ExtraGenres, [string]$Category, [string]$DefaultCode)
+    $combined = New-Object 'System.Collections.Generic.List[string]'
+    foreach ($src in @($MainGenre, $ExtraGenres)) {
+        if (-not [string]::IsNullOrWhiteSpace($src)) {
+            foreach ($tok in ($src -split '\s*[;,|]\s*' | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })) {
+                $code = Normalize-GenreCode -Val $tok -Category $Category
+                if ($code -and -not $combined.Contains($code)) { [void]$combined.Add($code) }
+            }
+        }
+    }
+    if ($combined.Count -eq 0) { [void]$combined.Add($DefaultCode) }
+    return $combined.ToArray()
+}
+
 # Tu dong chuan hoa ten file trong images/ & audio/ sang kebab-case neu ton tai script
 if (Test-Path "scripts\normalize_media_names.ps1") {
     & ".\scripts\normalize_media_names.ps1" -TargetFolders @("images","audio") | Out-Null
@@ -495,8 +536,8 @@ foreach ($r in (Load-CsvOrUrl $VinylCsv)) {
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
     $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
     $vinylWeight = if ($r.PSObject.Properties['weight'] -and -not [string]::IsNullOrWhiteSpace($r.weight)) { ([string]$r.weight).Trim() } else { "180g" }
-    $rawGenres = @(([string]$r.genre) -split '\s*;\s*' | Where-Object { $_ } | ForEach-Object { Normalize-GenreCode -Val $_ -Category "vinyl" } | Select-Object -Unique)
-    if ($rawGenres.Count -eq 0) { $rawGenres = @("audiophile_reference") }
+    $extraGVal = if ($r.PSObject.Properties['extra_genres']) { [string]$r.extra_genres } else { "" }
+    $rawGenres = @(Parse-MultiGenre -MainGenre ([string]$r.genre) -ExtraGenres $extraGVal -Category "vinyl" -DefaultCode "audiophile_reference")
     [void]$allItems.Add([PSCustomObject]@{
         id             = $idNum
         sku            = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "VN" -Id $idNum -Used $usedSkus
@@ -532,8 +573,8 @@ foreach ($r in (Load-CsvOrUrl $CdCsv)) {
     $tracks = if ($r.tracklist) { @($r.tracklist -split '\s*\|\s*' | Where-Object { $_ }) } else { @() }
     $legacySlug = if ($r.PSObject.Properties['legacy_slug'] -and $r.legacy_slug) { [string]$r.legacy_slug } elseif ($r.slug) { [string]$r.slug } else { "" }
     $isContact = ($r.PSObject.Properties['contact_only'] -and ($r.contact_only -eq "1" -or $r.contact_only -eq "true"))
-    $rawCdGenres = @(([string]$r.genre) -split '\s*;\s*' | Where-Object { $_ } | ForEach-Object { Normalize-GenreCode -Val $_ -Category "cd" } | Select-Object -Unique)
-    if ($rawCdGenres.Count -eq 0) { $rawCdGenres = @("vietnamese_pop_modern") }
+    $extraCdGVal = if ($r.PSObject.Properties['extra_genres']) { [string]$r.extra_genres } else { "" }
+    $rawCdGenres = @(Parse-MultiGenre -MainGenre ([string]$r.genre) -ExtraGenres $extraCdGVal -Category "cd" -DefaultCode "vietnamese_pop_modern")
     [void]$allItems.Add([PSCustomObject]@{
         id             = $idNum
         sku            = Normalize-AsciiSku -RawSku ([string]$r.sku) -FallbackPrefix "CD-VN" -Id $idNum -Used $usedSkus
@@ -656,6 +697,12 @@ foreach ($it in $allItems) {
     $saleP = $origP
     if ($it.l -eq "Thời Đại" -and $origP -gt 20000) {
         $saleP = $origP - 20000
+    } elseif ($it.a -match '^(?i)quỳnh anh$' -and $origP -gt 20000) {
+        $saleP = $origP - 20000
+    } elseif ($it.category -eq "vinyl" -and ($it.sku -eq "VN-KIEPNAO-COYEUNHAU-565" -or $it.t -match '^(?i)kiếp nào có yêu nhau$') -and $origP -gt 20000) {
+        $saleP = $origP - 20000
+    } elseif ($it.category -eq "cd" -and $it.l -match '(?i)saigon\s*super' -and $origP -gt 20000) {
+        $saleP = $origP - 20000
     } elseif ($it.category -eq "cd" -and $origP -ge 200000 -and $origP -le 300000) {
         $saleP = $origP - 20000
     } elseif ($origP -ge 200000) {
@@ -678,11 +725,6 @@ foreach ($it in $allItems) {
             $it | Add-Member -NotePropertyName 'promo_note' -NotePropertyValue 'Ưu đãi tháng 11: giảm 100k (từ 01/12 giảm 20k)' -Force
         }
     }
-    if ($it.category -eq "vinyl" -and $it.id -in @(558, 559)) {
-        $it | Add-Member -NotePropertyName 'combo_note_prefix' -NotePropertyValue 'Chỉ bán cùng full combo' -Force
-        $it | Add-Member -NotePropertyName 'combo_label' -NotePropertyValue 'Bộ sưu tập Quỳnh Anh (-8%)' -Force
-        $it | Add-Member -NotePropertyName 'combo_slug' -NotePropertyValue 'bo-suu-tap-quynh-anh-bk-production' -Force
-    }
     if ($it.l -match '^(?i)studio ghibli$' -or $it.sku -match '^NN-GDA-') {
         $it.l = "Studio Ghibli"
         $it | Add-Member -NotePropertyName 'labels' -NotePropertyValue @("Studio Ghibli", "Gia Định Audio") -Force
@@ -694,6 +736,10 @@ foreach ($it in $allItems) {
     $kwList = Get-ProductKeywords -Item $it
     if ($it.PSObject.Properties['kw']) { $it.kw = $kwList }
     else { $it | Add-Member -NotePropertyName 'kw' -NotePropertyValue $kwList }
+
+    $peopleList = @(Get-ItemPeople -Item $it)
+    if ($it.PSObject.Properties['people']) { $it.people = $peopleList }
+    else { $it | Add-Member -NotePropertyName 'people' -NotePropertyValue $peopleList }
 }
 
 # Sap xep uu tien san pham moi them len tren cung (giu nguyen thu tu cu)
@@ -713,22 +759,95 @@ foreach ($rule in $catOrderRules) {
 }
 $allItems = $orderedItems
 
-# Dinh nghia 11 trang bo suu tap tinh (/bo-suu-tap/<slug>/)
+# Dinh nghia 13 trang bo suu tap tinh (/bo-suu-tap/<slug>/) - Quynh Anh giam 8%, cac bo suu tap khac giam 5%
 $collectionMeta = @(
-    @{ slug = "dia-than-nhac-tet";             utm = "dia_than_nhac_tet";             title = "Đĩa Than Nhạc Tết & Mùa Xuân – Analog Audio"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD chủ đề Mùa Xuân, Nhạc Tết, Ly Rượu Mừng và những giai điệu rộn ràng đón năm mới tại Hue Sound Express." },
-    @{ slug = "dia-than-ngay-le";              utm = "dia_than_ngay_le";              title = "Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới"; desc = "Bộ sưu tập đĩa than Giáng Sinh (Christmas / Noel), Hòa nhạc Năm Mới (Neujahrskonzert) và các ấn phẩm quà tặng dịp lễ hội tinh tế." },
-    @{ slug = "dia-than-nhac-trinh-cong-son";  utm = "dia_than_nhac_trinh_cong_son";  title = "Đĩa Than & CD Nhạc Trịnh Công Sơn"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD nhạc Trịnh Công Sơn bất hủ qua các giọng ca Khánh Ly, Hồng Nhung, Lệ Thu, Cẩm Vân, Quang Dũng, Trần Mạnh Tuấn... với Diễm Xưa, Cát Bụi, Hạ Trắng, Biển Nhớ, Mưa Hồng, Tuổi Đá Buồn." },
-    @{ slug = "bo-suu-tap-quynh-anh-bk-production"; utm = "bo_suu_tap_quynh_anh_bk_production"; title = "Bộ Sưu Tập Quỳnh Anh – BK Production (Giảm 8%)"; desc = "Trọn bộ sưu tập đĩa than (Vinyl LP) ca sĩ Quỳnh Anh do BK Production phát hành (Em ơi mùa xuân đến rồi đó, 19xx, Thanh Tùng, Vàng) – Ưu đãi giảm ngay 8% khi đặt Full Combo tại Hue Sound Express." },
-    @{ slug = "dia-than-studio-ghibli";        utm = "dia_than_studio_ghibli";        title = "Đĩa Than Hãng Studio Ghibli – Joe Hisaishi"; desc = "Bộ sưu tập đĩa than nhạc phim hoạt hình Studio Ghibli kinh điển của nhà soạn nhạc Joe Hisaishi (Totoro, Spirited Away, Howl's Moving Castle, Princess Mononoke, Kiki, Castle in the Sky...) – phân phối Gia Định Audio." },
-    @{ slug = "dia-than-nhac-vang-bolero";     utm = "dia_than_nhac_vang_bolero";     title = "Đĩa Than Nhạc Vàng, Bolero & Trữ Tình"; desc = "Kho đĩa than & CD Nhạc Vàng, Bolero, Nhạc Trữ Tình tuyển chọn (Chế Linh, Thanh Tuyền, Duy Khánh, Tuấn Vũ, Hoàng Oanh, Như Quỳnh, Lệ Quyên...)." },
-    @{ slug = "dia-than-tinh-khuc-1954-1975";  utm = "dia_than_tinh_khuc_1954_1975";  title = "Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến"; desc = "Tuyển tập Tình khúc 1954–1975 & Nhạc Tiền Chiến bất hủ của Phạm Duy, Trịnh Công Sơn, Ngô Thụy Miên, Vũ Thành An, Nguyễn Ánh 9, Từ Công Phụng..." },
-    @{ slug = "dia-than-nhac-viet-tre";        utm = "dia_than_nhac_viet_tre";        title = "Đĩa Than Nhạc Việt Trẻ & Đương Đại"; desc = "Các ấn phẩm đĩa than Nhạc Việt trẻ hiện đại từ Mỹ Tâm, Hà Anh Tuấn, Quỳnh Anh, SOOBIN, AMEE, Văn Mai Hương, Gia Định Audio, Thời Đại..." },
-    @{ slug = "dia-than-instrument-hoa-tau";   utm = "dia_than_instrument_hoa_tau";   title = "Đĩa Than Instrument & Hòa Tấu Nhạc Cụ"; desc = "Đĩa than & CD hòa tấu nhạc cụ (Piano, Saxophone, Violin, Guitar, Nhạc cụ dân tộc): Viollage – Qinie, Piano Nguyễn Ánh 9, Đặng Thái Sơn, Trần Mạnh Tuấn, GS Trần Văn Khê." },
-    @{ slug = "dia-than-jazz-audiophile";      utm = "dia_than_jazz_audiophile";      title = "Đĩa Than Jazz, Vocal & Audiophile Tham Chiếu"; desc = "Kho đĩa than Jazz, Vocal và Audiophile thu âm tham chiếu từ các hãng đĩa danh tiếng: Stockfisch Records, Blue Note, Verve, Venus Records..." },
-    @{ slug = "may-hat-dia-than-cho-nguoi-moi";utm = "may_hat_dia_than_cho_nguoi_moi";title = "Máy Hát Đĩa Than (Turntable) Cho Người Mới Bắt Đầu"; desc = "Gợi ý các dòng máy hát đĩa than (Turntable) tích hợp Phono Preamp, dễ chơi, an toàn cho đĩa cùng phụ kiện cân chỉnh & vệ sinh từ Hue Sound Vinyl Care." },
-    @{ slug = "dia-than-nhac-ha-noi-sai-gon";  utm = "dia_than_nhac_ha_noi_sai_gon";  title = "Đĩa Than Ký Ức Hà Nội & Sài Gòn Xưa"; desc = "Hành trình âm thanh qua những bản thu gắn liền với ký ức Hà Nội và Sài Gòn xưa: Saigon Super Sound 1965–75, Saigon Soul Revival, Hà Nội Nhớ, Hà Nội Riêng Tôi, HANOI MASTERS." },
-    @{ slug = "qua-tang-dia-than-cao-cap";     utm = "qua_tang_dia_than_cao_cap";     title = "Quà Tặng Đĩa Than & Analog Audio Cao Cấp"; desc = "Gợi ý quà tặng đĩa than, mâm than & phụ kiện Audiophile sang trọng cho sếp, đối tác, người thân — kèm gói quà nghệ thuật, viết thiệp tay & xuất báo giá PDF nhanh." }
+    @{ slug = "bo-suu-tap-quynh-anh-bk-production"; utm = "bo_suu_tap_quynh_anh_bk_production"; short = "Quỳnh Anh"; disc = 8; title = "Bộ Sưu Tập Quỳnh Anh – BK Production (Giảm 8%)"; desc = "Trọn bộ sưu tập đĩa than (Vinyl LP) ca sĩ Quỳnh Anh do BK Production phát hành (Em ơi mùa xuân đến rồi đó, 19xx, Thanh Tùng, Vàng) – Ưu đãi giảm ngay 8% khi mua cùng Bộ sưu tập tại Hue Sound Express." },
+    @{ slug = "dia-than-nhac-tet";             utm = "dia_than_nhac_tet";             short = "Nhạc Tết & Mùa Xuân"; disc = 5; title = "Đĩa Than Nhạc Tết & Mùa Xuân – Analog Audio (Giảm 5%)"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD chủ đề Mùa Xuân, Nhạc Tết, Ly Rượu Mừng và những giai điệu rộn ràng đón năm mới – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập tại Hue Sound Express." },
+    @{ slug = "dia-than-ngay-le";              utm = "dia_than_ngay_le";              short = "Ngày Lễ & Giáng Sinh"; disc = 5; title = "Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới (Giảm 5%)"; desc = "Bộ sưu tập đĩa than Giáng Sinh (Christmas / Noel), Hòa nhạc Năm Mới (Neujahrskonzert) và các ấn phẩm quà tặng dịp lễ hội tinh tế – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "dia-than-nhac-trinh-cong-son";  utm = "dia_than_nhac_trinh_cong_son";  short = "Nhạc Trịnh Công Sơn"; disc = 5; title = "Đĩa Than & CD Nhạc Trịnh Công Sơn (Giảm 5%)"; desc = "Tuyển tập đĩa than (Vinyl LP) & CD nhạc Trịnh Công Sơn bất hủ qua các giọng ca Khánh Ly, Hồng Nhung, Lệ Thu, Cẩm Vân, Giang Trang, Quang Dũng, Trần Mạnh Tuấn... – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "dia-than-studio-ghibli";        utm = "dia_than_studio_ghibli";        short = "Hãng Studio Ghibli"; disc = 5; title = "Đĩa Than Hãng Studio Ghibli – Joe Hisaishi (Giảm 5%)"; desc = "Bộ sưu tập đĩa than nhạc phim hoạt hình Studio Ghibli kinh điển của nhà soạn nhạc Joe Hisaishi (Totoro, Spirited Away, Howl's Moving Castle, Princess Mononoke, Kiki, Castle in the Sky...) – phân phối Gia Định Audio, ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "dia-than-nhac-vang-bolero";     utm = "dia_than_nhac_vang_bolero";     short = "Nhạc Vàng & Bolero"; disc = 5; title = "Đĩa Than Nhạc Vàng, Bolero & Trữ Tình (Giảm 5%)"; desc = "Kho đĩa than & CD Nhạc Vàng, Bolero, Nhạc Trữ Tình tuyển chọn (Chế Linh, Thanh Tuyền, Duy Khánh, Tuấn Vũ, Hoàng Oanh, Như Quỳnh, Lệ Quyên...) – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "dia-than-tinh-khuc-1954-1975";  utm = "dia_than_tinh_khuc_1954_1975";  short = "Tình Khúc 1954–1975"; disc = 5; title = "Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến (Giảm 5%)"; desc = "Tuyển tập Tình khúc 1954–1975 & Nhạc Tiền Chiến bất hủ của Phạm Duy, Trịnh Công Sơn, Ngô Thụy Miên, Vũ Thành An, Nguyễn Ánh 9, Từ Công Phụng... – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "dia-than-nhac-viet-tre";        utm = "dia_than_nhac_viet_tre";        short = "Nhạc Việt Trẻ"; disc = 5; title = "Đĩa Than Nhạc Việt Trẻ & Đương Đại (Giảm 5%)"; desc = "Các ấn phẩm đĩa than Nhạc Việt trẻ hiện đại từ Mỹ Tâm, Hà Anh Tuấn, Quỳnh Anh, SOOBIN, AMEE, Văn Mai Hương, Gia Định Audio, Thời Đại... – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "dia-than-instrument-hoa-tau";   utm = "dia_than_instrument_hoa_tau";   short = "Instrument & Hòa Tấu"; disc = 5; title = "Đĩa Than Instrument & Hòa Tấu Nhạc Cụ (Giảm 5%)"; desc = "Đĩa than & CD hòa tấu nhạc cụ (Piano, Saxophone, Violin, Guitar, Cello, Nhạc cụ dân tộc): 2 Cellos, Viollage – Qinie, Piano Nguyễn Ánh 9, Đặng Thái Sơn, Trần Mạnh Tuấn, GS Trần Văn Khê – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "dia-than-jazz-audiophile";      utm = "dia_than_jazz_audiophile";      short = "Jazz & Audiophile"; disc = 5; title = "Đĩa Than Jazz, Vocal & Audiophile Tham Chiếu (Giảm 5%)"; desc = "Kho đĩa than Jazz, Vocal và Audiophile thu âm tham chiếu từ các hãng đĩa danh tiếng: Stockfisch Records, Blue Note, Verve, Venus Records... – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "may-hat-dia-than-cho-nguoi-moi";utm = "may_hat_dia_than_cho_nguoi_moi";short = "Mâm Than Cho Người Mới"; disc = 5; title = "Máy Hát Đĩa Than (Turntable) Cho Người Mới Bắt Đầu (Giảm 5%)"; desc = "Gợi ý các dòng máy hát đĩa than (Turntable) tích hợp Phono Preamp, dễ chơi, an toàn cho đĩa cùng phụ kiện cân chỉnh & vệ sinh từ Hue Sound Vinyl Care – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "dia-than-nhac-ha-noi-sai-gon";  utm = "dia_than_nhac_ha_noi_sai_gon";  short = "Hà Nội & Sài Gòn Xưa"; disc = 5; title = "Đĩa Than Ký Ức Hà Nội & Sài Gòn Xưa (Giảm 5%)"; desc = "Hành trình âm thanh qua những bản thu gắn liền với ký ức Hà Nội, Sài Gòn xưa và miền Trung yêu dấu: Saigon Super Sound 1965–75, Saigon Soul Revival, Hà Nội Nhớ, Hà Nội Riêng Tôi, HANOI MASTERS, Hoài Phan – Trên Nắng Dưới Cát – Ưu đãi giảm 5% khi mua cùng Bộ sưu tập." },
+    @{ slug = "qua-tang-dia-than-cao-cap";     utm = "qua_tang_dia_than_cao_cap";     short = "Quà Tặng Analog Audio"; disc = 5; title = "Quà Tặng Đĩa Than & Analog Audio Cao Cấp (Giảm 5%)"; desc = "Gợi ý quà tặng đĩa than, mâm than & phụ kiện Audiophile sang trọng cho sếp, đối tác, người thân — kèm gói quà nghệ thuật, viết thiệp tay & ưu đãi giảm 5% khi mua cùng Bộ sưu tập." }
 )
+
+# Tinh truoc thanh vien cac Bo Suu Tap truoc khi xuat catalog_all.json & trang /p/
+$globalColExcludeRx = '(?i)(xuân hảo|xuan hao|tố nga|to nga)'
+$festColExcludeRx   = '(?i)(căn nhà ngoại ô|can nha ngoai o|ngày còn em bên tôi|ngay con em ben toi|tuyển tập nhạc xưa|tuyen tap nhac xua|\boplus\b)'
+$colEligibleItems   = @($allItems | Where-Object { "$($_.a) $($_.t)" -notmatch $globalColExcludeRx })
+$vinylLookupPre     = @($allItems | Where-Object { $_.category -eq "vinyl" -and $_.s -eq "in_stock" })
+$vinylColFallback   = @($vinylLookupPre | Where-Object { "$($_.a) $($_.t)" -notmatch $globalColExcludeRx })
+
+$colSelectors = @{
+    "bo-suu-tap-quynh-anh-bk-production" = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and $_.a -match '(?i)quỳnh anh' -and $_.l -match '(?i)bk production' }) }
+    "dia-than-nhac-tet"              = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(mùa xuân|tết|ly rượu mừng|chúc xuân|đón xuân|em ơi mùa xuân|xuân về|xuân muộn|ngày xuân)') }) }
+    "dia-than-ngay-le"               = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(christmas|noel|giáng sinh|mùa sao sáng|neujahr|new year|holiday|winter|silent night)') }) }
+    "dia-than-nhac-trinh-cong-son"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $($_.d) $(($_.tracklist) -join ' ')" -match '(?i)(trịnh công sơn|nhạc trịnh|diễm xưa|cát bụi|hạ trắng|biển nhớ|mưa hồng|tuổi đá buồn|một cõi đi về|ru em từng ngón xuân nồng|vết lăn trầm|bống là ai|xin mặt trời ngủ yên|phôi pha|nắng thủy tinh|đóa hoa vô thường|còn tuổi nào cho em|hoa vàng mấy độ|tiến thoái lưỡng nan|ru tình|chiều một mình qua phố|ngủ đi con|tình nhớ|ướt mi|gọi tên bốn mùa|quỳnh hương|sóng về đâu|lặng lẽ nơi này|ở trọ|em còn nhớ hay em đã quên|để gió cuốn đi|nhớ mùa thu hà nội|tôi ơi đừng tuyệt vọng|như cánh vạc bay|cuối cùng cho một tình yêu)') }) }
+    "dia-than-studio-ghibli"         = { param($list) @($list | Where-Object { $_.l -match '(?i)studio ghibli' -or $_.a -match '(?i)studio ghibli|joe hisaishi' }) }
+    "dia-than-nhac-vang-bolero"      = { param($list) @($list | Where-Object { $_.g -eq 'bolero_golden_oldies' -or ($_.genres -contains 'bolero_golden_oldies') }) }
+    "dia-than-tinh-khuc-1954-1975"   = { param($list) @($list | Where-Object { $_.g -eq 'love_songs_1954_1975' -or ($_.genres -contains 'love_songs_1954_1975') }) }
+    "dia-than-nhac-viet-tre"         = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'vietnamese_pop_modern' -or ($_.genres -contains 'vietnamese_pop_modern')) }) }
+    "dia-than-instrument-hoa-tau"    = { param($list) @($list | Where-Object { $_.g -eq 'instrumental' -or ($_.genres -contains 'instrumental') }) }
+    "dia-than-jazz-audiophile"       = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'jazz_vocal' -or $_.g -eq 'audiophile_reference' -or ($_.genres -contains 'jazz_vocal') -or ($_.genres -contains 'audiophile_reference')) -and $_.s -eq 'in_stock' } | Select-Object -First 48) }
+    "may-hat-dia-than-cho-nguoi-moi" = { param($list) @($list | Where-Object { $_.category -eq 'turntable' -or $_.category -eq 'accessory' -or $_.category -eq 'care' }) }
+    "dia-than-nhac-ha-noi-sai-gon"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ($_.id -eq 41 -or ("$($_.a) $($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(hà nội|hanoi|sài gòn|saigon)')) }) }
+    "qua-tang-dia-than-cao-cap"      = { param($list) @($list | Where-Object { $_.s -eq 'in_stock' -and (($_.mood -contains 'refined_gifting') -or $_.category -eq 'turntable') } | Select-Object -First 36) }
+}
+
+$colShownMap = @{}
+$skuToCols = @{}
+$skuToColObjs = @{}
+$newColCounts = @{}
+
+foreach ($col in $collectionMeta) {
+    $matched = @(& $colSelectors[$col.slug] $colEligibleItems)
+    if ($matched.Count -lt 6 -and $col.slug -notin @("bo-suu-tap-quynh-anh-bk-production","dia-than-studio-ghibli")) {
+        $extra = @($vinylColFallback | Where-Object { ($matched.sku -notcontains $_.sku) -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) } | Select-Object -First (8 - $matched.Count))
+        $matched = @($matched) + $extra
+    }
+    # Uu tien san pham Con hang / Lien he bao gia len tren cung trong tung bo suu tap
+    $matchedInStock = @($matched | Where-Object { $_.s -eq 'in_stock' -or $_.p -eq 0 -or ($_.PSObject.Properties['force_contact'] -and $_.force_contact) })
+    $matchedOut     = @($matched | Where-Object { -not ($_.s -eq 'in_stock' -or $_.p -eq 0 -or ($_.PSObject.Properties['force_contact'] -and $_.force_contact)) })
+    $matchedSorted  = @($matchedInStock) + @($matchedOut)
+    $shown = @($matchedSorted | Select-Object -First 48)
+    $colShownMap[$col.slug] = $shown
+    $newColCounts[$col.slug] = $shown.Count
+    foreach ($mItem in $shown) {
+        if (-not $skuToCols.ContainsKey($mItem.sku)) { $skuToCols[$mItem.sku] = New-Object System.Collections.ArrayList }
+        if (-not $skuToCols[$mItem.sku].Contains($col.slug)) { [void]$skuToCols[$mItem.sku].Add($col.slug) }
+        if (-not $skuToColObjs.ContainsKey($mItem.sku)) { $skuToColObjs[$mItem.sku] = New-Object System.Collections.ArrayList }
+        $already = @($skuToColObjs[$mItem.sku] | Where-Object { $_.slug -eq $col.slug })
+        if ($already.Count -eq 0) {
+            [void]$skuToColObjs[$mItem.sku].Add([PSCustomObject]@{
+                slug  = $col.slug
+                short = $col.short
+                title = $col.title
+                disc  = $col.disc
+            })
+        }
+    }
+}
+
+# Gan danh sach bo suu tap & note uu dai "Xem uu dai khi mua cung Bo suu tap..." cho tung san pham
+foreach ($it in $allItems) {
+    $cArr = New-Object System.Collections.ArrayList
+    if ($skuToColObjs.ContainsKey($it.sku)) {
+        $sortedCols = @($skuToColObjs[$it.sku] | Sort-Object -Property @{ Expression = { $_.disc }; Descending = $true })
+        foreach ($sc in $sortedCols) { [void]$cArr.Add($sc) }
+    }
+    $it | Add-Member -NotePropertyName 'collections' -NotePropertyValue $cArr -Force
+    if ($cArr.Count -gt 0) {
+        $primaryCol = $cArr[0]
+        $it | Add-Member -NotePropertyName 'combo_note_prefix' -NotePropertyValue 'Xem ưu đãi khi mua cùng' -Force
+        $it | Add-Member -NotePropertyName 'combo_label' -NotePropertyValue "Bộ sưu tập $($primaryCol.short) (-$($primaryCol.disc)%)" -Force
+        $it | Add-Member -NotePropertyName 'combo_slug' -NotePropertyValue $primaryCol.slug -Force
+    }
+}
 
 $guideMeta = @(
     @{ slug = "bao-quan-dia-than-thoi-tiet-viet-nam";      utm = "guide_bao_quan_dia_than";   title = "Cách bảo quản đĩa than với thời tiết nóng ẩm ở Việt Nam" },
@@ -919,7 +1038,7 @@ if ($GenerateProductPages) {
         $originUrl = if ($hasOrigin) { "../../?cat=$catParam&origin=$originCode" } else { "" }
         $genreUrl  = if ($hasOrigin) { "../../?cat=$catParam&origin=$originCode&genre=$([Uri]::EscapeDataString($it.g))" } else { "../../?cat=$catParam&genre=$([Uri]::EscapeDataString($it.g))" }
         $artistUrl = "../../?cat=$catParam&artist=$([Uri]::EscapeDataString($it.a))"
-        $hasLabelLink = ($it.l -and $it.l -notmatch '^(?i)(other|việt nam)$')
+        $hasLabelLink = ($it.l -and $it.l -notmatch '^(?i)việt nam$')
         $labelUrl  = if ($hasLabelLink) { "../../?cat=$catParam&label=$([Uri]::EscapeDataString($it.l))" } else { "" }
         $condUrl   = "../../?cat=$catParam&cond=$([Uri]::EscapeDataString($it.cond))"
         $statusUrl = "../../?cat=$catParam&status=$([Uri]::EscapeDataString($it.s))"
@@ -940,7 +1059,7 @@ if ($GenerateProductPages) {
         $isAccBundle = ($it.category -eq "accessory" -or $it.category -eq "care")
         $accNoteHtml = if ($isAccBundle) { "<div class='acc-note'>$(Escape-Html $accNoteVi)</div>" } else { "" }
         $promoNoteHtml = if ($it.PSObject.Properties['promo_note'] -and $it.promo_note) { "<div class='acc-note' id='promoNoteEl'>🎁 $(Escape-Html $it.promo_note)</div>" } else { "" }
-        $comboNoteHtml = if ($it.PSObject.Properties['combo_slug'] -and $it.combo_slug) { "<div class='acc-note'>💿 $(Escape-Html $it.combo_note_prefix) <a class='xlink' href='../../bo-suu-tap/$($it.combo_slug)/'><strong>$(Escape-Html $it.combo_label)</strong></a></div>" } else { "" }
+        $comboNoteHtml = if ($it.PSObject.Properties['combo_slug'] -and $it.combo_slug) { "<div class='acc-note'>🎁 $(Escape-Html $it.combo_note_prefix) <a class='xlink' href='../../bo-suu-tap/$($it.combo_slug)/'><strong>$(Escape-Html $it.combo_label)</strong></a></div>" } else { "" }
         $priceHtml = if ($it.p -gt 0 -and $origPriceFmt) {
             "<div class='price-stack'><span class='price-label'>Giá</span><span class='price-old'>$origPriceFmt</span><span class='price-save' id='priceSaveEl'>-$($saveK)k</span></div><div class='price' id='priceMainEl'>$priceFmt</div>$comboNoteHtml$promoNoteHtml$accNoteHtml"
         } else {
@@ -991,6 +1110,37 @@ if ($GenerateProductPages) {
             $upHead = if ($isAccBundle) { "Đĩa than mới về đề xuất phối ghép" } else { "Gợi ý đi kèm từ Hue Sound Vinyl Care" }
             $upsellHtml = "<section class='box'><h2>$upHead</h2><div class='up-grid'>$cards</div></section>"
         }
+
+        # Gioi thieu cac Bo Suu Tap lien quan ben duoi trang chi tiet san pham (Muc 14)
+        $relColList = New-Object System.Collections.ArrayList
+        $relColSeen = New-Object 'System.Collections.Generic.HashSet[string]'
+        if ($it.PSObject.Properties['collections'] -and $it.collections -and $it.collections.Count -gt 0) {
+            foreach ($mc in $it.collections) {
+                if ($relColSeen.Add($mc.slug)) {
+                    $metaMatch = $collectionMeta | Where-Object { $_.slug -eq $mc.slug } | Select-Object -First 1
+                    if ($metaMatch) { [void]$relColList.Add($metaMatch) }
+                }
+            }
+        }
+        $fallbackSlugs = if ($it.category -eq "turntable" -or $it.category -eq "accessory" -or $it.category -eq "care") {
+            @("may-hat-dia-than-cho-nguoi-moi","qua-tang-dia-than-cao-cap","bo-suu-tap-quynh-anh-bk-production")
+        } elseif ($originCode -eq "VN") {
+            @("bo-suu-tap-quynh-anh-bk-production","dia-than-nhac-trinh-cong-son","dia-than-nhac-ha-noi-sai-gon","qua-tang-dia-than-cao-cap")
+        } else {
+            @("dia-than-studio-ghibli","dia-than-jazz-audiophile","dia-than-instrument-hoa-tau","qua-tang-dia-than-cao-cap")
+        }
+        foreach ($fs in $fallbackSlugs) {
+            if ($relColList.Count -ge 4) { break }
+            if ($relColSeen.Add($fs)) {
+                $metaMatch = $collectionMeta | Where-Object { $_.slug -eq $fs } | Select-Object -First 1
+                if ($metaMatch) { [void]$relColList.Add($metaMatch) }
+            }
+        }
+        $relColCards = ($relColList | ForEach-Object {
+            $cCnt = if ($newColCounts.ContainsKey($_.slug)) { $newColCounts[$_.slug] } else { 0 }
+            "<a class='up-card' href='../../bo-suu-tap/$($_.slug)/'><div style='display:flex;align-items:center;justify-content:space-between;gap:6px;'><span style='font-size:10.5px;font-weight:800;color:#FFF7E8;background:#B5541F;padding:2px 7px;border-radius:99px;'>Giảm $($_.disc)%</span><span style='font-size:11px;color:#6F5139;font-weight:600;'>$cCnt ấn phẩm</span></div><strong>Bộ sưu tập $(Escape-Html $_.short)</strong><span style='font-size:12px;font-weight:600;'>Xem ưu đãi bộ sưu tập →</span></a>"
+        }) -join ""
+        $relColsHtml = "<section class='box'><h2>✨ Bộ sưu tập liên quan (Ưu đãi 5%–8%)</h2><div class='up-grid'>$relColCards</div></section>"
 
         $catFaqs = Get-CategoryFaqs -Category $it.category
         $faqItemsHtml = ($catFaqs | ForEach-Object {
@@ -1209,6 +1359,7 @@ if ($GenerateProductPages) {
     $specHtml
     $faqBoxHtml
     $upsellHtml
+    $relColsHtml
     <section class="box">
       <h2>Từ khóa &amp; Chủ đề liên quan</h2>
       <div class="kw-cloud">$(($it.kw | Select-Object -First 14 | ForEach-Object { "<a class='kw-chip' href='../../?cat=$catParam&q=$([Uri]::EscapeDataString($_))'>$(Escape-Html $_)</a>" }) -join "")</div>
@@ -1279,31 +1430,9 @@ if ($GenerateProductPages) {
         }
     }
 
-    # 5. SINH 10 TRANG BO SUU TAP TINH (/bo-suu-tap/<slug>/index.html) + TU DONG PHAN PHOI & BAO CAO
+    # 5. SINH 13 TRANG BO SUU TAP TINH (/bo-suu-tap/<slug>/index.html) + TU DONG PHAN PHOI & BAO CAO
     $colRoot = Join-Path (Get-Location) "bo-suu-tap"
     if (-not (Test-Path $colRoot)) { New-Item -ItemType Directory -Path $colRoot -Force | Out-Null }
-
-    # Quy tac loai tru chung (bo Xuan Hao, To Nga khoi tat ca bo suu tap) & rieng cho Tet / Ngay Le
-    $globalColExcludeRx = '(?i)(xuân hảo|xuan hao|tố nga|to nga)'
-    $festColExcludeRx   = '(?i)(căn nhà ngoại ô|can nha ngoai o|ngày còn em bên tôi|ngay con em ben toi|tuyển tập nhạc xưa|tuyen tap nhac xua|\boplus\b)'
-    $colEligibleItems   = @($allItems | Where-Object { "$($_.a) $($_.t)" -notmatch $globalColExcludeRx })
-    $vinylColFallback   = @($vinylLookup | Where-Object { "$($_.a) $($_.t)" -notmatch $globalColExcludeRx })
-
-    $colSelectors = @{
-        "dia-than-nhac-tet"              = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(mùa xuân|tết|ly rượu mừng|chúc xuân|đón xuân|em ơi mùa xuân|xuân về|xuân muộn|ngày xuân)') }) }
-        "dia-than-ngay-le"               = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) -and ("$($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(christmas|noel|giáng sinh|mùa sao sáng|neujahr|new year|holiday|winter|silent night)') }) }
-        "dia-than-nhac-trinh-cong-son"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $($_.d) $(($_.tracklist) -join ' ')" -match '(?i)(trịnh công sơn|nhạc trịnh|diễm xưa|cát bụi|hạ trắng|biển nhớ|mưa hồng|tuổi đá buồn|một cõi đi về|ru em từng ngón xuân nồng|vết lăn trầm|bống là ai|xin mặt trời ngủ yên|phôi pha|nắng thủy tinh|đóa hoa vô thường|còn tuổi nào cho em|hoa vàng mấy độ|tiến thoái lưỡng nan|ru tình|chiều một mình qua phố|ngủ đi con|tình nhớ|ướt mi|gọi tên bốn mùa|quỳnh hương|sóng về đâu|lặng lẽ nơi này|ở trọ|em còn nhớ hay em đã quên|để gió cuốn đi|nhớ mùa thu hà nội|tôi ơi đừng tuyệt vọng|như cánh vạc bay|cuối cùng cho một tình yêu)') }) }
-        "bo-suu-tap-quynh-anh-bk-production" = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and $_.a -match '(?i)quỳnh anh' -and $_.l -match '(?i)bk production' }) }
-        "dia-than-studio-ghibli"         = { param($list) @($list | Where-Object { $_.l -match '(?i)studio ghibli' -or $_.a -match '(?i)studio ghibli|joe hisaishi' }) }
-        "dia-than-nhac-vang-bolero"      = { param($list) @($list | Where-Object { $_.g -eq 'bolero_golden_oldies' -or ($_.genres -contains 'bolero_golden_oldies') }) }
-        "dia-than-tinh-khuc-1954-1975"   = { param($list) @($list | Where-Object { $_.g -eq 'love_songs_1954_1975' -or ($_.genres -contains 'love_songs_1954_1975') }) }
-        "dia-than-nhac-viet-tre"         = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'vietnamese_pop_modern' -or ($_.genres -contains 'vietnamese_pop_modern')) }) }
-        "dia-than-instrument-hoa-tau"    = { param($list) @($list | Where-Object { $_.g -eq 'instrumental' -or ($_.genres -contains 'instrumental') }) }
-        "dia-than-jazz-audiophile"       = { param($list) @($list | Where-Object { $_.category -eq 'vinyl' -and ($_.g -eq 'jazz_vocal' -or $_.g -eq 'audiophile_reference') -and $_.s -eq 'in_stock' } | Select-Object -First 36) }
-        "may-hat-dia-than-cho-nguoi-moi" = { param($list) @($list | Where-Object { $_.category -eq 'turntable' -or $_.category -eq 'accessory' -or $_.category -eq 'care' }) }
-        "dia-than-nhac-ha-noi-sai-gon"   = { param($list) @($list | Where-Object { ($_.category -eq 'vinyl' -or $_.category -eq 'cd') -and ("$($_.a) $($_.t) $(($_.tracklist) -join ' ')" -match '(?i)(hà nội|hanoi|sài gòn|saigon)') }) }
-        "qua-tang-dia-than-cao-cap"      = { param($list) @($list | Where-Object { $_.s -eq 'in_stock' -and (($_.mood -contains 'refined_gifting') -or $_.category -eq 'turntable') } | Select-Object -First 30) }
-    }
 
     # Theo doi phan phoi san pham vao bo suu tap de bao cao khi co san pham moi
     $snapPath = Join-Path (Get-Location) "data\collection_snapshot.json"
@@ -1318,8 +1447,6 @@ if ($GenerateProductPages) {
             }
         } catch {}
     }
-    $skuToCols = @{}
-    $newColCounts = @{}
 
     foreach ($col in $collectionMeta) {
         $cDir = Join-Path $colRoot $col.slug
@@ -1328,18 +1455,7 @@ if ($GenerateProductPages) {
         $cTitleEsc = Escape-Html $col.title
         $cDescEsc  = Escape-Html $col.desc
 
-        $matched = @(& $colSelectors[$col.slug] $colEligibleItems)
-        if ($matched.Count -lt 6 -and $col.slug -notin @("bo-suu-tap-quynh-anh-bk-production","dia-than-studio-ghibli")) {
-            # Bo sung them cac dia than con hang tieu bieu (da loai tru Xuan Hao, To Nga & muc loai tru le hoi)
-            $extra = @($vinylColFallback | Where-Object { ($matched.sku -notcontains $_.sku) -and ("$($_.a) $($_.t)" -notmatch $festColExcludeRx) } | Select-Object -First (8 - $matched.Count))
-            $matched = @($matched) + $extra
-        }
-        $shown = @($matched | Select-Object -First 36)
-        $newColCounts[$col.slug] = $shown.Count
-        foreach ($mItem in $shown) {
-            if (-not $skuToCols.ContainsKey($mItem.sku)) { $skuToCols[$mItem.sku] = New-Object System.Collections.ArrayList }
-            [void]$skuToCols[$mItem.sku].Add($col.slug)
-        }
+        $shown = @($colShownMap[$col.slug])
 
         $itemCardsHtml = ($shown | ForEach-Object {
             $fbUid = "c$($col.utm.Substring(0,[Math]::Min(6,$col.utm.Length)))$($_.id)"
@@ -1361,10 +1477,11 @@ if ($GenerateProductPages) {
             "<a class='col-chip' href='../$($_.slug)/'>$(Escape-Html $_.title)</a>"
         }) -join ""
 
+        $colDisc = [int]$col.disc
         $comboBannerHtml = ""
         $colCtaHtml = @"
-        <a class="btn" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer">💬 Tư vấn chọn đĩa qua Zalo (09323.13918)</a>
-        <a class="btn btn-wa" href="https://wa.me/84932313918" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+        <a class="btn" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer">💬 Đặt Bộ Sưu Tập (-$colDisc%) qua Zalo (09323.13918)</a>
+        <a class="btn btn-wa" href="https://wa.me/84932313918?text=$([Uri]::EscapeDataString("Chào Hue Sound Express, mình muốn đặt ưu đãi giảm $colDisc% khi mua cùng Bộ sưu tập $($col.short) ($cUrl)."))" target="_blank" rel="noopener noreferrer">💬 Đặt qua WhatsApp</a>
 "@
         if ($col.slug -eq "bo-suu-tap-quynh-anh-bk-production" -and $shown.Count -gt 0) {
             $sumOrig = 0
@@ -1375,12 +1492,14 @@ if ($GenerateProductPages) {
             $comboTitles = ($shown | ForEach-Object { $_.t }) -join ", "
             $comboMsg = "Chào Hue Sound Express, mình muốn đặt Full Combo $($shown.Count) đĩa than Bộ sưu tập Quỳnh Anh – BK Production (giảm 8% còn $($comboFinal.ToString('N0')) đ): $comboTitles."
             $comboWaUrl = "https://wa.me/84932313918?text=$([Uri]::EscapeDataString($comboMsg))"
-            $comboBannerHtml = "<div style='margin:0 0 14px;padding:14px 16px;border-radius:12px;background:rgba(181,84,31,.11);border:1px solid rgba(181,84,31,.35);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;'><div><div style='font-size:12px;font-weight:800;color:#8C3A12;text-transform:uppercase;letter-spacing:.04em;'>🎁 Ưu đãi Full Combo $($shown.Count) đĩa Quỳnh Anh – BK Production (Giảm 8%)</div><div style='font-size:12.5px;color:#6F5139;margin-top:2px;'>Đĩa <strong>Thanh Tùng</strong> &amp; <strong>Vàng</strong> chỉ bán kèm trọn bộ Full Combo • Tổng niêm yết <span style='text-decoration:line-through;'>$($sumOrig.ToString('N0')) đ</span> (Tiết kiệm <strong>-$($comboSave.ToString('N0')) đ</strong>)</div></div><div style='font-size:22px;font-weight:800;color:#B5541F;'>$($comboFinal.ToString('N0')) đ</div></div>"
+            $comboBannerHtml = "<div style='margin:0 0 14px;padding:14px 16px;border-radius:12px;background:rgba(181,84,31,.11);border:1px solid rgba(181,84,31,.35);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;'><div><div style='font-size:12px;font-weight:800;color:#8C3A12;text-transform:uppercase;letter-spacing:.04em;'>🎁 Ưu đãi Bộ sưu tập Quỳnh Anh – BK Production (Giảm 8%)</div><div style='font-size:12.5px;color:#6F5139;margin-top:2px;'>Ưu đãi giảm ngay <strong>8%</strong> khi mua cùng trọn bộ $($shown.Count) đĩa than Quỳnh Anh • Tổng niêm yết <span style='text-decoration:line-through;'>$($sumOrig.ToString('N0')) đ</span> (Tiết kiệm <strong>-$($comboSave.ToString('N0')) đ</strong>)</div></div><div style='font-size:22px;font-weight:800;color:#B5541F;'>$($comboFinal.ToString('N0')) đ</div></div>"
             $colCtaHtml = @"
         <a class="btn" href="../../?combo=$([Uri]::EscapeDataString($comboSkus))">+ Thêm Full Combo $($shown.Count) đĩa (-8%) vào Giỏ / Báo giá</a>
-        <a class="btn" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer" style="background:#0068FF;">💬 Đặt Full Combo (-8%) qua Zalo</a>
+        <a class="btn" href="https://zalo.me/0932313918" target="_blank" rel="noopener noreferrer" style="background:#0068FF;">💬 Đặt Bộ Sưu Tập (-8%) qua Zalo</a>
         <a class="btn btn-wa" href="$comboWaUrl" target="_blank" rel="noopener noreferrer">💬 Đặt qua WhatsApp</a>
 "@
+        } else {
+            $comboBannerHtml = "<div style='margin:0 0 14px;padding:13px 16px;border-radius:12px;background:rgba(181,84,31,.10);border:1px solid rgba(181,84,31,.32);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;'><div><div style='font-size:12px;font-weight:800;color:#8C3A12;text-transform:uppercase;letter-spacing:.04em;'>🎁 Ưu đãi Bộ sưu tập $(Escape-Html $col.short) – Giảm ngay $colDisc%</div><div style='font-size:12.5px;color:#6F5139;margin-top:2px;'>Áp dụng giảm thêm <strong>$colDisc%</strong> khi mua combo từ 2 đĩa trở lên trong Bộ sưu tập này • Inbox Zalo 09323.13918 để được phối chọn &amp; xuất báo giá nhanh.</div></div><div style='font-size:20px;font-weight:800;color:#B5541F;'>-$colDisc%</div></div>"
         }
 
         $cHtml = @"
@@ -1682,7 +1801,7 @@ $colCtaHtml
 
     [void]$sm.AppendLine('</urlset>')
     [System.IO.File]::WriteAllText((Join-Path (Get-Location) "sitemap.xml"), $sm.ToString(), $utf8NoBom)
-    Write-Host "Da sinh $($allItems.Count) trang SEO /p/, $redirectCount redirect URL cu, 10 /bo-suu-tap/, 6 /cam-nang/ va sitemap.xml!" -ForegroundColor Green
+    Write-Host "Da sinh $($allItems.Count) trang SEO /p/, $redirectCount redirect URL cu, $($collectionMeta.Count) /bo-suu-tap/, $($guideDefs.Count) /cam-nang/ va sitemap.xml!" -ForegroundColor Green
 }
 
 Write-Host "Build hoan tat! Tong so san pham hop nhat: $($allItems.Count)" -ForegroundColor Green

@@ -16,19 +16,19 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 - **Pricing & Promo Rules:** Giá báo chưa bao gồm VAT 10% (giá 0 hiển thị Liên hệ). * Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn.
 
 ## 3. Themed Collection Landing Pages (/bo-suu-tap/)
-- **Đĩa Than Nhạc Tết & Mùa Xuân – Analog Audio:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-tet/
-- **Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-ngay-le/
-- **Đĩa Than & CD Nhạc Trịnh Công Sơn:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-trinh-cong-son/
 - **Bộ Sưu Tập Quỳnh Anh – BK Production (Giảm 8%):** https://huesoundexpress.github.io/bo-suu-tap/bo-suu-tap-quynh-anh-bk-production/
-- **Đĩa Than Hãng Studio Ghibli – Joe Hisaishi:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-studio-ghibli/
-- **Đĩa Than Nhạc Vàng, Bolero & Trữ Tình:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-vang-bolero/
-- **Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-tinh-khuc-1954-1975/
-- **Đĩa Than Nhạc Việt Trẻ & Đương Đại:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-viet-tre/
-- **Đĩa Than Instrument & Hòa Tấu Nhạc Cụ:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-instrument-hoa-tau/
-- **Đĩa Than Jazz, Vocal & Audiophile Tham Chiếu:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-jazz-audiophile/
-- **Máy Hát Đĩa Than (Turntable) Cho Người Mới Bắt Đầu:** https://huesoundexpress.github.io/bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/
-- **Đĩa Than Ký Ức Hà Nội & Sài Gòn Xưa:** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/
-- **Quà Tặng Đĩa Than & Analog Audio Cao Cấp:** https://huesoundexpress.github.io/bo-suu-tap/qua-tang-dia-than-cao-cap/
+- **Đĩa Than Nhạc Tết & Mùa Xuân – Analog Audio (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-tet/
+- **Đĩa Than Ngày Lễ, Giáng Sinh (Noel) & Năm Mới (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-ngay-le/
+- **Đĩa Than & CD Nhạc Trịnh Công Sơn (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-trinh-cong-son/
+- **Đĩa Than Hãng Studio Ghibli – Joe Hisaishi (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-studio-ghibli/
+- **Đĩa Than Nhạc Vàng, Bolero & Trữ Tình (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-vang-bolero/
+- **Đĩa Than Tình Khúc 1954–1975 & Nhạc Tiền Chiến (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-tinh-khuc-1954-1975/
+- **Đĩa Than Nhạc Việt Trẻ & Đương Đại (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-viet-tre/
+- **Đĩa Than Instrument & Hòa Tấu Nhạc Cụ (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-instrument-hoa-tau/
+- **Đĩa Than Jazz, Vocal & Audiophile Tham Chiếu (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-jazz-audiophile/
+- **Máy Hát Đĩa Than (Turntable) Cho Người Mới Bắt Đầu (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/
+- **Đĩa Than Ký Ức Hà Nội & Sài Gòn Xưa (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/
+- **Quà Tặng Đĩa Than & Analog Audio Cao Cấp (Giảm 5%):** https://huesoundexpress.github.io/bo-suu-tap/qua-tang-dia-than-cao-cap/
 
 ## 4. Analog Audio Guides & FAQs (/cam-nang/)
 - **Cách bảo quản đĩa than với thời tiết nóng ẩm ở Việt Nam:** https://huesoundexpress.github.io/cam-nang/bao-quan-dia-than-thoi-tiet-viet-nam/
@@ -41,13 +41,15 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 ## 5. Unified Analog Audio Catalog (1141 Items)
 | Category | SKU | Artist / Brand | Product / Album | Genre Code | Condition | Sale Price (VND) | Status | URL |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| vinyl | VN-KIEPNAO-COYEUNHAU-565 | Nhiều nghệ sĩ | Đĩa than (Vinyl) Kiếp Nào Có Yêu Nhau | love_songs_1954_1975 | mint_sealed | 930,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhieu-nghe-si-kiep-nao-co-yeu-nhau-565/ |
+| vinyl | VN-GIANGT-LENHDENH-564 | Giang Trang | Đĩa than (Vinyl) Lênh Đênh Nhớ Phố | love_songs_1954_1975 | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-giang-trang-lenh-denh-nho-pho-564/ |
 | vinyl | VN-BOLERO-NHUCANHC-563 | Nguyễn Tuấn Anh | Đĩa than (Vinyl) Như Cánh Chim Trời | bolero_golden_oldies | mint_sealed | 1,290,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nguyen-tuan-anh-nhu-canh-chim-troi-563/ |
 | vinyl | VN-BOLERO-LOIYEUCO-562 | Hương Lan | Đĩa than (Vinyl) Lời Yêu Cuối | bolero_golden_oldies | mint_sealed | 1,290,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-huong-lan-loi-yeu-cuoi-562/ |
 | vinyl | VN-LEQUYEN-ACOUSTIC-561 | Lệ Quyên | Đĩa than (Vinyl) Acoustic | vietnamese_pop_modern | mint_sealed | 1,290,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-le-quyen-acoustic-561/ |
 | vinyl | VN-QVTH-DUONGVE-560 | Quái Vật Tí Hon | Đĩa than (Vinyl) Đường Về (Black/Apple Red Vinyl 2LP) | vietnamese_pop_modern | mint_sealed | 1,911,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quai-vat-ti-hon-duong-ve-black-apple-red-vinyl-2lp-560/ |
-| vinyl | VN-QUYNH-VANGQA-559 | Quỳnh Anh | Đĩa than (Vinyl) Vàng [R] | bolero_golden_oldies | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-vang-r-559/ |
-| vinyl | VN-QUYNHANH-THANHTUNG-558 | Quỳnh Anh | Đĩa than (Vinyl) Thanh Tùng | vietnamese_pop_modern | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-thanh-tung-558/ |
+| vinyl | VN-QUYNH-VANGQA-559 | Quỳnh Anh | Đĩa than (Vinyl) Vàng [R] | bolero_golden_oldies | mint_sealed | 1,480,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-vang-r-559/ |
 | vinyl | VN-BOLERO-CONTUOINCE-558 | Khánh Ly | Đĩa than (Vinyl) Còn tuổi nào cho em | love_songs_1954_1975 | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-khanh-ly-con-tuoi-nao-cho-em-558/ |
+| vinyl | VN-QUYNHANH-THANHTUNG-558 | Quỳnh Anh | Đĩa than (Vinyl) Thanh Tùng | vietnamese_pop_modern | mint_sealed | 1,480,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-thanh-tung-558/ |
 | vinyl | VN-DUONGTHU-80NAM-557 | Dương Thụ | Đĩa than (Vinyl) 80 Năm Một Giấc Mơ (Bản có chữ ký) | vietnamese_pop_modern | mint_sealed | 2,950,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-duong-thu-80-nam-mot-giac-mo-ban-co-chu-ky-557/ |
 | vinyl | VN-BOLERO-DAVANGII-557 | Khánh Ly | Đĩa than (Vinyl) Da vàng II | love_songs_1954_1975 | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-khanh-ly-da-vang-ii-557/ |
 | vinyl | VN-BOLERO-DAVANGI-556 | Khánh Ly | Đĩa than (Vinyl) Da vàng I | love_songs_1954_1975 | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-khanh-ly-da-vang-i-556/ |
@@ -96,8 +98,8 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 | vinyl | VN-VU-THA-TINH-LP-NEW-OTH | Vũ Thắng Lợi | Đĩa than (Vinyl) Tình ca | vietnamese_folk_patriotic | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-vu-thang-loi-tinh-ca-31/ |
 | vinyl | VN-VU-THA-HA-NO-LP-NEW-OTH | Vũ Thắng Lợi | Đĩa than (Vinyl) Hà Nội riêng tôi | vietnamese_folk_patriotic | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-vu-thang-loi-ha-noi-rieng-toi-32/ |
 | vinyl | VN-HUONG-MOT-D-LP-NEW-OTH | Hương Giang | Đĩa than (Vinyl) Một đời yêu anh | vietnamese_pop_modern | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-huong-giang-mot-doi-yeu-anh-33/ |
-| vinyl | VN-QUYNH-EM-OI-LP-NEW-BK | Quỳnh Anh | Đĩa than (Vinyl) Em ơi mùa xuân đến rồi đó [R] | vietnamese_pop_modern | mint_sealed | 2,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-em-oi-mua-xuan-den-roi-do-r-34/ |
-| vinyl | VN-QUYNH-19XX-LP-NEW-BK | Quỳnh Anh | Đĩa than (Vinyl) 19xx | vietnamese_pop_modern | mint_sealed | 1,250,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-19xx-38/ |
+| vinyl | VN-QUYNH-EM-OI-LP-NEW-BK | Quỳnh Anh | Đĩa than (Vinyl) Em ơi mùa xuân đến rồi đó [R] | vietnamese_pop_modern | mint_sealed | 2,480,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-em-oi-mua-xuan-den-roi-do-r-34/ |
+| vinyl | VN-QUYNH-19XX-LP-NEW-BK | Quỳnh Anh | Đĩa than (Vinyl) 19xx | vietnamese_pop_modern | mint_sealed | 1,280,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-quynh-anh-19xx-38/ |
 | vinyl | VN-VIOLLA-QINIE-LP-NEW-BK | Viollage | Đĩa than (Vinyl) Qinie | instrumental | mint_sealed | 1,150,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-viollage-qinie-40/ |
 | vinyl | VN-HOAI-P-TREN-LP-NEW-BK | Hoài Phan | Đĩa than (Vinyl) Trên nắng dưới cát | vietnamese_folk_patriotic | mint_sealed | 1,250,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-hoai-phan-tren-nang-duoi-cat-41/ |
 | vinyl | VN-BOLERO-VUNGLAME-42 | Như Quỳnh | Đĩa than (Vinyl) Vùng lá me bay | bolero_golden_oldies | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-nhu-quynh-vung-la-me-bay-42/ |
@@ -484,7 +486,6 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 | vinyl | NN-VLADIM-DEAR-LP-BLACK-VEN | Vladimir Shafranov & Harry Allen | Đĩa than (Vinyl) Dear Old Stockholm | jazz_vocal | mint_sealed | 1,450,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-vladimir-shafranov-harry-allen-dear-old-stockholm-439/ |
 | vinyl | NN-ANDREA-IL-MA-2XLP-REISSUE-UNI | Andrea Bocelli | Đĩa than (Vinyl) Il Mare Calmo Della Sera | classic_soundtrack | mint_sealed | 1,290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-andrea-bocelli-il-mare-calmo-della-sera-440/ |
 | vinyl | NN-ANDREA-MY-CH-2XLP-BLACK-SUG | Andrea Bocelli | Đĩa than (Vinyl) My Christmas | classic_soundtrack | mint_sealed | 1,290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-andrea-bocelli-my-christmas-441/ |
-| vinyl | NN-ANDREA-MY-CH-2XLP-COLOURED-VINYL-UNI | Andrea Bocelli | Đĩa than (Vinyl) My Christmas | classic_soundtrack | mint_sealed | 1,290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-andrea-bocelli-my-christmas-442/ |
 | vinyl | NN-ANDREA-A-FAM-LP-LIMITED-EDITION-CAP | Andrea Bocelli | Đĩa than (Vinyl) A Family Christmas | classic_soundtrack | mint_sealed | 890,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-andrea-bocelli-a-family-christmas-443/ |
 | vinyl | NN-ANDREA-A-FAM-2XLP-BLACK-DEC | Andrea Bocelli, Matteo Bocelli, Virginia Bocelli | Đĩa than (Vinyl) A Family Christmas | classic_soundtrack | mint_sealed | 890,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-andrea-bocelli-matteo-bocelli-virginia-bocelli-a-family-christma-444/ |
 | vinyl | NN-ANDREA-SOGNO-2XLP-BLACK-UNI | Andrea Bocelli | Đĩa than (Vinyl) Sogno | classic_soundtrack | mint_sealed | 1,290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-andrea-bocelli-sogno-445/ |
@@ -578,7 +579,6 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 | vinyl | NN-HTD-535 | The Strokes | Đĩa than (Vinyl) Is This It | audiophile_reference | mint_sealed | 1,050,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-the-strokes-is-this-it-535/ |
 | vinyl | NN-HTD-536 | Elvis Presley | Đĩa than (Vinyl) 30 #1 Hits | audiophile_reference | mint_sealed | 1,290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-elvis-presley-30-1-hits-536/ |
 | vinyl | VN-BOLERO-SONATAS-74 | Khánh Ly | Đĩa than (Vinyl) Sonatas | love_songs_1954_1975 | mint_sealed | 1,450,000 | in_stock | https://huesoundexpress.github.io/p/dia-than-vinyl-khanh-ly-sonatas-74/ |
-| cd | CD-VN-KIEPNAOC-1615 | Nhiều nghệ sĩ | Đĩa CD Kiếp Nào Có Yêu Nhau | love_songs_1954_1975 | mint_sealed | 130,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-nhieu-nghe-si-kiep-nao-co-yeu-nhau-1615/ |
 | cd | CD-GDA-LOICUTAV-1614 | Nhiều nghệ sĩ | Đĩa CD Lối Cũ Ta Về | vietnamese_pop_modern | mint_sealed | 230,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-nhieu-nghe-si-loi-cu-ta-ve-1614/ |
 | cd | CD-GDA-LANGLETI-1613 | Nguyễn Ánh 9 | Đĩa CD Lặng Lẽ Tiếng Dương Cầm | love_songs_1954_1975 | mint_sealed | 230,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-nguyen-anh-9-lang-le-tieng-duong-cam-1613/ |
 | cd | CD-GDA-TINHKHUC-1612 | Nhiều nghệ sĩ | Đĩa CD Tình Khúc Bảo Chấn – Nơi Ấy Bình Yên | vietnamese_pop_modern | mint_sealed | 230,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-nhieu-nghe-si-tinh-khuc-bao-chan-noi-ay-binh-yen-1612/ |
@@ -587,12 +587,12 @@ ear_mint, ery_good_plus, ery_good, good_plus, good, air, poor), genre (love_s
 | cd | CD-GDA-LOICUTAV-1609 | Nhiều nghệ sĩ | Đĩa CD Lối Cũ Ta Về (Bản Live Musique De Salon #1) | vietnamese_pop_modern | mint_sealed | 230,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-nhieu-nghe-si-loi-cu-ta-ve-ban-live-musique-de-salon-1-1609/ |
 | cd | CD-GDA-NGANTHUA-1608 | Nhiều nghệ sĩ | Đĩa CD Ngàn Thu Áo Tím | vietnamese_pop_modern | mint_sealed | 230,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-nhieu-nghe-si-ngan-thu-ao-tim-1608/ |
 | cd | CD-GDA-EM30XXXX-1607 | Võ Lê Vy | Đĩa CD Em & 30 | vietnamese_pop_modern | mint_sealed | 230,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-vo-le-vy-em-30-1607/ |
-| cd | CD-SSS-VOLUME-THREE | Saigon Super Sound | Đĩa CD Volume Three (1965–75) | love_songs_1954_1975 | mint_sealed | 290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-super-sound-volume-three-1965-75-1606/ |
-| cd | CD-SSS-VOLUME-TWO | Saigon Super Sound | Đĩa CD Volume Two (1964–75) | love_songs_1954_1975 | mint_sealed | 290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-super-sound-volume-two-1964-75-1605/ |
-| cd | CD-SSS-VOLUME-ONE | Saigon Super Sound | Đĩa CD Volume One (1965–75) | love_songs_1954_1975 | mint_sealed | 290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-super-sound-volume-one-1965-75-1604/ |
-| cd | CD-SSR-CHON-TA-VE | Saigon Soul Revival | Đĩa CD Chốn Ta Về | love_songs_1954_1975 | mint_sealed | 290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-soul-revival-chon-ta-ve-1603/ |
-| cd | CD-SSR-HOA-AM-XUA | Saigon Soul Revival | Đĩa CD Họa Âm Xưa | love_songs_1954_1975 | mint_sealed | 270,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-soul-revival-hoa-am-xua-1602/ |
-| cd | CD-SSR-MOI-LUONG-DUYEN | Saigon Soul Revival | Đĩa CD Mối Lương Duyên | love_songs_1954_1975 | mint_sealed | 290,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-soul-revival-moi-luong-duyen-1601/ |
+| cd | CD-SSS-VOLUME-THREE | Saigon Super Sound | Đĩa CD Volume Three (1965–75) | love_songs_1954_1975 | mint_sealed | 330,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-super-sound-volume-three-1965-75-1606/ |
+| cd | CD-SSS-VOLUME-TWO | Saigon Super Sound | Đĩa CD Volume Two (1964–75) | love_songs_1954_1975 | mint_sealed | 330,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-super-sound-volume-two-1964-75-1605/ |
+| cd | CD-SSS-VOLUME-ONE | Saigon Super Sound | Đĩa CD Volume One (1965–75) | love_songs_1954_1975 | mint_sealed | 330,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-super-sound-volume-one-1965-75-1604/ |
+| cd | CD-SSR-CHON-TA-VE | Saigon Soul Revival | Đĩa CD Chốn Ta Về | love_songs_1954_1975 | mint_sealed | 330,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-soul-revival-chon-ta-ve-1603/ |
+| cd | CD-SSR-HOA-AM-XUA | Saigon Soul Revival | Đĩa CD Họa Âm Xưa | love_songs_1954_1975 | mint_sealed | 300,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-soul-revival-hoa-am-xua-1602/ |
+| cd | CD-SSR-MOI-LUONG-DUYEN | Saigon Soul Revival | Đĩa CD Mối Lương Duyên | love_songs_1954_1975 | mint_sealed | 330,000 | in_stock | https://huesoundexpress.github.io/p/dia-cd-saigon-soul-revival-moi-luong-duyen-1601/ |
 | cd | CD-VN-HUONGTRA-1001 | Hương Tràm | Đĩa CD Phao Cứu Sinh | vietnamese_pop_modern | mint_sealed | 650,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-huong-tram-phao-cuu-sinh-1001/ |
 | cd | CD-VN-HOTRUNGD-1002 | Hồ Trung Dũng | Đĩa CD Alive | vietnamese_pop_modern | mint_sealed | 610,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-ho-trung-dung-alive-1002/ |
 | cd | CD-VN-HONGNHUN-1003 | Hồng Nhung | Đĩa CD Tuổi Thơ Tôi | love_songs_1954_1975 | mint_sealed | 550,000 | out_of_stock | https://huesoundexpress.github.io/p/dia-cd-hong-nhung-tuoi-tho-toi-1003/ |

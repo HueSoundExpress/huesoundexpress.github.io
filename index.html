@@ -313,23 +313,42 @@ button, input, select, textarea { font-family: inherit; }
 .q-link.priority:hover { color: #FFF7E8; background: var(--copper-grad-hover); }
 .brand-ico { width: 17px; height: 17px; flex-shrink: 0; display: block; }
 
-/* Thanh Bộ Sưu Tập chạy ngang ngay trên 5 danh mục */
+/* Thanh Bộ Sưu Tập chạy ngang ngay trên 5 danh mục + ô Bộ Sưu Tập cố định bên trái */
 .col-ticker-wrap {
   width: 100%; overflow: hidden; margin-bottom: .65rem;
-  padding: .34rem 0;
+  padding: .34rem .35rem .34rem .38rem;
   border-radius: 12px;
-  background: rgba(250, 242, 222, .68);
+  background: rgba(250, 242, 222, .72);
   border: 1px solid var(--border);
   box-shadow: 0 3px 10px rgba(74, 35, 18, .05);
   position: relative;
+  display: flex; align-items: center; gap: .42rem;
+}
+.col-ticker-fixed {
+  display: inline-flex; align-items: center; gap: .32rem;
+  padding: .32rem .76rem; border-radius: 999px;
+  background: linear-gradient(135deg, #DC8644 0%, #B85922 50%, #8C3A12 100%);
+  color: #FFF7E8; font-family: inherit; font-size: .74rem; font-weight: 800;
+  border: 1px solid rgba(126, 50, 16, .45);
+  cursor: pointer; flex-shrink: 0; z-index: 2;
+  white-space: nowrap;
+  box-shadow: 0 3px 10px rgba(140, 58, 18, .22);
+  transition: all .18s ease;
+}
+.col-ticker-fixed:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+.col-ticker-marquee {
+  flex: 1; min-width: 0; overflow: hidden; position: relative;
 }
 .col-ticker-track {
   display: inline-flex; align-items: center; gap: .45rem;
   white-space: nowrap; will-change: transform;
-  padding-left: .5rem;
+  padding-left: .2rem;
   animation: colTickerScroll 38s linear infinite;
 }
-.col-ticker-wrap:hover .col-ticker-track { animation-play-state: paused; }
+.col-ticker-marquee:hover .col-ticker-track { animation-play-state: paused; }
 @keyframes colTickerScroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -1118,8 +1137,10 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     </div>
   </header>
 
-  <!-- Thanh Bộ Sưu Tập chạy ngang kèm icon ngay trên 5 danh mục -->
+  <!-- Thanh Bộ Sưu Tập chạy ngang kèm ô Bộ Sưu Tập cố định ở đầu dòng -->
   <div class="col-ticker-wrap" aria-label="Bộ sưu tập nổi bật Hue Sound Express">
+    <button type="button" class="col-ticker-fixed" onclick="openCollectionsIndex()" title="Xem toàn bộ Danh sách Bộ Sưu Tập Analog Audio Theo Chủ Đề"><span>✨</span><span>Bộ Sưu Tập</span></button>
+    <div class="col-ticker-marquee">
     <div class="col-ticker-track" id="collectionTickerTrack">
       <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-tet/"><span>🌸</span><span>Nhạc Tết</span></a>
       <a class="col-ticker-pill" href="bo-suu-tap/dia-than-ngay-le/"><span>🎆</span><span>Ngày Lễ &amp; Noel</span></a>
@@ -1148,6 +1169,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       <a class="col-ticker-pill" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/" aria-hidden="true"><span>🎛️</span><span>Mâm than người mới</span></a>
       <a class="col-ticker-pill" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/" aria-hidden="true"><svg class="col-vn-map" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 1.5 C10.6 1.5, 12.6 2.7, 13.3 4.5 C12.4 5.8, 11.7 6.9, 12.1 8.5 C12.8 10.4, 14.8 12.2, 15.6 14.4 C16.2 16.3, 15.2 18.6, 13.2 20.2 C11.5 21.5, 9.7 22.3, 8.5 22.7 C8.0 21.6, 8.5 20.0, 9.9 18.7 C11.4 17.4, 12.8 16.0, 12.4 14.2 C11.9 12.1, 9.7 10.5, 8.9 8.6 C8.3 7.0, 8.7 5.4, 7.6 4.1 C6.8 3.2, 7.2 1.8, 8.4 1.5 Z" fill="#DA251D"/><polygon points="10.4,3.1 10.8,4.2 11.9,4.2 11.0,4.9 11.3,6.0 10.4,5.3 9.5,6.0 9.8,4.9 8.9,4.2 10.0,4.2" fill="#FFCD00"/><circle cx="18.2" cy="10.4" r="1.0" fill="#DA251D"/><circle cx="19.9" cy="11.2" r="0.75" fill="#DA251D"/><circle cx="18.8" cy="12.2" r="0.65" fill="#DA251D"/><circle cx="18.9" cy="17.2" r="0.95" fill="#DA251D"/><circle cx="20.6" cy="18.2" r="0.75" fill="#DA251D"/><circle cx="19.5" cy="19.5" r="0.7" fill="#DA251D"/><circle cx="17.8" cy="18.7" r="0.65" fill="#DA251D"/></svg><span>Hà Nội &amp; Sài Gòn</span></a>
       <a class="col-ticker-pill" href="bo-suu-tap/qua-tang-dia-than-cao-cap/" aria-hidden="true"><span>🎁</span><span>Quà tặng cao cấp</span></a>
+    </div>
     </div>
   </div>
 
@@ -1426,7 +1448,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       resetFilters: '✕ Xóa lọc',
       scrollBubble: 'Kéo lên xuống xem thêm sản phẩm / Về đầu trang',
       scrollBubbleTitle: 'Bấm để về đầu trang',
-      artAll: 'Nghệ sĩ', artBrandAll: 'Thương hiệu',
+      artAll: 'Nghệ sĩ / Nhạc sĩ', artBrandAll: 'Thương hiệu',
       lblAll: 'Hãng đĩa', lblBrandAll: 'Hãng / NSX',
       stAll: 'Sẵn / Hết', stAvail: 'Sẵn hàng', stOut: 'Hết hàng',
       condAll: 'Tình trạng đĩa', condM: 'Mới 100% (M)',
@@ -1507,22 +1529,22 @@ footer a { color: var(--copper-dark); font-weight: 600; }
             <p>Lưu ý: <strong>* Giảm giá phụ kiện khi mua cùng đĩa than / mâm than — inbox để được tư vấn</strong>. Mọi đơn hàng đều hỗ trợ xuất Báo giá PDF nhanh (giá chưa bao gồm VAT 10%), kèm dịch vụ gói quà nghệ thuật &amp; viết thiệp tay.</p>
           </details>
         </div>
-        <div class="guide-box">
-          <h2>✨ 10 Bộ Sưu Tập Analog Audio Theo Chủ Đề</h2>
+        <div class="guide-box" id="collectionsIndexSection">
+          <h2>✨ Danh sách Bộ Sưu Tập Analog Audio Theo Chủ Đề</h2>
           <div class="guide-links-grid">
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-tet/" target="_blank">🌸 Đĩa Than Nhạc Tết &amp; Mùa Xuân<small>Ly rượu mừng, Em ơi mùa xuân đến rồi đó…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-ngay-le/" target="_blank">🎄 Đĩa Than Ngày Lễ &amp; Giáng Sinh<small>Noel, Christmas, Hòa nhạc Năm Mới…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-trinh-cong-son/" target="_blank">🎸 Đĩa Than &amp; CD Nhạc Trịnh Công Sơn<small>Khánh Ly, Hồng Nhung, Diễm Xưa, Cát Bụi, Hạ Trắng…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/bo-suu-tap-quynh-anh-bk-production/" target="_blank">💿 Bộ Sưu Tập Quỳnh Anh – BK Production (-8%)<small>Full Combo 4 đĩa: Em ơi mùa xuân, 19xx, Thanh Tùng, Vàng</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-studio-ghibli/" target="_blank">🌿 Bộ Sưu Tập Studio Ghibli – Joe Hisaishi<small>Totoro, Spirited Away, Howl, Mononoke, Kiki…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-vang-bolero/" target="_blank">🍂 Đĩa Than Nhạc Vàng &amp; Bolero<small>Chế Linh, Thanh Tuyền, Duy Khánh, Như Quỳnh…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/" target="_blank">🎼 Tình Khúc 1954–1975 &amp; Tiền Chiến<small>Phạm Duy, Trịnh Công Sơn, Ngô Thụy Miên…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-viet-tre/" target="_blank">⚡ Đĩa Than Nhạc Việt Trẻ<small>Mỹ Tâm, Hà Anh Tuấn, Quỳnh Anh, Gia Định Audio…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-instrument-hoa-tau/" target="_blank">🎹 Instrument &amp; Hòa Tấu Nhạc Cụ<small>Qinie, Piano Nguyễn Ánh 9, Đặng Thái Sơn…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-jazz-audiophile/" target="_blank">🎷 Jazz, Vocal &amp; Audiophile Tham Chiếu<small>Stockfisch, Blue Note, Verve, Venus…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/" target="_blank">🎛️ Mâm Than Cho Người Mới Bắt Đầu<small>Turntable tích hợp Phono &amp; phụ kiện setup</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/" target="_blank">🏙️ Ký Ức Hà Nội &amp; Sài Gòn Xưa<small>Saigon Super Sound 1965–75, Hà Nội Nhớ…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/qua-tang-dia-than-cao-cap/" target="_blank">🎁 Quà Tặng Đĩa Than Cao Cấp<small>Kèm gói quà nghệ thuật &amp; báo giá PDF</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-tet/" target="_blank">🌸 Đĩa Than Nhạc Tết &amp; Mùa Xuân (-5%)<small>Ly rượu mừng, Em ơi mùa xuân đến rồi đó…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-ngay-le/" target="_blank">🎄 Đĩa Than Ngày Lễ &amp; Giáng Sinh (-5%)<small>Noel, Christmas, Hòa nhạc Năm Mới…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-trinh-cong-son/" target="_blank">🎸 Đĩa Than &amp; CD Nhạc Trịnh Công Sơn (-5%)<small>Khánh Ly, Hồng Nhung, Giang Trang, Diễm Xưa, Cát Bụi…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/bo-suu-tap-quynh-anh-bk-production/" target="_blank">💿 Bộ Sưu Tập Quỳnh Anh – BK Production (-8%)<small>4 đĩa: Em ơi mùa xuân, 19xx, Thanh Tùng, Vàng</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-studio-ghibli/" target="_blank">🌿 Bộ Sưu Tập Studio Ghibli – Joe Hisaishi (-5%)<small>Totoro, Spirited Away, Howl, Mononoke, Kiki…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-vang-bolero/" target="_blank">🍂 Đĩa Than Nhạc Vàng &amp; Bolero (-5%)<small>Chế Linh, Thanh Tuyền, Duy Khánh, Như Quỳnh…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/" target="_blank">🎼 Tình Khúc 1954–1975 &amp; Tiền Chiến (-5%)<small>Phạm Duy, Trịnh Công Sơn, Ngô Thụy Miên…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-viet-tre/" target="_blank">⚡ Đĩa Than Nhạc Việt Trẻ (-5%)<small>Mỹ Tâm, Hà Anh Tuấn, Quỳnh Anh, Gia Định Audio…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-instrument-hoa-tau/" target="_blank">🎹 Instrument &amp; Hòa Tấu Nhạc Cụ (-5%)<small>2 Cellos, Qinie, Piano Nguyễn Ánh 9, Đặng Thái Sơn…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-jazz-audiophile/" target="_blank">🎷 Jazz, Vocal &amp; Audiophile Tham Chiếu (-5%)<small>Stockfisch, Blue Note, Verve, Venus…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/" target="_blank">🎛️ Mâm Than Cho Người Mới Bắt Đầu (-5%)<small>Turntable tích hợp Phono &amp; phụ kiện setup</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/" target="_blank">🏙️ Ký Ức Hà Nội &amp; Sài Gòn Xưa (-5%)<small>Saigon Super Sound 1965–75, Hà Nội Nhớ, Hoài Phan…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/qua-tang-dia-than-cao-cap/" target="_blank">🎁 Quà Tặng Đĩa Than Cao Cấp (-5%)<small>Kèm gói quà nghệ thuật &amp; báo giá PDF</small></a>
           </div>
         </div>
         <div class="guide-box">
@@ -1577,7 +1599,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       resetFilters: '✕ Reset',
       scrollBubble: 'Scroll up & down for more / Back to top',
       scrollBubbleTitle: 'Click to scroll to top',
-      artAll: 'Artist', artBrandAll: 'Brand',
+      artAll: 'Artist / Composer', artBrandAll: 'Brand',
       lblAll: 'Label', lblBrandAll: 'Maker',
       stAll: 'Stock', stAvail: 'In Stock', stOut: 'Out of Stock',
       condAll: 'Disc Condition', condM: 'New seal (M)',
@@ -1658,22 +1680,22 @@ footer a { color: var(--copper-dark); font-weight: 600; }
             <p><strong>* Accessory discount when purchased with a Vinyl LP / Turntable — inbox us for consultation.</strong> Export instant PDF quotations anytime (prices exclude 10% VAT).</p>
           </details>
         </div>
-        <div class="guide-box">
-          <h2>✨ 10 Curated Analog Audio Collections</h2>
+        <div class="guide-box" id="collectionsIndexSection">
+          <h2>✨ Curated Analog Audio Collections</h2>
           <div class="guide-links-grid">
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-tet/" target="_blank">🌸 Lunar New Year &amp; Spring Vinyl<small>Festive Vietnamese spring classics</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-ngay-le/" target="_blank">🎄 Holiday &amp; Christmas Vinyl<small>Noel, Christmas &amp; New Year concerts</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-trinh-cong-son/" target="_blank">🎸 Trinh Cong Son Collection<small>Khanh Ly, Hong Nhung, Diem Xua, Cat Bui…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/bo-suu-tap-quynh-anh-bk-production/" target="_blank">💿 Quynh Anh – BK Production Set (-8%)<small>Full 4-LP Bundle: Em oi mua xuan, 19xx, Thanh Tung, Vang</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-studio-ghibli/" target="_blank">🌿 Studio Ghibli – Joe Hisaishi Collection<small>Totoro, Spirited Away, Howl, Mononoke, Kiki…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-vang-bolero/" target="_blank">🍂 Golden Oldies &amp; Bolero<small>Classic Vietnamese Bolero pressings</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/" target="_blank">🎼 1954–1975 Love Songs<small>Pham Duy, Trinh Cong Son, Ngo Thuy Mien…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-viet-tre/" target="_blank">⚡ Modern Vietnamese Vinyl<small>My Tam, Ha Anh Tuan, Quynh Anh, Gia Dinh Audio…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-instrument-hoa-tau/" target="_blank">🎹 Instrumental Vinyl &amp; CDs<small>Piano, Saxophone, Violin &amp; Traditional</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-jazz-audiophile/" target="_blank">🎷 Jazz, Vocal &amp; Audiophile<small>Stockfisch, Blue Note, Verve, Venus…</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/" target="_blank">🎛️ Turntables for Beginners<small>Built-in Phono setups &amp; care gear</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/" target="_blank">🏙️ Vintage Hanoi &amp; Saigon Sounds<small>Saigon Super Sound 1965–75 &amp; Hanoi classics</small></a>
-            <a class="guide-link-card" href="bo-suu-tap/qua-tang-dia-than-cao-cap/" target="_blank">🎁 Premium Vinyl Gifting<small>Artistic gift wrap &amp; corporate PDF quotes</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-tet/" target="_blank">🌸 Lunar New Year &amp; Spring Vinyl (-5%)<small>Festive Vietnamese spring classics</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-ngay-le/" target="_blank">🎄 Holiday &amp; Christmas Vinyl (-5%)<small>Noel, Christmas &amp; New Year concerts</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-trinh-cong-son/" target="_blank">🎸 Trinh Cong Son Collection (-5%)<small>Khanh Ly, Hong Nhung, Giang Trang, Diem Xua…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/bo-suu-tap-quynh-anh-bk-production/" target="_blank">💿 Quynh Anh – BK Production Set (-8%)<small>4-LP Set: Em oi mua xuan, 19xx, Thanh Tung, Vang</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-studio-ghibli/" target="_blank">🌿 Studio Ghibli – Joe Hisaishi Collection (-5%)<small>Totoro, Spirited Away, Howl, Mononoke, Kiki…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-vang-bolero/" target="_blank">🍂 Golden Oldies &amp; Bolero (-5%)<small>Classic Vietnamese Bolero pressings</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-tinh-khuc-1954-1975/" target="_blank">🎼 1954–1975 Love Songs (-5%)<small>Pham Duy, Trinh Cong Son, Ngo Thuy Mien…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-viet-tre/" target="_blank">⚡ Modern Vietnamese Vinyl (-5%)<small>My Tam, Ha Anh Tuan, Quynh Anh, Gia Dinh Audio…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-instrument-hoa-tau/" target="_blank">🎹 Instrumental Vinyl &amp; CDs (-5%)<small>2 Cellos, Piano, Saxophone, Violin &amp; Traditional</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-jazz-audiophile/" target="_blank">🎷 Jazz, Vocal &amp; Audiophile (-5%)<small>Stockfisch, Blue Note, Verve, Venus…</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/may-hat-dia-than-cho-nguoi-moi/" target="_blank">🎛️ Turntables for Beginners (-5%)<small>Built-in Phono setups &amp; care gear</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/dia-than-nhac-ha-noi-sai-gon/" target="_blank">🏙️ Vintage Hanoi &amp; Saigon Sounds (-5%)<small>Saigon Super Sound 1965–75, Hanoi &amp; Hoai Phan</small></a>
+            <a class="guide-link-card" href="bo-suu-tap/qua-tang-dia-than-cao-cap/" target="_blank">🎁 Premium Vinyl Gifting (-5%)<small>Artistic gift wrap &amp; corporate PDF quotes</small></a>
           </div>
         </div>
         <div class="guide-box">
@@ -1943,6 +1965,8 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       genres: genresArr,
       mood: Array.isArray(item.mood) ? item.mood : (item.mood ? String(item.mood).split(/\s*;\s*/).filter(Boolean) : []),
       kw: Array.isArray(item.kw) ? item.kw : [],
+      people: Array.isArray(item.people) ? item.people : (artistName ? [artistName] : []),
+      collections: Array.isArray(item.collections) ? item.collections : [],
       a: artistName,
       t: String(item.t || ''),
       l: lbl,
@@ -2020,17 +2044,40 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       if ((activeCategory === 'vinyl' || activeCategory === 'cd') && activeRegion !== 'ALL') {
         if (getMusicOrigin(item) !== activeRegion) return;
       }
-      const key = String(item.a || '').trim();
-      if (!key) return;
-      counts[key] = (counts[key] || 0) + 1;
+      const names = new Set();
+      if (activeCategory === 'vinyl' || activeCategory === 'cd') {
+        if (Array.isArray(item.people) && item.people.length > 0) {
+          item.people.forEach(p => { const k = String(p || '').trim(); if (k) names.add(k); });
+        }
+        const ak = String(item.a || '').trim();
+        if (ak) names.add(ak);
+      } else {
+        const ak = String(item.a || '').trim();
+        if (ak) names.add(ak);
+      }
+      names.forEach(key => { counts[key] = (counts[key] || 0) + 1; });
     });
 
-    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'vi'));
+    const sorted = Object.entries(counts).sort((a, b) => {
+      const aMany = /^nhiều nghệ sĩ$/i.test(a[0]) ? 1 : 0;
+      const bMany = /^nhiều nghệ sĩ$/i.test(b[0]) ? 1 : 0;
+      if (aMany !== bMany) return aMany - bMany;
+      return a[0].localeCompare(b[0], 'vi', { sensitivity: 'base' });
+    });
     const allLabel = (activeCategory === 'vinyl' || activeCategory === 'cd') ? L.artAll : L.artBrandAll;
     sel.innerHTML = `<option value="ALL">${escHtml(allLabel)}</option>` +
       sorted.map(([k, c]) => `<option value="${escHtml(k)}">${escHtml(k)} (${c})</option>`).join('');
     sel.value = counts[prev] ? prev : 'ALL';
   }
+
+  window.openCollectionsIndex = function() {
+    const guideBtn = document.querySelector('.cat-tab[onclick*="\'guide\'"]');
+    switchCategory('guide', guideBtn);
+    setTimeout(() => {
+      const target = document.getElementById('collectionsIndexSection');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 60);
+  };
 
   function populateLabelFilter() {
     const sel = document.getElementById('labelFilter');
@@ -2051,9 +2098,9 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       }
       const baseKey = getItemLabelKey(item);
       const keys = new Set();
-      if (baseKey && !/^other$/i.test(baseKey)) keys.add(baseKey);
+      if (baseKey) keys.add(baseKey);
       if (Array.isArray(item.labels)) {
-        item.labels.forEach(x => { const k = String(x || '').trim(); if (k && !/^other$/i.test(k)) keys.add(k); });
+        item.labels.forEach(x => { const k = String(x || '').trim(); if (k) keys.add(k); });
       }
       keys.forEach(key => {
         counts[key] = (counts[key] || 0) + 1;
@@ -2410,7 +2457,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
         if (getMusicOrigin(item) !== activeRegion) return false;
       }
 
-      if (art !== 'ALL' && item.a !== art) return false;
+      if (art !== 'ALL' && item.a !== art && !(Array.isArray(item.people) && item.people.includes(art))) return false;
       if (lbl !== 'ALL' && getItemLabelKey(item) !== lbl && !(Array.isArray(item.labels) && item.labels.includes(lbl))) return false;
       if (st !== 'ALL' && item.s !== st) return false;
       if (cf !== 'ALL' && item.cond !== cf) return false;
@@ -2444,23 +2491,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       return true;
     });
 
-    if (yr === 'NEW_OLD') {
-      filteredProducts.sort((a, b) => {
-        const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
-        if (ya === 0 && yb === 0) return (Number(b.id) || 0) - (Number(a.id) || 0);
-        if (ya === 0) return 1;
-        if (yb === 0) return -1;
-        return (yb - ya) || ((Number(b.id) || 0) - (Number(a.id) || 0));
-      });
-    } else if (yr === 'OLD_NEW') {
-      filteredProducts.sort((a, b) => {
-        const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
-        if (ya === 0 && yb === 0) return (Number(a.id) || 0) - (Number(b.id) || 0);
-        if (ya === 0) return 1;
-        if (yb === 0) return -1;
-        return (ya - yb) || ((Number(a.id) || 0) - (Number(b.id) || 0));
-      });
-    }
+    filteredProducts = sortItemsByCurrentOrder(filteredProducts);
 
     startEndlessStream();
   };
@@ -2579,7 +2610,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : ''}
             </div>
             <span class="price-val">${formatVnd(item.p)}</span>
-            ${item.combo_slug ? `<span class="acc-card-note">💿 ${escHtml(item.combo_note_prefix)} <a href="bo-suu-tap/${escHtml(item.combo_slug)}/" style="color:var(--copper-dark);text-decoration:underline;font-weight:700;" onclick="event.stopPropagation()">${escHtml(item.combo_label)}</a></span>` : ''}
+            ${item.combo_slug ? `<span class="acc-card-note">🎁 ${escHtml(item.combo_note_prefix)} <a href="bo-suu-tap/${escHtml(item.combo_slug)}/" style="color:var(--copper-dark);text-decoration:underline;font-weight:700;" onclick="event.stopPropagation()">${escHtml(item.combo_label)}</a></span>` : ''}
             ${item.promo_note ? `<span class="acc-card-note">🎁 ${escHtml(item.promo_note)}</span>` : ''}
             ${isAccBundle ? `<span class="acc-card-note">${escHtml(L.accPromoNote)}</span>` : ''}
           </div>
@@ -2606,26 +2637,30 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   // ===== LUONG KHAM PHA LIEN TUC KHONG LAP LAI: Danh muc dang loc -> 3 Goi y khac loai -> San pham khac cung danh muc -> Danh muc khac den het shop =====
   let lastAppendTs = 0;
 
+  function getAvailabilityPriority(item) {
+    // Uu tien san pham Con hang (in_stock) hoac Lien he bao gia (p <= 0 / force_contact) len truoc Het hang
+    if (item.s === 'in_stock' || !item.p || item.p <= 0 || item.force_contact) return 0;
+    return 1;
+  }
+
   function sortItemsByCurrentOrder(arr) {
     const yr = document.getElementById('yearSort') ? document.getElementById('yearSort').value : 'NEW_OLD';
     const copy = arr.slice();
-    if (yr === 'NEW_OLD') {
-      copy.sort((a, b) => {
-        const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
-        if (ya === 0 && yb === 0) return (Number(b.id) || 0) - (Number(a.id) || 0);
-        if (ya === 0) return 1;
-        if (yb === 0) return -1;
-        return (yb - ya) || ((Number(b.id) || 0) - (Number(a.id) || 0));
-      });
-    } else if (yr === 'OLD_NEW') {
-      copy.sort((a, b) => {
-        const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
+    copy.sort((a, b) => {
+      const pa = getAvailabilityPriority(a), pb = getAvailabilityPriority(b);
+      if (pa !== pb) return pa - pb;
+      const ya = parseReleaseYear(a), yb = parseReleaseYear(b);
+      if (yr === 'OLD_NEW') {
         if (ya === 0 && yb === 0) return (Number(a.id) || 0) - (Number(b.id) || 0);
         if (ya === 0) return 1;
         if (yb === 0) return -1;
         return (ya - yb) || ((Number(a.id) || 0) - (Number(b.id) || 0));
-      });
-    }
+      }
+      if (ya === 0 && yb === 0) return (Number(b.id) || 0) - (Number(a.id) || 0);
+      if (ya === 0) return 1;
+      if (yb === 0) return -1;
+      return (yb - ya) || ((Number(b.id) || 0) - (Number(a.id) || 0));
+    });
     return copy;
   }
 
@@ -2920,7 +2955,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
                 : ''}
             </div>
             <div>${formatVnd(item.p)}</div>
-            ${item.combo_slug ? `<div class="acc-card-note" style="font-size:.73rem; margin-top:4px;">💿 ${escHtml(item.combo_note_prefix)} <a href="bo-suu-tap/${escHtml(item.combo_slug)}/" style="color:var(--copper-dark);text-decoration:underline;font-weight:700;">${escHtml(item.combo_label)}</a></div>` : ''}
+            ${item.combo_slug ? `<div class="acc-card-note" style="font-size:.73rem; margin-top:4px;">🎁 ${escHtml(item.combo_note_prefix)} <a href="bo-suu-tap/${escHtml(item.combo_slug)}/" style="color:var(--copper-dark);text-decoration:underline;font-weight:700;">${escHtml(item.combo_label)}</a></div>` : ''}
             ${item.promo_note ? `<div class="acc-card-note" style="font-size:.73rem; margin-top:4px;">🎁 ${escHtml(item.promo_note)}</div>` : ''}
             ${isAccBundle ? `<div class="acc-card-note" style="font-size:.73rem; margin-top:4px;">${escHtml(L.accPromoNote)}</div>` : ''}
           </div>
@@ -2940,6 +2975,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (item.specs && item.specs.length > 0) {
       html += `<div class="track-list"><h4>${L.detailSpecs}</h4><ul style="padding-left:1.2rem; font-size:.82rem;">` +
         item.specs.map(sp => `<li>${escHtml(sp)}</li>`).join('') + `</ul></div>`;
+    }
+    if (Array.isArray(item.collections) && item.collections.length > 0) {
+      html += `<div class="track-list"><h4>✨ Bộ sưu tập liên quan (Ưu đãi 5%–8%)</h4><div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;">` +
+        item.collections.map(col => `<a href="bo-suu-tap/${escHtml(col.slug)}/" target="_blank" style="display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:999px;background:rgba(181,84,31,.11);border:1px solid rgba(181,84,31,.3);color:var(--copper-dark);font-size:.76rem;font-weight:700;text-decoration:none;">🎁 Bộ sưu tập ${escHtml(col.short || col.title)} (-${col.disc || 5}%)</a>`).join('') +
+        `</div></div>`;
     }
 
     document.getElementById('detailModalBody').innerHTML = html;

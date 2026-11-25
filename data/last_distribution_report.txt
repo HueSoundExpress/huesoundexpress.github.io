@@ -1,21 +1,16 @@
-=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP (2026-11-25 16:23) ===
-San pham moi phat hien: 5
-  + [VINYL / love_songs_1954_1975] VN-BOLERO-CONTUOINCE-558 | Khánh Ly - Còn tuổi nào cho em => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
-  + [VINYL / love_songs_1954_1975] VN-BOLERO-DAVANGII-557 | Khánh Ly - Da vàng II => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
-  + [VINYL / love_songs_1954_1975] VN-BOLERO-DAVANGI-556 | Khánh Ly - Da vàng I => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
-  + [VINYL / love_songs_1954_1975] VN-BOLERO-BIENNHO-555 | Khánh Ly - Biển nhớ => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
-  + [VINYL / love_songs_1954_1975] VN-BOLERO-SONATAS-74 | Khánh Ly - Sonatas => Bo suu tap: dia-than-nhac-trinh-cong-son, dia-than-tinh-khuc-1954-1975
+=== BAO CAO PHAN PHOI TU DONG VAO NHOM & BO SUU TAP (2026-11-25 17:52) ===
+Khong co SKU moi trong lan build nay (tong: 1141 san pham).
 Thong ke 10 bo suu tap:
-  - dia-than-nhac-tet: 36 sp
-  - dia-than-ngay-le: 31 sp
-  - dia-than-nhac-trinh-cong-son: 36 sp
   - bo-suu-tap-quynh-anh-bk-production: 4 sp
+  - dia-than-nhac-tet: 39 sp
+  - dia-than-ngay-le: 30 sp
+  - dia-than-nhac-trinh-cong-son: 48 sp
   - dia-than-studio-ghibli: 8 sp
-  - dia-than-nhac-vang-bolero: 36 sp
-  - dia-than-tinh-khuc-1954-1975: 36 sp
-  - dia-than-nhac-viet-tre: 36 sp
+  - dia-than-nhac-vang-bolero: 48 sp
+  - dia-than-tinh-khuc-1954-1975: 48 sp
+  - dia-than-nhac-viet-tre: 48 sp
   - dia-than-instrument-hoa-tau: 31 sp
   - dia-than-jazz-audiophile: 29 sp
   - may-hat-dia-than-cho-nguoi-moi: 20 sp
-  - dia-than-nhac-ha-noi-sai-gon: 36 sp
-  - qua-tang-dia-than-cao-cap: 30 sp
+  - dia-than-nhac-ha-noi-sai-gon: 48 sp
+  - qua-tang-dia-than-cao-cap: 36 sp
