@@ -2031,28 +2031,89 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     el._t = setTimeout(() => el.classList.remove('show'), 2600);
   }
 
-  // ===== CHUYEN DANH MUC, NGHE SI, HANG DIA, PHAN LOAI NHAC VIET / QUOC TE & BO LOC LOGIC VA =====
+  // ===== CHUYEN DANH MUC, NGHE SI, HANG DIA, PHAN LOAI NHAC VIET / QUOC TE & BO LOC CHEO THONG MINH =====
   function getItemLabelKey(item) {
     if (item.category === 'vinyl' || item.category === 'cd') return item.l;
     return item.a; // Thuong hieu cho May hat / Phu kien
   }
 
-  function populateArtistFilter() {
+  function getFilterState() {
+    const rawQ = document.getElementById('searchInput') ? document.getElementById('searchInput').value.trim() : '';
+    return {
+      qWords: rawQ ? removeDiacritics(rawQ).split(/\s+/).filter(Boolean) : [],
+      art: document.getElementById('artistFilter') ? document.getElementById('artistFilter').value : 'ALL',
+      lbl: document.getElementById('labelFilter') ? document.getElementById('labelFilter').value : 'ALL',
+      st: document.getElementById('statusFilter') ? document.getElementById('statusFilter').value : 'ALL',
+      cf: document.getElementById('condFilter') ? document.getElementById('condFilter').value : 'ALL',
+      mf: document.getElementById('moodFilter') ? document.getElementById('moodFilter').value : 'ALL',
+      pr: document.getElementById('priceFilter') ? document.getElementById('priceFilter').value : 'ALL'
+    };
+  }
+
+  function itemMatchesPrice(item, pr) {
+    if (pr === 'ALL') return true;
+    if (pr === 'UNDER_1M') return item.p > 0 && item.p < 1000000;
+    if (pr === '1M_1M5') return item.p >= 1000000 && item.p <= 1500000;
+    if (pr === '1M5_2M') return item.p > 1500000 && item.p <= 2000000;
+    if (pr === 'OVER_2M') return item.p > 2000000;
+    if (pr === 'CONTACT') return item.p <= 0;
+    return true;
+  }
+
+  function itemMatchesFilters(item, state, excludeFacet) {
+    if (activeCategory === 'accessory') {
+      if (item.category !== 'accessory' && item.category !== 'care') return false;
+    } else if (item.category !== activeCategory) {
+      return false;
+    }
+
+    if ((activeCategory === 'vinyl' || activeCategory === 'cd') && activeRegion !== 'ALL') {
+      if (getMusicOrigin(item) !== activeRegion) return false;
+    }
+
+    if (excludeFacet !== 'artist' && state.art !== 'ALL') {
+      if (item.a !== state.art && !(Array.isArray(item.people) && item.people.includes(state.art))) return false;
+    }
+    if (excludeFacet !== 'label' && state.lbl !== 'ALL') {
+      if (getItemLabelKey(item) !== state.lbl && !(Array.isArray(item.labels) && item.labels.includes(state.lbl))) return false;
+    }
+    if (excludeFacet !== 'status' && state.st !== 'ALL' && item.s !== state.st) return false;
+    if (excludeFacet !== 'cond' && state.cf !== 'ALL' && item.cond !== state.cf) return false;
+    if (excludeFacet !== 'mood' && state.mf !== 'ALL' && !(item.mood || []).includes(state.mf)) return false;
+    if (excludeFacet !== 'price' && !itemMatchesPrice(item, state.pr)) return false;
+
+    if (activeSubFilter !== 'ALL') {
+      if (activeCategory === 'turntable') {
+        if (activeSubFilter === 'PHONO' && item.has_phono !== 'yes') return false;
+        else if (activeSubFilter === 'BT' && item.has_bluetooth !== 'yes') return false;
+        else if (activeSubFilter === 'MM' && !item.f.includes('MM')) return false;
+        else if (!['PHONO','BT','MM'].includes(activeSubFilter) && item.g !== activeSubFilter) return false;
+      } else if (item.g !== activeSubFilter && !(item.genres && item.genres.includes(activeSubFilter))) {
+        return false;
+      }
+    }
+
+    if (onlyWithAudio && !(item.aud && item.aud.startsWith('http'))) return false;
+
+    if (state.qWords && state.qWords.length > 0) {
+      const synBolero = item.g === 'bolero_golden_oldies' ? ' bolero nhac vang nhac tru tinh nhac xua' : '';
+      const synCat = item.category === 'vinyl' ? ' dia than vinyl lp analog audio' : (item.category === 'turntable' ? ' may hat mam than turntable analog audio' : ' analog audio');
+      const hay = removeDiacritics(`${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.cond} ${item.s} ${item.y} ${(item.mood || []).join(' ')} ${(item.kw || []).join(' ')} ${(item.tracklist || []).join(' ')}${synBolero}${synCat}`);
+      if (!state.qWords.every(w => hay.includes(w))) return false;
+    }
+    return true;
+  }
+
+  function populateArtistFilter(stateArg) {
     const sel = document.getElementById('artistFilter');
     if (!sel) return;
+    const state = stateArg || getFilterState();
     const prev = sel.value || 'ALL';
     const L = t();
     const counts = {};
 
     allProducts.forEach(item => {
-      if (activeCategory === 'accessory') {
-        if (item.category !== 'accessory' && item.category !== 'care') return;
-      } else if (item.category !== activeCategory) {
-        return;
-      }
-      if ((activeCategory === 'vinyl' || activeCategory === 'cd') && activeRegion !== 'ALL') {
-        if (getMusicOrigin(item) !== activeRegion) return;
-      }
+      if (!itemMatchesFilters(item, state, 'artist')) return;
       const names = new Set();
       if (activeCategory === 'vinyl' || activeCategory === 'cd') {
         if (Array.isArray(item.people) && item.people.length > 0) {
@@ -2088,23 +2149,17 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     }, 60);
   };
 
-  function populateLabelFilter() {
+  function populateLabelFilter(stateArg) {
     const sel = document.getElementById('labelFilter');
     if (!sel) return;
+    const state = stateArg || getFilterState();
     const prev = sel.value || 'ALL';
     const L = t();
     const counts = {};
     const vnLabels = new Set();
 
     allProducts.forEach(item => {
-      if (activeCategory === 'accessory') {
-        if (item.category !== 'accessory' && item.category !== 'care') return;
-      } else if (item.category !== activeCategory) {
-        return;
-      }
-      if ((activeCategory === 'vinyl' || activeCategory === 'cd') && activeRegion !== 'ALL') {
-        if (getMusicOrigin(item) !== activeRegion) return;
-      }
+      if (!itemMatchesFilters(item, state, 'label')) return;
       const baseKey = getItemLabelKey(item);
       const keys = new Set();
       if (baseKey) keys.add(baseKey);
@@ -2131,7 +2186,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     sel.value = counts[prev] ? prev : 'ALL';
   }
 
-  function populateMoodFilter() {
+  function populateMoodFilter(stateArg) {
     const sel = document.getElementById('moodFilter');
     if (!sel) return;
     if (activeCategory !== 'vinyl' && activeCategory !== 'cd') {
@@ -2140,18 +2195,51 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       return;
     }
     sel.style.display = '';
+    const state = stateArg || getFilterState();
     const prev = sel.value || 'ALL';
     const L = t();
     const counts = {};
     allProducts.forEach(item => {
-      if (item.category !== activeCategory) return;
-      if (activeRegion !== 'ALL' && getMusicOrigin(item) !== activeRegion) return;
+      if (!itemMatchesFilters(item, state, 'mood')) return;
       (item.mood || []).forEach(m => { if (m) counts[m] = (counts[m] || 0) + 1; });
     });
     const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
     sel.innerHTML = `<option value="ALL">${escHtml(L.moodAll)}</option>` +
       sorted.map(([m, c]) => `<option value="${escHtml(m)}">${escHtml(L.moodMap[m] || m)} (${c})</option>`).join('');
     sel.value = counts[prev] ? prev : 'ALL';
+  }
+
+  function syncStaticFacetOptions(state) {
+    const stSel = document.getElementById('statusFilter');
+    if (stSel) {
+      const stPool = allProducts.filter(it => itemMatchesFilters(it, state, 'status'));
+      Array.from(stSel.options).forEach(opt => {
+        if (opt.value === 'ALL') { opt.hidden = false; opt.disabled = false; return; }
+        const has = stPool.some(it => it.s === opt.value);
+        opt.hidden = !has && stSel.value !== opt.value;
+        opt.disabled = !has && stSel.value !== opt.value;
+      });
+    }
+    const cfSel = document.getElementById('condFilter');
+    if (cfSel) {
+      const cfPool = allProducts.filter(it => itemMatchesFilters(it, state, 'cond'));
+      Array.from(cfSel.options).forEach(opt => {
+        if (opt.value === 'ALL') { opt.hidden = false; opt.disabled = false; return; }
+        const has = cfPool.some(it => it.cond === opt.value);
+        opt.hidden = !has && cfSel.value !== opt.value;
+        opt.disabled = !has && cfSel.value !== opt.value;
+      });
+    }
+    const prSel = document.getElementById('priceFilter');
+    if (prSel) {
+      const prPool = allProducts.filter(it => itemMatchesFilters(it, state, 'price'));
+      Array.from(prSel.options).forEach(opt => {
+        if (opt.value === 'ALL') { opt.hidden = false; opt.disabled = false; return; }
+        const has = prPool.some(it => itemMatchesPrice(it, opt.value));
+        opt.hidden = !has && prSel.value !== opt.value;
+        opt.disabled = !has && prSel.value !== opt.value;
+      });
+    }
   }
 
   window.switchCategory = function(cat, btn) {
@@ -2443,63 +2531,18 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   }
 
   window.resetAndRender = function() {
+    let state = getFilterState();
+    // Cap nhat dong bo cac bo loc cheo: an moi phuong an co 0 ket qua
+    populateArtistFilter(state);
+    populateLabelFilter(state);
+    populateMoodFilter(state);
+    syncStaticFacetOptions(state);
+
+    state = getFilterState();
     updateResetButtonState();
-    const rawQ = document.getElementById('searchInput').value.trim();
-    const qWords = rawQ ? removeDiacritics(rawQ).split(/\s+/).filter(Boolean) : [];
-    const art = document.getElementById('artistFilter').value;
-    const lbl = document.getElementById('labelFilter').value;
-    const st = document.getElementById('statusFilter').value;
-    const cf = document.getElementById('condFilter').value;
-    const mf = document.getElementById('moodFilter').value;
-    const pr = document.getElementById('priceFilter').value;
-    const yr = document.getElementById('yearSort').value;
 
-    // Loc theo LOGIC VA (AND) nghiem ngat tren toan bo tieu chi + tim kiem theo keywords (ca si, nhac si, nhac cu, bai hat, chu de)
-    filteredProducts = allProducts.filter(item => {
-      if (activeCategory === 'accessory') {
-        if (item.category !== 'accessory' && item.category !== 'care') return false;
-      } else if (item.category !== activeCategory) {
-        return false;
-      }
-
-      if ((activeCategory === 'vinyl' || activeCategory === 'cd') && activeRegion !== 'ALL') {
-        if (getMusicOrigin(item) !== activeRegion) return false;
-      }
-
-      if (art !== 'ALL' && item.a !== art && !(Array.isArray(item.people) && item.people.includes(art))) return false;
-      if (lbl !== 'ALL' && getItemLabelKey(item) !== lbl && !(Array.isArray(item.labels) && item.labels.includes(lbl))) return false;
-      if (st !== 'ALL' && item.s !== st) return false;
-      if (cf !== 'ALL' && item.cond !== cf) return false;
-      if (mf !== 'ALL' && !(item.mood || []).includes(mf)) return false;
-
-      if (pr === 'UNDER_1M' && (item.p <= 0 || item.p >= 1000000)) return false;
-      if (pr === '1M_1M5' && (item.p < 1000000 || item.p > 1500000)) return false;
-      if (pr === '1M5_2M' && (item.p <= 1500000 || item.p > 2000000)) return false;
-      if (pr === 'OVER_2M' && item.p <= 2000000) return false;
-      if (pr === 'CONTACT' && item.p > 0) return false;
-
-      if (activeSubFilter !== 'ALL') {
-        if (activeCategory === 'turntable') {
-          if (activeSubFilter === 'PHONO' && item.has_phono !== 'yes') return false;
-          else if (activeSubFilter === 'BT' && item.has_bluetooth !== 'yes') return false;
-          else if (activeSubFilter === 'MM' && !item.f.includes('MM')) return false;
-          else if (!['PHONO','BT','MM'].includes(activeSubFilter) && item.g !== activeSubFilter) return false;
-        } else if (item.g !== activeSubFilter && !(item.genres && item.genres.includes(activeSubFilter))) {
-          return false;
-        }
-      }
-
-      if (onlyWithAudio && !(item.aud && item.aud.startsWith('http'))) return false;
-
-      if (qWords.length > 0) {
-        const synBolero = item.g === 'bolero_golden_oldies' ? ' bolero nhac vang nhac tru tinh nhac xua' : '';
-        const synCat = item.category === 'vinyl' ? ' dia than vinyl lp analog audio' : (item.category === 'turntable' ? ' may hat mam than turntable analog audio' : ' analog audio');
-        const hay = removeDiacritics(`${item.a} ${item.t} ${item.sku} ${item.l} ${item.g} ${item.f} ${item.cond} ${item.s} ${item.y} ${(item.mood || []).join(' ')} ${(item.kw || []).join(' ')} ${(item.tracklist || []).join(' ')}${synBolero}${synCat}`);
-        if (!qWords.every(w => hay.includes(w))) return false;
-      }
-      return true;
-    });
-
+    // Loc theo LOGIC VA (AND) nghiem ngat tren toan bo tieu chi + tim kiem theo keywords
+    filteredProducts = allProducts.filter(item => itemMatchesFilters(item, state, null));
     filteredProducts = sortItemsByCurrentOrder(filteredProducts);
 
     startEndlessStream();
