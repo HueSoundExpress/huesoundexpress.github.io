@@ -1880,7 +1880,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   }
 
   // ===== NAP DU LIEU (uu tien data/catalog_all.json, du phong catalog.json) =====
-  fetch('data/catalog_all.json')
+  fetch('data/catalog_all.json?v=20261126')
     .then(r => { if (!r.ok) throw new Error(); return r.json(); })
     .catch(() => fetch('catalog.json').then(r => r.json()))
     .then(raw => {
@@ -2067,7 +2067,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       return false;
     }
 
-    if ((activeCategory === 'vinyl' || activeCategory === 'cd') && activeRegion !== 'ALL') {
+    if (excludeFacet !== 'region' && (activeCategory === 'vinyl' || activeCategory === 'cd') && activeRegion !== 'ALL') {
       if (getMusicOrigin(item) !== activeRegion) return false;
     }
 
@@ -2082,7 +2082,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     if (excludeFacet !== 'mood' && state.mf !== 'ALL' && !(item.mood || []).includes(state.mf)) return false;
     if (excludeFacet !== 'price' && !itemMatchesPrice(item, state.pr)) return false;
 
-    if (activeSubFilter !== 'ALL') {
+    if (excludeFacet !== 'sub' && activeSubFilter !== 'ALL') {
       if (activeCategory === 'turntable') {
         if (activeSubFilter === 'PHONO' && item.has_phono !== 'yes') return false;
         else if (activeSubFilter === 'BT' && item.has_bluetooth !== 'yes') return false;
@@ -2279,7 +2279,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     }
   };
 
-  function renderRegionBar() {
+  function renderRegionBar(stateArg) {
     const bar = document.getElementById('regionFilterBar');
     if (activeCategory !== 'vinyl' && activeCategory !== 'cd') {
       bar.style.display = 'none';
@@ -2287,16 +2287,20 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       return;
     }
     const L = t();
-    const catItems = allProducts.filter(x => x.category === activeCategory);
-    const vnCount = catItems.filter(x => getMusicOrigin(x) === 'VN').length;
-    const intlCount = catItems.length - vnCount;
+    const state = stateArg || getFilterState();
+    const pool = allProducts.filter(x => itemMatchesFilters(x, state, 'region'));
+    const vnCount = pool.filter(x => getMusicOrigin(x) === 'VN').length;
+    const intlCount = pool.length - vnCount;
 
     bar.style.display = 'flex';
-    bar.innerHTML = `
-      <button class="pill-region ${activeRegion === 'ALL' ? 'active' : ''}" type="button" onclick="setRegion('ALL')">${L.regAll} (${catItems.length})</button>
-      <button class="pill-region ${activeRegion === 'VN' ? 'active' : ''}" type="button" onclick="setRegion('VN')">${L.regVn} (${vnCount})</button>
-      <button class="pill-region ${activeRegion === 'INTL' ? 'active' : ''}" type="button" onclick="setRegion('INTL')">${L.regIntl} (${intlCount})</button>
-    `;
+    const btns = [`<button class="pill-region ${activeRegion === 'ALL' ? 'active' : ''}" type="button" onclick="setRegion('ALL')">${L.regAll} (${pool.length})</button>`];
+    if (vnCount > 0 || activeRegion === 'VN') {
+      btns.push(`<button class="pill-region ${activeRegion === 'VN' ? 'active' : ''}" type="button" onclick="setRegion('VN')">${L.regVn} (${vnCount})</button>`);
+    }
+    if (intlCount > 0 || activeRegion === 'INTL') {
+      btns.push(`<button class="pill-region ${activeRegion === 'INTL' ? 'active' : ''}" type="button" onclick="setRegion('INTL')">${L.regIntl} (${intlCount})</button>`);
+    }
+    bar.innerHTML = btns.join('');
   }
 
   window.setRegion = function(reg) {
@@ -2412,9 +2416,11 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     document.getElementById('btnResetFilters').classList.toggle('show', hasActive);
   }
 
-  function renderSubFilters() {
+  function renderSubFilters(stateArg) {
     const box = document.getElementById('subFilterPills');
     const L = t();
+    const state = stateArg || getFilterState();
+    const subPool = allProducts.filter(x => itemMatchesFilters(x, state, 'sub'));
     let pills = [];
 
     if (activeCategory === 'vinyl' || activeCategory === 'cd') {
@@ -2422,28 +2428,34 @@ footer a { color: var(--copper-dark); font-weight: 600; }
       if (activeRegion === 'VN') genres = ['ALL', 'love_songs_1954_1975', 'bolero_golden_oldies', 'vietnamese_pop_modern', 'vietnamese_folk_patriotic', 'instrumental'];
       else if (activeRegion === 'INTL') genres = ['ALL', 'instrumental', 'jazz_vocal', 'audiophile_reference', 'rock_metal', 'pop_disco', 'classic_soundtrack'];
 
+      genres = genres.filter(g => g === 'ALL' || g === activeSubFilter || subPool.some(it => it.g === g || (Array.isArray(it.genres) && it.genres.includes(g))));
       pills = genres.map(g => {
         const lbl = L.genreMap[g] || g;
         return `<button class="pill ${activeSubFilter === g ? 'active' : ''}" type="button" onclick="setSubFilter('${escHtml(g)}', this)">${escHtml(lbl)}</button>`;
       });
-      pills.push(`<button class="pill pill-toggle ${onlyWithAudio ? 'active' : ''}" type="button" onclick="toggleAudioFilter(this)">${L.audioOnly}</button>`);
+      const hasAnyAudio = subPool.some(it => it.aud && it.aud.startsWith('http'));
+      if (hasAnyAudio || onlyWithAudio) {
+        pills.push(`<button class="pill pill-toggle ${onlyWithAudio ? 'active' : ''}" type="button" onclick="toggleAudioFilter(this)">${L.audioOnly}</button>`);
+      }
     } else if (activeCategory === 'turntable') {
-      const opts = lang === 'en' ? [
+      const opts = (lang === 'en' ? [
         ['ALL', 'All Turntables'], ['beginner', 'Beginner'], ['mid_range', 'Mid-Range'],
         ['audiophile', 'Audiophile'], ['PHONO', 'Built-in Phono'], ['BT', 'Bluetooth'], ['MM', 'MM Cartridge']
       ] : [
         ['ALL', 'Tất cả máy hát'], ['beginner', 'Người mới bắt đầu'], ['mid_range', 'Trung cấp'],
         ['audiophile', 'Audiophile'], ['PHONO', 'Có Phono tích hợp'], ['BT', 'Có Bluetooth'], ['MM', 'Kim MM']
-      ];
+      ]).filter(([v]) => v === 'ALL' || v === activeSubFilter || subPool.some(it =>
+        v === 'PHONO' ? it.has_phono === 'yes' : (v === 'BT' ? it.has_bluetooth === 'yes' : (v === 'MM' ? it.f.includes('MM') : it.g === v))
+      ));
       pills = opts.map(([v, lbl]) => `<button class="pill ${activeSubFilter === v ? 'active' : ''}" type="button" onclick="setSubFilter('${v}', this)">${lbl}</button>`);
     } else {
-      const opts = lang === 'en' ? [
+      const opts = (lang === 'en' ? [
         ['ALL', 'All'], ['record_cleaning', 'Record Cleaning'], ['sleeves_protection', 'Sleeves'],
         ['cartridge_stylus', 'Cartridge & Stylus'], ['calibration', 'Calibration'], ['vinyl_care_service', 'Hue Sound Vinyl Care']
       ] : [
         ['ALL', 'Tất cả'], ['record_cleaning', 'Vệ sinh đĩa'], ['sleeves_protection', 'Bao lót & Bìa bảo vệ'],
         ['cartridge_stylus', 'Kim & Máng'], ['calibration', 'Cân chỉnh'], ['vinyl_care_service', 'Hue Sound Vinyl Care']
-      ];
+      ]).filter(([v]) => v === 'ALL' || v === activeSubFilter || subPool.some(it => it.g === v));
       pills = opts.map(([v, lbl]) => `<button class="pill ${activeSubFilter === v ? 'active' : ''}" type="button" onclick="setSubFilter('${escHtml(v)}', this)">${escHtml(lbl)}</button>`);
     }
     box.innerHTML = pills.join('');
@@ -2532,11 +2544,13 @@ footer a { color: var(--copper-dark); font-weight: 600; }
 
   window.resetAndRender = function() {
     let state = getFilterState();
-    // Cap nhat dong bo cac bo loc cheo: an moi phuong an co 0 ket qua
+    // Cap nhat dong bo tat ca cac bo loc cheo (dropdown + phan loai + the loai): an moi phuong an co 0 ket qua
     populateArtistFilter(state);
     populateLabelFilter(state);
     populateMoodFilter(state);
     syncStaticFacetOptions(state);
+    renderRegionBar(state);
+    renderSubFilters(state);
 
     state = getFilterState();
     updateResetButtonState();
