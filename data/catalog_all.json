@@ -1,5 +1,1372 @@
 [
     {
+        "id":  643,
+        "sku":  "NN-ADELE-25-LP-BLACK-COL-643",
+        "slug":  "dia-than-vinyl-adele-25-643",
+        "legacy_slug":  "adele-25-570",
+        "category":  "vinyl",
+        "g":  "pop_disco",
+        "genres":  [
+                       "pop_disco"
+                   ],
+        "mood":  "weekend_upbeat",
+        "a":  "Adele",
+        "t":  "25",
+        "l":  "Columbia",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "",
+        "p":  1290000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Adele - 30 (Vinyl 2LP) - Đĩa than nhạc Quốc tế (Pop \u0026 Disco • Hãng Columbia) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Strangers By Nature",
+                          "Easy On Me",
+                          "My Little Love",
+                          "Cry Your Heart Out",
+                          "Oh My God",
+                          "Can I Get It",
+                          "I Drink Wine",
+                          "All Night Parking (with Erroll Garner) Interlude",
+                          "Woman Like Me",
+                          "Hold On",
+                          "To Be Loved",
+                          "Love Is A Game"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/e3/80/04e380b1-170f-1e27-921e-5b76eb7c80cd/mzaf_16254926552761951094.plus.aac.p.m4a",
+        "aud_track":  "Strangers By Nature",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1350000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Adele",
+                   "25",
+                   "Columbia",
+                   "Pop \u0026 Disco",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Strangers By Nature",
+                   "Easy On Me",
+                   "My Little Love",
+                   "Cry Your Heart Out",
+                   "Oh My God",
+                   "Can I Get It",
+                   "I Drink Wine",
+                   "All Night Parking (with Erroll Garner) Interlude"
+               ],
+        "people":  [
+                       "Adele"
+                   ],
+        "collections":  [
+
+                        ]
+    },
+    {
+        "id":  642,
+        "sku":  "NN-SHADOWS-BESTOF-642",
+        "slug":  "dia-than-vinyl-the-shadows-best-of-642",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "instrumental",
+        "genres":  [
+                       "instrumental",
+                       "rock_metal"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "morning_coffee_acoustic"
+                 ],
+        "a":  "The Shadows",
+        "t":  "Best Of",
+        "l":  "Parlophone",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "2011",
+        "p":  1150000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than The Shadows - Best Of (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Parlophone • Ca sĩ: The Shadows) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Take Your Time (Do It Right)",
+                          "Just Be Good To Me (12\" Vocal Remix)",
+                          "Tell Me If You Still Care",
+                          "No One\u0027s Gonna Love You",
+                          "The Finest",
+                          "High Hopes",
+                          "Just The Way You Like It",
+                          "Weekend Girl",
+                          "Groovin\u0027 (That\u0027s What We\u0027re Doin\u0027)",
+                          "Even When You Sleep",
+                          "Borrowed Love",
+                          "Sands Of Time"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c4/88/52/c48852ff-b542-2884-a696-ca39e0b4cdf3/19UMGIM65658.rgb.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/7b/f4/b07bf4e7-fa19-95b8-f993-2f1313936f3a/mzaf_2618211538505296239.plus.aac.p.m4a",
+        "aud_track":  "Take Your Time (Do It Right)",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1200000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "The Shadows",
+                   "Best Of",
+                   "Parlophone",
+                   "Instrument",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Hòa tấu nhạc cụ",
+                   "Take Your Time (Do It Right)",
+                   "Just Be Good To Me (12\" Vocal Remix)",
+                   "Tell Me If You Still Care",
+                   "No One\u0027s Gonna Love You",
+                   "The Finest",
+                   "High Hopes",
+                   "Just The Way You Like It",
+                   "Weekend Girl"
+               ],
+        "people":  [
+                       "The Shadows"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-instrument-hoa-tau",
+                                "short":  "Instrument \u0026 Hòa Tấu",
+                                "title":  "Đĩa Than Instrument \u0026 Hòa Tấu Nhạc Cụ (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Instrument \u0026 Hòa Tấu (-5%)",
+        "combo_slug":  "dia-than-instrument-hoa-tau"
+    },
+    {
+        "id":  641,
+        "sku":  "NN-ARTPEP-RETURN-641",
+        "slug":  "dia-than-vinyl-art-pepper-the-return-of-art-pepper-641",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "jazz_vocal",
+        "genres":  [
+                       "jazz_vocal",
+                       "audiophile_reference"
+                   ],
+        "mood":  [
+                     "audiophile_reference",
+                     "late_night_chill"
+                 ],
+        "a":  "Art Pepper",
+        "t":  "The Return of Art Pepper",
+        "l":  "WaxTime",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "1956",
+        "p":  1050000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Art Pepper - The Return of Art Pepper (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng WaxTime • Ca sĩ: Art Pepper) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Pepper Returns",
+                          "Broadway",
+                          "You Go To My Head",
+                          "Angel Wings",
+                          "Funny Blues",
+                          "Five More",
+                          "Minority",
+                          "Patricia",
+                          "Mambo De La Pinta",
+                          "Walkin\u0027 Out Blues",
+                          "Pepper Steak",
+                          "You\u0027re Driving Me Crazy",
+                          "Tenor Blooz",
+                          "Yardbird Suite",
+                          "Straight Life"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/7e/88/cf/7e88cf2b-d343-3711-2df5-8434380bb9c3/00077774686358.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/00/ce/5b00ce18-5561-1846-bb97-212a25e7af00/mzaf_5981772006186189936.plus.aac.p.m4a",
+        "aud_track":  "Pepper Returns",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1100000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Art Pepper",
+                   "The Return of Art Pepper",
+                   "WaxTime",
+                   "Jazz \u0026 Vocal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Pepper Returns",
+                   "Broadway",
+                   "You Go To My Head",
+                   "Angel Wings",
+                   "Funny Blues",
+                   "Five More",
+                   "Minority",
+                   "Patricia"
+               ],
+        "people":  [
+                       "Art Pepper"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-jazz-audiophile",
+                                "short":  "Jazz \u0026 Audiophile",
+                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
+        "combo_slug":  "dia-than-jazz-audiophile"
+    },
+    {
+        "id":  640,
+        "sku":  "NN-NKC-THEHITS-640",
+        "slug":  "dia-than-vinyl-nat-king-cole-the-hits-640",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "jazz_vocal",
+        "genres":  [
+                       "jazz_vocal"
+                   ],
+        "mood":  [
+                     "late_night_chill",
+                     "nostalgic_classic"
+                 ],
+        "a":  "Nat King Cole",
+        "t":  "The Hits",
+        "l":  "Capitol",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "2023",
+        "p":  1050000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Nat King Cole - The Hits (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Capitol • Ca sĩ: Nat King Cole) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "(Get Your Kicks On) Route 66",
+                          "Straighten Up and Fly Right",
+                          "(I Love You) For Sentimental Reasons",
+                          "Sweet Lorraine",
+                          "Unforgettable",
+                          "Walkin\u0027 My Baby Back Home",
+                          "Mona Lisa",
+                          "Pretend",
+                          "Quizas, Quizas, Quizas (Perhaps, Perhaps, Perhaps)",
+                          "Love Me As Though There Were No Tomorrow",
+                          "Stardust",
+                          "Orange Colored Sky",
+                          "When I Fall in Love",
+                          "The Very Thought of You",
+                          "Perfidia",
+                          "Let There Be Love"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/26/0b/53/260b531b-9b04-3a70-e7c0-e3e8acd214f3/19UMGIM00667.rgb.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/f7/97/fdf79736-f585-2f99-9058-532a82fb09b0/mzaf_13183452586247220447.plus.aac.p.m4a",
+        "aud_track":  "(Get Your Kicks On) Route 66",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1100000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Nat King Cole",
+                   "The Hits",
+                   "Capitol",
+                   "Jazz \u0026 Vocal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "(Get Your Kicks On) Route 66",
+                   "Straighten Up and Fly Right",
+                   "(I Love You) For Sentimental Reasons",
+                   "Sweet Lorraine",
+                   "Unforgettable",
+                   "Walkin\u0027 My Baby Back Home",
+                   "Mona Lisa",
+                   "Pretend"
+               ],
+        "people":  [
+                       "Nat King Cole"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-jazz-audiophile",
+                                "short":  "Jazz \u0026 Audiophile",
+                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
+        "combo_slug":  "dia-than-jazz-audiophile"
+    },
+    {
+        "id":  639,
+        "sku":  "NN-QUEEN-GREATEST-639",
+        "slug":  "dia-than-vinyl-queen-greatest-hits-639",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "rock_metal",
+        "genres":  [
+                       "rock_metal"
+                   ],
+        "mood":  [
+                     "weekend_upbeat",
+                     "nostalgic_classic",
+                     "refined_gifting"
+                 ],
+        "a":  "Queen",
+        "t":  "Greatest Hits",
+        "l":  "Universal Music",
+        "f":  "2xLP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "1981",
+        "p":  1390000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Queen - Greatest Hits (Vinyl 2xLP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Universal Music • Ca sĩ: Queen) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Bohemian Rhapsody",
+                          "Another One Bites The Dust",
+                          "Killer Queen",
+                          "Fat Bottomed Girls",
+                          "Bicycle Race",
+                          "You\u0027re My Best Friend",
+                          "Don\u0027t Stop Me Now",
+                          "Save Me",
+                          "Crazy Little Thing Called Love",
+                          "Somebody To Love",
+                          "Now I\u0027m Here",
+                          "Good Old-Fashioned Lover Boy",
+                          "Play The Game",
+                          "Flash",
+                          "Seven Seas of Rhye",
+                          "We Will Rock You",
+                          "We Are the Champions"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b0/ca/05/b0ca05aa-29c9-4e01-5a16-f6fa06bce05c/602527594347.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/62/99/22629918-bc73-ac75-4751-7bc3bb2bf322/mzaf_3646528785331925443.plus.aac.p.m4a",
+        "aud_track":  "Bohemian Rhapsody",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1450000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Queen",
+                   "Greatest Hits",
+                   "Universal Music",
+                   "Rock \u0026 Metal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Bohemian Rhapsody",
+                   "Another One Bites The Dust",
+                   "Killer Queen",
+                   "Fat Bottomed Girls",
+                   "Bicycle Race",
+                   "You\u0027re My Best Friend",
+                   "Don\u0027t Stop Me Now",
+                   "Save Me"
+               ],
+        "people":  [
+                       "Queen"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "qua-tang-dia-than-cao-cap",
+                                "short":  "Quà Tặng Analog Audio",
+                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
+        "combo_slug":  "qua-tang-dia-than-cao-cap"
+    },
+    {
+        "id":  638,
+        "sku":  "NN-ARTPEP-MEETSRHY-638",
+        "slug":  "dia-than-vinyl-art-pepper-art-pepper-meets-the-rhythm-section-638",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "jazz_vocal",
+        "genres":  [
+                       "jazz_vocal",
+                       "audiophile_reference"
+                   ],
+        "mood":  [
+                     "audiophile_reference",
+                     "late_night_chill"
+                 ],
+        "a":  "Art Pepper",
+        "t":  "Art Pepper Meets the Rhythm Section",
+        "l":  "Craft Recordings",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "1957",
+        "p":  1050000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Art Pepper - Art Pepper Meets the Rhythm Section (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Craft Recordings • Ca sĩ: Art Pepper) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "You\u0027d Be So Nice to Come Home To",
+                          "Red Pepper Blues",
+                          "Imagination",
+                          "Waltz Me Blues",
+                          "Straight Life",
+                          "Jazz Me Blues",
+                          "Tin Tin Deo",
+                          "Star Eyes",
+                          "Birk\u0027s Works",
+                          "The Man I Love"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/2f/42/aa/2f42aa0c-240f-0489-f554-c811c88c19d4/00888072320697.rgb.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/72/46/ac/7246ac3e-c885-042b-a6b1-c0dca2ae5f6f/mzaf_16329964111731411059.plus.aac.p.m4a",
+        "aud_track":  "You\u0027d Be So Nice to Come Home To",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1100000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Art Pepper",
+                   "Art Pepper Meets the Rhythm Section",
+                   "Craft Recordings",
+                   "Jazz \u0026 Vocal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "You\u0027d Be So Nice to Come Home To",
+                   "Red Pepper Blues",
+                   "Imagination",
+                   "Waltz Me Blues",
+                   "Straight Life",
+                   "Jazz Me Blues",
+                   "Tin Tin Deo",
+                   "Star Eyes"
+               ],
+        "people":  [
+                       "Art Pepper"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-jazz-audiophile",
+                                "short":  "Jazz \u0026 Audiophile",
+                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
+        "combo_slug":  "dia-than-jazz-audiophile"
+    },
+    {
+        "id":  637,
+        "sku":  "NN-NKC-PENTHOUS-637",
+        "slug":  "dia-than-vinyl-nat-king-cole-penthouse-serenade-637",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "jazz_vocal",
+        "genres":  [
+                       "jazz_vocal",
+                       "instrumental"
+                   ],
+        "mood":  [
+                     "late_night_chill",
+                     "morning_coffee_acoustic",
+                     "audiophile_reference"
+                 ],
+        "a":  "Nat King Cole",
+        "t":  "Penthouse Serenade",
+        "l":  "Capitol",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "1952",
+        "p":  1050000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Nat King Cole - Penthouse Serenade (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Capitol • Ca sĩ: Nat King Cole) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Penthouse Serenade (When We\u0027re Alone)",
+                          "Somebody Loves Me",
+                          "Laura",
+                          "Once In a Blue Moon (Based On Rubenstein\u0027s Melody In F)",
+                          "Polka Dots and Moonbeams",
+                          "Down By the Old Mill Stream",
+                          "If I Should Lose You",
+                          "Rose Room",
+                          "I Surrender, Dear",
+                          "It Could Happen to You",
+                          "Don\u0027t Blame Me",
+                          "Little Girl",
+                          "I Surrender, Dear (Alternate Take)",
+                          "Walkin\u0027 My Baby Back Home",
+                          "Too Marvelous for Words",
+                          "Too Young",
+                          "That\u0027s My Girl",
+                          "It\u0027s Only a Paper Moon",
+                          "Unforgettable"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6d/a1/15/6da115bf-f945-522d-3149-029ccf1292f7/05099922875259.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/f0/bb/ecf0bb5d-ab98-6cc9-ec38-f3d05004bf56/mzaf_1391828039963904169.plus.aac.p.m4a",
+        "aud_track":  "Penthouse Serenade (When We\u0027re Alone)",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1100000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Nat King Cole",
+                   "Penthouse Serenade",
+                   "Capitol",
+                   "Jazz \u0026 Vocal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Penthouse Serenade (When We\u0027re Alone)",
+                   "Somebody Loves Me",
+                   "Laura",
+                   "Once In a Blue Moon (Based On Rubenstein\u0027s Melody In F)",
+                   "Polka Dots and Moonbeams",
+                   "Down By the Old Mill Stream",
+                   "If I Should Lose You",
+                   "Rose Room"
+               ],
+        "people":  [
+                       "Nat King Cole"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-jazz-audiophile",
+                                "short":  "Jazz \u0026 Audiophile",
+                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "disc":  5
+                            },
+                            {
+                                "slug":  "dia-than-instrument-hoa-tau",
+                                "short":  "Instrument \u0026 Hòa Tấu",
+                                "title":  "Đĩa Than Instrument \u0026 Hòa Tấu Nhạc Cụ (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
+        "combo_slug":  "dia-than-jazz-audiophile"
+    },
+    {
+        "id":  636,
+        "sku":  "NN-NKC-COLEESPA-636",
+        "slug":  "dia-than-vinyl-nat-king-cole-cole-espanol-greatest-hits-636",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "jazz_vocal",
+        "genres":  [
+                       "jazz_vocal"
+                   ],
+        "mood":  [
+                     "late_night_chill",
+                     "nostalgic_classic"
+                 ],
+        "a":  "Nat King Cole",
+        "t":  "Cole Español – Greatest Hits",
+        "l":  "Capitol",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "1958",
+        "p":  1050000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Nat King Cole - Cole Español – Greatest Hits (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Capitol • Ca sĩ: Nat King Cole) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Cachito",
+                          "María Elena",
+                          "Quizas, Quizas, Quizas (Perhaps, Perhaps, Perhaps)",
+                          "Las Mañanitas",
+                          "Acércate Más (Come Closer To Me)",
+                          "El Bodeguero (Grocer\u0027s Cha-Cha)",
+                          "Arrivederci Roma",
+                          "Noche de Ronda",
+                          "Tú, Me Delirio",
+                          "Te Quiero Dijiste",
+                          "Adelita"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/90/b2/ec/90b2ec89-7c7b-f058-b896-2803605ce6e7/00602567537175.rgb.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/7f/a4/187fa43d-40c4-6e56-b0fa-7d28ae9fa84c/mzaf_7944483516195449236.plus.aac.p.m4a",
+        "aud_track":  "Cachito",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1100000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Nat King Cole",
+                   "Cole Español – Greatest Hits",
+                   "Capitol",
+                   "Jazz \u0026 Vocal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Cachito",
+                   "María Elena",
+                   "Quizas, Quizas, Quizas (Perhaps, Perhaps, Perhaps)",
+                   "Las Mañanitas",
+                   "Acércate Más (Come Closer To Me)",
+                   "El Bodeguero (Grocer\u0027s Cha-Cha)",
+                   "Arrivederci Roma",
+                   "Noche de Ronda"
+               ],
+        "people":  [
+                       "Nat King Cole"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-jazz-audiophile",
+                                "short":  "Jazz \u0026 Audiophile",
+                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
+        "combo_slug":  "dia-than-jazz-audiophile"
+    },
+    {
+        "id":  635,
+        "sku":  "NN-NKC-JUSTONE-635",
+        "slug":  "dia-than-vinyl-nat-king-cole-just-one-of-those-things-635",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "jazz_vocal",
+        "genres":  [
+                       "jazz_vocal"
+                   ],
+        "mood":  [
+                     "late_night_chill",
+                     "nostalgic_classic",
+                     "audiophile_reference"
+                 ],
+        "a":  "Nat King Cole",
+        "t":  "Just One of Those Things",
+        "l":  "Capitol",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "1957",
+        "p":  1050000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Nat King Cole - Just One of Those Things (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Capitol • Ca sĩ: Nat King Cole) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "When Your Lover Has Gone",
+                          "A Cottage For Sale",
+                          "Who\u0027s Sorry Now?",
+                          "Once In a While",
+                          "These Foolish Things (Remind Me of You)",
+                          "Just For the Fun of It",
+                          "Don\u0027t Get Around Much Anymore",
+                          "I Understand",
+                          "Just One of Those Things",
+                          "The Song Is Ended (But the Melody Lingers On)",
+                          "I Should Care",
+                          "The Party\u0027s Over"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a5/88/75/a58875b2-fd30-7d38-23df-398c651562c2/13UACIM75482.rgb.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/73/60/387360ff-5f5b-0425-3d5e-f9bacb882487/mzaf_10210723106517296523.plus.aac.p.m4a",
+        "aud_track":  "When Your Lover Has Gone",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1100000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Nat King Cole",
+                   "Just One of Those Things",
+                   "Capitol",
+                   "Jazz \u0026 Vocal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "When Your Lover Has Gone",
+                   "A Cottage For Sale",
+                   "Who\u0027s Sorry Now?",
+                   "Once In a While",
+                   "These Foolish Things (Remind Me of You)",
+                   "Just For the Fun of It",
+                   "Don\u0027t Get Around Much Anymore",
+                   "I Understand"
+               ],
+        "people":  [
+                       "Nat King Cole"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-jazz-audiophile",
+                                "short":  "Jazz \u0026 Audiophile",
+                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
+        "combo_slug":  "dia-than-jazz-audiophile"
+    },
+    {
+        "id":  634,
+        "sku":  "NN-SMOKIE-GREATES-634",
+        "slug":  "dia-than-vinyl-smokie-greatest-hits-bright-white-edition-634",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "rock_metal",
+        "genres":  [
+                       "rock_metal",
+                       "pop_disco"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "weekend_upbeat"
+                 ],
+        "a":  "Smokie",
+        "t":  "Greatest Hits (Bright White Edition)",
+        "l":  "Sony Music",
+        "f":  "2xLP",
+        "w":  "180g",
+        "vc":  "Color (Bright White)",
+        "c":  "mint_sealed",
+        "y":  "2016",
+        "p":  1390000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Smokie - Greatest Hits (Bright White Edition) (Vinyl 2xLP 180g • Phôi đĩa: Color (Bright White)) - Đĩa than nhạc Quốc Tế (Hãng Sony Music • Ca sĩ: Smokie) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Lay Back In The Arms Of Someone",
+                          "Something\u0027s Been Making Me Blue",
+                          "If You Think You Know How To Love Me",
+                          "Pass It Around",
+                          "I\u0027ll Meet You At Midnight",
+                          "Number On My Wall",
+                          "Living Next Door To Alice",
+                          "Changing All The Time",
+                          "Don\u0027t Play Your Rock\u0027n\u0027Roll To Me",
+                          "Back To Bradford",
+                          "Wild Wild Angels",
+                          "Little Town Flirt",
+                          "It\u0027s Your Life",
+                          "Oh Carol",
+                          "Mexican Girl",
+                          "Stumblin\u0027 In (Chris Norman \u0026 Suzi Quatro)",
+                          "Needles And Pins",
+                          "Do To Me",
+                          "Babe It\u0027s Up To You",
+                          "Take Good Care Of My Baby",
+                          "San Francisco Bay",
+                          "For A Few Dollars More",
+                          "Run To Me",
+                          "Hey Baby"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/8a/ae/60/8aae60b6-6e06-db6f-ad01-393a38bacd58/886444728256.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/68/aa/9168aa39-c9f2-3d37-91da-8cd436f9648f/mzaf_6182242027136488819.plus.aac.p.m4a",
+        "aud_track":  "If You Think You Know How to Love Me (Jay Frog \u0026 Amfree Mix)",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1450000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Smokie",
+                   "Greatest Hits (Bright White Edition)",
+                   "Sony Music",
+                   "Rock \u0026 Metal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Lay Back In The Arms Of Someone",
+                   "Something\u0027s Been Making Me Blue",
+                   "If You Think You Know How To Love Me",
+                   "Pass It Around",
+                   "I\u0027ll Meet You At Midnight",
+                   "Number On My Wall",
+                   "Living Next Door To Alice",
+                   "Changing All The Time"
+               ],
+        "people":  [
+                       "Smokie"
+                   ],
+        "collections":  [
+
+                        ]
+    },
+    {
+        "id":  633,
+        "sku":  "NN-SHADOWS-20GOLDEN-633",
+        "slug":  "dia-than-vinyl-the-shadows-20-golden-greats-633",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "instrumental",
+        "genres":  [
+                       "instrumental",
+                       "rock_metal"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "morning_coffee_acoustic"
+                 ],
+        "a":  "The Shadows",
+        "t":  "20 Golden Greats",
+        "l":  "Parlophone",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "1977",
+        "p":  1150000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than The Shadows - 20 Golden Greats (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Parlophone • Ca sĩ: The Shadows) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Apache",
+                          "Man of Mystery",
+                          "The Frightened City",
+                          "Guitar Tango",
+                          "Kon-Tiki",
+                          "Foot Tapper",
+                          "Genie with the Light Brown Lamp",
+                          "The War Lord",
+                          "A Place in the Sun",
+                          "Atlantis",
+                          "Wonderful Land",
+                          "F.B.I.",
+                          "The Savage",
+                          "Geronimo",
+                          "Shindig",
+                          "Stingray",
+                          "Theme for Young Lovers",
+                          "The Rise and Fall of Flingel Bunt",
+                          "Maroc 7",
+                          "Dance On"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/ec/40/13/ec40134e-1201-3c6d-cd89-ca1486db0bf3/0077774624350_3000x3000_300dpi.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/5e/cd/1f5ecdee-de64-22a1-9714-5ab471bb1047/mzaf_10303849254467824018.plus.aac.p.m4a",
+        "aud_track":  "Apache",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1200000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "The Shadows",
+                   "20 Golden Greats",
+                   "Parlophone",
+                   "Guitar",
+                   "Instrument",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Hòa tấu nhạc cụ",
+                   "Apache",
+                   "Man of Mystery",
+                   "The Frightened City",
+                   "Guitar Tango",
+                   "Kon-Tiki",
+                   "Foot Tapper",
+                   "Genie with the Light Brown Lamp",
+                   "The War Lord"
+               ],
+        "people":  [
+                       "The Shadows"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-instrument-hoa-tau",
+                                "short":  "Instrument \u0026 Hòa Tấu",
+                                "title":  "Đĩa Than Instrument \u0026 Hòa Tấu Nhạc Cụ (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Instrument \u0026 Hòa Tấu (-5%)",
+        "combo_slug":  "dia-than-instrument-hoa-tau"
+    },
+    {
+        "id":  632,
+        "sku":  "NN-MJ-NUMBERONES-632",
+        "slug":  "dia-than-vinyl-michael-jackson-number-ones-632",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "pop_disco",
+        "genres":  [
+                       "pop_disco"
+                   ],
+        "mood":  [
+                     "weekend_upbeat",
+                     "nostalgic_classic"
+                 ],
+        "a":  "Michael Jackson",
+        "t":  "Number Ones",
+        "l":  "Epic",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "2003",
+        "p":  1150000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Michael Jackson - Number Ones (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Epic • Ca sĩ: Michael Jackson) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Don\u0027t Stop \u0027Til You Get Enough (2003 Edit)",
+                          "Rock with You (Single Version)",
+                          "Billie Jean (Single Version)",
+                          "Beat It (Single Version)",
+                          "Thriller (2003 Edit)",
+                          "I Just Can\u0027t Stop Loving You (feat. Siedah Garrett)",
+                          "Bad",
+                          "Smooth Criminal (Radio Edit)",
+                          "The Way You Make Me Feel",
+                          "Man In the Mirror (2003 Edit)",
+                          "Dirty Diana",
+                          "Black Or White (Single Version)",
+                          "You Are Not Alone (Radio Edit)",
+                          "Earth Song (Radio Edit)",
+                          "You Rock My World (Radio Edit)",
+                          "Break of Dawn",
+                          "One More Chance",
+                          "Ben (2003 Live Edit)"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/c6/c9/67c6c9b0-e879-7e4d-fcda-dc52f758ec43/888880457066.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bc/19/31/bc1931ec-1127-7df6-5db7-e0db0ee48e44/mzaf_14453549984806836570.plus.aac.p.m4a",
+        "aud_track":  "Don\u0027t Stop \u0027Til You Get Enough (2003 Edit)",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1200000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Michael Jackson",
+                   "Number Ones",
+                   "Epic",
+                   "Pop \u0026 Disco",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Don\u0027t Stop \u0027Til You Get Enough (2003 Edit)",
+                   "Rock with You (Single Version)",
+                   "Billie Jean (Single Version)",
+                   "Beat It (Single Version)",
+                   "Thriller (2003 Edit)",
+                   "I Just Can\u0027t Stop Loving You (feat. Siedah Garrett)",
+                   "Bad",
+                   "Smooth Criminal (Radio Edit)"
+               ],
+        "people":  [
+                       "Michael Jackson"
+                   ],
+        "collections":  [
+
+                        ]
+    },
+    {
+        "id":  631,
+        "sku":  "NN-BEATLES-19671970-631",
+        "slug":  "dia-than-vinyl-the-beatles-the-beatles-1967-1970-blue-album-631",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "rock_metal",
+        "genres":  [
+                       "rock_metal",
+                       "pop_disco"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "weekend_upbeat",
+                     "refined_gifting"
+                 ],
+        "a":  "The Beatles",
+        "t":  "The Beatles 1967–1970 (Blue Album)",
+        "l":  "Apple Records",
+        "f":  "3xLP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "2023",
+        "p":  2250000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than The Beatles - The Beatles 1967–1970 (Blue Album) (Vinyl 3xLP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Apple Records • Ca sĩ: The Beatles) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Strawberry Fields Forever",
+                          "Penny Lane",
+                          "Sgt. Pepper\u0027s Lonely Hearts Club Band",
+                          "With a Little Help From My Friends",
+                          "Lucy In the Sky with Diamonds",
+                          "A Day In the Life",
+                          "All You Need Is Love",
+                          "I Am the Walrus",
+                          "Hello, Goodbye",
+                          "The Fool On the Hill",
+                          "Magical Mystery Tour",
+                          "Lady Madonna",
+                          "Hey Jude",
+                          "Revolution",
+                          "Back In the U.S.S.R.",
+                          "While My Guitar Gently Weeps",
+                          "Ob-La-Di, Ob-La-Da",
+                          "Get Back",
+                          "Don\u0027t Let Me Down",
+                          "The Ballad of John and Yoko"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a6/8b/65/a68b657c-cac6-68e6-3bde-b79d58fbc795/18UMGIM30762.rgb.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/bc/c5/01bcc5e6-b94c-41b9-878c-c67549d73bef/mzaf_16216832087310258457.plus.aac.p.m4a",
+        "aud_track":  "Strawberry Fields Forever",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  2300000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "The Beatles",
+                   "The Beatles 1967–1970 (Blue Album)",
+                   "Apple Records",
+                   "Guitar",
+                   "Rock \u0026 Metal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Strawberry Fields Forever",
+                   "Penny Lane",
+                   "Sgt. Pepper\u0027s Lonely Hearts Club Band",
+                   "With a Little Help From My Friends",
+                   "Lucy In the Sky with Diamonds",
+                   "A Day In the Life",
+                   "All You Need Is Love",
+                   "I Am the Walrus"
+               ],
+        "people":  [
+                       "The Beatles"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "qua-tang-dia-than-cao-cap",
+                                "short":  "Quà Tặng Analog Audio",
+                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
+        "combo_slug":  "qua-tang-dia-than-cao-cap"
+    },
+    {
+        "id":  630,
+        "sku":  "NN-BEATLES-19621966-630",
+        "slug":  "dia-than-vinyl-the-beatles-the-beatles-1962-1966-red-album-630",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "rock_metal",
+        "genres":  [
+                       "rock_metal",
+                       "pop_disco"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "weekend_upbeat",
+                     "refined_gifting"
+                 ],
+        "a":  "The Beatles",
+        "t":  "The Beatles 1962–1966 (Red Album)",
+        "l":  "Apple Records",
+        "f":  "3xLP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "2023",
+        "p":  2250000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than The Beatles - The Beatles 1962–1966 (Red Album) (Vinyl 3xLP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Apple Records • Ca sĩ: The Beatles) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Love Me Do (Mono Version)",
+                          "Please Please Me (Mono Version)",
+                          "From Me to You (Mono Version)",
+                          "She Loves You (Mono Version)",
+                          "I Want to Hold Your Hand",
+                          "All My Loving",
+                          "Can\u0027t Buy Me Love",
+                          "A Hard Day\u0027s Night",
+                          "And I Love Her",
+                          "Eight Days a Week",
+                          "I Feel Fine",
+                          "Ticket to Ride",
+                          "Yesterday",
+                          "Help!",
+                          "You\u0027ve Got to Hide Your Love Away",
+                          "We Can Work It Out",
+                          "Day Tripper",
+                          "Drive My Car",
+                          "Norwegian Wood (This Bird Has Flown)",
+                          "Nowhere Man"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/2a/4a/e6/2a4ae63d-ada7-fa57-6f16-02eebcf72f95/18UMGIM29770.rgb.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/e7/f9/ede7f965-022d-f893-1359-4faa3187ae0e/mzaf_15497902604899491237.plus.aac.p.m4a",
+        "aud_track":  "Love Me Do (Mono Version)",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  2300000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "The Beatles",
+                   "The Beatles 1962–1966 (Red Album)",
+                   "Apple Records",
+                   "Rock \u0026 Metal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Love Me Do (Mono Version)",
+                   "Please Please Me (Mono Version)",
+                   "From Me to You (Mono Version)",
+                   "She Loves You (Mono Version)",
+                   "I Want to Hold Your Hand",
+                   "All My Loving",
+                   "Can\u0027t Buy Me Love",
+                   "A Hard Day\u0027s Night"
+               ],
+        "people":  [
+                       "The Beatles"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "qua-tang-dia-than-cao-cap",
+                                "short":  "Quà Tặng Analog Audio",
+                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
+        "combo_slug":  "qua-tang-dia-than-cao-cap"
+    },
+    {
+        "id":  629,
+        "sku":  "NN-LOUISA-WONDERFU-629",
+        "slug":  "dia-than-vinyl-louis-armstrong-wonderful-world-the-best-of-louis-armstrong-629",
+        "legacy_slug":  "",
+        "category":  "vinyl",
+        "g":  "jazz_vocal",
+        "genres":  [
+                       "jazz_vocal"
+                   ],
+        "mood":  [
+                     "nostalgic_classic",
+                     "late_night_chill",
+                     "refined_gifting"
+                 ],
+        "a":  "Louis Armstrong",
+        "t":  "Wonderful World: The Best of Louis Armstrong",
+        "l":  "Universal Music",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "2024",
+        "p":  1290000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Louis Armstrong - Wonderful World: The Best of Louis Armstrong (Vinyl LP 180g • Phôi đĩa: Black) - Đĩa than nhạc Quốc Tế (Hãng Universal Music • Ca sĩ: Louis Armstrong) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "A Kiss To Build A Dream On",
+                          "Hello, Dolly!",
+                          "Dream A Little Dream Of Me",
+                          "La vie en rose",
+                          "On The Sunny Side Of The Street",
+                          "When You\u0027re Smiling (The Whole World Smiles With You)",
+                          "Cheek To Cheek",
+                          "Cabaret",
+                          "It\u0027s Been A Long, Long Time",
+                          "They Can\u0027t Take That Away From Me",
+                          "Moon River",
+                          "Blueberry Hill",
+                          "What A Wonderful World"
+                      ],
+        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/d6/25/0ed62577-9082-3b1d-2719-b95d12b80081/24UMGIM76242.rgb.jpg/600x600bb.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/6e/53/866e53b9-d4db-25b5-387a-86a8f5d32aee/mzaf_15296661916166089667.plus.aac.p.m4a",
+        "aud_track":  "A Kiss To Build A Dream On",
+        "missing_fields":  {
+
+                           },
+        "cond":  "mint_sealed",
+        "p_orig":  1350000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Louis Armstrong",
+                   "Wonderful World: The Best of Louis Armstrong",
+                   "Universal Music",
+                   "Jazz \u0026 Vocal",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "A Kiss To Build A Dream On",
+                   "Hello, Dolly!",
+                   "Dream A Little Dream Of Me",
+                   "La vie en rose",
+                   "On The Sunny Side Of The Street",
+                   "When You\u0027re Smiling (The Whole World Smiles With You)",
+                   "Cheek To Cheek",
+                   "Cabaret"
+               ],
+        "people":  [
+                       "Louis Armstrong"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "qua-tang-dia-than-cao-cap",
+                                "short":  "Quà Tặng Analog Audio",
+                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
+                                "disc":  5
+                            },
+                            {
+                                "slug":  "dia-than-jazz-audiophile",
+                                "short":  "Jazz \u0026 Audiophile",
+                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
+        "combo_slug":  "qua-tang-dia-than-cao-cap"
+    },
+    {
         "id":  628,
         "sku":  "NN-MARIAHCA-MTVUNPLU-628",
         "slug":  "dia-than-vinyl-mariah-carey-mtv-unplugged-ep-628",
@@ -4885,105 +6252,6 @@
     },
     {
         "id":  557,
-        "sku":  "VN-BOLERO-DAVANGII-557",
-        "slug":  "dia-than-vinyl-khanh-ly-da-vang-ii-557",
-        "legacy_slug":  "khanh-ly-davangII-557",
-        "category":  "vinyl",
-        "g":  "love_songs_1954_1975",
-        "genres":  [
-                       "love_songs_1954_1975"
-                   ],
-        "mood":  [
-                     "late_night_chill",
-                     "nostalgic_classic",
-                     "audiophile_reference"
-                 ],
-        "a":  "Khánh Ly",
-        "t":  "Da vàng II",
-        "l":  "Khanh Ly Foundation",
-        "f":  "LP",
-        "w":  "180g",
-        "vc":  "Black",
-        "c":  "mint_sealed",
-        "y":  "",
-        "p":  1450000,
-        "s":  "in_stock",
-        "contact_only":  false,
-        "force_contact":  false,
-        "pin_in_stock_bottom":  false,
-        "exclude_collections":  false,
-        "d":  "Đĩa than Khánh Ly - Sonatas (Vinyl LP) - Đĩa than nhạc Việt Nam (Tình khúc 1954–1975 • Nhạc sĩ: Trịnh Công Sơn) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
-        "tracklist":  [
-                          "Slide 1",
-                          "Chiều Một Mình Qua Phố",
-                          "Ướt Mi",
-                          "Em Đi Bỏ Mặc Con Đường",
-                          "Một Cõi Đi Về",
-                          "Slide 2",
-                          "Diễm Xưa",
-                          "Ru Ta Ngậm Ngùi",
-                          "Ru Tình",
-                          "Quỳnh Hương"
-                      ],
-        "img":  "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/660114424_122131893909131009_649229221996989162_n.jpg?stp=dst-jpg_tt6\u0026cstp=mx720x466\u0026ctp=s720x466\u0026_nc_cat=103\u0026_nc_map=urlgen_bucketless\u0026ccb=1-7\u0026_nc_sid=aa7b47\u0026_nc_ohc=owwPxmiCA-MQ7kNvwGefzp3\u0026_nc_oc=AdrbjXZNZBGebNP5YRpzXj6bcFrc5u3MNi-jxrMQyhNpXmRcd3Bip37INZhQu7UetbDJoZXC7OSIlu13SWO2HpFG\u0026_nc_zt=23\u0026_nc_ht=scontent.fhan5-6.fna\u0026_nc_gid=4AbKqIb2pe7DV20-03nWTA\u0026_nc_ss=7b3a8\u0026oh=00_AQTWJFkJCYCI9uBDo1W8wtfvZa0_Y5YMZLeMVMn1jOVS4A\u0026oe=6B0C4F2E",
-        "aud":  "",
-        "aud_track":  "",
-        "missing_fields":  [
-                               "MISSING_COVER",
-                               "MISSING_AUDIO",
-                               "MISSING_YEAR"
-                           ],
-        "cond":  "mint_sealed",
-        "p_orig":  1500000,
-        "kw":  [
-                   "Analog Audio",
-                   "Đĩa than",
-                   "Vinyl LP",
-                   "Khánh Ly",
-                   "Da vàng II",
-                   "Khanh Ly Foundation",
-                   "Trịnh Công Sơn",
-                   "Thanh Tùng",
-                   "Tình khúc 1954–1975",
-                   "Đĩa than Vinyl LP",
-                   "Đĩa than chính hãng",
-                   "Cửa hàng đĩa than Hue Sound Express",
-                   "Nơi bán đĩa nhạc uy tín",
-                   "Nhạc Xưa",
-                   "Tình Ca",
-                   "Slide 1",
-                   "Chiều Một Mình Qua Phố",
-                   "Ướt Mi",
-                   "Em Đi Bỏ Mặc Con Đường",
-                   "Một Cõi Đi Về",
-                   "Slide 2",
-                   "Diễm Xưa",
-                   "Ru Ta Ngậm Ngùi"
-               ],
-        "people":  [
-                       "Khánh Ly",
-                       "Trịnh Công Sơn"
-                   ],
-        "collections":  [
-                            {
-                                "slug":  "dia-than-tinh-khuc-1954-1975",
-                                "short":  "Tình Khúc 1954–1975",
-                                "title":  "Đĩa Than Tình Khúc 1954–1975 \u0026 Nhạc Tiền Chiến (Giảm 5%)",
-                                "disc":  5
-                            },
-                            {
-                                "slug":  "dia-than-nhac-trinh-cong-son",
-                                "short":  "Nhạc Trịnh Công Sơn",
-                                "title":  "Đĩa Than \u0026 CD Nhạc Trịnh Công Sơn (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Tình Khúc 1954–1975 (-5%)",
-        "combo_slug":  "dia-than-tinh-khuc-1954-1975"
-    },
-    {
-        "id":  557,
         "sku":  "VN-DUONGTHU-80NAM-557",
         "slug":  "dia-than-vinyl-duong-thu-80-nam-mot-giac-mo-ban-co-chu-ky-557",
         "legacy_slug":  "",
@@ -5098,6 +6366,105 @@
         "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
         "combo_label":  "Bộ sưu tập Hà Nội \u0026 Sài Gòn Xưa (-5%)",
         "combo_slug":  "dia-than-nhac-ha-noi-sai-gon"
+    },
+    {
+        "id":  557,
+        "sku":  "VN-BOLERO-DAVANGII-557",
+        "slug":  "dia-than-vinyl-khanh-ly-da-vang-ii-557",
+        "legacy_slug":  "khanh-ly-davangII-557",
+        "category":  "vinyl",
+        "g":  "love_songs_1954_1975",
+        "genres":  [
+                       "love_songs_1954_1975"
+                   ],
+        "mood":  [
+                     "late_night_chill",
+                     "nostalgic_classic",
+                     "audiophile_reference"
+                 ],
+        "a":  "Khánh Ly",
+        "t":  "Da vàng II",
+        "l":  "Khanh Ly Foundation",
+        "f":  "LP",
+        "w":  "180g",
+        "vc":  "Black",
+        "c":  "mint_sealed",
+        "y":  "",
+        "p":  1450000,
+        "s":  "in_stock",
+        "contact_only":  false,
+        "force_contact":  false,
+        "pin_in_stock_bottom":  false,
+        "exclude_collections":  false,
+        "d":  "Đĩa than Khánh Ly - Sonatas (Vinyl LP) - Đĩa than nhạc Việt Nam (Tình khúc 1954–1975 • Nhạc sĩ: Trịnh Công Sơn) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "tracklist":  [
+                          "Slide 1",
+                          "Chiều Một Mình Qua Phố",
+                          "Ướt Mi",
+                          "Em Đi Bỏ Mặc Con Đường",
+                          "Một Cõi Đi Về",
+                          "Slide 2",
+                          "Diễm Xưa",
+                          "Ru Ta Ngậm Ngùi",
+                          "Ru Tình",
+                          "Quỳnh Hương"
+                      ],
+        "img":  "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/660114424_122131893909131009_649229221996989162_n.jpg?stp=dst-jpg_tt6\u0026cstp=mx720x466\u0026ctp=s720x466\u0026_nc_cat=103\u0026_nc_map=urlgen_bucketless\u0026ccb=1-7\u0026_nc_sid=aa7b47\u0026_nc_ohc=owwPxmiCA-MQ7kNvwGefzp3\u0026_nc_oc=AdrbjXZNZBGebNP5YRpzXj6bcFrc5u3MNi-jxrMQyhNpXmRcd3Bip37INZhQu7UetbDJoZXC7OSIlu13SWO2HpFG\u0026_nc_zt=23\u0026_nc_ht=scontent.fhan5-6.fna\u0026_nc_gid=4AbKqIb2pe7DV20-03nWTA\u0026_nc_ss=7b3a8\u0026oh=00_AQTWJFkJCYCI9uBDo1W8wtfvZa0_Y5YMZLeMVMn1jOVS4A\u0026oe=6B0C4F2E",
+        "aud":  "",
+        "aud_track":  "",
+        "missing_fields":  [
+                               "MISSING_COVER",
+                               "MISSING_AUDIO",
+                               "MISSING_YEAR"
+                           ],
+        "cond":  "mint_sealed",
+        "p_orig":  1500000,
+        "kw":  [
+                   "Analog Audio",
+                   "Đĩa than",
+                   "Vinyl LP",
+                   "Khánh Ly",
+                   "Da vàng II",
+                   "Khanh Ly Foundation",
+                   "Trịnh Công Sơn",
+                   "Thanh Tùng",
+                   "Tình khúc 1954–1975",
+                   "Đĩa than Vinyl LP",
+                   "Đĩa than chính hãng",
+                   "Cửa hàng đĩa than Hue Sound Express",
+                   "Nơi bán đĩa nhạc uy tín",
+                   "Nhạc Xưa",
+                   "Tình Ca",
+                   "Slide 1",
+                   "Chiều Một Mình Qua Phố",
+                   "Ướt Mi",
+                   "Em Đi Bỏ Mặc Con Đường",
+                   "Một Cõi Đi Về",
+                   "Slide 2",
+                   "Diễm Xưa",
+                   "Ru Ta Ngậm Ngùi"
+               ],
+        "people":  [
+                       "Khánh Ly",
+                       "Trịnh Công Sơn"
+                   ],
+        "collections":  [
+                            {
+                                "slug":  "dia-than-tinh-khuc-1954-1975",
+                                "short":  "Tình Khúc 1954–1975",
+                                "title":  "Đĩa Than Tình Khúc 1954–1975 \u0026 Nhạc Tiền Chiến (Giảm 5%)",
+                                "disc":  5
+                            },
+                            {
+                                "slug":  "dia-than-nhac-trinh-cong-son",
+                                "short":  "Nhạc Trịnh Công Sơn",
+                                "title":  "Đĩa Than \u0026 CD Nhạc Trịnh Công Sơn (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Tình Khúc 1954–1975 (-5%)",
+        "combo_slug":  "dia-than-tinh-khuc-1954-1975"
     },
     {
         "id":  556,
@@ -17225,7 +18592,7 @@
     {
         "id":  144,
         "sku":  "NN-ABBA-GOLD-2XLP-BLACK-UNI",
-        "slug":  "dia-than-vinyl-abba-gold-144",
+        "slug":  "dia-than-vinyl-abba-gold-the-greatest-hits-144",
         "legacy_slug":  "abba-gold-144",
         "category":  "vinyl",
         "g":  "pop_disco",
@@ -17237,13 +18604,13 @@
                      "weekend_upbeat"
                  ],
         "a":  "Abba",
-        "t":  "Gold",
+        "t":  "Gold: The greatest hits",
         "l":  "Universal",
         "f":  "2xLP",
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "1992",
+        "y":  "2025",
         "p":  1290000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -17316,7 +18683,7 @@
                    "Đĩa than",
                    "Vinyl LP",
                    "Abba",
-                   "Gold",
+                   "Gold: The greatest hits",
                    "Universal",
                    "Pop \u0026 Disco",
                    "Đĩa than Vinyl LP",
@@ -17360,7 +18727,7 @@
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "1980",
+        "y":  "2011",
         "p":  1290000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -17547,7 +18914,7 @@
                           "I Am Here (\"Sono Qui\" English Version)",
                           "Ave Maria Pietas"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8d/da/c5/8ddac5e9-6a7b-a6be-ef71-d1ed0efbb2f8/19UMGIM70065.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--060256/id--1644460/748637/image-thumb__748637__500x500/2a2c383b04b35d3494fca2bdd4e7fc39a4759dfb754f5a591eb54522559e59da.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/73/ff/6573ff0f-ab69-bb07-a092-873f3a8eb6ce/mzaf_1887216466961327287.plus.aac.p.m4a",
         "aud_track":  "Alla Gioia (Ode to Joy)",
         "missing_fields":  {
@@ -17706,7 +19073,7 @@
         "c":  "mint_sealed",
         "y":  "2020",
         "p":  1390000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -17765,16 +19132,8 @@
                        "Andrea Bocelli"
                    ],
         "collections":  [
-                            {
-                                "slug":  "qua-tang-dia-than-cao-cap",
-                                "short":  "Quà Tặng Analog Audio",
-                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
-        "combo_slug":  "qua-tang-dia-than-cao-cap"
+
+                        ]
     },
     {
         "id":  150,
@@ -17980,7 +19339,7 @@
     {
         "id":  152,
         "sku":  "NN-B-B-K-THE-K-LP-BLACK-WAX",
-        "slug":  "dia-than-vinyl-b-b-king-the-king-of-blue-152",
+        "slug":  "dia-than-vinyl-b-b-king-king-of-the-blues-152",
         "legacy_slug":  "b-b-king-the-king-of-blue-152",
         "category":  "vinyl",
         "g":  "audiophile_reference",
@@ -17992,15 +19351,15 @@
                      "audiophile_reference"
                  ],
         "a":  "B.B. King",
-        "t":  "The king of Blue",
+        "t":  "King Of The Blues",
         "l":  "Waxtime",
-        "f":  "LP",
+        "f":  "2xLP",
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
         "y":  "2000",
         "p":  2550000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -18020,7 +19379,7 @@
                           "Hold On, I\u0027m Comin\u0027",
                           "Come Rain or Come Shine"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/4a/72/f94a72c5-24af-a6ed-5446-34431abca479/197188649494.jpg/600x600bb.jpg",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--843572/id--1944127/1351786/image-thumb__1351786__500x500/960ff308227575709c55e7bc81bdb914c2b0dc5a3e09cfad023c550141b84a37.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/88/b2/b088b29c-e39f-845a-1951-c8e4c9d39377/mzaf_4695507957649220462.plus.aac.p.m4a",
         "aud_track":  "Riding with the King",
         "missing_fields":  {
@@ -18033,7 +19392,7 @@
                    "Đĩa than",
                    "Vinyl LP",
                    "B.B. King",
-                   "The king of Blue",
+                   "King Of The Blues",
                    "Waxtime",
                    "Audiophile",
                    "Đĩa than Vinyl LP",
@@ -18053,16 +19412,8 @@
                        "B.B. King"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  153,
@@ -18510,7 +19861,7 @@
         "c":  "mint_sealed",
         "y":  "2008",
         "p":  1190000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -18868,7 +20219,7 @@
         "c":  "mint_sealed",
         "y":  "1989",
         "p":  1150000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -18945,7 +20296,7 @@
         "c":  "mint_sealed",
         "y":  "1959",
         "p":  1290000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -18992,16 +20343,8 @@
                        "Dave Brubeck Quartet"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  164,
@@ -19023,7 +20366,7 @@
         "c":  "mint_sealed",
         "y":  "1959",
         "p":  1190000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -19070,16 +20413,8 @@
                        "Dave Brubeck Quartet"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  165,
@@ -19101,7 +20436,7 @@
         "c":  "mint_sealed",
         "y":  "1966",
         "p":  1190000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -19152,16 +20487,8 @@
                        "Dave Brubeck Quartet"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  166,
@@ -19183,7 +20510,7 @@
         "c":  "mint_sealed",
         "y":  "1959",
         "p":  1190000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -19230,16 +20557,8 @@
                        "Dave Brubeck Quartet"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  167,
@@ -19336,7 +20655,7 @@
         "c":  "mint_sealed",
         "y":  "1996",
         "p":  1090000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -19392,16 +20711,8 @@
                        "Dion, Celine"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  169,
@@ -19423,7 +20734,7 @@
         "c":  "mint_sealed",
         "y":  "2011",
         "p":  1290000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -19483,16 +20794,8 @@
                        "Dion, Celine"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  170,
@@ -19845,7 +21148,7 @@
         "c":  "mint_sealed",
         "y":  "2016",
         "p":  990000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -19873,7 +21176,7 @@
                           "Would You Like To Take A Walk?",
                           "What a Wonderful World (Single Version)"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d3/4f/1f/d34f1f5d-8ea1-e804-e49f-ab1ef5243a5c/16UMGIM78399.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--843602/id--953973/1063151/image-thumb__1063151__500x500/a4da95abfb8759eb6e4f9b44a50db39848b8a7b3e733045e6beb09a03b82c519.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/bb/a1/f0bba151-214c-179a-7695-76e83bcd1da5/mzaf_534716091841439799.plus.aac.p.m4a",
         "aud_track":  "Have Yourself a Merry Little Christmas",
         "missing_fields":  {
@@ -19909,12 +21212,6 @@
                    ],
         "collections":  [
                             {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            },
-                            {
                                 "slug":  "dia-than-ngay-le",
                                 "short":  "Ngày Lễ \u0026 Giáng Sinh",
                                 "title":  "Đĩa Than Ngày Lễ, Giáng Sinh (Noel) \u0026 Năm Mới (Giảm 5%)",
@@ -19922,8 +21219,8 @@
                             }
                         ],
         "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+        "combo_label":  "Bộ sưu tập Ngày Lễ \u0026 Giáng Sinh (-5%)",
+        "combo_slug":  "dia-than-ngay-le"
     },
     {
         "id":  175,
@@ -19945,7 +21242,7 @@
         "c":  "mint_sealed",
         "y":  "1957",
         "p":  1150000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -20005,16 +21302,8 @@
                        "Fitzgerald, Ella \u0026 Lou"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  176,
@@ -20036,7 +21325,7 @@
         "c":  "mint_sealed",
         "y":  "1957",
         "p":  990000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -20096,16 +21385,8 @@
                        "Fitzgerald, Ella \u0026 Lou"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  177,
@@ -20367,86 +21648,97 @@
     },
     {
         "id":  180,
-        "sku":  "NN-JACKSO-BAD-LP-PICTURE-EPI",
-        "slug":  "dia-than-vinyl-jackson-michael-bad-180",
-        "legacy_slug":  "jackson-michael-bad-180",
+        "sku":  "NN-FITZGE-ELLA-LP-GREEN-WAX-180",
+        "slug":  "dia-than-vinyl-fitzgerald-ella-ella-louis-again-180",
+        "legacy_slug":  "fitzgerald-ella-ella-louis-again-180",
         "category":  "vinyl",
         "g":  "audiophile_reference",
         "genres":  [
                        "audiophile_reference"
                    ],
         "mood":  "audiophile_reference",
-        "a":  "Jackson, Michael",
-        "t":  "Bad",
-        "l":  "Epic",
+        "a":  "Fitzgerald, Ella",
+        "t":  "Ella \u0026 Louis Again",
+        "l":  "Waxtime in color",
         "f":  "LP",
         "w":  "180g",
-        "vc":  "Black",
+        "vc":  "Color (Green / Xanh lá)",
         "c":  "mint_sealed",
-        "y":  "1987",
-        "p":  1490000,
-        "s":  "in_stock",
+        "y":  "2016",
+        "p":  1150000,
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
         "exclude_collections":  false,
-        "d":  "Đĩa than Jackson, Michael - Bad (Vinyl LP) - Đĩa than nhạc Quốc tế (Audiophile • Hãng Epic) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
+        "d":  "Đĩa than Fitzgerald, Ella - Ella \u0026 Louis Again (Vinyl LP) - Đĩa than nhạc Quốc tế (Audiophile • Hãng Waxtime) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
         "tracklist":  [
-                          "Bad (2012 Remaster)",
-                          "The Way You Make Me Feel (2012 Remaster)",
-                          "Speed Demon (2012 Remaster)",
-                          "Liberian Girl (2012 Remastered Version)",
-                          "Just Good Friends (2012 Remaster)",
-                          "Another Part of Me (2012 Remaster)",
-                          "Man in the Mirror (2012 Remaster)",
-                          "I Just Can\u0027t Stop Loving You (feat. Siedah Garrett) [2012 Remaster]",
-                          "Dirty Diana (2012 Remaster)",
-                          "Smooth Criminal (2012 Remaster)",
-                          "Leave Me Alone (2012 Remaster)"
+                          "Have Yourself a Merry Little Christmas",
+                          "Sleigh Ride",
+                          "The Christmas Song",
+                          "Christmas Night in Harlem (Single Version)",
+                          "Let It Snow! Let It Snow! Let It Snow!",
+                          "Frosty the Snowman",
+                          "White Christmas (Single Version)",
+                          "Cool Yule (feat. The Commanders)",
+                          "Baby, It\u0027s Cold Outside, Pts. 1 \u0026 2 (Live)",
+                          "I\u0027ve Got My Love To Keep Me Warm",
+                          "Santa Claus Is Coming to Town",
+                          "\u0027Zat You, Santa Claus? (Single Version)",
+                          "Jingle Bells",
+                          "Rudolph The Red-Nosed Reindeer",
+                          "Winter Wonderland (Single Version)",
+                          "The Secret of Christmas",
+                          "Christmas in New Orleans",
+                          "What Are You Doing New Year\u0027s Eve?",
+                          "Would You Like To Take A Walk?",
+                          "What a Wonderful World (Single Version)"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d5/5f/28/d55f28f4-610c-ee81-dc16-a01cda46bbc4/886443546264.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/f9/43/30f94399-c427-c5ee-e3d2-125a4c0175f4/mzaf_8436053573765616411.plus.aac.p.m4a",
-        "aud_track":  "Bad (2012 Remaster)",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--843655/id--940096/1065914/image-thumb__1065914__500x500/a4d0e3e459a2a962fff252a3bcfbeda84c9ecb76ee70f3096c6bfa21f3de3f6e.jpg",
+        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/bb/a1/f0bba151-214c-179a-7695-76e83bcd1da5/mzaf_534716091841439799.plus.aac.p.m4a",
+        "aud_track":  "Have Yourself a Merry Little Christmas",
         "missing_fields":  {
 
                            },
         "cond":  "mint_sealed",
-        "p_orig":  1550000,
+        "p_orig":  1200000,
         "kw":  [
                    "Analog Audio",
                    "Đĩa than",
                    "Vinyl LP",
-                   "Jackson, Michael",
-                   "Bad",
-                   "Epic",
+                   "Fitzgerald, Ella",
+                   "Ella \u0026 Louis Again",
+                   "Waxtime in color",
+                   "Nhạc Ngày Lễ \u0026 Giáng Sinh",
+                   "Nhạc Phim OST",
                    "Audiophile",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
                    "Cửa hàng đĩa than Hue Sound Express",
                    "Nơi bán đĩa nhạc uy tín",
-                   "Bad (2012 Remaster)",
-                   "The Way You Make Me Feel (2012 Remaster)",
-                   "Speed Demon (2012 Remaster)",
-                   "Liberian Girl (2012 Remastered Version)",
-                   "Just Good Friends (2012 Remaster)",
-                   "Another Part of Me (2012 Remaster)",
-                   "Man in the Mirror (2012 Remaster)",
-                   "I Just Can\u0027t Stop Loving You (feat. Siedah Garrett) [2012 Remaster]"
+                   "Have Yourself a Merry Little Christmas",
+                   "Sleigh Ride",
+                   "The Christmas Song",
+                   "Christmas Night in Harlem (Single Version)",
+                   "Let It Snow! Let It Snow! Let It Snow!",
+                   "Frosty the Snowman",
+                   "White Christmas (Single Version)",
+                   "Cool Yule (feat. The Commanders)"
                ],
         "people":  [
-                       "Jackson, Michael"
+                       "Fitzgerald, Ella"
                    ],
         "collections":  [
                             {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "slug":  "dia-than-ngay-le",
+                                "short":  "Ngày Lễ \u0026 Giáng Sinh",
+                                "title":  "Đĩa Than Ngày Lễ, Giáng Sinh (Noel) \u0026 Năm Mới (Giảm 5%)",
                                 "disc":  5
                             }
                         ],
         "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+        "combo_label":  "Bộ sưu tập Ngày Lễ \u0026 Giáng Sinh (-5%)",
+        "combo_slug":  "dia-than-ngay-le"
     },
     {
         "id":  181,
@@ -20770,7 +22062,7 @@
         "c":  "mint_sealed",
         "y":  "2018",
         "p":  1290000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -20846,22 +22138,8 @@
                        "Lady Gaga, Bradley Cooper"
                    ],
         "collections":  [
-                            {
-                                "slug":  "qua-tang-dia-than-cao-cap",
-                                "short":  "Quà Tặng Analog Audio",
-                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
-                                "disc":  5
-                            },
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
-        "combo_slug":  "qua-tang-dia-than-cao-cap"
+
+                        ]
     },
     {
         "id":  185,
@@ -20892,7 +22170,7 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--082076/id--1745015/1318995/image-thumb__1318995__500x500/b12a24807997770ad4bfc1a31f3f2158c8d96b959bff3705efc83dc320f1d3a7.jpg",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
@@ -21180,14 +22458,14 @@
         "mood":  "audiophile_reference",
         "a":  "Muddy Water",
         "t":  "Folk Singer",
-        "l":  "",
+        "l":  "Dol",
         "f":  "LP",
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "1964",
+        "y":  "2021",
         "p":  1050000,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -21209,7 +22487,7 @@
                           "Short Dress Woman",
                           "Put Me In Your Lay Away"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/49/59/72/49597255-dd87-f30d-9e75-5cb0ecfda118/00602567823490.rgb.jpg/600x600bb.jpg",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--000881/id--1705645/1114995/image-thumb__1114995__500x500/58bc52352c6d08cb3ba44ad1a3e47518bf1f0770db196542d87c65ad454779a1.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/ce/93/d1ce93fd-d78b-6a73-91d8-789142bf782d/mzaf_16116126661958643164.plus.aac.p.m4a",
         "aud_track":  "My Home Is in the Delta",
         "missing_fields":  {
@@ -21223,6 +22501,7 @@
                    "Vinyl LP",
                    "Muddy Water",
                    "Folk Singer",
+                   "Dol",
                    "Audiophile",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
@@ -21241,16 +22520,8 @@
                        "Muddy Water"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  190,
@@ -21265,12 +22536,12 @@
         "mood":  "audiophile_reference",
         "a":  "Mutter, Anne",
         "t":  "Sophie \u0026 ...",
-        "l":  "Wanner",
+        "l":  "Pig",
         "f":  "LP",
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "",
+        "y":  "2017",
         "p":  1150000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -21284,7 +22555,7 @@
                           "Across The Stars (Love Theme) - From Star Wars: Attack Of The Clones",
                           "Princess Leia\u0027s Theme - From Star Wars: A New Hope"
                       ],
-        "img":  "",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--019029/id--845880/1400464/image-thumb__1400464__500x500/4b3f8a0e4a36b9eeb90f87cdaf39072cfbe2179810c64934efcbafbcf91c7ef8.jpg",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
@@ -21300,7 +22571,7 @@
                    "Vinyl LP",
                    "Mutter, Anne",
                    "Sophie \u0026 ...",
-                   "Wanner",
+                   "Pig",
                    "Audiophile",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
@@ -21346,9 +22617,9 @@
         "l":  "Pink Floy Record",
         "f":  "LP",
         "w":  "180g",
-        "vc":  "Black",
+        "vc":  "Color (Yellow flame/ Vàng ánh lửa",
         "c":  "mint_sealed",
-        "y":  "1975",
+        "y":  "2025",
         "p":  1150000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -21416,7 +22687,7 @@
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "1979",
+        "y":  "2025",
         "p":  1490000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -21509,7 +22780,7 @@
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "1973",
+        "y":  "2025",
         "p":  1150000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -21755,14 +23026,14 @@
                      "nostalgic_classic",
                      "weekend_upbeat"
                  ],
-        "a":  "The beatles",
+        "a":  "The Beatles",
         "t":  "Abbey road",
         "l":  "Universal",
         "f":  "LP",
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "1969",
+        "y":  "2019",
         "p":  1190000,
         "s":  "in_stock",
         "contact_only":  false,
@@ -21801,7 +23072,7 @@
                    "Analog Audio",
                    "Đĩa than",
                    "Vinyl LP",
-                   "The beatles",
+                   "The Beatles",
                    "Abbey road",
                    "Universal",
                    "Rock \u0026 Metal",
@@ -21819,7 +23090,7 @@
                    "Because (2019 Mix)"
                ],
         "people":  [
-                       "The beatles"
+                       "The Beatles"
                    ],
         "collections":  [
 
@@ -21838,7 +23109,7 @@
         "mood":  "audiophile_reference",
         "a":  "Ub40",
         "t":  "Red, Red Wine: The Col…",
-        "l":  "Universal",
+        "l":  "Spectrum",
         "f":  "LP",
         "w":  "180g",
         "vc":  "Black",
@@ -21854,7 +23125,7 @@
         "tracklist":  {
 
                       },
-        "img":  "",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--060257/id--806258/833326/image-thumb__833326__500x500/2e58f1703361c0fd3cfa064a9cfea0f4a8a6ae88b5e27ed0442c5cb8c9ff416c.jpg",
         "aud":  "",
         "aud_track":  "",
         "missing_fields":  [
@@ -21871,7 +23142,7 @@
                    "Vinyl LP",
                    "Ub40",
                    "Red, Red Wine: The Col…",
-                   "Universal",
+                   "Spectrum",
                    "Audiophile",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
@@ -22020,7 +23291,7 @@
         "c":  "mint_sealed",
         "y":  "1964",
         "p":  2550002,
-        "s":  "in_stock",
+        "s":  "out_of_stock",
         "contact_only":  false,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -22075,16 +23346,8 @@
                        "Muddy Waters"
                    ],
         "collections":  [
-                            {
-                                "slug":  "dia-than-jazz-audiophile",
-                                "short":  "Jazz \u0026 Audiophile",
-                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
-                                "disc":  5
-                            }
-                        ],
-        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
-        "combo_slug":  "dia-than-jazz-audiophile"
+
+                        ]
     },
     {
         "id":  200,
@@ -28493,7 +29756,7 @@
                  ],
         "a":  "Pink Floyd",
         "t":  "The Wall",
-        "l":  "Harvest / Capitol",
+        "l":  "Capitol",
         "f":  "LP",
         "w":  "180g",
         "vc":  "Black",
@@ -28546,7 +29809,7 @@
                    "Vinyl LP",
                    "Pink Floyd",
                    "The Wall",
-                   "Harvest / Capitol",
+                   "Capitol",
                    "Rock \u0026 Metal",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
@@ -29797,88 +31060,6 @@
                ],
         "people":  [
                        "The All Star percussion Emsemble"
-                   ],
-        "collections":  [
-
-                        ]
-    },
-    {
-        "id":  312,
-        "sku":  "NN-THE-BE-ABBEY-UNI",
-        "slug":  "dia-than-vinyl-the-beatles-abbey-road-312",
-        "legacy_slug":  "the-beatles-abbey-road-312",
-        "category":  "vinyl",
-        "g":  "rock_metal",
-        "genres":  [
-                       "rock_metal"
-                   ],
-        "mood":  [
-                     "nostalgic_classic",
-                     "weekend_upbeat"
-                 ],
-        "a":  "The Beatles",
-        "t":  "Abbey Road",
-        "l":  "Universal",
-        "f":  "LP",
-        "w":  "180g",
-        "vc":  "Black",
-        "c":  "mint_sealed",
-        "y":  "1969",
-        "p":  950000,
-        "s":  "out_of_stock",
-        "contact_only":  true,
-        "force_contact":  false,
-        "pin_in_stock_bottom":  false,
-        "exclude_collections":  false,
-        "d":  "Đĩa than The Beatles - Abbey Road (Vinyl LP) - Đĩa than nhạc Quốc tế (Rock \u0026 Metal • Hãng Universal) - Cần mua đĩa than chính hãng hãy đến cửa hàng đĩa than Hue Sound Express nơi bán đĩa nhạc uy tín. Hotline: 09323.13918",
-        "tracklist":  [
-                          "Come Together (2019 Mix)",
-                          "Something (2019 Mix)",
-                          "Maxwell\u0027s Silver Hammer (2019 Mix)",
-                          "Oh! Darling (2019 Mix)",
-                          "Octopus\u0027s Garden (2019 Mix)",
-                          "I Want You (She\u0027s So Heavy) [2019 Mix]",
-                          "Here Comes the Sun (2019 Mix)",
-                          "Because (2019 Mix)",
-                          "You Never Give Me Your Money (2019 Mix)",
-                          "Sun King (2019 Mix)",
-                          "Mean Mr. Mustard (2019 Mix)",
-                          "Polythene Pam (2019 Mix)",
-                          "She Came In Through the Bathroom Window (2019 Mix)",
-                          "Golden Slumbers (2019 Mix)",
-                          "Carry That Weight (2019 Mix)",
-                          "The End (2019 Mix)",
-                          "Her Majesty (2019 Mix)"
-                      ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/53/43/485343e3-dd6a-0034-faec-f4b6403f8108/13UMGIM63890.rgb.jpg/600x600bb.jpg",
-        "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/b5/e4/97b5e459-d7e7-9806-2a87-96a760eca8ea/mzaf_16460868857902969803.plus.aac.p.m4a",
-        "aud_track":  "Come Together (2019 Mix)",
-        "missing_fields":  "MISSING_PRICE",
-        "cond":  "mint_sealed",
-        "p_orig":  1000000,
-        "kw":  [
-                   "Analog Audio",
-                   "Đĩa than",
-                   "Vinyl LP",
-                   "The Beatles",
-                   "Abbey Road",
-                   "Universal",
-                   "Rock \u0026 Metal",
-                   "Đĩa than Vinyl LP",
-                   "Đĩa than chính hãng",
-                   "Cửa hàng đĩa than Hue Sound Express",
-                   "Nơi bán đĩa nhạc uy tín",
-                   "Come Together (2019 Mix)",
-                   "Something (2019 Mix)",
-                   "Maxwell\u0027s Silver Hammer (2019 Mix)",
-                   "Oh! Darling (2019 Mix)",
-                   "Octopus\u0027s Garden (2019 Mix)",
-                   "I Want You (She\u0027s So Heavy) [2019 Mix]",
-                   "Here Comes the Sun (2019 Mix)",
-                   "Because (2019 Mix)"
-               ],
-        "people":  [
-                       "The Beatles"
                    ],
         "collections":  [
 
@@ -37687,7 +38868,7 @@
                  ],
         "a":  "Pink Floyd",
         "t":  "The Wall",
-        "l":  "Harvest / Columbia",
+        "l":  "Columbia",
         "f":  "LP",
         "w":  "180g",
         "vc":  "Black",
@@ -37740,7 +38921,7 @@
                    "Vinyl LP",
                    "Pink Floyd",
                    "The Wall",
-                   "Harvest / Columbia",
+                   "Columbia",
                    "Rock \u0026 Metal",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
@@ -38825,14 +40006,14 @@
         "mood":  "late_night_chill",
         "a":  "The Dave Brubeck Quartet",
         "t":  "Time Out",
-        "l":  "Columbia",
+        "l":  "Vinyl Passion",
         "f":  "LP",
         "w":  "180g",
-        "vc":  "Black",
+        "vc":  "Color (Blue/ Xanh dương)",
         "c":  "mint_sealed",
-        "y":  "1959",
+        "y":  "2026",
         "p":  1150000,
-        "s":  "out_of_stock",
+        "s":  "in_stock",
         "contact_only":  true,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -38855,7 +40036,7 @@
                           "Blue Rondo a la Turk (Live)",
                           "Take Five (Live)"
                       ],
-        "img":  "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/39/da/45/39da45ea-0a55-8668-0a84-4017b45fb13e/dj.rzbgoyft.jpg/600x600bb.jpg",
+        "img":  "https://bertus-api.nobearshosting.nl/Products/Music/ean--871903/id--2313645/1781771/image-thumb__1781771__500x500/27b8e0ce7fec6a6e2f16ad0f2603b547c84d9cd20479854303e4ba813349babf.jpg",
         "aud":  "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/68/53/ae/6853aea9-3c76-c8ea-382a-4e49f79314c0/mzaf_11483140041417634996.plus.aac.p.m4a",
         "aud_track":  "Blue Rondo a la Turk",
         "missing_fields":  "MISSING_PRICE",
@@ -38867,7 +40048,7 @@
                    "Vinyl LP",
                    "The Dave Brubeck Quartet",
                    "Time Out",
-                   "Columbia",
+                   "Vinyl Passion",
                    "Jazz \u0026 Vocal",
                    "Đĩa than Vinyl LP",
                    "Đĩa than chính hãng",
@@ -38886,8 +40067,16 @@
                        "The Dave Brubeck Quartet"
                    ],
         "collections":  [
-
-                        ]
+                            {
+                                "slug":  "dia-than-jazz-audiophile",
+                                "short":  "Jazz \u0026 Audiophile",
+                                "title":  "Đĩa Than Jazz, Vocal \u0026 Audiophile Tham Chiếu (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Jazz \u0026 Audiophile (-5%)",
+        "combo_slug":  "dia-than-jazz-audiophile"
     },
     {
         "id":  434,
@@ -39766,9 +40955,9 @@
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "1996",
+        "y":  "2015",
         "p":  1290000,
-        "s":  "out_of_stock",
+        "s":  "in_stock",
         "contact_only":  true,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -39823,8 +41012,16 @@
                        "Andrea Bocelli"
                    ],
         "collections":  [
-
-                        ]
+                            {
+                                "slug":  "qua-tang-dia-than-cao-cap",
+                                "short":  "Quà Tặng Analog Audio",
+                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
+        "combo_slug":  "qua-tang-dia-than-cao-cap"
     },
     {
         "id":  447,
@@ -39847,9 +41044,9 @@
         "w":  "180g",
         "vc":  "Black",
         "c":  "mint_sealed",
-        "y":  "1985",
+        "y":  "2024",
         "p":  1590000,
-        "s":  "out_of_stock",
+        "s":  "in_stock",
         "contact_only":  true,
         "force_contact":  false,
         "pin_in_stock_bottom":  false,
@@ -39893,8 +41090,16 @@
                        "Anne Sophie Mutter"
                    ],
         "collections":  [
-
-                        ]
+                            {
+                                "slug":  "qua-tang-dia-than-cao-cap",
+                                "short":  "Quà Tặng Analog Audio",
+                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
+                                "disc":  5
+                            }
+                        ],
+        "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
+        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
+        "combo_slug":  "qua-tang-dia-than-cao-cap"
     },
     {
         "id":  448,
@@ -47085,21 +48290,15 @@
                                 "disc":  5
                             },
                             {
-                                "slug":  "qua-tang-dia-than-cao-cap",
-                                "short":  "Quà Tặng Analog Audio",
-                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
+                                "slug":  "dia-than-tinh-khuc-1954-1975",
+                                "short":  "Tình Khúc 1954–1975",
+                                "title":  "Đĩa Than Tình Khúc 1954–1975 \u0026 Nhạc Tiền Chiến (Giảm 5%)",
                                 "disc":  5
                             },
                             {
                                 "slug":  "dia-than-nhac-tet",
                                 "short":  "Nhạc Tết \u0026 Mùa Xuân",
                                 "title":  "Đĩa Than Nhạc Tết \u0026 Mùa Xuân – Analog Audio (Giảm 5%)",
-                                "disc":  5
-                            },
-                            {
-                                "slug":  "dia-than-tinh-khuc-1954-1975",
-                                "short":  "Tình Khúc 1954–1975",
-                                "title":  "Đĩa Than Tình Khúc 1954–1975 \u0026 Nhạc Tiền Chiến (Giảm 5%)",
                                 "disc":  5
                             }
                         ],
@@ -47195,21 +48394,15 @@
                                 "disc":  5
                             },
                             {
-                                "slug":  "qua-tang-dia-than-cao-cap",
-                                "short":  "Quà Tặng Analog Audio",
-                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
+                                "slug":  "dia-than-tinh-khuc-1954-1975",
+                                "short":  "Tình Khúc 1954–1975",
+                                "title":  "Đĩa Than Tình Khúc 1954–1975 \u0026 Nhạc Tiền Chiến (Giảm 5%)",
                                 "disc":  5
                             },
                             {
                                 "slug":  "dia-than-nhac-tet",
                                 "short":  "Nhạc Tết \u0026 Mùa Xuân",
                                 "title":  "Đĩa Than Nhạc Tết \u0026 Mùa Xuân – Analog Audio (Giảm 5%)",
-                                "disc":  5
-                            },
-                            {
-                                "slug":  "dia-than-tinh-khuc-1954-1975",
-                                "short":  "Tình Khúc 1954–1975",
-                                "title":  "Đĩa Than Tình Khúc 1954–1975 \u0026 Nhạc Tiền Chiến (Giảm 5%)",
                                 "disc":  5
                             }
                         ],
@@ -47304,21 +48497,15 @@
                    ],
         "collections":  [
                             {
-                                "slug":  "dia-than-nhac-ha-noi-sai-gon",
-                                "short":  "Hà Nội \u0026 Sài Gòn Xưa",
-                                "title":  "Đĩa Than Ký Ức Hà Nội \u0026 Sài Gòn Xưa (Giảm 5%)",
-                                "disc":  5
-                            },
-                            {
-                                "slug":  "qua-tang-dia-than-cao-cap",
-                                "short":  "Quà Tặng Analog Audio",
-                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
-                                "disc":  5
-                            },
-                            {
                                 "slug":  "dia-than-tinh-khuc-1954-1975",
                                 "short":  "Tình Khúc 1954–1975",
                                 "title":  "Đĩa Than Tình Khúc 1954–1975 \u0026 Nhạc Tiền Chiến (Giảm 5%)",
+                                "disc":  5
+                            },
+                            {
+                                "slug":  "dia-than-nhac-ha-noi-sai-gon",
+                                "short":  "Hà Nội \u0026 Sài Gòn Xưa",
+                                "title":  "Đĩa Than Ký Ức Hà Nội \u0026 Sài Gòn Xưa (Giảm 5%)",
                                 "disc":  5
                             },
                             {
@@ -47335,8 +48522,8 @@
                             }
                         ],
         "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Hà Nội \u0026 Sài Gòn Xưa (-5%)",
-        "combo_slug":  "dia-than-nhac-ha-noi-sai-gon"
+        "combo_label":  "Bộ sưu tập Tình Khúc 1954–1975 (-5%)",
+        "combo_slug":  "dia-than-tinh-khuc-1954-1975"
     },
     {
         "id":  1603,
@@ -47412,12 +48599,6 @@
                    ],
         "collections":  [
                             {
-                                "slug":  "qua-tang-dia-than-cao-cap",
-                                "short":  "Quà Tặng Analog Audio",
-                                "title":  "Quà Tặng Đĩa Than \u0026 Analog Audio Cao Cấp (Giảm 5%)",
-                                "disc":  5
-                            },
-                            {
                                 "slug":  "dia-than-nhac-ha-noi-sai-gon",
                                 "short":  "Hà Nội \u0026 Sài Gòn Xưa",
                                 "title":  "Đĩa Than Ký Ức Hà Nội \u0026 Sài Gòn Xưa (Giảm 5%)",
@@ -47431,8 +48612,8 @@
                             }
                         ],
         "combo_note_prefix":  "Xem ưu đãi khi mua cùng",
-        "combo_label":  "Bộ sưu tập Quà Tặng Analog Audio (-5%)",
-        "combo_slug":  "qua-tang-dia-than-cao-cap"
+        "combo_label":  "Bộ sưu tập Hà Nội \u0026 Sài Gòn Xưa (-5%)",
+        "combo_slug":  "dia-than-nhac-ha-noi-sai-gon"
     },
     {
         "id":  1602,

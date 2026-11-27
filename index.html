@@ -313,6 +313,37 @@ button, input, select, textarea { font-family: inherit; }
 .q-link.priority:hover { color: #FFF7E8; background: var(--copper-grad-hover); }
 .brand-ico { width: 17px; height: 17px; flex-shrink: 0; display: block; }
 
+/* Banner chiến dịch theo mùa (Christmas Selection -> Nhạc Tết Sum Vầy) */
+.seasonal-banner-wrap {
+  width: 100%;
+  margin: 0 0 .68rem;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1.5px solid rgba(181, 84, 31, .38);
+  box-shadow: 0 10px 24px -12px rgba(110, 42, 14, .38);
+  background: #8C1B1B;
+}
+.seasonal-banner-link {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  text-decoration: none;
+  overflow: hidden;
+}
+.seasonal-banner-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .35s ease, filter .25s ease;
+}
+.seasonal-banner-link:hover img {
+  transform: scale(1.015);
+  filter: brightness(1.04);
+}
+@media (max-width: 640px) {
+  .seasonal-banner-wrap { border-radius: 11px; margin-bottom: .55rem; }
+}
+
 /* Thanh Bộ Sưu Tập chạy ngang ngay trên 5 danh mục + ô Bộ Sưu Tập cố định bên trái */
 .col-ticker-wrap {
   width: 100%; overflow: hidden; margin-bottom: .65rem;
@@ -1144,6 +1175,49 @@ footer a { color: var(--copper-dark); font-weight: 600; }
     </div>
   </header>
 
+  <!-- Banner chiến dịch theo mùa: Christmas Selection (đến hết 14/12/2026) -> Nhạc Tết Sum Vầy (15/12/2026 đến hết Mùng 10 tháng Giêng 2027 = 15/02/2027) -->
+  <div id="seasonalBannerWrap" class="seasonal-banner-wrap" style="display:none;">
+    <a id="seasonalBannerLink" class="seasonal-banner-link" href="bo-suu-tap/dia-than-ngay-le/" title="Christmas Selection – Khám phá Bộ Sưu Tập Đĩa Than &amp; CD Giáng Sinh (-5%)">
+      <img id="seasonalBannerImg" src="images/banners/christmas-selection.jpg" alt="Christmas Selection – Đĩa Than &amp; CD Giáng Sinh | Hue Sound Express" loading="eager">
+    </a>
+  </div>
+  <script>
+    (function () {
+      var wrap = document.getElementById('seasonalBannerWrap');
+      var link = document.getElementById('seasonalBannerLink');
+      var img  = document.getElementById('seasonalBannerImg');
+      if (!wrap || !link || !img) return;
+
+      var qBanner = (new URLSearchParams(window.location.search).get('banner') || '').toLowerCase();
+      var nowMs = Date.now();
+      var xmasEndMs = new Date('2026-12-14T23:59:59+07:00').getTime(); // Hết ngày 14/12/2026
+      var tetEndMs  = new Date('2027-02-15T23:59:59+07:00').getTime(); // Hết Mùng 10 tháng Giêng năm Đinh Mùi (15/02/2027)
+
+      var mode = '';
+      if (qBanner === 'xmas' || qBanner === 'christmas') mode = 'xmas';
+      else if (qBanner === 'tet' || qBanner === 'xuan') mode = 'tet';
+      else if (qBanner === 'off') mode = '';
+      else if (nowMs <= xmasEndMs) mode = 'xmas';
+      else if (nowMs <= tetEndMs) mode = 'tet';
+
+      if (mode === 'xmas') {
+        link.href = 'bo-suu-tap/dia-than-ngay-le/';
+        link.title = 'Christmas Selection – Khám phá Bộ Sưu Tập Đĩa Than & CD Giáng Sinh (-5%)';
+        img.src = 'images/banners/christmas-selection.jpg';
+        img.alt = 'Christmas Selection – Đĩa Than & CD Giáng Sinh | Hue Sound Express';
+        wrap.style.display = 'block';
+      } else if (mode === 'tet') {
+        link.href = 'bo-suu-tap/dia-than-nhac-tet/';
+        link.title = 'Nhạc Tết Sum Vầy – Khám phá Bộ Sưu Tập Đĩa Than & CD Nhạc Tết & Mùa Xuân (-5%)';
+        img.src = 'images/banners/nhac-tet-sum-vay.jpg';
+        img.alt = 'Nhạc Tết Sum Vầy – Đĩa Than & CD Nhạc Tết & Mùa Xuân | Hue Sound Express';
+        wrap.style.display = 'block';
+      } else {
+        wrap.style.display = 'none';
+      }
+    })();
+  </script>
+
   <!-- Thanh Bộ Sưu Tập chạy ngang kèm ô Bộ Sưu Tập cố định ở đầu dòng -->
   <div class="col-ticker-wrap" aria-label="Bộ sưu tập nổi bật Hue Sound Express">
     <button type="button" class="col-ticker-fixed" onclick="openCollectionsIndex()" title="Xem toàn bộ Danh sách Bộ Sưu Tập Analog Audio Theo Chủ Đề"><span>✨</span><span>Bộ Sưu Tập</span></button>
@@ -1880,7 +1954,7 @@ footer a { color: var(--copper-dark); font-weight: 600; }
   }
 
   // ===== NAP DU LIEU (uu tien data/catalog_all.json, du phong catalog.json) =====
-  fetch('data/catalog_all.json?v=20261126')
+  fetch('data/catalog_all.json?v=20261127')
     .then(r => { if (!r.ok) throw new Error(); return r.json(); })
     .catch(() => fetch('catalog.json').then(r => r.json()))
     .then(raw => {
